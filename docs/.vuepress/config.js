@@ -44,7 +44,7 @@ const config = {
       // "/api/": require("./sidebars/api"),
       // "/sdk/": require("./sidebars/sdk"),
       // "/faq/": require("./sidebars/faq"),
-      // "/introduction/": require("./sidebars/introduction"),
+      "/introduction/": require("./sidebars/introduction"),
       // "/tutorials/": require("./sidebars/tutorials"),
       // "/iot/": require("./sidebars/iot"),
       // "/guidebook/": require("./sidebars/guidebook"),

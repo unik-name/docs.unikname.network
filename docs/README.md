@@ -1,8 +1,22 @@
----
-title: "Introduction"
----
+# Welcome 👋
 
-# Introduction
+🎉 Congratulation, you've reached the official Universal-Name-System developer documentation 📚.
+
+Here, you can find all information about UNS ecosystem. From the basics of blockchain to how to deploy your own UNS node - and much more. 
+
+Below is a quick summary of what you can find in this documentation:
+
+[🔗 A quick introduction to basic blockchain concepts, Ark and UNS](/introduction/)
+
+[💎 How to use our Non-fungible token API](/api/nfts)
+
+[⛏ How to setup your own UNS node and start forging as delegate](tutorials/node/setup)
+
+[📕 You don't understand some words ? Have a look at our glossary !](/glossary/)
+
+
+
+<!-- # Introduction
 
 ## What Is UNS Ecosystem?
 
@@ -61,4 +75,4 @@ We answer some of the most common questions about UNS Ecosystem here, from gener
 
 ### [Glossary](/glossary/)
 
-Basic definitions of some of the vocabulary used throughout the documentation.
+Basic definitions of some of the vocabulary used throughout the documentation. -->

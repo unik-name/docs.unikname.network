@@ -1,5 +1,4 @@
 module.exports = [
-  '/',
   '/introduction/',
   '/api/nfts/',
   '/tutorials/node/setup',

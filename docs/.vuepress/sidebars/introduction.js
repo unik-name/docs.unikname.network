@@ -1,6 +1,5 @@
 module.exports = [
-  ["/", "Back to Table of Contents"],
-  ["/introduction/", "From Blockchain to ARK"],
+  // ["/", "Back to Table of Contents"],
   {
     title: "Blockchain introduction",
     collapsable: false,
@@ -25,6 +24,12 @@ module.exports = [
       "/introduction/ark/interoperability-and-ark",
       "/introduction/ark/how-does-ark-smartbridge-work",
       "/introduction/ark/what-is-delegated-proof-of-stake"
+    ]
+  },
+  {
+    title: "UNS",
+    collapsable: false,
+    children: [
     ]
   }
 ];
