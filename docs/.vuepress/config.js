@@ -1,19 +1,19 @@
 const config = {
-  title: "ARK Ecosystem Documentation",
-  description: "The central knowledge hub for all things ARK Ecosystem",
+  title: "UNS Ecosystem Documentation",
+  description: "The central knowledge hub for all things UNS Ecosystem",
   plugins: ["tabs"],
   head: [
     [
       "link",
       {
         rel: "icon",
-        href: "https://ark.io/images/media-kit/red-corners.png"
+        href: "./logo.png"
       }
     ]
   ],
   themeConfig: {
-    logo: "https://ark.io/images/media-kit/red-corners.png",
-    repo: "ARKEcosystem/docs",
+    logo: "./logo.png",
+    repo: "universal-name-system/docs",
     repoLabel: "Contribute!",
     editLinks: true,
     editLinkText: "Help us improve this page!",
@@ -25,33 +25,33 @@ const config = {
         text: "Home",
         link: "/"
       },
-      {
-        text: "Exchanges",
-        link: "/exchanges/"
-      },
-      {
-        text: "Public API",
-        link: "/api/public/v2/"
-      },
-      {
-        text: "SDK Overview",
-        link: "/SDK/"
-      }
+      // {
+      //   text: "Exchanges",
+      //   link: "/exchanges/"
+      // },
+      // {
+      //   text: "Public API",
+      //   link: "/api/public/v2/"
+      // },
+      // {
+      //   text: "SDK Overview",
+      //   link: "/SDK/"
+      // }
     ],
     sidebar: {
-      "/api/json-rpc/": require("./sidebars/api/json-rpc"),
-      "/api/public/": require("./sidebars/api/public"),
-      "/api/": require("./sidebars/api"),
-      "/sdk/": require("./sidebars/sdk"),
-      "/faq/": require("./sidebars/faq"),
+      // "/api/json-rpc/": require("./sidebars/api/json-rpc"),
+      // "/api/public/": require("./sidebars/api/public"),
+      // "/api/": require("./sidebars/api"),
+      // "/sdk/": require("./sidebars/sdk"),
+      // "/faq/": require("./sidebars/faq"),
       "/introduction/": require("./sidebars/introduction"),
-      "/tutorials/": require("./sidebars/tutorials"),
-      "/iot/": require("./sidebars/iot"),
-      "/guidebook/": require("./sidebars/guidebook"),
-      "/exchanges/": require("./sidebars/exchanges"),
-      "/releases/": require("./sidebars/releases"),
-      "/security/": require("./sidebars/security"),
-      "/archive/": require("./sidebars/archive"),
+      // "/tutorials/": require("./sidebars/tutorials"),
+      // "/iot/": require("./sidebars/iot"),
+      // "/guidebook/": require("./sidebars/guidebook"),
+      // "/exchanges/": require("./sidebars/exchanges"),
+      // "/releases/": require("./sidebars/releases"),
+      // "/security/": require("./sidebars/security"),
+      // "/archive/": require("./sidebars/archive"),
       "/": require("./sidebars/main")
     }
     //algolia: {

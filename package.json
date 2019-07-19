@@ -1,12 +1,14 @@
 {
-  "name": "@arkecosystem/docs",
-  "description": "Official documentation for the ARK Ecosystem",
+  "name": "@uns/docs",
+  "description": "Official documentation for the UNS Ecosystem",
   "contributors": [
-    "Brian Faust <brian@ark.io>"
+    "Brian Faust <brian@ark.io>",
+    "Guillaume Nicolas <guillaume@spacelephant.org>"
   ],
   "license": "MIT",
   "keywords": [
     "ark",
+    "uns",
     "blockchain",
     "crypto",
     "dpos",
@@ -15,12 +17,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ARKEcosystem/docs.git"
+    "url": "git+https://github.com/universal-name-system/docs.git"
   },
   "bugs": {
-    "url": "https://github.com/ARKEcosystem/docs/issues"
+    "url": "https://github.com/universal-name-system/docs/issues"
   },
-  "homepage": "https://github.com/ARKEcosystem/docs",
+  "homepage": "https://github.com/universal-name-system/docs",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
