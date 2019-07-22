@@ -1,8 +1,8 @@
 ---
-title: "How to Setup Your ARK Node"
+title: "How to Setup Your UNS Node"
 ---
 
-# How to Setup Your ARK Node
+# How to Setup Your UNS Node
 
 [[toc]]
 
