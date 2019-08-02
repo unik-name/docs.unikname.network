@@ -12,6 +12,8 @@ Below is a quick summary of what you can find in this documentation:
 
 [⛏ How to setup your own UNS node and start forging as delegate](tutorials/node/setup)
 
+[🔧 How to update UNIK properties from command-line](guidebook/developer/tester-cli-transaction-nft)
+
 [📕 You don't understand some words ? Have a look at our glossary !](/glossary/)
 
 
