@@ -1,7 +1,12 @@
 const config = {
   title: "UNS Ecosystem Documentation",
   description: "The central knowledge hub for all things UNS Ecosystem",
-  plugins: ["tabs"],
+  plugins: {
+    "tabs":{},
+    "sitemap":{
+      "hostname":"https://developer.uns.network"
+    }
+  },
   head: [
     [
       "link",
