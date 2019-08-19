@@ -8,7 +8,7 @@ title: "status command"
 Command used to display blockchain status.
 
 ## Parameters
-- `--network` (optional): Network on which UNS CLI will create token [mainnet|devnet|(testnet|local) local and testnet are for development only, default is mainnet]
+- `--network` (required): Network on which UNS CLI will create token [devnet|(local) local is for development only]
 
 ## Usage
 

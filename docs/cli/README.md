@@ -8,6 +8,7 @@ title: "UNS CLI"
 
 ## Introduction
 Universal Name System provides an interactive command line interface to create and manage your wallets ans UNIK tokens.
+Mainnet is not launched yet, please use devnet.
 
 ## Requirements
 UNS CLI installation requires some dependencies to be installed.
