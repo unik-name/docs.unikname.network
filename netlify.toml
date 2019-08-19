@@ -1,0 +1,8 @@
+[build]
+  command = "yarn build"
+  publish = "docs/.vuepress/dist"
+
+[[redirects]]
+  from = "https://developer.uns.network/*"
+  to = "https://docs.uns.network/:splat"
+  status = 301
