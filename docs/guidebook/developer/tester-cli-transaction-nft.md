@@ -4,7 +4,7 @@
 
 Ensure you have a [working copy](/tutorials/node/setup.html) of UNS node and you are in the `packages/core-tester-cli/` folder.
 
-UNIK properties are updatable via command-line interface using the `core-tester-cli` (Read more about module [here](https://arkdoc-23.developer.uns.network/guidebook/developer/tester-cli-transaction.html#basics)). 
+UNIK properties are updatable via command-line interface using the `core-tester-cli` (Read more about module [here](https://arkdoc-23.docs.uns.network/guidebook/developer/tester-cli-transaction.html#basics)). 
 
 From this module, we've added some commands to *create*, *update* and *delete* a UNIK property. 
 

@@ -4,10 +4,10 @@ UNS is based on strong principles and technologies : blockchain and Ark framewor
 
 Before going further in our documentation, please read these **external** documentation :
 
-## [Intro to Blockchain](https://arkdoc-23.developer.uns.network/introduction/blockchain/)
+## [Intro to Blockchain](https://arkdoc-23.docs.uns.network/introduction/blockchain/)
 
 
-## [Intro to ARK](https://arkdoc-23.developer.uns.network/introduction/ark/)
+## [Intro to ARK](https://arkdoc-23.docs.uns.network/introduction/ark/)
 
 
 ## Intro to UNS
