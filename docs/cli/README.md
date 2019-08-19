@@ -31,4 +31,5 @@ yarn global add @uns/uns-cli
 ## UNS CLI Commands
 - -h, --help: Help
 - [version, -v, --version](/cli/version): Prompts CLI version
+- [status](/cli/status): Displays blockchain status
 - [create-unik](/cli/create-unik): Create a UNIK nft token

@@ -5,7 +5,8 @@ module.exports = [
     collapsable: false,
     children: [
       '/cli/create-unik',
-      '/cli/version'
+      '/cli/version',
+      '/cli/status'
     ]
   }
 ];

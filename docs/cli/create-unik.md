@@ -10,7 +10,7 @@ With UNS CLI you can create your own UNIK token using `create-unik` command.
 ## Parameters
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
 - `--type` (required): Type of your token [individual/corporate]
-- `--network`: Network on which UNS CLI will create token [mainnet|devnet|(testnet|local) local and testnet are for development only, default is mainnet]
+- `--network` (optional): Network on which UNS CLI will create token [mainnet|devnet|(testnet|local) local and testnet are for development only, default is mainnet]
 
 ## Usage
 
