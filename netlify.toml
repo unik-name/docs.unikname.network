@@ -1,0 +1,15 @@
+[build]
+  command = "yarn build"
+  publish = "docs/.vuepress/dist"
+
+[[redirects]]
+  from = "https://developer.uns.network/*"
+  to = "https://docs.uns.network/:splat"
+  status = 301
+  force = true
+
+[build.processing]
+  skip_processing = false
+[build.processing.html]
+  # Allow to have equivalent URLs: /api/my-api/ <=> /api/my-api.html
+  pretty_urls = true
