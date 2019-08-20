@@ -201,3 +201,9 @@ $ uns create-wallet
 }
 
 ```
+
+Redirect stdout to file to create json file with wallet informations:
+
+```bash
+uns create-wallet --network devnet >> ./myUNSWallet.json
+```
