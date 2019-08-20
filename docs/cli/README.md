@@ -53,6 +53,7 @@ $ uns version
 - [status](#status): Displays blockchain status
 - [create-unik](#create-unik): Create a UNIK nft token
 - [create-wallet](#create-wallet): Create a UNS wallet
+- [read-wallet](#read-wallet): Display informations of a UNS wallet
 
 ### Global parameters
 
@@ -207,3 +208,56 @@ Redirect stdout to file to create json file with wallet informations:
 ```bash
 uns create-wallet --network devnet >> ./myUNSWallet.json
 ```
+
+### `read-wallet`
+
+#### Introduction
+Command used to display wallet informations
+
+#### Parameters
+
+- `--publicKey` (required if --address not used): Find wallet by public key
+- `--address` (required if --publicKey not used): Find wallet by address
+- `--listunik` (optional): Display list of UNIK token id owned by the wallet
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns read-wallet [--publicKey {wallet publicKey} || --address {wallet address}] [--listunik]
+```
+
+#### Example
+
+Display wallet informations and list of UNIK token owned by this wallet
+```bash
+uns read-wallet --address DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN --listunik --network devnet
+```
+
+#### Output
+
+```
+$ read-wallet --address DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN --listunik --network devnet
+UNS WALLET:
+	address: DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN
+	publicKey: 02b11f00c5aaa77c257241738fb92f5b267b87258fd517d95d1f19235e4dc395f6
+	username: null
+	secondPublicKey: null
+	balance: 2099 DUNS
+	isDelegate: false
+	vote: null
+	numberOfUNIK: 3
+
+CONTEXT:
+	network: devnet
+	node: https://forger1.devnet.uns.network
+	readDateTime: ...
+	height: ...
+
+LIST OF UNIK:
+	unikid: ecae7045b637c31ed31d1cddbcc8433f161321753c76635bfe04ce5fb9a34eb6
+	unikid: f96fbd620e90130c178deb9f19dc8b5677a1913899e66c47a90d55dd54713866
+	unikid: 08a57d5d28eb73b8dbb1e78bc61321b1304195e56bec3dcac3b2de684dd2e1cf
+```
+For information: Wallet's balance is updated applying each transaction that engages the wallet (recipient or sender). Wallets are stored in-memory and are loaded by the node when it starts.
