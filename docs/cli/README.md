@@ -11,7 +11,7 @@ Universal Name System provides an interactive command line interface to create a
 **Mainnet is not launched yet, please use devnet**.
 
 ## Requirements
-UNS CLI installation requires some dependencies to be installed. It is expected to work on recent Linux and Mac OSX installations.
+UNS CLI installation requires some dependencies to be installed. It is expected to work on recent Linux and MacOS installations.
 
 ### Node.js
 
@@ -53,7 +53,7 @@ $ uns version
 - [status](#status): Displays blockchain status
 - [create-unik](#create-unik): Create a UNIK nft token
 - [create-wallet](#create-wallet): Create a UNS wallet
-- [read-wallet](#read-wallet): Display informations of a UNS wallet
+- [read-wallet](#read-wallet): Display information of a UNS wallet
 
 ### Global parameters
 
@@ -103,7 +103,7 @@ uns status --network devnet
 ```
 
 #### Output
-Command displays some blockchain informations
+Command displays some blockchain information
 
 ```
 $ uns status --network devnet
@@ -186,7 +186,7 @@ uns create-wallet --network devnet
 
 #### Output
 
-If the wallet creation succeed UNS CLI displays your wallet informations.
+If the wallet creation succeed UNS CLI displays your wallet information.
 
 ```
 $ uns create-wallet
@@ -203,7 +203,7 @@ $ uns create-wallet
 
 ```
 
-Redirect stdout to file to create json file with wallet informations:
+Redirect stdout to file to create json file with wallet information:
 
 ```bash
 uns create-wallet --network devnet >> ./myUNSWallet.json
@@ -212,7 +212,7 @@ uns create-wallet --network devnet >> ./myUNSWallet.json
 ### `read-wallet`
 
 #### Introduction
-Command used to display wallet informations
+Command used to display wallet information
 
 #### Parameters
 
@@ -230,7 +230,7 @@ uns read-wallet [--publicKey {wallet publicKey} || --address {wallet address}] [
 
 #### Example
 
-Display wallet informations and list of UNIK token owned by this wallet
+Display wallet information and list of UNIK token owned by this wallet
 ```bash
 uns read-wallet --address DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN --listunik --network devnet
 ```
