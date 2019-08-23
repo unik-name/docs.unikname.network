@@ -66,6 +66,12 @@ For now you can only get its owner address.
 GET /api/v2/nfts/{id}
 ```
 
+#### Path Parameters
+
+| Name  | Type    | Description                                   | Required |
+| :---- | :-----: | :-------------------------------------------- | :------: |
+| id    | string  | Identifier of NFT wearing queried property    |   ✅     |
+
 #### Examples
 
 ```sh
@@ -91,6 +97,12 @@ And sometimes, you want to read these properties.
 ```HTTP
 GET /api/v2/nfts/{id}/properties
 ```
+
+#### Path Parameters
+
+| Name  | Type    | Description                                   | Required |
+| :---- | :-----: | :-------------------------------------------- | :------: |
+| id    | string  | Identifier of NFT wearing queried property    |   ✅     |
 
 #### Query Parameters
 
@@ -119,6 +131,37 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03
     },
     "data":[
         {"key":"shape","value":"rectangle"}
+    ]
+}
+```
+
+## Get specific NFT property
+
+You can access quickly to a specific NFT property with this endpoint : get its value and some meta-data.
+
+#### Endpoint
+
+```HTTP
+GET /api/v2/nfts/{id}/properties/{key}
+```
+
+#### Path Parameters
+
+| Name  | Type    | Description                                   | Required |
+| :---- | :-----: | :-------------------------------------------- | :------: |
+| id    | string  | Identifier of NFT wearing queried property    |   ✅     |
+| key   | string  | Property key you want to read                 |   ✅     |
+
+#### Examples
+
+```sh
+curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties/type
+```
+
+```json
+{
+    "data":[
+        {"key":"type","value":"1"}
     ]
 }
 ```
