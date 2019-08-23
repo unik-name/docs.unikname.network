@@ -1,41 +1,44 @@
 {
-  "name": "@uns/docs",
-  "description": "Official documentation for the UNS Ecosystem",
+  "name": "@uns/docs.uns.network",
+  "version": "1.0.0",
+  "description": "Official documentation for the UNS blockchain",
   "contributors": [
-    "Brian Faust <brian@ark.io>",
-    "Guillaume Nicolas <guillaume@spacelephant.org>"
+    "Fabien Tréguer <fabien.treguer@spacelephant.org>",
+    "Damien Lecan <damien.lecan@spacelephant.org>",
+    "Guillaume Nicolas <guillaume.nicolas@spacelephant.org>",
+    "Laurent Lourenco <laurent.lourenco@spacelephant.org>"
   ],
   "license": "MIT",
   "keywords": [
     "ark",
     "uns",
+    "universal-name-system",
+    "DID",
+    "UNIK",
+    "unik-name",
     "blockchain",
     "crypto",
     "dpos",
-    "docs",
-    "api"
+    "CLI",
+    "api",
+    "docs"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/universal-name-system/docs.git"
+    "url": "git+https://github.com/unik-name/docs.uns.network.git"
   },
   "bugs": {
-    "url": "https://github.com/universal-name-system/docs/issues"
+    "url": "https://github.com/unik-name/docs.uns.network/issues"
   },
-  "homepage": "https://github.com/universal-name-system/docs",
+  "homepage": "https://docs.uns.network",
+  "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
-  },
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"  },
   "devDependencies": {
-    "axios": "^0.18.0",
     "highlight.js": "^9.13.1",
-    "nprogress": "^0.2.0",
-    "sweetalert": "^2.1.0",
     "vue": "^2.5.21",
-    "vue-tabs-component": "^1.5.0",
-    "vuepress": "^1.0.0-alpha.44",
-    "vuepress-plugin-tabs": "^0.2.0"
+    "vuepress": "^1.0.3"
   },
   "dependencies": {
     "vuepress-plugin-sitemap": "^2.1.2"
