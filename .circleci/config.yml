@@ -17,7 +17,7 @@ jobs:
             - ./node_modules
       - run:
           name: Build
-          command: yarn build
+          command: yarn docs:build
 workflows:
   version: 2
   test:
