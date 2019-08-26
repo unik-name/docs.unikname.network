@@ -169,4 +169,4 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03
 
 ## UNS token APIs
 
-UNS token APIs are not specific to the UNS Network, they're coming from ARK standards. So the full documentation of [ARK APIs is available here](https://arkdoc-23.developer.uns.network/docs/api).
+UNS token APIs are not specific to the UNS Network, they're coming from ARK standards. So the full documentation of [ARK APIs is available here](https://arkdoc-23.docs.uns.network/api).
