@@ -7,7 +7,7 @@ title: "UNS APIs"
 
 [[TOC]]
 
-## UNIK token API
+## UNIK token APIs
 
 Non-fungible token management is one of our main features.
 To understand this functionality and get technical details, you can read our [proposal](https://github.com/ArkEcosystem/AIPs/issues/70) to Ark community.
@@ -75,6 +75,12 @@ For now you can only get its owner address.
 GET /api/v2/nfts/{id}
 ```
 
+#### Path Parameters
+
+| Name  | Type    | Description                                   | Required |
+| :---- | :-----: | :-------------------------------------------- | :------: |
+| id    | string  | Identifier of NFT wearing queried property    |   ✅     |
+
 #### Examples
 
 ```sh
@@ -100,6 +106,12 @@ And sometimes, you want to read these properties.
 ```HTTP
 GET /api/v2/nfts/{id}/properties
 ```
+
+#### Path Parameters
+
+| Name  | Type    | Description                                   | Required |
+| :---- | :-----: | :-------------------------------------------- | :------: |
+| id    | string  | Identifier of NFT wearing queried property    |   ✅     |
 
 #### Query Parameters
 
@@ -132,6 +144,29 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03
 }
 ```
 
-## UNS token API
+### Get specific NFT property
 
-The UNS token API are not specific to the UNS Network, they're coming from ARK stanrards. So the full documentation of [ARK API is available here](https://arkdoc-23.developer.uns.network/docs/api).
+You can access quickly to a specific NFT property with this endpoint : get its value and some meta-data.
+
+#### Endpoint
+
+```HTTP
+GET /api/v2/nfts/{id}/properties/{key}
+```
+
+#### Path Parameters
+
+| Name  | Type    | Description                                   | Required |
+| :---- | :-----: | :-------------------------------------------- | :------: |
+| id    | string  | Identifier of NFT wearing queried property    |   ✅     |
+| key   | string  | Property key you want to read                 |   ✅     |
+
+#### Examples
+
+```sh
+curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties/type
+```
+
+## UNS token APIs
+
+UNS token APIs are not specific to the UNS Network, they're coming from ARK standards. So the full documentation of [ARK APIs is available here](https://arkdoc-23.developer.uns.network/docs/api).
