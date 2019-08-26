@@ -139,7 +139,7 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03
         "last":"/api/v2/nfts/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100"
     },
     "data":[
-        {"key":"shape","value":"rectangle"}
+        {"shape":"rectangle"}
     ]
 }
 ```
@@ -165,6 +165,12 @@ GET /api/v2/nfts/{id}/properties/{key}
 
 ```sh
 curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties/type
+```
+
+```json
+{
+    "data":"2"
+}
 ```
 
 ## UNS token APIs
