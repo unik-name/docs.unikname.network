@@ -212,33 +212,32 @@ uns create-wallet --network devnet >> ./myUNSWallet.json
 ### `read-wallet`
 
 #### Introduction
-Command used to display wallet information
+Read current data of a specified wallet, ic. balance
 
 #### Parameters
 
-- `--publicKey` (required if --address not used): Find wallet by public key
-- `--address` (required if --publicKey not used): Find wallet by address
-- `--listunik` (optional): Display list of UNIK token id owned by the wallet
+- `--idwallet` (required): the ID of the wallet. Can be either the publicKey or the address of the wallet.
+- `--listunik` (optional): list UNIK tokens owned by the wallet, if any.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
 
 ```bash
-uns read-wallet [--publicKey {wallet publicKey} || --address {wallet address}] [--listunik]
+uns read-wallet --idwallet {wallet identifier}] [--listunik]
 ```
 
 #### Example
 
 Display wallet information and list of UNIK token owned by this wallet
 ```bash
-uns read-wallet --address DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN --listunik --network devnet
+uns read-wallet --idwallet DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN --listunik --network devnet
 ```
 
 #### Output
 
 ```bash
-$ read-wallet --address DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN --listunik --network devnet
+$ uns read-wallet --idwallet DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN --listunik --network devnet
 UNS WALLET:
 	address: DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN
 	publicKey: 02b11f00c5aaa77c257241738fb92f5b267b87258fd517d95d1f19235e4dc395f6
@@ -252,8 +251,8 @@ UNS WALLET:
 CONTEXT:
 	network: devnet
 	node: https://forger1.devnet.uns.network
-	readDateTime: ...
-	height: ...
+	readDateTime: 2019-08-27T08:45:40.000Z
+	height: 460
 
 LIST OF UNIK:
 	unikid: ecae7045b637c31ed31d1cddbcc8433f161321753c76635bfe04ce5fb9a34eb6
@@ -261,3 +260,49 @@ LIST OF UNIK:
 	unikid: 08a57d5d28eb73b8dbb1e78bc61321b1304195e56bec3dcac3b2de684dd2e1cf
 ```
 For information: Wallet's balance is updated applying each transaction that engages the wallet (recipient or sender). Wallets are stored in-memory and are loaded by the node when it starts.
+
+
+### `read-unik`
+
+#### Introduction
+Read current data of a specified UNIK token
+
+#### Parameters
+
+- `--unikid` (required): the ID of the UNIK token
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns read-unik --unikid {UNIK token id}]
+```
+
+#### Example
+
+Display UNIK informations
+```bash
+uns read-unik --unikid 2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d --network devnet
+```
+
+#### Output
+
+```bash
+$ uns read-unik --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet
+UNIK:
+	unikid: 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759
+	owner address: DNBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo
+	creation block: 2581339445265943992
+	creation transaction: 30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2
+	creation date: 2019-08-26T13:06:10.000Z
+	properties: 
+		 { type: '1' }
+
+CONTEXT:
+	network: devnet
+	node: https://forger1.devnet.uns.network
+	readDateTime: 2019-08-27T08:45:40.000Z
+	height: 460
+
+```
