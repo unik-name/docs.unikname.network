@@ -67,7 +67,9 @@ curl https://forger1.devnet.uns.network/api/v2/nfts
 
 Get more information about a UNIK with a known identifier.
 
-For now you can only get its owner address.
+For now you can get its owner address, the first transaction (UNIK creation) and the last transaction that modifies the UNIK state.
+
+API retrieves chain meta-datas (`chainmeta`) corresponding to current block height and timestamp to allow verifing data integrity between API calls.
 
 #### Endpoint
 
@@ -91,7 +93,23 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/76db9d8300b3e37540b2f8baaa0a
 {
     "data":{
         "id":"76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493",
-        "ownerId":"DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe"
+        "ownerId":"DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe",
+        "transactions": {
+          "first": {
+            "id": "30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2"
+         },
+          "last": {
+            "id": "30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2"
+          }
+        }
+    },
+    "chainmeta": {
+        "height": 757,
+        "timestamp": {
+            "epoch": 76809124,
+            "unix": 1566906724,
+            "human": "2019-08-27T11:52:04.000Z"
+        }
     }
 }
 ```
@@ -100,6 +118,8 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/76db9d8300b3e37540b2f8baaa0a
 
 One of the differences between a protocol token and a non-fungible token is that you can attach properties on it. 
 And sometimes, you want to read these properties. 
+
+API retrieves chain meta-datas (`chainmeta`) corresponding to current block height and timestamp to allow verifing data integrity between API calls.
 
 #### Endpoint
 
@@ -140,7 +160,15 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03
     },
     "data":[
         {"shape":"rectangle"}
-    ]
+    ],
+    "chainmeta": {
+        "height": 757,
+        "timestamp": {
+            "epoch": 76809124,
+            "unix": 1566906724,
+            "human": "2019-08-27T11:52:04.000Z"
+        }
+    }
 }
 ```
 
@@ -172,6 +200,112 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03
     "data":"2"
 }
 ```
+
+## Public Wallets API
+
+Wallets are addresses containing, or previously having contained ARK. A wallet's public key may be unknown to the network, in that case, it is referred to as a `cold wallet`.
+
+### Retrieve a Wallet
+
+Specific wallets can be obtained either by their `publicKey` or `address`.
+
+API retrieves chain meta-datas (`chainmeta`) corresponding to current block height and timestamp to allow verifing data integrity between API calls.
+
+#### Endpoint
+
+```
+GET /api/v2/wallets/{id}
+```
+
+#### Path Parameters
+
+| Name |  Type  | Description                                   |      Required      |
+| :--- | :----: | :-------------------------------------------- | :----------------: |
+| id   | string | The identifier of the wallet to be retrieved. | :white_check_mark: |
+
+#### Response
+
+```json
+{
+  "data": {
+    "address": "D9YiyRYMBS2ofzqkufjrkB9nHofWgJLM7f",
+    "publicKey": "0306950dae7158103814e3828b1ab97a87dbb3680db1b4c6998b8208865b2f9db7",
+    "username": "bongoninja",
+    "secondPublicKey": null,
+    "balance": 12534670000000,
+    "isDelegate": true
+  },
+    "chainmeta": {
+        "height": 757,
+        "timestamp": {
+            "epoch": 76809124,
+            "unix": 1566906724,
+            "human": "2019-08-27T11:52:04.000Z"
+        }
+    }
+}
+```
+
+## Public Transactions API
+
+Transactions are signed, serialized payloads; batched together to form a [block](/api/public/v2/blocks.md).
+
+### Retrieve a Transaction
+
+Obtaining a transaction by ID does not require advanced logic; as the API does not return a serialized transaction, but a nicer [DTO](https://en.wikipedia.org/wiki/Data_transfer_object).
+
+API retrieves chain meta-datas (`chainmeta`) corresponding to current block height and timestamp to allow verifing data integrity between API calls.
+
+#### Endpoint
+
+```
+GET /api/v2/transactions/{id}
+```
+
+#### Path Parameters
+
+| Name |  Type  | Description                                        |      Required      |
+| :--- | :----: | :------------------------------------------------- | :----------------: |
+| id   | string | The identifier of the transaction to be retrieved. | :white_check_mark: |
+
+#### Response
+
+```json
+{
+  "data": {
+    "id": "5c6ce775447a5acd22050d72e2615392494953bb1fb6287e9ffb3c33eaeb79aa",
+    "blockId": "4271682877946294396",
+    "type": 0,
+    "amount": 32106400000,
+    "fee": 10000000,
+    "sender": "DDiTHZ4RETZhGxcyAi1VruCXZKxBFqXMeh",
+    "recipient": "DQnQNoJuNCvpjYhxL7fsnGepHBqrumgsyP",
+    "signature": "3044022047c39f6f45a46a87f91ca867f9551dbebf0035adcfcbdc1370222c7a1517fc0002206fb5ecc10460e0352a8b626a508e2fcc76e39e490b0a2581dd772ebc8079696e",
+    "confirmations": 1928,
+    "timestamp": {
+      "epoch": 32794053,
+      "unix": 1522895253,
+      "human": "2018-04-05T02:27:33Z"
+    }
+  },
+    "chainmeta": {
+        "height": 757,
+        "timestamp": {
+            "epoch": 76809124,
+            "unix": 1566906724,
+            "human": "2019-08-27T11:52:04.000Z"
+        }
+    }
+}
+```
+
+
+
+
+
+
+
+
 
 ## UNS token APIs
 
