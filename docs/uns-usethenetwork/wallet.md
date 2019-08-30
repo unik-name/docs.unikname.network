@@ -9,55 +9,53 @@ title: Wallets for UNS tokens and UNIK tokens
 
 Both UNS and UNIK tokens are manageable with a command line interface (CLI). But this is not really user-friendly. 
 
-ArkEcosystem comes with a lot of out-of-the-box tools for bridgechains like UNS. 
-Among those tools, we have the awesome [Desktop Wallet](https://ark.io/wallet) which is fully compatible with UNS network. 
-From a single wallet application, you can manage your ARK **AND** UNS tokens easily. 
-By default, the app connects to Ark mainnet. But with a simple configuration, you can connect to UNS too. Let's do it !
+ArkEcosystem comes with a lot of out-of-the-box tools for bridgechains like UNS. Among those tools, we have the awesome [Desktop Wallet](https://ark.io/wallet) which is fully compatible with UNS network. From a single wallet application, you can manage your ARK **AND** UNS tokens easily. By default, the app connects to Ark mainnet. But with a simple configuration, you can connect it to UNS network too. Let's do it !
 
-:warning: *this tutorial has been written for the Ark desktop wallet verion `2.6`. It could not work properly with newer versions.* 
+### How to setup the default ARK Desktop Wallet to work with UNS tokens
 
-First of all, download and install the app for your platform : https://ark.io/wallet
-*works with Windows, macOS and Linux*
+> :warning: *this tutorial has been written for the Ark desktop wallet verion `2.6`. It could not work properly with newer versions.*
 
-Unfortunately, you must setup Ark wallet first before to be able to setup UNS wallet. 
-So, follow Ark [instructions](https://docs.ark.io/tutorials/usage-guides/how-to-use-ark-desktop-wallet.html) on how to setup and use application. 
-From now, you should have a perfectly configured desktop application to manage ARK tokens. 
-But, if you're here, it's probably to configure application to manage UNS token and here we are. 
-It's simple and it requires only two steps: 
-- setup new network configuration
+First of all, download and install the app for your platform : https://ark.io/wallet  *(works with Windows, macOS and Linux)*
+
+You must setup the wallet for ARK tokens first, then you will be able to setup the wallet to work with the UNS tokens. 
+
+So, follow Ark [instructions](https://docs.ark.io/tutorials/usage-guides/how-to-use-ark-desktop-wallet.html) on how to setup and use the application. 
+
+From now, you should have a perfectly configured desktop application to manage your ARK tokens.
+To manage UNS tokens it's simple and it requires only two additional steps: 
+- setup a new network configuration
 - create a new dedicated profile.
 
-### 1. Setup a new network configuration
+#### step 1. Setup the UNS network configuration
 
-Go to `manage network` section (bottom-left of navigation bar).
-Then click on : `Add a new network` (top-right)
+Go to `manage network` section (bottom-left of navigation bar).  
+Then click on : `Add a new network` (top-right)  
 Fill inputs:
 - name: **UNS Devnet**
 - description: **UNS devnet network**
 - seed server: **http://163.172.146.222:4200**
+
 And click on `Fetch` to automatically get full node configuration (like token name, explorer url or wallet derivation keys).
 
 Guess what 🤔, you've just completed the first step to configure your wallet ! Congrats 🎉
 
-### 2. Crate a new dedicated profile
+#### step 2. Create a dedicated profile
 
-Click on your profile (last item of navigation bar).
-Then `Add profile` (top-left). 
-Fill-in all inputs like you did for Ark profile.
-Now, in step `2. Network` you can choose the freshly appeared `UNS Devnet` item.
-At the end, you should have a fully configured Desktop wallet able to transfer UNS, create wallets, vote for delegates, or any other features inherited from ArkEcosystem.
+Click on your profile (last item of navigation bar).  
+Then `Add profile` (top-left).  
+Fill-in all inputs like you did for Ark profile.  
+Now, in step `2. Network` you can choose the freshly appeared `UNS Devnet` item.  
 
-If you want to start playing, you can contact us and we'll send you `DUNS` : our Devnet UNS tokens.
+At the end, you should have a fully configured Desktop wallet able to transfer UNS tokens, create UNS wallets, vote for UNS delegates, or any other features inherited from ArkEcosystem.
 
-Management of UNIK tokens require the @unik-name APP.
+If you want to start playing, you can contact us and we'll send you some `DUNS` tokens over the devnet.
 
-### How to setup Desktop Wallet
-
+> NOTA: Management of UNIK tokens is not able with the default Ark Wallet, it requires the installation of the @unik-name APP.
 
 
 ## @unik-name APP
 
-The @unik-name mobile APP is not only an app to manage his/her owns @unik-names and its properties. The @unik-name mobile APP is also, and before all, a wallet. This APP embed cryptographic and secured features like handling pass phrase, handling private keys and calculating public addresses. 
+The @unik-name mobile APP is not only an app to manage your owns @unik-names and its properties. The @unik-name mobile APP is also, and before all, a wallet. This APP embed cryptographic and secured features like handling pass phrase, handling private keys and calculating public addresses. 
 
 So the @unik-name mobile APP is the prefered user APP to manage @unik-names but also UNS tokens, UNIK tokens, and to trigger transactions requiring tokens.
 
