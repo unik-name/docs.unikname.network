@@ -9,7 +9,7 @@ UNS blockchain runs with a protocol token used to secure the network and to rewa
 
 UNS blockchain works also with another token, a NFT Token representing @unik-name Identifiers. This is the `UNIK Token`.
 
-These two tokens are linked with smart-contract and their combination is the key concept of the Universal-Name-System. They ensure privacy and integrity of user’s registry and they're the key to provides universal DID Services such as new way of user's authentication and platform connections. 
+These two tokens are linked with smart-contract and their combination is the key concept of the Universal-Name-System. They ensure privacy and integrity of user’s registry and they're the key to provides universal DID Services such as new way of user's authentication and platform connections.
 
 ## The UNS Token
 
@@ -42,7 +42,10 @@ Every @unik-name is secured by the blockchain. Once chosen, a smart-contract min
 
 There are as many UNIK tokens in the chain as there are @unik-names that exist.
 
-UNIK tokens belong to the owners of @unik-name wallets. The private keys enabling access to UNIKs are the private keys of @unik-name wallet, so they're the same as the private keys enabling acces to UNS tokens of the owners.   
+UNIK tokens belong to the owners of @unik-name wallets. The private keys enabling access to UNIKs are the private keys of @unik-name wallet, so they're the same as the private keys enabling acces to UNS tokens of the owners.
+
+The UNIK token is based on Ark Core technology, et more precisely on its NFT specialized fork, available in the Github's project [Ark Core NFT](https://github.com/spacelephantlabs/ark-core_non-fungible-token).
+Ark Core NFT specifications are discussed in the standard _Ark Improvement Process_ and are available in their dedicated [AIPs issue](https://github.com/ArkEcosystem/AIPs/issues/70).
 
 ### UNIK Token remarkable properties
 
