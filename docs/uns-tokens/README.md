@@ -62,3 +62,16 @@ Ark Core NFT specifications are discussed in the standard _Ark Improvement Proce
 ### UNIK Token Issuance
 
 Only accredited nodes can mint UNIK in the chain. These nodes belongs to Network Players owning a `UNIK Factory Licence`, they're called `UNIK Factory Nodes` or simply `Factory Nodes`.
+
+### Existing UNIK properties
+
+#### `type`
+
+Type of the UNIK.
+
+Each kind of `type` have different features, behaviors of the UNS Network and governance processes.
+
+**Possible Values**
+
+- `1`: UNIK for individuals
+- `2`: UNIK for organisations
