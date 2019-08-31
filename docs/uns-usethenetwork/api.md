@@ -175,4 +175,29 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03
 
 ## UNS token APIs
 
-UNS token APIs are not specific to the UNS Network, they're coming from ARK standards. So the full documentation of [ARK APIs is available here](https://arkdoc-23.docs.uns.network/api).
+UNS token APIs are not specific to the UNS Network, they're coming from ARK standards. As a consequence all ARK API are working on the UNS network.
+
+For example the API `/blockain` used to retrieve latest block and supply in the chain
+```
+curl --header "API-Version: 2" https://api.ark.io/api/blockchain
+```
+
+works also on the uns network
+
+```
+curl --header "API-Version: 2" https://forger1.devnet.uns.network/api/blockchain
+```
+
+```json
+{
+  "data": {
+    "block": {
+      "height": 91519,
+      "id": "8711914249079958250"
+    } ,
+    "supply": 2118303800000000
+  }
+}
+```
+
+The full documentation of [ARK APIs is available here](https://arkdoc-23.docs.uns.network/api).
