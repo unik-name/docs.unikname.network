@@ -276,7 +276,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns read-unik --unikid {UNIK token id}]
+uns read-unik --unikid {UNIK token id}
 ```
 
 #### Example
@@ -358,4 +358,48 @@ CLI throws error because of the actual number of confirmations of the last trans
 ```bash
 $ uns get-properties --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet --confirmed 300
 ›   Error: [get-properties] Not enough confirmations (expected: 300, actual: 217)
+```
+
+### `set-properties`
+
+#### Introduction
+Set (add or update) properties of UNIK token.
+
+#### Parameters
+
+- `--unikid` (required): the ID of the UNIK token
+- `-p --properties` (required): Array of properties to set.
+  
+  `"key1:value1" "key3:"` Sets `value1` to `key1` and empty string to `key3`
+- `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
+  
+  `0` for immediate return.
+- `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
+- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
+- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns set-properties --unikid {UNIK token id} --properties "key:value" "key3:" --network devnet
+```
+
+#### Example
+
+Add property `key/value` to UNIK `2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d`
+```bash
+uns set-properties --unikid 2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d --network devnet --properties "key:value"
+```
+
+#### Output
+
+```bash
+$ uns set-properties --unikid 2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d --network devnet --properties "key:value"
+
+unikid:  2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d
+transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
+confirmations:  1
+
 ```
