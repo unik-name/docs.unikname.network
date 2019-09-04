@@ -310,11 +310,11 @@ CONTEXT:
 ### `get-properties`
 
 #### Introduction
-Get properties of UNIK token.
+Get properties of UNIK token. The command will fail if the minimum number of confirmations has not been reached yet.
 
 #### Parameters
 
-- `--unikid` (required): The UNIK token on which to set the properties.
+- `--unikid` (required): The UNIK token on which to get the properties.
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
 
 Some [global parameters](#global-parameters) may apply to this command.
