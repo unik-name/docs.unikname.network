@@ -374,9 +374,14 @@ Set (add or update) properties of UNIK token.
 - `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
   
   `0` for immediate return.
+  Needs to be strictly greater than `--confirmation` flag
 - `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
+
+  Needs to be strictly lower than `--await` flag
 - `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+
+It's impossible to ask more confirmations (with the --confirmations flag) than the number of blocks CLI waits (--await). Only 1 confirmation possible by block.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
