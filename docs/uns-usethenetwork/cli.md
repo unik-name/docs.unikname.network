@@ -306,3 +306,56 @@ CONTEXT:
 	height: 460
 
 ```
+
+### `get-properties`
+
+#### Introduction
+Get properties of UNIK token.
+
+#### Parameters
+
+- `--unikid` (required): The UNIK token on which to set the properties.
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns get-properties --unikid {UNIK token id} --network devnet
+```
+
+#### Examples
+
+##### Success example
+
+Display UNIK properties
+```bash
+uns get-properties --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet
+```
+
+##### Success output example
+
+```bash
+$ uns get-properties --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet
+UNIK:
+	unikid: 2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d
+	properties: 
+		 { type: '2' }
+	confirmations: 217
+```
+
+##### Failing example
+
+Display UNIK properties with at least 300 confirmations since the last UNIK token update
+```bash
+uns get-properties --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet --confirmed 300
+```
+
+##### Failing output example
+
+CLI throws error because of the actual number of confirmations of the last transaction that have updated UNIK token is lower than expected.
+```bash
+$ uns get-properties --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet --confirmed 300
+›   Error: [get-properties] Not enough confirmations (expected: 300, actual: 217)
+```
