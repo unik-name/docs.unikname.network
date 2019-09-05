@@ -86,6 +86,8 @@ $ uns version
 Command used to display blockchain status.
 
 #### Parameters
+- `-f --format`: Specify how to format the output [json|table|yaml]. Default to Json.
+
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
