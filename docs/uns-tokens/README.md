@@ -74,4 +74,5 @@ Each kind of `type` have different features, behaviors of the UNS Network and go
 **Possible Values**
 
 - `1`: UNIK for individuals
-- `2`: UNIK for organisations
+- `2`: UNIK for organizations
+- `3`: UNIK for networks
