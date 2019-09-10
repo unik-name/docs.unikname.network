@@ -246,6 +246,41 @@ GET /api/v2/wallets/{id}
 }
 ```
 
+
+### Retrieve tokens from wallet
+
+Retrive UNIKs from a specific wallet.
+Specific wallet can be obtained either by their `publicKey` or `address`.
+
+#### Endpoint
+
+```
+GET /api/v2/wallets/{id}/uniks
+```
+
+#### Path Parameters
+
+| Name |  Type  | Description                                   |      Required      |
+| :--- | :----: | :-------------------------------------------- | :----------------: |
+| id   | string | `publicKey` or `address` of the wallet. | :white_check_mark: |
+
+#### Response
+
+```json
+{
+  "data": [
+    {
+      "id": "aeb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814f",
+      "ownerId": "AHysG9CfbXvHtxev9eziTK8WUbnFKKLFR8"
+    },
+    {
+      "id": "6ab8c6714a9f82b4b3430eef226e004526ff9028a278081e400fe81a2a0486e1",
+      "ownerId": "AHysG9CfbXvHtxev9eziTK8WUbnFKKLFR8"
+    }
+  ],
+}
+```
+
 ## Public Transactions API
 
 Transactions are signed, serialized payloads; batched together to form a [block](/api/public/v2/blocks.md).
