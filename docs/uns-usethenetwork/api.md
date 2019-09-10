@@ -316,6 +316,18 @@ GET /api/v2/transactions/{id}
     "sender": "DDiTHZ4RETZhGxcyAi1VruCXZKxBFqXMeh",
     "recipient": "DQnQNoJuNCvpjYhxL7fsnGepHBqrumgsyP",
     "signature": "3044022047c39f6f45a46a87f91ca867f9551dbebf0035adcfcbdc1370222c7a1517fc0002206fb5ecc10460e0352a8b626a508e2fcc76e39e490b0a2581dd772ebc8079696e",
+    "asset": {
+      "nft": {
+        "unik": {
+          "tokenId": "a1f1121145c2dda819d5bc3017e77cc747f847fdcc84e0397b40b633a049a8d4",
+          "properties": {
+            "⚠": "👌",
+            "🌈": "💪",
+            "color": "blue"
+          }
+        }
+      }
+    },
     "confirmations": 1928,
     "timestamp": {
       "epoch": 32794053,
