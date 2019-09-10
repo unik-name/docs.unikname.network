@@ -79,9 +79,9 @@ GET /api/v2/uniks/{id}
 
 #### Path Parameters
 
-| Name  | Type    | Description                                   | Required |
-| :---- | :-----: | :-------------------------------------------- | :------: |
-| id    | string  | Identifier of NFT wearing queried property    |   ✅     |
+| Name  | Type    | Description                                    | Required |
+| :---- | :-----: | :--------------------------------------------- | :------: |
+| id    | string  | Identifier of UNIK wearing queried property    |   ✅     |
 
 #### Examples
 
@@ -129,9 +129,9 @@ GET /api/v2/uniks/{id}/properties
 
 #### Path Parameters
 
-| Name  | Type    | Description                                   | Required |
-| :---- | :-----: | :-------------------------------------------- | :------: |
-| id    | string  | Identifier of NFT wearing queried property    |   ✅     |
+| Name  | Type    | Description                                    | Required |
+| :---- | :-----: | :--------------------------------------------- | :------: |
+| id    | string  | Identifier of UNIK wearing queried property    |   ✅     |
 
 #### Query Parameters
 
@@ -172,9 +172,9 @@ curl https://forger1.devnet.uns.network/api/v2/uniks/86869b8e0a12cd46d96b96816e0
 }
 ```
 
-### Get specific NFT property
+### Get specific UNIK property
 
-You can access quickly to a specific NFT property with this endpoint : get its value and some meta-data.
+You can access quickly to a specific UNIK property with this endpoint: get its value and some meta-data.
 
 #### Endpoint
 
@@ -184,10 +184,10 @@ GET /api/v2/uniks/{id}/properties/{key}
 
 #### Path Parameters
 
-| Name  | Type    | Description                                   | Required |
-| :---- | :-----: | :-------------------------------------------- | :------: |
-| id    | string  | Identifier of NFT wearing queried property    |   ✅     |
-| key   | string  | Property key you want to read                 |   ✅     |
+| Name  | Type    | Description                                    | Required |
+| :---- | :-----: | :--------------------------------------------- | :------: |
+| id    | string  | Identifier of UNIK wearing queried property    |   ✅     |
+| key   | string  | Property key you want to read                  |   ✅     |
 
 #### Examples
 
