@@ -26,7 +26,7 @@ Due to the large number of minted tokens, a request returns a finite number of t
 #### Endpoint
 
 ```HTTP
-GET /api/v2/nfts
+GET /api/v2/uniks
 ```
 
 #### Query Parameters
@@ -39,7 +39,7 @@ GET /api/v2/nfts
 #### Examples
 
 ```sh
-curl https://forger1.devnet.uns.network/api/v2/nfts
+curl https://forger1.devnet.uns.network/api/v2/uniks
 ```
 
 ```json
@@ -48,11 +48,11 @@ curl https://forger1.devnet.uns.network/api/v2/nfts
         "count":4,
         "pageCount":2,
         "totalCount":104,
-        "next":"/api/v2/nfts?page=2&limit=100",
+        "next":"/api/v2/uniks?page=2&limit=100",
         "previous":null,
-        "self":"/api/v2/nfts?page=1&limit=100",
-        "first":"/api/v2/nfts?page=1&limit=100",
-        "last":"/api/v2/nfts?page=2&limit=100"
+        "self":"/api/v2/uniks?page=1&limit=100",
+        "first":"/api/v2/uniks?page=1&limit=100",
+        "last":"/api/v2/uniks?page=2&limit=100"
     },
     "data":[
         {"id":"641f85b721569fef4c4d1458b47ad12de97d3c432e5d95f3cdc8a53becc69a78","ownerId":"DQYXg6vydVD83ZStQTBY5mv3CfHZc7oZbW"},
@@ -74,7 +74,7 @@ API retrieves chain meta-datas (`chainmeta`) corresponding to current block heig
 #### Endpoint
 
 ```HTTP
-GET /api/v2/nfts/{id}
+GET /api/v2/uniks/{id}
 ```
 
 #### Path Parameters
@@ -86,7 +86,7 @@ GET /api/v2/nfts/{id}
 #### Examples
 
 ```sh
-curl https://forger1.devnet.uns.network/api/v2/nfts/76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493
+curl https://forger1.devnet.uns.network/api/v2/uniks/76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493
 ```
 
 ```json
@@ -124,7 +124,7 @@ API retrieves chain meta-datas (`chainmeta`) corresponding to current block heig
 #### Endpoint
 
 ```HTTP
-GET /api/v2/nfts/{id}/properties
+GET /api/v2/uniks/{id}/properties
 ```
 
 #### Path Parameters
@@ -143,7 +143,7 @@ GET /api/v2/nfts/{id}/properties
 #### Examples
 
 ```sh
-curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties
+curl https://forger1.devnet.uns.network/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties
 ```
 
 ```json
@@ -154,9 +154,9 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03
         "totalCount":1,
         "next":null,
         "previous":null,
-        "self":"/api/v2/nfts/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
-        "first":"/api/v2/nfts/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
-        "last":"/api/v2/nfts/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100"
+        "self":"/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
+        "first":"/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
+        "last":"/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100"
     },
     "data":[
         {"shape":"rectangle"}
@@ -179,7 +179,7 @@ You can access quickly to a specific NFT property with this endpoint : get its v
 #### Endpoint
 
 ```HTTP
-GET /api/v2/nfts/{id}/properties/{key}
+GET /api/v2/uniks/{id}/properties/{key}
 ```
 
 #### Path Parameters
@@ -192,7 +192,7 @@ GET /api/v2/nfts/{id}/properties/{key}
 #### Examples
 
 ```sh
-curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties/type
+curl https://forger1.devnet.uns.network/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties/type
 ```
 
 ```json
@@ -203,7 +203,7 @@ curl https://forger1.devnet.uns.network/api/v2/nfts/86869b8e0a12cd46d96b96816e03
 
 ## Public Wallets API
 
-Wallets are addresses containing, or previously having contained ARK. A wallet's public key may be unknown to the network, in that case, it is referred to as a `cold wallet`.
+Wallets are addresses containing, or previously having contained UNS. A wallet's public key may be unknown to the network, in that case, it is referred to as a `cold wallet`.
 
 ### Retrieve a Wallet
 
