@@ -22,7 +22,7 @@ Different cloud providers offer specific products to host your Docker containers
 - [Azure](https://azure.microsoft.com/en-us/services/kubernetes-service/docker/)
 - [Digital Ocean](https://www.digitalocean.com/products/one-click-apps/docker/)
 
-Orchestrators with Docker as a first class citizen:
+Orchestrators with Docker as a first-class citizen:
 
 - [Kubernetes](https://kubernetes.io/)
 - [Nomad](https://www.nomadproject.io/)
@@ -32,13 +32,13 @@ Orchestrators with Docker as a first class citizen:
 
 First of all, be sure to have these prerequisites:
 - [Docker](https://docs.docker.com/install) installed on your machine
-- [Docker Compose](https://docs.docker.com/compose/install) installed on your machine (only if you want to use it to setup node, documented bellow).
+- [Docker Compose](https://docs.docker.com/compose/install) installed on your machine (only if you want to use it to setup node, documented below).
 - a [Docker](https://hub.docker.com/) account (Sign up if you don't have one yet).
 - Docker CLI must be logged with your docker account (using command [`login`](https://docs.docker.com/engine/reference/commandline/login/))
 
 Currently, our network is in **private alpha mode** so we've deployed docker image to a private repository into our organization.
 
-It means that our code is only accessible via invitation. [Send us](mailto:contact@unik-name.com) your docker ID or email in order to grand you read access. 
+It means that our code is only accessible via invitation. [Send us](mailto:contact@unik-name.com) your docker ID or email in order to grant you read access. 
 
 Once done, you'll be able to pull our `universalnamesystem/core` image.
 
@@ -109,14 +109,14 @@ This file really ease node start, configuring it for you.
 You can run a node without docker-compose with simple docker commands, but we won't describe here.
 :::
 
-From configuration file we can see that 2 services will be started : a node and its database.
+From configuration file we can see that 2 services will be started: a node and its database.
 
-You also have 2 volumes mounted on file system (for node and database files) and a local network for services communication.
+You also have 2 volumes mounted on the file system (for node and database files) and a local network for services communication.
 
 ### The database service
 
-Based on [`postgres` (version 11 and Linux alpine)](https://github.com/docker-library/postgres/blob/0a66d53fface5ccc8274f99712ba2f382a1caf42/11/alpine/Dockerfile), it exposes a single port (`5432`) and requires environnement variables (for db name, user name and password).
-These variables must match with those provided in the node service (see bellow).
+Based on [`postgres` (version 11 and Linux alpine)](https://github.com/docker-library/postgres/blob/0a66d53fface5ccc8274f99712ba2f382a1caf42/11/alpine/Dockerfile), it exposes a single port (`5432`) and requires environment variables (for db name, user name and password).
+These variables must match with those provided in the node service (see below).
 
 ### The node service
 
@@ -125,15 +125,15 @@ The node service is based on our `universalnamesystem/core` image (latest tag).
 It has two exposed ports; for p2p (`4102`) and for API (`4103`), and mount 3 volumes (for logs, forger secret and configuration files).
 
 Some environment variables are set :
-- for database (port, user name, user password and db name)
-- for network (here it's `devnet`, it means that it'll connect to other UNS devnet nodes)
+- for the database (port, user name, user password and db name)
+- for the network (here it's `devnet`, it means that it'll connect to other UNS devnet nodes)
 - and the forger secret (line `FORGER_SECRET`, commented by default). 
 
 ### Run a relay
 
 With the previously created configuration file, you simply have to run `docker-compose up`.
 
-Node starts logging lot of information and tries to reach peers before syncing.
+The node starts logging a lot of information and tries to reach peers before syncing.
 
 ### Run a forger
 
