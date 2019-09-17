@@ -48,12 +48,56 @@ $ uns version
 
 ## UNS CLI Commands
 
-- -h, --help: Help
-- [version, -v, --version](#version): Prompts CLI version
-- [status](#status): Displays blockchain status
-- [create-unik](#create-unik): Create a UNIK nft token
-- [create-wallet](#create-wallet): Create a UNS wallet
-- [read-wallet](#read-wallet): Display information of a UNS wallet
+### Get help
+
+You can get help and list of commands with the following flags
+
+```
+-h, --help: Help
+```
+
+Example:
+
+```bash
+$ uns -h
+uns CLI
+
+VERSION
+  @uns/uns-cli/0.1.0 linux-x64 node-v10.16.2
+
+USAGE
+  $ uns [COMMAND]
+
+COMMANDS
+  create-unik     Create UNIK token
+  create-wallet   Create UNS wallet
+  get-properties  Get properties of UNIK token.
+  help            display help for uns
+  read-unik       Display UNIK token informations
+  read-wallet     Read current data of a specified wallet, ic. balance
+  set-properties  Set (add or update) properties of UNIK token.
+  status          Display blockchain status
+  version         UNS CLI Version
+```
+
+You can get help on a specific command by using the `help` command, followed by your command name.
+
+Example:
+
+```bash
+$ uns help create-wallet
+Create UNS wallet
+
+USAGE
+  $ uns create-wallet
+
+OPTIONS
+  -h, --help              show CLI help
+  --network=devnet|local  (required) Network used to create UNIK nft token (local are for development only)
+
+EXAMPLE
+  $ uns create-wallet --network [devnet|local]
+```
 
 ### Global parameters
 
