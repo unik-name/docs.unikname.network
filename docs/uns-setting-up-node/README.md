@@ -67,7 +67,7 @@ services:
      POSTGRES_USER: uns
 
   uns:
-    image: universalnamesystem/core
+    image: universalnamesystem/core:devnet
     container_name: uns
     restart: always
     environment:
