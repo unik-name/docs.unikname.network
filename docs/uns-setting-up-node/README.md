@@ -85,10 +85,6 @@ services:
       - SYS_NICE
       - SYS_RESOURCE
       - SYS_TIME
-    volumes:
-     - /tmp/uns-data/cfg:/etc/uns
-     - /tmp/uns-data/log:/var/log/uns
-     - /tmp/uns-data/key:/run/secrets
     networks:
       - core 
     tty: true
@@ -98,7 +94,6 @@ services:
       - postgres
 volumes:
   postgres:
-  core:
 networks:
   core:
 ```
@@ -107,6 +102,10 @@ This file really ease node start, configuring it for you.
 
 ::: tip
 You can run a node without docker-compose with simple docker commands, but we won't describe here.
+:::
+
+::: tip
+If you want to get access to log and configuration file, you can map a volume to `/etc/uns` and `/var/log/uns`.
 :::
 
 From configuration file we can see that 2 services will be started: a node and its database.
