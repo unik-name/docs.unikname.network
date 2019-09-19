@@ -103,6 +103,8 @@ EXAMPLE
 
 These parameters apply to all commands:
 - `--network` (required): Network on which UNS CLI will create token [`devnet` or `local`] (`local` is for development only)
+- `--verbose` (optional): Additionnal logs
+
 
 ### `version`
 
@@ -130,7 +132,7 @@ $ uns version
 Command used to display blockchain status.
 
 #### Parameters
-- `-f --format`: Specify how to format the output [json|table|yaml]. Default to Json.
+- `-f --format` (optional): Specify how to format the output [json|table|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -144,14 +146,14 @@ uns status
 To display UNS devnet blockchain status
 
 ```bash
-uns status --network devnet
+uns status --network devnet --format yaml
 ```
 
 #### Output
 Command displays some blockchain information
 
 ```bash
-$ uns status --network devnet
+$ uns status --network devnet --format yaml
 
 Height:  21600
 Network:  devnet
@@ -169,6 +171,7 @@ With UNS CLI you can create your own UNIK token using `create-unik` command.
 #### Parameters
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
 - `--type` (required): Type of your token [individual/corporate]
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -181,7 +184,7 @@ uns create-unik --explicitValue {explicitValue} --type [individual|corporate]
 #### Examples
 As example, if you want to create UNIK `individual` token `bob` on `devnet` network:
 ```bash
-uns create-unik --explicitValue bob --type individual --network devnet
+uns create-unik --explicitValue bob --type individual --network devnet --verbose
 ```
 
 Enter your passphrase:
@@ -206,8 +209,16 @@ Computing UNIK fingerprint... done
 Creating transaction... done
 Sending transaction... done
 Waiting for transaction confirmation... done
-UNIK nft created (1 confirmation(s)): 5a085fc678b422be2b6457819825d6566a155de9c4b4cd958fd436e4422d6bf4 [ https://explorer.devnet.uns.network/uniks/5a085fc678b422be2b6457819825d6566a155de9c4b4cd958fd436e4422d6bf4 ]
-See transaction in explorer: https://explorer.devnet.uns.network/transaction/1c0c5a8672581ddcb52fb8a3c7e6e6eb6edc29203a84bbaa3d8a84c4ef00c1c4
+UNIK nft created (1 confirmation(s)): bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 [ https://explorer.devnet.uns.network/uniks/bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 ]
+See transaction in explorer: https://explorer.devnet.uns.network/transaction/a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03
+{
+  "data": {
+    "id": "bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956",
+    "transaction": "a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03",
+    "confirmations": 1
+  }
+}
+
 ```
 
 ### `create-wallet`
@@ -216,6 +227,8 @@ See transaction in explorer: https://explorer.devnet.uns.network/transaction/1c0
 With UNS CLI you can create your UNS wallet using `create-wallet` command.
 
 #### Parameters
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
@@ -264,6 +277,7 @@ Read current data of a specified wallet, ic. balance
 
 - `--idwallet` (required): the ID of the wallet. Can be either the publicKey or the address of the wallet.
 - `--listunik` (optional): list UNIK tokens owned by the wallet, if any.
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -277,33 +291,29 @@ uns read-wallet --idwallet {wallet identifier}] [--listunik]
 
 Display wallet information and list of UNIK token owned by this wallet
 ```bash
-uns read-wallet --idwallet DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN --listunik --network devnet
+uns read-wallet --idwallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
 ```
 
 #### Output
 
 ```bash
-$ uns read-wallet --idwallet DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN --listunik --network devnet
-UNS WALLET:
-	address: DU5L54d1cH2xhMcWRv4VBvpotsXGc9Z2VN
-	publicKey: 02b11f00c5aaa77c257241738fb92f5b267b87258fd517d95d1f19235e4dc395f6
-	username: null
-	secondPublicKey: null
-	balance: 2099 DUNS
-	isDelegate: false
-	vote: null
-	numberOfUNIK: 3
-
-CONTEXT:
-	network: devnet
-	node: https://forger1.devnet.uns.network
-	readDateTime: 2019-08-27T08:45:40.000Z
-	height: 460
-
-LIST OF UNIK:
-	unikid: ecae7045b637c31ed31d1cddbcc8433f161321753c76635bfe04ce5fb9a34eb6
-	unikid: f96fbd620e90130c178deb9f19dc8b5677a1913899e66c47a90d55dd54713866
-	unikid: 08a57d5d28eb73b8dbb1e78bc61321b1304195e56bec3dcac3b2de684dd2e1cf
+$ uns read-wallet --idwallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
+data:
+  address: DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
+  publicKey: 02cb4d32f1e69177bb428bf200b9c9dbf662826817f25fde2bf0bb17e28bd2292b
+  username: null
+  secondPublicKey: null
+  balance: "99.9"
+  isDelegate: false
+  vote: null
+  nbUnik: 1
+  tokens:
+    - 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+chainmeta:
+  network: devnet
+  node: https://forger1.devnet.uns.network
+  date: 2019-09-19T08:46:30.000Z
+  height: 10610
 ```
 For information: Wallet's balance is updated applying each transaction that engages the wallet (recipient or sender). Wallets are stored in-memory and are loaded by the node when it starts.
 
@@ -316,6 +326,8 @@ Read current data of a specified UNIK token
 #### Parameters
 
 - `--unikid` (required): the ID of the UNIK token
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -329,27 +341,26 @@ uns read-unik --unikid {UNIK token id}
 
 Display UNIK informations
 ```bash
-uns read-unik --unikid 2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d --network devnet
+uns read-unik --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns read-unik --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet
-UNIK:
-	unikid: 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759
-	owner address: DNBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo
-	creation block: 2581339445265943992
-	creation transaction: 30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2
-	creation date: 2019-08-26T13:06:10.000Z
-	properties: 
-		 { type: '1' }
-
-CONTEXT:
-	network: devnet
-	node: https://forger1.devnet.uns.network
-	readDateTime: 2019-08-27T08:45:40.000Z
-	height: 460
+$ uns read-unik --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -f yaml
+data:
+  id: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+  ownerAddress: DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
+  creationBlock: "15218398688380119048"
+  creationTransaction: 3831b7abdf68388c4f66663f6e655de996816e53314f1afe94a05f3da79f8d5e
+  creationDate: 2019-09-19T06:53:48.000Z
+  properties:
+    - type: "1"
+chainmeta:
+  network: devnet
+  node: https://forger1.devnet.uns.network
+  date: 2019-09-19T09:02:00.000Z
+  height: 10726
 
 ```
 
@@ -362,13 +373,15 @@ Get properties of UNIK token. The command will fail if the minimum number of con
 
 - `--unikid` (required): The UNIK token on which to get the properties.
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
+- `-f --format` (optional): Specify how to format the output [json|yaml|table|raw]. Default to Json.
+
 
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
 
 ```bash
-uns get-properties --unikid {UNIK token id} --network devnet
+uns get-properties --unikid {UNIK token id}
 ```
 
 #### Examples
@@ -377,32 +390,31 @@ uns get-properties --unikid {UNIK token id} --network devnet
 
 Display UNIK properties
 ```bash
-uns get-properties --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet
+uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet
 ```
 
 ##### Success output example
 
 ```bash
-$ uns get-properties --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet
-UNIK:
-	unikid: 2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d
-	properties: 
-		 { type: '2' }
-	confirmations: 217
+$ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -f yaml
+unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+properties:
+  - type: "1"
+confirmations: 217
 ```
 
 ##### Failing example
 
 Display UNIK properties with at least 300 confirmations since the last UNIK token update
 ```bash
-uns get-properties --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet --confirmed 300
+uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --confirmed 300
 ```
 
 ##### Failing output example
 
 CLI throws error because of the actual number of confirmations of the last transaction that have updated UNIK token is lower than expected.
 ```bash
-$ uns get-properties --unikid 78c3224000ed650682582c5ccd75ba0a8daf876187563cace113b3b195fbf759 --network devnet --confirmed 300
+$ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --confirmed 300
 ›   Error: [get-properties] Not enough confirmations (expected: 300, actual: 217)
 ```
 
@@ -426,6 +438,7 @@ Set (add or update) properties of UNIK token.
   Needs to be strictly lower than `--await` flag
 - `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
 It's impossible to ask more confirmations (with the --confirmations flag) than the number of blocks CLI waits (--await). Only 1 confirmation possible by block.
 
@@ -439,17 +452,17 @@ uns set-properties --unikid {UNIK token id} --properties "key:value" "key3:" --n
 
 #### Example
 
-Add property `key/value` to UNIK `2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d`
+Add property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 ```bash
-uns set-properties --unikid 2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d --network devnet --properties "key:value"
+uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns set-properties --unikid 2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d --network devnet --properties "key:value"
+$ uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
-unikid:  2eb0bdfb42d9cd042cf65db167fa87e13166e76453e8150f0cdabf8a85fd814d
+unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
 confirmations:  1
 
