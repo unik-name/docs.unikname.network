@@ -8,6 +8,12 @@ module.exports = {
   plugins: {
     sitemap: {
       hostname: "https://docs.uns.network"
+    },
+    "@vuepress/last-updated": {
+      transformer: (timestamp, lang) => {
+        // UTC date (without time) as ISO format: 2019-09-17
+        return new Date(timestamp).toISOString().split("T")[0];
+      }
     }
   },
   head: [["link", { rel: "icon", href: "./logo.png" }]],
