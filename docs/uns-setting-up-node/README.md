@@ -45,8 +45,8 @@ Once done, you'll be able to pull our `universalnamesystem/core` image.
 
 Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
 - DEVNET:
-  * 4102 (required): this is the communication port used by the node to exchange information with other nodes of the UNS network
-  * 4103 (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, let it closed
+  * `4102` (required): this is the communication port used by the node to exchange information with other nodes of the UNS network
+  * `4103` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
 - MAINNET: not available yet
 
 There is no standard documentation to do that, so please follow the firewall configuration guide provided by your hosting provider, or if you are running a node at home, the guide for your 'home box'.
