@@ -17,7 +17,6 @@ Docker is the de facto industry standard for packaging applications into a conta
 
 Different cloud providers offer specific products to host your Docker containers, such as:
 
-- [Google App Engine](https://cloud.google.com/appengine/)
 - [AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
 - [Azure](https://azure.microsoft.com/en-us/services/kubernetes-service/docker/)
 - [Digital Ocean](https://www.digitalocean.com/products/one-click-apps/docker/)
@@ -41,6 +40,16 @@ Currently, our network is in **private alpha mode** so we've deployed docker ima
 It means that our code is only accessible via invitation. [Send us](mailto:contact@unik-name.com) your docker ID or email in order to grant you read access. 
 
 Once done, you'll be able to pull our `universalnamesystem/core` image.
+
+## Network configuration
+
+Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
+- DEVNET:
+  * 4102 (required): this is the communication port used by the node to exchange information with other nodes of the UNS network
+  * 4103 (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, let it closed
+- MAINNET: not available yet
+
+There is no standard documentation to do that, so please follow the firewall configuration guide provided by your hosting provider, or if you are running a node at home, the guide for your 'home box'.
 
 ## Run a node
 
