@@ -9,6 +9,8 @@ Users can interact or let say 'use' the UNS Network in multiple ways depending o
 
 [[toc]]
 
+If you're familiar with the UNS Network environement, you may be interested to use the [cheat sheet](cheatsheet) to get a quick overwiew of usefull commands and APIs.
+
 ### Use the CLI, to go fast with basic actions
 
 The UNS CLI has been designed to facilitate basic actions and testing. With the CLI you can create a wallet, mint a @unik-name into the chain, update user's properties, list existing tokens or query the status of the network, and many other things. 
