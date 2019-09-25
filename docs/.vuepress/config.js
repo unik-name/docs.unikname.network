@@ -41,16 +41,17 @@ module.exports = {
         ]
       },
       {
-        title: "Use the Network",
+        title: "Using the Network",
         children: [
           ["/uns-usethenetwork/", "Introduction"],
           ["/uns-usethenetwork/cli", "CLI"],
           ["/uns-usethenetwork/api", "API"],
           ["/uns-usethenetwork/sdk", "SDK"],
-          ["/uns-usethenetwork/wallet", "Wallet"]
+          ["/uns-usethenetwork/wallet", "Wallet"],
+          ["/uns-usethenetwork/cheatsheet", "Cheat Sheet"]
         ]
       },
-      ["/uns-unikname/", "@unik-name use case"],
+      ["/uns-unikname/", "@unik-name use cases"],
       {
         title: "Network Player",
         /* collapsable: false, */
