@@ -10,9 +10,9 @@ Welcome to the <span title="'Universal-Name-System'">UNS</span> Network Player h
 
 ## [The UNS Tokens](/uns-tokens/)
 
-## [Use the UNS Network](/uns-usethenetwork/)
+## [Using the UNS Network](/uns-usethenetwork/)
 
-## [@unik-name use case (UNS DApp)](/uns-unikname/)
+## [@unik-name use cases (UNS DApp)](/uns-unikname/)
 
 ## [Becoming a Network Player](/uns-network-player/)
 
