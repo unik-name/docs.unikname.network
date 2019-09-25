@@ -22,20 +22,18 @@ pageClass: cheatsheet-pageclass
 | | | | /transactions _&rightarrow; list all transactions on chain_ |
 | | | | [/transactions/{id}](api.html#retrieve-a-transaction) _&rightarrow;list transactions for a specific UNIK_ |
 | **UNIK NFT tokens** |
-| | | | [/uniks](api.html#list-minted-unik) _&rightarrow; list minted UNIKs_  |
 | [create-unik](cli.html#create-unik) | -h -n -v -f | | | YES |
 | transfer-unik | -h -n -v -f | | | YES |
-| [read-unik](cli.html#read-unik) | -h -n -v -f -m | | [/uniks/{unikid}](api.html#get-unik-details) |
-| | | | /uniks/{unikid}/transactions |
+| [read-unik](cli.html#read-unik) | -h -n -v -f -m | | [/uniks/{unikid}](api.html#get-unik-details)</br>/uniks/{unikid}/transactions |
 | [set-properties](cli.html#set-properties) | -h -n -v -f | | | YES |
 | [get-properties](cli.html#get-properties) | -h -n -v -f -m | | [/uniks/{unikid}/properties](api.html#get-unik-properties) | 
 | get-property-value | -h -n -v -f -m | | [/uniks/{unikid}/properties/{propertyKey}](api.html#get-specific-unik-property) |
 | disclose-explicit-values | -h -n -v -f | | | YES |
 | hide-explicit-value | -h -n -v -f | | | YES |
 | is-disclosed | -h -n -v -f -m | | |
+| | | | [/uniks](api.html#list-minted-unik) _&rightarrow; list minted UNIKs_  |
 | **Decentralized Identifier** |
 | [did-resolve](cli.html#did-resolve) | -h -n -v -f | |
-| | | |
 
 Update your CLI to the latest version : `>yarn global add @uns/uns-cli`  
 Getting help for a specific _command_ : `>uns command --help`
