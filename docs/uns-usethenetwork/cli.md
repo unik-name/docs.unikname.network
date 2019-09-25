@@ -8,7 +8,8 @@ title: Using UNS network with the CLI
 [[toc]]
 
 ## Introduction
-Universal Name System provides an interactive command line interface to create and manage your wallets ans UNIK tokens.
+Universal Name System provides an interactive command line interface to create and manage your wallets, your UNS protocol tokens and your UNIK NFT tokens.
+
 **Mainnet is not launched yet, please use devnet**.
 
 ## Requirements
@@ -27,6 +28,7 @@ Install Yarn: [https://yarnpkg.com/en/docs/install](https://yarnpkg.com/en/docs/
 **Don't forget to setup your $PATH to use UNS CLI as a global command.**
 
 ## Installation
+
 Use yarn to install UNS CLI as global command
 
 ```bash
@@ -162,65 +164,6 @@ Supply UNIKs:  23 UNIKs
 Active delegates:  2
 Last block:  https://explorer.devnet.uns.network/block/7496261431277872677
 ```
-
-### `create-unik`
-
-#### Introduction
-With UNS CLI you can create your own UNIK token using `create-unik` command.
-
-#### Parameters
-- `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
-- `--type` (required): Type of your token [individual/corporate]
-- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
-
-Some [global parameters](#global-parameters) may apply to this command.
-
-#### Usage
-
-```bash
-uns create-unik --explicitValue {explicitValue} --type [individual|corporate]
-```
-
-#### Examples
-As example, if you want to create UNIK `individual` token `bob` on `devnet` network:
-```bash
-uns create-unik --explicitValue bob --type individual --network devnet --verbose
-```
-
-Enter your passphrase:
-
-```bash
-$ uns create-unik --explicitValue bob --type individual --network devnet
-Enter your wallet passphrase (12 words phrase):
-```
-
-Your passphrase will be hidden, no trace in your terminal history:
-```
-Enter your wallet passphrase (12 words phrase): ********************************************************************************
-```
-
-
-#### Output
-
-If the creation succeed UNS CLI prompts yout UNIK token ID and links to see token and transaction in the UNS explorer.
-
-```
-Computing UNIK fingerprint... done
-Creating transaction... done
-Sending transaction... done
-Waiting for transaction confirmation... done
-UNIK nft created (1 confirmation(s)): bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 [ https://explorer.devnet.uns.network/uniks/bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 ]
-See transaction in explorer: https://explorer.devnet.uns.network/transaction/a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03
-{
-  "data": {
-    "id": "bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956",
-    "transaction": "a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03",
-    "confirmations": 1
-  }
-}
-
-```
-
 ### `create-wallet`
 
 #### Introduction
@@ -318,6 +261,64 @@ chainmeta:
 For information: Wallet's balance is updated applying each transaction that engages the wallet (recipient or sender). Wallets are stored in-memory and are loaded by the node when it starts.
 
 
+### `create-unik`
+
+#### Introduction
+With UNS CLI you can create your own UNIK token using `create-unik` command.
+
+#### Parameters
+- `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
+- `--type` (required): Type of your token [individual/corporate]
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns create-unik --explicitValue {explicitValue} --type [individual|corporate]
+```
+
+#### Examples
+As example, if you want to create UNIK `individual` token `bob` on `devnet` network:
+```bash
+uns create-unik --explicitValue bob --type individual --network devnet --verbose
+```
+
+Enter your passphrase:
+
+```bash
+$ uns create-unik --explicitValue bob --type individual --network devnet
+Enter your wallet passphrase (12 words phrase):
+```
+
+Your passphrase will be hidden, no trace in your terminal history:
+```
+Enter your wallet passphrase (12 words phrase): ********************************************************************************
+```
+
+
+#### Output
+
+If the creation succeed UNS CLI prompts yout UNIK token ID and links to see token and transaction in the UNS explorer.
+
+```
+Computing UNIK fingerprint... done
+Creating transaction... done
+Sending transaction... done
+Waiting for transaction confirmation... done
+UNIK nft created (1 confirmation(s)): bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 [ https://explorer.devnet.uns.network/uniks/bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 ]
+See transaction in explorer: https://explorer.devnet.uns.network/transaction/a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03
+{
+  "data": {
+    "id": "bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956",
+    "transaction": "a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03",
+    "confirmations": 1
+  }
+}
+
+```
+
 ### `read-unik`
 
 #### Introduction
@@ -361,6 +362,56 @@ chainmeta:
   node: https://forger1.devnet.uns.network
   date: 2019-09-19T09:02:00.000Z
   height: 10726
+
+```
+
+### `set-properties`
+
+#### Introduction
+Set (add or update) properties of UNIK token.
+
+#### Parameters
+
+- `--unikid` (required): the ID of the UNIK token
+- `-p --properties` (required): Array of properties to set.
+  
+  `"key1:value1" "key3:"` Sets `value1` to `key1` and empty string to `key3`
+- `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
+  
+  `0` for immediate return.
+  Needs to be strictly greater than `--confirmation` flag
+- `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
+
+  Needs to be strictly lower than `--await` flag
+- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
+- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+
+It's impossible to ask more confirmations (with the --confirmations flag) than the number of blocks CLI waits (--await). Only 1 confirmation possible by block.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns set-properties --unikid {UNIK token id} --properties "key:value" "key3:" --network devnet
+```
+
+#### Example
+
+Add property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+```bash
+uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+```
+
+#### Output
+
+```bash
+$ uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+
+unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
+confirmations:  1
 
 ```
 
@@ -416,54 +467,4 @@ CLI throws error because of the actual number of confirmations of the last trans
 ```bash
 $ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --confirmed 300
 ›   Error: [get-properties] Not enough confirmations (expected: 300, actual: 217)
-```
-
-### `set-properties`
-
-#### Introduction
-Set (add or update) properties of UNIK token.
-
-#### Parameters
-
-- `--unikid` (required): the ID of the UNIK token
-- `-p --properties` (required): Array of properties to set.
-  
-  `"key1:value1" "key3:"` Sets `value1` to `key1` and empty string to `key3`
-- `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
-  
-  `0` for immediate return.
-  Needs to be strictly greater than `--confirmation` flag
-- `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
-
-  Needs to be strictly lower than `--await` flag
-- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
-- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
-- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
-
-It's impossible to ask more confirmations (with the --confirmations flag) than the number of blocks CLI waits (--await). Only 1 confirmation possible by block.
-
-Some [global parameters](#global-parameters) may apply to this command.
-
-#### Usage
-
-```bash
-uns set-properties --unikid {UNIK token id} --properties "key:value" "key3:" --network devnet
-```
-
-#### Example
-
-Add property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
-```bash
-uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
-```
-
-#### Output
-
-```bash
-$ uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
-
-unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
-transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
-confirmations:  1
-
 ```
