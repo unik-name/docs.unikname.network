@@ -28,6 +28,7 @@ If you discover a security vulnerability within this package, please send an e-m
 
 - [Fabien Tréguer](https://github.com/ftreguer), from [@unik-name's team](https://www.unik-name.com)
 - [Guillaume Nicolas](https://github.com/Nigui), from [@unik-name's team](https://www.unik-name.com)
+- [Pierre Seznec](https://github.com/peterjah), from [@unik-name's team](https://www.unik-name.com)  
 - [Damien Lecan](https://github.com/dlecan), from [@unik-name's team](https://www.unik-name.com)
 - [Laurent Lourenco](https://www.linkedin.com/in/laurentlourenco/), from [@unik-name's team](https://www.unik-name.com)
 - [All Contributors](../../../../contributors)
