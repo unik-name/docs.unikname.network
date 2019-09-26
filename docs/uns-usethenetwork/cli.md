@@ -21,18 +21,12 @@ Install Node.js 10: [https://nodejs.org/en/download/](https://nodejs.org/en/down
 
 **UNS CLI doesn't work on earlier (6, 8) or later versions of Node.js (11, 12+)**.
 
-### Yarn
-
-Install Yarn: [https://yarnpkg.com/en/docs/install](https://yarnpkg.com/en/docs/install).
-
-**Don't forget to setup your $PATH to use UNS CLI as a global command.**
-
 ## Installation
 
-Use yarn to install UNS CLI as global command
+Use NPM to install UNS CLI as global command
 
 ```bash
-yarn global add @uns/uns-cli
+[sudo] npm install -g @uns/uns-cli
 ```
 
 Test your installation with
@@ -45,7 +39,7 @@ which should output something like that:
 
 ```
 $ uns version
-@uns/uns-cli/x.y.z linux-x64 node-v10.0.0
+@uns/uns-cli/x.y.z linux-x64 node-v10.16.3
 ```
 
 ## UNS CLI Commands
