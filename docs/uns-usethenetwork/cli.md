@@ -212,29 +212,32 @@ Read current data of a specified wallet, ic. balance
 
 #### Parameters
 
-- `--idwallet` (required): the ID of the wallet. Can be either the publicKey or the address of the wallet.
 - `--listunik` (optional): list UNIK tokens owned by the wallet, if any.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
+#### Arguments
+
+- `walletId` (required): the ID of the wallet. Can be either the publicKey or the address of the wallet.
+
 #### Usage
 
 ```bash
-uns read-wallet --idwallet {wallet identifier}] [--listunik]
+uns read-wallet {wallet identifier}] [--listunik]
 ```
 
 #### Example
 
 Display wallet information and list of UNIK token owned by this wallet
 ```bash
-uns read-wallet --idwallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
+uns read-wallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
 ```
 
 #### Output
 
 ```bash
-$ uns read-wallet --idwallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
+$ uns read-wallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
 data:
   address: DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
   publicKey: 02cb4d32f1e69177bb428bf200b9c9dbf662826817f25fde2bf0bb17e28bd2292b
