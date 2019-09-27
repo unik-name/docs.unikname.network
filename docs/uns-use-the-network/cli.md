@@ -188,13 +188,13 @@ Command displays some blockchain information
 
 ```bash
 $ uns status --network devnet --format yaml
-
-Height:  21600
-Network:  devnet
-Supply DUNS:  2197055800000000 DUNS
-Supply UNIKs:  23 UNIKs
-Active delegates:  2
-Last block:  https://explorer.devnet.uns.network/block/7496261431277872677
+height: 21600
+network: devnet
+totalTokenSupply: 21184378
+tokenSymbol: DUNS
+numberOfUniks: 23
+activeDelegates: 7
+lastBlockUrl: https://explorer.devnet.uns.network/block/21600
 ```
 ### `create-wallet`
 
