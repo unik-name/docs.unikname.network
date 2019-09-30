@@ -215,6 +215,7 @@ Read current data of a specified wallet, ic. balance
 - `--idwallet` (required): the ID of the wallet. Can be either the publicKey or the address of the wallet.
 - `--listunik` (optional): list UNIK tokens owned by the wallet, if any.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+- `--chainmeta` (optional): Retrieve chain meta datas
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -323,6 +324,7 @@ Read current data of a specified UNIK token
 
 - `--unikid` (required): the ID of the UNIK token
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+- `--chainmeta` (optional): Retrieve chain meta datas
 
 
 Some [global parameters](#global-parameters) may apply to this command.
