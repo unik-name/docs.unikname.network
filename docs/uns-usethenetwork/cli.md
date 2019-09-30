@@ -264,6 +264,7 @@ With UNS CLI you can create your own UNIK token using `create-unik` command.
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
 - `--type` (required): Type of your token [individual/corporate]
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
