@@ -518,3 +518,42 @@ CLI throws error because of the actual number of confirmations of the last trans
 $ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --confirmed 300
 ›   Error: [get-properties] Not enough confirmations (expected: 300, actual: 217)
 ```
+
+### `did-resolve`
+
+#### Introduction
+Resolve a decentralized identifier.
+
+#### Arguments
+- `DID` (required):  The identifier to resolve. Expected format : '@[unik:][type,1]/expliciteValue[?propertyKey|?*]'
+
+#### Parameters
+
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
+- `-f --format` (optional): Specify how to format the output [json|yaml|raw]. Default to Raw.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+
+#### Usage
+
+```bash
+uns did-resolve --network devnet @unik:individual/bob?phone_number
+```
+
+#### Examples
+
+##### Success example
+
+Resolve `@bob` `postal_address` property
+```bash
+uns did-resolve --network devnet @unik:individual/bob?postal_address
+```
+
+##### Success output example
+
+```bash
+$ uns did-resolve --network devnet @unik:individual/bob?postal_address
+
+42 quai Malakoff, 44000 Nantes
+```
