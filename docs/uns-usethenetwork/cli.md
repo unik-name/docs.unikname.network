@@ -417,6 +417,54 @@ confirmations:  1
 
 ```
 
+### `unset-properties`
+
+#### Introduction
+Unset properties of UNIK token.
+
+#### Parameters
+
+- `--unikid` (required): the ID of the UNIK token
+- `-k --propertyKey`, Key of the property to unset. (multiple occurrences)
+- `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
+  
+  `0` for immediate return.
+  Needs to be strictly greater than `--confirmation` flag
+- `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
+
+  Needs to be strictly lower than `--await` flag
+- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
+- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+
+It's impossible to ask more confirmations (with the --confirmations flag) than the number of blocks CLI waits (--await). Only 1 confirmation possible by block.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns unset-properties --unikid {UNIK token id} -k prop1 -k prop2 --network devnet
+```
+
+#### Example
+
+Remove property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+```bash
+uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+```
+
+#### Output
+
+```bash
+$ uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+
+unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
+confirmations:  1
+
+```
+
 ### `get-properties`
 
 #### Introduction
