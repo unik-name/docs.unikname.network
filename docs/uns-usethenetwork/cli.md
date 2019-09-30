@@ -244,9 +244,11 @@ data:
   balance: "99.9"
   isDelegate: false
   vote: null
-  nbUnik: 1
+  nfts:
+    uniks: 1
   tokens:
-    - 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+    uniks:
+      - 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 chainmeta:
   network: devnet
   node: https://forger1.devnet.uns.network
