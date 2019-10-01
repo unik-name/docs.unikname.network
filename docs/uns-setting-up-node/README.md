@@ -33,13 +33,20 @@ First of all, be sure to have these prerequisites:
 - [Docker](https://docs.docker.com/install) installed on your machine
 - [Docker Compose](https://docs.docker.com/compose/install) installed on your machine (only if you want to use it to setup node, documented below).
 - a [Docker](https://hub.docker.com/) account (Sign up if you don't have one yet).
-- Docker CLI must be logged with your docker account (using command [`login`](https://docs.docker.com/engine/reference/commandline/login/))
+
+## Docker configuration
+
+Docker CLI must be logged with your docker account (using command [`login`](https://docs.docker.com/engine/reference/commandline/login/))
 
 Currently, our network is in **private alpha mode** so we've deployed docker image to a private repository into our organization.
 
 It means that our code is only accessible via invitation. [Send us](mailto:contact@unik-name.com) your docker ID or email in order to grant you read access. 
 
-Once done, you'll be able to pull our `universalnamesystem/core` image.
+Once done, you'll be able to pull our `universalnamesystem/core` image and connect to the Docker hub:
+
+```
+$ docker login
+```
 
 ## Network configuration
 
