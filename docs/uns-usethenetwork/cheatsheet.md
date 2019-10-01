@@ -50,7 +50,7 @@ Getting help for a specific _command_ : `>uns command --help`
 
 | Type | Transaction |
 | - | - |
-| 0 | Transfer |
+| 0 | Transfer UNS |
 | 1 | Second Signature Registration
 | 2 | Delegate Registration
 | 3 | Vote
@@ -60,8 +60,9 @@ Getting help for a specific _command_ : `>uns command --help`
 | 7 | Multi Payment
 | 9 | Delegate Resignation
 ||
-| 10 | Create NFT
-| 11 | Update NFT  
+| 10 | NFT Transfer
+| 11 | NFT Update
+| 12 | NFT Mint
 
 ## Types and categories of UNIK
 
