@@ -21,18 +21,12 @@ Install Node.js 10: [https://nodejs.org/en/download/](https://nodejs.org/en/down
 
 **UNS CLI doesn't work on earlier (6, 8) or later versions of Node.js (11, 12+)**.
 
-### Yarn
-
-Install Yarn: [https://yarnpkg.com/en/docs/install](https://yarnpkg.com/en/docs/install).
-
-**Don't forget to setup your $PATH to use UNS CLI as a global command.**
-
 ## Installation
 
-Use yarn to install UNS CLI as global command
+Use NPM to install UNS CLI as global command
 
 ```bash
-yarn global add @uns/uns-cli
+[sudo] npm install -g @uns/uns-cli
 ```
 
 Test your installation with
@@ -45,7 +39,7 @@ which should output something like that:
 
 ```
 $ uns version
-@uns/uns-cli/x.y.z linux-x64 node-v10.0.0
+@uns/uns-cli/x.y.z linux-x64 node-v10.16.3
 ```
 
 ## UNS CLI Commands
@@ -218,29 +212,33 @@ Read current data of a specified wallet, ic. balance
 
 #### Parameters
 
-- `--idwallet` (required): the ID of the wallet. Can be either the publicKey or the address of the wallet.
 - `--listunik` (optional): list UNIK tokens owned by the wallet, if any.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+- `--chainmeta` (optional): Retrieve chain meta datas
 
 Some [global parameters](#global-parameters) may apply to this command.
+
+#### Arguments
+
+- `walletId` (required): the ID of the wallet. Can be either the publicKey or the address of the wallet.
 
 #### Usage
 
 ```bash
-uns read-wallet --idwallet {wallet identifier}] [--listunik]
+uns read-wallet {wallet identifier}] [--listunik]
 ```
 
 #### Example
 
 Display wallet information and list of UNIK token owned by this wallet
 ```bash
-uns read-wallet --idwallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
+uns read-wallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
 ```
 
 #### Output
 
 ```bash
-$ uns read-wallet --idwallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
+$ uns read-wallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
 data:
   address: DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
   publicKey: 02cb4d32f1e69177bb428bf200b9c9dbf662826817f25fde2bf0bb17e28bd2292b
@@ -249,9 +247,11 @@ data:
   balance: "99.9"
   isDelegate: false
   vote: null
-  nbUnik: 1
+  nfts:
+    uniks: 1
   tokens:
-    - 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+    uniks:
+      - 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 chainmeta:
   network: devnet
   node: https://forger1.devnet.uns.network
@@ -270,6 +270,7 @@ With UNS CLI you can create your own UNIK token using `create-unik` command.
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
 - `--type` (required): Type of your token [individual/corporate]
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -328,6 +329,7 @@ Read current data of a specified UNIK token
 
 - `--unikid` (required): the ID of the UNIK token
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+- `--chainmeta` (optional): Retrieve chain meta datas
 
 
 Some [global parameters](#global-parameters) may apply to this command.
@@ -415,6 +417,54 @@ confirmations:  1
 
 ```
 
+### `unset-properties`
+
+#### Introduction
+Unset properties of UNIK token.
+
+#### Parameters
+
+- `--unikid` (required): the ID of the UNIK token
+- `-k --propertyKey`, Key of the property to unset. (multiple occurrences)
+- `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
+  
+  `0` for immediate return.
+  Needs to be strictly greater than `--confirmation` flag
+- `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
+
+  Needs to be strictly lower than `--await` flag
+- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
+- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
+
+It's impossible to ask more confirmations (with the --confirmations flag) than the number of blocks CLI waits (--await). Only 1 confirmation possible by block.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns unset-properties --unikid {UNIK token id} -k prop1 -k prop2 --network devnet
+```
+
+#### Example
+
+Remove property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+```bash
+uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+```
+
+#### Output
+
+```bash
+$ uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+
+unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
+confirmations:  1
+
+```
+
 ### `get-properties`
 
 #### Introduction
@@ -467,4 +517,43 @@ CLI throws error because of the actual number of confirmations of the last trans
 ```bash
 $ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --confirmed 300
 ›   Error: [get-properties] Not enough confirmations (expected: 300, actual: 217)
+```
+
+### `did-resolve`
+
+#### Introduction
+Resolve a decentralized identifier.
+
+#### Arguments
+- `DID` (required):  The identifier to resolve. Expected format : '@[unik:][type,1]/expliciteValue[?propertyKey|?*]'
+
+#### Parameters
+
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
+- `-f --format` (optional): Specify how to format the output [json|yaml|raw]. Default to Raw.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+
+#### Usage
+
+```bash
+uns did-resolve --network devnet @unik:individual/bob?phone_number
+```
+
+#### Examples
+
+##### Success example
+
+Resolve `@bob` `postal_address` property
+```bash
+uns did-resolve --network devnet @unik:individual/bob?postal_address
+```
+
+##### Success output example
+
+```bash
+$ uns did-resolve --network devnet @unik:individual/bob?postal_address
+
+42 quai Malakoff, 44000 Nantes
 ```
