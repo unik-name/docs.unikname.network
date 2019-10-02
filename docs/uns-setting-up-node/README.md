@@ -36,6 +36,20 @@ First of all, be sure to have these prerequisites:
 - [Docker Compose](https://docs.docker.com/compose/install) installed on your machine (only if you want to use it to setup node, documented below).
 - a [Docker Hub](https://hub.docker.com/) account (Sign up if you don't have one yet).
 
+## Network configuration
+
+Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
+- DEVNET:
+  * `4102` (required): this is the communication port used by the node to exchange information with other nodes of the UNS network
+  * `4103` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
+- MAINNET: not available yet
+
+::: warning
+Don't forget to forward (by NAT, routing ...) the opened ports to the corresponding ports on your VM or Docker engine!
+:::
+
+Unfortunately, there is no standard documentation to do that, so please follow the configuration guide of the firewall provided by your hosting provider, or if you are running a node at home, the guide for your 'home box'.
+
 ## Docker configuration
 
 Docker CLI must be logged with your docker account (using command [`login`](https://docs.docker.com/engine/reference/commandline/login/))
@@ -49,21 +63,6 @@ Once done, you'll be able to pull our `universalnamesystem/core` image and conne
 ```shell
 $ docker login
 ```
-
-## Network configuration
-
-Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
-- DEVNET:
-  * `4102` (required): this is the communication port used by the node to exchange information with other nodes of the UNS network
-  * `4103` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
-- MAINNET: not available yet
-
-::: warning
-Don't forget to forward (by NAT, routing ...) the opened ports to the corresponding ports on your VM or Docker engine!
-:::
-
-
-There is no standard documentation to do that, so please follow the configuration guide of the firewall provided by your hosting provider, or if you are running a node at home, the guide for your 'home box'.
 
 ## Run a node with Docker Compose
 
