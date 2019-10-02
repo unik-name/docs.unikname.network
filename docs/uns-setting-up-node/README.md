@@ -20,6 +20,8 @@ Different cloud providers offer specific products to host your Docker containers
 - [AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
 - [Azure](https://azure.microsoft.com/en-us/services/kubernetes-service/docker/)
 - [Digital Ocean](https://www.digitalocean.com/products/one-click-apps/docker/)
+- [Scaleway](https://www.scaleway.com/en/)
+- [OVH](https://www.ovh.com)
 
 Orchestrators with Docker as a first-class citizen:
 
@@ -32,7 +34,7 @@ Orchestrators with Docker as a first-class citizen:
 First of all, be sure to have these prerequisites:
 - [Docker](https://docs.docker.com/install) installed on your machine
 - [Docker Compose](https://docs.docker.com/compose/install) installed on your machine (only if you want to use it to setup node, documented below).
-- a [Docker](https://hub.docker.com/) account (Sign up if you don't have one yet).
+- a [Docker Hub](https://hub.docker.com/) account (Sign up if you don't have one yet).
 
 ## Docker configuration
 
@@ -44,7 +46,7 @@ It means that our code is only accessible via invitation. [Send us](mailto:conta
 
 Once done, you'll be able to pull our `universalnamesystem/core` image and connect to the Docker hub:
 
-```
+```shell
 $ docker login
 ```
 
@@ -56,11 +58,16 @@ Depending on your hosting infrastructure, you will need open TCP ports on your f
   * `4103` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
 - MAINNET: not available yet
 
-There is no standard documentation to do that, so please follow the firewall configuration guide provided by your hosting provider, or if you are running a node at home, the guide for your 'home box'.
+::: warning
+Don't forget to forward (by NAT, routing ...) the opened ports to the corresponding ports on your VM or Docker engine!
+:::
 
-## Run a node
 
-In this documentation, we'll start devnet UNS node using docker-compose and a configuration file.
+There is no standard documentation to do that, so please follow the configuration guide of the firewall provided by your hosting provider, or if you are running a node at home, the guide for your 'home box'.
+
+## Run a node with Docker Compose
+
+In this documentation, we'll start devnet UNS node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
 
 Create the following configuration file `docker-compose.yml`: 
 
@@ -88,7 +95,7 @@ services:
     restart: always
     environment:
      UNS_NET: devnet
-     # FORGER_SECRET: "" <-- edit here to start a forger
+     # FORGER_SECRET: "" # <-- edit here to start a forger
      DB_HOST: postgres
      DB_PORT: 5432
      DB_PASSWORD: password
@@ -121,19 +128,21 @@ You can run a node without docker-compose with simple docker commands, but we wo
 :::
 
 ::: tip
-If you want to get access to log and configuration file, you can map a volume to `/etc/uns` and `/var/log/uns`.
+**Optionally**, you can get access to log and configuration files, by mapping a volume to `/etc/uns` and `/var/log/uns`.
 :::
+
+### Explanations
 
 From configuration file we can see that 2 services will be started: a node and its database.
 
 You also have 2 volumes mounted on the file system (for node and database files) and a local network for services communication.
 
-### The database service
+#### The database service
 
 Based on [`postgres` (version 11 and Linux alpine)](https://github.com/docker-library/postgres/blob/0a66d53fface5ccc8274f99712ba2f382a1caf42/11/alpine/Dockerfile), it exposes a single port (`5432`) and requires environment variables (for db name, user name and password).
 These variables must match with those provided in the node service (see below).
 
-### The node service
+#### The node service
 
 The node service is based on our `universalnamesystem/core` image (latest tag). 
 
@@ -144,18 +153,40 @@ Some environment variables are set :
 - for the network (here it's `devnet`, it means that it'll connect to other UNS devnet nodes)
 - and the forger secret (line `FORGER_SECRET`, commented by default). 
 
-### Run a relay
+### Run a relay with Docker Compose
 
-With the previously created configuration file, you simply have to run `docker-compose up`.
+With the previously created configuration file, you simply have to run:
+
+```shell
+$ docker-compose up
+```
 
 The node starts logging a lot of information and tries to reach peers before syncing.
+You can stop the node by hitting `CTRL+C`.
 
-### Run a forger
+
+### Run a permanent relay with Docker Compose
+
+If you want to permanently run your node (so as a **d**aemon), use this command:
+
+```shell
+$ docker-compose up -d
+```
+
+Then you can shutdown it with:
+
+```shell
+$ docker-compose down
+```
+
+### Run a forger with Docker Compose
+
+::: warning
+You must be a [declared delegate](/uns-network-player/#becoming-a-delegate) before doing this configuration.
+:::
 
 To run a forger node, please edit the `docker-compose.yml` file.
 
-Find and uncomment line `FORGER_SECRET` and set your wallet passphrase as value. Then, you can use the same command than for relay.
+Find and uncomment line `FORGER_SECRET` and set your wallet passphrase as value. Then, start your forger node with the same commands as for a relay node (see [Run a relay with Docker Compose](#run-a-relay-with-docker-compose) above).
 
-Now you have a running relay node and you're ready to forge blocks. But before, you need to [be a delegate](/uns-network-player/#becoming-a-delegate).
-
-
+Now you have a running relay node and you're ready to forge blocks.
