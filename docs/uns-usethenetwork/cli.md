@@ -101,6 +101,10 @@ These parameters apply to all commands:
 - `--network` (required): Network on which UNS CLI will create token [`devnet` or `local`] (`local` is for development only)
 - `--verbose` (optional): Additionnal logs
 
+### Environment variables
+
+- `UNS_NETWORK` Alternatively to the --network flag network can also be provided through the environment variable $UNS_NETWORK
+
 
 ### `version`
 
