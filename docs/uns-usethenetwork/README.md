@@ -11,7 +11,7 @@ Users can interact or let say 'use' the UNS Network in multiple ways depending o
 
 If you're familiar with the UNS Network environement, you may be interested to use the [cheat sheet](cheatsheet) to get a quick overwiew of usefull commands and APIs.
 
-### Use the CLI, to go fast with basic actions
+## Use the CLI, to go fast with basic actions
 
 The UNS CLI has been designed to facilitate basic actions and testing. With the CLI you can create a wallet, mint a @unik-name into the chain, update user's properties, list existing tokens or query the status of the network, and many other things. 
 
@@ -19,19 +19,19 @@ The UNS CLI communicate with a random node of the MAINNET, a random node of the 
 
 [Read more &rightarrow;](cli)
 
-### Use the APIs, to consume network services
+## Use the APIs, to consume network services
 
 All network services can be used via the UNS APIs. This is the best way for developers to integrate UNS network services into their own developpements and APPs. 
 
 [Read more &rightarrow;](api)
 
-### Use the SDKs, to quickly embed UNS features, and @unik-name solutions, withing APPs
+## Use the SDKs, to quickly embed UNS features, and @unik-name solutions, withing APPs
 
 SDKs have been developped to simplify developer work when they integrate @unik-name solutions within their plateforms or their APPs. 
 
 [Read more &rightarrow;](sdk)
 
-### Use Wallets and @unik-name APP
+## Use Wallets and @unik-name APP
 
 Wallets are end user tools, ready to use to transfer and to manage tokens. 
 
@@ -50,13 +50,13 @@ but @unik-name mobile APP is also used :
 
 [Read more &rightarrow;](wallet)
 
-### Use the DEVNET, to test your developments and features to come
+## Use the DEVNET, to test your developments and features to come
 
 The DEVNET is a small test UNS network, run by 7 delegates of the community, which is open to developers.
 
 You can connect a node to the DEVNET by configuring the CLI, SDK ... to use this configuration.
 
-#### What can you do with the UNS DEVNET network?
+### What can you do with the UNS DEVNET network?
 
 - Creating test accounts
 - Developing and testing applications for free (use the faucet to get DUNS)
@@ -64,8 +64,7 @@ You can connect a node to the DEVNET by configuring the CLI, SDK ... to use this
 
 Please note that **this network is ephemeral**, and may be reset anytime. Resets will be announced several days before the effective operation, so follow [announcements published on the UNS forum](https://forum.unik-name.com/c/uns-network).
 
-#### DEVNET faucet
+### DEVNET faucet
 
-If you need DUNS to test the UNS network features (creating your UNIK for example), you can ask for DUNS on [the UNS forum](https://forum.unik-name.com/new-topic?title=Request%20for%20DUNS&body=Please%2C%20can%20you%20send%20me%20DUNS%20to%20interact%20with%20the%20UNS%20DEVNET%3F%0AMy%20wallet%20adress%3A%20D...%0A%0AThank%20you&category=uns-network&tags=faucet,devnet
-).
+If you need DUNS to test the UNS network features (creating your UNIK for example), you can ask for DUNS on [the UNS forum](https://forum.unik-name.com/new-topic?title=Request%20for%20DUNS&category=uns-network/faucet&tags=faucet,devnet).
 Don't forget to provide your wallet address, created with [the UNS CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `D` letter, such as `DHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
