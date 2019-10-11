@@ -530,7 +530,7 @@ Resolve a decentralized identifier.
 #### Parameters
 
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
-- `-f --format` (optional): Specify how to format the output [json|yaml|raw]. Default to Raw.
+- `-f --format` (optional): Specify how to format the output [json|yaml|raw]. Default to JSON.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -553,7 +553,7 @@ uns did-resolve --network devnet @unik:individual/bob?postal_address
 ##### Success output example
 
 ```bash
-$ uns did-resolve --network devnet @unik:individual/bob?postal_address
+$ uns did-resolve --network devnet @unik:individual/bob?postal_address -f raw
 
 42 quai Malakoff, 44000 Nantes
 ```
