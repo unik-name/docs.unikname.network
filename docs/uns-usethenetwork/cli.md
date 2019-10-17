@@ -89,7 +89,7 @@ USAGE
 
 OPTIONS
   -h, --help              show CLI help
-  --network=devnet|local  (required) Network used to create UNIK nft token (local are for development only)
+  -n, --network=devnet|local  (required) Network used to create UNIK nft token (local are for development only)
 
 EXAMPLE
   $ uns create-wallet --network [devnet|local]
@@ -98,9 +98,16 @@ EXAMPLE
 ### Global parameters
 
 These parameters apply to all commands:
-- `--network` (required): Network on which UNS CLI will create token [`devnet` or `local`] (`local` is for development only)
+- `-n, --network` (required): Network on which UNS CLI will create token [`devnet` or `local`] (`local` is for development only)
 - `--verbose` (optional): Additionnal logs
 
+::: tip
+Avoid repetition of `--network` flag using `UNS_NETWORK={network}` environment variable.
+e.g
+```
+$ UNS_NETWORK=devnet uns status
+```
+:::
 
 ### `version`
 
