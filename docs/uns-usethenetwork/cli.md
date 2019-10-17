@@ -65,15 +65,16 @@ USAGE
   $ uns [COMMAND]
 
 COMMANDS
-  create-unik     Create UNIK token
-  create-wallet   Create UNS wallet
-  get-properties  Get properties of UNIK token.
-  help            display help for uns
-  read-unik       Display UNIK token informations
-  read-wallet     Read current data of a specified wallet, ic. balance
-  set-properties  Set (add or update) properties of UNIK token.
-  status          Display blockchain status
-  version         UNS CLI Version
+  create-unik         Create UNIK token
+  create-wallet       Create UNS wallet
+  get-properties      Get properties of UNIK token.
+  get-property-value  Get the value of a specific property of a UNIK token.
+  help                display help for uns
+  read-unik           Display UNIK token informations
+  read-wallet         Read current data of a specified wallet, ic. balance
+  set-properties      Set (add or update) properties of UNIK token.
+  status              Display blockchain status
+  version             UNS CLI Version
 ```
 
 You can get help on a specific command by using the `help` command, followed by your command name.
@@ -524,6 +525,46 @@ CLI throws error because of the actual number of confirmations of the last trans
 ```bash
 $ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --confirmed 300
 ›   Error: [get-properties] Not enough confirmations (expected: 300, actual: 217)
+```
+
+### `get-property-value`
+
+#### Introduction
+Get the value of a specific property of a UNIK token.
+
+#### Parameters
+
+- `--unikid` (required): The UNIK token on which to set the properties.
+- `-k, --propertyKey` (required), The key of the property for which we query the value.
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
+- `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
+- `-f, --format` {json|yaml|raw, json}: Specify how to format the output [json|yaml|raw]. Default to Json.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns get-property-value --unikid {UNIK token id} -k {property key} -n devnet
+```
+
+#### Examples
+
+##### Success example
+
+Display UNIK property phone
+```bash
+uns get-property-value --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n devnet -k "phone"
+```
+
+##### Success output example
+
+```bash
+$ uns get-property-value --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n devnet -k "phone" -f yaml
+unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+property: phone
+value: +33606060606
+confirmations: 833
 ```
 
 ### `did-resolve`

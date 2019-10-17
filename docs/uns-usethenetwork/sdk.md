@@ -31,6 +31,18 @@ SDK is compatible with node projects and browsers.
 To have a smooth and simple developer experience, SDK connects and query a UNS node. 
 To replace this default behavior you can pass URL of your own UNS node as a parameter of `UNSClient`.
 
+
+In some cases, functions returns chain meta datas as `ChainMeta`. These meta datas represent the informations about the block used to read chain informations.
+
+```
+"height": 165009, // Block number
+"timestamp": { // Date of reading
+  "epoch": 2081533,
+  "unix": 1570796439,
+  "human": "2019-10-11T12:20:39.000Z"
+}
+```
+
 #### Get on-chain value UNIK types
 
 ```typescript
@@ -44,12 +56,51 @@ Full list of available types [here](https://docs.uns.network/uns-tokens/#existin
 #### Get status of UNS node
 
 ```typescript
-import { UNSClient, NodeStatus } from "@uns/ts-sdk"
+import { UNSClient, NodeStatus, Network } from "@uns/ts-sdk"
 
-const nodeStatus:NodeStatus = await new UNSClient().node.status()
+const nodeStatus:NodeStatus = await new UNSClient(Network.devnet).node.status()
 const { synced, now, blocksCount } = nodeStatus;
 
 ```
+
+#### Get UNIK token
+
+```typescript
+import { UNSClient, Unik, ResponseWithChainMeta, ChainMeta, Network } from "@uns/ts-sdk"
+
+const response: ResponseWithChainMeta<Unik> = await new UNSClient(Network.devnet).unik.get("unikId");
+const unik: Unik = response.data;
+const meta: ChainMeta = response.chainmeta;
+
+```
+
+#### Get UNIK property value
+
+```typescript
+import { getPropertyValue, ResponseWithChainMeta, PropertyValue, ChainMeta, Network } from "@uns/ts-sdk"
+
+const options = {
+  withChainmeta: true; // Retrieve ChainMeta object [default: true]
+  confirmations: true; // Retrieve number of confirmations since last transaction on UNIK token [default: true]
+  disableHtmlEscape: true; // Disable HTML escaping [default: false]
+}
+
+const response: ResponseWithChainMeta<PropertyValue> | PropertyValue = await getPropertyValue("unikId", "propertyKey", Network.devnet, options);
+
+if( response instanceof PropertyValue ){
+  const value: PropertyValue = response as PropertyValue;
+} else {
+  const resp: ResponseWithChainMeta<PropertyValue> = response as ResponseWithChainMeta<PropertyValue>
+  const value: PropertyValue = resp.data
+  const meta: ChainMeta = resp.chainmeta;
+  const confirmations: number = resp.confirmations;
+}
+
+```
+
+This function is protected by HTML escaping. When you use `getPropertyValue` function, the result is "HTML escaped" by default.
+
+**Do not use `eval` function with a property retrieved by the chain. Javascript can be easily injected!**
 
 ## Cryptography SDK
 
