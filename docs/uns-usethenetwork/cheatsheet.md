@@ -4,38 +4,34 @@ title: UNS Cheat Sheet
 pageClass: cheatsheet-pageclass
 ---
 
-# UNS Cheat Sheet
+# Command Line Interface (CLI)
 
-
-| CLI | standard flags | SDK | API | Rewards |
-| - | - | - | - | - | 
-| [version](cli.html#version) |  
+| CLI | standard flags | Rewards | description | last update |
+| - | - | - | - | - |
+| [version](cli.html#version) | | | Display version of the CLI | 0.5.0 |
 | **Network** |
-| [status](cli.html#status) | -h -n -v | 
-| list-nodes | -h -n -v | 
+| [status](cli.html#status) | -h -n -v | | Display uns.network blockchain status | 0.5.0 |
+| list-nodes | -h -n -v | | List current uns.network blockchain nodes | to come |
 | **Wallet** |
-| [create-wallet](cli.html#create-wallet) | -h -n -v -f | | | 
-| [read-wallet](cli.html#read-wallet) | -h -n -v -f -m| | [/wallets/{id}](api.html#retrieve-a-wallet) _&rightarrow; read wallet info and UNS balance_</br>[/wallets/{id}/uniks](api.html#retrieve-tokens-from-wallet) _&rightarrow; list UNIKs owned by a specific wallet._ |
-| get-wallet-address | -h -n -v -f -m|
+| [create-wallet](cli.html#create-wallet) | -h -n -v -f | | Create a UNS wallet | 0.5.0 |
+| [read-wallet](cli.html#read-wallet) | -h -n -v -f -m | | Read current data of a specified wallet, eg. balance | 0.5.0 |
+| get-wallet-address | -h -n -v -f -m | | Get public address for a specified UNIK or for a passphrase | to come |
 | **UNS protocol Token** |
-| send | -h -n -v -f | | | YES |
-| | | | /transactions _&rightarrow; list all transactions on chain_ |
-| | | | [/transactions/{id}](api.html#retrieve-a-transaction) _&rightarrow;list transactions for a specific UNIK_ |
+| send | -h -n -v -f |  YES | Send UNS tokens to another public address | to come |
 | **UNIK NFT tokens** |
-| [create-unik](cli.html#create-unik) | -h -n -v -f | | | YES |
-| transfer-unik | -h -n -v -f | | | YES |
-| [read-unik](cli.html#read-unik) | -h -n -v -f -m | | [/uniks/{unikid}](api.html#get-unik-details)</br>/uniks/{unikid}/transactions |
-| [set-properties](cli.html#set-properties) | -h -n -v -f | | | YES |
-| [get-properties](cli.html#get-properties) | -h -n -v -f -m | | [/uniks/{unikid}/properties](api.html#get-unik-properties) | 
-| get-property-value | -h -n -v -f -m | | [/uniks/{unikid}/properties/{propertyKey}](api.html#get-specific-unik-property) |
-| disclose-explicit-values | -h -n -v -f | | | YES |
-| hide-explicit-value | -h -n -v -f | | | YES |
-| is-disclosed | -h -n -v -f -m | | |
-| | | | [/uniks](api.html#list-minted-unik) _&rightarrow; list minted UNIKs_  |
+| [create-unik](cli.html#create-unik) | -h -n -v -f | YES | Create a UNIK Token | 0.5.0 |
+| transfer-unik | -h -n -v -f | YES | Transfer a UNIK Token to another owner | to come |
+| [read-unik](cli.html#read-unik) | -h -n -v -f -m | | Read UNIK Token data | to come |
+| [set-properties](cli.html#set-properties) | -h -n -v -f | YES | Set (add or update) properties of a UNIK Token | 0.5.0 |
+| [get-properties](cli.html#get-properties) | -h -n -v -f -m | | Get properties of a UNIK token | 0.5.0 |
+| get-property-value | -h -n -v -f -m | | Get the value of a specified property for a specified UNIK | to come |
+| disclose-explicit-values | -h -n -v -f | YES | Disclose @unik-names related to a UNIK | to come |
+| stach-explicit-value | -h -n -v -f | YES | Stach @unik-names related to a UNIK | to come |
+| is-disclosed | -h -n -v -f -m | | Return if a @unik-name is disclosed or not | to come |
 | **Decentralized Identifier** |
-| [did-resolve](cli.html#did-resolve) | -h -n -v -f | |
+| [did-resolve](cli.html#did-resolve) | -h -n -v -f | | Resolve a decentralized Identifier |
 
-Update your CLI to the latest version : `>yarn global add @uns/uns-cli`  
+Add or Update your CLI to the latest version : `>yarn global [add|upgrade] @uns/uns-cli`  
 Getting help for a specific _command_ : `>uns command --help`
 
 ## Standard command flags
@@ -45,6 +41,23 @@ Getting help for a specific _command_ : `>uns command --help`
 `-v --verbose`: (optional) Output more details on logs  
 `-f --format`: (optional) Specify how to format the output [json|table|yaml|raw]. See command help to know supported format.  
 `-m --chainmeta`: (optional) Output chain meta data related to the read itself."
+
+## APIs
+
+| API | Rewards |
+| - | - | 
+| **Wallet** |
+| [/wallets/{id}](api.html#retrieve-a-wallet) _&rightarrow; read wallet info and UNS balance_ |
+| [/wallets/{id}/uniks](api.html#retrieve-tokens-from-wallet) _&rightarrow; list UNIKs owned by a specific wallet._ |
+| **UNS protocol Token** |
+| /transactions _&rightarrow; list all transactions on chain_ |
+| [/transactions/{id}](api.html#retrieve-a-transaction) _&rightarrow;list transactions for a specific UNIK_ |
+| **UNIK NFT tokens** |
+| [/uniks/{unikid}](api.html#get-unik-details) |
+| /uniks/{unikid}/transactions |
+| [/uniks/{unikid}/properties](api.html#get-unik-properties) | 
+| [/uniks/{unikid}/properties/{propertyKey}](api.html#get-specific-unik-property) |
+| [/uniks](api.html#list-minted-unik) _&rightarrow; list minted UNIKs_  |
 
 ## Transaction Types
 
