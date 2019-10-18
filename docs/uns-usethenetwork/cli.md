@@ -12,18 +12,37 @@ Universal Name System provides an interactive command line interface to create a
 
 **Mainnet is not launched yet, please use devnet**.
 
-## Requirements
-UNS CLI installation requires some dependencies to be installed. It is expected to work on recent Linux and MacOS installations.
+The UNS Command Line Interface is expected to work on recent Linux, MacOS, Windows 10 with WSL installations.
+Some users have reported successful installation and use of the UNS CLI on "raw" Windows 10 OS.
 
-### Node.js
+## Installation
+
+### Installation from sources
+
+#### Requirements
+UNS CLI installation requires some dependencies to be installed. 
+
+##### Node.js
 
 Install Node.js 10: [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 
 **UNS CLI doesn't work on earlier (6, 8) or later versions of Node.js (11, 12+)**.
 
-## Installation
+##### Compilation tools
 
-Use NPM to install UNS CLI as global command
+Even if the UNS CLI is written in a cross-operating system language (Javascript), it requires native dependencies which need to be compiled for your operating system.
+
+You need:
+- gcc/g++
+- Python 2.7
+
+Most of the times, theses tools are already installed. If not, you can read on the [@unik-name Forum](https://forum.unik-name.com/t/how-to-get-required-tools-to-install-the-uns-cli/95) how to install them for your operating system.
+
+If still you need help to install theses tools, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
+
+#### UNS CLI installation
+
+Use NPM to install UNS CLI as global command (sudo mode might be required, dependending on your NodeJS installation).
 
 ```bash
 [sudo] npm install -g @uns/uns-cli
@@ -41,6 +60,8 @@ which should output something like that:
 $ uns version
 @uns/uns-cli/x.y.z linux-x64 node-v10.16.3
 ```
+
+If you fail to install the CLI, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
 
 ## UNS CLI Commands
 
