@@ -58,7 +58,7 @@ Full list of available types [here](https://docs.uns.network/uns-tokens/#existin
 ```typescript
 import { UNSClient, NodeStatus, Network } from "@uns/ts-sdk"
 
-const nodeStatus:NodeStatus = await new UNSClient(Network.devnet).node.status()
+const nodeStatus:NodeStatus = (await new UNSClient(Network.devnet).node.status()).data
 const { synced, now, blocksCount } = nodeStatus;
 
 ```
@@ -100,7 +100,18 @@ if( response instanceof PropertyValue ){
 
 This function is protected by HTML escaping. When you use `getPropertyValue` function, the result is "HTML escaped" by default.
 
-**Do not use `eval` function with a property retrieved by the chain. Javascript can be easily injected!**
+***Do not use `eval` function with a property retrieved by the chain. Javascript can be easily injected!***
+
+#### Resolve Decentralized Identifier (DID)
+
+```typescript
+import { didResolve, DidResolution, Unik, Network } from "@uns/ts-sdk"
+const unikType = "individual";
+const unikName = "unikName";
+const response = await didResolve(`@unik:${unikType}/${unikName}`, Network.devnet) as DidResolution<Unik>;
+const { id, ownerId } = response.data;
+
+```
 
 ## Cryptography SDK
 
