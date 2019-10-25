@@ -610,7 +610,7 @@ Get the value of a specific property of a UNIK token.
 
 #### Parameters
 
-- `--unikid` (required): The UNIK token on which to set the properties.
+- `--unikid` (required): The UNIK token on which to get the property.
 - `-k, --propertyKey` (required), The key of the property for which we query the value.
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
@@ -680,4 +680,43 @@ uns did-resolve --network devnet @unik:individual/bob?postal_address
 $ uns did-resolve --network devnet @unik:individual/bob?postal_address -f raw
 
 42 quai Malakoff, 44000 Nantes
+```
+
+
+### `is-disclosed`
+
+#### Introduction
+Check if UNIK has one or more disclosed explicit value.
+
+#### Parameters
+
+- `--unikid` (required): The UNIK token.
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
+- `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
+- `-f, --format` {json|yaml|raw, json}: Specify how to format the output [json|yaml|raw]. Default to Json.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns is-disclosed --unikid {UNIK token id} -n devnet
+```
+
+#### Examples
+
+##### Success example
+
+Check UNIK explicit value disclose status
+```bash
+uns is-disclosed --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n devnet
+```
+
+##### Success output example
+
+```bash
+$ uns uns is-disclosed --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n devnet -f yaml
+unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+isDisclosed: true
+confirmations: 833
 ```
