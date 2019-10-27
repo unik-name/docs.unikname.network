@@ -1,9 +1,9 @@
 ---
 home: false
-title: "Becoming UNS Network Player"
+title: "Becoming uns.network Player"
 ---
 
-# Becoming a Network Player
+# Becoming a <uns>uns.network</uns> Player
 
 
 ## Become a delegate on the DEVNET
@@ -28,7 +28,7 @@ Finally submit your transaction.
 
 Now, your job is done. You can check on [explorer](https://explorer.devnet.uns.network/#/delegate-monitor) that you're in delegate list (either in `active` or `standby` tab).
 
-If you're in the `active` tab, congratulation, you're a UNS delegate, and your forger node is actually forging blocks and getting rewards.
+If you're in the `active` tab, congratulation, you're a <uns>uns.network</uns> delegate, and your forger node is actually forging blocks and getting rewards.
 
 If you're in the `standby` tab, you need to gather more voting power than current active delegates (i.e. have wallets with positive balance voting for you).
 

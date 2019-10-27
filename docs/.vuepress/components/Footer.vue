@@ -1,7 +1,7 @@
 <template>
   <footer>
     <p></p>
-    © 2019 <a href="https://www.unik-name.com">@unik-name</a>&nbsp;&bullet;&nbsp;<a href="/uns-poweredbyark/">Powered by Ark.io</a>
+    © 2019 <a href="https://www.unik-name.com">@unik-name</a>&nbsp;&bullet;&nbsp;<a href="/uns-network-powered-by-ark-io/">Powered by Ark.io</a>
     <p></p>
   </footer>
 </template>
