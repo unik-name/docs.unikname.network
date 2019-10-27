@@ -1,9 +1,9 @@
 ---
 home: false
-title: "Q&A UNS"
+title: "Q&A uns.network"
 ---
 
-# Q&A UNS
+# Q&A uns.network
 
 [[TOC]]
 
@@ -15,7 +15,7 @@ If you have any comments or requests, please open a topic on our [forum](https:/
 
 **A Decentralized Identifier, also called "DID", is a digital identifier that is persistent, secure, and globally resolvable.** Their creation does not require a central authority or intermediary. Every DID are cryptographically secured by private keys under the sole control of the owner.
 
-UNIK tokens are Decentralized Identifiers (DID), recorder within the UNS blockchain.
+UNIK tokens are Decentralized Identifiers (DID), recorder within the <uns>uns.network</uns> blockchain.
 
 ### What is a Human-Readable Identifier? 
 
@@ -49,9 +49,9 @@ Users have the guarantee that their @unik-name cannot be counterfeit: no errors 
 
 Both serve their own purpose.
 
-The UNS token is a technical token, used to secure the UNS network, and to reward Network Players for services provided to the UNS network. 
+The UNS token is a technical token, used to secure the uns.network, and to reward Network Players for services provided to the Network. 
 
-The UNIK token is inseparable from every @unik-name. Technically UNIK is a NFT (Non-Fongible-Token), not like the UNS Token. UNIK Token is the unique representation of a @unik-name identifier within our UNS public blockchain. It's the technical link with your registry of personal data.
+The UNIK token is inseparable from every @unik-name. Technically UNIK is a NFT (Non-Fongible-Token), not like the UNS Token. UNIK Token is the unique representation of a @unik-name identifier within our <uns>uns.network</uns> public blockchain. It's the technical link with your registry of personal data.
 
 ### What is a NFT and why is UNIK a Non-Fungible Token? 
 

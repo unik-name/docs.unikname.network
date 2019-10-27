@@ -1,36 +1,37 @@
 ---
 home: false
-title: Using UNS network with the CLI 
+title: "Using <uns>uns.network</uns> with the CLI"
 ---
 
-# UNS CLI
+# <uns>uns.network</uns> CLI
 
 [[toc]]
 
 ## Introduction
-Universal Name System provides an interactive command line interface to create and manage your wallets, your UNS protocol tokens and your UNIK NFT tokens.
+<uns>uns.network</uns> provides an interactive command line interface to create and manage your wallets, your UNS protocol tokens and your UNIK NFT tokens.
 
 **Mainnet is not launched yet, please use devnet**.
 
-The UNS Command Line Interface is expected to work on recent Linux, MacOS, Windows 10 with WSL installations.
-Some users have reported successful installation and use of the UNS CLI on "raw" Windows 10 OS.
+The <uns>uns.network</uns> Command Line Interface is expected to work on recent Linux, MacOS, Windows 10 with WSL installations.  
+Some users have reported successful installation and use of the <uns>uns.network</uns> CLI on "raw" Windows 10 OS.
 
 ## Installation
 
 ### Installation from sources
 
 #### Requirements
-UNS CLI installation requires some dependencies to be installed. 
+
+<uns>uns.network</uns> CLI installation requires some dependencies to be installed. 
 
 ##### Node.js
 
 Install Node.js 10: [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 
-**UNS CLI doesn't work on earlier (6, 8) or later versions of Node.js (11, 12+)**.
+<uns>uns.network</uns> CLI doesn't work on earlier (6, 8) or later versions of Node.js (11, 12+)**.
 
 ##### Compilation tools
 
-Even if the UNS CLI is written in a cross-operating system language (Javascript), it requires native dependencies which need to be compiled for your operating system.
+Even if the <uns>uns.network</uns> CLI is written in a cross-operating system language (Javascript), it requires native dependencies which need to be compiled for your operating system.
 
 You need:
 - gcc/g++
@@ -40,9 +41,9 @@ Most of the times, theses tools are already installed. If not, you can read on t
 
 If still you need help to install theses tools, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
 
-#### UNS CLI installation
+#### <uns>uns.network</uns> CLI installation
 
-Use NPM to install UNS CLI as global command (sudo mode might be required, dependending on your NodeJS installation).
+Use NPM to install <uns>uns.network</uns> CLI as global command (sudo mode might be required, dependending on your NodeJS installation).
 
 ```bash
 [sudo] npm install -g @uns/uns-cli
@@ -63,7 +64,7 @@ $ uns version
 
 If you fail to install the CLI, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
 
-## UNS CLI Commands
+## <uns>uns.network</uns> CLI Commands
 
 ### Get help
 
@@ -87,7 +88,7 @@ USAGE
 
 COMMANDS
   create-unik         Create UNIK token
-  create-wallet       Create UNS wallet
+  create-wallet       Create <uns>uns.network</uns> wallet
   get-properties      Get properties of UNIK token.
   get-property-value  Get the value of a specific property of a UNIK token.
   help                display help for uns
@@ -95,7 +96,7 @@ COMMANDS
   read-wallet         Read current data of a specified wallet, ic. balance
   set-properties      Set (add or update) properties of UNIK token.
   status              Display blockchain status
-  version             UNS CLI Version
+  version             <uns>uns.network</uns> CLI Version
 ```
 
 You can get help on a specific command by using the `help` command, followed by your command name.
@@ -104,7 +105,7 @@ Example:
 
 ```bash
 $ uns help create-wallet
-Create UNS wallet
+Create <uns>uns.network</uns> wallet
 
 USAGE
   $ uns create-wallet
@@ -123,7 +124,7 @@ These parameters apply to all commands:
 
 - `--verbose` (optional): Additionnal logs
 
-- `-n, --network` (required): choose the UNS network to interact with.
+- `-n, --network` (required): choose the network to interact with.
 
   Possible values: `devnet` or `local` (`local` is for development only)
 
@@ -176,7 +177,7 @@ uns status
 ```
 
 #### Examples
-To display UNS devnet blockchain status
+To display <uns>uns.network</uns> devnet blockchain status
 
 ```bash
 uns status --network devnet --format yaml
@@ -198,7 +199,7 @@ Last block:  https://explorer.devnet.uns.network/block/7496261431277872677
 ### `create-wallet`
 
 #### Introduction
-With UNS CLI you can create your UNS wallet using `create-wallet` command.
+With <uns>uns.network</uns> CLI you can create your <uns>uns.network</uns> wallet using `create-wallet` command.
 
 #### Parameters
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
@@ -212,14 +213,14 @@ uns create-wallet
 ```
 
 #### Examples
-As example, if you want to create a UNS wallet on `devnet` network:
+As example, if you want to create a <uns>uns.network</uns> wallet on `devnet` network:
 ```bash
 uns create-wallet --network devnet
 ```
 
 #### Output
 
-If the wallet creation succeed UNS CLI displays your wallet information.
+If the wallet creation succeed <uns>uns.network</uns> CLI displays your wallet information.
 
 ```bash
 $ uns create-wallet
@@ -301,7 +302,7 @@ For information: Wallet's balance is updated applying each transaction that enga
 ### `create-unik`
 
 #### Introduction
-With UNS CLI you can create your own UNIK token using `create-unik` command.
+With <uns>uns.network</uns> CLI you can create your own UNIK token using `create-unik` command.
 
 #### Parameters
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
@@ -338,7 +339,7 @@ Enter your wallet passphrase (12 words phrase): ********************************
 
 #### Output
 
-If the creation succeed UNS CLI prompts yout UNIK token ID and links to see token and transaction in the UNS explorer.
+If the creation succeed <uns>uns.network</uns> CLI prompts yout UNIK token ID and links to see token and transaction in the <uns>uns.network</uns> explorer.
 
 ```
 Computing UNIK fingerprint... done

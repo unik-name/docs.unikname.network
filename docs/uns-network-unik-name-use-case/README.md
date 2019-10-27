@@ -5,7 +5,7 @@ title: "@unik-name"
 
 # @unik-name
 
-First purposes of the UNS network are to secure any web connections and to protect the user's privacy by providing sovereign IDs rooted in the blockchain. So as the first APP and DAPP available with the UNS network serve these purposes. They've been package thru different solution to meet user needs and higly demanded use case. These solutions are the following ones:  
+First purposes of the <uns>uns.network</uns> are to secure any web connections and to protect the user's privacy by providing sovereign IDs rooted in the blockchain. So as the first APP and DAPP available with the <uns>uns.network</uns> serve these purposes. They've been package thru different solution to meet user needs and higly demanded use case. These solutions are the following ones:  
 
 ## my @unik-name
 

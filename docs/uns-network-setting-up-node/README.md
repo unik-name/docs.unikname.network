@@ -1,15 +1,15 @@
 ---
 home: false
-title: "Setting-up your UNS Node"
+title: "Setting-up your <uns>uns.network</uns> Node"
 ---
 
 # Setting-up your Node
 
 ## Introduction
 
-Here we will help you set up a UNS relay node and/or forger node.
+Here we will help you set up a <uns>uns.network</uns> relay node and/or forger node.
 
-To make your life easier, we've built Docker images of UNS nodes.
+To make your life easier, we've built Docker images of <uns>uns.network</uns> nodes.
 
 ### What is docker 
 
@@ -40,7 +40,7 @@ First of all, be sure to have these prerequisites:
 
 Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
 - DEVNET:
-  * `4102` (required): this is the communication port used by the node to exchange information with other nodes of the UNS network
+  * `4102` (required): this is the communication port used by the node to exchange information with other nodes of the uns.network
   * `4103` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
 - MAINNET: not available yet
 
@@ -66,7 +66,7 @@ $ docker login
 
 ## Run a node with Docker Compose
 
-In this documentation, we'll start devnet UNS node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
+In this documentation, we'll start devnet <uns>uns.network</uns> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
 
 Create the following configuration file `docker-compose.yml`: 
 
@@ -149,7 +149,7 @@ It has two exposed ports; for p2p (`4102`) and for API (`4103`), and mount 3 vol
 
 Some environment variables are set :
 - for the database (port, user name, user password and db name)
-- for the network (here it's `devnet`, it means that it'll connect to other UNS devnet nodes)
+- for the network (here it's `devnet`, it means that it'll connect to other <uns>uns.network</uns> devnet nodes)
 - and the forger secret (line `FORGER_SECRET`, commented by default). 
 
 ### Run a relay with Docker Compose
