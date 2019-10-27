@@ -1,13 +1,12 @@
-# UNS Network Player Hub
+# <uns>uns.network</uns> Player Hub
 
-**Universal-Name-System (UNS)** IDs rooted in the blockchain,  
-to protect the user's privacy and to secure connections
+<uns>uns.network</uns> is the blockchain and the protocol dedicated for sovereign IDs.
 
 <p align="center">
     <img src="uns-banner.png" />
 </p>
 
-> Official guides and documentation for the UNS blockchain network and protocol, powered by VuePress.
+> Official guides and documentation for the <uns>uns.network</uns> blockchain and protocol, powered by VuePress.
 
 ## Development
 
@@ -22,7 +21,7 @@ Then open http://localhost:8080/
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@uns.network All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@<uns>uns.network</uns> All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
@@ -35,4 +34,4 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
-[MIT](LICENSE) © [UNS Network](https://www.uns.network) by [@unik-name](https://www.unik-name.com)
+[MIT](LICENSE) © [www.uns.network](https://www.uns.network) by [@unik-name](https://www.unik-name.com)

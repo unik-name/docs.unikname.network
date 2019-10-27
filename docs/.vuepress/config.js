@@ -1,10 +1,10 @@
 module.exports = {
-  title: "The UNS Network Player Hub",
-  title2: "Universal-Name-System Docs",
+  title: "The uns.network Player Hub",
+  title2: "uns.network Docs (Universal-Name-System)",
   description:
-    "Comprehensive guides and documentation to help you start working with the UNS blockchain as quickly as possible. Let's go!",
+    "Comprehensive guides and documentation to help you start working with the uns.network blockchain and protocol as quickly as possible. Let's go!",
   description2:
-    "Official documentation for the Universal-Name-System (UNS) blockchain network and protocol",
+    "Official documentation for the uns.network blockchain and protocol (Universal-Name-System)",
   plugins: {
     sitemap: {
       hostname: "https://docs.uns.network"
@@ -27,56 +27,53 @@ module.exports = {
     lastUpdated: true,
     activeHeaderLinks: true,
     nav: [
-      { text: "Getting Started", link: "/uns-getting-started/" },
+      { text: "Getting Started", link: "/uns-network-getting-started/" },
       { text: "Becoming a Network Player", link: "/uns-network-player/" }
     ],
     sidebar: [
       "/",
-      ["/uns-getting-started/", "Getting Started"],
+      ["/uns-network-getting-started/", "Getting Started"],
       {
         title: "Introduction",
         children: [
-          ["/uns-introduction/", "Understanding UNS"],
-          ["/uns-tokens/", "The UNS Tokens"]
+          ["/uns-network-introduction/", "Understanding uns.network"],
+          ["/uns-network-tokens/", "The uns.network Tokens"]
         ]
       },
       {
-        title: "Using the Network",
+        title: "Using the uns.network",
         children: [
-          ["/uns-usethenetwork/", "Introduction"],
-          ["/uns-usethenetwork/cli", "CLI"],
-          ["/uns-usethenetwork/api", "API"],
-          ["/uns-usethenetwork/sdk", "SDK"],
-          ["/uns-usethenetwork/wallet", "Wallet"],
-          ["/uns-usethenetwork/cheatsheet", "Cheat Sheet"]
+          ["/uns-use-the-network/", "Introduction"],
+          ["/uns-use-the-network/cli", "CLI"],
+          ["/uns-use-the-network/api", "API"],
+          ["/uns-use-the-network/sdk", "SDK"],
+          ["/uns-use-the-network/wallet", "Wallet"],
+          ["/uns-use-the-network/cheatsheet", "Cheat Sheet"]
         ]
       },
-      ["/uns-unikname/", "@unik-name use cases"],
+      ["/uns-network-unik-name-use-case/", "uns.network use cases"],
       {
         title: "Network Player",
         /* collapsable: false, */
         children: [
           ["/uns-network-player/", "Becoming a network player"],
-          ["/uns-rewarding/", "Get Rewards"],
-          ["/uns-setting-up-node/", "Setting up your Node"]
+          ["/uns-network-rewarding/", "Get Rewards"],
+          ["/uns-network-setting-up-node/", "Setting up your Node"]
         ]
       },
       {
         title: "Security",
         children: [
-          ["/uns-security/", "Security & Hack Protections"],
-          [
-            "/uns-security/security-vulnerabilities",
-            "Security & Vulnerabilities"
-          ]
+          ["/uns-network-security/", "Security & Hack Protections"],
+          ["/uns-network-security/security-vulnerabilities", "Security & Vulnerabilities"]
         ]
       },
       {
         title: "More...",
         children: [
-          ["/uns-qna/", "Q&A"],
-          ["/uns-glossary/", "Glossary"],
-          ["/uns-poweredbyark/", "Powered by Ark.io"]
+          ["/uns-network-qna/", "Q&A"],
+          ["/uns-network-glossary/", "Glossary"],
+          ["/uns-network-poweredbyark/", "Powered by Ark.io"]
         ]
       }
     ]

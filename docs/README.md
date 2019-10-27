@@ -4,26 +4,26 @@ actionText: Getting Started
 actionLink: /uns-getting-started/
 ---
 
-Welcome to the <span title="'Universal-Name-System'">UNS</span> Network Player hub. You're are at the right place to find guides and docs to help you working with the UNS blockchain, as well as support if you get stuck.
+Welcome to the <uns>uns.network</uns> Player hub. You're are at the right place to find guides and docs to help you working with the <uns>uns.network</uns> blockchain, as well as support if you get stuck.
 
-## [Understanding UNS](/uns-introduction/)
+## [Understanding uns.network](/uns-network-introduction/)
 
-## [The UNS Tokens](/uns-tokens/)
+## [The uns.network Tokens](/uns-network-tokens/)
 
-## [Using the UNS Network](/uns-usethenetwork/)
+## [Using the uns.network](/uns-use-the-network/)
 
-## [@unik-name use cases (UNS DApp)](/uns-unikname/)
+## [uns.network use cases: @unik-name DApp](/uns-network-unik-name-use-case/)
 
 ## [Becoming a Network Player](/uns-network-player/)
 
-## [Get Rewards](/uns-rewarding/)
+## [Get Rewards](/uns-network-rewarding/)
 
-## [Setting-up your Node](/uns-setting-up-node/)
+## [Setting-up your Node](/uns-network-setting-up-node/)
 
-## [Security](/uns-security/)
+## [Security](/uns-network-security/)
 
-## [Q&A](/uns-qna/)
+## [Q&A](/uns-network-qna/)
 
-## [Glossary](/uns-glossary/)
+## [Glossary](/uns-network-glossary/)
 
 <Footer/>

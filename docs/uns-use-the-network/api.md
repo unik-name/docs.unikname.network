@@ -1,9 +1,9 @@
 ---
 home: false
-title: "UNS APIs"
+title: "<uns>uns.network</uns> APIs"
 ---
 
-# UNS APIs
+# <uns>uns.network</uns> APIs
 
 [[TOC]]
 
@@ -17,7 +17,7 @@ You can try this API through our official [node](https://forger1.devnet.uns.netw
 
 ### List minted UNIK
 
-Get an overview of all minted non-fungible tokens of UNS network.
+Get an overview of all minted non-fungible tokens of uns.network.
 
 For each token you get its id and the current wallet address owning it.
 
@@ -203,7 +203,7 @@ curl https://forger1.devnet.uns.network/api/v2/uniks/86869b8e0a12cd46d96b96816e0
 
 ## Public Wallets API
 
-Wallets are addresses containing, or previously having contained UNS. A wallet's public key may be unknown to the network, in that case, it is referred to as a `cold wallet`.
+Wallets are addresses containing, or previously having contained UNS tokens. A wallet's public key may be unknown to the network, in that case, it is referred to as a `cold wallet`.
 
 ### Retrieve a Wallet
 
@@ -356,14 +356,14 @@ GET /api/v2/transactions/{id}
 
 ## UNS token APIs
 
-UNS token APIs are not specific to the UNS Network, they're coming from ARK standards. As a consequence all ARK API are working on the UNS network.
+UNS token APIs are not specific to the uns.network, they're coming from ARK.IO standards. As a consequence all ARK.IO API are working on the uns.network.
 
 For example the API `/blockain` used to retrieve latest block and supply in the chain
 ```
 curl --header "API-Version: 2" https://api.ark.io/api/blockchain
 ```
 
-works also on the uns network
+works also on the uns.network
 
 ```
 curl --header "API-Version: 2" https://forger1.devnet.uns.network/api/blockchain
