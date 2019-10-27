@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: Getting Started
-actionLink: /uns-getting-started/
+actionLink: /uns-network-getting-started/
 ---
 
 Welcome to the <uns>uns.network</uns> Player hub. You're are at the right place to find guides and docs to help you working with the <uns>uns.network</uns> blockchain, as well as support if you get stuck.
