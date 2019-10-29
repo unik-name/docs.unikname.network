@@ -306,7 +306,7 @@ With <uns>uns.network</uns> CLI you can create your own UNIK token using `create
 
 #### Parameters
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
-- `--type` (required): Type of your token [individual/corporate]
+- `--type` (required): Type of your token [individual/organization/network]
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 
@@ -315,7 +315,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns create-unik --explicitValue {explicitValue} --type [individual|corporate]
+uns create-unik --explicitValue {explicitValue} --type [individual|organization|network]
 ```
 
 #### Examples
