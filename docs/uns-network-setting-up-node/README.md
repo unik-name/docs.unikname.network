@@ -29,10 +29,19 @@ Orchestrators with Docker as a first-class citizen:
 - [Nomad](https://www.nomadproject.io/)
 - [Mesos](http://mesos.apache.org/)
 
+### Minimum requirements for running a DEVNET relay or forger node
+
+- Linux: Ubuntu 16.04 / 18.04, CentOS/RHEL 7 / 8 ...
+- 2+ vCPU x86/64 bits
+- 2-4 GB RAM
+- at least 20 GB drive 
+
+We strongly recommend running your node on SSD drive as there are a lot of read and write operations to the DB.
+
 ## Installation
 
 First of all, be sure to have these prerequisites:
-- [Docker](https://docs.docker.com/install) installed on your machine
+- [Docker](https://docs.docker.com/install) installed on your Linux machine
 - [Docker Compose](https://docs.docker.com/compose/install) installed on your machine (only if you want to use it to setup node, documented below).
 - a [Docker Hub](https://hub.docker.com/) account (Sign up if you don't have one yet).
 
