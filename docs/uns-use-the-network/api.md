@@ -1,6 +1,6 @@
 ---
 home: false
-title: "<uns>uns.network</uns> APIs"
+title: "uns.network APIs"
 ---
 
 # <uns>uns.network</uns> APIs

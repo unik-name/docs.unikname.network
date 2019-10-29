@@ -1,6 +1,6 @@
 ---
 home: false
-title: "Getting Started with <uns>uns.network</uns> "
+title: "Getting Started with uns.network "
 ---
 
 # Getting Started with <uns>uns.network</uns> 

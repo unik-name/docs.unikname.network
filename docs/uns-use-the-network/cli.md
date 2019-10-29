@@ -1,6 +1,6 @@
 ---
 home: false
-title: "Using <uns>uns.network</uns> with the CLI"
+title: "Using uns.network with the CLI"
 ---
 
 # <uns>uns.network</uns> CLI
@@ -43,7 +43,7 @@ If still you need help to install theses tools, you can get support on [the @uni
 
 #### <uns>uns.network</uns> CLI installation
 
-Use NPM to install <uns>uns.network</uns> CLI as global command (sudo mode might be required, dependending on your NodeJS installation).
+Use NPM to install <uns>uns.network</uns> CLI as global command (sudo mode might be required, depending on your NodeJS installation).
 
 ```bash
 [sudo] npm install -g @uns/uns-cli
@@ -88,7 +88,7 @@ USAGE
 
 COMMANDS
   create-unik         Create UNIK token
-  create-wallet       Create <uns>uns.network</uns> wallet
+  create-wallet       Create uns.network wallet
   get-properties      Get properties of UNIK token.
   get-property-value  Get the value of a specific property of a UNIK token.
   help                display help for uns
@@ -96,7 +96,7 @@ COMMANDS
   read-wallet         Read current data of a specified wallet, ic. balance
   set-properties      Set (add or update) properties of UNIK token.
   status              Display blockchain status
-  version             <uns>uns.network</uns> CLI Version
+  version             uns.network CLI Version
 ```
 
 You can get help on a specific command by using the `help` command, followed by your command name.
@@ -105,7 +105,7 @@ Example:
 
 ```bash
 $ uns help create-wallet
-Create <uns>uns.network</uns> wallet
+Create uns.network wallet
 
 USAGE
   $ uns create-wallet
@@ -122,7 +122,7 @@ EXAMPLE
 
 These parameters apply to all commands:
 
-- `--verbose` (optional): Additionnal logs
+- `--verbose` (optional): Additional logs
 
 - `-n, --network` (required): choose the network to interact with.
 
@@ -188,13 +188,13 @@ Command displays some blockchain information
 
 ```bash
 $ uns status --network devnet --format yaml
-
-Height:  21600
-Network:  devnet
-Supply DUNS:  2197055800000000 DUNS
-Supply UNIKs:  23 UNIKs
-Active delegates:  2
-Last block:  https://explorer.devnet.uns.network/block/7496261431277872677
+height: 21600
+network: devnet
+totalTokenSupply: 21184378
+tokenSymbol: DUNS
+numberOfUniks: 23
+activeDelegates: 7
+lastBlockUrl: https://explorer.devnet.uns.network/block/21600
 ```
 ### `create-wallet`
 

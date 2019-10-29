@@ -1,6 +1,6 @@
 ---
 home: false
-title: "Becoming <uns>uns.network</uns> Player"
+title: "Becoming uns.network Player"
 ---
 
 # Becoming a <uns>uns.network</uns> Player

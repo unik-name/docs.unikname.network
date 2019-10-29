@@ -1,6 +1,6 @@
 ---
 home: false
-title: "<uns>uns.network</uns> Glossary"
+title: "uns.network Glossary"
 ---
 
 # <uns>uns.network</uns> Glossary 

@@ -1,6 +1,6 @@
 ---
 home: false
-title: "Get <uns>uns.network</uns> Rewards"
+title: "Get uns.network Rewards"
 ---
 
 # Get Rewards

@@ -1,6 +1,6 @@
 ---
 home: false
-title: "Setting-up your <uns>uns.network</uns> Node"
+title: "Setting-up your uns.network Node"
 ---
 
 # Setting-up your Node

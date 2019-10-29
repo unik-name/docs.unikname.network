@@ -1,6 +1,6 @@
 ---
 home: false
-title: "<uns>uns.network</uns> SDK Overview"
+title: "uns.network SDK Overview"
 ---
 
 # <uns>uns.network</uns> SDK overview

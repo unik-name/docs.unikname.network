@@ -1,6 +1,6 @@
 ---
 home: false
-title: "<uns>uns.network</uns> Tokens"
+title: "uns.network Tokens"
 ---
 
 # The <uns>uns.network</uns> Tokens

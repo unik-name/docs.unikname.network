@@ -1,6 +1,6 @@
 ---
 home: false
-title: <uns>uns.network</uns> Cheat Sheet 
+title: uns.network Cheat Sheet 
 pageClass: cheatsheet-pageclass
 ---
 

@@ -1,6 +1,6 @@
 ---
 home: false
-title: "<uns>uns.network</uns> Security Vulnerabilies"
+title: "uns.network Security Vulnerabilies"
 ---
 
 # Security Vulnerabilities

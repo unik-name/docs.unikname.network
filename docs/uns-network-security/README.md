@@ -1,6 +1,6 @@
 ---
 home: false
-title: "<uns>uns.network</uns> Security & Hack Protections"
+title: "uns.network Security & Hack Protections"
 ---
 
 # Security & Hack Protections
