@@ -1,0 +1,17 @@
+# 2019-10-29 rebranding uns -> uns-network
+# Default 301 redirections
+/uns-qna                     /uns-network-qna
+/uns-security                /uns-network-security
+/uns-tokens                  /uns-network-tokens
+/uns-rewarding               /uns-network-rewarding
+/uns-poweredbyark            /uns-network-powered-by-ark-io
+/uns-poweredbyark/images     /uns-network-powered-by-ark-io/images
+/uns-glossary                /uns-network-glossary
+/uns-unikname                /uns-network-unik-name-use-case
+/uns-usethenetwork           /uns-use-the-network
+/uns-usethenetwork/images    /uns-use-the-network/images
+/uns-network-player          /uns-network-player
+/uns-network-player/images   /uns-network-player/images
+/uns-introduction            /uns-network-introduction
+/uns-setting-up-node         /uns-network-setting-up-node
+/uns-getting-started         /uns-network-getting-started
