@@ -2,8 +2,5 @@
   command = "yarn docs:build"
   publish = "docs/.vuepress/dist"
 
-[[redirects]]
-  from = "https://developer.uns.network/*"
-  to = "https://docs.uns.network/:splat"
-  status = 301
-  force = true
+# [[redirects]]
+# All redirections are handle in folder docs/.vurpress/public/_redirects file
