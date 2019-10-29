@@ -73,7 +73,7 @@ module.exports = {
         children: [
           ["/uns-network-qna/", "Q&A"],
           ["/uns-network-glossary/", "Glossary"],
-          ["/uns-network-powered-by-ark-io/", "Powered by Ark.io"]
+          ["/uns-network-powered-by-ark-io/", "Powered by ARK"]
         ]
       }
     ]
