@@ -5,6 +5,8 @@ title: "Setting-up your uns.network Node"
 
 # Setting-up your Node
 
+[[toc]]
+
 ## Introduction
 
 Here we will help you set up a <uns>uns.network</uns> relay node and/or forger node.
