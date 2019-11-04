@@ -41,9 +41,9 @@ Most of the times, theses tools are already installed. If not, you can read on t
 
 If still you need help to install theses tools, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
 
-#### <uns>uns.network</uns> CLI installation
+#### Installation with NPM
 
-Use NPM to install <uns>uns.network</uns> CLI as global command (sudo mode might be required, depending on your NodeJS installation).
+As NPM is provided by NodeJS package, you can use it to install <uns>uns.network</uns> CLI as global command ("sudo mode" might be required, depending on your NodeJS installation).
 
 ```bash
 [sudo] npm install -g @uns/uns-cli
@@ -64,9 +64,77 @@ $ uns version
 
 If you fail to install the CLI, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
 
-## <uns>uns.network</uns> CLI Commands
+**Note**
+If you want, you can also use [Yarn](https://yarnpkg.com/) instead of NPM to install the <uns>uns.network</uns> CLI from sources.
 
-### Get help
+## uns.network CLI configuration
+
+### Global parameters
+
+You can use the following command line options to override the default configuration settings for a single command:
+
+- `--verbose` (optional): Additional logs
+
+- `-n, --network` (required): choose the network to interact with.
+
+  Possible values: `devnet` or `local` (`local` is for development only)
+
+::: tip
+Avoid repetition of `--network` flag using the `UNS_NETWORK={network}` environment variable (or `%UNS_NETWORK%` for Windows shell).
+
+
+Example:
+```shell
+$ UNS_NETWORK=devnet uns status
+```
+
+You can export also this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
+:::
+
+### Using an HTTP Proxy
+
+To access <uns>uns.network</uns> through proxy servers, you can configure the HTTP_PROXY and HTTPS_PROXY environment variables with either the DNS domain names or IP addresses and port numbers used by your proxy servers. See the following examples.
+
+#### Linux or macOS, or Unix
+
+```shell
+$ export HTTP_PROXY=http://proxy.example.com:1234
+$ export HTTPS_PROXY=http://proxy.example.com:5678
+```
+
+### Windows
+
+```shell
+C:\> setx HTTP_PROXY=http://proxy.example.com:1234
+C:\> setx HTTPS_PROXY=http://proxy.example.com:5678 
+```
+
+#### Authenticating to a Proxy
+
+The <uns>uns.network</uns> CLI supports HTTP Basic authentication. Specify the user name and password in the proxy URL, as follows.
+
+##### Linux or macOS
+
+```shell
+$ export HTTP_PROXY=http://username:password@proxy.example.com:1234
+$ export HTTPS_PROXY=http://username:password@proxy.example.com:5678
+```
+
+##### Windows
+
+```shell
+C:\> setx HTTP_PROXY http://username:password@proxy.example.com:1234
+C:\> setx HTTPS_PROXY=http://username:password@proxy.example.com:5678
+```
+
+**Note**
+
+The <uns>uns.network</uns> CLI doesn't support NTLM proxies. If you use an NTLM or Kerberos protocol proxy, you might be able to connect through an authentication proxy like [Cntlm](http://cntlm.sourceforge.net/).
+
+
+## uns.network CLI Commands
+
+### Getting help
 
 You can get help and list of commands with the following flags
 
@@ -117,28 +185,6 @@ OPTIONS
 EXAMPLE
   $ uns create-wallet -n devnet
 ```
-
-### Global parameters
-
-These parameters apply to all commands:
-
-- `--verbose` (optional): Additional logs
-
-- `-n, --network` (required): choose the network to interact with.
-
-  Possible values: `devnet` or `local` (`local` is for development only)
-
-::: tip
-Avoid repetition of `--network` flag using the `UNS_NETWORK={network}` environment variable (or `%UNS_NETWORK%` for Windows shell).
-
-
-Example:
-```
-$ UNS_NETWORK=devnet uns status
-```
-
-You can export also this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
-:::
 
 ### `version`
 
