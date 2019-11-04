@@ -16,7 +16,7 @@ module.exports = {
       }
     }
   },
-  head: [["link", { rel: "icon", href: "./logo.png" }]],
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     logo: "./logo.png",
     repo: "unik-name/docs.uns.network",
@@ -65,7 +65,10 @@ module.exports = {
         title: "Security",
         children: [
           ["/uns-network-security/", "Security & Hack Protections"],
-          ["/uns-network-security/security-vulnerabilities", "Security & Vulnerabilities"]
+          [
+            "/uns-network-security/security-vulnerabilities",
+            "Security & Vulnerabilities"
+          ]
         ]
       },
       {
