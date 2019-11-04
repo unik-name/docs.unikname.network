@@ -34,7 +34,9 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "serve": "yarn docs:dev",
+    "docs:build": "vuepress build docs",
+    "build": "yarn docs:build"
   },
   "devDependencies": {
     "highlight.js": "^9.13.1",
