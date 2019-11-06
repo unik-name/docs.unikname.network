@@ -769,3 +769,45 @@ unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 isDisclosed: true
 confirmations: 833
 ```
+
+
+### `send`
+
+#### Introduction
+Send owned UNS protocol tokens to another wallet.
+
+#### Arguments
+- `AMOUNT` (required):  The quantity of UNS tokens to send to the recipient.
+
+#### Parameters
+
+- `--to` (required): The recipient address.
+- `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
+- `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
+- `--await`: Number of blocks to wait to get confirmed for the success. Default to 3. 0 for immediate return.
+- `--confirmations`: Number of confirmations to wait to get confirmed for the success. Default to 1.
+- `--passphrase`: The passphrase of the owner of unik. If you do not enter a passphrase you will be prompted for it.
+- `--secondPassphrase`: The second wallet passphrase. If you have created a second passphrase on your wallet, you have to enter it.
+- `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns send 10.42 --to D59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network devnet
+```
+
+#### Examples
+
+##### Output example
+
+```bash
+$ uns send 10.42 --to D59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network devnet
+Enter your wallet passphrase (12 words phrase): *************************************************************************
+
+{
+  transaction: 3996912796307dae3009bc1cb3e4b681a3e34a427d563711115799252715179f
+  confirmations: 3
+}
+```
