@@ -734,9 +734,11 @@ data:
 #### Introduction
 Check if UNIK has one or more disclosed explicit value.
 
+#### Arguments
+- `unikid` (required):  The UNIK token to query.
+
 #### Parameters
 
-- `--unikid` (required): The UNIK token.
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
 - `-f, --format` {json|yaml|raw, json}: Specify how to format the output [json|yaml|raw]. Default to Json.
@@ -746,7 +748,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns is-disclosed --unikid {UNIK token id} -n devnet
+uns is-disclosed -n devnet {UNIK token id}
 ```
 
 #### Examples
@@ -755,13 +757,14 @@ uns is-disclosed --unikid {UNIK token id} -n devnet
 
 Check UNIK explicit value disclose status
 ```bash
-uns is-disclosed --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n devnet
+uns is-disclosed -n devnet 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
 ##### Success output example
 
 ```bash
-$ uns uns is-disclosed --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n devnet -f yaml
+$ uns uns is-disclosed -n devnet 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -f yaml
+
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 isDisclosed: true
 confirmations: 833
