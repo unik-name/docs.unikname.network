@@ -683,6 +683,52 @@ $ uns did-resolve --network devnet @unik:individual/bob?postal_address -f raw
 ```
 
 
+### `disclose-explicit-values`
+
+#### Introduction
+Make public one or more explicit values of your UNIK Name. This value will appear in "explicitValue" property of your UNIK.
+
+#### Parameters
+
+- `-e, --explicitValue` (required): Explicit values to disclose, separated with spaces. Must match the UNIK Name of the token.
+- `--unikid` (required): The UNIK token.
+- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
+- `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
+  `0` for immediate return.
+  Needs to be strictly greater than `--confirmation` flag
+- `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
+- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+uns disclose-explicit-values -n devnet --unikid {UNIK token id} -e {explicit values}
+```
+
+#### Examples
+
+##### Success example
+
+Disclose two explicit values: bob and b0b
+```bash
+uns disclose-explicit-values -n devnet --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb
+```
+
+##### Success output example
+
+```bash
+$ uns disclose-explicit-values -n devnet --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb -f yaml
+
+Disclosing a @unik-name to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
+data:
+  transaction: adf4e1d845c82b2cffe63b5e438869fcea384439ab913885697726894a99c75b
+  confirmations: 1
+```
+
+
 ### `is-disclosed`
 
 #### Introduction
