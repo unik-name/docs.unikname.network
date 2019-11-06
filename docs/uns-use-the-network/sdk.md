@@ -107,9 +107,79 @@ This function is protected by HTML escaping. When you use `getPropertyValue` fun
 import { didResolve, DidResolution, Unik, Network } from "@uns/ts-sdk"
 const unikType = "individual";
 const unikName = "unikName";
-const response = await didResolve(`@unik:${unikType}/${unikName}`, Network.devnet) as DidResolution<Unik>;
+const response = await didResolve(`@unik:${unikType}:${unikName}`, Network.devnet) as DidResolution<Unik>;
 const { id, ownerId } = response.data;
 
+```
+
+
+#### Disclose
+
+SDK contains some helpers for disclose feature.
+
+##### build a disclose demand
+
+To disclose explicit values of a given @unik-name, you must create a demand first, then send this demand to an authorized certification service.
+The demand builder requires :
+- the unik-name fingerprint 
+- a list of explicit values of your @unik-name you want to disclose
+- type of your @unik-name
+- passphrase of the wallet owner of the @unik-name
+
+```typescript
+import { buildDiscloseDemand, DIDTypes, DiscloseDemand } from "@uns/ts-sdk"
+
+const demand: DiscloseDemand = buildDiscloseDemand(
+  "a242daa994cc5490020871731d34f7cd3c3993e0b30bac1233d7483001e96e77", // unikname fingerprint 
+  ["explicit1", "explicit2"], // explicit values to disclose
+  DIDTypes.INDIVIDUAL, // type of your unikname
+  "this is my passphrase" // of the unik-name owner to sign demand
+);
+```
+
+A disclose demand contains:
+
+```typescript
+{
+  payload:{
+    sub:string,
+    iss:string,
+    iat:number,
+    explicitValue: string[]
+    type: DIDTypes
+  },
+  signature: string
+}
+```
+
+##### send a disclose demand
+
+Once you have built a disclose demand through the builder above, you must submit it to an authorized certification service. 
+
+```typescript
+import { UNSClient, Response, DiscloseDemandCertification, FunctionalError } from "@uns/ts-sdk"
+
+const certifiedDemandResponse: Response<DiscloseDemandCertification> = await new UNSClient(Network.devnet).discloseDemandCertification.get(demand);
+if( certifiedDemandResponse.data ){
+  const certifiedDemand: DiscloseDemandCertification = certifiedDemandResponse.data
+  console.log(certifiedDemand)
+} else{
+  const error: FunctionalError = certifiedDemandResponse.error 
+  console.log(error.message)
+}
+```
+
+A certified disclose demand contains:
+
+```typescript
+{
+  payload:{
+    sub: string;
+    iss: string;
+    iat: number;
+  },
+  signature: string
+}
 ```
 
 ## Cryptography SDK
