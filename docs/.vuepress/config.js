@@ -14,7 +14,8 @@ module.exports = {
         // UTC date (without time) as ISO format: 2019-09-17
         return new Date(timestamp).toISOString().split("T")[0];
       }
-    }
+    },
+    "@vuepress/back-to-top": {}
   },
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
