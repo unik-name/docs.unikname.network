@@ -88,7 +88,7 @@ Example:
 $ UNS_NETWORK=devnet uns status
 ```
 
-You can export also this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
+You can also export this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
 :::
 
 - `--node` (optional): URL of custom node representing blockchain endpoint
@@ -102,8 +102,14 @@ Example:
 $ UNS_NODE="http://custom.node.example:4103" uns status
 ```
 
-You can export also this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
+You can also export this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
 :::
+### Write global parameters
+
+For every new data added in the chain, you may wait for the write operation to be confirmed. Once the transaction data is written in a block, the data get one confirmation for every new block added in the chain. By default we wait for one confirmation in the next 3 blocks. With the await-confirmation flag, you can choose to extend the maximum waiting time or set it to 0 which corresponds to an asynchronous operation.
+
+- `--await-confirmation` (optional): Maximum number of blocks to wait to get one confirmation of the transaction. Default to 3. 0 for immediate return.
+
 
 ### Using an HTTP Proxy
 
@@ -185,23 +191,25 @@ COMMANDS
   version                   UNS CLI Version
 ```
 
-You can get help on a specific command by using the `help` command, followed by your command name.
+You can get help on a specific command by using `--help`, following your command name.
 
 Example:
 
 ```bash
-$ uns help create-wallet
+$ uns create-wallet --help
 Create uns.network wallet
 
 USAGE
   $ uns create-wallet
 
 OPTIONS
-  -h, --help              show CLI help
-  -n, --network=devnet  (required) Network used to create UNIK nft token
+  -f, --format=json|yaml      [default: json] Specify how to format the output [json|yaml].
+  -h, --help                  show CLI help
+  -n, --network=devnet|local  (required) Network used to create UNIK nft token
+  -v, --verbose               Detailed logs
 
 EXAMPLE
-  $ uns create-wallet -n devnet
+  $ uns create-wallet --network [devnet|local] --format {json|yaml} --verbose
 ```
 
 ### `version`
@@ -477,28 +485,20 @@ Set (add or update) properties of UNIK token.
 #### Parameters
 
 - `--unikid` (required): the ID of the UNIK token
-- `-p --properties` (required): Array of properties to set.
-  
-  `"key1:value1" "key3:"` Sets `value1` to `key1` and empty string to `key3`. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
-- `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
-  
-  `0` for immediate return.
-  Needs to be strictly greater than `--confirmation` flag
-- `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
+- `-p --properties` (required): List of key/value to set as UNIK properties: "key1:value1" "key2:value2".  See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
+- `--await-confirmation` : Maximum number of blocks to wait to get one confirmation of the transaction. Default to 3. 0 for immediate return.
 
-  Needs to be strictly lower than `--await` flag
 - `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
-It's impossible to ask more confirmations (with the --confirmations flag) than the number of blocks CLI waits (--await). Only 1 confirmation possible by block.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
 
 ```bash
-uns set-properties --unikid {UNIK token id} --properties "key:value" "key3:" --network devnet
+uns set-properties --unikid {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network devnet
 ```
 
 #### Example
@@ -519,6 +519,9 @@ confirmations:  1
 
 ```
 
+##### Related commands
+- [unset-properties](#unset-properties)
+
 ### `unset-properties`
 
 #### Introduction
@@ -528,18 +531,10 @@ Unset properties of UNIK token.
 
 - `--unikid` (required): the ID of the UNIK token
 - `-k --propertyKey`, Key of the property to unset. (multiple occurrences)
-- `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
-  
-  `0` for immediate return.
-  Needs to be strictly greater than `--confirmation` flag
-- `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
-
-  Needs to be strictly lower than `--await` flag
+- `--await-confirmation` : Maximum number of blocks to wait to get one confirmation of the transaction. Default to 3. 0 for immediate return.
 - `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
-
-It's impossible to ask more confirmations (with the --confirmations flag) than the number of blocks CLI waits (--await). Only 1 confirmation possible by block.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -566,6 +561,8 @@ transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
 confirmations:  1
 
 ```
+##### Related commands
+- [set-properties](#set-properties)
 
 ### `get-properties`
 
@@ -721,10 +718,7 @@ Make public one or more explicit values of your UNIK Name. This value will appea
 - `-e, --explicitValue` (required): Explicit values to disclose, separated with spaces. Must match the UNIK Name of the token.
 - `--unikid` (required): The UNIK token.
 - `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
-- `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
-  `0` for immediate return.
-  Needs to be strictly greater than `--confirmation` flag
-- `--confirmations` : Number of confirmations to wait to get confirmed for the success. Default to `1`.
+- `--await-confirmation` : Maximum number of blocks to wait to get one confirmation of the transaction. Default to 3. 0 for immediate return.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
 
@@ -812,8 +806,7 @@ Send owned UNS protocol tokens to another wallet.
 - `--to` (required): The recipient address, public key or @unik-name (warning: @unik-name must be surrounded with double quotes).
 - `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
 - `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
-- `--await`: Number of blocks to wait to get confirmed for the success. Default to 3. 0 for immediate return.
-- `--confirmations`: Number of confirmations to wait to get confirmed for the success. Default to 1.
+- `--await-confirmation` : Maximum number of blocks to wait to get one confirmation of the transaction. Default to 3. 0 for immediate return.
 - `--passphrase`: The passphrase of the owner of unik. If you do not enter a passphrase you will be prompted for it.
 - `--secondPassphrase`: The second wallet passphrase. If you have created a second passphrase on your wallet, you have to enter it.
 - `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
