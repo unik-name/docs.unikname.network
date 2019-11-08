@@ -651,12 +651,16 @@ Resolve a decentralized identifier (DID).
 #### Arguments
 - `DID` (required):  The decentralized identifier to resolve.
 
-Expected format : `[@][unik:][type:]expliciteValue[?propertyKey|?*]`, where:
+Expected format : `"[@][unik:][type:]expliciteValue[?propertyKey|?*]"`, where:
 - `type` can be one of [these values](/uns-use-the-network/cheatsheet.html#types-and-categories-of-unik) (numeric or letter format)
 - `explicitValue` is the usual value of your @unik-name
 - `propertyKey` must match with [this format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
 
 See examples below for more information.
+
+::: warning
+DID must be surrounded by double quotes (e.g. `"@bob"`)
+:::
 
 #### Parameters
 
@@ -787,7 +791,7 @@ Send owned UNS protocol tokens to another wallet.
 
 #### Parameters
 
-- `--to` (required): The recipient address.
+- `--to` (required): The recipient address, public key or @unik-name (warning: @unik-name must be surrounded with double quotes).
 - `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
 - `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
 - `--await`: Number of blocks to wait to get confirmed for the success. Default to 3. 0 for immediate return.
@@ -802,6 +806,10 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 ```bash
 uns send 10.42 --to D59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network devnet
+```
+
+```bash
+uns send 10.42 --to "@bob" --network devnet
 ```
 
 #### Examples
