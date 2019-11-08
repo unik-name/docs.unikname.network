@@ -67,7 +67,7 @@ If you fail to install the CLI, you can get support on [the @unik-name Forum](ht
 **Note**
 If you want, you can also use [Yarn](https://yarnpkg.com/) instead of NPM to install the <uns>uns.network</uns> CLI from sources.
 
-## uns.network CLI configuration
+## Configuration
 
 ### Global parameters
 
@@ -132,7 +132,7 @@ C:\> setx HTTPS_PROXY=http://username:password@proxy.example.com:5678
 The <uns>uns.network</uns> CLI doesn't support NTLM proxies. If you use an NTLM or Kerberos protocol proxy, you might be able to connect through an authentication proxy like [Cntlm](http://cntlm.sourceforge.net/).
 
 
-## uns.network CLI Commands
+## Commands
 
 ### Getting help
 
@@ -461,7 +461,7 @@ Set (add or update) properties of UNIK token.
 - `--unikid` (required): the ID of the UNIK token
 - `-p --properties` (required): Array of properties to set.
   
-  `"key1:value1" "key3:"` Sets `value1` to `key1` and empty string to `key3`
+  `"key1:value1" "key3:"` Sets `value1` to `key1` and empty string to `key3`. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
 - `--await` : Number of blocks to wait to get confirmed for the success. Default to `3`.
   
   `0` for immediate return.
@@ -611,7 +611,7 @@ Get the value of a specific property of a UNIK token.
 #### Parameters
 
 - `--unikid` (required): The UNIK token on which to get the property.
-- `-k, --propertyKey` (required), The key of the property for which we query the value.
+- `-k, --propertyKey` (required): the key of the property for which we query the value. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
 - `-f, --format` {json|yaml|raw, json}: Specify how to format the output [json|yaml|raw]. Default to Json.
@@ -621,7 +621,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns get-property-value --unikid {UNIK token id} -k {property key} -n devnet
+uns get-property-value --unikid {UNIK token id} -k {propertyKey} -n devnet
 ```
 
 #### Examples
@@ -646,10 +646,17 @@ confirmations: 833
 ### `did-resolve`
 
 #### Introduction
-Resolve a decentralized identifier.
+Resolve a decentralized identifier (DID).
 
 #### Arguments
-- `DID` (required):  The identifier to resolve. Expected format : '@[unik:][type,1]/expliciteValue[?propertyKey|?*]'
+- `DID` (required):  The decentralized identifier to resolve.
+
+Expected format : `[@][unik:][type:]expliciteValue[?propertyKey|?*]`, where:
+- `type` can be one of [these values](/uns-use-the-network/cheatsheet.html#types-and-categories-of-unik) (numeric or letter format)
+- `explicitValue` is the usual value of your @unik-name
+- `propertyKey` must match with [this format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
+
+See examples below for more information.
 
 #### Parameters
 
@@ -662,24 +669,23 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns did-resolve --network devnet @unik:individual/bob?phone_number
+$ uns did-resolve --network devnet "@unik:individual:bob?phone"
 ```
 
 #### Examples
 
-##### Success example
-
-Resolve `@bob` `postal_address` property
+Resolve `@bob` `address` property in raw format:
 ```bash
-uns did-resolve --network devnet @unik:individual/bob?postal_address
-```
-
-##### Success output example
-
-```bash
-$ uns did-resolve --network devnet @unik:individual/bob?postal_address -f raw
+$ uns did-resolve --network devnet -f raw "@unik:individual:bob?address"
 
 42 quai Malakoff, 44000 Nantes
+```
+
+Alternative syntaxes:
+```bash
+$ uns did-resolve --network devnet -f raw "bob?address"
+$ uns did-resolve --network devnet -f raw "@bob?address"
+$ uns did-resolve --network devnet -f raw "@unik:bob?address"
 ```
 
 
