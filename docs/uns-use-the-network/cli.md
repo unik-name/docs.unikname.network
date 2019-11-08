@@ -91,6 +91,20 @@ $ UNS_NETWORK=devnet uns status
 You can export also this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
 :::
 
+- `--node` (optional): URL of custom node representing blockchain endpoint
+
+::: tip
+Avoid repetition of `--node` flag using the `UNS_NODE={custom node url}` environment variable (or `%UNS_NODE%` for Windows shell).
+
+
+Example:
+```shell
+$ UNS_NODE="http://custom.node.example:4103" uns status
+```
+
+You can export also this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
+:::
+
 ### Using an HTTP Proxy
 
 To access <uns>uns.network</uns> through proxy servers, you can configure the HTTP_PROXY and HTTPS_PROXY environment variables with either the DNS domain names or IP addresses and port numbers used by your proxy servers. See the following examples.
