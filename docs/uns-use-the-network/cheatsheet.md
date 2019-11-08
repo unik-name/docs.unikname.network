@@ -95,3 +95,8 @@ Types &rightarrow; { 1 | **individual** }, { 2 | **organization** }, { 3 | **net
 | organization | 0x201 | Standard Latin | Latin charset of SafeTypo |
 | network | 0x301 | Standard Latin | Latin charset of SafeTypo |
 
+# Property keys of UNIK
+
+Property keys format must match with the following rules:
+- be alphanumeric: `a-z A-Z 0-9`
+- be shorter or equals to 255 characters
