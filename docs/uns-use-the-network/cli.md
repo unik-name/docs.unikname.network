@@ -149,22 +149,26 @@ $ uns -h
 uns CLI
 
 VERSION
-  @uns/uns-cli/0.1.0 linux-x64 node-v10.16.2
+  @uns/uns-cli/1.0.0 win32-x64 node-v11.8.0
 
 USAGE
   $ uns [COMMAND]
 
 COMMANDS
-  create-unik         Create UNIK token
-  create-wallet       Create uns.network wallet
-  get-properties      Get properties of UNIK token.
-  get-property-value  Get the value of a specific property of a UNIK token.
-  help                display help for uns
-  read-unik           Display UNIK token informations
-  read-wallet         Read current data of a specified wallet, ic. balance
-  set-properties      Set (add or update) properties of UNIK token.
-  status              Display blockchain status
-  version             uns.network CLI Version
+  create-unik               Create UNIK token
+  create-wallet             Create UNS wallet
+  did-resolve               Resolve a decentralized identifier.
+  disclose-explicit-values  Disclose one or multiple explicitValues of your UNIK identifier.
+  get-properties            Get properties of UNIK token.
+  get-property-value        Get the value of a specific property of a UNIK token.
+  help                      display help for uns
+  read-unik                 Display UNIK token informations
+  read-wallet               Read current data of a specified wallet, ic. balance
+  send                      Send owned UNS protocol tokens to another wallet.
+  set-properties            Set (add or update) properties of UNIK token.
+  status                    Display blockchain status
+  unset-properties          Unset properties of UNIK token.
+  version                   UNS CLI Version
 ```
 
 You can get help on a specific command by using the `help` command, followed by your command name.
@@ -203,7 +207,7 @@ Command prompts CLI version number, platform and node version
 
 ```
 $ uns version
-@uns/uns-cli/x.y.z linux-x64 node-v10.0.0
+@uns/uns-cli/x.y.z win32-x64 node-v11.8.0
 ```
 
 ### `status`
