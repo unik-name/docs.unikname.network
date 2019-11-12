@@ -105,7 +105,6 @@ services:
     restart: always
     environment:
      UNS_NET: sandbox
-     BOOTSTRAP: "true"
      # FORGER_SECRET: "" # <-- Edit here to start a forger. Do nothing to start a relay
      CORE_DB_HOST: postgres
      CORE_DB_PORT: 5432
@@ -139,7 +138,7 @@ You can run a node without docker-compose with simple docker commands, but we wo
 :::
 
 ::: tip
-**Optionally**, you can get access to log and configuration files, by mapping a volume to `/etc/uns` and `/var/log/uns`.
+**Optionally**, you can get access to log and configuration files, by mapping a volume to `/etc/uns` and `/var/log/uns` or running `docker logs uns`
 :::
 
 ### Explanations
