@@ -9,10 +9,10 @@ title: "Becoming uns.network Player"
 ## Become a delegate on the DEVNET
 
 As prerequisite to be a delegate, you must have :
-- a wallet with positive balance with at least 30 DUNS (you can request DUNS [from the faucet](/uns-usethenetwork/#devnet-faucet)).
-- a [forger node](/uns-setting-up-node/#run-a-forger) configured with your wallet passphrase.
+- a wallet with positive balance with at least 30 DUNS (you can request DUNS [from the faucet](/uns-use-the-network/#devnet-faucet)).
+- a [forger node](/uns-network-setting-up-node/#run-a-forger) configured with your wallet passphrase.
 
-Then, all process can be done through the [desktop wallet](/uns-usethenetwork/wallet.html#basic-wallets).
+Then, all process can be done through the [desktop wallet](/uns-use-the-network/wallet.html#basic-wallets).
 
 On wallet detail screen, expand top bar options and choose `Register Delegate`
 
