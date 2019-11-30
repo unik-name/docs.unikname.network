@@ -15,7 +15,8 @@ module.exports = {
         return new Date(timestamp).toISOString().split("T")[0];
       }
     },
-    "@vuepress/back-to-top": {}
+    "@vuepress/back-to-top": {},
+    "tabs": {}
   },
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {

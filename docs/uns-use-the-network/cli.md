@@ -115,37 +115,45 @@ For every new data added in the chain, you may wait for the write operation to b
 
 To access <uns>uns.network</uns> through proxy servers, you can configure the HTTP_PROXY and HTTPS_PROXY environment variables with either the DNS domain names or IP addresses and port numbers used by your proxy servers. See the following examples.
 
-#### Linux or macOS, or Unix
+:::: tabs
 
+::: tab "Linux or macOS, or Unix"
 ```shell
 $ export HTTP_PROXY=http://proxy.example.com:1234
 $ export HTTPS_PROXY=http://proxy.example.com:5678
 ```
+:::
 
-### Windows
-
+::: tab "Windows"
 ```shell
 C:\> setx HTTP_PROXY=http://proxy.example.com:1234
 C:\> setx HTTPS_PROXY=http://proxy.example.com:5678 
 ```
+:::
+
+::::
 
 #### Authenticating to a Proxy
 
 The <uns>uns.network</uns> CLI supports HTTP Basic authentication. Specify the user name and password in the proxy URL, as follows.
 
-##### Linux or macOS
+:::: tabs
 
+::: tab "Linux or macOS"
 ```shell
 $ export HTTP_PROXY=http://username:password@proxy.example.com:1234
 $ export HTTPS_PROXY=http://username:password@proxy.example.com:5678
 ```
+:::
 
-##### Windows
-
+::: tab "Windows"
 ```shell
 C:\> setx HTTP_PROXY http://username:password@proxy.example.com:1234
 C:\> setx HTTPS_PROXY=http://username:password@proxy.example.com:5678
 ```
+:::
+
+::::
 
 **Note**
 
