@@ -104,11 +104,11 @@ This function is protected by HTML escaping. When you use `getPropertyValue` fun
 #### Resolve Decentralized Identifier (DID)
 
 ```typescript
-import { didResolve, DidResolution, Unik, Network } from "@uns/ts-sdk"
+import { didResolve, DidResolution, ResolutionResult, Network } from "@uns/ts-sdk"
 const unikType = "individual";
 const unikName = "unikName";
-const response = await didResolve(`@unik:${unikType}:${unikName}`, Network.devnet) as DidResolution<Unik>;
-const { id, ownerId } = response.data;
+const response = await didResolve(`@unik:${unikType}:${unikName}`, Network.devnet) as DidResolution<ResolutionResult>;
+const { unikid, ownerAddress } = response.data;
 
 ```
 
