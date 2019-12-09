@@ -182,6 +182,19 @@ A certified disclose demand contains:
 }
 ```
 
+#### Get chain NFTs statuses
+
+Retrieve all chain NFTs statuses (number of token for each types).
+
+```typescript
+import { getNftsStatuses, INftStatus, Network, ResponseWithChainMeta } from "@uns/ts-sdk";
+
+const statuses: ResponseWithChainMeta<INftStatus[]> = await getNftsStatuses(Network.devnet);
+const { data } = statuses;
+
+```
+
+
 ## Cryptography SDK
 
 Inherited from Ark crypto package, <uns>uns.network</uns> crypto package is available as a typescript library, published on npm : [`@uns/crypto`](https://www.npmjs.com/package/@uns/crypto)

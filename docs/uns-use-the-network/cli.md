@@ -246,7 +246,7 @@ $ uns version
 Command used to display blockchain status.
 
 #### Parameters
-- `-f --format` (optional): Specify how to format the output [json|table|yaml]. Default to Json.
+- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -272,7 +272,12 @@ height: 21600
 network: devnet
 totalTokenSupply: 21184378
 tokenSymbol: DUNS
-numberOfUniks: 23
+NFTs:
+  - nftName: UNIK
+    individual: "130"
+    organization: "48"
+    network: "21"
+]
 activeDelegates: 7
 lastBlockUrl: https://explorer.devnet.uns.network/block/21600
 ```
