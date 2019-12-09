@@ -1,4 +1,5 @@
 const path = require('path')
+//require('matomo.js')
 
 // Theme API.
 module.exports = (options, ctx) => {
@@ -52,6 +53,10 @@ module.exports = (options, ctx) => {
         }
       }],
       ['smooth-scroll', enableSmoothScroll]
+    ],
+    
+    enhanceAppFiles: [
+      path.resolve(__dirname, 'unskpi.js')
     ]
   }
 }

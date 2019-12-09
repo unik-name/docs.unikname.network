@@ -20,20 +20,15 @@ module.exports = {
   },
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
+    // instantiate matomo.js
     ["script", {}, `
       var _paq = window._paq || [];
-      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-      _paq.push(["setDomains", ["*.docs.uns.network","*.devnet.explorer.uns.network","*.explorer.uns.network","*.sandbox.explorer.uns.network","*.uns.network"]]);
-      _paq.push(["enableCrossDomainLinking"]);
-      _paq.push(["setDoNotTrack", true]);
-          _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
       (function() {
-        var u="//kpi.unik-name.com/";
+        var u="https://kpi.unik-name.com/";
         _paq.push(['setTrackerUrl', u+'matomo.php']);
         _paq.push(['setSiteId', '2']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='matomo.js'; s.parentNode.insertBefore(g,s);
       })();
     `]
   ],
