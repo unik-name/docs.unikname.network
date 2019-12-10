@@ -185,7 +185,7 @@ USAGE
 COMMANDS
   create-unik               Create UNIK token
   create-wallet             Create UNS wallet
-  did-resolve               Resolve a decentralized identifier.
+  resolve                   Resolve a decentralized identifier.
   disclose-explicit-values  Disclose one or multiple explicitValues of your UNIK identifier.
   get-properties            Get properties of UNIK token.
   get-property-value        Get the value of a specific property of a UNIK token.
@@ -694,23 +694,23 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns did-resolve --network devnet "@unik:individual:bob?phone"
+$ uns resolve --network devnet "@unik:individual:bob?phone"
 ```
 
 #### Examples
 
 Resolve `@bob` `address` property in raw format:
 ```bash
-$ uns did-resolve --network devnet -f raw "@unik:individual:bob?address"
+$ uns resolve --network devnet -f raw "@unik:individual:bob?address"
 
 42 quai Malakoff, 44000 Nantes
 ```
 
 Alternative syntaxes:
 ```bash
-$ uns did-resolve --network devnet -f raw "bob?address"
-$ uns did-resolve --network devnet -f raw "@bob?address"
-$ uns did-resolve --network devnet -f raw "@unik:bob?address"
+$ uns resolve --network devnet -f raw "bob?address"
+$ uns resolve --network devnet -f raw "@bob?address"
+$ uns resolve --network devnet -f raw "@unik:bob?address"
 ```
 
 
