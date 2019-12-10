@@ -25,5 +25,3 @@ Welcome to the <uns>uns.network</uns> Player hub. You're are at the right place 
 ## [Q&A](/uns-network-qna/)
 
 ## [Glossary](/uns-network-glossary/)
-
-<Footer/>
