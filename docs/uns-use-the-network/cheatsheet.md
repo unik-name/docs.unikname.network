@@ -10,10 +10,10 @@ pageClass: cheatsheet-pageclass
 | - | - | - | - | - |
 | [version](cli.html#version) | | | Display version of the CLI | 0.5.0 |
 | **Network** |
-| [status](cli.html#status) | -h -n -v | | Display <uns>uns.network</uns> blockchain status | 0.5.0 |
-| list-nodes | -h -n -v | | List current <uns>uns.network</uns> blockchain nodes | to come |
+| [status](cli.html#status) | -h -n -v | | Display <uns/> blockchain status | 0.5.0 |
+| list-nodes | -h -n -v | | List current <uns/> blockchain nodes | to come |
 | **Wallet** |
-| [create-wallet](cli.html#create-wallet) | -h -n -v -f | | Create a <uns>uns.network</uns> wallet | 0.5.0 |
+| [create-wallet](cli.html#create-wallet) | -h -n -v -f | | Create a <uns/> wallet | 0.5.0 |
 | [read-wallet](cli.html#read-wallet) | -h -n -v -f -m | | Read current data of a specified wallet, eg. balance | 0.5.0 |
 | get-wallet-address | -h -n -v -f -m | | Get public address for a specified UNIK or for a passphrase | to come |
 | **UNS protocol Token** |

@@ -9,7 +9,7 @@ title: Wallets for UNS tokens and UNIK tokens
 
 Both UNS and UNIK tokens are manageable with a command line interface (CLI). But this is not really user-friendly. 
 
-ArkEcosystem comes with a lot of out-of-the-box tools for bridgechains like UNS. Among those tools, we have the awesome [Desktop Wallet](https://ark.io/wallet) which is fully compatible with uns.network. From a single wallet application, you can manage your ARK **AND** UNS tokens easily. By default, the app connects to Ark.io mainnet. But with a simple configuration, you can connect it to <uns>uns.network</uns> too. Let's do it !
+ArkEcosystem comes with a lot of out-of-the-box tools for bridgechains like UNS. Among those tools, we have the awesome [Desktop Wallet](https://ark.io/wallet) which is fully compatible with uns.network. From a single wallet application, you can manage your ARK **AND** UNS tokens easily. By default, the app connects to Ark.io mainnet. But with a simple configuration, you can connect it to <uns/> too. Let's do it !
 
 ### How to setup the default ARK Desktop Wallet to work with UNS tokens
 
@@ -26,7 +26,7 @@ To manage UNS tokens it's simple and it requires only two additional steps:
 - setup a new network configuration
 - create a new dedicated profile.
 
-#### step 1. Setup the <uns>uns.network</uns> configuration
+#### step 1. Setup the uns.network configuration
 
 Go to `manage network` section (bottom-left of navigation bar).  
 ![manage-network](./images/manage-network.png)
@@ -36,7 +36,7 @@ Then click on : `Add a new network` (top-right)
 
 Fill inputs:
 - name: **UNS Devnet**
-- description: **<uns>uns.network</uns> DEVNET**
+- description: **<uns/> DEVNET**
 - seed server: **http://163.172.146.222:4200**
 
 And click on `Fetch` to automatically get full node configuration (like token name, explorer url or wallet derivation keys).
@@ -53,7 +53,7 @@ Fill-in all inputs like you did for Ark profile.
 Now, in step `2. Network` you can choose the freshly appeared `UNS Devnet` item.  
 ![network](./images/network.png)
 
-At the end, you should have a fully configured Desktop wallet able to transfer UNS tokens, create <uns>uns.network</uns> wallets, vote for <uns>uns.network</uns> delegates, or any other features inherited from ArkEcosystem.
+At the end, you should have a fully configured Desktop wallet able to transfer UNS tokens, create <uns/> wallets, vote for <uns/> delegates, or any other features inherited from ArkEcosystem.
 
 If you want to start playing, you can contact us and we'll send you some `DUNS` tokens over the devnet.
 

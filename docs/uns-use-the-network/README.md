@@ -3,11 +3,11 @@ home: false
 title: "Interacting with the uns.network"
 ---
 
-# Interacting with the <uns>uns.network</uns>
+# Interacting with the uns.network
 
-Users can interact or let say 'use' the <uns>uns.network</uns> in multiple ways depending on user's needs.
+Users can interact or let say 'use' the <uns/> in multiple ways depending on user's needs.
 
-If you're familiar with the <uns>uns.network</uns> environement, you may be interested to use the [cheat sheet](cheatsheet) to get a quick overwiew of usefull commands and APIs.
+If you're familiar with the <uns/> environement, you may be interested to use the [cheat sheet](cheatsheet) to get a quick overwiew of usefull commands and APIs.
 
 ### Use the CLI, to go fast with basic actions
 
@@ -19,11 +19,11 @@ The CLI runs with the MAINNET but also with the DEVNET for integration testing.
 
 ### Use the APIs, to consume network services
 
-All network services can be used via the <uns>uns.network</uns> APIs. This is the best way for developers to integrate <uns>uns.network</uns> services into their own developpements and APPs. 
+All network services can be used via the <uns/> APIs. This is the best way for developers to integrate <uns/> services into their own developpements and APPs. 
 
 [Read more &rightarrow;](api)
 
-### Use the SDKs, to quickly embed <uns>uns.network</uns> features, and @unik-name solutions, withing APPs
+### Use the SDKs, to quickly embed <uns/> features, and @unik-name solutions, withing APPs
 
 SDKs have been developped to simplify developer work when they integrate @unik-name solutions within their plateforms or their APPs. 
 
@@ -58,11 +58,11 @@ You can connect a node to the DEVNET by configuring the CLI, SDK, and even a ded
 
 - Creating test accounts
 - Developing and testing applications for free (use the faucet to get DUNS tokens)
-- Testing existing applications against new releases or release candidates of <uns>uns.network</uns> Core
+- Testing existing applications against new releases or release candidates of <uns/> Core
 
 Please note that **this network is ephemeral**, and may be reset anytime. Resets will be announced several days before the effective operation, so follow [announcements published on the unik-name forum](https://forum.unik-name.com/c/uns-network).
 
 #### DEVNET faucet
 
-If you need DUNS tokens to test the <uns>uns.network</uns> features (creating your UNIK for example), you can ask for DUNS on [the unik-name forum](https://forum.unik-name.com/new-topic?title=Request%20for%20DUNS&category=uns-network/faucet&tags=faucet,devnet).
-Don't forget to provide your wallet address, created with [the <uns>uns.network</uns> CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `D` letter, such as `DHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
+If you need DUNS tokens to test the <uns/> features (creating your UNIK for example), you can ask for DUNS on [the unik-name forum](https://forum.unik-name.com/new-topic?title=Request%20for%20DUNS&category=uns-network/faucet&tags=faucet,devnet).
+Don't forget to provide your wallet address, created with [the <uns/> CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `D` letter, such as `DHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).

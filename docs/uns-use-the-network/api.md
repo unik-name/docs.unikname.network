@@ -3,7 +3,7 @@ home: false
 title: "uns.network APIs"
 ---
 
-# <uns>uns.network</uns> APIs
+# uns.network APIs
 
 [[TOC]]
 

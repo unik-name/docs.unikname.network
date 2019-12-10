@@ -3,17 +3,17 @@ home: false
 title: "Using uns.network with the CLI"
 ---
 
-# <uns>uns.network</uns> CLI
+# uns.network CLI
 
 [[toc]]
 
 ## Introduction
-<uns>uns.network</uns> provides an interactive command line interface to create and manage your wallets, your UNS protocol tokens and your UNIK NFT tokens.
+<uns/> provides an interactive command line interface to create and manage your wallets, your UNS protocol tokens and your UNIK NFT tokens.
 
 **Mainnet is not launched yet, please use devnet**.
 
-The <uns>uns.network</uns> Command Line Interface is expected to work on recent Linux, MacOS, Windows 10 with WSL installations.  
-Some users have reported successful installation and use of the <uns>uns.network</uns> CLI on "raw" Windows 10 OS.
+The <uns/> Command Line Interface is expected to work on recent Linux, MacOS, Windows 10 with WSL installations.  
+Some users have reported successful installation and use of the <uns/> CLI on "raw" Windows 10 OS.
 
 ## Installation
 
@@ -21,17 +21,17 @@ Some users have reported successful installation and use of the <uns>uns.network
 
 #### Requirements
 
-<uns>uns.network</uns> CLI installation requires some dependencies to be installed. 
+<uns/> CLI installation requires some dependencies to be installed. 
 
 ##### Node.js
 
 Install Node.js 10: [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 
-<uns>uns.network</uns> CLI doesn't work on earlier (6, 8) or later versions of Node.js (11, 12+)**.
+<uns/> CLI doesn't work on earlier (6, 8) or later versions of Node.js (11, 12+)**.
 
 ##### Compilation tools
 
-Even if the <uns>uns.network</uns> CLI is written in a cross-operating system language (Javascript), it requires native dependencies which need to be compiled for your operating system.
+Even if the <uns/> CLI is written in a cross-operating system language (Javascript), it requires native dependencies which need to be compiled for your operating system.
 
 You need:
 - gcc/g++
@@ -43,7 +43,7 @@ If still you need help to install theses tools, you can get support on [the @uni
 
 #### Installation with NPM
 
-As NPM is provided by NodeJS package, you can use it to install <uns>uns.network</uns> CLI as global command ("sudo mode" might be required, depending on your NodeJS installation).
+As NPM is provided by NodeJS package, you can use it to install <uns/> CLI as global command ("sudo mode" might be required, depending on your NodeJS installation).
 
 ```bash
 [sudo] npm install -g @uns/uns-cli
@@ -65,7 +65,7 @@ $ uns version
 If you fail to install the CLI, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
 
 **Note**
-If you want, you can also use [Yarn](https://yarnpkg.com/) instead of NPM to install the <uns>uns.network</uns> CLI from sources.
+If you want, you can also use [Yarn](https://yarnpkg.com/) instead of NPM to install the <uns/> CLI from sources.
 
 ## Configuration
 
@@ -113,7 +113,7 @@ For every new data added in the chain, you may wait for the write operation to b
 
 ### Using an HTTP Proxy
 
-To access <uns>uns.network</uns> through proxy servers, you can configure the HTTP_PROXY and HTTPS_PROXY environment variables with either the DNS domain names or IP addresses and port numbers used by your proxy servers. See the following examples.
+To access <uns/> through proxy servers, you can configure the HTTP_PROXY and HTTPS_PROXY environment variables with either the DNS domain names or IP addresses and port numbers used by your proxy servers. See the following examples.
 
 :::: tabs
 
@@ -135,7 +135,7 @@ C:\> setx HTTPS_PROXY=http://proxy.example.com:5678
 
 #### Authenticating to a Proxy
 
-The <uns>uns.network</uns> CLI supports HTTP Basic authentication. Specify the user name and password in the proxy URL, as follows.
+The <uns/> CLI supports HTTP Basic authentication. Specify the user name and password in the proxy URL, as follows.
 
 :::: tabs
 
@@ -157,7 +157,7 @@ C:\> setx HTTPS_PROXY=http://username:password@proxy.example.com:5678
 
 **Note**
 
-The <uns>uns.network</uns> CLI doesn't support NTLM proxies. If you use an NTLM or Kerberos protocol proxy, you might be able to connect through an authentication proxy like [Cntlm](http://cntlm.sourceforge.net/).
+The <uns/> CLI doesn't support NTLM proxies. If you use an NTLM or Kerberos protocol proxy, you might be able to connect through an authentication proxy like [Cntlm](http://cntlm.sourceforge.net/).
 
 
 ## Commands
@@ -257,7 +257,7 @@ uns status
 ```
 
 #### Examples
-To display <uns>uns.network</uns> devnet blockchain status
+To display <uns/> devnet blockchain status
 
 ```bash
 uns status --network devnet --format yaml
@@ -279,7 +279,7 @@ lastBlockUrl: https://explorer.devnet.uns.network/block/21600
 ### `create-wallet`
 
 #### Introduction
-With <uns>uns.network</uns> CLI you can create your <uns>uns.network</uns> wallet using `create-wallet` command.
+With <uns/> CLI you can create your <uns/> wallet using `create-wallet` command.
 
 #### Parameters
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
@@ -293,14 +293,14 @@ uns create-wallet
 ```
 
 #### Examples
-As example, if you want to create a <uns>uns.network</uns> wallet on `devnet` network:
+As example, if you want to create a <uns/> wallet on `devnet` network:
 ```bash
 uns create-wallet --network devnet
 ```
 
 #### Output
 
-If the wallet creation succeed <uns>uns.network</uns> CLI displays your wallet information.
+If the wallet creation succeed <uns/> CLI displays your wallet information.
 
 ```bash
 $ uns create-wallet
@@ -382,7 +382,7 @@ For information: Wallet's balance is updated applying each transaction that enga
 ### `create-unik`
 
 #### Introduction
-With <uns>uns.network</uns> CLI you can create your own UNIK token using `create-unik` command.
+With <uns/> CLI you can create your own UNIK token using `create-unik` command.
 
 #### Parameters
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
@@ -419,7 +419,7 @@ Enter your wallet passphrase (12 words phrase): ********************************
 
 #### Output
 
-If the creation succeed <uns>uns.network</uns> CLI prompts yout UNIK token ID and links to see token and transaction in the <uns>uns.network</uns> explorer.
+If the creation succeed <uns/> CLI prompts yout UNIK token ID and links to see token and transaction in the <uns/> explorer.
 
 ```
 Computing UNIK fingerprint... done
