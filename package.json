@@ -1,12 +1,13 @@
 {
   "name": "@uns/docs.uns.network",
   "version": "1.0.0",
-  "description": "Official documentation for the <uns>uns.network</uns> blockchain",
+  "description": "Official documentation for the uns.network blockchain",
   "contributors": [
     "Fabien Tréguer <fabien.treguer@spacelephant.org>",
     "Damien Lecan <damien.lecan@spacelephant.org>",
     "Guillaume Nicolas <guillaume.nicolas@spacelephant.org>",
-    "Laurent Lourenco <laurent.lourenco@spacelephant.org>"
+    "Laurent Lourenco <laurent.lourenco@spacelephant.org>",
+    "Pierre Seznec <pierre.seznec@spacelephant.org>"
   ],
   "license": "MIT",
   "keywords": [
