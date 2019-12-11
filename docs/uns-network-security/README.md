@@ -54,4 +54,4 @@ Names are easily readable, pronounceable and communicable safely regarding spoof
 
 ### Open Source Algorithms protection
 
-All algorithms will be open source and published during the opening of the mainnet.
+All algorithms will be open source and published during the opening of the livenet.

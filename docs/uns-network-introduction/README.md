@@ -38,3 +38,13 @@ Title: Understanding uns.network
 ## Under the hood
 
 <uns/> blockchain runs with a token used to secure the network and to rewards network players. <uns/> blockchain works also with another token, the UNIK Token, a NFT Token representing @unik-name or any other Identifiers.
+
+## Our networks
+
+To have a secured network we must test and make new features approved by our community. Moreover it leads to decrease functional and technical issues. 
+
+To do that, we're maintaining 2 public networks : 
+
+- **SANDBOX**: development network (equivalent to devnet on other blockchains). Used to test and discuss new features with community before making them available for all. Tokens are **valueless** (you can get them for free through our [faucet](https://forum.unik-name.com/c/uns-network/faucet) ). Use them to test next features and your apps based on UNIK tokens. 
+
+- **LIVENET**: main network (equivalent to mainnet on other blockchains). Here it's real. Tokens are **valuable** and you must use them with caution. *This network will be available soon*. 

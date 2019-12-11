@@ -57,7 +57,7 @@ Full list of available types [here](https://docs.uns.network/uns-tokens/#existin
 ```typescript
 import { UNSClient, NodeStatus, Network } from "@uns/ts-sdk"
 
-const nodeStatus:NodeStatus = (await new UNSClient(Network.devnet).node.status()).data
+const nodeStatus:NodeStatus = (await new UNSClient(Network.sandbox).node.status()).data
 const { synced, now, blocksCount } = nodeStatus;
 
 ```
@@ -67,7 +67,7 @@ const { synced, now, blocksCount } = nodeStatus;
 ```typescript
 import { UNSClient, Unik, ResponseWithChainMeta, ChainMeta, Network } from "@uns/ts-sdk"
 
-const response: ResponseWithChainMeta<Unik> = await new UNSClient(Network.devnet).unik.get("unikId");
+const response: ResponseWithChainMeta<Unik> = await new UNSClient(Network.sandbox).unik.get("unikId");
 const unik: Unik = response.data;
 const meta: ChainMeta = response.chainmeta;
 
@@ -84,7 +84,7 @@ const options = {
   disableHtmlEscape: true; // Disable HTML escaping [default: false]
 }
 
-const response: ResponseWithChainMeta<PropertyValue> | PropertyValue = await getPropertyValue("unikId", "propertyKey", Network.devnet, options);
+const response: ResponseWithChainMeta<PropertyValue> | PropertyValue = await getPropertyValue("unikId", "propertyKey", Network.sandbox, options);
 
 if( response instanceof PropertyValue ){
   const value: PropertyValue = response as PropertyValue;
@@ -107,7 +107,7 @@ This function is protected by HTML escaping. When you use `getPropertyValue` fun
 import { didResolve, DidResolution, ResolutionResult, Network } from "@uns/ts-sdk"
 const unikType = "individual";
 const unikName = "unikName";
-const response = await didResolve(`@unik:${unikType}:${unikName}`, Network.devnet) as DidResolution<ResolutionResult>;
+const response = await didResolve(`@unik:${unikType}:${unikName}`, Network.sandbox) as DidResolution<ResolutionResult>;
 const { unikid, ownerAddress } = response.data;
 
 ```
@@ -159,7 +159,7 @@ Once you have built a disclose demand through the builder above, you must submit
 ```typescript
 import { UNSClient, Response, DiscloseDemandCertification, FunctionalError } from "@uns/ts-sdk"
 
-const certifiedDemandResponse: Response<DiscloseDemandCertification> = await new UNSClient(Network.devnet).discloseDemandCertification.get(demand);
+const certifiedDemandResponse: Response<DiscloseDemandCertification> = await new UNSClient(Network.sandbox).discloseDemandCertification.get(demand);
 if( certifiedDemandResponse.data ){
   const certifiedDemand: DiscloseDemandCertification = certifiedDemandResponse.data
   console.log(certifiedDemand)

@@ -10,7 +10,7 @@ title: "Using uns.network with the CLI"
 ## Introduction
 <uns/> provides an interactive command line interface to create and manage your wallets, your UNS protocol tokens and your UNIK NFT tokens.
 
-**Mainnet is not launched yet, please use devnet**.
+**Livenet is not launched yet, please use sandbox**.
 
 The <uns/> Command Line Interface is expected to work on recent Linux, MacOS, Windows 10 with WSL installations.  
 Some users have reported successful installation and use of the <uns/> CLI on "raw" Windows 10 OS.
@@ -77,7 +77,7 @@ You can use the following command line options to override the default configura
 
 - `-n, --network` (required): choose the network to interact with.
 
-  Possible values: `devnet` or `local` (`local` is for development only)
+  Possible values: `sandbox` or `local` (`local` is for development only)
 
 ::: tip
 Avoid repetition of `--network` flag using the `UNS_NETWORK={network}` environment variable (or `%UNS_NETWORK%` for Windows shell).
@@ -85,7 +85,7 @@ Avoid repetition of `--network` flag using the `UNS_NETWORK={network}` environme
 
 Example:
 ```shell
-$ UNS_NETWORK=devnet uns status
+$ UNS_NETWORK=sandbox uns status
 ```
 
 You can also export this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
@@ -213,11 +213,11 @@ USAGE
 OPTIONS
   -f, --format=json|yaml      [default: json] Specify how to format the output [json|yaml].
   -h, --help                  show CLI help
-  -n, --network=devnet|local  (required) Network used to create UNIK nft token
+  -n, --network=sandbox|local  (required) Network used to create UNIK nft token
   -v, --verbose               Detailed logs
 
 EXAMPLE
-  $ uns create-wallet --network [devnet|local] --format {json|yaml} --verbose
+  $ uns create-wallet --network [sandbox|local] --format {json|yaml} --verbose
 ```
 
 ### `version`
@@ -257,29 +257,29 @@ uns status
 ```
 
 #### Examples
-To display <uns/> devnet blockchain status
+To display <uns/> sandbox blockchain status
 
 ```bash
-uns status --network devnet --format yaml
+uns status --network sandbox --format yaml
 ```
 
 #### Output
 Command displays some blockchain information
 
 ```bash
-$ uns status --network devnet --format yaml
+$ uns status --network sandbox --format yaml
 height: 21600
-network: devnet
+network: sandbox
 totalTokenSupply: 21184378
-tokenSymbol: DUNS
 NFTs:
   - nftName: UNIK
     individual: "130"
     organization: "48"
     network: "21"
-]
+tokenSymbol: SUNS
+numberOfUniks: 23
 activeDelegates: 7
-lastBlockUrl: https://explorer.devnet.uns.network/block/21600
+lastBlockUrl: https://sandbox.explorer.uns.network/#/block/21600
 ```
 ### `create-wallet`
 
@@ -298,9 +298,9 @@ uns create-wallet
 ```
 
 #### Examples
-As example, if you want to create a <uns/> wallet on `devnet` network:
+As example, if you want to create a <uns/> wallet on `sandbox` network:
 ```bash
-uns create-wallet --network devnet
+uns create-wallet --network sandbox
 ```
 
 #### Output
@@ -313,11 +313,11 @@ $ uns create-wallet
 ⚠️  WARNING: this information is not saved anywhere. You need to copy and save it by your own. ⚠️
 
 {
-  "address": "D9B6HLADr1Fd6TXvEGCuNc3A9aHK9JzjYC",
+  "address": "S9B6HLADr1Fd6TXvEGCuNc3A9aHK9JzjYC",
   "publicKey": "03522706bd0b812faea10e92dc0400e37aba468f9df3e2f63570c11c2b66eadc22",
   "privateKey": "d7877b7867404cd35bf85ea7643ad23058f5af1262d11a389ffc429648f4abe7",
   "passphrase": "train drastic alley office seed glove cable fee firm during lottery cause",
-  "network": "devnet"
+  "network": "sandbox"
 }
 
 ```
@@ -325,7 +325,7 @@ $ uns create-wallet
 Redirect stdout to file to create json file with wallet information:
 
 ```bash
-uns create-wallet --network devnet >> ./myUNSWallet.json
+uns create-wallet --network sandbox >> ./myUNSWallet.json
 ```
 
 ### `read-wallet`
@@ -355,15 +355,15 @@ uns read-wallet {wallet identifier}] [--listunik]
 
 Display wallet information and list of UNIK token owned by this wallet
 ```bash
-uns read-wallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
+uns read-wallet SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
 ```
 
 #### Output
 
 ```bash
-$ uns read-wallet DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network devnet --format yaml
+$ uns read-wallet SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
 data:
-  address: DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
+  address: SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
   publicKey: 02cb4d32f1e69177bb428bf200b9c9dbf662826817f25fde2bf0bb17e28bd2292b
   username: null
   secondPublicKey: null
@@ -376,8 +376,8 @@ data:
     uniks:
       - 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 chainmeta:
-  network: devnet
-  node: https://forger1.devnet.uns.network
+  network: sandbox
+  node: https://forger1.sandbox.uns.network
   date: 2019-09-19T08:46:30.000Z
   height: 10610
 ```
@@ -404,15 +404,15 @@ uns create-unik --explicitValue {explicitValue} --type [individual|organization|
 ```
 
 #### Examples
-As example, if you want to create UNIK `individual` token `bob` on `devnet` network:
+As example, if you want to create UNIK `individual` token `bob` on `sandbox` network:
 ```bash
-uns create-unik --explicitValue bob --type individual --network devnet --verbose
+uns create-unik --explicitValue bob --type individual --network sandbox --verbose
 ```
 
 Enter your passphrase:
 
 ```bash
-$ uns create-unik --explicitValue bob --type individual --network devnet
+$ uns create-unik --explicitValue bob --type individual --network sandbox
 Enter your wallet passphrase (12 words phrase):
 ```
 
@@ -431,8 +431,8 @@ Computing UNIK fingerprint... done
 Creating transaction... done
 Sending transaction... done
 Waiting for transaction confirmation... done
-UNIK nft created (1 confirmation(s)): bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 [ https://explorer.devnet.uns.network/uniks/bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 ]
-See transaction in explorer: https://explorer.devnet.uns.network/transaction/a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03
+UNIK nft created (1 confirmation(s)): bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 [ https://sandbox.explorer.uns.network/#/uniks/bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 ]
+See transaction in explorer: https://sandbox.explorer.uns.network/#/transaction/a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03
 {
   "data": {
     "id": "bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956",
@@ -467,24 +467,24 @@ uns read-unik --unikid {UNIK token id}
 
 Display UNIK informations
 ```bash
-uns read-unik --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -f yaml
+uns read-unik --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns read-unik --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -f yaml
+$ uns read-unik --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
 data:
   id: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
-  ownerAddress: DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
+  ownerAddress: SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
   creationBlock: "15218398688380119048"
   creationTransaction: 3831b7abdf68388c4f66663f6e655de996816e53314f1afe94a05f3da79f8d5e
   creationDate: 2019-09-19T06:53:48.000Z
   properties:
     - type: "1"
 chainmeta:
-  network: devnet
-  node: https://forger1.devnet.uns.network
+  network: sandbox
+  node: https://forger1.sandbox.uns.network
   date: 2019-09-19T09:02:00.000Z
   height: 10726
 
@@ -510,20 +510,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns set-properties --unikid {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network devnet
+uns set-properties --unikid {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network sandbox
 ```
 
 #### Example
 
 Add property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 ```bash
-uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
@@ -552,20 +552,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns unset-properties --unikid {UNIK token id} -k prop1 -k prop2 --network devnet
+uns unset-properties --unikid {UNIK token id} -k prop1 -k prop2 --network sandbox
 ```
 
 #### Example
 
 Remove property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 ```bash
-uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
@@ -601,13 +601,13 @@ uns get-properties --unikid {UNIK token id}
 
 Display UNIK properties
 ```bash
-uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet
+uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox
 ```
 
 ##### Success output example
 
 ```bash
-$ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet -f yaml
+$ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 properties:
   - type: "1"
@@ -618,14 +618,14 @@ confirmations: 217
 
 Display UNIK properties with at least 300 confirmations since the last UNIK token update
 ```bash
-uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --confirmed 300
+uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --confirmed 300
 ```
 
 ##### Failing output example
 
 CLI throws error because of the actual number of confirmations of the last transaction that have updated UNIK token is lower than expected.
 ```bash
-$ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network devnet --confirmed 300
+$ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --confirmed 300
 ›   Error: [get-properties] Not enough confirmations (expected: 300, actual: 217)
 ```
 
@@ -647,7 +647,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns get-property-value --unikid {UNIK token id} -k {propertyKey} -n devnet
+uns get-property-value --unikid {UNIK token id} -k {propertyKey} -n sandbox
 ```
 
 #### Examples
@@ -656,13 +656,13 @@ uns get-property-value --unikid {UNIK token id} -k {propertyKey} -n devnet
 
 Display UNIK property phone
 ```bash
-uns get-property-value --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n devnet -k "phone"
+uns get-property-value --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone"
 ```
 
 ##### Success output example
 
 ```bash
-$ uns get-property-value --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n devnet -k "phone" -f yaml
+$ uns get-property-value --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone" -f yaml
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 property: phone
 value: +33606060606
@@ -699,23 +699,23 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns resolve --network devnet "@unik:individual:bob?phone"
+$ uns resolve --network sandbox "@unik:individual:bob?phone"
 ```
 
 #### Examples
 
 Resolve `@bob` `address` property in raw format:
 ```bash
-$ uns resolve --network devnet -f raw "@unik:individual:bob?address"
+$ uns resolve --network sandbox -f raw "@unik:individual:bob?address"
 
 42 quai Malakoff, 44000 Nantes
 ```
 
 Alternative syntaxes:
 ```bash
-$ uns resolve --network devnet -f raw "bob?address"
-$ uns resolve --network devnet -f raw "@bob?address"
-$ uns resolve --network devnet -f raw "@unik:bob?address"
+$ uns resolve --network sandbox -f raw "bob?address"
+$ uns resolve --network sandbox -f raw "@bob?address"
+$ uns resolve --network sandbox -f raw "@unik:bob?address"
 ```
 
 
@@ -737,7 +737,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns disclose-explicit-values -n devnet --unikid {UNIK token id} -e {explicit values}
+uns disclose-explicit-values -n sandbox --unikid {UNIK token id} -e {explicit values}
 ```
 
 #### Examples
@@ -746,13 +746,13 @@ uns disclose-explicit-values -n devnet --unikid {UNIK token id} -e {explicit val
 
 Disclose two explicit values: bob and b0b
 ```bash
-uns disclose-explicit-values -n devnet --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb
+uns disclose-explicit-values -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb
 ```
 
 ##### Success output example
 
 ```bash
-$ uns disclose-explicit-values -n devnet --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb -f yaml
+$ uns disclose-explicit-values -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb -f yaml
 
 Disclosing a @unik-name to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
 data:
@@ -780,7 +780,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns is-disclosed -n devnet {UNIK token id}
+uns is-disclosed -n sandbox {UNIK token id}
 ```
 
 #### Examples
@@ -789,13 +789,13 @@ uns is-disclosed -n devnet {UNIK token id}
 
 Check UNIK explicit value disclose status
 ```bash
-uns is-disclosed -n devnet 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+uns is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
 ##### Success output example
 
 ```bash
-$ uns uns is-disclosed -n devnet 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -f yaml
+$ uns uns is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -f yaml
 
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 isDisclosed: true
@@ -825,11 +825,11 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns send 10.42 --to D59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network devnet
+uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
 ```
 
 ```bash
-uns send 10.42 --to "@bob" --network devnet
+uns send 10.42 --to "@bob" --network sandbox
 ```
 
 #### Examples
@@ -837,7 +837,7 @@ uns send 10.42 --to "@bob" --network devnet
 ##### Output example
 
 ```bash
-$ uns send 10.42 --to D59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network devnet
+$ uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
 Enter your wallet passphrase (12 words phrase): *************************************************************************
 
 {

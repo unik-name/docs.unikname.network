@@ -1,4 +1,4 @@
-# 2019-10-28: default explorer is DEVNET
+# 2019-10-28: default explorer is SANBOX
 https://developer.uns.network/* https://docs.uns.network/:splat 301!
 
 # 2019-10-29 rebranding uns -> uns-network

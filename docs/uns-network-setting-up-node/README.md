@@ -31,7 +31,7 @@ Orchestrators with Docker as a first-class citizen:
 - [Nomad](https://www.nomadproject.io/)
 - [Mesos](http://mesos.apache.org/)
 
-### Minimum requirements for running a DEVNET relay or forger node
+### Minimum requirements for running a SANDBOX relay or forger node
 
 - Linux: Ubuntu 16.04 / 18.04, CentOS/RHEL 7 / 8 ...
 - 2+ vCPU x86/64 bits
@@ -50,10 +50,10 @@ First of all, be sure to have these prerequisites:
 ## Network configuration
 
 Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
-- DEVNET:
+- SANDBOX:
   * `4102` (required): this is the communication port used by the node to exchange information with other nodes of the uns.network
   * `4103` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
-- MAINNET: not available yet
+- LIVENET: not available yet
 
 ::: warning
 Don't forget to forward (by NAT, routing ...) the opened ports to the corresponding ports on your VM or Docker engine!
@@ -77,7 +77,7 @@ $ docker login
 
 ## Run a node with Docker Compose
 
-In this documentation, we'll start devnet <uns/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
+In this documentation, we'll start sandbox <uns/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
 
 Create the following configuration file `docker-compose.yml`: 
 
@@ -86,40 +86,41 @@ version: '2'
 services:
   postgres:
     image: "postgres:11-alpine"
-    container_name: postgres-devnet
+    container_name: postgres-sandbox
     restart: always
     ports:
       - '127.0.0.1:5432:5432'
     volumes:
       - 'postgres:/var/lib/postgresql/data'
     networks:
-      - core 
+      - core
     environment:
      POSTGRES_PASSWORD: password
-     POSTGRES_DB: uns_devnet
+     POSTGRES_DB: uns_sandbox
      POSTGRES_USER: uns
 
   uns:
-    image: universalnamesystem/core:devnet
+    image: universalnamesystem/core:sandbox
     container_name: uns
     restart: always
     environment:
-     UNS_NET: devnet
-     # FORGER_SECRET: "" # <-- edit here to start a forger
-     DB_HOST: postgres
-     DB_PORT: 5432
-     DB_PASSWORD: password
-     DB_DATABASE: uns_devnet
-     DB_USER: uns
+     UNS_NET: sandbox
+     BOOTSTRAP: "true"
+     # FORGER_SECRET: "" # <-- Edit here to start a forger. Do nothing to start a relay
+     CORE_DB_HOST: postgres
+     CORE_DB_PORT: 5432
+     CORE_DB_PASSWORD: password
+     CORE_DB_DATABASE: uns_sandbox
+     CORE_DB_USER: uns
     ports:
-     - "4102:4102"
-     - "4103:4103"
+     - "4002:4002"
+     - "4003:4003"
     cap_add:
       - SYS_NICE
       - SYS_RESOURCE
       - SYS_TIME
     networks:
-      - core 
+      - core
     tty: true
     links:
      - postgres
@@ -160,7 +161,7 @@ It has two exposed ports; for p2p (`4102`) and for API (`4103`), and mount 3 vol
 
 Some environment variables are set :
 - for the database (port, user name, user password and db name)
-- for the network (here it's `devnet`, it means that it'll connect to other <uns/> devnet nodes)
+- for the network (here it's `sandbox`, it means that it'll connect to other <uns/> sandbox nodes)
 - and the forger secret (line `FORGER_SECRET`, commented by default). 
 
 ### Run a relay with Docker Compose
