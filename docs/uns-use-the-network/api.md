@@ -11,7 +11,7 @@ title: "uns.network APIs"
 
 Non-fungible token management is one of our main features.
 To understand this functionality and get technical details, you can read our [proposal](https://github.com/ArkEcosystem/AIPs/issues/70) to Ark community.
-You can try this API through our official [node](https://forger1.devnet.uns.network).
+You can try this API through our official [node](https://forger1.sandbox.uns.network).
 
 *:warning: there is an [issue](https://github.com/ArkEcosystem/core/issues/2111#issuecomment-513434755) with pagination plugin used by Ark in v2.3. So pagination meta properties are broken. Do not base on `meta.pageCount` and `meta.totalCount` of json result.*
 
@@ -39,20 +39,21 @@ GET /api/v2/uniks
 #### Examples
 
 ```sh
-curl https://forger1.devnet.uns.network/api/v2/uniks
+curl https://forger1.sandbox.uns.network/api/uniks
 ```
 
 ```json
 {
-    "meta":{
-        "count":4,
-        "pageCount":2,
-        "totalCount":104,
-        "next":"/api/v2/uniks?page=2&limit=100",
-        "previous":null,
-        "self":"/api/v2/uniks?page=1&limit=100",
-        "first":"/api/v2/uniks?page=1&limit=100",
-        "last":"/api/v2/uniks?page=2&limit=100"
+    "meta": {
+        "totalCountIsEstimate": false,
+        "count": 0,
+        "pageCount": 1,
+        "totalCount": 0,
+        "next": null,
+        "previous": null,
+        "self": "/api/uniks?page=1&limit=100",
+        "first": "/api/uniks?page=1&limit=100",
+        "last": null
     },
     "data":[
         {"id":"641f85b721569fef4c4d1458b47ad12de97d3c432e5d95f3cdc8a53becc69a78","ownerId":"DQYXg6vydVD83ZStQTBY5mv3CfHZc7oZbW"},
@@ -86,14 +87,14 @@ GET /api/v2/uniks/{id}
 #### Examples
 
 ```sh
-curl https://forger1.devnet.uns.network/api/v2/uniks/76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493
+curl https://forger1.sandbox.uns.network/api/uniks/76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493
 ```
 
 ```json
 {
     "data":{
         "id":"76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493",
-        "ownerId":"DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe",
+        "ownerId":"SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe",
         "transactions": {
           "first": {
             "id": "30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2"
@@ -143,7 +144,7 @@ GET /api/v2/uniks/{id}/properties
 #### Examples
 
 ```sh
-curl https://forger1.devnet.uns.network/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties
+curl https://forger1.sandbox.uns.network/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties
 ```
 
 ```json
@@ -154,9 +155,9 @@ curl https://forger1.devnet.uns.network/api/v2/uniks/86869b8e0a12cd46d96b96816e0
         "totalCount":1,
         "next":null,
         "previous":null,
-        "self":"/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
-        "first":"/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
-        "last":"/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100"
+        "self":"/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
+        "first":"/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
+        "last":"/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100"
     },
     "data":[
         {"shape":"rectangle"}
@@ -192,7 +193,7 @@ GET /api/v2/uniks/{id}/properties/{key}
 #### Examples
 
 ```sh
-curl https://forger1.devnet.uns.network/api/v2/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties/type
+curl https://forger1.sandbox.uns.network/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties/type
 ```
 
 ```json
@@ -366,7 +367,7 @@ curl --header "API-Version: 2" https://api.ark.io/api/blockchain
 works also on the uns.network
 
 ```
-curl --header "API-Version: 2" https://forger1.devnet.uns.network/api/blockchain
+curl --header "API-Version: 2" https://forger1.sandbox.uns.network/api/blockchain
 ```
 
 ```json
@@ -381,4 +382,8 @@ curl --header "API-Version: 2" https://forger1.devnet.uns.network/api/blockchain
 }
 ```
 
-The full documentation of [ARK APIs is available here](https://arkdoc-23.docs.uns.network/api).
+The full documentation of [ARK APIs is available here](https://api.ark.dev/public-rest-api/getting-started). 
+
+::: warning
+At some times, UNS and Ark APIs can differ but we do our best to keep compatibility.
+:::

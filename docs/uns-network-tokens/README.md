@@ -34,6 +34,12 @@ UNS Tokens are issued in two ways:
 
 There is no UNS tokens at the initial stage of the network, but the genesis block have supplied 100000 UNS to enable start-up operations. These tokens have been allocated to wallet owned by the first network player : @unik-name itself.
 
+### Token name across networks: 
+
+To prevent confusion and fatal errors, tokens are named differently between networks:
+- SANDBOX : **SUNS**
+- LIVENET : **UNS**
+
 ## The UNIK Token
 
 ### UNIK token is a NFT token

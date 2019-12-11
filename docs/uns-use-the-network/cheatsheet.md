@@ -37,7 +37,7 @@ Getting help for a specific _command_ : `>uns command --help`
 ## Standard command flags
 
 `-h --help`: (optional) Command help  
-`-n --network`: (required) Network on which to run the command [devnet or local] (local is for development only)  
+`-n --network`: (required) Network on which to run the command [sandbox or local] (local is for development only)  
 `-v --verbose`: (optional) Output more details on logs  
 `-f --format`: (optional) Specify how to format the output [json|table|yaml|raw]. See command help to know supported format.  
 `-m --chainmeta`: (optional) Output chain meta data related to the read itself."
