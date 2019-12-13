@@ -8,7 +8,7 @@ title: "Using uns.network with the CLI"
 [[toc]]
 
 ## Introduction
-<uns/> provides an interactive command line interface to create and manage your wallets, your UNS protocol tokens and your UNIK NFT tokens.
+<uns/> provides an interactive command line interface to create and manage your crypto accounts, your UNS protocol tokens and your UNIK NFT tokens.
 
 **Livenet is not launched yet, please use sandbox**.
 
@@ -183,32 +183,27 @@ USAGE
   $ uns [COMMAND]
 
 COMMANDS
-  create-unik               Create UNIK token
-  create-wallet             Create UNS wallet
-  resolve                   Resolve a decentralized identifier.
-  disclose-explicit-values  Disclose one or multiple explicitValues of your UNIK identifier.
-  get-properties            Get properties of UNIK token.
-  get-property-value        Get the value of a specific property of a UNIK token.
-  help                      display help for uns
-  read-unik                 Display UNIK token informations
-  read-wallet               Read current data of a specified wallet, ic. balance
-  send                      Send owned UNS protocol tokens to another wallet.
-  set-properties            Set (add or update) properties of UNIK token.
-  status                    Display blockchain status
-  unset-properties          Unset properties of UNIK token.
-  version                   UNS CLI Version
+  autocomplete   display autocomplete installation instructions
+  cryptoaccount  Manage Crypto Account
+  help           display help for uns
+  properties     Manage UNIK properties
+  resolve        Resolve a decentralized identifier.
+  send           Send owned UNS protocol tokens to another crypto account.
+  status         Display blockchain status
+  unik           Manage UNIK
+  version        UNS CLI Version
 ```
 
-You can get help on a specific command by using `--help`, following your command name.
+You can get help on a specific command or topic (group of commands) by using `--help`, following your command name.
 
 Example:
 
 ```bash
-$ uns create-wallet --help
-Create uns.network wallet
+$ uns cryptoaccount:create --help
+Create uns.network crypto account
 
 USAGE
-  $ uns create-wallet
+  $ uns cryptoaccount:create
 
 OPTIONS
   -f, --format=json|yaml      [default: json] Specify how to format the output [json|yaml].
@@ -217,7 +212,7 @@ OPTIONS
   -v, --verbose               Detailed logs
 
 EXAMPLE
-  $ uns create-wallet --network [sandbox|local] --format {json|yaml} --verbose
+  $ uns cryptoaccount:create --network [sandbox|local] --format {json|yaml} --verbose
 ```
 
 ### `version`
@@ -276,10 +271,10 @@ numberOfUniks: 23
 activeDelegates: 7
 lastBlockUrl: https://sandbox.explorer.uns.network/#/block/21600
 ```
-### `create-wallet`
+### `cryptoaccount:create`
 
 #### Introduction
-With <uns/> CLI you can create your <uns/> wallet using `create-wallet` command.
+With <uns/> CLI you can create your <uns/> crypto account using `cryptoaccount:create` command.
 
 #### Parameters
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
@@ -289,21 +284,21 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns create-wallet
+uns cryptoaccount:create
 ```
 
 #### Examples
-As example, if you want to create a <uns/> wallet on `sandbox` network:
+As example, if you want to create a <uns/> crypto account on `sandbox` network:
 ```bash
-uns create-wallet --network sandbox
+uns cryptoaccount:create --network sandbox
 ```
 
 #### Output
 
-If the wallet creation succeed <uns/> CLI displays your wallet information.
+If the crypto account creation succeed <uns/> CLI displays your crypto account information.
 
 ```bash
-$ uns create-wallet
+$ uns cryptoaccount:create
 
 ⚠️  WARNING: this information is not saved anywhere. You need to copy and save it by your own. ⚠️
 
@@ -317,20 +312,20 @@ $ uns create-wallet
 
 ```
 
-Redirect stdout to file to create json file with wallet information:
+Redirect stdout to file to create json file with crypto account information:
 
 ```bash
-uns create-wallet --network sandbox >> ./myUNSWallet.json
+uns cryptoaccount:create --network sandbox >> ./myUNSCryptoAccount.json
 ```
 
-### `read-wallet`
+### `cryptoaccount:read`
 
 #### Introduction
-Read current data of a specified wallet, ic. balance
+Read current data of a specified crypto account, ic. balance
 
 #### Parameters
 
-- `--listunik` (optional): list UNIK tokens owned by the wallet, if any.
+- `--listunik` (optional): list UNIK tokens owned by the crypto account, if any.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 - `--chainmeta` (optional): Retrieve chain meta datas
 
@@ -338,25 +333,25 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
 
-- `walletId` (required): the ID of the wallet. Can be either the publicKey or the address of the wallet.
+- `cryptoAccountId` (required): the ID of the crypto account. Can be either the publicKey or the address of the crypto account.
 
 #### Usage
 
 ```bash
-uns read-wallet {wallet identifier}] [--listunik]
+uns cryptoaccount:read {crypto account identifier}] [--listunik]
 ```
 
 #### Example
 
-Display wallet information and list of UNIK token owned by this wallet
+Display crypto account information and list of UNIK token owned by this crypto account
 ```bash
-uns read-wallet SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
+uns cryptoaccount:read SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
 ```
 
 #### Output
 
 ```bash
-$ uns read-wallet SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
+$ uns cryptoaccount:read SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
 data:
   address: SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
   publicKey: 02cb4d32f1e69177bb428bf200b9c9dbf662826817f25fde2bf0bb17e28bd2292b
@@ -376,13 +371,13 @@ chainmeta:
   date: 2019-09-19T08:46:30.000Z
   height: 10610
 ```
-For information: Wallet's balance is updated applying each transaction that engages the wallet (recipient or sender). Wallets are stored in-memory and are loaded by the node when it starts.
+For information: Crypto account's balance is updated applying each transaction that engages the crypto account (recipient or sender). Crypto accounts are stored in-memory and are loaded by the node when it starts.
 
 
-### `create-unik`
+### `unik:create`
 
 #### Introduction
-With <uns/> CLI you can create your own UNIK token using `create-unik` command.
+With <uns/> CLI you can create your own UNIK token using `unik:create` command.
 
 #### Parameters
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
@@ -395,25 +390,25 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns create-unik --explicitValue {explicitValue} --type [individual|organization|network]
+uns unik:create --explicitValue {explicitValue} --type [individual|organization|network]
 ```
 
 #### Examples
 As example, if you want to create UNIK `individual` token `bob` on `sandbox` network:
 ```bash
-uns create-unik --explicitValue bob --type individual --network sandbox --verbose
+uns unik:create --explicitValue bob --type individual --network sandbox --verbose
 ```
 
 Enter your passphrase:
 
 ```bash
-$ uns create-unik --explicitValue bob --type individual --network sandbox
-Enter your wallet passphrase (12 words phrase):
+$ uns unik:create --explicitValue bob --type individual --network sandbox
+Enter your crypto account passphrase (12 words phrase):
 ```
 
 Your passphrase will be hidden, no trace in your terminal history:
 ```
-Enter your wallet passphrase (12 words phrase): ********************************************************************************
+Enter your crypto account passphrase (12 words phrase): ********************************************************************************
 ```
 
 
@@ -438,7 +433,7 @@ See transaction in explorer: https://sandbox.explorer.uns.network/#/transaction/
 
 ```
 
-### `read-unik`
+### `unik:read`
 
 #### Introduction
 Read current data of a specified UNIK token
@@ -455,20 +450,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns read-unik --unikid {UNIK token id}
+uns unik:read --unikid {UNIK token id}
 ```
 
 #### Example
 
 Display UNIK informations
 ```bash
-uns read-unik --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
+uns unik:read --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns read-unik --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
+$ uns unik:read --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
 data:
   id: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
   ownerAddress: SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
@@ -485,7 +480,7 @@ chainmeta:
 
 ```
 
-### `set-properties`
+### `properties:set`
 
 #### Introduction
 Set (add or update) properties of UNIK token.
@@ -505,20 +500,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns set-properties --unikid {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network sandbox
+uns properties:set --unikid {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network sandbox
 ```
 
 #### Example
 
 Add property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 ```bash
-uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+uns properties:set --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns set-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:set --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
@@ -527,9 +522,9 @@ confirmations:  1
 ```
 
 ##### Related commands
-- [unset-properties](#unset-properties)
+- [properties:unset](#properties:unset)
 
-### `unset-properties`
+### `properties:unset`
 
 #### Introduction
 Unset properties of UNIK token.
@@ -547,20 +542,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns unset-properties --unikid {UNIK token id} -k prop1 -k prop2 --network sandbox
+uns properties:unset --unikid {UNIK token id} -k prop1 -k prop2 --network sandbox
 ```
 
 #### Example
 
 Remove property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 ```bash
-uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+uns properties:unset --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns unset-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:unset --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
@@ -568,9 +563,9 @@ confirmations:  1
 
 ```
 ##### Related commands
-- [set-properties](#set-properties)
+- [properties:set](#properties:set)
 
-### `get-properties`
+### `properties:list`
 
 #### Introduction
 Get properties of UNIK token. The command will fail if the minimum number of confirmations has not been reached yet.
@@ -587,7 +582,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns get-properties --unikid {UNIK token id}
+uns properties:list --unikid {UNIK token id}
 ```
 
 #### Examples
@@ -596,13 +591,13 @@ uns get-properties --unikid {UNIK token id}
 
 Display UNIK properties
 ```bash
-uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox
+uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox
 ```
 
 ##### Success output example
 
 ```bash
-$ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
+$ uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 properties:
   - type: "1"
@@ -613,18 +608,18 @@ confirmations: 217
 
 Display UNIK properties with at least 300 confirmations since the last UNIK token update
 ```bash
-uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --confirmed 300
+uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --confirmed 300
 ```
 
 ##### Failing output example
 
 CLI throws error because of the actual number of confirmations of the last transaction that have updated UNIK token is lower than expected.
 ```bash
-$ uns get-properties --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --confirmed 300
-›   Error: [get-properties] Not enough confirmations (expected: 300, actual: 217)
+$ uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --confirmed 300
+›   Error: [properties:list] Not enough confirmations (expected: 300, actual: 217)
 ```
 
-### `get-property-value`
+### `properties:get`
 
 #### Introduction
 Get the value of a specific property of a UNIK token.
@@ -642,7 +637,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns get-property-value --unikid {UNIK token id} -k {propertyKey} -n sandbox
+uns properties:get --unikid {UNIK token id} -k {propertyKey} -n sandbox
 ```
 
 #### Examples
@@ -651,20 +646,20 @@ uns get-property-value --unikid {UNIK token id} -k {propertyKey} -n sandbox
 
 Display UNIK property phone
 ```bash
-uns get-property-value --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone"
+uns properties:get --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone"
 ```
 
 ##### Success output example
 
 ```bash
-$ uns get-property-value --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone" -f yaml
+$ uns properties:get --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone" -f yaml
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 property: phone
 value: +33606060606
 confirmations: 833
 ```
 
-### `did-resolve`
+### `resolve`
 
 #### Introduction
 Resolve a decentralized identifier (DID).
@@ -714,7 +709,7 @@ $ uns resolve --network sandbox -f raw "@unik:bob?address"
 ```
 
 
-### `disclose-explicit-values`
+### `unik:disclose`
 
 #### Introduction
 Make public one or more explicit values of your UNIK Name. This value will appear in "explicitValue" property of your UNIK.
@@ -732,7 +727,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns disclose-explicit-values -n sandbox --unikid {UNIK token id} -e {explicit values}
+uns unik:disclose -n sandbox --unikid {UNIK token id} -e {explicit values}
 ```
 
 #### Examples
@@ -741,13 +736,13 @@ uns disclose-explicit-values -n sandbox --unikid {UNIK token id} -e {explicit va
 
 Disclose two explicit values: bob and b0b
 ```bash
-uns disclose-explicit-values -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb
+uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb
 ```
 
 ##### Success output example
 
 ```bash
-$ uns disclose-explicit-values -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb -f yaml
+$ uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb -f yaml
 
 Disclosing a @unik-name to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
 data:
@@ -756,7 +751,7 @@ data:
 ```
 
 
-### `is-disclosed`
+### `unik:is-disclosed`
 
 #### Introduction
 Check if UNIK has one or more disclosed explicit value.
@@ -775,7 +770,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns is-disclosed -n sandbox {UNIK token id}
+uns unik:is-disclosed -n sandbox {UNIK token id}
 ```
 
 #### Examples
@@ -784,13 +779,13 @@ uns is-disclosed -n sandbox {UNIK token id}
 
 Check UNIK explicit value disclose status
 ```bash
-uns is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
 ##### Success output example
 
 ```bash
-$ uns uns is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -f yaml
+$ uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -f yaml
 
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 isDisclosed: true
@@ -801,7 +796,7 @@ confirmations: 833
 ### `send`
 
 #### Introduction
-Send owned UNS protocol tokens to another wallet.
+Send owned UNS protocol tokens to another crypto account.
 
 #### Arguments
 - `AMOUNT` (required):  The quantity of UNS tokens to send to the recipient.
@@ -812,7 +807,7 @@ Send owned UNS protocol tokens to another wallet.
 - `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
 - `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
 - `--passphrase`: The passphrase of the owner of unik. If you do not enter a passphrase you will be prompted for it.
-- `--secondPassphrase`: The second wallet passphrase. If you have created a second passphrase on your wallet, you have to enter it.
+- `--secondPassphrase`: The second crypto account passphrase. If you have created a second passphrase on your crypto account, you have to enter it.
 - `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
 
 Some [global parameters](#global-parameters) may apply to this command.
@@ -833,7 +828,7 @@ uns send 10.42 --to "@bob" --network sandbox
 
 ```bash
 $ uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
-Enter your wallet passphrase (12 words phrase): *************************************************************************
+Enter your crypto account passphrase (12 words phrase): *************************************************************************
 
 {
   transaction: 3996912796307dae3009bc1cb3e4b681a3e34a427d563711115799252715179f
