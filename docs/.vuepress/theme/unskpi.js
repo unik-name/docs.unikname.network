@@ -22,8 +22,6 @@ export default ({ router }) => {
         // Use window global here, the convenience variable doesn't stick around
         // for some reason.
         var u="https://kpi.unik-name.com/";
-        //window._paq.push(['setTrackerUrl', u+'matomo.php']);
-        //window._paq.push(['setSiteId', '2']);
         window._paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
         window._paq.push(['setCustomUrl', to.fullPath]);
         window._paq.push(['setCookieDomain', '*.uns.network']);
