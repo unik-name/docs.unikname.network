@@ -7,6 +7,43 @@ title: "uns.network APIs"
 
 [[TOC]]
 
+## Core NFT APIs
+
+### Get NFTs statuses
+
+Get counts for each type of NFT of the chain.
+
+```HTTP
+GET /api/v2/nfts/status
+```
+
+#### Example
+
+```sh
+curl https://forger1.devnet.uns.network/api/v2/nfts/status
+```
+
+```json
+{
+    "data": [
+      {
+        "nftName": "UNIK",
+        "individual": "279",
+        "organization": "48",
+        "network": "3"
+      }
+    ],
+    "chainmeta": {
+      "height": 64,
+      "timestamp": {
+        "epoch": 86136178,
+        "unix": 1655029508,
+        "human": "2019-06-12T10:25:08.474Z"
+      }
+    }
+}
+```
+
 ## UNIK token APIs
 
 Non-fungible token management is one of our main features.
