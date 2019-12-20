@@ -373,6 +373,27 @@ chainmeta:
 ```
 For information: Crypto account's balance is updated applying each transaction that engages the crypto account (recipient or sender). Crypto accounts are stored in-memory and are loaded by the node when it starts.
 
+### `cryptoaccount:set-second-passphrase`
+
+#### Introduction
+Generates and adds a second passphrase on a crypto account to increase account security.
+
+#### Parameters
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+```bash
+uns cryptoaccount:set-second-passphrase -n sandbox
+```
+
+#### Output
+```bash
+{
+  "secondPassphrase": "cheap horn program during work suggest pencil collect travel suspect refuse process",
+  "transaction": "7166f59df4d9a6af3b54eb8da460be1927c9bc19c60b9008382ea4e593fa5536",
+  "confirmations": 1
+}
+```
 
 ### `unik:create`
 
