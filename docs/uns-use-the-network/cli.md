@@ -25,9 +25,9 @@ Some users have reported successful installation and use of the <uns/> CLI on "r
 
 ##### Node.js
 
-Install Node.js 10: [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
+Install a stable version of Node.js (10 or 12): [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 
-<uns/> CLI doesn't work on earlier (6, 8) or later versions of Node.js (11, 12+)**.
+**<uns/> CLI doesn't work on earlier (6, 8)**.
 
 ##### Compilation tools
 
@@ -46,7 +46,7 @@ If still you need help to install theses tools, you can get support on [the @uni
 As NPM is provided by NodeJS package, you can use it to install <uns/> CLI as global command ("sudo mode" might be required, depending on your NodeJS installation).
 
 ```bash
-[sudo] npm install -g @uns/uns-cli
+[sudo] npm install -g @uns/cli
 ```
 
 Test your installation with
@@ -59,7 +59,7 @@ which should output something like that:
 
 ```
 $ uns version
-@uns/uns-cli/x.y.z linux-x64 node-v10.16.3
+@uns/cli/x.y.z linux-x64 node-v10.16.3
 ```
 
 If you fail to install the CLI, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
@@ -177,7 +177,7 @@ $ uns -h
 uns CLI
 
 VERSION
-  @uns/uns-cli/1.0.0 win32-x64 node-v11.8.0
+  @uns/cli/1.0.0 win32-x64 node-v10.8.0
 
 USAGE
   $ uns [COMMAND]
@@ -232,7 +232,7 @@ Command prompts CLI version number, platform and node version
 
 ```
 $ uns version
-@uns/uns-cli/x.y.z win32-x64 node-v11.8.0
+@uns/cli/x.y.z win32-x64 node-v10.8.0
 ```
 
 ### `status`
