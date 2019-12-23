@@ -263,18 +263,17 @@ Command displays some blockchain information
 
 ```bash
 $ uns status --network sandbox --format yaml
-height: 21600
+height: 52328
 network: sandbox
-totalTokenSupply: 21184378
+totalTokenSupply: 21104656
+tokenSymbol: SUNS
 NFTs:
   - nftName: UNIK
-    individual: "130"
-    organization: "48"
-    network: "21"
-tokenSymbol: SUNS
-numberOfUniks: 23
-activeDelegates: 7
-lastBlockUrl: https://sandbox.explorer.uns.network/#/block/21600
+    individual: "19"
+    organization: "4"
+    network: "9"
+activeDelegates: 23
+lastBlockUrl: https://explorer.uns.network/block/52328
 ```
 ### `cryptoaccount:create`
 
