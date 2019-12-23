@@ -77,9 +77,17 @@ Getting help for a specific _command_ : `>uns command --help`
 | 11 | NFT Update
 | 12 | NFT Mint
 
-## Types and categories of UNIK
+## Types of UNIK
 
-Types &rightarrow; { 1 | **individual** }, { 2 | **organization** }, { 3 | **network** }
+Each kind of `type` have different features, behaviors of the <uns/> and governance processes.
+
+**Possible Values**
+
+- `1`: UNIK for individuals identifers
+- `2`: UNIK for organizations identifiers
+- `3`: UNIK for networks identifiers
+
+## Types and categories of UNIK
 
 | type | # | Category | pattern |
 | - | - | - | - |

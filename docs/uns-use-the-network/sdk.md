@@ -21,17 +21,28 @@ Client SDK is a brand new product specifically developed for uns.network.
 
 SDK is compatible with node projects and browsers. 
 
-### How to install
+### Installation
 
 - In node : `yarn add @uns/ts-sdk`
 - In browser : `<script src="https://cdn.jsdelivr.net/npm/@uns/ts-sdk/dist/index.umd.min.js"></script>`
 
-### How to use
+### Setup
+
+The SDK needs and initialization. You have to provide your current <uns/> configuration:
+
+```typescript
+const unsClient = new UNSClient();
+unsClient.init({ network: Network.sandbox }); // Can be also Network.livenet
+```
+
+Then you can use the `unsClient` to request and send transactions to <uns/>.
+
+### Usage
 
 To have a smooth and simple developer experience, SDK connects and query a <uns/> node. 
 To replace this default behavior you can pass URL of your own <uns/> node as a parameter of `UNSClient`.
 
-In some cases, functions returns chain meta datas as `ChainMeta`. These meta datas represent the informations about the block used to read chain informations.
+In some cases, functions return chain meta datas as `ChainMeta`. These meta datas represent the informations about the block used to read chain informations.
 
 ```
 "height": 165009, // Block number
@@ -42,6 +53,8 @@ In some cases, functions returns chain meta datas as `ChainMeta`. These meta dat
 }
 ```
 
+### Key features
+
 #### Get on-chain value UNIK types
 
 ```typescript
@@ -50,14 +63,14 @@ import { UNIKTypes } from "@uns/ts-sdk"
 const unikTypeIndividual:number = UNIKTypes.INDIVIDUAL
 ```
 
-Full list of available types [here](https://docs.uns.network/uns-tokens/#existing-unik-properties)
+See the [cheat sheet for the full list of available types](/uns-use-the-network/cheatsheet.html#types-of-unik)
 
 #### Get status of uns.network node
 
 ```typescript
 import { UNSClient, NodeStatus, Network } from "@uns/ts-sdk"
 
-const nodeStatus:NodeStatus = (await new UNSClient(Network.sandbox).node.status()).data
+const nodeStatus:NodeStatus = (await unsClient.node.status()).data
 const { synced, now, blocksCount } = nodeStatus;
 
 ```
@@ -67,7 +80,7 @@ const { synced, now, blocksCount } = nodeStatus;
 ```typescript
 import { UNSClient, Unik, ResponseWithChainMeta, ChainMeta, Network } from "@uns/ts-sdk"
 
-const response: ResponseWithChainMeta<Unik> = await new UNSClient(Network.sandbox).unik.get("unikId");
+const response: ResponseWithChainMeta<Unik> = await unsClient.unik.get("unikId");
 const unik: Unik = response.data;
 const meta: ChainMeta = response.chainmeta;
 
@@ -159,7 +172,7 @@ Once you have built a disclose demand through the builder above, you must submit
 ```typescript
 import { UNSClient, Response, DiscloseDemandCertification, FunctionalError } from "@uns/ts-sdk"
 
-const certifiedDemandResponse: Response<DiscloseDemandCertification> = await new UNSClient(Network.sandbox).discloseDemandCertification.get(demand);
+const certifiedDemandResponse: Response<DiscloseDemandCertification> = await unsClient.discloseDemandCertification.get(demand);
 if( certifiedDemandResponse.data ){
   const certifiedDemand: DiscloseDemandCertification = certifiedDemandResponse.data
   console.log(certifiedDemand)
@@ -208,8 +221,8 @@ It can do more than Ark package :
 - create <uns/> wallets
 - ...
 
-For the full list of available features, please look at [ark documentation](https://arkdoc-23.docs.uns.network/sdk/cryptography/usage.html).
+For the full list of other available features of `crypto` package, please look at [Ark documentation](https://docs.ark.io/cryptography/).
 
-<uns/> specific features are not documented yet. Feel free to explore and [contribute](https://github.com/unik-name/docs.uns.network) 😊
+<uns/> specific features are not documented yet. Feel free to explore and [contribute](https://github.com/unik-name/docs.uns.network) 😊.
 
 

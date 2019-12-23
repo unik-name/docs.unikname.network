@@ -9,7 +9,7 @@ Our glossary contains key terminology specifically related to <uns/> Ecosystem. 
 
 [[toc]]
 
-_For Common Terms related to blockchain in general we invite you to read the very well documented [ARK Glossary](https://arkdoc-23.docs.uns.network/glossary/)._
+_For Common Terms related to blockchain in general we invite you to read the very well documented [ARK Glossary](https://docs.ark.io/glossary/)._
 
 ## uns.network Terms
 

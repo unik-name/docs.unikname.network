@@ -50,8 +50,6 @@ Non-fungible token management is one of our main features.
 To understand this functionality and get technical details, you can read our [proposal](https://github.com/ArkEcosystem/AIPs/issues/70) to Ark community.
 You can try this API through our official [node](https://forger1.sandbox.uns.network).
 
-*:warning: there is an [issue](https://github.com/ArkEcosystem/core/issues/2111#issuecomment-513434755) with pagination plugin used by Ark in v2.3. So pagination meta properties are broken. Do not base on `meta.pageCount` and `meta.totalCount` of json result.*
-
 ### List minted UNIK
 
 Get an overview of all minted non-fungible tokens of uns.network.
