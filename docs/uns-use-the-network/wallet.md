@@ -55,7 +55,7 @@ Now, in step `2. Network` you can choose the freshly appeared `UNS Devnet` item.
 
 At the end, you should have a fully configured Desktop wallet able to transfer UNS tokens, create <uns/> wallets, vote for <uns/> delegates, or any other features inherited from ArkEcosystem.
 
-If you want to start playing, you can contact us and we'll send you some `DUNS` tokens over the devnet.
+If you want to start playing, you can get `DUNS` [from the FAUCET](./#devnet-faucet).
 
 > NOTA: Management of UNIK tokens is not able with the default Ark Wallet, it requires the installation of the @unik-name APP.
 
