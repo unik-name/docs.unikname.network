@@ -70,7 +70,7 @@ Create the following configuration file `docker-compose.yml`:
 <<< @/docs/uns-network-setting-up-node/sandbox-docker-compose.yml
 
 ::: tip
-**Optionally**, you can get access to log and configuration files, by mapping a volume to `/etc/uns` and `/var/log/uns` or running `docker logs uns`
+You can read your node logs by running `docker-compose logs --tail 10 uns-sandbox` (here, the last 10 log lines).
 :::
 
 ### Explanations
