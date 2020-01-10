@@ -129,6 +129,25 @@ You must be a [declared delegate](/uns-network-player/#becoming-a-delegate) befo
 
 To run a forger node, please edit the `docker-compose.yml` file.
 
-Find and uncomment line `FORGER_SECRET` and set your wallet passphrase as value. Then, start your forger node with the same commands as for a relay node (see [Run a relay with Docker Compose](#run-a-relay-with-docker-compose) above).
+Find and uncomment line `FORGER_SECRET` and set your wallet passphrase as value:
+
+```yaml{6}
+  uns:
+    image: universalnamesystem/core:sandbox
+    ...
+    environment:
+      ...
+      FORGER_SECRET: "your fantastic passphrase here"
+```
+
+Then, (re)start your forger node with the following command:
+
+```shell
+$ docker-compose up --build -d
+```
+::: tip
+The parameter `--build` is necessary only to take into account the `docker-compose.yml` file update.
+:::
+
 
 Now you have a running relay node and you're ready to forge blocks.
