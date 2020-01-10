@@ -1,0 +1,47 @@
+version: '2'
+services:
+  postgres:
+    image: "postgres:11-alpine"
+    container_name: postgres-sandbox
+    restart: always
+    ports:
+      - '127.0.0.1:5432:5432'
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+    networks:
+      - core
+    environment:
+     POSTGRES_PASSWORD: password
+     POSTGRES_DB: uns_sandbox
+     POSTGRES_USER: uns
+
+  uns:
+    image: universalnamesystem/core:sandbox
+    container_name: uns
+    restart: always
+    environment:
+     UNS_NET: sandbox
+     # FORGER_SECRET: "" # <-- Edit here to start a forger. Do nothing to start a relay
+     CORE_DB_HOST: postgres
+     CORE_DB_PORT: 5432
+     CORE_DB_PASSWORD: password
+     CORE_DB_DATABASE: uns_sandbox
+     CORE_DB_USER: uns
+    ports:
+     - "4002:4002"
+     - "4003:4003"
+    cap_add:
+      - SYS_NICE
+      - SYS_RESOURCE
+      - SYS_TIME
+    networks:
+      - core
+    tty: true
+    links:
+     - postgres
+    depends_on:
+      - postgres
+volumes:
+  postgres:
+networks:
+  core:
