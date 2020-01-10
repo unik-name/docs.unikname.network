@@ -61,20 +61,6 @@ Don't forget to forward (by NAT, routing ...) the opened ports to the correspond
 
 Unfortunately, there is no standard documentation to do that, so please follow the configuration guide of the firewall provided by your hosting provider, or if you are running a node at home, the guide for your 'home box'.
 
-## Docker configuration
-
-Docker CLI must be logged with your docker account (using command [`login`](https://docs.docker.com/engine/reference/commandline/login/))
-
-Currently, our network is in **private alpha mode** so we've deployed docker image to a private repository into our organization.
-
-It means that our code is only accessible via invitation. [Send us](mailto:contact@unik-name.com) your docker ID or email in order to grant you read access. 
-
-Once done, you'll be able to pull our `universalnamesystem/core` image and connect to the Docker hub:
-
-```shell
-$ docker login
-```
-
 ## Run a node with Docker Compose
 
 In this documentation, we'll start sandbox <uns/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
