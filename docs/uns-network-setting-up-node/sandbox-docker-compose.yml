@@ -17,7 +17,7 @@ services:
 
   uns:
     image: universalnamesystem/core:sandbox
-    container_name: uns
+    container_name: uns-sandbox
     restart: always
     environment:
      UNS_NET: sandbox
