@@ -65,4 +65,4 @@ Please note that **this network is ephemeral**, and may be reset anytime. Resets
 #### SANDBOX faucet
 
 If you need SUNS tokens to test the <uns/> features (creating your UNIK for example), you can ask for SUNS on [the unik-name forum](https://forum.unik-name.com/c/uns-network/faucet).
-Don't forget to provide your wallet address, created with [the <uns/> CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `D` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
+Don't forget to provide your wallet address, created with [the <uns/> CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).

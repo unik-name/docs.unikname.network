@@ -202,7 +202,7 @@ Retrieve all chain NFTs statuses (number of token for each types).
 ```typescript
 import { getNftsStatuses, INftStatus, Network, ResponseWithChainMeta } from "@uns/ts-sdk";
 
-const statuses: ResponseWithChainMeta<INftStatus[]> = await getNftsStatuses(Network.devnet);
+const statuses: ResponseWithChainMeta<INftStatus[]> = await getNftsStatuses(Network.sandbox);
 const { data } = statuses;
 
 ```
