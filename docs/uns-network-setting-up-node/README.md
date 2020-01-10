@@ -69,12 +69,6 @@ Create the following configuration file `docker-compose.yml`:
 
 <<< @/docs/uns-network-setting-up-node/sandbox-docker-compose.yml
 
-This file really ease node start, configuring it for you. 
-
-::: tip
-You can run a node without docker-compose with simple docker commands, but we won't describe here.
-:::
-
 ::: tip
 **Optionally**, you can get access to log and configuration files, by mapping a volume to `/etc/uns` and `/var/log/uns` or running `docker logs uns`
 :::
