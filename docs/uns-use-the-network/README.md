@@ -13,7 +13,7 @@ If you're familiar with the <uns/> environement, you may be interested to use th
 
 The CLI (Command Line Interface) has been designed to facilitate basic actions and testing. With the CLI you can create a wallet, mint a @unik-name into the chain, update user's properties, list existing tokens or query the status of the network, and many other things. 
 
-The CLI runs with the MAINNET but also with the DEVNET for integration testing. 
+The CLI runs with the LIVENET but also with the SANDBOX for integration testing. 
 
 [Read more &rightarrow;](cli)
 
@@ -48,21 +48,21 @@ but @unik-name mobile APP is also used :
 
 [Read more &rightarrow;](wallet)
 
-### Use the DEVNET, to test your developments, or to test new features
+### Use the SANDBOX, to test your developments, or to test new features
 
-The DEVNET is a uns.network dedicated for testing, it's operated by some delegates of the community.
+The SANDBOX is a uns.network dedicated for testing, it's operated by some delegates of the community.
 
-You can connect a node to the DEVNET by configuring the CLI, SDK, and even a dedicated chain explorer.
+You can connect a node to the SANDBOX by configuring the CLI, SDK, and even a dedicated chain explorer.
 
-#### What can you do with the DEVNET ?
+#### What can you do with the SANDBOX ?
 
 - Creating test accounts
-- Developing and testing applications for free (use the faucet to get DUNS tokens)
+- Developing and testing applications for free (use the faucet to get SUNS tokens)
 - Testing existing applications against new releases or release candidates of <uns/> Core
 
 Please note that **this network is ephemeral**, and may be reset anytime. Resets will be announced several days before the effective operation, so follow [announcements published on the unik-name forum](https://forum.unik-name.com/c/uns-network).
 
-#### DEVNET faucet
+#### SANDBOX faucet
 
-If you need DUNS tokens to test the <uns/> features (creating your UNIK for example), you can ask for DUNS on [the unik-name forum](https://forum.unik-name.com/new-topic?title=Request%20for%20DUNS&category=uns-network/faucet&tags=faucet,devnet).
-Don't forget to provide your wallet address, created with [the <uns/> CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `D` letter, such as `DHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
+If you need SUNS tokens to test the <uns/> features (creating your UNIK for example), you can ask for SUNS on [the unik-name forum](https://forum.unik-name.com/c/uns-network/faucet).
+Don't forget to provide your wallet address, created with [the <uns/> CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `D` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).

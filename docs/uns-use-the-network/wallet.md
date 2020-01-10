@@ -35,8 +35,8 @@ Then click on : `Add a new network` (top-right)
 ![add-network](./images/new-network.png)
 
 Fill inputs:
-- name: **UNS Devnet**
-- description: **<uns/> DEVNET**
+- name: **UNS Sandbox**
+- description: **<uns/> SANDBOX**
 - seed server: **http://163.172.146.222:4200**
 
 And click on `Fetch` to automatically get full node configuration (like token name, explorer url or wallet derivation keys).
@@ -50,12 +50,12 @@ Then `Add profile` (top-left).
 ![add-profile](./images/add-profile.png)
 
 Fill-in all inputs like you did for Ark profile.  
-Now, in step `2. Network` you can choose the freshly appeared `UNS Devnet` item.  
+Now, in step `2. Network` you can choose the freshly appeared `UNS Sandbox` item.  
 ![network](./images/network.png)
 
 At the end, you should have a fully configured Desktop wallet able to transfer UNS tokens, create <uns/> wallets, vote for <uns/> delegates, or any other features inherited from ArkEcosystem.
 
-If you want to start playing, you can get `DUNS` [from the FAUCET](./#devnet-faucet).
+If you want to start playing, you can get `SUNS` [from the FAUCET](./#sandbox-faucet).
 
 > NOTA: Management of UNIK tokens is not able with the default Ark Wallet, it requires the installation of the @unik-name APP.
 

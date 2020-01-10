@@ -9,7 +9,8 @@ title: "Powered by ARK"
 
 In doing such we've contributed to the ARK developements. We're participating to code improvement and we're the core developpers of the NFT module of ARK, enabling management of Non Fungible Tokens with the ARK.io Blockchain. 
 
-To get more information about the ARK.io blockchain we recommend the [documentation of ARK.io](https://arkdoc-23.docs.uns.network). This is snapshot of the doc of the Version 2.3 on which we've built our current <uns/> version.
+To get more information about the ARK.io blockchain we recommend reading the upstream [documentation of ARK.io](https://docs.ark.io/).
+As of January 2020, UNS Core is built on Ark v2.6.
 
 ![powered-by-ark](./images/poweredbyark6.png)
 

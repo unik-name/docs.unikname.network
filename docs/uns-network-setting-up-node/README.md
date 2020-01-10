@@ -31,7 +31,7 @@ Orchestrators with Docker as a first-class citizen:
 - [Nomad](https://www.nomadproject.io/)
 - [Mesos](http://mesos.apache.org/)
 
-### Minimum requirements for running a DEVNET relay or forger node
+### Minimum requirements for running a SANDBOX relay or forger node
 
 - Linux: Ubuntu 16.04 / 18.04, CentOS/RHEL 7 / 8 ...
 - 2+ vCPU x86/64 bits
@@ -50,10 +50,10 @@ First of all, be sure to have these prerequisites:
 ## Network configuration
 
 Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
-- DEVNET:
+- SANDBOX:
   * `4102` (required): this is the communication port used by the node to exchange information with other nodes of the uns.network
   * `4103` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
-- MAINNET: not available yet
+- LIVENET: not available yet
 
 ::: warning
 Don't forget to forward (by NAT, routing ...) the opened ports to the corresponding ports on your VM or Docker engine!
@@ -61,84 +61,16 @@ Don't forget to forward (by NAT, routing ...) the opened ports to the correspond
 
 Unfortunately, there is no standard documentation to do that, so please follow the configuration guide of the firewall provided by your hosting provider, or if you are running a node at home, the guide for your 'home box'.
 
-## Docker configuration
-
-Docker CLI must be logged with your docker account (using command [`login`](https://docs.docker.com/engine/reference/commandline/login/))
-
-Currently, our network is in **private alpha mode** so we've deployed docker image to a private repository into our organization.
-
-It means that our code is only accessible via invitation. [Send us](mailto:contact@unik-name.com) your docker ID or email in order to grant you read access. 
-
-Once done, you'll be able to pull our `universalnamesystem/core` image and connect to the Docker hub:
-
-```shell
-$ docker login
-```
-
 ## Run a node with Docker Compose
 
-In this documentation, we'll start devnet <uns/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
+In this documentation, we'll start sandbox <uns/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
 
 Create the following configuration file `docker-compose.yml`: 
 
-```docker
-version: '2'
-services:
-  postgres:
-    image: "postgres:11-alpine"
-    container_name: postgres-devnet
-    restart: always
-    ports:
-      - '127.0.0.1:5432:5432'
-    volumes:
-      - 'postgres:/var/lib/postgresql/data'
-    networks:
-      - core 
-    environment:
-     POSTGRES_PASSWORD: password
-     POSTGRES_DB: uns_devnet
-     POSTGRES_USER: uns
-
-  uns:
-    image: universalnamesystem/core:devnet
-    container_name: uns
-    restart: always
-    environment:
-     UNS_NET: devnet
-     # FORGER_SECRET: "" # <-- edit here to start a forger
-     DB_HOST: postgres
-     DB_PORT: 5432
-     DB_PASSWORD: password
-     DB_DATABASE: uns_devnet
-     DB_USER: uns
-    ports:
-     - "4102:4102"
-     - "4103:4103"
-    cap_add:
-      - SYS_NICE
-      - SYS_RESOURCE
-      - SYS_TIME
-    networks:
-      - core 
-    tty: true
-    links:
-     - postgres
-    depends_on:
-      - postgres
-volumes:
-  postgres:
-networks:
-  core:
-```
-
-This file really ease node start, configuring it for you. 
+<<< @/docs/uns-network-setting-up-node/sandbox-docker-compose.yml
 
 ::: tip
-You can run a node without docker-compose with simple docker commands, but we won't describe here.
-:::
-
-::: tip
-**Optionally**, you can get access to log and configuration files, by mapping a volume to `/etc/uns` and `/var/log/uns`.
+You can read your node logs by running `docker-compose logs --tail 10 uns-sandbox` (here, the last 10 log lines).
 :::
 
 ### Explanations
@@ -160,7 +92,7 @@ It has two exposed ports; for p2p (`4102`) and for API (`4103`), and mount 3 vol
 
 Some environment variables are set :
 - for the database (port, user name, user password and db name)
-- for the network (here it's `devnet`, it means that it'll connect to other <uns/> devnet nodes)
+- for the network (here it's `sandbox`, it means that it'll connect to other <uns/> sandbox nodes)
 - and the forger secret (line `FORGER_SECRET`, commented by default). 
 
 ### Run a relay with Docker Compose
@@ -197,6 +129,25 @@ You must be a [declared delegate](/uns-network-player/#becoming-a-delegate) befo
 
 To run a forger node, please edit the `docker-compose.yml` file.
 
-Find and uncomment line `FORGER_SECRET` and set your wallet passphrase as value. Then, start your forger node with the same commands as for a relay node (see [Run a relay with Docker Compose](#run-a-relay-with-docker-compose) above).
+Find and uncomment line `FORGER_SECRET` and set your wallet passphrase as value:
+
+```yaml{6}
+  uns:
+    image: universalnamesystem/core:sandbox
+    ...
+    environment:
+      ...
+      FORGER_SECRET: "your fantastic passphrase here"
+```
+
+Then, (re)start your forger node with the following command:
+
+```shell
+$ docker-compose up --build -d
+```
+::: tip
+The parameter `--build` is necessary only to take into account the `docker-compose.yml` file update.
+:::
+
 
 Now you have a running relay node and you're ready to forge blocks.
