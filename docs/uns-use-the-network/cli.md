@@ -223,7 +223,7 @@ Command used to prompt CLI version.
 #### Usage
 
 ```bash
-uns version
+$ uns version
 ```
 
 #### Output
@@ -248,14 +248,14 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns status
+$ uns status
 ```
 
 #### Examples
 To display <uns/> sandbox blockchain status
 
 ```bash
-uns status --network sandbox --format yaml
+$ uns status --network sandbox --format yaml
 ```
 
 #### Output
@@ -288,13 +288,13 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns cryptoaccount:create
+$ uns cryptoaccount:create
 ```
 
 #### Examples
 As example, if you want to create a <uns/> crypto account on `sandbox` network:
 ```bash
-uns cryptoaccount:create --network sandbox
+$ uns cryptoaccount:create --network sandbox
 ```
 
 #### Output
@@ -319,7 +319,7 @@ $ uns cryptoaccount:create
 Redirect stdout to file to create json file with crypto account information:
 
 ```bash
-uns cryptoaccount:create --network sandbox >> ./myUNSCryptoAccount.json
+$ uns cryptoaccount:create --network sandbox >> ./myUNSCryptoAccount.json
 ```
 
 ### `cryptoaccount:read`
@@ -342,14 +342,14 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns cryptoaccount:read {crypto account identifier}] [--listunik]
+$ uns cryptoaccount:read {crypto account identifier}] [--listunik]
 ```
 
 #### Example
 
 Display crypto account information and list of UNIK token owned by this crypto account
 ```bash
-uns cryptoaccount:read SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
+$ uns cryptoaccount:read SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
 ```
 
 #### Output
@@ -387,7 +387,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
 ```bash
-uns cryptoaccount:set-second-passphrase -n sandbox
+$ uns cryptoaccount:set-second-passphrase -n sandbox
 ```
 
 #### Output
@@ -415,13 +415,13 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns unik:create --explicitValue {explicitValue} --type [individual|organization|network]
+$ uns unik:create --explicitValue {explicitValue} --type [individual|organization|network]
 ```
 
 #### Examples
 As example, if you want to create UNIK `individual` token `bob` on `sandbox` network:
 ```bash
-uns unik:create --explicitValue bob --type individual --network sandbox --verbose
+$ uns unik:create --explicitValue bob --type individual --network sandbox --verbose
 ```
 
 Enter your passphrase:
@@ -475,14 +475,14 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns unik:read --unikid {UNIK token id}
+$ uns unik:read --unikid {UNIK token id}
 ```
 
 #### Example
 
 Display UNIK informations
 ```bash
-uns unik:read --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
+$ uns unik:read --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
 ```
 
 #### Output
@@ -525,14 +525,14 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns properties:set --unikid {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network sandbox
+$ uns properties:set --unikid {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network sandbox
 ```
 
 #### Example
 
 Add property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 ```bash
-uns properties:set --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:set --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
@@ -567,14 +567,14 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns properties:unset --unikid {UNIK token id} -k prop1 -k prop2 --network sandbox
+$ uns properties:unset --unikid {UNIK token id} -k prop1 -k prop2 --network sandbox
 ```
 
 #### Example
 
 Remove property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 ```bash
-uns properties:unset --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:unset --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
@@ -616,7 +616,7 @@ uns properties:list --unikid {UNIK token id}
 
 Display UNIK properties
 ```bash
-uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox
+$ uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox
 ```
 
 ##### Success output example
@@ -662,7 +662,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns properties:get --unikid {UNIK token id} -k {propertyKey} -n sandbox
+$ uns properties:get --unikid {UNIK token id} -k {propertyKey} -n sandbox
 ```
 
 #### Examples
@@ -671,7 +671,7 @@ uns properties:get --unikid {UNIK token id} -k {propertyKey} -n sandbox
 
 Display UNIK property phone
 ```bash
-uns properties:get --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone"
+$ uns properties:get --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone"
 ```
 
 ##### Success output example
@@ -752,7 +752,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns unik:disclose -n sandbox --unikid {UNIK token id} -e {explicit values}
+$ uns unik:disclose -n sandbox --unikid {UNIK token id} -e {explicit values}
 ```
 
 #### Examples
@@ -795,7 +795,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns unik:is-disclosed -n sandbox {UNIK token id}
+$ uns unik:is-disclosed -n sandbox {UNIK token id}
 ```
 
 #### Examples
@@ -804,7 +804,7 @@ uns unik:is-disclosed -n sandbox {UNIK token id}
 
 Check UNIK explicit value disclose status
 ```bash
-uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+$ uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
 ##### Success output example
@@ -840,11 +840,11 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
+$ uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
 ```
 
 ```bash
-uns send 10.42 --to "@bob" --network sandbox
+$ uns send 10.42 --to "@bob" --network sandbox
 ```
 
 #### Examples
