@@ -860,3 +860,73 @@ Enter your crypto account passphrase (12 words phrase): ************************
   confirmations: 3
 }
 ```
+
+### `delegate:vote`
+
+#### Introduction
+
+This command allows you to vote for a delegate with his Unikname to get him elected.
+
+#### Arguments
+- `DELEGATE` (required):  The Unikname between double quote, or the unikid of the delegate to vote for.
+
+#### Parameters
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns delegate:vote -n sandbox {DELEGATE Unikname}
+```
+
+#### Examples
+
+##### Success example
+
+Vote for the delegate whose Unikname is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+
+```bash
+$ uns delegate:vote -n sandbox 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+```
+
+Vote for the delegate whose Unikname is `@Bob`
+
+```bash
+$ uns delegate:vote -n sandbox "@Bob"
+```
+
+### `delegate:unvote`
+
+#### Introduction
+
+This command allows you to revoke your vote given to a delegate with his Unikname.
+
+#### Arguments
+- `DELEGATE` (required):  The Unikname between double quote, or the unikid of the delegate to unvote for.
+
+#### Parameters
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns delegate:unvote -n sandbox {DELEGATE Unikname}
+```
+
+#### Examples
+
+##### Success example
+
+Unvote for the delegate whose Unikname is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+
+```bash
+$ uns delegate:unvote -n sandbox 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+```
+
+Unvote for the delegate whose Unikname is `@Bob`
+
+```bash
+$ uns delegate:unvote -n sandbox "@Bob"
+```
