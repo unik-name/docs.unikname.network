@@ -930,3 +930,62 @@ Unvote for the delegate whose Unikname is `@Bob`
 ```bash
 $ uns delegate:unvote -n sandbox "@Bob"
 ```
+
+### `delegate:register`
+
+#### Introduction
+
+This command allows you to register a UNIK as delegate with your Unikname.
+Before registering you must have publicly disclosed your Unikname (see [unik:disclose command](#unik:disclose))
+
+#### Arguments
+- `DELEGATE` (required):  The Unikname between double quote, or the unikid to register as delegate.
+
+#### Parameters
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns delegate:register -n sandbox {DELEGATE Unikname}
+```
+
+#### Examples
+
+##### Success example
+
+register `@Bob` as delegate
+
+```bash
+$ uns delegate:register -n sandbox "@Bob"
+```
+
+### `delegate:resign`
+
+#### Introduction
+
+This command allows you to resign delegate status of your UNIK.
+
+#### Arguments
+- `DELEGATE` (required):  The delegate Unikname between double quote, or the unikid to resign.
+
+#### Parameters
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns delegate:resign -n sandbox {DELEGATE Unikname}
+```
+
+#### Examples
+
+##### Success example
+
+Resignation of delegate `@Bob`
+
+```bash
+$ uns delegate:resign -n sandbox "@Bob"
+```
