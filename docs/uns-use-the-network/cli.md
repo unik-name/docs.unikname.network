@@ -110,6 +110,9 @@ For every new data added in the chain, you may wait for the write operation to b
 
 - `--await-confirmation` (optional): Maximum number of blocks to wait to get one confirmation of the transaction. Default to 3. 0 for immediate return.
 
+- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
+
+- `--secondPassphrase`: The second crypto account passphrase. If you have created a second passphrase on your crypto account, you have to enter it.
 
 ### Using an HTTP Proxy
 
@@ -515,7 +518,6 @@ Set (add or update) properties of UNIK token.
 - `--unikid` (required): the ID of the UNIK token
 - `-p --properties` (required): List of key/value to set as UNIK properties: "key1:value1" "key2:value2".  See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
 
-- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
@@ -558,7 +560,6 @@ Unset properties of UNIK token.
 
 - `--unikid` (required): the ID of the UNIK token
 - `-k --propertyKey`, Key of the property to unset. (multiple occurrences)
-- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
@@ -743,7 +744,6 @@ Make public one or more explicit values of your UNIK Name. This value will appea
 
 - `-e, --explicitValue` (required): Explicit values to disclose, separated with spaces. Must match the UNIK Name of the token.
 - `--unikid` (required): The UNIK token.
-- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
 
@@ -831,8 +831,6 @@ Send owned UNS protocol tokens to another crypto account.
 - `--to` (required): The recipient address, public key or @unik-name (warning: @unik-name must be surrounded with double quotes).
 - `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
 - `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
-- `--passphrase`: The passphrase of the owner of unik. If you do not enter a passphrase you will be prompted for it.
-- `--secondPassphrase`: The second crypto account passphrase. If you have created a second passphrase on your crypto account, you have to enter it.
 - `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
 
 Some [global parameters](#global-parameters) may apply to this command.
