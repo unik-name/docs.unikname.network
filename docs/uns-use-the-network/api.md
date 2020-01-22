@@ -411,13 +411,70 @@ curl --header "API-Version: 2" https://forger1.sandbox.uns.network/api/blockchai
     "block": {
       "height": 91519,
       "id": "8711914249079958250"
-    } ,
+    },
     "supply": 2118303800000000
   }
 }
 ```
 
-The full documentation of [ARK APIs is available here](https://api.ark.dev/public-rest-api/getting-started). 
+## Public Delegates API
+
+### List All Delegates
+
+Delegate are identified by their unikname and corresponding Unik ID wich is restitued by the property "username"
+
+#### Endpoint
+
+```
+GET /api/delegates
+```
+
+### Query Parameters
+
+| Name    | Type | Description                                       | Required |
+| :------ | :--: | :------------------------------------------------ | :------: |
+| offset  | int  | The offset of resources that will be returned.    |   :x:    |
+| limit   | int  | The number of resources per page.                 |   :x:    |
+| orderBy | int  | The column by which the resources will be sorted. |   :x:    |
+
+### Response
+
+```json
+{
+    "data": [
+        {
+            "unikname": "JhonnyBoy",
+            "username": "07eac6f0ec030604a0ce310e3f9084b21df57f6ac151b8b84e36c92ac7b32be4",
+            "address": "D5PXQVeJmchVrZFHL7cALZK8mWWzjCaVfz",
+            "publicKey": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586",
+            "vote": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586",
+            "rank": 1,
+            "blocks": {
+              "produced": 1564,
+                "last": {
+                  "id": "7554c50bebb61dcec5c20405d9daf38bdd338360eeba925f6aa24c787c439fa1",
+                  "height": 3234,
+                  "timestamp": {
+                  "epoch": 10800384,
+                  "unix": 1579693714,
+                  "human": "2020-01-22T11:48:34.474Z"
+                }
+              }
+            },
+            "production": {
+              "approval": 0
+            },
+            "forged": {
+              "fees": "210000000",
+              "rewards": "312800000000",
+              "total": "313010000000"
+            }
+        }
+    ],
+}
+```
+
+The full documentation of [ARK APIs is available here](https://api.ark.dev/public-rest-api/getting-started).
 
 ::: warning
 At some times, UNS and Ark APIs can differ but we do our best to keep compatibility.
