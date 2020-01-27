@@ -37,9 +37,9 @@ You need:
 - gcc/g++
 - Python 2.7
 
-Most of the times, theses tools are already installed. If not, you can read on the [@unik-name Forum](https://forum.unik-name.com/t/how-to-get-required-tools-to-install-the-uns-cli/95) how to install them for your operating system.
+Most of the times, theses tools are already installed. If not, you can read on the [Unikname Forum](https://forum.unik-name.com/t/how-to-get-required-tools-to-install-the-uns-cli/95) how to install them for your operating system.
 
-If still you need help to install theses tools, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
+If still you need help to install theses tools, you can get support on [the Unikname Forum](https://forum.unik-name.com).
 
 #### Installation with NPM
 
@@ -62,7 +62,7 @@ $ uns version
 @uns/cli/x.y.z linux-x64 node-v10.16.3
 ```
 
-If you fail to install the CLI, you can get support on [the @unik-name Forum](https://forum.unik-name.com).
+If you fail to install the CLI, you can get support on [the Unikname Forum](https://forum.unik-name.com).
 
 **Note**
 If you want, you can also use [Yarn](https://yarnpkg.com/) instead of NPM to install the <uns/> CLI from sources.
@@ -695,7 +695,7 @@ Resolve a decentralized identifier (DID).
 
 Expected format : `"[@][unik:][type:]expliciteValue[?propertyKey|?*]"`, where:
 - `type` can be one of [these values](/uns-use-the-network/cheatsheet.html#types-and-categories-of-unik) (numeric or letter format)
-- `explicitValue` is the usual value of your @unik-name
+- `explicitValue` is the usual value of your @unikname
 - `propertyKey` must match with [this format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
 
 See examples below for more information.
@@ -769,7 +769,7 @@ uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2
 ```bash
 $ uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb -f yaml
 
-Disclosing a @unik-name to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
+Disclosing a @unikname to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
 data:
   transaction: adf4e1d845c82b2cffe63b5e438869fcea384439ab913885697726894a99c75b
   confirmations: 1
@@ -828,7 +828,7 @@ Send owned UNS protocol tokens to another crypto account.
 
 #### Parameters
 
-- `--to` (required): The recipient address, public key or @unik-name (warning: @unik-name must be surrounded with double quotes).
+- `--to` (required): The recipient address, public key or @unikname (warning: @unikname must be surrounded with double quotes).
 - `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
 - `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
 - `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
@@ -863,10 +863,10 @@ Enter your crypto account passphrase (12 words phrase): ************************
 
 #### Introduction
 
-This command allows you to vote for a delegate with his Unikname to get him elected.
+This command allows you to vote for a delegate with his @unikname to get him elected.
 
 #### Arguments
-- `DELEGATE` (required):  The Unikname between double quote, or the unikid of the delegate to vote for.
+- `DELEGATE` (required):  The @unikname between double quote, or the unikid of the delegate to vote for.
 
 #### Parameters
 
@@ -875,20 +875,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:vote -n sandbox {DELEGATE Unikname}
+$ uns delegate:vote -n sandbox {DELEGATE's @unikname}
 ```
 
 #### Examples
 
 ##### Success example
 
-Vote for the delegate whose Unikname is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+Vote for the delegate whose @unikname id is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 
 ```bash
 $ uns delegate:vote -n sandbox 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
-Vote for the delegate whose Unikname is `@Bob`
+Vote for the delegate whose @unikname is `@Bob`
 
 ```bash
 $ uns delegate:vote -n sandbox "@Bob"
@@ -898,10 +898,10 @@ $ uns delegate:vote -n sandbox "@Bob"
 
 #### Introduction
 
-This command allows you to revoke your vote given to a delegate with his Unikname.
+This command allows you to revoke your vote given to a delegate with his @unikname.
 
 #### Arguments
-- `DELEGATE` (required):  The Unikname between double quote, or the unikid of the delegate to unvote for.
+- `DELEGATE` (required):  The @unikname between double quote, or the unikid of the delegate to unvote for.
 
 #### Parameters
 
@@ -910,20 +910,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:unvote -n sandbox {DELEGATE Unikname}
+$ uns delegate:unvote -n sandbox {DELEGATE's @unikname}
 ```
 
 #### Examples
 
 ##### Success example
 
-Unvote for the delegate whose Unikname is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+Unvote for the delegate whose @unikname id is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 
 ```bash
 $ uns delegate:unvote -n sandbox 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
-Unvote for the delegate whose Unikname is `@Bob`
+Unvote for the delegate whose @unikname is `@Bob`
 
 ```bash
 $ uns delegate:unvote -n sandbox "@Bob"
