@@ -112,7 +112,7 @@ For every new data added in the chain, you may wait for the write operation to b
 
 - `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
 
-- `--secondPassphrase`: The second crypto account passphrase. If you have created a second passphrase on your crypto account, you have to enter it.
+- `--second-passphrase`: The second crypto account passphrase. If you have [set up a second passphrase on your crypto-account](#cryptoaccount-set-second-passphrase), you can specify it with this flag.
 
 ### Using an HTTP Proxy
 
