@@ -688,17 +688,10 @@ confirmations: 833
 ### `resolve`
 
 #### Introduction
-Resolve a decentralized identifier (DID).
+Resolve a Decentralized IDentifier (DID).
 
 #### Arguments
-- `DID` (required):  The decentralized identifier to resolve.
-
-Expected format : `"[@][unik:][type:]expliciteValue[?propertyKey|?*]"`, where:
-- `type` can be one of [these values](/uns-use-the-network/cheatsheet.html#types-and-categories-of-unik) (numeric or letter format)
-- `explicitValue` is the usual value of your @unikname
-- `propertyKey` must match with [this format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
-
-See examples below for more information.
+- `DID` (required):  The Decentralized IDentifier to resolve, with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 ::: warning
 DID must be surrounded by double quotes (e.g. `"@bob"`)
@@ -866,7 +859,7 @@ Enter your crypto account passphrase (12 words phrase): ************************
 This command allows you to vote for a delegate with his @unikname to get him elected.
 
 #### Arguments
-- `DELEGATE` (required):  The @unikname between double quote, or the unikid of the delegate to vote for.
+- `ID` (required): the unikid of the delegate to vote for or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
@@ -875,23 +868,27 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:vote -n sandbox {DELEGATE's @unikname}
+$ uns delegate:vote -n sandbox {ID Unikname}
 ```
 
 #### Examples
 
-##### Success example
-
-Vote for the delegate whose @unikname id is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+Vote for the delegate whose @unikname id (or unikid) is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 
 ```bash
 $ uns delegate:vote -n sandbox 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
-Vote for the delegate whose @unikname is `@Bob`
+Vote for the individual delegate whose @unikname is `@Bob`
 
 ```bash
 $ uns delegate:vote -n sandbox "@Bob"
+```
+
+Vote for the organization delegate whose @unikname is `@MyCompany`
+
+```bash
+$ uns delegate:vote -n sandbox "@organization:MyCompany"
 ```
 
 ### `delegate:unvote`
@@ -901,7 +898,7 @@ $ uns delegate:vote -n sandbox "@Bob"
 This command allows you to revoke your vote given to a delegate with his @unikname.
 
 #### Arguments
-- `DELEGATE` (required):  The @unikname between double quote, or the unikid of the delegate to unvote for.
+- `ID` (required): the unikid of the delegate to unvote for or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
@@ -910,23 +907,27 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:unvote -n sandbox {DELEGATE's @unikname}
+$ uns delegate:unvote -n sandbox {ID Unikname}
 ```
 
 #### Examples
 
-##### Success example
-
-Unvote for the delegate whose @unikname id is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+Unvote for the delegate whose @unikname id (or unikid) is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 
 ```bash
 $ uns delegate:unvote -n sandbox 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
-Unvote for the delegate whose @unikname is `@Bob`
+Unvote for the individual delegate whose @unikname is `@Bob`
 
 ```bash
 $ uns delegate:unvote -n sandbox "@Bob"
+```
+
+Unvote for the organization delegate whose @unikname is `@MyCompany`
+
+```bash
+$ uns delegate:unvote -n sandbox "@organization:MyCompany"
 ```
 
 ### `delegate:register`
@@ -937,7 +938,7 @@ This command allows you to register a UNIK as delegate with your Unikname.
 Before registering you must have publicly disclosed your Unikname (see [unik:disclose command](#unik:disclose))
 
 #### Arguments
-- `DELEGATE` (required):  The Unikname between double quote, or the unikid to register as delegate.
+- `ID` (required): the unikid to register as delegate or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
@@ -946,17 +947,21 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:register -n sandbox {DELEGATE Unikname}
+$ uns delegate:register -n sandbox {ID Unikname}
 ```
 
 #### Examples
 
-##### Success example
-
-register `@Bob` as delegate
+Register individual `@Bob` as delegate
 
 ```bash
 $ uns delegate:register -n sandbox "@Bob"
+```
+
+Register organization `@MyCompany` as delegate
+
+```bash
+$ uns delegate:register -n sandbox "@organization:MyCompany"
 ```
 
 ### `delegate:resign`
@@ -966,7 +971,7 @@ $ uns delegate:register -n sandbox "@Bob"
 This command allows you to resign delegate status of your UNIK.
 
 #### Arguments
-- `DELEGATE` (required):  The delegate Unikname between double quote, or the unikid to resign.
+- `ID` (required):  The unikid to unregister or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
@@ -975,12 +980,10 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:resign -n sandbox {DELEGATE Unikname}
+$ uns delegate:resign -n sandbox {ID Unikname}
 ```
 
 #### Examples
-
-##### Success example
 
 Resignation of delegate `@Bob`
 

@@ -108,3 +108,27 @@ Each kind of `type` have different features, behaviors of the <uns/> and governa
 Property keys format must match with the following rules:
 - be alphanumeric: `a-z A-Z 0-9`
 - be shorter or equals to 255 characters
+
+# DID - Decentralized IDentifier
+
+The expected format of a DID of kind "UNIK" is: `[@][unik:][type:]explicitValue[?propertyKey|?*]`.
+
+`[...]` are the optional parts of the pattern. Each part of the pattern are described below.
+
+## `Type`
+
+The `type` can be one of [these values](#types-and-categories-of-unik) (numeric or letter format).
+
+**The default value of `type` is `individual`:** `@Bob` always designates the individual DID of `Bob`. So if you want to designate the DID of `MyCompany`, you will need to add the type: `@organization:MyCompany`.
+
+## `explicitValue`
+
+The `explicitValue` is the usual value of your @unikname.
+
+## `propertyKey`
+
+The `propertyKey` part must match with [property keys format](#property-keys-of-unik).
+
+## Examples
+
+TODO
