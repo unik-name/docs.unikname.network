@@ -11,13 +11,13 @@ title: "uns.network Security & Hack Protections"
 
 ### Unlisted protection
 
-@unik-names are unlisted by default.
+@uniknames are unlisted by default.
 
-The registry of non-fungible @unik-name tokens consists of obfuscated strings. With this technology, it’s not possible to determine names recorded into the registry. Very-slow-hash functions is used to prevent “rainbow-table” attacks.
+The registry of non-fungible @unikname tokens consists of obfuscated strings. With this technology, it’s not possible to determine names recorded into the registry. Very-slow-hash functions is used to prevent “rainbow-table” attacks.
 
 ### Reverse lookup protection
 
-The registry is protected against reverse lookup. It is not possible to find a @unik-name from a value within the registry (e.g. a blockchain public address) because user’s registry does not contain @unik names nor any reference to it, and because the user’s registry is stored off-chain. 
+The registry is protected against reverse lookup. It is not possible to find a @unikname from a value within the registry (e.g. a blockchain public address) because user’s registry does not contain @unik names nor any reference to it, and because the user’s registry is stored off-chain. 
 
 The key field of the database containing values is composed of obfuscated unik-addresses. This key is also protected against “rainbow-table” attacks. (see Unlisted Protection here above).
 
@@ -46,7 +46,7 @@ Through OpenAPIs accesses, every request is filtered and analyzed to detect unus
 
 ### Ownership Protection
 
-@unik-name token is a Self-Sovereign Asset with ownership rules coded within <uns/> smart contract. Only @unik-name token owner has control over it as long as the <uns/> blockchain will exist.
+@unikname token is a Self-Sovereign Asset with ownership rules coded within <uns/> smart contract. Only @unikname token owner has control over it as long as the <uns/> blockchain will exist.
 
 ### Spoofing, Typosquatting, Phishing protection
 

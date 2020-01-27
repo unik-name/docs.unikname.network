@@ -23,14 +23,14 @@ UNIK tokens are Decentralized Identifiers (DID), recorder within the <uns/> bloc
 
 Very common Human-Readable Identifiers are eMail Addresses, like 'bill@gmail.com'. They serve to identify eMail recipients within the overall e-Mailing network. 
 
-@unik-name is a Human-Readable Identifier. It's been designed to be universal and to serve to identify any kind of resource or recipient within any network or any traditional SaaS platform.
+A @unikname is a Human-Readable Identifier. It's been designed to be universal and to serve to identify any kind of resource or recipient within any network or any traditional SaaS platform.
 
-Examples of @unik-name are `@bob`, `@bob#incomes`, `@alice#gift`, or `@John.Doe#files`.
+Examples of @uniknames are `@bob`, `@bob#incomes`, `@alice#gift`, or `@John.Doe#files`.
 
 
-### Why are @unik-name Identifiers trustworthy? 
+### Why are @unikname Identifiers trustworthy? 
 
-@unik-name identifiers are considered Trustworthy identifiers because (1) they're Decentralized Identifiers under the sole control of their owners, (2) they're human-readable, easy to remember and to share without error, (3) they're protected against typo-squatting and phishing hacks thank to our Safe-Typo algorithm.
+@unikname identifiers are considered Trustworthy identifiers because (1) they're Decentralized Identifiers under the sole control of their owners, (2) they're human-readable, easy to remember and to share without error, (3) they're protected against typo-squatting and phishing hacks thank to our Safe-Typo algorithm.
 
 
 ### What is typo-squatting? 
@@ -41,7 +41,7 @@ Examples of @unik-name are `@bob`, `@bob#incomes`, `@alice#gift`, or `@John.Doe#
 ### What is Safe-Typo (c) ? 
 
 **Safe-Typo is an algorithm we've designed to build Human-Readable identifiers** that are communicable safely regarding typo-squatting risks and phishing hacks. 
-Users have the guarantee that their @unik-name cannot be counterfeit: no errors due to confusing characters, accents, homonyms, separators or not, character inversion, international charset... Every @unik-names and so every UNIK tokens are built with SafeTypo. 
+Users have the guarantee that their @unikname cannot be counterfeit: no errors due to confusing characters, accents, homonyms, separators or not, character inversion, international charset... Every @uniknames and so every UNIK tokens are built with SafeTypo. 
 
 ## Tokens
 
@@ -51,18 +51,18 @@ Both serve their own purpose.
 
 The UNS token is a technical token, used to secure the uns.network, and to reward Network Players for services provided to the Network. 
 
-The UNIK token is inseparable from every @unik-name. Technically UNIK is a NFT (Non-Fongible-Token), not like the UNS Token. UNIK Token is the unique representation of a @unik-name identifier within our <uns/> public blockchain. It's the technical link with your registry of personal data.
+The UNIK token is inseparable from every @uniknames. Technically UNIK is a NFT (Non-Fongible-Token), not like the UNS Token. UNIK Token is the unique representation of a @unikname identifier within our <uns/> public blockchain. It's the technical link with your registry of personal data.
 
 ### What is a NFT and why is UNIK a Non-Fungible Token? 
 
 NFT (Non Fungible Tokens) tokens have remarkable properties:
 
-- They're unique and you have the guarantee that they're unique. No one can get the same @unik-name as yours. 
+- They're unique and you have the guarantee that they're unique. No one can get the same @unikname as yours. 
 - They're minted for eternity. Technically speaking we should say as long as the blockchain exists. 
 - They've their own governance and ownership rules, and enable handling it without a centralized entity. 
 - They're valuable on their own as a digital asset with intrinsic properties.
 
-As the owner of a @unik-name, you own its inseparable UNIK non-fungible token.
+As the owner of a @unikname, you own its inseparable UNIK non-fungible token.
 
 
 ### What is the difference between a fungible and a non-fungible token? 

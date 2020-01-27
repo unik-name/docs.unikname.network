@@ -61,7 +61,7 @@ A desktop client to manage wallets for the UNS Token. For advanced transactions 
 
 ### UNIK-NAME Mobile App
 
-The mobile app used to manage user's @unik-name. These app is also a fully featured wallet for owning and transfering UNS and UNIK Tokens.
+The mobile app used to manage user's @unikname. These app is also a fully featured wallet for owning and transfering UNS and UNIK Tokens.
 
 ### UNIPs, Uns.Network Improvement Proposals
 

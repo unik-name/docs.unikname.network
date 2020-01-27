@@ -57,12 +57,12 @@ At the end, you should have a fully configured Desktop wallet able to transfer U
 
 If you want to start playing, you can get `SUNS` [from the FAUCET](./#sandbox-faucet).
 
-> NOTA: Management of UNIK tokens is not able with the default Ark Wallet, it requires the installation of the @unik-name APP.
+> NOTA: Management of UNIK tokens is not able with the default Ark Wallet, it requires the installation of the Unikname APP.
 
 
-## @unik-name APP
+## Unikname APP
 
-The @unik-name mobile APP is not only an app to manage your owns @unik-names and its properties. The @unik-name mobile APP is also, and before all, a wallet. This APP embed cryptographic and secured features like handling pass phrase, handling private keys and calculating public addresses. 
+The Unikname mobile APP is not only an app to manage your owns @uniknames and its properties. The Unikname mobile APP is also, and before all, a wallet. This APP embed cryptographic and secured features like handling pass phrase, handling private keys and calculating public addresses. 
 
-So the @unik-name mobile APP is the prefered user APP to manage @unik-names but also UNS tokens, UNIK tokens, and to trigger transactions requiring tokens.
+So the Unikname mobile APP is the prefered user APP to manage @uniknames but also UNS tokens, UNIK tokens, and to trigger transactions requiring tokens.
 

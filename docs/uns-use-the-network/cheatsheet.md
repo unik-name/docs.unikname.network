@@ -25,9 +25,9 @@ pageClass: cheatsheet-pageclass
 | [set-properties](cli.html#set-properties) | -h -n -v -f | YES | Set (add or update) properties of a UNIK Token | 0.5.0 |
 | [get-properties](cli.html#get-properties) | -h -n -v -f -m | | Get properties of a UNIK token | 0.5.0 |
 | get-property-value | -h -n -v -f -m | | Get the value of a specified property for a specified UNIK | to come |
-| disclose-explicit-values | -h -n -v -f | YES | Disclose @unik-names related to a UNIK | to come |
-| stach-explicit-value | -h -n -v -f | YES | Stach @unik-names related to a UNIK | to come |
-| is-disclosed | -h -n -v -f -m | | Return if a @unik-name is disclosed or not | to come |
+| disclose-explicit-values | -h -n -v -f | YES | Disclose @uniknames related to a UNIK | to come |
+| stach-explicit-value | -h -n -v -f | YES | Stash @uniknames related to a UNIK | to come |
+| is-disclosed | -h -n -v -f -m | | Return if a @unikname is disclosed or not | to come |
 | **Decentralized Identifier** |
 | [did-resolve](cli.html#did-resolve) | -h -n -v -f | | Resolve a decentralized Identifier |
 

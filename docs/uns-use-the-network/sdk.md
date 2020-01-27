@@ -132,21 +132,21 @@ SDK contains some helpers for disclose feature.
 
 ##### build a disclose demand
 
-To disclose explicit values of a given @unik-name, you must create a demand first, then send this demand to an authorized certification service.
+To disclose explicit values of a given @unikname, you must create a demand first, then send this demand to an authorized certification service.
 The demand builder requires :
 - the unik-name fingerprint 
-- a list of explicit values of your @unik-name you want to disclose
-- type of your @unik-name
-- passphrase of the wallet owner of the @unik-name
+- a list of explicit values of your @unikname you want to disclose
+- type of your @unikname
+- passphrase of the wallet owner of the @unikname
 
 ```typescript
 import { buildDiscloseDemand, DIDTypes, DiscloseDemand } from "@uns/ts-sdk"
 
 const demand: DiscloseDemand = buildDiscloseDemand(
-  "a242daa994cc5490020871731d34f7cd3c3993e0b30bac1233d7483001e96e77", // unikname fingerprint 
+  "a242daa994cc5490020871731d34f7cd3c3993e0b30bac1233d7483001e96e77", // @unikname fingerprint 
   ["explicit1", "explicit2"], // explicit values to disclose
-  DIDTypes.INDIVIDUAL, // type of your unikname
-  "this is my passphrase" // of the unik-name owner to sign demand
+  DIDTypes.INDIVIDUAL, // type of the @unikname
+  "this is my passphrase" // of the @unikname owner to sign demand
 );
 ```
 

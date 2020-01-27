@@ -11,7 +11,7 @@ If you're familiar with the <uns/> environement, you may be interested to use th
 
 ### Use the CLI, to go fast with basic actions
 
-The CLI (Command Line Interface) has been designed to facilitate basic actions and testing. With the CLI you can create a wallet, mint a @unik-name into the chain, update user's properties, list existing tokens or query the status of the network, and many other things. 
+The CLI (Command Line Interface) has been designed to facilitate basic actions and testing. With the CLI you can create a wallet, mint a @unikname into the chain, update user's properties, list existing tokens or query the status of the network, and many other things. 
 
 The CLI runs with the LIVENET but also with the SANDBOX for integration testing. 
 
@@ -23,24 +23,24 @@ All network services can be used via the <uns/> APIs. This is the best way for d
 
 [Read more &rightarrow;](api)
 
-### Use the SDKs, to quickly embed <uns/> features, and @unik-name solutions, withing APPs
+### Use the SDKs, to quickly embed <uns/> features, and Unikname solutions, withing APPs
 
-SDKs have been developped to simplify developer work when they integrate @unik-name solutions within their plateforms or their APPs. 
+SDKs have been developped to simplify developer work when they integrate Unikname solutions within their plateforms or their APPs. 
 
 [Read more &rightarrow;](sdk)
 
-### Use Wallets and @unik-name APP
+### Use Wallets and Unikname APP
 
 Wallets are end user tools, ready to use to transfer and to manage tokens. 
 
-@unik-name mobile APP is the prefered user APP within our ecosystem. 
+Unikname mobile APP is the prefered user APP within our ecosystem. 
 
-First of all @unik-name mobile APP is used to: 
+First of all Unikname mobile APP is used to: 
 1. to authenticate connection to any web platform, 
-1. to manage his/her @unik-names,
-1. to manage his/her personal data linked with @unik-names,
+1. to manage his/her @uniknames,
+1. to manage his/her personal data linked with @uniknames,
 
-but @unik-name mobile APP is also used : 
+but Unikname mobile APP is also used : 
 - to handle and transfer UNS tokens, 
 - to handle and transfer UNIK tokens, 
 - to trigger transactions over the network and requiring tokens,
