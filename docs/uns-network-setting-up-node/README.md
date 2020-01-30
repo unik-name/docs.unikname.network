@@ -15,7 +15,8 @@ To make your life easier, we've built Docker images of <uns/> nodes.
 
 ### What is docker 
 
-Docker is the de facto industry standard for packaging applications into a container. By doing so, all dependencies, such as the language runtimes, operating system, and libraries are combined with the product.
+Docker is the de facto industry standard for packaging applications into a container.
+By doing so, all dependencies, such as the language runtimes, operating system, and libraries are combined with the product.
 
 Different cloud providers offer specific products to host your Docker containers, such as:
 
@@ -31,6 +32,9 @@ Orchestrators with Docker as a first-class citizen:
 - [Nomad](https://www.nomadproject.io/)
 - [Mesos](http://mesos.apache.org/)
 
+For the moment, we have choosen to only describe the `docker-compose` setup.
+So, if you choose to run your <uns/> node on other platforms, share your own experience [on the <uns/> network of the forum!](https://forum.unik-name.com/c/uns-network/7)
+
 ### Minimum requirements for running a SANDBOX relay or forger node
 
 - Linux: Ubuntu 16.04 / 18.04, CentOS/RHEL 7 / 8 ...
@@ -39,13 +43,6 @@ Orchestrators with Docker as a first-class citizen:
 - at least 20 GB drive 
 
 We strongly recommend running your node on SSD drive as there are a lot of read and write operations to the DB.
-
-## Installation
-
-First of all, be sure to have these prerequisites:
-- [Docker](https://docs.docker.com/install) installed on your Linux machine
-- [Docker Compose](https://docs.docker.com/compose/install) installed on your machine (only if you want to use it to setup node, documented below).
-- a [Docker Hub](https://hub.docker.com/) account (Sign up if you don't have one yet).
 
 ## Network configuration
 
@@ -64,6 +61,10 @@ Unfortunately, there is no standard documentation to do that, so please follow t
 ## Run a node with Docker Compose
 
 In this documentation, we'll start sandbox <uns/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
+
+So, be sure to have these prerequisites:
+- [Docker](https://docs.docker.com/install) installed on your Linux machine
+- [Docker Compose](https://docs.docker.com/compose/install) installed on your machine (only if you want to use it to setup node, documented below).
 
 Create the following configuration file `docker-compose.yml`: 
 
