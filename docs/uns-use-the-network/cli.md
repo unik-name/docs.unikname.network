@@ -1,6 +1,7 @@
 ---
 home: false
 title: "Using uns.network with the CLI"
+sidebarDepth: 3
 ---
 
 # uns.network CLI
@@ -19,59 +20,9 @@ Some users have reported successful installation and use of the <uns/> CLI on "r
 
 ## Download and installation
 
-| <vp-icon name="windows-brands" />Windows | <vp-icon name="apple-brands" /> MacOS | <vp-icon name="linux-brands" /> Linux |
+| <h1><vp-icon name="windows-brands" size="2em" /><br/>Windows</h1> | <h1><vp-icon name="apple-brands" size="2em" /><br/>macOS</h1> | <h1><vp-icon name="linux-brands" size="2em" /><br/>Linux</h1> |
 |:-------:|:-----:|:-----:|
-| [Download the installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)<Badge text="64-bit"/>        | [Install from sources](#installation-from-sources)      | [Install from sources](#installation-from-sources)      |
-
-### Installation from sources
-
-#### Requirements
-
-<uns/> CLI installation requires some dependencies to be installed. 
-
-##### Node.js
-
-Install a stable version of Node.js (10 or 12): [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
-
-**<uns/> CLI doesn't work on earlier (6, 8)**.
-
-##### Compilation tools
-
-Even if the <uns/> CLI is written in a cross-operating system language (Javascript), it requires native dependencies which need to be compiled for your operating system.
-
-You need:
-- gcc/g++
-- Python 2.7
-
-Most of the times, theses tools are already installed. If not, you can read on the [Unikname Forum](https://forum.unik-name.com/t/how-to-get-required-tools-to-install-the-uns-cli/95) how to install them for your operating system.
-
-If still you need help to install theses tools, you can get support on [the Unikname Forum](https://forum.unik-name.com).
-
-#### Installation with NPM
-
-As NPM is provided by NodeJS package, you can use it to install <uns/> CLI as global command ("sudo mode" might be required, depending on your NodeJS installation).
-
-```bash
-[sudo] npm install -g @uns/cli
-```
-
-Test your installation with
-
-```bash
-uns version
-```
-
-which should output something like that:
-
-```
-$ uns version
-@uns/cli/x.y.z linux-x64 node-v10.16.3
-```
-
-If you fail to install the CLI, you can get support on [the Unikname Forum](https://forum.unik-name.com).
-
-**Note**
-If you want, you can also use [Yarn](https://yarnpkg.com/) instead of NPM to install the <uns/> CLI from sources.
+| <h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      | <h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      |
 
 ## Configuration
 
@@ -284,6 +235,92 @@ NFTs:
 activeDelegates: 23
 lastBlockUrl: https://explorer.uns.network/block/52328
 ```
+
+
+### `resolve`
+
+#### Introduction
+Resolve a Decentralized IDentifier (DID).
+
+#### Arguments
+- `DID` (required):  The Decentralized IDentifier to resolve, with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+
+::: warning
+DID must be surrounded by double quotes (e.g. `"@bob"`)
+:::
+
+#### Parameters
+
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
+- `-f --format` (optional): Specify how to format the output [json|yaml|raw]. Default to JSON.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+
+#### Usage
+
+```bash
+$ uns resolve --network sandbox "@unik:individual:bob?phone"
+```
+
+#### Examples
+
+Resolve `@bob` `address` property in raw format:
+```bash
+$ uns resolve --network sandbox -f raw "@unik:individual:bob?address"
+
+42 quai Malakoff, 44000 Nantes
+```
+
+Alternative syntaxes:
+```bash
+$ uns resolve --network sandbox -f raw "bob?address"
+$ uns resolve --network sandbox -f raw "@bob?address"
+$ uns resolve --network sandbox -f raw "@unik:bob?address"
+```
+
+### `send`
+
+#### Introduction
+Send owned UNS protocol tokens to another crypto account.
+
+#### Arguments
+- `AMOUNT` (required):  The quantity of UNS tokens to send to the recipient.
+
+#### Parameters
+
+- `--to` (required): The recipient address, public key or @unikname (warning: @unikname must be surrounded with double quotes).
+- `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
+- `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
+- `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
+```
+
+```bash
+$ uns send 10.42 --to "@bob" --network sandbox
+```
+
+#### Examples
+
+##### Output example
+
+```bash
+$ uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
+Enter your crypto account passphrase (12 words phrase): *************************************************************************
+
+{
+  transaction: 3996912796307dae3009bc1cb3e4b681a3e34a427d563711115799252715179f
+  confirmations: 3
+}
+```
+
+
 ### `cryptoaccount:create`
 
 #### Introduction
@@ -514,6 +551,89 @@ chainmeta:
 
 ```
 
+### `unik:disclose`
+
+#### Introduction
+Make public one or more explicit values of your UNIK Name. This value will appear in "explicitValue" property of your UNIK.
+
+#### Parameters
+
+- `-e, --explicitValue` (required): Explicit values to disclose, separated with spaces. Must match the UNIK Name of the token.
+- `--unikid` (required): The UNIK token.
+- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns unik:disclose -n sandbox --unikid {UNIK token id} -e {explicit values}
+```
+
+#### Examples
+
+##### Success example
+
+Disclose two explicit values: bob and b0b
+```bash
+uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb
+```
+
+##### Success output example
+
+```bash
+$ uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb -f yaml
+
+Disclosing a @unikname to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
+data:
+  transaction: adf4e1d845c82b2cffe63b5e438869fcea384439ab913885697726894a99c75b
+  confirmations: 1
+```
+
+
+### `unik:is-disclosed`
+
+#### Introduction
+Check if UNIK has one or more disclosed explicit value.
+
+#### Arguments
+- `unikid` (required):  The UNIK token to query.
+
+#### Parameters
+
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
+- `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
+- `-f, --format` {json|yaml|raw, json}: Specify how to format the output [json|yaml|raw]. Default to Json.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns unik:is-disclosed -n sandbox {UNIK token id}
+```
+
+#### Examples
+
+##### Success example
+
+Check UNIK explicit value disclose status
+```bash
+$ uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+```
+
+##### Success output example
+
+```bash
+$ uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -f yaml
+
+unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+isDisclosed: true
+confirmations: 833
+```
+
+
 ### `properties:set`
 
 #### Introduction
@@ -689,173 +809,6 @@ unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 property: phone
 value: +33606060606
 confirmations: 833
-```
-
-### `resolve`
-
-#### Introduction
-Resolve a Decentralized IDentifier (DID).
-
-#### Arguments
-- `DID` (required):  The Decentralized IDentifier to resolve, with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
-
-::: warning
-DID must be surrounded by double quotes (e.g. `"@bob"`)
-:::
-
-#### Parameters
-
-- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
-- `-f --format` (optional): Specify how to format the output [json|yaml|raw]. Default to JSON.
-
-Some [global parameters](#global-parameters) may apply to this command.
-
-
-#### Usage
-
-```bash
-$ uns resolve --network sandbox "@unik:individual:bob?phone"
-```
-
-#### Examples
-
-Resolve `@bob` `address` property in raw format:
-```bash
-$ uns resolve --network sandbox -f raw "@unik:individual:bob?address"
-
-42 quai Malakoff, 44000 Nantes
-```
-
-Alternative syntaxes:
-```bash
-$ uns resolve --network sandbox -f raw "bob?address"
-$ uns resolve --network sandbox -f raw "@bob?address"
-$ uns resolve --network sandbox -f raw "@unik:bob?address"
-```
-
-
-### `unik:disclose`
-
-#### Introduction
-Make public one or more explicit values of your UNIK Name. This value will appear in "explicitValue" property of your UNIK.
-
-#### Parameters
-
-- `-e, --explicitValue` (required): Explicit values to disclose, separated with spaces. Must match the UNIK Name of the token.
-- `--unikid` (required): The UNIK token.
-- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
-- `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
-
-Some [global parameters](#global-parameters) may apply to this command.
-
-#### Usage
-
-```bash
-$ uns unik:disclose -n sandbox --unikid {UNIK token id} -e {explicit values}
-```
-
-#### Examples
-
-##### Success example
-
-Disclose two explicit values: bob and b0b
-```bash
-uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb
-```
-
-##### Success output example
-
-```bash
-$ uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb -f yaml
-
-Disclosing a @unikname to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
-data:
-  transaction: adf4e1d845c82b2cffe63b5e438869fcea384439ab913885697726894a99c75b
-  confirmations: 1
-```
-
-
-### `unik:is-disclosed`
-
-#### Introduction
-Check if UNIK has one or more disclosed explicit value.
-
-#### Arguments
-- `unikid` (required):  The UNIK token to query.
-
-#### Parameters
-
-- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
-- `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
-- `-f, --format` {json|yaml|raw, json}: Specify how to format the output [json|yaml|raw]. Default to Json.
-
-Some [global parameters](#global-parameters) may apply to this command.
-
-#### Usage
-
-```bash
-$ uns unik:is-disclosed -n sandbox {UNIK token id}
-```
-
-#### Examples
-
-##### Success example
-
-Check UNIK explicit value disclose status
-```bash
-$ uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
-```
-
-##### Success output example
-
-```bash
-$ uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -f yaml
-
-unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
-isDisclosed: true
-confirmations: 833
-```
-
-
-### `send`
-
-#### Introduction
-Send owned UNS protocol tokens to another crypto account.
-
-#### Arguments
-- `AMOUNT` (required):  The quantity of UNS tokens to send to the recipient.
-
-#### Parameters
-
-- `--to` (required): The recipient address, public key or @unikname (warning: @unikname must be surrounded with double quotes).
-- `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
-- `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
-- `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
-
-Some [global parameters](#global-parameters) may apply to this command.
-
-#### Usage
-
-```bash
-$ uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
-```
-
-```bash
-$ uns send 10.42 --to "@bob" --network sandbox
-```
-
-#### Examples
-
-##### Output example
-
-```bash
-$ uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
-Enter your crypto account passphrase (12 words phrase): *************************************************************************
-
-{
-  transaction: 3996912796307dae3009bc1cb3e4b681a3e34a427d563711115799252715179f
-  confirmations: 3
-}
 ```
 
 ### `delegate:vote`
