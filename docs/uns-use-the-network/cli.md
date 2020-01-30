@@ -10,12 +10,18 @@ title: "Using uns.network with the CLI"
 ## Introduction
 <uns/> provides an interactive command line interface to create and manage your crypto accounts, your UNS protocol tokens and your UNIK NFT tokens.
 
-**Livenet is not launched yet, please use sandbox**.
+::: tip
+**Livenet is not launched yet, please use sandbox.**
+:::
 
 The <uns/> Command Line Interface is expected to work on recent Linux, MacOS, Windows 10 with WSL installations.  
 Some users have reported successful installation and use of the <uns/> CLI on "raw" Windows 10 OS.
 
-## Installation
+## Download and installation
+
+| <vp-icon name="windows-brands" />Windows | <vp-icon name="apple-brands" /> MacOS | <vp-icon name="linux-brands" /> Linux |
+|:-------:|:-----:|:-----:|
+| [Download the installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)<Badge text="64-bit"/>        | [Install from sources](#installation-from-sources)      | [Install from sources](#installation-from-sources)      |
 
 ### Installation from sources
 

@@ -15,13 +15,17 @@ module.exports = {
         return new Date(timestamp).toISOString().split("T")[0];
       }
     },
-    "@vuepress/back-to-top": {}, 
-    "tabs": {}
+    "@vuepress/back-to-top": {},
+    tabs: {},
+    "@goy/svg-icons": {}
   },
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
     // instantiate matomo.js
-    ["script", {}, `
+    [
+      "script",
+      {},
+      `
       var _paq = window._paq || [];
       (function() {
         var u="https://kpi.unik-name.com/";
@@ -30,7 +34,8 @@ module.exports = {
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
       })();
-    `]
+    `
+    ]
   ],
 
   themeConfig: {
