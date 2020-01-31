@@ -109,6 +109,13 @@ Property keys format must match with the following rules:
 - be alphanumeric: `a-z A-Z 0-9`
 - be shorter or equals to 255 characters
 
+# Badges of UNIK
+
+| Badge | How get it |
+| - | - |
+| Badges/Security/SecondPassphrase | Set a second passphrase on your crypto-account |
+| Badges/NP/Delegate | Register your @unikname as delegate |
+
 # DID - Decentralized IDentifier
 
 The expected format of a DID of kind "UNIK" is: `[@][unik:][type:]explicitValue[?propertyKey|?*]`.
