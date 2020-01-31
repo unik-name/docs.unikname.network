@@ -23,7 +23,7 @@ Even if the <uns/> CLI is written in a cross-operating system language (Javascri
 
 You need:
 - gcc/g++
-- Python 2.7
+- Python v2.7 (retired, avoid if possible), v3.5, v3.6, or v3.7
 
 Most of the times, theses tools are already installed. If not, you can read on the [Unikname Forum](https://forum.unik-name.com/t/how-to-get-required-tools-to-install-the-uns-cli/95) how to install them for your operating system.
 
