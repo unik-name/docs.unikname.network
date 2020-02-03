@@ -895,6 +895,7 @@ $ uns delegate:unvote -n sandbox "@organization:MyCompany"
 
 This command allows you to register a UNIK as delegate with your Unikname.
 Before registering you must have publicly disclosed your Unikname (see [unik:disclose command](#unik:disclose))
+To apply as delegate, the Crypto-account of the Unik candidate is limited to a single Unik (i.e delegate user should own a maximum of 1 Unik in crypto-account).
 
 #### Arguments
 - `ID` (required): the unikid to register as delegate or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
