@@ -72,6 +72,14 @@ Create the following configuration file `docker-compose.yml`:
 
 You can also [download the full file from our repositories](https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/uns-network-setting-up-node/sandbox-docker-compose.yml).
 
+::: tip
+You can download the file direcly on your machine:
+
+```shell
+$ curl -O https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/uns-network-setting-up-node/sandbox-docker-compose.yml
+```
+:::
+
 ### Run a relay with Docker Compose
 
 With the previously created configuration file, you simply have to run:
@@ -107,7 +115,7 @@ $ docker-compose down
 You must be a [declared delegate](/uns-network-player/#becoming-a-delegate) before doing this configuration.
 :::
 
-To run a forger node, please edit the `docker-compose.yml` file.
+To run a forger node, please edit the `docker-compose.yml` file, with Nano or Vim for example: `nano docker-compose.yml`.
 
 Find and uncomment line `FORGER_SECRET` and set your wallet passphrase as value:
 
@@ -131,9 +139,9 @@ The parameter `--build` is necessary only to take into account the `docker-compo
 
 Now you have a running relay node and you're ready to forge blocks.
 
-### Explanations
+### Under the hood
 
-From configuration file we can see that 2 services will be started: a node and its database.
+From configuration file we can see that 2 services will be started: the node and its database.
 
 You also have 2 volumes mounted on the file system (for node and database files) and a local network for services communication.
 
