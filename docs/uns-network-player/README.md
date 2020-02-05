@@ -5,31 +5,63 @@ title: "Becoming uns.network Player"
 
 # Becoming a uns.network Player
 
+[[toc]]
 
-## Become a delegate on the SANDBOX
+## Introduction
 
-As prerequisite to be a delegate, you must have :
-- a wallet with positive balance with at least 30 SUNS (you can request SUNS [from the faucet](/uns-use-the-network/#sandbox-faucet)).
-- a [forger node](/uns-network-setting-up-node/#run-a-forger) configured with your wallet passphrase.
+The uns.network Command Line Interface (CLI) makes it easy to create and manage your @unikname and Unikname apps directly from the terminal.
+It’s an essential part of using uns.network.
 
-Then, all process can be done through the [desktop wallet](/uns-use-the-network/wallet.html#basic-wallets).
+## Installing the uns.network CLI
 
-On wallet detail screen, expand top bar options and choose `Register Delegate`
+TODO
 
-![Delegate](./images/delegate.png)
+https://docs.uns.network/uns-use-the-network/cli.html#download-and-installation
 
-Choose a delegate name (warning, you won't be able to update your name) and input your passphrase (or password).
+    Éviter le --sandbox https://docs.uns.network/uns-use-the-network/cli.html#global-parameters
 
-![Registration](./images/registration.png)
+## Creating your cryptoaccount with a positive balance
 
-Finally submit your transaction.
+TODO
 
-![Transaction](./images/transaction.png)
+https://docs.uns.network/uns-use-the-network/cli.html#cryptoaccount-create
 
-Now, your job is done. You can check on [explorer](https://sandbox.explorer.uns.network/#/delegate-monitor) that you're in delegate list (either in `active` or `standby` tab).
+Forum FAUCET :
+
+### Checking your cryptoaccount balance in the Explorer
+
+TODO
+
+## Creating your @unikname
+
+Créer son unikname : https://docs.uns.network/uns-use-the-network/cli.html#unik-create
+
+### Checking the creation of your @unikname in the Explorer
+
+TODO
+
+## Registering as a delegate
+
+    Disclose : https://docs.uns.network/uns-use-the-network/cli.html#unik-is-disclosed
+    Register : https://docs.uns.network/uns-use-the-network/cli.html#delegate-register
+    Vote : https://docs.uns.network/uns-use-the-network/cli.html#delegate-vote
+
+### Checking your delegate status in the Explorer
+
+You can check on [explorer](https://sandbox.explorer.uns.network/delegate-monitor) that your @unikname is in the delegate list, in the `standby` tab.
+To enter into the `active` state, you need to set up a forging node.
+
+## Setting up your node
+
+TODO
+
+https://docs.uns.network/uns-network-setting-up-node/#introduction
+
+### Checking your delegate status in the Explorer
+
+Now, your job is done.
+You can check on [explorer](https://sandbox.explorer.uns.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
 
 If you're in the `active` tab, congratulation, you're a <uns/> delegate, and your forger node is actually forging blocks and getting rewards.
 
 If you're in the `standby` tab, you need to gather more voting power than current active delegates (i.e. have wallets with positive balance voting for you).
-
-
