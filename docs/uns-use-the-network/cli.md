@@ -119,6 +119,49 @@ C:\> setx HTTPS_PROXY=http://username:password@proxy.example.com:5678
 
 The <uns/> CLI doesn't support NTLM proxies. If you use an NTLM or Kerberos protocol proxy, you might be able to connect through an authentication proxy like [Cntlm](http://cntlm.sourceforge.net/).
 
+### Autocompletion for Bash and Zsh
+
+UNS CLI Autocomplete helps you complete command and flag names when you press the tab key.
+CLI Autocomplete completes all of the commands in the UNS CLI and will automatically support new commands as they are added.
+You can also complete values for some flags and args—including apps, pipelines and config vars.
+
+#### Installing Autocomplete
+
+```shell
+$ uns autocomplete
+```
+
+:::warning
+For CLI Autocomplete to work correctly, you must be on the latest version of the UNS CLI.
+:::
+
+The specific instructions you’ll receive depend on whether you are using bash or zsh. After you finish setup, Autocomplete is ready to use with the tab key.
+
+We are not planning to support shells besides bash and zsh at this time.
+
+#### Command name completion
+
+You can start writing a command and then press tab to see the different possibilities for completing it. You can match against all commands that match a given prefix.
+
+```shell
+$ uns <TAB>
+autocomplete           cryptoaccount:create   help                   properties:list        send...
+```
+
+For example, pressing tab after typing `uns res` autocompletes to `uns resolve`.
+
+In bash shells, autocompletion triggers by pressing tab twice successively.
+
+#### Flag name completion
+
+Most CLI commands make use of flags to provide additional input. Flags are prefaced with two dashes (--), such as (--app). Some commands have many different possible flags. You can view all available flags for each command by typing -- and then the tab key. You can match against all flag names that match a given prefix.
+
+```shell
+$ uns resolve --
+--chainmeta  --confirmed  --help       --network    --node       --verbose
+```
+
+For example, pressing tab after typing `uns resolve -c` autocompletes to `uns resolve -chainmeta`.
 
 ## Commands
 
