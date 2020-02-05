@@ -79,7 +79,7 @@ module.exports = {
         /* collapsable: false, */
         children: [
           ["/uns-network-player/", "Becoming a network player"],
-          ["/uns-network-rewarding/", "Get Rewards"],
+          ["/uns-network-rewarding/", "Getting Rewards"],
           ["/uns-network-setting-up-node/", "Setting up your Node"]
         ]
       },
