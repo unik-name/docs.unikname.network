@@ -48,12 +48,13 @@ module.exports = {
     lastUpdated: true,
     activeHeaderLinks: true,
     nav: [
-      { text: "Getting Started", link: "/uns-network-getting-started/" },
+      // { text: "Getting Started", link: "/uns-network-getting-started/" },
       { text: "Becoming a Network Player", link: "/uns-network-player/" }
     ],
     sidebar: [
       "/",
-      ["/uns-network-getting-started/", "Getting Started"],
+      // Not enough content
+      // ["/uns-network-getting-started/", "Getting Started"],
       {
         title: "Introduction",
         children: [
