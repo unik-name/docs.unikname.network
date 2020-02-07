@@ -66,3 +66,7 @@ Please note that **this network is ephemeral**, and may be reset anytime. Resets
 
 If you need SUNS tokens to test the <uns/> features (creating your UNIK for example), you can ask for SUNS on [the unik-name forum](https://forum.unik-name.com/c/uns-network/faucet).
 Don't forget to provide your wallet address, created with [the <uns/> CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
+
+### Legacy DEVNET network
+
+Previous testing network used to be called "DEVNET". It is retired and is now replaced by SANDBOX network (see above).
