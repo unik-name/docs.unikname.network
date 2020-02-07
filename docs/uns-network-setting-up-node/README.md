@@ -76,7 +76,7 @@ You can also [download the full file from our repositories](https://raw.githubus
 You can download the file direcly on your machine:
 
 ```shell
-$ curl -O https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/uns-network-setting-up-node/sandbox-docker-compose.yml
+$ curl -O https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/uns-network-setting-up-node/sandbox/docker-compose.yml
 ```
 :::
 
