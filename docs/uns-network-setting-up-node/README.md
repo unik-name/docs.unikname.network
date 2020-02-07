@@ -48,8 +48,8 @@ We strongly recommend running your node on SSD drive as there are a lot of read 
 
 Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
 - SANDBOX:
-  * `4102` (required): this is the communication port used by the node to exchange information with other nodes of the uns.network
-  * `4103` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
+  * `4002` (required): this is the communication port used by the node to exchange information with other nodes of the uns.network
+  * `4003` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
 - LIVENET: not available yet
 
 ::: warning
