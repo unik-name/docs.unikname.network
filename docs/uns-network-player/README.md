@@ -18,14 +18,14 @@ Follow the link corresponding to your OS.
 
 | <h1><vp-icon name="windows-brands" size="2em" /><br/>Windows</h1> | <h1><vp-icon name="apple-brands" size="2em" /><br/>macOS</h1> | <h1><vp-icon name="linux-brands" size="2em" /><br/>Linux</h1> |
 |:-------:|:-----:|:-----:|
-| <h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      | <h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      |
+| <h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h3>[Install from sources](https://docs.uns.network/uns-use-the-network/cli/alternate-installation.html#installation-from-sources)</h3>      | <h3>[Install from sources](https://docs.uns.network/uns-use-the-network/cli/alternate-installation.html#installation-from-sources)</h3>      |
 
 :::tip
 *If you use Windows 10, execute the file downloaded to procede to installation.
 Windows may display a warning. Don't worry, just continue the procedure.*
 :::
 
-You can check that your installation is finished by entering **uns** into your command prompt.
+You can check that your installation is finished by entering `uns` into your command prompt.
 You should see the following menu :
 
 ```bash
@@ -125,7 +125,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 ### Usage
 
 ```bash
-$ uns unik:create --explicitValue {explicitValue} --type [individual|organization|network]
+$ uns unik:create --explicitValue {explicitValue} --type [individual|organization]
 ```
 
 :::tip
@@ -178,7 +178,7 @@ Make public the explicit value of your UNIK Name. This value will appear in "exp
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
-Use this command to disclose your @unikname : `uns unik:disclose -e Bob --network sandbox`.
+Use this command to disclose your @unikname : `uns unik:disclose --unikid xxxxxxxxxxxxxxxxxxx -e Bob --network sandbox`.
 You should have the following result. 
 ```bash
 uns unik:disclose --unikid xxxxxxxxxxxxxxxxxxx  -e Bob --network sandbox
@@ -213,7 +213,7 @@ To apply as a delegate, you should have only one @unikname into your cryptoaccou
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
-Use this command to disclose your @unikname : `uns delegate:register {unikid} --network sandbox`.
+Use this command to register as a delegate : `uns delegate:register {unikid} --network sandbox`.
 You should have the following result.
 ```bash
 uns delegate:register 6dfc19dbc009faf47a3491b036da1929756a2a11572b6ebc6798587d8b996131 --network sandbox
@@ -243,7 +243,7 @@ Here, you'll vote for yourself.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
-Use this command to disclose your @unikname : `uns delegate:vote {unikid} --network sandbox`.
+Use this command to vote for yourself : `uns delegate:vote {unikid} --network sandbox`.
 You should have the following result.
 ```bash
 uns delegate:vote 6dfc19dbc009faf47a3491b036da1929756a2a11572b6ebc6798587d8b996131 --network sandbox
