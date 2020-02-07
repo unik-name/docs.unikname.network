@@ -68,7 +68,7 @@ So, be sure to have these prerequisites:
 
 Create the following configuration file `docker-compose.yml`: 
 
-<<< @/docs/uns-network-setting-up-node/sandbox-docker-compose.yml
+<<< @/docs/uns-network-setting-up-node/sandbox/docker-compose.yml
 
 You can also [download the full file from our repositories](https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/uns-network-setting-up-node/sandbox-docker-compose.yml).
 
