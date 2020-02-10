@@ -21,8 +21,8 @@ Some users have reported successful installation and use of the <uns/> CLI on "r
 ## Download and installation
 
 | <h1><vp-icon name="windows-brands" size="2em" /><br/>Windows</h1> | <h1><vp-icon name="apple-brands" size="2em" /><br/>macOS</h1> | <h1><vp-icon name="linux-brands" size="2em" /><br/>Linux</h1> |
-|:-------:|:-----:|:-----:|
-| <h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      | <h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      |
+|:-----------------------------------:|:----------------------------------------------------------------------:|:---------------------------------------:|
+| <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      |
 
 ## Configuration
 
