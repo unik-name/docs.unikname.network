@@ -15,8 +15,7 @@ sidebarDepth: 3
 **Livenet is not launched yet, please use sandbox.**
 :::
 
-The <uns/> Command Line Interface is expected to work on recent Linux, MacOS, Windows 10 with WSL installations.  
-Some users have reported successful installation and use of the <uns/> CLI on "raw" Windows 10 OS.
+The <uns/> Command Line Interface is expected to work on recent Linux, MacOS or Windows 10 installations.
 
 ## Download and installation
 
