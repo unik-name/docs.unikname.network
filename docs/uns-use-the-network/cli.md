@@ -596,11 +596,12 @@ chainmeta:
 ### `unik:disclose`
 
 #### Introduction
-Make public one or more explicit values of your UNIK Name. This value will appear in "explicitValue" property of your UNIK.
+Make public one or more explicit values of your UNIK Name. This value will appear in "explicitValue" property of your UNIK. Duplicate explicit values will be removed.
+In case of several explicitValues disclosed, the first value of "explicitValues" property will be used as default.
 
 #### Parameters
 
-- `-e, --explicitValue` (required): Explicit values to disclose, separated with spaces. Must match the UNIK Name of the token.
+- `-e, --explicitValue` (required): Explicit values to disclose. Must match the UNIK Name of the token.
 - `--unikid` (required): The UNIK token.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
@@ -619,13 +620,13 @@ $ uns unik:disclose -n sandbox --unikid {UNIK token id} -e {explicit values}
 
 Disclose two explicit values: bob and b0b
 ```bash
-uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb
+uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob -e bOb
 ```
 
 ##### Success output example
 
 ```bash
-$ uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob bOb -f yaml
+$ uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob -e bOb -f yaml
 
 Disclosing a @unikname to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
 data:
