@@ -682,6 +682,8 @@ confirmations: 833
 #### Introduction
 Set (add or update) properties of UNIK token.
 
+Users properties keys must start with `usr/`. Keys without this prefix are reserved for internal properties.
+
 #### Parameters
 
 - `--unikid` (required): the ID of the UNIK token
@@ -724,6 +726,8 @@ confirmations:  1
 
 #### Introduction
 Unset properties of UNIK token.
+
+The only properties that can be unset are those whose key starts with `usr/`.
 
 #### Parameters
 
