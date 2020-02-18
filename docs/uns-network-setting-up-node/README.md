@@ -117,7 +117,7 @@ You must be a [declared delegate](/uns-network-player/#becoming-a-delegate) befo
 
 To run a forger node, please edit the `docker-compose.yml` file, with Nano or Vim for example: `nano docker-compose.yml`.
 
-Find and uncomment line `FORGER_SECRET` and set your wallet passphrase as value:
+Find and uncomment line `FORGER_SECRET` by removing the `#` at the beginning of the line and set your crypto-account passphrase as value (between `" "`):
 
 ```yaml{6}
   uns:
@@ -131,11 +131,8 @@ Find and uncomment line `FORGER_SECRET` and set your wallet passphrase as value:
 Then, (re)start your forger node with the following command:
 
 ```shell
-$ docker-compose up --build -d
+$ docker-compose up -d
 ```
-::: tip
-The parameter `--build` is necessary only to take into account the `docker-compose.yml` file update.
-:::
 
 Now you have a running relay node and you're ready to forge blocks.
 
