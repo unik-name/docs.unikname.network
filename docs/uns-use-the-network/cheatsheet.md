@@ -6,30 +6,25 @@ pageClass: cheatsheet-pageclass
 
 # Command Line Interface (CLI)
 
-| CLI | standard flags | Rewards | description | last update |
-| - | - | - | - | - |
-| [version](cli.html#version) | | | Display version of the CLI | 0.5.0 |
-| **Network** |
-| [status](cli.html#status) | -h -n -v | | Display <uns/> blockchain status | 0.5.0 |
-| list-nodes | -h -n -v | | List current <uns/> blockchain nodes | to come |
-| **Wallet** |
-| [create-wallet](cli.html#create-wallet) | -h -n -v -f | | Create a <uns/> wallet | 0.5.0 |
-| [read-wallet](cli.html#read-wallet) | -h -n -v -f -m | | Read current data of a specified wallet, eg. balance | 0.5.0 |
-| get-wallet-address | -h -n -v -f -m | | Get public address for a specified UNIK or for a passphrase | to come |
-| **UNS protocol Token** |
-| send | -h -n -v -f |  YES | Send UNS tokens to another public address | to come |
-| **UNIK NFT tokens** |
-| [create-unik](cli.html#create-unik) | -h -n -v -f | YES | Create a UNIK Token | 0.5.0 |
-| transfer-unik | -h -n -v -f | YES | Transfer a UNIK Token to another owner | to come |
-| [read-unik](cli.html#read-unik) | -h -n -v -f -m | | Read UNIK Token data | to come |
-| [set-properties](cli.html#set-properties) | -h -n -v -f | YES | Set (add or update) properties of a UNIK Token | 0.5.0 |
-| [get-properties](cli.html#get-properties) | -h -n -v -f -m | | Get properties of a UNIK token | 0.5.0 |
-| get-property-value | -h -n -v -f -m | | Get the value of a specified property for a specified UNIK | to come |
-| disclose-explicit-values | -h -n -v -f | YES | Disclose @uniknames related to a UNIK | to come |
-| stach-explicit-value | -h -n -v -f | YES | Stash @uniknames related to a UNIK | to come |
-| is-disclosed | -h -n -v -f -m | | Return if a @unikname is disclosed or not | to come |
-| **Decentralized Identifier** |
-| [did-resolve](cli.html#did-resolve) | -h -n -v -f | | Resolve a decentralized Identifier |
+| CLI | Rewards | description | CLI version |
+| - | - | - | - |
+| [version](cli.html#version) | | Display version of the CLI | 2.2.0 |
+| [status](cli.html#status) | | Display <uns/> blockchain status | 2.2.0 |
+| [send](cli.html#send) |  YES | Send UNS tokens to another public address | 2.2.0 |
+| [resolve](cli.html#resolve) | | Resolve a decentralized Identifier |
+| [cryptoaccount:create](cli.html#cryptoaccount-create) | | Create a <uns/> crypto-account | 2.2.0 |
+| [cryptoaccount:read](cli.html#cryptoaccount-read) | | Read current data of a specified cryptoaccount, eg. balance | 2.2.0 |
+| [cryptoaccount:address](cli.html#cryptoaccount-address) | | Get public address for a specified UNIK or for a passphrase | 2.2.0 |
+| [unik:create](cli.html#unik-create) | YES | Create a UNIK Token | 2.2.0 |
+| [unik:read](cli.html#unik-read) | | Read UNIK Token data | 2.2.0 |
+| [unik:disclose](cli.html#unik-disclose) | YES | Disclose one or more explicit(s) value(s) related to a UNIK | 2.2.0 |
+| [unik:is-disclosed](cli.html#unik-is-disclosed) | YES | Check if UNIK has one or more disclosed explicit value | 2.2.0 |
+| [delegate:register](cli.html#delegate-register) | YES | Register a UNIK as delegate using @unikname or unikid | 2.0.0 |
+| [delegate:resign](cli.html#delegate-resign) | YES | Resign delegate registration of a @unikname or unikid | 2.0.0 |
+| [delegate:vote](cli.html#delegate-vote) | YES | Vote for a delegate with his @unikname or unikid | 2.0.0 |
+| [delegate:unvote](cli.html#delegate-unvote) | YES | Remove vote from a delegate with his @nikname or unikid | 2.0.0 |
+| [properties:get](cli.html#properties-get) | | Get the value of a specific property of a UNIK token. | 2.2.0 |
+| [properties:list](cli.html#properties-list) | | List all properties of a UNIK token | 2.2.0 |
 
 Add or Update your CLI to the latest version : `>yarn global [add|upgrade] @uns/uns-cli`  
 Getting help for a specific _command_ : `>uns command --help`
