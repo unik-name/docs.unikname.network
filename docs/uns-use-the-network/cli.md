@@ -70,6 +70,8 @@ For every new data added in the chain, you may wait for the write operation to b
 
 - `--second-passphrase`: The second crypto account passphrase. If you have [set up a second passphrase on your crypto-account](#cryptoaccount-set-second-passphrase), you can specify it with this flag.
 
+- `--sender-account`: The @unikname or unik ID of the transaction sender. If `--sender-account` is provided, a check is performed to verify if the passphrase match the unik's account.
+
 ### Using an HTTP Proxy
 
 To access <uns/> through proxy servers, you can configure the HTTP_PROXY and HTTPS_PROXY environment variables with either the DNS domain names or IP addresses and port numbers used by your proxy servers. See the following examples.
@@ -563,7 +565,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
 
-- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+- `TARGET` (required): the @unikname or @unikname token ID
 
 #### Usage
 
@@ -614,7 +616,7 @@ If a @unikname is provided, --explicitValue flag can be ommited, the @unikname w
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+- `TARGET` (required): the @unikname or @unikname token ID
 
 #### Usage
 
@@ -626,7 +628,7 @@ $ uns unik:disclose {UNIK token id} -n sandbox -e {explicit values}
 
 ##### Success example
 
-Disclose unikname @bob 
+Disclose @unikname @bob
 ```bash
 uns unik:disclose @bob -n sandbox
 ```
@@ -649,7 +651,7 @@ data:
 Check if UNIK has one or more disclosed explicit value.
 
 #### Arguments
-- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+- `TARGET` (required): the @unikname or @unikname token ID
 
 #### Parameters
 
@@ -703,7 +705,7 @@ Users properties keys must start with `usr/`. Keys without this prefix are reser
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+- `TARGET` (required): the @unikname or @unikname token ID
 
 #### Usage
 
@@ -748,7 +750,7 @@ The only properties that can be unset are those whose key starts with `usr/`.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+- `TARGET` (required): the @unikname or @unikname token ID
 
 #### Usage
 
@@ -790,7 +792,7 @@ Get properties of UNIK token. The command will fail if the minimum number of con
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+- `TARGET` (required): the @unikname or @unikname token ID
 
 #### Usage
 
@@ -847,7 +849,7 @@ Get the value of a specific property of a UNIK token.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+- `TARGET` (required): the @unikname or @unikname token ID
 
 #### Usage
 
@@ -1021,7 +1023,7 @@ $ uns delegate:resign -n sandbox "@Bob"
 This command allows you to claim a new badge.
 
 #### Arguments
-- `TARGET` (required):  the unik ID or @unikname of the UNIK token
+- `TARGET` (required): the @unikname or @unikname token ID
 
 #### Parameters
 - `--badge` (required): The badge to claim
