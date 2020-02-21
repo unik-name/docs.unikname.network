@@ -107,7 +107,7 @@ $ export HTTPS_PROXY=http://username:password@proxy.example.com:5678
 
 ::: tab "Windows"
 ```shell
-C:\> setx HTTP_PROXY http://username:password@proxy.example.com:1234
+C:\> setx HTTP_PROXY=http://username:password@proxy.example.com:1234
 C:\> setx HTTPS_PROXY=http://username:password@proxy.example.com:5678
 ```
 :::
@@ -302,23 +302,23 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns resolve --network sandbox "@unik:individual:bob?phone"
+$ uns resolve --network sandbox "@unik:individual:bob?usr/phone"
 ```
 
 #### Examples
 
 Resolve `@bob` `address` property in raw format:
 ```bash
-$ uns resolve --network sandbox -f raw "@unik:individual:bob?address"
+$ uns resolve --network sandbox -f raw "@unik:individual:bob?usr/address"
 
 42 quai Malakoff, 44000 Nantes
 ```
 
 Alternative syntaxes:
 ```bash
-$ uns resolve --network sandbox -f raw "bob?address"
-$ uns resolve --network sandbox -f raw "@bob?address"
-$ uns resolve --network sandbox -f raw "@unik:bob?address"
+$ uns resolve --network sandbox -f raw "bob?usr/address"
+$ uns resolve --network sandbox -f raw "@bob?usr/address"
+$ uns resolve --network sandbox -f raw "@unik:bob?usr/address"
 ```
 
 ### `send`
@@ -328,10 +328,10 @@ Send owned UNS protocol tokens to another crypto account.
 
 #### Arguments
 - `AMOUNT` (required):  The quantity of UNS tokens to send to the recipient.
+- `TARGET` (required):  The recipient address, public key, @unikname or unik ID.
 
 #### Parameters
 
-- `--to` (required): The recipient address, public key or @unikname (warning: @unikname must be surrounded with double quotes).
 - `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
 - `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
 - `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
@@ -341,11 +341,11 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
+$ uns send 10.42 S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
 ```
 
 ```bash
-$ uns send 10.42 --to "@bob" --network sandbox
+$ uns send 10.42 "@bob" --network sandbox
 ```
 
 #### Examples
@@ -353,7 +353,7 @@ $ uns send 10.42 --to "@bob" --network sandbox
 ##### Output example
 
 ```bash
-$ uns send 10.42 --to S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
+$ uns send 10.42 S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
 Enter your crypto account passphrase (12 words phrase): *************************************************************************
 
 {
@@ -425,14 +425,16 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
 
-- `cryptoAccountId` (required): the ID of the crypto account. Can be either the publicKey or the address of the crypto account.
+- `TARGET` (required):  The crypto account address, public key or a @unikname owned by the account.
 
 #### Usage
 
 ```bash
-$ uns cryptoaccount:read {crypto account identifier}] [--listunik]
+$ uns cryptoaccount:read {crypto account identifier} [--listunik]
 ```
-
+```bash
+$ uns cryptoaccount:read @unikname [--listunik]
+```
 #### Example
 
 Display crypto account information and list of UNIK token owned by this crypto account
@@ -553,30 +555,33 @@ Read current data of a specified UNIK token
 
 #### Parameters
 
-- `--unikid` (required): the ID of the UNIK token
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 - `--chainmeta` (optional): Retrieve chain meta datas
 
 
 Some [global parameters](#global-parameters) may apply to this command.
 
+#### Arguments
+
+- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+
 #### Usage
 
 ```bash
-$ uns unik:read --unikid {UNIK token id}
+$ uns unik:read {UNIK token id}
 ```
 
 #### Example
 
 Display UNIK informations
 ```bash
-$ uns unik:read --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
+$ uns unik:read @bob --network sandbox -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns unik:read --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
+$ uns unik:read @bob --network sandbox -f yaml
 data:
   id: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
   ownerAddress: SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
@@ -598,35 +603,38 @@ chainmeta:
 #### Introduction
 Make public one or more explicit values of your UNIK Name. This value will appear in "explicitValue" property of your UNIK. Duplicate explicit values will be removed.
 In case of several explicitValues disclosed, the first value of "explicitValues" property will be used as default.
+If a @unikname is provided, --explicitValue flag can be ommited, the @unikname will be taken as explicit value.
 
 #### Parameters
 
-- `-e, --explicitValue` (required): Explicit values to disclose. Must match the UNIK Name of the token.
-- `--unikid` (required): The UNIK token.
+- `-e, --explicitValue`: Explicit values to disclose. Must match the UNIK Name of the token.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
+#### Arguments
+- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+
 #### Usage
 
 ```bash
-$ uns unik:disclose -n sandbox --unikid {UNIK token id} -e {explicit values}
+$ uns unik:disclose {UNIK token id} -n sandbox -e {explicit values}
 ```
 
 #### Examples
 
 ##### Success example
 
-Disclose two explicit values: bob and b0b
+Disclose unikname @bob 
 ```bash
-uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob -e bOb
+uns unik:disclose @bob -n sandbox
 ```
 
 ##### Success output example
 
 ```bash
-$ uns unik:disclose -n sandbox --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -e bob -e bOb -f yaml
+$ uns unik:disclose @bob -n sandbox -f yaml
 
 Disclosing a @unikname to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
 data:
@@ -641,7 +649,7 @@ data:
 Check if UNIK has one or more disclosed explicit value.
 
 #### Arguments
-- `unikid` (required):  The UNIK token to query.
+- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
 
 #### Parameters
 
@@ -654,7 +662,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns unik:is-disclosed -n sandbox {UNIK token id}
+$ uns unik:is-disclosed {UNIK token id} -n sandbox
 ```
 
 #### Examples
@@ -663,13 +671,13 @@ $ uns unik:is-disclosed -n sandbox {UNIK token id}
 
 Check UNIK explicit value disclose status
 ```bash
-$ uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+$ uns unik:is-disclosed @bob -n sandbox
 ```
 
 ##### Success output example
 
 ```bash
-$ uns unik:is-disclosed -n sandbox 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -f yaml
+$ uns unik:is-disclosed @bob -n sandbox -f yaml
 
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 isDisclosed: true
@@ -686,7 +694,6 @@ Users properties keys must start with `usr/`. Keys without this prefix are reser
 
 #### Parameters
 
-- `--unikid` (required): the ID of the UNIK token
 - `-p --properties` (required): List of key/value to set as UNIK properties: "key1:value1" "key2:value2".  See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
 
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
@@ -695,23 +702,26 @@ Users properties keys must start with `usr/`. Keys without this prefix are reser
 
 Some [global parameters](#global-parameters) may apply to this command.
 
+#### Arguments
+- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+
 #### Usage
 
 ```bash
-$ uns properties:set --unikid {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network sandbox
+$ uns properties:set {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network sandbox
 ```
 
 #### Example
 
-Add property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+Add property `key/value` to UNIK `@bob`
 ```bash
-$ uns properties:set --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:set @bob --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns properties:set --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:set @bob --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
@@ -731,30 +741,32 @@ The only properties that can be unset are those whose key starts with `usr/`.
 
 #### Parameters
 
-- `--unikid` (required): the ID of the UNIK token
 - `-k --propertyKey`, Key of the property to unset. (multiple occurrences)
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
+#### Arguments
+- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+
 #### Usage
 
 ```bash
-$ uns properties:unset --unikid {UNIK token id} -k prop1 -k prop2 --network sandbox
+$ uns properties:unset {UNIK token id} -k prop1 -k prop2 --network sandbox
 ```
 
 #### Example
 
-Remove property `key/value` to UNIK `2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
+Remove property `key/value` of UNIK `@bob`
 ```bash
-$ uns properties:unset --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:unset @bob --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns properties:unset --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:unset @bob --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
@@ -771,17 +783,19 @@ Get properties of UNIK token. The command will fail if the minimum number of con
 
 #### Parameters
 
-- `--unikid` (required): The UNIK token on which to get the properties.
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
 - `-f --format` (optional): Specify how to format the output [json|yaml|table|raw]. Default to Json.
 
 
 Some [global parameters](#global-parameters) may apply to this command.
 
+#### Arguments
+- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+
 #### Usage
 
 ```bash
-uns properties:list --unikid {UNIK token id}
+uns properties:list {UNIK token id}
 ```
 
 #### Examples
@@ -790,13 +804,13 @@ uns properties:list --unikid {UNIK token id}
 
 Display UNIK properties
 ```bash
-$ uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox
+$ uns properties:list @bob --network sandbox
 ```
 
 ##### Success output example
 
 ```bash
-$ uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox -f yaml
+$ uns properties:list @bob --network sandbox -f yaml
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 properties:
   - type: "1"
@@ -807,14 +821,14 @@ confirmations: 217
 
 Display UNIK properties with at least 300 confirmations since the last UNIK token update
 ```bash
-uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --confirmed 300
+uns properties:list @bob --network sandbox --confirmed 300
 ```
 
 ##### Failing output example
 
 CLI throws error because of the actual number of confirmations of the last transaction that have updated UNIK token is lower than expected.
 ```bash
-$ uns properties:list --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f --network sandbox --confirmed 300
+$ uns properties:list @bob --network sandbox --confirmed 300
 ›   Error: [properties:list] Not enough confirmations (expected: 300, actual: 217)
 ```
 
@@ -825,7 +839,6 @@ Get the value of a specific property of a UNIK token.
 
 #### Parameters
 
-- `--unikid` (required): The UNIK token on which to get the property.
 - `-k, --propertyKey` (required): the key of the property for which we query the value. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
@@ -833,10 +846,13 @@ Get the value of a specific property of a UNIK token.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
+#### Arguments
+- `TARGET` (required):  the unik ID or @unikname of the UNIK token 
+
 #### Usage
 
 ```bash
-$ uns properties:get --unikid {UNIK token id} -k {propertyKey} -n sandbox
+$ uns properties:get {UNIK token id} -k {propertyKey} -n sandbox
 ```
 
 #### Examples
@@ -845,13 +861,13 @@ $ uns properties:get --unikid {UNIK token id} -k {propertyKey} -n sandbox
 
 Display UNIK property phone
 ```bash
-$ uns properties:get --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone"
+$ uns properties:get @bob -n sandbox -k "usr/phone"
 ```
 
 ##### Success output example
 
 ```bash
-$ uns properties:get --unikid 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f -n sandbox -k "phone" -f yaml
+$ uns properties:get @bob -n sandbox -k "usr/phone" -f yaml
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 property: phone
 value: +33606060606
@@ -874,7 +890,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:vote -n sandbox {ID Unikname}
+$ uns delegate:vote {ID Unikname} -n sandbox
 ```
 
 #### Examples
