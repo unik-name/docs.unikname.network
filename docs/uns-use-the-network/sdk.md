@@ -221,7 +221,7 @@ It can do more than Ark package :
 - create <uns/> wallets
 - ...
 
-For the full list of other available features of `crypto` package, please look at [Ark documentation](https://docs.ark.io/cryptography/).
+For the full list of other available features of `crypto` package, please look at [Ark documentation](https://learn.ark.dev/concepts/cryptography).
 
 <uns/> specific features are not documented yet. Feel free to explore and [contribute](https://github.com/unik-name/docs.uns.network) 😊.
 
