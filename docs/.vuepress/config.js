@@ -59,7 +59,8 @@ module.exports = {
         title: "Introduction",
         children: [
           ["/uns-network-introduction/", "Understanding uns.network"],
-          ["/uns-network-tokens/", "The uns.network Tokens"]
+          ["/uns-network-tokens/", "The uns.network Tokens"],
+          ["/uns-network-introduction/did-unik", "UNIK Decentralized IDentifiers"]
         ]
       },
       {
@@ -73,7 +74,24 @@ module.exports = {
           ["/uns-use-the-network/cheatsheet", "Cheat Sheet"]
         ]
       },
-      ["/uns-network-unik-name-use-case/", "uns.network use cases"],
+      ["/uns-network-unik-name-use-case/", "Use cases"],
+      {
+        title: "Key concepts",
+        children: [
+          ["/uns-network-key-concepts/", "Key Concepts"],
+          //["/uns-network-key-concepts/nft-factories", "NFT Factories"],
+          //["/uns-network-key-concepts/unik-type", "Types of UNIK"],
+          //["/uns-network-key-concepts/unik-pattern", "Patterns"],
+          ["/uns-network-key-concepts/unik-badge", "Badges"],
+          //["/uns-network-key-concepts/unik-lifecycle", "Lifecycle"],
+          //["/uns-network-key-concepts/unik-coupon", "Coupons"],
+          //["/uns-network-key-concepts/nsp", "Network Services Providers"],
+          //["/uns-network-key-concepts/nut-service", "Network Unit Services"],
+          //["/uns-network-key-concepts/nut-contribution", "Network Unit Contributions"],
+          //["/uns-network-key-concepts/donuts", "Directory of Network Unit Services"]
+        ]
+      },
+      //["/uns-network-guides/", "Guides"],
       {
         title: "Network Player",
         /* collapsable: false, */
