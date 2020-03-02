@@ -78,10 +78,10 @@ module.exports = {
       {
         title: "Key concepts",
         children: [
-          ["/uns-network-key-concepts/", "Key Concepts"],
+          ["/uns-network-key-concepts/", "Summary"],
           //["/uns-network-key-concepts/nft-factories", "NFT Factories"],
-          //["/uns-network-key-concepts/unik-type", "Types of UNIK"],
-          //["/uns-network-key-concepts/unik-pattern", "Patterns"],
+          ["/uns-network-key-concepts/unik-type", "Types of @unikname"],
+          ["/uns-network-key-concepts/unik-pattern", "Patterns"],
           ["/uns-network-key-concepts/unik-badge", "Badges"],
           //["/uns-network-key-concepts/unik-lifecycle", "Lifecycle"],
           //["/uns-network-key-concepts/unik-coupon", "Coupons"],

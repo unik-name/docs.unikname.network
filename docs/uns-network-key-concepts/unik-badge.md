@@ -1,13 +1,14 @@
 ---
 home: false
-title: "UNIK Badges"
+title: "DID UNIK Badges"
 ---
 
-# Key Concepts - Badges
+# Key Concepts - DID UNIK Badges
 
-Each @unikname is assigned trust badges. They provide information on the qualities of UNIK and its involvement in the network.
+Each @unikname is assigned trust badges. They provide information on the qualities of each DID UNIK NFT and its involvement in the network.
 
-![jack-sparrow-idcard-header](./images/jack-sparrow-idcard-header-badges.png)
+![jack-sparrow-idcard-header](./images/did-nft-unik-unikname-jack-sparrow-header-badges.png)
+<small>_example of badges displayed in the header section of @jack-sparrow_</small>
 
 Badges take the form of On-Chain properties and are always Disclosed, regardless of the visibility of the UNIK.
 
