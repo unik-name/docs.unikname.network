@@ -9,7 +9,7 @@ title: "Key Concepts Summary"
 
 :::tip
 - **UNIK** is the name of the token representing a single @unikname within the uns.network blockchain.  
-- **NFT** Stands for Non Fungible Token. All **UNIKs tokens are NFTs.** NFT differs from an traditional coin or utility token as they're not divible (not fongible), and each one are unique.  
+- **NFT** Stands for Non Fungible Token. All **UNIKs tokens are NFTs.** NFT differs from a traditional coin or utility token as it is not divible (not fongible), and each one is unique.  
 :::
 
 ### [Cryptography Overview](/uns-network-key-concepts/cryptography-overview)
