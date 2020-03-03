@@ -3,7 +3,7 @@ home: false
 title: "@unikname Pattern"
 ---
 
-# Key Concepts - @unikname Pattern 
+# Key Concept: @unikname Pattern 
 
 Every @unikname is a unique string of characters, forming a human-readable identifier. This string is composed of unicode characters belonging to the SafeTypo&copy; international alphabet. It's a serie of digits, letters denominated in a specific alphabet or script, and separators. The way the character string is combined can be classified into patterns.
 

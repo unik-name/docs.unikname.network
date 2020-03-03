@@ -1,27 +1,38 @@
 ---
 home: false
-title: "Key Concepts Summary - DID @unikname UNIK NFT"
+title: "Key Concepts Summary"
 ---
 
-# Key Concepts Summary
+# uns.network key concepts
 
-## Key Concepts related to DID @unikname UNIK NFT
+## Key Concepts related to IDs rooted in uns.network blockchain
 
 :::tip
-- **DID** Stands for Decentralized IDentifier.  
 - **UNIK** is the name of the token representing a single @unikname within the uns.network blockchain.  
-- **NFT** Stands for Non Fungible Token.
+- **NFT** Stands for Non Fungible Token. All **UNIKs tokens are NFTs.** NFT differs from an traditional coin or utility token as they're not divible (not fongible), and each one are unique.  
 :::
 
-### [UNIK Types](/uns-network-key-concepts/unik-type)
+### [Cryptography Overview](/uns-network-key-concepts/cryptography-overview)
 
-@unikname ID are minted with a type according to their purpose.
+In the blockchain world you must rely on cryptography to make it happends! uns.blockchain cryptography is based on ARK.IO basics augmented with specificties related to Decentralized IDs and Decentralized Public Key Infrastructure requirements.
 
-### [Pattern](/uns-network-key-concepts/unik-pattern)
+### [Decentralized ID: the UNIK Non Fongible Token](/uns-network-key-concepts/nft-unik-did)
+
+IDs rooted in <uns/> blockchain are called Decentralized IDs, or DIDs. Every DID materializes in the form of a Non Fongible Token called UNIK within the <uns/> blockchain. 
+
+### [Types of IDs](/uns-network-key-concepts/unik-type)
+
+@unikname IDs are minted with a type according to their purpose.
+
+### [Pattern of IDs](/uns-network-key-concepts/unik-pattern)
 
 The way the character string formming a @unikname is combined can be classified into patterns. Patterns are used to determine the cost of @unikname and to control @unikname issuance.
 
 ### [Badges](/uns-network-key-concepts/unik-badge)
 
 Each @unikname is assigned trust badges. They provide information on the qualities of UNIK and its involvement in the network.
+
+## Key Concepts related to DPKI
+
+## Key Concepts related to our DPOS
 

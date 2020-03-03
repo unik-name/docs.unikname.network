@@ -79,7 +79,9 @@ module.exports = {
         title: "Key concepts",
         children: [
           ["/uns-network-key-concepts/", "Summary"],
-          //["/uns-network-key-concepts/nft-factories", "NFT Factories"],
+          ["/uns-network-key-concepts/cryptography-overview", "Cryptography Overview"],
+          ["/uns-network-key-concepts/nft-unik-did", "Decentralized ID token"],
+          //["/uns-network-key-concepts/nft-factory", "NFT Factories"],
           ["/uns-network-key-concepts/unik-type", "Types of @unikname"],
           ["/uns-network-key-concepts/unik-pattern", "Patterns"],
           ["/uns-network-key-concepts/unik-badge", "Badges"],

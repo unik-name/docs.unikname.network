@@ -3,7 +3,7 @@ home: false
 title: "DID UNIK Badges"
 ---
 
-# Key Concepts - DID UNIK Badges
+# Key Concept: DID UNIK Badges
 
 Each @unikname is assigned trust badges. They provide information on the qualities of each DID UNIK NFT and its involvement in the network.
 
