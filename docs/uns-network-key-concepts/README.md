@@ -18,7 +18,7 @@ In the blockchain world you must rely on cryptography to make it happends! uns.b
 
 ### [Decentralized ID: the UNIK Non Fongible Token](/uns-network-key-concepts/nft-unik-did)
 
-IDs rooted in <uns/> blockchain are called Decentralized IDs, or DIDs. Every DID materializes in the form of a Non Fongible Token called UNIK within the <uns/> blockchain. 
+Every @unikname is a unique string of characters, forming a human-readable identifier, easily readable, pronounceable and shareable like an email address. They're built with SafeTypo© technology for a peerless User eXperience. Every @unikname materializes in the form of a Non Fongible Token called UNIK within the <uns/> blockchain, and becomes Decentralized IDs, also calle DID. 
 
 ### [Types of IDs](/uns-network-key-concepts/unik-type)
 
