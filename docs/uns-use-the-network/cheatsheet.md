@@ -74,63 +74,16 @@ Getting help for a specific _command_ : `>uns command --help`
 
 ## Types of UNIK
 
-Each kind of `type` have different features, behaviors of the <uns/> and governance processes.
+`{1|individual|2|organization|3|network}`
 
-**Possible Values**
-
-- `1`: UNIK for individuals identifers
-- `2`: UNIK for organizations identifiers
-- `3`: UNIK for networks identifiers
-
-## Types and categories of UNIK
-
-| type | # | Category | pattern |
-| - | - | - | - |
-| individual | 0x101 / 257 | Latin 1 | Latin charset of SafeTypo, 1 chars long |
-| individual | 0x102 / 258 | Latin 2 | Latin charset of SafeTypo, 2 chars long |
-| individual | 0x103 / 259 | Latin 3 | Latin charset of SafeTypo, 3 chars long |
-| individual | 0x104 / 260 | Latin Tiny | Latin charset of SafeTypo, 4 to 5 chars long |
-| individual | 0x105 / 261 | Latin Short | Latin charset of SafeTypo, 6 to 9 chars long |
-| individual | 0x106 / 262 | Latin Standard | Latin charset of SafeTypo, 10 to 14 chars long |
-| individual | 0x107 / 263 | Latin Long | Latin charset of SafeTypo, 15 chars long and more  |
-| individual | 0x110 / 272 | Only numbers | SafeTypo numbers |
-| individual | 0x111 / 273 | Latin Single char | greater than 1 char long and a suite of similar latin chars |
-| organization | 0x201 | Standard Latin | Latin charset of SafeTypo |
-| network | 0x301 | Standard Latin | Latin charset of SafeTypo |
+**The default type value is `individual`:** `@Bob` always designates the individual DID of `Bob`. So if you want to designate the DID of `MyCompany`, you will need to specify the type: e.g. `@organization:MyCompany`.
 
 # Property keys of UNIK
 
 Property keys format must match with the following rules:
-- be alphanumeric: `a-z A-Z 0-9`
+- be alphanumeric: `a-z,A-Z,0-9`
 - be shorter or equals to 255 characters
-
-# Badges of UNIK
-
-| Badge | How get it |
-| - | - |
-| Badges/Security/SecondPassphrase | Set a second passphrase on your crypto-account |
-| Badges/NP/Delegate | Register your @unikname as delegate |
 
 # DID - Decentralized IDentifier
 
-The expected format of a DID of kind "UNIK" is: `[@][unik:][type:]explicitValue[?propertyKey|?*]`.
-
-`[...]` are the optional parts of the pattern. Each part of the pattern are described below.
-
-## `Type`
-
-The `type` can be one of [these values](#types-and-categories-of-unik) (numeric or letter format).
-
-**The default value of `type` is `individual`:** `@Bob` always designates the individual DID of `Bob`. So if you want to designate the DID of `MyCompany`, you will need to add the type: `@organization:MyCompany`.
-
-## `explicitValue`
-
-The `explicitValue` is the usual value of your @unikname.
-
-## `propertyKey`
-
-The `propertyKey` part must match with [property keys format](#property-keys-of-unik).
-
-## Examples
-
-TODO
+@unikname DID string format: `[@][unik:][type:]explicitValue[?propertyKey|?*]`.
