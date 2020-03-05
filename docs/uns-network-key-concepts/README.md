@@ -5,6 +5,10 @@ title: "Key Concepts Summary"
 
 # uns.network key concepts
 
+## [Cryptography Overview](/uns-network-key-concepts/cryptography-overview)
+
+In the blockchain world you must rely on cryptography to make it happends! uns.blockchain cryptography is based on ARK.IO basics augmented with specificties related to Decentralized IDs and Decentralized Public Key Infrastructure requirements.
+
 ## Understanding IDs rooted in uns.network blockchain
 
 :::tip
@@ -12,13 +16,12 @@ title: "Key Concepts Summary"
 - **NFT** Stands for Non Fungible Token. All **UNIKs tokens are NFTs.** NFT differs from a traditional coin or utility token as it is not divible (not fongible), and each one is unique.  
 :::
 
-### [Cryptography Overview](/uns-network-key-concepts/cryptography-overview)
-
-In the blockchain world you must rely on cryptography to make it happends! uns.blockchain cryptography is based on ARK.IO basics augmented with specificties related to Decentralized IDs and Decentralized Public Key Infrastructure requirements.
-
 ### [Decentralized ID: the UNIK Non Fongible Token](/uns-network-key-concepts/unik-did-nft)
 
 Every @unikname is a unique string of characters, forming a human-readable identifier, easily readable, pronounceable and shareable like an email address. They're built with SafeTypo© technology for a peerless User eXperience. Every @unikname materializes in the form of a Non Fongible Token called UNIK within the <uns/> blockchain, and becomes Decentralized IDs, also calle DID. 
+
+### [Registries of properties](/uns-network-key-concepts/unik-property)
+
 
 ### [Types of IDs](/uns-network-key-concepts/unik-type)
 
@@ -31,8 +34,6 @@ The way the character string formming a @unikname is combined can be classified 
 ### [Badges](/uns-network-key-concepts/unik-badge)
 
 Each @unikname is assigned trust badges. They provide information on the qualities of UNIK and its involvement in the network.
-
-## Key Concepts related to DPKI
 
 ## Understanding DPOS of uns.network blockchain
 

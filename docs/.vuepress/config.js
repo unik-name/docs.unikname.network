@@ -84,7 +84,7 @@ module.exports = {
           ["/uns-network-key-concepts/unik-type", "Types of @unikname"],
           ["/uns-network-key-concepts/unik-pattern", "Patterns"],
           //["/uns-network-key-concepts/unik-lifecycle", "Lifecycle"],
-          //["/uns-network-key-concepts/unik-properties", "Registry of Properties"],
+          //["/uns-network-key-concepts/unik-property", "Registries and Properties"],
           ["/uns-network-key-concepts/unik-badge", "Badges"],
           //["/uns-network-key-concepts/nft-factory", "NFT Factories"],
           //["/uns-network-key-concepts/nft-coupon", "Coupons"],

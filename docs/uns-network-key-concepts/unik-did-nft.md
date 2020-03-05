@@ -45,3 +45,7 @@ Every @unikname string is obfuscated with a 64 characters string hash. This hash
 
 ``@jack-Sparrow`` DID UNIK Token is ``10e7052bbc0b914d4d9bb88db916a366258569b7e1b1c9e5c47cef2fc37deedb`` 
 
+## Universal ID and resolver
+
+The expected format of a DID of kind "UNIK" is: `[@][unik:][type:]explicitValue[?propertyKey|?*]`.
+
