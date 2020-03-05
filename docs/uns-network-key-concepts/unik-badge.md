@@ -1,10 +1,10 @@
 ---
 home: false
-title: "DID UNIK Badges"
+title: "Unikname DID UNIK Badges"
 tags: badge governance networkplayer-role pioneer label xp sponsorship
 ---
 
-# Key Concept: DID UNIK Badges
+# Understanding Badges
 
 Each @unikname is assigned trust badges. They provide information on the qualities of each DID UNIK NFT and its involvement in the network.
 
