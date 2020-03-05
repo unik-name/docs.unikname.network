@@ -1,6 +1,7 @@
 ---
 home: false
 title: "DID UNIK Badges"
+tags: badge governance networkplayer-role pioneer label xp sponsorship
 ---
 
 # Key Concept: DID UNIK Badges
@@ -34,7 +35,7 @@ Badge Type: boolean
 | **Multisig** | forging the multisig transaction | The UNIK is owned by a multisig cryptoaccount | all types | 
 
 ---
-![badges-no-roles](./images/badges-np-roles.png)
+![badges-np-roles](./images/badges-np-roles.png)
 
 Badge Type: boolean
 
