@@ -76,10 +76,10 @@ Badge Type: enumerate
 | Name | How to get it | Description | Scope |
 |-|-|-|-|-|
 | **Guest** | Minting the UNIK | The UNIK has just been minted. | individual only
-| **Beginner** | Claim within the App | - the @unikname has his passphrase backup, </br> - it has been created for 10000 blocks ago or more (~24h) </br> - has invited one other member </br> - have made a first connection | individual only
-| **Regular** | Claim within the App | 10 connections, or 10 transactions, or 10 contributions  | individual only
-| **Leader** | Claim within the App | Has setup personnal properties and has contributed to each Network Service Providers | individual only
-| **Maven** | Claim within the App |  Leader since 12 months | individual only
+| **Beginner** | Claim within the App | - the @unikname has his passphrase backup, </br> - it has been created for 10000 blocks ago or more (~24h) <br/> +? | individual only
+| **Advanced** | Claim within the App | - has made 10 transactions and 10 contributions | individual only
+| **Leader** | Claim within the App | - Has setup personnal properties <br/> - has contributed to each Network Service Providers <br/> - get the promoter badge | individual only
+| **Maven** | Claim within the App |  - has made at least one connection<br/> - Leader since 12 months.<br/> Has voted for a delegate. | individual only
 
 ---
 ![badges-sponsorship](./images/badges-sponsorship.png)

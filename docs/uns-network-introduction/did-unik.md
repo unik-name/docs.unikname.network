@@ -39,7 +39,7 @@ A Decentralized Network...
 
 ## What makes UNIK DID so unique ?
 
-1. DID UNIK are anonymous **Identifers**, they are **not proof of digital identity**. 
+1. DID UNIK are pseudonymous **Identifers**, they are **not proof of digital identity**. 
 1. DID UNIK can be transposed into **Universal** Identifiers: @unikname. They're Human-Readable and **protected against typo-squatting** thanks to ``SafeTypo ©`` algorythm.
 1. DID UNIK **belong to namespaces**, called types, defining their purpose.
 1. DID UNIK have **configurable governance rules** specific to their type.

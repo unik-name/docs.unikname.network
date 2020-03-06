@@ -96,4 +96,5 @@ _NOTA: A unikname of network type looks like a network configuration file._
 | Contribute to services and get rewards |![ok](./images/greencheck.png) |![ko](./images/redcross.png)|![ko](./images/redcross.png)|
 |Control sharing of information |![ok](./images/greencheck.png) |![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|
 |Public sharing verified URLs|![ok](./images/greencheck.png) |![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|
-|Grant access to official files|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|
+|Grant access to official files (through verified URL)|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|
+|Participate to the governance of the network|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|
