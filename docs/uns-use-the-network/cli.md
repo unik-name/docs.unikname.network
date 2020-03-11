@@ -686,6 +686,27 @@ isDisclosed: true
 confirmations: 833
 ```
 
+### `unik:verify-url`
+
+#### Introduction
+
+Set (add or update) URLs of UNIK token.
+
+#### Arguments
+- `TARGET` (required): the @unikname or @unikname token ID (see https://docs.uns.network/uns-use-the-network/cheatsheet.html#did-decentralized-identifier)
+
+#### Parameters
+- `--url` (required) url to verify then set as UNIK properties 
+
+- `--url-name` (required) url name to to verify then use as key for UNIK properties
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns unik:verify-url TARGET --url "{Url}" --url-name "{UrlName}" --network sandbox
+```
 
 ### `properties:set`
 
