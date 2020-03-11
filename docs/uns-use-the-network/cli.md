@@ -696,8 +696,8 @@ Users properties keys must start with `usr/`. Keys without this prefix are reser
 
 #### Parameters
 
-- `-p --properties` (required): List of key/value to set as UNIK properties: "key1:value1" "key2:value2".  See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
-
+- `-k --key` (required): Key of property to set as UNIK property. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
+- `-v --value` (required): Value of property to set as UNIK property.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
@@ -710,20 +710,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns properties:set {UNIK token id} --properties "{key1}:{value1}" "{key2}:{value2}" --network sandbox
+$ uns properties:set {UNIK token id} --key "{key1}" --value "{value1}" --key "{key2}" --value "{value2}" --network sandbox
 ```
 
 #### Example
 
 Add property `key/value` to UNIK `@bob`
 ```bash
-$ uns properties:set @bob --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:set @bob --network sandbox --key "key" --value "value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns properties:set @bob --network sandbox --properties "key:value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:set @bob --network sandbox --key "key" --value "value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
