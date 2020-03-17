@@ -5,6 +5,12 @@ title: "Key Concepts Summary"
 
 # uns.network key concepts
 
+:::tip
+Here we discribe key concepts of the UNS network. Those concepts are designed, but not all of them are implemented yet.
+Please, wait a little bit more to try everthing, and look at up right now what the future will be!
+:::
+
+
 ## [Cryptography Overview](/uns-network-key-concepts/cryptography-overview)
 
 In the blockchain world you must rely on cryptography to make it happends! uns.blockchain cryptography is based on ARK.IO basics augmented with specificties related to Decentralized IDs and Decentralized Public Key Infrastructure requirements.
@@ -34,6 +40,12 @@ The way the character string formming a @unikname is combined can be classified 
 ### [Badges](/uns-network-key-concepts/unik-badge)
 
 Each @unikname is assigned trust badges. They provide information on the qualities of UNIK and its involvement in the network.
+
+### [Life Cycle Status](/uns-network-key-concepts/unik-lifecycle)
+
+Every @unikname have a life cycle status. Before creation, in case of reservation, the @unikname status is **Issued**. At its creation, it becomes **Minted**. To being **Alive**, the @unikname has to sets-up its *My Unikname application*.
+
+At any moment, a user can aks for a recomputing of his @unikname's life cycle status, but only to its own.
 
 ## Understanding DPOS of uns.network blockchain
 
