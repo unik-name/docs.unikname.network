@@ -10,11 +10,11 @@ Welcome to the <uns/> Player hub. You're are at the right place to find guides a
 
 ## [The uns.network Tokens](/uns-network-tokens/)
 
+## [Key Concepts](/uns-network-key-concepts/)
+
 ## [Using the uns.network: CLI, API...](/uns-use-the-network/)
 
 ## [uns.network use cases: Unikname DApp](/uns-network-unik-name-use-case/)
-
-## [Key Concepts](/uns-network-key-concepts/)
 
 ## [Becoming a Network Player](/uns-network-player/)
 

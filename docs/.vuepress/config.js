@@ -64,7 +64,28 @@ module.exports = {
         ]
       },
       {
+        title: "Key concepts",
+        sidebarDepth: 0,
+        children: [
+          ["/uns-network-key-concepts/", "Summary"],
+          ["/uns-network-key-concepts/cryptography-overview", "Cryptography Overview"],
+          ["/uns-network-key-concepts/unik-did-nft", "Decentralized ID token"],
+          ["/uns-network-key-concepts/unik-type", "Types of @unikname"],
+          ["/uns-network-key-concepts/unik-pattern", "Patterns"],
+          ["/uns-network-key-concepts/unik-lifecycle", "Lifecycle"],
+          ["/uns-network-key-concepts/unik-property", "Registries and Properties"],
+          ["/uns-network-key-concepts/unik-badge", "Badges"],
+          //["/uns-network-key-concepts/nft-factory", "NFT Factories"],
+          //["/uns-network-key-concepts/nft-coupon", "Coupons"],
+          //["/uns-network-key-concepts/nsp", "Network Services Providers"],
+          //["/uns-network-key-concepts/nut-service", "Network Unit Services"],
+          //["/uns-network-key-concepts/nut-contribution", "Network Unit Contributions"],
+          //["/uns-network-key-concepts/donuts", "Directory of Network Unit Services"]
+        ]
+      },
+      {
         title: "Using the uns.network",
+        sidebarDepth: 0,
         children: [
           ["/uns-use-the-network/", "Introduction"],
           ["/uns-use-the-network/cli", "CLI"],
@@ -75,25 +96,6 @@ module.exports = {
         ]
       },
       ["/uns-network-unik-name-use-case/", "Use cases"],
-      {
-        title: "Key concepts",
-        children: [
-          ["/uns-network-key-concepts/", "Summary"],
-          ["/uns-network-key-concepts/cryptography-overview", "Cryptography Overview"],
-          ["/uns-network-key-concepts/unik-did-nft", "Decentralized ID token"],
-          ["/uns-network-key-concepts/unik-type", "Types of @unikname"],
-          ["/uns-network-key-concepts/unik-pattern", "Patterns"],
-          //["/uns-network-key-concepts/unik-lifecycle", "Lifecycle"],
-          //["/uns-network-key-concepts/unik-property", "Registries and Properties"],
-          ["/uns-network-key-concepts/unik-badge", "Badges"],
-          //["/uns-network-key-concepts/nft-factory", "NFT Factories"],
-          //["/uns-network-key-concepts/nft-coupon", "Coupons"],
-          //["/uns-network-key-concepts/nsp", "Network Services Providers"],
-          //["/uns-network-key-concepts/nut-service", "Network Unit Services"],
-          //["/uns-network-key-concepts/nut-contribution", "Network Unit Contributions"],
-          //["/uns-network-key-concepts/donuts", "Directory of Network Unit Services"]
-        ]
-      },
       //["/uns-network-guides/", "Guides"],
       {
         title: "Network Player",
