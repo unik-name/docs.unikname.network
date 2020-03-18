@@ -46,6 +46,7 @@
     "vue": "^2.5.21",
     "vue-tabs-component": "^1.5.0",
     "vuepress": "^1.2.0",
+    "vuepress-plugin-container": "^2.1.2",
     "vuepress-plugin-sitemap": "^2.3.0",
     "vuepress-plugin-tabs": "^0.2.0"
   }

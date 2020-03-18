@@ -6,14 +6,15 @@ sidebarDepth: 0
 
 # uns.network key concepts
 
-:::tip
+:::information
 Here we discribe key concepts of the UNS network. Those concepts are designed, but not all of them are implemented yet.
 Please, wait a little bit more to try everthing, and look at up right now what the future will be!
 :::
 
-:::tip
-- **UNIK** is the name of the token representing a single @unikname within the uns.network blockchain.  
-- **NFT** Stands for Non Fungible Token. All **UNIKs tokens are NFTs.** NFT differs from a traditional coin or utility token as it is not divible (not fongible), and each one is unique.  
+:::tip Usefull words
+_**'UNIK'** is the name of the token representing a single @unikname within the uns.network blockchain._
+
+_**'NFT'** Stands for Non Fungible Token. All **UNIKs tokens are NFTs.** NFT differs from a traditional coin or utility token as it is not divible (not fongible), and each one is unique._
 :::
 
 ## Cryptography Overview

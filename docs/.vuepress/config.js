@@ -17,7 +17,13 @@ module.exports = {
     },
     "@vuepress/back-to-top": {},
     tabs: {},
-    "@goy/svg-icons": {}
+    "@goy/svg-icons": {},
+    "vuepress-plugin-container": {
+        type: 'information',
+        defaultTitle: '',
+        before: '<div class="information">',
+        after: '</div>',        
+      }
   },
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
