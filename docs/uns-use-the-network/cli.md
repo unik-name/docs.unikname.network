@@ -1015,31 +1015,3 @@ Resignation of delegate `@Bob`
 ```bash
 $ uns delegate:resign -n sandbox "@Bob"
 ```
-
-### `badges:claim`
-
-#### Introduction
-
-This command allows you to claim a new badge.
-
-#### Arguments
-- `TARGET` (required): the @unikname or @unikname token ID
-
-#### Parameters
-- `--badge` (required): The badge to claim
-
-Some [global parameters](#global-parameters) may apply to this command.
-
-#### Usage
-
-```bash
-$ uns badges:claim {Unik ID} --badge {badge name} -n sandbox
-```
-
-#### Examples
-
-Claim badge `passphrase-backup` for `@Bob`
-
-```bash
-$ uns badges:claim "@Bob" --badge passphrase-backup -n sandbox
-```
