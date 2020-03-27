@@ -881,6 +881,7 @@ confirmations: 833
 #### Introduction
 
 This command allows you to vote for a delegate with his @unikname to get him elected.
+Votes are restricted to the same UNIK type (individual, organization) delegate as yours.
 
 #### Arguments
 - `ID` (required): the unikid of the delegate to vote for or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
