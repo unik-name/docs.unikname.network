@@ -1048,7 +1048,7 @@ Resignation of delegate `@Bob`
 $ uns delegate:resign -n sandbox "@Bob"
 ```
 
-### `update`
+### `update` <Badge text="3.0.0"/>
 
 #### Introduction
 
