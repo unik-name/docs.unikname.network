@@ -21,7 +21,17 @@ The <uns/> Command Line Interface is expected to work on recent Linux, MacOS or 
 
 | <h1><vp-icon name="windows-brands" size="2em" /><br/>Windows</h1> | <h1><vp-icon name="apple-brands" size="2em" /><br/>macOS</h1> | <h1><vp-icon name="linux-brands" size="2em" /><br/>Linux</h1> |
 |:-----------------------------------:|:----------------------------------------------------------------------:|:---------------------------------------:|
-| <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Install from sources](cli/alternate-installation.html#installation-from-sources)</h3>      |
+| <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Install from NPM/Yarn](cli/alternate-installation.html#installation-from-npm-yarn)</h3>      | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Install from NPM/Yarn](cli/alternate-installation.html#installation-from-npm-yarn)</h3>      |
+
+### Staying up to date
+
+The uns.network CLI keeps itself up to date automatically, unless you used npm/yarn install.
+
+When you run a uns.network command, a background process checks for the latest available version of the CLI. If a new version is found, it’s downloaded and your CLI is updated locally.
+
+You can also force updating of your uns.network CLI with the [`update` command](#update).
+
+When installed via npm/yarn, please remove it before installing it again (`npm remove -g @uns/cli` or `yarn global remove @uns/cli`).
 
 ## Configuration
 
@@ -1036,4 +1046,16 @@ Resignation of delegate `@Bob`
 
 ```bash
 $ uns delegate:resign -n sandbox "@Bob"
+```
+
+### `update`
+
+#### Introduction
+
+This command allows you to update the uns.network CLI.
+
+#### Usage
+
+```bash
+$ uns update
 ```

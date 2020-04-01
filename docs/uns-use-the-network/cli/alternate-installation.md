@@ -5,7 +5,7 @@ title: "uns.network CLI alternate installation modes"
 
 # uns.network CLI alternate installation modes
 
-## Installation from sources
+## Installation from NPM / Yarn
 
 ### Requirements
 
@@ -13,9 +13,9 @@ title: "uns.network CLI alternate installation modes"
 
 #### Node.js
 
-Install a stable version of Node.js (10 or 12): [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
+Install a stable version of Node JS 12: [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 
-**<uns/> CLI doesn't work on earlier (6, 8)**.
+**<uns/> CLI doesn't work on earlier versions (6, 8 or 10)**.
 
 #### Compilation tools
 
@@ -23,7 +23,7 @@ Even if the <uns/> CLI is written in a cross-operating system language (Javascri
 
 You need:
 - gcc/g++
-- Python v2.7 (retired, avoid if possible), v3.5, v3.6, or v3.7
+- Python v3.x
 
 Most of the times, theses tools are already installed. If not, you can read on the [Unikname Forum](https://forum.unik-name.com/t/how-to-get-required-tools-to-install-the-uns-cli/95) how to install them for your operating system.
 
@@ -47,7 +47,7 @@ which should output something like that:
 
 ```
 $ uns version
-@uns/cli/x.y.z linux-x64 node-v10.16.3
+@uns/cli/x.y.z linux-x64 node-vXX.yy.zz
 ```
 
 If you fail to install the CLI, you can get support on [the Unikname Forum](https://forum.unik-name.com).
