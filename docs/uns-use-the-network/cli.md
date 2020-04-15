@@ -11,10 +11,6 @@ sidebarDepth: 3
 ## Introduction
 <uns/> provides an interactive command line interface to create and manage your crypto accounts, your UNS protocol tokens and your UNIK NFT tokens.
 
-::: tip
-**Livenet is not launched yet, please use sandbox.**
-:::
-
 The <uns/> Command Line Interface is expected to work on recent Linux, MacOS or Windows 10 installations.
 
 ## Download and installation
@@ -43,7 +39,7 @@ You can use the following command line options to override the default configura
 
 - `-n, --network` (required): choose the network to interact with.
 
-  Possible values: `sandbox` or `local` (`local` is for development only)
+  Possible values: `sandbox` or `livenet`
 
 ::: tip
 Avoid repetition of `--network` flag using the `UNS_NETWORK={network}` environment variable (or `%UNS_NETWORK%` for Windows shell).
@@ -51,7 +47,7 @@ Avoid repetition of `--network` flag using the `UNS_NETWORK={network}` environme
 
 Example:
 ```shell
-$ UNS_NETWORK=sandbox uns status
+$ UNS_NETWORK=livenet uns status
 ```
 
 You can also export this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
@@ -222,11 +218,11 @@ USAGE
 OPTIONS
   -f, --format=json|yaml      [default: json] Specify how to format the output [json|yaml].
   -h, --help                  show CLI help
-  -n, --network=sandbox|local  (required) Network used to create UNIK nft token
+  -n, --network=sandbox|livenet  (required) Network used to create UNIK nft token
   -v, --verbose               Detailed logs
 
 EXAMPLE
-  $ uns cryptoaccount:create --network [sandbox|local] --format {json|yaml} --verbose
+  $ uns cryptoaccount:create --network [sandbox|livenet] --format {json|yaml} --verbose
 ```
 
 ### `version`
@@ -266,21 +262,21 @@ $ uns status
 ```
 
 #### Examples
-To display <uns/> sandbox blockchain status
+To display <uns/> blockchain status
 
 ```bash
-$ uns status --network sandbox --format yaml
+$ uns status --format yaml
 ```
 
 #### Output
 Command displays some blockchain information
 
 ```bash
-$ uns status --network sandbox --format yaml
+$ uns status --format yaml
 height: 52328
-network: sandbox
+network: livenet
 totalTokenSupply: 21104656
-tokenSymbol: SUNS
+tokenSymbol: UNS
 NFTs:
   - nftName: UNIK
     individual: "19"
@@ -314,23 +310,23 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns resolve --network sandbox "@unik:individual:bob?usr/phone"
+$ uns resolve "@unik:individual:bob?usr/phone"
 ```
 
 #### Examples
 
 Resolve `@bob` `address` property in raw format:
 ```bash
-$ uns resolve --network sandbox -f raw "@unik:individual:bob?usr/address"
+$ uns resolve -f raw "@unik:individual:bob?usr/address"
 
 42 quai Malakoff, 44000 Nantes
 ```
 
 Alternative syntaxes:
 ```bash
-$ uns resolve --network sandbox -f raw "bob?usr/address"
-$ uns resolve --network sandbox -f raw "@bob?usr/address"
-$ uns resolve --network sandbox -f raw "@unik:bob?usr/address"
+$ uns resolve -f raw "bob?usr/address"
+$ uns resolve -f raw "@bob?usr/address"
+$ uns resolve -f raw "@unik:bob?usr/address"
 ```
 
 ### `send`
@@ -353,11 +349,11 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns send 10.42 S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
+$ uns send 10.42 U59pZ7fH6vtk23mADnbpqyhfMiJzpdixws
 ```
 
 ```bash
-$ uns send 10.42 "@bob" --network sandbox
+$ uns send 10.42 "@bob"
 ```
 
 #### Examples
@@ -365,7 +361,7 @@ $ uns send 10.42 "@bob" --network sandbox
 ##### Output example
 
 ```bash
-$ uns send 10.42 S59pZ7fH6vtk23mADnbpqyhfMiJzpdixws --network sandbox
+$ uns send 10.42 U59pZ7fH6vtk23mADnbpqyhfMiJzpdixws
 Enter your crypto account passphrase (12 words phrase): *************************************************************************
 
 {
@@ -392,9 +388,9 @@ $ uns cryptoaccount:create
 ```
 
 #### Examples
-As example, if you want to create a <uns/> crypto account on `sandbox` network:
+As example, if you want to create a <uns/> crypto account:
 ```bash
-$ uns cryptoaccount:create --network sandbox
+$ uns cryptoaccount:create
 ```
 
 #### Output
@@ -407,11 +403,11 @@ $ uns cryptoaccount:create
 ⚠️  WARNING: this information is not saved anywhere. You need to copy and save it by your own. ⚠️
 
 {
-  "address": "S9B6HLADr1Fd6TXvEGCuNc3A9aHK9JzjYC",
+  "address": "U9B6HLADr1Fd6TXvEGCuNc3A9aHK9JzjYC",
   "publicKey": "03522706bd0b812faea10e92dc0400e37aba468f9df3e2f63570c11c2b66eadc22",
   "privateKey": "d7877b7867404cd35bf85ea7643ad23058f5af1262d11a389ffc429648f4abe7",
   "passphrase": "train drastic alley office seed glove cable fee firm during lottery cause",
-  "network": "sandbox"
+  "network": "livenet"
 }
 
 ```
@@ -419,7 +415,7 @@ $ uns cryptoaccount:create
 Redirect stdout to file to create json file with crypto account information:
 
 ```bash
-$ uns cryptoaccount:create --network sandbox >> ./myUNSCryptoAccount.json
+$ uns cryptoaccount:create >> ./myUNSCryptoAccount.json
 ```
 
 ### `cryptoaccount:read`
@@ -451,15 +447,15 @@ $ uns cryptoaccount:read @unikname [--listunik]
 
 Display crypto account information and list of UNIK token owned by this crypto account
 ```bash
-$ uns cryptoaccount:read SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
+$ uns cryptoaccount:read UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --format yaml
 ```
 
 #### Output
 
 ```bash
-$ uns cryptoaccount:read SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --network sandbox --format yaml
+$ uns cryptoaccount:read UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --format yaml
 data:
-  address: SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
+  address: UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
   publicKey: 02cb4d32f1e69177bb428bf200b9c9dbf662826817f25fde2bf0bb17e28bd2292b
   username: null
   secondPublicKey: null
@@ -472,8 +468,8 @@ data:
     uniks:
       - 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 chainmeta:
-  network: sandbox
-  node: https://forger1.sandbox.uns.network
+  network: livenet
+  node: https://api.uns.network
   date: 2019-09-19T08:46:30.000Z
   height: 10610
 ```
@@ -489,7 +485,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
 ```bash
-$ uns cryptoaccount:set-second-passphrase -n sandbox
+$ uns cryptoaccount:set-second-passphrase
 ```
 
 #### Output
@@ -521,15 +517,15 @@ $ uns unik:create --explicitValue {explicitValue} --type [individual|organizatio
 ```
 
 #### Examples
-As example, if you want to create UNIK `individual` token `bob` on `sandbox` network:
+As example, if you want to create UNIK `individual` token `bob`:
 ```bash
-$ uns unik:create --explicitValue bob --type individual --network sandbox --verbose
+$ uns unik:create --explicitValue bob --type individual --verbose
 ```
 
 Enter your passphrase:
 
 ```bash
-$ uns unik:create --explicitValue bob --type individual --network sandbox
+$ uns unik:create --explicitValue bob --type individual
 Enter your crypto account passphrase (12 words phrase):
 ```
 
@@ -548,8 +544,8 @@ Computing UNIK fingerprint... done
 Creating transaction... done
 Sending transaction... done
 Waiting for transaction confirmation... done
-UNIK nft created (1 confirmation(s)): bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 [ https://sandbox.explorer.uns.network/#/uniks/bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 ]
-See transaction in explorer: https://sandbox.explorer.uns.network/#/transaction/a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03
+UNIK nft created (1 confirmation(s)): bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 [ https://explorer.uns.network/#/uniks/bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956 ]
+See transaction in explorer: https://explorer.uns.network/#/transaction/a73f42691f2d076ba5a4e12c36f43ed8082cb8ae03c507d98305b8a08e6d4f03
 {
   "data": {
     "id": "bf21b5c7ae13a6892315aefcfa58ee1b1c470d011564f9f29c4f1941a2373956",
@@ -587,24 +583,24 @@ $ uns unik:read {UNIK token id}
 
 Display UNIK informations
 ```bash
-$ uns unik:read @bob --network sandbox -f yaml
+$ uns unik:read @bob -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns unik:read @bob --network sandbox -f yaml
+$ uns unik:read @bob -f yaml
 data:
   id: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
-  ownerAddress: SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
+  ownerAddress: UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
   creationBlock: "15218398688380119048"
   creationTransaction: 3831b7abdf68388c4f66663f6e655de996816e53314f1afe94a05f3da79f8d5e
   creationDate: 2019-09-19T06:53:48.000Z
   properties:
     - type: "1"
 chainmeta:
-  network: sandbox
-  node: https://forger1.sandbox.uns.network
+  network: livenet
+  node: https://api.uns.network
   date: 2019-09-19T09:02:00.000Z
   height: 10726
 
@@ -631,7 +627,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns unik:disclose {UNIK token id} -n sandbox -e {explicit values}
+$ uns unik:disclose {UNIK token id} -e {explicit values}
 ```
 
 #### Examples
@@ -640,13 +636,13 @@ $ uns unik:disclose {UNIK token id} -n sandbox -e {explicit values}
 
 Disclose @unikname @bob
 ```bash
-uns unik:disclose @bob -n sandbox
+uns unik:disclose @bob
 ```
 
 ##### Success output example
 
 ```bash
-$ uns unik:disclose @bob -n sandbox -f yaml
+$ uns unik:disclose @bob -f yaml
 
 Disclosing a @unikname to the network can't be cancelled nor revoked. Your ID will be disclosed forever. Do you confirm the disclose demand? [y/n]: y
 data:
@@ -674,7 +670,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns unik:is-disclosed {UNIK token id} -n sandbox
+$ uns unik:is-disclosed {UNIK token id}
 ```
 
 #### Examples
@@ -683,13 +679,13 @@ $ uns unik:is-disclosed {UNIK token id} -n sandbox
 
 Check UNIK explicit value disclose status
 ```bash
-$ uns unik:is-disclosed @bob -n sandbox
+$ uns unik:is-disclosed @bob
 ```
 
 ##### Success output example
 
 ```bash
-$ uns unik:is-disclosed @bob -n sandbox -f yaml
+$ uns unik:is-disclosed @bob -f yaml
 
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 isDisclosed: true
@@ -715,7 +711,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns unik:verify-url TARGET --url "{Url}" --url-name "{UrlName}" --network sandbox
+$ uns unik:verify-url TARGET --url "{Url}" --url-name "{UrlName}"
 ```
 
 ### `properties:set`
@@ -741,20 +737,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns properties:set {UNIK token id} --key "{key1}" --value "{value1}" --key "{key2}" --value "{value2}" --network sandbox
+$ uns properties:set {UNIK token id} --key "{key1}" --value "{value1}" --key "{key2}" --value "{value2}"
 ```
 
 #### Example
 
 Add property `key/value` to UNIK `@bob`
 ```bash
-$ uns properties:set @bob --network sandbox --key "key" --value "value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:set @bob --key "key" --value "value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns properties:set @bob --network sandbox --key "key" --value "value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:set @bob --key "key" --value "value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
@@ -786,20 +782,20 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns properties:unset {UNIK token id} -k prop1 -k prop2 --network sandbox
+$ uns properties:unset {UNIK token id} -k prop1 -k prop2
 ```
 
 #### Example
 
 Remove property `key/value` of UNIK `@bob`
 ```bash
-$ uns properties:unset @bob --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:unset @bob -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 ```
 
 #### Output
 
 ```bash
-$ uns properties:unset @bob --network sandbox -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:unset @bob -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
@@ -837,13 +833,13 @@ uns properties:list {UNIK token id}
 
 Display UNIK properties
 ```bash
-$ uns properties:list @bob --network sandbox
+$ uns properties:list @bob
 ```
 
 ##### Success output example
 
 ```bash
-$ uns properties:list @bob --network sandbox -f yaml
+$ uns properties:list @bob -f yaml
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 properties:
   - type: "1"
@@ -854,14 +850,14 @@ confirmations: 217
 
 Display UNIK properties with at least 300 confirmations since the last UNIK token update
 ```bash
-uns properties:list @bob --network sandbox --confirmed 300
+uns properties:list @bob --confirmed 300
 ```
 
 ##### Failing output example
 
 CLI throws error because of the actual number of confirmations of the last transaction that have updated UNIK token is lower than expected.
 ```bash
-$ uns properties:list @bob --network sandbox --confirmed 300
+$ uns properties:list @bob --confirmed 300
 ›   Error: [properties:list] Not enough confirmations (expected: 300, actual: 217)
 ```
 
@@ -885,7 +881,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns properties:get {UNIK token id} -k {propertyKey} -n sandbox
+$ uns properties:get {UNIK token id} -k {propertyKey}
 ```
 
 #### Examples
@@ -894,13 +890,13 @@ $ uns properties:get {UNIK token id} -k {propertyKey} -n sandbox
 
 Display UNIK property phone
 ```bash
-$ uns properties:get @bob -n sandbox -k "usr/phone"
+$ uns properties:get @bob -k "usr/phone"
 ```
 
 ##### Success output example
 
 ```bash
-$ uns properties:get @bob -n sandbox -k "usr/phone" -f yaml
+$ uns properties:get @bob -k "usr/phone" -f yaml
 unikid: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 property: phone
 value: +33606060606
@@ -924,7 +920,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:vote {ID Unikname} -n sandbox
+$ uns delegate:vote {ID Unikname}
 ```
 
 #### Examples
@@ -932,19 +928,19 @@ $ uns delegate:vote {ID Unikname} -n sandbox
 Vote for the delegate whose @unikname id (or unikid) is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 
 ```bash
-$ uns delegate:vote -n sandbox 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+$ uns delegate:vote 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
 Vote for the individual delegate whose @unikname is `@Bob`
 
 ```bash
-$ uns delegate:vote -n sandbox "@Bob"
+$ uns delegate:vote "@Bob"
 ```
 
 Vote for the organization delegate whose @unikname is `@MyCompany`
 
 ```bash
-$ uns delegate:vote -n sandbox "@organization:MyCompany"
+$ uns delegate:vote "@organization:MyCompany"
 ```
 
 ### `delegate:unvote`
@@ -963,7 +959,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:unvote -n sandbox {ID Unikname}
+$ uns delegate:unvote {ID Unikname}
 ```
 
 #### Examples
@@ -971,19 +967,19 @@ $ uns delegate:unvote -n sandbox {ID Unikname}
 Unvote for the delegate whose @unikname id (or unikid) is `2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f`
 
 ```bash
-$ uns delegate:unvote -n sandbox 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+$ uns delegate:unvote 2145a1e37e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 ```
 
 Unvote for the individual delegate whose @unikname is `@Bob`
 
 ```bash
-$ uns delegate:unvote -n sandbox "@Bob"
+$ uns delegate:unvote "@Bob"
 ```
 
 Unvote for the organization delegate whose @unikname is `@MyCompany`
 
 ```bash
-$ uns delegate:unvote -n sandbox "@organization:MyCompany"
+$ uns delegate:unvote "@organization:MyCompany"
 ```
 
 ### `delegate:register`
@@ -1004,7 +1000,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:register -n sandbox {ID Unikname}
+$ uns delegate:register {ID Unikname}
 ```
 
 #### Examples
@@ -1012,13 +1008,13 @@ $ uns delegate:register -n sandbox {ID Unikname}
 Register individual `@Bob` as delegate
 
 ```bash
-$ uns delegate:register -n sandbox "@Bob"
+$ uns delegate:register "@Bob"
 ```
 
 Register organization `@MyCompany` as delegate
 
 ```bash
-$ uns delegate:register -n sandbox "@organization:MyCompany"
+$ uns delegate:register "@organization:MyCompany"
 ```
 
 ### `delegate:resign`
@@ -1037,7 +1033,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:resign -n sandbox {ID Unikname}
+$ uns delegate:resign {ID Unikname}
 ```
 
 #### Examples
@@ -1045,7 +1041,7 @@ $ uns delegate:resign -n sandbox {ID Unikname}
 Resignation of delegate `@Bob`
 
 ```bash
-$ uns delegate:resign -n sandbox "@Bob"
+$ uns delegate:resign "@Bob"
 ```
 
 ### `update` <Badge text="3.0.0"/>

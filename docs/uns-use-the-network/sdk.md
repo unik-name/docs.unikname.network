@@ -32,7 +32,7 @@ The SDK needs and initialization. You have to provide your current <uns/> config
 
 ```typescript
 const unsClient = new UNSClient();
-unsClient.init({ network: Network.sandbox }); // Can be also Network.livenet
+unsClient.init({ network: Network.livenet });
 ```
 
 Then you can use the `unsClient` to request and send transactions to <uns/>.
@@ -97,7 +97,7 @@ const options = {
   disableHtmlEscape: true; // Disable HTML escaping [default: false]
 }
 
-const response: ResponseWithChainMeta<PropertyValue> | PropertyValue = await getPropertyValue("unikId", "propertyKey", Network.sandbox, options);
+const response: ResponseWithChainMeta<PropertyValue> | PropertyValue = await getPropertyValue("unikId", "propertyKey", Network.livenet, options);
 
 if( response instanceof PropertyValue ){
   const value: PropertyValue = response as PropertyValue;
@@ -120,7 +120,7 @@ This function is protected by HTML escaping. When you use `getPropertyValue` fun
 import { didResolve, DidResolution, ResolutionResult, Network } from "@uns/ts-sdk"
 const unikType = "individual";
 const unikName = "unikName";
-const response = await didResolve(`@unik:${unikType}:${unikName}`, Network.sandbox) as DidResolution<ResolutionResult>;
+const response = await didResolve(`@unik:${unikType}:${unikName}`, Network.livenet) as DidResolution<ResolutionResult>;
 const { unikid, ownerAddress } = response.data;
 
 ```
@@ -202,7 +202,7 @@ Retrieve all chain NFTs statuses (number of token for each types).
 ```typescript
 import { getNftsStatuses, INftStatus, Network, ResponseWithChainMeta } from "@uns/ts-sdk";
 
-const statuses: ResponseWithChainMeta<INftStatus[]> = await getNftsStatuses(Network.sandbox);
+const statuses: ResponseWithChainMeta<INftStatus[]> = await getNftsStatuses(Network.livenet);
 const { data } = statuses;
 
 ```

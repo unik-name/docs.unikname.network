@@ -20,7 +20,7 @@ GET /api/v2/nfts/status
 #### Example
 
 ```sh
-curl https://forger1.sandbox.uns.network/api/v2/nfts/status
+curl https://api.uns.network/api/v2/nfts/status
 ```
 
 ```json
@@ -48,7 +48,7 @@ curl https://forger1.sandbox.uns.network/api/v2/nfts/status
 
 Non-fungible token management is one of our main features.
 To understand this functionality and get technical details, you can read our [proposal](https://github.com/ArkEcosystem/AIPs/issues/70) to Ark community.
-You can try this API through our official [node](https://forger1.sandbox.uns.network).
+You can try this API through our official [node](https://api.uns.network).
 
 ### List minted UNIK
 
@@ -74,7 +74,7 @@ GET /api/v2/uniks
 #### Examples
 
 ```sh
-curl https://forger1.sandbox.uns.network/api/uniks
+curl https://api.uns.network/api/uniks
 ```
 
 ```json
@@ -91,10 +91,10 @@ curl https://forger1.sandbox.uns.network/api/uniks
         "last": null
     },
     "data":[
-        {"id":"641f85b721569fef4c4d1458b47ad12de97d3c432e5d95f3cdc8a53becc69a78","ownerId":"DQYXg6vydVD83ZStQTBY5mv3CfHZc7oZbW"},
-        {"id":"bacc8096cd1a5850bf7d02f77132d2b2414824b1f4a3464c63366f269ee79b02","ownerId":"DED5QJc5HocAe69noQxw4jYqHuJJN9KdDi"},
-        {"id":"16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44","ownerId":"DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe"},
-        {"id":"76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493","ownerId":"DB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe"}
+        {"id":"641f85b721569fef4c4d1458b47ad12de97d3c432e5d95f3cdc8a53becc69a78","ownerId":"UQYXg6vydVD83ZStQTBY5mv3CfHZc7oZbW"},
+        {"id":"bacc8096cd1a5850bf7d02f77132d2b2414824b1f4a3464c63366f269ee79b02","ownerId":"UED5QJc5HocAe69noQxw4jYqHuJJN9KdDi"},
+        {"id":"16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44","ownerId":"UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe"},
+        {"id":"76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493","ownerId":"UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe"}
     ]
 }
 ```
@@ -122,14 +122,14 @@ GET /api/v2/uniks/{id}
 #### Examples
 
 ```sh
-curl https://forger1.sandbox.uns.network/api/uniks/76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493
+curl https://api.uns.network/api/uniks/76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493
 ```
 
 ```json
 {
     "data":{
         "id":"76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493",
-        "ownerId":"SB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe",
+        "ownerId":"UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe",
         "transactions": {
           "first": {
             "id": "30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2"
@@ -179,7 +179,7 @@ GET /api/v2/uniks/{id}/properties
 #### Examples
 
 ```sh
-curl https://forger1.sandbox.uns.network/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties
+curl https://api.uns.network/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties
 ```
 
 ```json
@@ -228,7 +228,7 @@ GET /api/v2/uniks/{id}/properties/{key}
 #### Examples
 
 ```sh
-curl https://forger1.sandbox.uns.network/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties/type
+curl https://api.uns.network/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties/type
 ```
 
 ```json
@@ -402,7 +402,7 @@ curl --header "API-Version: 2" https://api.ark.io/api/blockchain
 works also on the uns.network
 
 ```
-curl --header "API-Version: 2" https://forger1.sandbox.uns.network/api/blockchain
+curl --header "API-Version: 2" https://api.uns.network/api/blockchain
 ```
 
 ```json
