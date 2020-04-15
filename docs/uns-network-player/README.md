@@ -62,14 +62,14 @@ You are now ready for the next step !
 Your cryptoaccount is required for all the following steps. To create it, just execute the following command: `cryptoaccount:create`.
 Here is an example of what you are supposed to see on your command prompt.
 ```bash
-uns cryptoaccount:create --network sandbox
+uns cryptoaccount:create
 » :warn: This information is not saved anywhere. You need to copy and save it by your own.;
 {
   "address": "XXXXXXXXXXXXXXXXXXXXXXXXX",
   "publicKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
   "privateKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
   "passphrase": "XXXXX XXXXX XXXX XXXXXXXX XXXXXX XXXXXXX XXXX XXXXX",
-  "network": "sandbox"
+  "network": "livenet"
 }
 ```
 
@@ -80,7 +80,7 @@ uns cryptoaccount:create --network sandbox
 ### Asking for SUNS from the faucet to initialize your cryptoaccount balance
 
 You'll need SUNS tokens to use <uns/> features (creating your UNIK for example). You can ask for SUNS on [the unik-name forum](https://forum.unik-name.com/c/uns-network/faucet).
-Don't forget to provide your cryptoaccount address, created with [the <uns/> CLI](cli.html#create-wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
+Don't forget to provide your cryptoaccount address, created with [the <uns/> CLI](cli.html#create-wallet) (it must start with a `S` letter, such as `UHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
 
 *When SUNS are send to your cryptoaccount, you receive a forum notification and an email. Don't forget to check them!*
 
@@ -92,13 +92,13 @@ It exists two ways to do it.
 Execute the following command: `cryptoaccount:read` to see informations about your cryptoaccount as your balance.
 At this moment, you should see something like this.
 ```bash
-uns cryptoaccount:read Sg9DM5vuTEcph3uLTKBjAT7WCyjH3hE53D  --network sandbox
+uns cryptoaccount:read Ug9DM5vuTEcph3uLTKBjAT7WCyjH3hE53D 
 {
   "data": {
-    "address": "Sg9DM5vuTEcph3uLTKBjAT7WCyjH3hE53D",
+    "address": "Ug9DM5vuTEcph3uLTKBjAT7WCyjH3hE53D",
     "publicKey": "03983ecf61fc9edbe34eb54faa3b7555360aa204f88a757585dddfdbcd9c482320",
     "balance": 100,
-    "token": "suns",
+    "token": "uns",
     "isDelegate": false,
     "nfts": {
       "unik": 0
@@ -133,10 +133,10 @@ Choose your @unikname wisely. Indeed, it'll be disclosed to other people and the
 :::
 
 ### Examples
-As example, if you want to create UNIK `individual` token `bob` on `sandbox` network:
+As example, if you want to create UNIK `individual` token `bob`:
 
 ```bash
-uns unik:create --explicitValue "bob" --type individual --network sandbox
+uns unik:create --explicitValue "bob" --type individual
 
 Enter your crypto account passphrase (12 words phrase): ***************************
 
@@ -159,7 +159,7 @@ With the transaction id given into your command prompt, you can check the @unikn
 ## Registering as a delegate
 
 Congratulations! Now that you have:
-* cryptoaccount with some SUNS
+* cryptoaccount with some UNS
 * @unikname linked to your cryptoaccount
 
 You can register as a delegate! 3 steps to achieved this.
@@ -178,10 +178,10 @@ Make public the explicit value of your UNIK Name. This value will appear in "exp
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
-Use this command to disclose your @unikname : `uns unik:disclose --unikid xxxxxxxxxxxxxxxxxxx -e Bob --network sandbox`.
+Use this command to disclose your @unikname : `uns unik:disclose --unikid xxxxxxxxxxxxxxxxxxx -e Bob`.
 You should have the following result. 
 ```bash
-uns unik:disclose --unikid xxxxxxxxxxxxxxxxxxx  -e Bob --network sandbox
+uns unik:disclose --unikid xxxxxxxxxxxxxxxxxxx  -e Bob
 
 Enter your crypto account passphrase (12 words phrase): ***************************************************************************
 
@@ -213,10 +213,10 @@ To apply as a delegate, you should have only one @unikname into your cryptoaccou
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
-Use this command to register as a delegate : `uns delegate:register {unikid} --network sandbox`.
+Use this command to register as a delegate : `uns delegate:register {unikid}`.
 You should have the following result.
 ```bash
-uns delegate:register 6dfc19dbc009faf47a3491b036da1929756a2a11572b6ebc6798587d8b996131 --network sandbox
+uns delegate:register 6dfc19dbc009faf47a3491b036da1929756a2a11572b6ebc6798587d8b996131
 
 Enter your crypto account passphrase (12 words phrase): ************************************
 
@@ -243,10 +243,10 @@ Here, you'll vote for yourself.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
-Use this command to vote for yourself : `uns delegate:vote {unikid} --network sandbox`.
+Use this command to vote for yourself : `uns delegate:vote {unikid}`.
 You should have the following result.
 ```bash
-uns delegate:vote 6dfc19dbc009faf47a3491b036da1929756a2a11572b6ebc6798587d8b996131 --network sandbox
+uns delegate:vote 6dfc19dbc009faf47a3491b036da1929756a2a11572b6ebc6798587d8b996131
 
 Enter your crypto account passphrase (12 words phrase): ****************************************
 
@@ -263,7 +263,7 @@ You can check that you have successfully vote for yourself in [the explorer](htt
 
 ### Checking your delegate status in the Explorer
 
-You can check on [explorer](https://sandbox.explorer.uns.network/delegate-monitor) that your @unikname is in the delegate list.
+You can check on [explorer](https://explorer.uns.network/delegate-monitor) that your @unikname is in the delegate list.
 To start forging blocks, you'll need to set up a node.
 
 ## Setting up your node
@@ -273,7 +273,7 @@ To set up your node, you can open in a new tab the [following instructions](http
 ## Checking your delegate status in the Explorer
 
 Now, your job is done.
-You can check on [explorer](https://sandbox.explorer.uns.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
+You can check on [explorer](https://explorer.uns.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
 
 If you're in the `active` tab, congratulation, you're a <uns/> delegate, and your forger node is actually forging blocks and getting rewards!
 If you're in the `standby` tab, you need to gather more voting power than current active delegates (i.e. have cryptoaccounts with positive balance voting for you).

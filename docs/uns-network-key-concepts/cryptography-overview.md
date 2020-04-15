@@ -41,7 +41,7 @@ Every @unikname is encoded within the <uns/> blockchain with a Hashcode, its ``u
 Here is an example of the public address of a cryptoaccount on uns.network:
 
 ```
-SVxGz3EKDqx4h8LLz2ao2GoDNPx4uHf25k
+UVxGz3EKDqx4h8LLz2ao2GoDNPx4uHf25k
 ```
 
 For every public address there's a public key, associated with a private key, and encrypted with a passphrase. Here is an example of on-chain public informations available when you query this public address on uns.network.
@@ -49,11 +49,11 @@ For every public address there's a public key, associated with a private key, an
 ```json
 {
   "data": {
-    "address": "SVxGz3EKDqx4h8LLz2ao2GoDNPx4uHf25k",
+    "address": "UVxGz3EKDqx4h8LLz2ao2GoDNPx4uHf25k",
     "publicKey": "03c583c31c0ed365fecaf1dc88edd003e78d6bbded8923b355d878489284ea54ec",
     "secondPublicKey": "022b3d124aa60fb6ac0eb7576877a4c6197f8fd5aaa772f884c6269bf7829ba31e",
     "balance": 95,
-    "token": "suns",
+    "token": "uns",
     "isDelegate": false,
     "vote": "02b43b9786808a4f415dbbdc5adab7e17bd0dde904d3dc6dd869bf11ae0f7a054d",
     "nfts": {
