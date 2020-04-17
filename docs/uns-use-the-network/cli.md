@@ -622,6 +622,7 @@ If a @unikname is provided, --explicitValue flag can be ommited, the @unikname w
 - `-e, --explicitValue`: Explicit values to disclose. Must match the UNIK Name of the token.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
+- `--no-check`: Allow @unikname disclose without user confirmation.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
