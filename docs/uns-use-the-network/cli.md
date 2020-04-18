@@ -441,7 +441,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns cryptoaccount:read {crypto account identifier} [--listunik]
+$ uns cryptoaccount:read {TARGET} [--listunik]
 ```
 ```bash
 $ uns cryptoaccount:read @unikname [--listunik]
@@ -540,7 +540,7 @@ Enter your crypto account passphrase (12 words phrase): ************************
 
 #### Output
 
-If the creation succeed <uns/> CLI prompts yout UNIK token ID and links to see token and transaction in the <uns/> explorer.
+If the creation succeed <uns/> CLI prompts your UNIK token ID and links to see token and transaction in the <uns/> explorer.
 
 ```
 Computing UNIK fingerprint... done
@@ -579,7 +579,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns unik:read {UNIK token id}
+$ uns unik:read {TARGET}
 ```
 
 #### Example
@@ -631,7 +631,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns unik:disclose {UNIK token id} -e {explicit values}
+$ uns unik:disclose {TARGET} -e {explicit values}
 ```
 
 #### Examples
@@ -674,7 +674,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns unik:is-disclosed {UNIK token id}
+$ uns unik:is-disclosed {TARGET}
 ```
 
 #### Examples
@@ -715,7 +715,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns unik:verify-url TARGET --url "{Url}" --url-name "{UrlName}"
+$ uns unik:verify-url {TARGET} --url "{Url}" --url-name "{UrlName}"
 ```
 
 ### `properties:set`
@@ -743,7 +743,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns properties:set {UNIK token id} --key "{key1}" --value "{value1}" --key "{key2}" --value "{value2}"
+$ uns properties:set {TARGET} --key "{key1}" --value "{value1}" --key "{key2}" --value "{value2}"
 ```
 
 #### Example
@@ -788,7 +788,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns properties:unset {UNIK token id} -k prop1 -k prop2
+$ uns properties:unset {TARGET} -k prop1 -k prop2
 ```
 
 #### Example
@@ -830,7 +830,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-uns properties:list {UNIK token id}
+uns properties:list {TARGET}
 ```
 
 #### Examples
@@ -887,7 +887,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns properties:get {UNIK token id} -k {propertyKey}
+$ uns properties:get {TARGET} -k {propertyKey}
 ```
 
 #### Examples
@@ -917,7 +917,7 @@ This command allows you to vote for a delegate with his @unikname to get him ele
 Votes are restricted to the same UNIK type (individual, organization) delegate as yours.
 
 #### Arguments
-- `ID` (required): the unikid of the delegate to vote for or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier) of the delegate to vote for. See examples below for more information.
 
 #### Parameters
 
@@ -926,7 +926,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:vote {ID Unikname}
+$ uns delegate:vote {TARGET}
 ```
 
 #### Examples
@@ -956,7 +956,7 @@ $ uns delegate:vote "@organization:MyCompany"
 This command allows you to revoke your vote given to a delegate with his @unikname.
 
 #### Arguments
-- `ID` (required): the unikid of the delegate to unvote for or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier) of the delegate to unvote from. See examples below for more information.
 
 #### Parameters
 
@@ -965,7 +965,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:unvote {ID Unikname}
+$ uns delegate:unvote {TARGET}
 ```
 
 #### Examples
@@ -997,7 +997,7 @@ Before registering you must have publicly disclosed your Unikname (see [unik:dis
 To apply as delegate, the Crypto-account of the Unik candidate is limited to a single Unik (i.e delegate user should own a maximum of 1 Unik in crypto-account).
 
 #### Arguments
-- `ID` (required): the unikid to register as delegate or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier) to register as delegate. See examples below for more information.
 
 #### Parameters
 
@@ -1006,7 +1006,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:register {ID Unikname}
+$ uns delegate:register {TARGET}
 ```
 
 #### Examples
@@ -1030,7 +1030,7 @@ $ uns delegate:register "@organization:MyCompany"
 This command allows you to resign delegate status of your UNIK.
 
 #### Arguments
-- `ID` (required):  The unikid to unregister or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier) to unregister as delegate. See examples below for more information.
 
 #### Parameters
 
@@ -1039,7 +1039,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 #### Usage
 
 ```bash
-$ uns delegate:resign {ID Unikname}
+$ uns delegate:resign {TARGET}
 ```
 
 #### Examples
