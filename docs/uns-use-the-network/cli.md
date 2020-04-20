@@ -729,7 +729,7 @@ Users properties keys must start with `usr/`. Keys without this prefix are reser
 #### Parameters
 
 - `-k --key` (required): Key of property to set as UNIK property. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
-- `-v --value` (required): Value of property to set as UNIK property.
+- `-V --value` (required): Value of property to set as UNIK property.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
