@@ -6,12 +6,11 @@ sidebarDepth: 3
 
 # uns.network CLI
 
-[[toc]]
-
-## Introduction
 <uns/> provides an interactive command line interface to create and manage your crypto accounts, your UNS protocol tokens and your UNIK NFT tokens.
 
 The <uns/> Command Line Interface is expected to work on recent Linux, MacOS or Windows 10 installations.
+
+[[toc]]
 
 ## Download and installation
 
