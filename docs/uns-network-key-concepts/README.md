@@ -47,5 +47,7 @@ Every @unikname have a life cycle status. Before creation, in case of reservatio
 
 At any moment, a user can aks for a recomputing of his @unikname's life cycle status, but only to its own.
 
-## Understanding DPOS of uns.network blockchain
+### [Understanding Governance of uns.network blockchain](/uns-network-key-concepts/network-governance)
+
+The uns.network blockchain is a DPOS kind of blockchain. It count three separates categories of stakeholders, with specific purpose and interest. They are all involved in the network governance.
 
