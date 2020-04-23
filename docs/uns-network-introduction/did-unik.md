@@ -1,6 +1,7 @@
 ---
 home: false
 Title: Decentralized Identifers
+sidebarDepth: 0
 ---
 
 # Our UNIK Decentralized IDentifiers (DID)

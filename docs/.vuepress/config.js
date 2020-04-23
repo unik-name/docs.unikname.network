@@ -17,7 +17,13 @@ module.exports = {
     },
     "@vuepress/back-to-top": {},
     tabs: {},
-    "@goy/svg-icons": {}
+    "@goy/svg-icons": {},
+    "vuepress-plugin-container": {
+        type: 'information',
+        defaultTitle: '',
+        before: '<div class="information">',
+        after: '</div>',        
+      }
   },
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
@@ -64,19 +70,8 @@ module.exports = {
         ]
       },
       {
-        title: "Using the uns.network",
-        children: [
-          ["/uns-use-the-network/", "Introduction"],
-          ["/uns-use-the-network/cli", "CLI"],
-          ["/uns-use-the-network/api", "API"],
-          ["/uns-use-the-network/sdk", "SDK"],
-          ["/uns-use-the-network/wallet", "Wallet"],
-          ["/uns-use-the-network/cheatsheet", "Cheat Sheet"]
-        ]
-      },
-      ["/uns-network-unik-name-use-case/", "Use cases"],
-      {
         title: "Key concepts",
+        sidebarDepth: 0,
         children: [
           ["/uns-network-key-concepts/", "Summary"],
           ["/uns-network-key-concepts/cryptography-overview", "Cryptography Overview"],
@@ -95,6 +90,19 @@ module.exports = {
           //["/uns-network-key-concepts/donuts", "Directory of Network Unit Services"]
         ]
       },
+      {
+        title: "Using the uns.network",
+        sidebarDepth: 0,
+        children: [
+          ["/uns-use-the-network/", "Introduction"],
+          ["/uns-use-the-network/cli", "CLI"],
+          ["/uns-use-the-network/api", "API"],
+          ["/uns-use-the-network/sdk", "SDK"],
+          ["/uns-use-the-network/wallet", "Wallet"],
+          ["/uns-use-the-network/cheatsheet", "Cheat Sheet"]
+        ]
+      },
+      ["/uns-network-unik-name-use-case/", "Use cases"],
       //["/uns-network-guides/", "Guides"],
       {
         title: "Network Player",
