@@ -56,3 +56,5 @@ At any moment, a user can aks for a recomputing of his @unikname's life cycle st
 
 The uns.network blockchain is a DPOS kind of blockchain. It count three separates categories of stakeholders, with specific purpose and interest. They are all involved in the network governance.
 
+![govervance](./images/uns-blockchain-dpos-23-delegates.jpg)
+
