@@ -105,12 +105,14 @@ module.exports = {
       ["/uns-network-unik-name-use-case/", "Use cases"],
       //["/uns-network-guides/", "Guides"],
       {
-        title: "Network Player",
+        title: "Becoming a Network Player",
         /* collapsable: false, */
         children: [
-          ["/uns-network-player/", "Becoming a network player"],
-          ["/uns-network-rewarding/", "Getting Rewards"],
-          ["/uns-network-setting-up-node/", "Setting up your Node"]
+          ["/uns-network-player/", "Introduction"],
+          ["/uns-network-player/create-your-unikname-individual", "Create your @unikname"],
+          ["/uns-network-player/registering-as-delegate", "Registering as Delegate"],
+          ["/uns-network-player/setting-up-your-node", "Setting up your Node"],
+          ["/uns-network-player/last-step", "Last Step"]
         ]
       },
       {
