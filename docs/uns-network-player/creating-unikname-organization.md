@@ -7,8 +7,44 @@ home: false
 [[toc]]
 
 
-installation CLI
+## Installing the <uns/> CLI
 
+The <uns/> Command Line Interface (CLI) makes it easy to manage your @unikname and Unikname apps directly from the terminal.
+It’s an essential part of using <uns/>.
+
+| <h1><vp-icon name="windows-brands" size="2em" /><br/>Windows</h1> | <h1><vp-icon name="apple-brands" size="2em" /><br/>macOS</h1> | <h1><vp-icon name="linux-brands" size="2em" /><br/>Linux</h1> |
+|:-----------------------------------:|:----------------------------------------------------------------------:|:---------------------------------------:|
+| <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Download the tarball*](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-darwin-x64.tar.gz)</h3>      | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Download the 64-bit tarball*](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-linux-x64.tar.gz)</h3>or<h3>[Download the ARMv7+ tarball*](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-linux-arm.tar.gz)</h3>      |
+
+*: you should then add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to be able to run `uns` command.
+
+[Alternate installation modes are also available in the CLI documentation](/uns-use-the-network/cli.html#download-and-installation).
+
+:::tip On Windows
+Execute the file downloaded to procede to installation.
+Windows may display a warning, but don't worry, just continue the procedure.*
+:::
+
+You can check that your installation is finished by entering `uns` into your command prompt.
+You should see the following menu :
+
+```bash
+$ uns
+UNS.network CLI
+
+VERSION
+  @uns/cli/X.X.X XXX XXX
+
+USAGE
+  $ uns [COMMAND]
+
+COMMANDS
+  cryptoaccount  Manage Crypto Account (`uns cryptoaccount` to display Crypto Account commands)
+  ...
+```
+
+If you want more details about the CLI and tips to use it, check the [CLI documentation](/uns-use-the-network/cli).
+You are now ready for the next step !
 
 ## Creating your cryptoaccount
 
@@ -37,7 +73,7 @@ uns cryptoaccount:create
 -- contact@unikname.com
 
 Creating a @unikname requires a voucher. If you have one, you can continue. 
-Otherwise, contact us on [the forum](https://forum.unik-name.com) to request one.
+Otherwise, contact us on [contact@unikname.com](mailto:contact@unikname.com) to request one.
 
 ## Create your @unikname
 
@@ -52,27 +88,12 @@ Neither <uns/>, nor Unikname will be able to give you back access to your @unikn
 
 ## Creating your @unikname
 
-With <uns/> CLI you can create your own UNIK token using `unik:create` command.
-
-### Parameters
-- `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
-- `--type` (required): Type of your token [individual/organization]
-- `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
-- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
-
-Some [global parameters](#global-parameters) may apply to this command.
-
-### Usage
-
-```bash
-$ uns unik:create --explicitValue {explicitValue} --type [individual|organization]
-```
+With <uns/> CLI you can create your own UNIK token using [`unik:create`](/uns-use-the-network/cli.html#unik-create) command.
 
 :::warning Choosing the @unikname
 Choose the @unikname wisely. Indeed, it'll be disclosed to other people and they'll know you by this @unikname.
 :::
 
-### Examples
 As example, if you want to create UNIK `individual` token `bob`:
 
 ```bash
@@ -89,11 +110,13 @@ Enter your crypto account passphrase (12 words phrase): ************************
 }
 ```
 ::: tip UnikId
-Write somewhere your unikid (id)! You need it in the following instructions.
+Write somewhere your unikId (`id` here, with value `8f79445a84e3664088008927aa113e237e1c163eafb35968600922a9c5231f60`)! You need it in the following instructions.
 :::
 
 ### Checking the creation of the @unikname in the Explorer
 
-With the transaction id given into your command prompt, you can check the @unikname creation through [the explorer](https://explorer.uns.network/).
+With the transaction id given into your command prompt, you can check the @unikname creation through [the explorer](https://explorer.uns.network/). Look for the @unikname by its unikId in the search bar on the top.
+
+You can also directly go to `https://explorer.uns.network/${unikid}`. For example, https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25 for the @unikname `Space Elephant`.
 
 And now, [let's go registering your organization as a delegate](./registering-as-delegate).
