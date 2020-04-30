@@ -48,10 +48,7 @@ We strongly recommend running your node on SSD drive as there are a lot of read 
 
 Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
 - LIVENET:
-  * `xxxx` (required): this is the communication port used by the node to exchange information with other nodes of the <uns/>
-  * `xxxx` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
-- SANDBOX:
-  * `4002` (required): this is the communication port used by the node to exchange information with other nodes of the <uns/>
+  * `4001` (required): this is the communication port used by the node to exchange information with other nodes of the <uns/>
   * `4003` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
 
 ::: warning
@@ -70,15 +67,15 @@ So, be sure to have these prerequisites:
 
 Create the following configuration file `docker-compose.yml`: 
 
-<<< @/docs/uns-network-setting-up-node/sandbox/docker-compose.yml
+<<< @/docs/uns-network-setting-up-node/livenet/docker-compose.yml
 
-You can also [download the full file from our repositories](https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/uns-network-setting-up-node/sandbox-docker-compose.yml).
+You can also [download the full file from our repositories](https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/uns-network-setting-up-node/livenet/docker-compose.yml).
 
 ::: tip
 You can download the file direcly on your machine:
 
 ```shell
-$ curl -O https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/uns-network-setting-up-node/sandbox/docker-compose.yml
+$ curl -O https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/uns-network-setting-up-node/livenet/docker-compose.yml
 ```
 :::
 
@@ -94,7 +91,7 @@ The node starts logging a lot of information and tries to reach peers before syn
 You can stop the node by hitting `CTRL+C`.
 
 ::: tip
-You can read your node logs by running `docker-compose logs --tail 10 uns-sandbox` (here, the last 10 log lines).
+You can read your node logs by running `docker-compose logs --tail 10 uns-livenet` (here, the last 10 log lines).
 :::
 
 ### Run a permanent relay with Docker Compose
@@ -112,10 +109,6 @@ $ docker-compose down
 ```
 
 ### Run a forger with Docker Compose
-
-::: warning
-You must be a [declared delegate](/uns-network-player/#becoming-a-delegate) before doing this configuration.
-:::
 
 To run a forger node, please edit the `docker-compose.yml` file, with Nano or Vim for example: `nano docker-compose.yml`.
 
