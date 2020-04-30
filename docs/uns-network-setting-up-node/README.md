@@ -92,7 +92,7 @@ The node starts logging a lot of information and tries to reach peers before syn
 You can stop the node by hitting `CTRL+C`.
 
 ::: tip
-You can read your node logs by running `docker-compose logs --tail 10 uns-sandbox` (here, the last 10 log lines).
+You can read your node logs by running `docker logs --tail 10 uns-sandbox` (here, the last 10 log lines).
 :::
 
 ### Run a permanent relay with Docker Compose
