@@ -117,8 +117,8 @@ module.exports = {
         children: [
           ["/uns-network-player/", "Introduction"],
           [
-            "/uns-network-player/create-your-unikname-individual",
-            "Create your @unikname",
+            "/uns-network-player/creating-your-unikname-individual",
+            "Creating @unikname as an individual",
           ],
           [
             "/uns-network-player/registering-as-delegate",

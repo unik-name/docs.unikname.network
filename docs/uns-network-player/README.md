@@ -28,8 +28,8 @@ Once it is created, it cannot be changed.
 
 For the type of your @unikname, you will have the choice between two types of @unikname:
 
-- individual
-- organization
+- `individual`
+- `organization`
 
 Unless you are a company, **choose individual**.
 
@@ -46,3 +46,13 @@ Notably the fact of being able to run a Blockchain node, which requires **having
 If you don't have one, and you don't want one, you won't be able to configure your node, nor join the network.
 
 And for those who have all this, welcome to the community!
+
+Now let's go creating your @unikname as an individual by going to the [next part of this documentation](./creating-your-unikname-individual.html).
+
+
+::: tip
+
+If you have decided to create an `organization` @unikname, follow [this part of the documentation instead](./creating-your-unikname-organization.html).
+
+:::
+

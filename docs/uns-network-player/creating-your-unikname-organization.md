@@ -1,9 +1,8 @@
 ---
 home: false
-title: "Becoming uns.network Player"
 ---
 
-# Creation of your @unikname
+#  Creating @unikname as an organization
 
 [[toc]]
 
