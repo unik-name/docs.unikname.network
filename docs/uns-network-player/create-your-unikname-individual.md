@@ -12,7 +12,7 @@ title: "Becoming uns.network Player"
 The creation of your @unikname is done through My Unikname App. To access the application, follow this link with your *phone* (and your phone only): [https://my.unikname.app/](https://my.unikname.app/).
 
 :::tip
-*If you are on iOS, contact us directly through the forum: [https://forum.unik-name.com](https://forum.unik-name.com)*
+*If you are on iOS, contact us directly on contact@unikname.com.*
 :::
 
 Once the application is installed on your home screen, launch the application and follow the steps displayed on your screen.
@@ -20,7 +20,7 @@ Once the application is installed on your home screen, launch the application an
 ## Coupon
 
 Creating a @unikname requires a coupon. If you have one, you can continue. 
-Otherwise, contact us on [the forum](https://forum.unik-name.com) to request one.
+Otherwise, contact us on *contact@unikname.com* to request one.
 
 ## Create your @unikname
 
