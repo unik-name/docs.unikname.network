@@ -23,15 +23,17 @@ It’s an essential part of using <uns/>.
 
 ### Download & install the CLI
 
-Follow the link corresponding to your OS.
-
 | <h1><vp-icon name="windows-brands" size="2em" /><br/>Windows</h1> | <h1><vp-icon name="apple-brands" size="2em" /><br/>macOS</h1> | <h1><vp-icon name="linux-brands" size="2em" /><br/>Linux</h1> |
-|:-------:|:-----:|:-----:|
-| <h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h3>[Install from sources](https://docs.uns.network/uns-use-the-network/cli/alternate-installation.html#installation-from-sources)</h3>      | <h3>[Install from sources](https://docs.uns.network/uns-use-the-network/cli/alternate-installation.html#installation-from-sources)</h3>      |
+|:-----------------------------------:|:----------------------------------------------------------------------:|:---------------------------------------:|
+| <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Download the 64-bit installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>        | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Download the tarball*](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-darwin-x64.tar.gz)</h3>      | <h4>![GitHub version](https://badge.fury.io/gh/unik-name%2Funs-cli.svg)</h4><h3>[Download the 64-bit tarball*](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-linux-x64.tar.gz)</h3>or<h3>[Download the ARMv7+ tarball*](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-linux-arm.tar.gz)</h3>      |
 
-:::tip
-*If you use Windows 10, execute the file downloaded to procede to installation.
-Windows may display a warning. Don't worry, just continue the procedure.*
+*: you should then add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to be able to run `uns` command.
+
+[Alternate installation modes are also available in the CLI documentation](/uns-use-the-network/cli.html#download-and-installation).
+
+:::tip On Windows
+Execute the file downloaded to procede to installation.
+Windows may display a warning, but don't worry, just continue the procedure.*
 :::
 
 You can check that your installation is finished by entering `uns` into your command prompt.
@@ -48,20 +50,11 @@ USAGE
   $ uns [COMMAND]
 
 COMMANDS
-  autocomplete   display autocomplete installation instructions
   cryptoaccount  Manage Crypto Account (`uns cryptoaccount` to display Crypto Account commands)
-  delegate       Manage UNS delegates (`uns delegate` to display Delegate commands)
-  help           display help for uns
-  properties     Manage UNIK properties (`uns properties` to display UNIK properties commands)
-  resolve        Resolve a decentralized identifier.
-  send           Send owned UNS protocol tokens to another wallet.
-  status         Display blockchain status
-  unik           Manage UNIK (`uns unik` to display UNIK commands)
-  update         update the uns CLI
-  version        UNS CLI Version
+  ...
 ```
 
-If you want more details about the CLI and tips to use it, check the [CLI documentation](https://docs.uns.network/uns-use-the-network/cli.html).
+If you want more details about the CLI and tips to use it, check the [CLI documentation](/uns-use-the-network/cli).
 You are now ready for the next step !
 
 ## Registering as a delegate
@@ -73,7 +66,6 @@ Congratulations! Now that you have:
 Now, you can register as a delegate!
 
 Here is the complete process:
-
 
     $ uns unik:disclose "@hello-world" -e "hello-world"
     $ uns delegate:register "@hello-world"
