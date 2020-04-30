@@ -136,26 +136,15 @@ Then, (re)start your forger node with the following command:
 $ docker-compose up -d
 ```
 
-Now you have a running relay node and you're ready to forge blocks.
+Now you have a running forger node and you're forging blocks! 👏
 
-### Under the hood
+## Checking your delegate status in the Explorer
 
-From configuration file we can see that 2 services will be started: the node and its database.
+Now, your job is done.
+You can check on [explorer](https://explorer.uns.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
 
-You also have 2 volumes mounted on the file system (for node and database files) and a local network for services communication.
+If you're in the `active` tab, congratulation, you're a <uns/> delegate, and your forger node is actually forging blocks and getting rewards!
 
-#### The database service
+If you're in the `standby` tab, you need to gather more voting power than current active delegates (i.e. have cryptoaccounts with positive balance voting for you).
 
-Based on [`postgres` (version 11 and Linux alpine)](https://github.com/docker-library/postgres/blob/0a66d53fface5ccc8274f99712ba2f382a1caf42/11/alpine/Dockerfile), it exposes a single port (`5432`) and requires environment variables (for db name, user name and password).
-These variables must match with those provided in the node service (see below).
-
-#### The node service
-
-The node service is based on our `universalnamesystem/core` image (latest tag). 
-
-It has two exposed ports; for p2p (`4102`) and for API (`4103`), and mount 3 volumes (for logs, forger secret and configuration files).
-
-Some environment variables are set :
-- for the database (port, user name, user password and db name)
-- for the network (here it's `livenet`, it means that it'll connect to other <uns/> livenet nodes, you can use `sandbox` too)
-- and the forger secret (line `FORGER_SECRET`, commented by default). 
+Let's go fot the final steps.

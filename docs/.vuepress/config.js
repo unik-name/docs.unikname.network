@@ -124,8 +124,8 @@ module.exports = {
             "/uns-network-player/registering-as-delegate",
             "Registering as Delegate",
           ],
-          ["/uns-network-player/setting-up-your-node", "Setting up your Node"],
-          ["/uns-network-player/last-step", "Last Step"],
+          ["/uns-network-player/setting-up-your-node", "Setting up your node"],
+          ["/uns-network-player/last-steps", "Last steps"],
         ],
       },
       {

@@ -84,16 +84,4 @@ Here is the complete process:
 You can check on [explorer](https://explorer.uns.network/delegate-monitor) that your @unikname is in the delegate list.
 To start forging blocks, you'll need to set up a node.
 
-## Setting up your node
-
-To set up your node, you can open in a new tab the [following instructions](https://docs.uns.network/uns-network-setting-up-node/#introduction).
-
-## Checking your delegate status in the Explorer
-
-Now, your job is done.
-You can check on [explorer](https://explorer.uns.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
-
-If you're in the `active` tab, congratulation, you're a <uns/> delegate, and your forger node is actually forging blocks and getting rewards!
-If you're in the `standby` tab, you need to gather more voting power than current active delegates (i.e. have cryptoaccounts with positive balance voting for you).
-
-*If you have any suggestions or encounter any problems with this tutoriel, give us your feedback on [our forum](https://forum.unik-name.com/c/uns-network/)!*
+Let's now configure your UNS node.
