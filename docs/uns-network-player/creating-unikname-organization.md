@@ -86,29 +86,30 @@ With <uns/> CLI you can create your own UNIK token using [`unik:create`](/uns-us
 Choose the @unikname wisely. Indeed, it'll be disclosed to other people and they'll know you by this @unikname and once you've chosen a name, you won't be able to change it.
 :::
 
-As example, if you want to create UNIK `individual` token `bob`:
+As example, for creating the UNIK `organization` token `SpaceElephant`:
 
 ```bash
-uns unik:create --explicitValue "bob" --type individual
+uns unik:create --explicitValue "SpaceElephant" --type organization --unik-voucher
 
 Enter your crypto account passphrase (12 words phrase): ***************************
 
 {
   "data": {
-    "id": "8f79445a84e3664088008927aa113e237e1c163eafb35968600922a9c5231f60",
+    "id": "ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25",
     "transaction": "4bcde02ec632bd5531aa8710b0a13f469a59caec910dc610d46f6b8ebdcaf9ac",
     "confirmations": 1
   }
 }
 ```
 ::: tip UnikId
-Write somewhere your unikId (`id` here, with value `8f79445a84e3664088008927aa113e237e1c163eafb35968600922a9c5231f60`)! You need it in the following instructions.
+Write somewhere your unikId (`id` here, with value `ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25`)! You need it in the following instructions.
 :::
 
 ### Checking the creation of the @unikname in the Explorer
 
 With the transaction id given into your command prompt, you can check the @unikname creation through [the explorer](https://explorer.uns.network/). Look for the @unikname by its unikId in the search bar on the top.
 
-You can also directly go to `https://explorer.uns.network/${unikid}`. For example, [https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25](https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25) for the @unikname `Space Elephant`.
+You can also directly go to `https://explorer.uns.network/${unikid}` in your browser.
+For example, [https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25](https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25) for the @unikname `SpaceElephant`.
 
 And now, [let's go registering your organization as a delegate](./registering-as-delegate).

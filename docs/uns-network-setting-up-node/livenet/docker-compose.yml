@@ -1,0 +1,48 @@
+version: "2"
+services:
+  postgres:
+    image: "postgres:11-alpine"
+    container_name: postgres-livenet
+    restart: always
+    #ports:
+      #- "127.0.0.1:5432:5432" # uncomment this if you want to connect locally on DB
+    volumes:
+      - "postgres:/var/lib/postgresql/data"
+    networks:
+      - core
+    environment:
+      POSTGRES_DB: uns_livenet # Must match with CORE_DB_DATABASE below
+      POSTGRES_USER: uns # Must match with CORE_DB_USERNAME below
+      POSTGRES_PASSWORD: password # Must match with CORE_DB_DATABASE below
+
+  uns:
+    image: universalnamesystem/core:livenet
+    container_name: uns-livenet # Can be anything
+    restart: always
+    environment:
+      UNS_NET: livenet
+      #FORGER_SECRET: ""
+      CORE_DB_HOST: postgres
+      CORE_DB_PORT: 5432
+      CORE_DB_DATABASE: uns_livenet
+      CORE_DB_USERNAME: uns
+      CORE_DB_PASSWORD: password
+    ports:
+      - "4001:4001"
+      #- "4003:4003"
+    cap_add:
+      - SYS_NICE
+      - SYS_RESOURCE
+      - SYS_TIME
+    networks:
+      - core
+    tty: true
+    links:
+      - postgres
+    depends_on:
+      - postgres
+volumes:
+  postgres:
+networks:
+  core:
+

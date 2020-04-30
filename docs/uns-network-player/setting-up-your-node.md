@@ -35,7 +35,7 @@ Orchestrators with Docker as a first-class citizen:
 For the moment, we have choosen to only describe the `docker-compose` setup.
 So, if you choose to run your <uns/> node on other platforms, share your own experience [on the <uns/> network of the forum!](https://forum.unik-name.com/c/uns-network/7)
 
-### Minimum requirements for running a SANDBOX relay or forger node
+### Minimum requirements for running a relay or forger node
 
 - Linux: Ubuntu 16.04 / 18.04, CentOS/RHEL 7 / 8 ...
 - 2+ vCPU x86/64 bits
@@ -91,7 +91,7 @@ The node starts logging a lot of information and tries to reach peers before syn
 You can stop the node by hitting `CTRL+C`.
 
 ::: tip
-You can read your node logs by running `docker-compose logs --tail 10 uns-livenet` (here, the last 10 log lines).
+You can read your node logs by running `docker-compose logs --tail 10 uns` (here, the last 10 log lines).
 :::
 
 ### Run a permanent relay with Docker Compose
@@ -116,7 +116,7 @@ Find and uncomment line `FORGER_SECRET` by removing the `#` at the beginning of 
 
 ```yaml{6}
   uns:
-    image: universalnamesystem/core:sandbox
+    image: universalnamesystem/core:livenet
     ...
     environment:
       ...
