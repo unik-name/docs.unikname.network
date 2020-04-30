@@ -7,23 +7,23 @@ module.exports = {
     "Official documentation for the uns.network blockchain and protocol (Universal-Name-System)",
   plugins: {
     sitemap: {
-      hostname: "https://docs.uns.network"
+      hostname: "https://docs.uns.network",
     },
     "@vuepress/last-updated": {
       transformer: (timestamp, lang) => {
         // UTC date (without time) as ISO format: 2019-09-17
         return new Date(timestamp).toISOString().split("T")[0];
-      }
+      },
     },
     "@vuepress/back-to-top": {},
     tabs: {},
     "@goy/svg-icons": {},
     "vuepress-plugin-container": {
-        type: 'information',
-        defaultTitle: '',
-        before: '<div class="information">',
-        after: '</div>',        
-      }
+      type: "information",
+      defaultTitle: "",
+      before: '<div class="information">',
+      after: "</div>",
+    },
   },
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
@@ -40,8 +40,8 @@ module.exports = {
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
       })();
-    `
-    ]
+    `,
+    ],
   ],
 
   themeConfig: {
@@ -55,7 +55,7 @@ module.exports = {
     activeHeaderLinks: true,
     nav: [
       { text: "Becoming a Network Player", link: "/uns-network-player/" },
-      { text: "Explorer", link: "https://explorer.uns.network/" }
+      { text: "Explorer", link: "https://explorer.uns.network/" },
     ],
     sidebar: [
       "/",
@@ -66,15 +66,21 @@ module.exports = {
         children: [
           ["/uns-network-introduction/", "Understanding uns.network"],
           ["/uns-network-tokens/", "The uns.network Tokens"],
-          ["/uns-network-introduction/did-unik", "UNIK Decentralized IDentifiers"]
-        ]
+          [
+            "/uns-network-introduction/did-unik",
+            "UNIK Decentralized IDentifiers",
+          ],
+        ],
       },
       {
         title: "Key concepts",
         sidebarDepth: 0,
         children: [
           ["/uns-network-key-concepts/", "Summary"],
-          ["/uns-network-key-concepts/cryptography-overview", "Cryptography Overview"],
+          [
+            "/uns-network-key-concepts/cryptography-overview",
+            "Cryptography Overview",
+          ],
           ["/uns-network-key-concepts/unik-did-nft", "Decentralized ID token"],
           ["/uns-network-key-concepts/unik-type", "Types of @unikname"],
           ["/uns-network-key-concepts/unik-pattern", "Patterns"],
@@ -88,7 +94,7 @@ module.exports = {
           //["/uns-network-key-concepts/nut-service", "Network Unit Services"],
           //["/uns-network-key-concepts/nut-contribution", "Network Unit Contributions"],
           //["/uns-network-key-concepts/donuts", "Directory of Network Unit Services"]
-        ]
+        ],
       },
       {
         title: "Using the uns.network",
@@ -99,19 +105,28 @@ module.exports = {
           ["/uns-use-the-network/api", "API"],
           ["/uns-use-the-network/sdk", "SDK"],
           ["/uns-use-the-network/wallet", "Wallet"],
-          ["/uns-use-the-network/cheatsheet", "Cheat Sheet"]
-        ]
+          ["/uns-use-the-network/cheatsheet", "Cheat Sheet"],
+        ],
       },
       ["/uns-network-unik-name-use-case/", "Use cases"],
       //["/uns-network-guides/", "Guides"],
       {
-        title: "Network Player",
+        title: "Becoming a Network Player",
         /* collapsable: false, */
+        sidebarDepth: 0,
         children: [
-          ["/uns-network-player/", "Becoming a network player"],
-          ["/uns-network-rewarding/", "Getting Rewards"],
-          ["/uns-network-setting-up-node/", "Setting up your Node"]
-        ]
+          ["/uns-network-player/", "Introduction"],
+          [
+            "/uns-network-player/creating-your-unikname-individual",
+            "Creating @unikname as an individual",
+          ],
+          [
+            "/uns-network-player/registering-as-delegate",
+            "Registering as Delegate",
+          ],
+          ["/uns-network-player/setting-up-your-node", "Setting up your node"],
+          ["/uns-network-player/last-steps", "Last steps"],
+        ],
       },
       {
         title: "Security",
@@ -119,18 +134,18 @@ module.exports = {
           ["/uns-network-security/", "Security & Hack Protections"],
           [
             "/uns-network-security/security-vulnerabilities",
-            "Security & Vulnerabilities"
-          ]
-        ]
+            "Security & Vulnerabilities",
+          ],
+        ],
       },
       {
         title: "More...",
         children: [
           ["/uns-network-qna/", "Q&A"],
           ["/uns-network-glossary/", "Glossary"],
-          ["/uns-network-powered-by-ark-io/", "Powered by ARK"]
-        ]
-      }
-    ]
-  }
+          ["/uns-network-powered-by-ark-io/", "Powered by ARK"],
+        ],
+      },
+    ],
+  },
 };
