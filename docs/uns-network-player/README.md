@@ -50,7 +50,7 @@ And for those who have all this, welcome to the community!
 Now let's go creating your @unikname as an individual by going to the [next part of this documentation](./creating-your-unikname-individual.html).
 
 
-::: tip
+::: tip organization @unikname
 
 If you have decided to create an `organization` @unikname, follow [this part of the documentation instead](./creating-your-unikname-organization.html).
 

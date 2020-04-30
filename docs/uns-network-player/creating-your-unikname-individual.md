@@ -6,20 +6,28 @@ home: false
 
 [[toc]]
 
-## Install My Unikname App
-
-The creation of your @unikname is done through My Unikname App. To access the application, follow this link with your *phone* (and your phone only): [https://my.unikname.app/](https://my.unikname.app/).
-
-:::tip
-*If you are on iOS, contact us directly on contact@unikname.com.*
-:::
-
-Once the application is installed on your home screen, launch the application and follow the steps displayed on your screen.
-
 ## Coupon
 
-Creating a @unikname requires a coupon. If you have one, you can continue. 
-Otherwise, contact us on *contact@unikname.com* to request one.
+You can create @unikname with a minium of 15 characters for free.
+
+If you want to create special @unikname with less than 15 charaters, it requires a coupon. and if you have one, you can continue. 
+
+Otherwise, contact us on [contact@unikname.com](mailto:contact@unikname.com) to request one.
+
+## Install the "My Unikname App"
+
+The creation of your @unikname is done through [My Unikname App](https://my.unikname.app/).
+To launch the application, follow this link with your **Android phone** (**and your phone only**):
+
+👉 [https://my.unikname.app/](https://my.unikname.app/).
+
+::: warning iOS users (iPhone or iPad)
+If you are on iOS, contact us directly on [contact@unikname.com](mailto:contact@unikname.com).
+:::
+
+TODO FVI
+
+Once the application is installed on your home screen, launch the application and follow the steps displayed on your screen.
 
 ## Create your @unikname
 
