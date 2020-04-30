@@ -7,15 +7,6 @@ title: "Becoming uns.network Player"
 
 [[toc]]
 
-## Getting some UNS
-
-On the <uns/> network, the functions we are going to use are blockchain transactions that have fees.
-It is therefore necessary to have [UNS](https://docs.uns.network/uns-network-tokens/#the-uns-token) to be able to carry out the rest of the operations.
-
-If you do not have a UNS, there are two possibilities:
-- Obtaining UNS via faucet
-- Come and ask for UNS on the [forum](https://forum.unik-name.com)
-
 ## Installing the <uns/> CLI
 
 The <uns/> Command Line Interface (CLI) makes it easy to manage your @unikname and Unikname apps directly from the terminal.

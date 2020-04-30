@@ -25,13 +25,23 @@ To launch the application, follow this link with your **Android phone** (**and y
 If you are on iOS, contact us directly on [contact@unikname.com](mailto:contact@unikname.com).
 :::
 
-TODO FVI
-
 Once the application is installed on your home screen, launch the application and follow the steps displayed on your screen.
+
+One of the first steps you will be asked is to create your pin code.
+It is this code that will allow you to access the application later and manage your @unikname.
+
+![pin-code](./images/pin-code.png)
+
 
 ## Create your @unikname
 
-Once you have your coupon, all you have to do is create your @unikname!
+On the next screen, choose the option that corresponds to your situation depending on whether you have a coupon ("I GOT A COUPON") or not ("GET A FREE @UNIKNAME").
+
+![homepage](./images/homepage.png)
+
+After you choose your option, you should arrive on a page to create your @unikname!
+
+![create-unikname](./images/create-unikname.png)
 
 :::tip
 *Once you've chosen a name, you won't be able to change it. So choose it carefully!*

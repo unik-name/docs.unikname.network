@@ -25,7 +25,7 @@ To do so:
 Once on the forum, send a private message to @Florian to be added to the Network Player group. This way, you will receive notifications of important communications that concern you.
 
 ::: tip Suggestions and support
-If you have any suggestions or encounter any problems with this tutoriel, give us your feedback on [our forum](https://forum.unik-name.com/c/uns-network/)!
+If you have any suggestions or encounter any problems with this tutorial, give us your feedback on [our forum](https://forum.unik-name.com/c/uns-network/)!
 :::
 
 

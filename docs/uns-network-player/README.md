@@ -14,9 +14,7 @@ Established in 2018, <uns/> is a DPoS blockchain and a protocol that has the mis
 
 ## What is Unikname?
 
-TODO: FVI : déplacer, simplifier
-
-Unikname Connect was born as an European alternative to social authentication solutions. We guarantee a confidential, secure and seamless sign up and sign in experience for your users. Privacy is our core value — it means that we don’t track user’s activity, share or store any data. Our objective is to meet users’ needs of confidentiality, and give them back control of their digital life and personal data. Our unique authentication solution is easy to integrate and can be live on your app and website in no time thanks to our fully comprehensive guide and SDK.
+If you want to know more about Unikname, the first product build on <uns/>, you could go to its website : [https://unikname.com](https://unikname.com).
 
 ## Implication behind the choice of your name and your type
 
