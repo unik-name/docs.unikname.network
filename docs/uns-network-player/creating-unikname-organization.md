@@ -77,19 +77,13 @@ Otherwise, contact us on [contact@unikname.com](mailto:contact@unikname.com) to 
 
 Once you have your voucher, all you have to do is create your @unikname!
 
-:::tip Choose your @unikname carefully
-*Once you've chosen a name, you won't be able to change it. So choose it carefully!*
-:::
-
 **Don't forget to backup and secure your passphrase**, it will allow you to retrieve access to your @unikname in case you change your device.
 Neither <uns/>, nor Unikname will be able to give you back access to your @unikname.
-
-## Creating your @unikname
 
 With <uns/> CLI you can create your own UNIK token using [`unik:create`](/uns-use-the-network/cli.html#unik-create) command.
 
 :::warning Choosing the @unikname
-Choose the @unikname wisely. Indeed, it'll be disclosed to other people and they'll know you by this @unikname.
+Choose the @unikname wisely. Indeed, it'll be disclosed to other people and they'll know you by this @unikname and once you've chosen a name, you won't be able to change it.
 :::
 
 As example, if you want to create UNIK `individual` token `bob`:
@@ -115,6 +109,6 @@ Write somewhere your unikId (`id` here, with value `8f79445a84e3664088008927aa11
 
 With the transaction id given into your command prompt, you can check the @unikname creation through [the explorer](https://explorer.uns.network/). Look for the @unikname by its unikId in the search bar on the top.
 
-You can also directly go to `https://explorer.uns.network/${unikid}`. For example, https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25 for the @unikname `Space Elephant`.
+You can also directly go to `https://explorer.uns.network/${unikid}`. For example, [https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25](https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25) for the @unikname `Space Elephant`.
 
 And now, [let's go registering your organization as a delegate](./registering-as-delegate).
