@@ -70,8 +70,6 @@ uns cryptoaccount:create
 
 ## Vouchers
 
--- contact@unikname.com
-
 Creating a @unikname requires a voucher. If you have one, you can continue. 
 Otherwise, contact us on [contact@unikname.com](mailto:contact@unikname.com) to request one.
 
