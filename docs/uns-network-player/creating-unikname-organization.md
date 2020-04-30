@@ -86,13 +86,11 @@ With <uns/> CLI you can create your own UNIK token using [`unik:create`](/uns-us
 Choose the @unikname wisely. Indeed, it'll be disclosed to other people and they'll know you by this @unikname and once you've chosen a name, you won't be able to change it.
 :::
 
-As example, for creating the UNIK `organization` token `SpaceElephant`:
+As example, for creating the UNIK `organization` token `SpaceElephant` with the voucher you have received:
 
 ```bash
-uns unik:create --explicitValue "SpaceElephant" --type organization --unik-voucher
-
+$ uns unik:create --explicitValue "SpaceElephant" --type organization --unik-voucher "HERE_THE_VOUCHER"
 Enter your crypto account passphrase (12 words phrase): ***************************
-
 {
   "data": {
     "id": "ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25",
