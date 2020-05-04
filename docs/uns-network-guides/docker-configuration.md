@@ -4,7 +4,9 @@
 
 ## Docker images
 
-UNS Docker images are available on Docker Hub: https://hub.docker.com/r/universalnamesystem/core
+UNS Docker images are available on Docker Hub: [https://hub.docker.com/r/universalnamesystem/core](https://hub.docker.com/r/universalnamesystem/core).
+
+Images for `livenet` and `sandbox` can be found.
 
 ## Docker environment variables
 
