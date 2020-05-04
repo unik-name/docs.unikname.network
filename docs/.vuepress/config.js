@@ -109,7 +109,6 @@ module.exports = {
         ],
       },
       ["/uns-network-unik-name-use-case/", "Use cases"],
-      //["/uns-network-guides/", "Guides"],
       {
         title: "Becoming a Network Player",
         /* collapsable: false, */
@@ -126,6 +125,19 @@ module.exports = {
           ],
           ["/uns-network-player/setting-up-your-node", "Setting up your node"],
           ["/uns-network-player/last-steps", "Last steps"],
+        ],
+      },
+      {
+        title: "Guides",
+        children: [
+          [
+            "/uns-network-guides/docker-configuration",
+            "Docker container configuration",
+          ],
+          [
+            "/uns-network-guides/docker-compose-management",
+            "Docker Compose management",
+          ],
         ],
       },
       {
