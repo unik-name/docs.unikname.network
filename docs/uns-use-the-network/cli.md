@@ -511,13 +511,14 @@ With <uns/> CLI you can create your own UNIK token using `unik:create` command.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 - `--fee`: Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `--unik-voucher`: Use a UNIK voucher to create this UNIK
+- `--coupon` : Specify a @unikname coupon code.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Usage
 
 ```bash
-$ uns unik:create --explicitValue {explicitValue} --type [individual|organization|network]
+$ uns unik:create --explicitValue {explicitValue} --type [individual|organization|network] --coupon {coupon}
 ```
 
 #### Examples
