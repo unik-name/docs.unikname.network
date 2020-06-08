@@ -55,11 +55,11 @@ UYWaMkArHJjMecuHgs6LYapFtvV27QeafX
 Bob has decided to share publicly one of it's BTC public address and his ARK public address. Let see how easy it is to get it.
 
 ```bash
-$ uns resolve "@bob?usr/ark" --format=raw 
-UYWaMkArHJjMecuHgs6LYapFtvV27QeafX
+$ uns resolve "@bob?usr/wallet/ark" --format=raw 
+ark:AMN48dmd3g8rgAT1xhTYfi4zwEBWpCjNDk
 
-$ uns resolve "@bob?usr/btc" --format=raw 
-UYWaMkArHJjMecuHgs6LYapFtvV27QeafX
+$ uns resolve "@bob?usr/wallet/btc" --format=raw 
+btc:bc1qt9qrhany5l0yn040rak4h9jcsu6v9d48sysrna
 
 ```
 
@@ -131,7 +131,7 @@ TODO:ecran
 
 You get it.
 
-## 5. Install the Unikname APP on yout smartphone
+## 5. Install the Unikname APP on your smartphone
 
 Using your @unikname for authentication required to install the Unikname APP on your smartphone and setup your @unikname on it.
 
