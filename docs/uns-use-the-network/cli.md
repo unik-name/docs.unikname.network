@@ -708,7 +708,7 @@ Set (add or update) URLs of UNIK token.
 #### Parameters
 - `--url` (required) url to verify then set as UNIK properties 
 
-- `--url-name` (required) url name to verify then used as key for UNIK properties
+- `--url-name` (required) A name you choose to identify this verified URL. It will used as a UNIK property key, so it must follow the [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik) (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.uns.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0)).
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -716,6 +716,14 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 ```bash
 $ uns unik:verify-url {TARGET} --url "{Url}" --url-name "{UrlName}"
+```
+
+#### Example
+
+Verify the URL `https://www.mycompany.com` for the organization @unikname `@2:MyCompany` (or `@organization:MyCompany`) and name it `corp-website`:
+
+```bash
+$ uns unik:verify-url @2:MyCompany --url "https://www.mycompany.com" --url-name "corp-website"
 ```
 
 ### `properties:set`
