@@ -93,7 +93,7 @@ module.exports = {
           //["/uns-network-key-concepts/nsp", "Network Services Providers"],
           //["/uns-network-key-concepts/nut-service", "Network Unit Services"],
           //["/uns-network-key-concepts/nut-contribution", "Network Unit Contributions"],
-          //["/uns-network-key-concepts/donuts", "Directory of Network Unit Services"]
+          ["/uns-network-key-concepts/donuts", "Directory of Network Unit Services"]
         ],
       },
       {
