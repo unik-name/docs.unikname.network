@@ -18,9 +18,9 @@ Welcome to the <uns/> Player hub. You're are at the right place to find guides a
 
 ## [Becoming a Network Player](/uns-network-player/)
 
-## [Get Rewards](/uns-network-rewarding/)
-
 ## [Setting-up your Node](/uns-network-setting-up-node/)
+
+## [Guides: Docker Container, Docker Compose...](/uns-network-guides/docker-configuration)
 
 ## [Security](/uns-network-security/)
 

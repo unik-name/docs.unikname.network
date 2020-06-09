@@ -33,12 +33,19 @@ module.exports = {
       {},
       `
       var _paq = window._paq || [];
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setDomains", ["*.unik-name.com", "*.unikname.com", "*.unikname.app",  "*.uns.network"]]);
+      _paq.push(["enableCrossDomainLinking"]);
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      _paq.push(['enableHeartBeatTimer', 15]);
       (function() {
         var u="https://kpi.unik-name.com/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setTrackerUrl', u+'r.php']);
         _paq.push(['setSiteId', '2']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
       })();
     `,
     ],
@@ -109,7 +116,6 @@ module.exports = {
         ],
       },
       ["/uns-network-unik-name-use-case/", "Use cases"],
-      //["/uns-network-guides/", "Guides"],
       {
         title: "Becoming a Network Player",
         /* collapsable: false, */
@@ -126,6 +132,19 @@ module.exports = {
           ],
           ["/uns-network-player/setting-up-your-node", "Setting up your node"],
           ["/uns-network-player/last-steps", "Last steps"],
+        ],
+      },
+      {
+        title: "Guides",
+        children: [
+          [
+            "/uns-network-guides/docker-configuration",
+            "Docker container configuration",
+          ],
+          [
+            "/uns-network-guides/docker-compose-management",
+            "Docker Compose management",
+          ],
         ],
       },
       {

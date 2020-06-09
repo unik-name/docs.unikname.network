@@ -339,7 +339,7 @@ Send owned UNS protocol tokens to another crypto account.
 
 #### Arguments
 - `AMOUNT` (required):  The quantity of UNS tokens to send to the recipient.
-- `TARGET` (required):  The recipient address, public key, @unikname or unik ID.
+- `TARGET` (required):  The recipient address, public key, @unikname or unik ID with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
@@ -436,7 +436,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
 
-- `TARGET` (required):  The crypto account address, public key or a @unikname owned by the account.
+- `TARGET` (required):  The crypto account address, public key or a @unikname owned by the account with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -574,7 +574,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
 
-- `TARGET` (required): the @unikname or @unikname token ID
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -626,7 +626,7 @@ If a @unikname is provided, --explicitValue flag can be ommited, the @unikname w
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): the @unikname or @unikname token ID
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -661,7 +661,7 @@ data:
 Check if UNIK has one or more disclosed explicit value.
 
 #### Arguments
-- `TARGET` (required): the @unikname or @unikname token ID
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
@@ -703,12 +703,12 @@ confirmations: 833
 Set (add or update) URLs of UNIK token.
 
 #### Arguments
-- `TARGET` (required): the @unikname or @unikname token ID (see https://docs.uns.network/uns-use-the-network/cheatsheet.html#did-decentralized-identifier)
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 - `--url` (required) url to verify then set as UNIK properties 
 
-- `--url-name` (required) url name to to verify then use as key for UNIK properties
+- `--url-name` (required) A name you choose to identify this verified URL. It will used as a UNIK property key, so it must follow the [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik) (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.uns.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0)).
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -716,6 +716,14 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 ```bash
 $ uns unik:verify-url {TARGET} --url "{Url}" --url-name "{UrlName}"
+```
+
+#### Example
+
+Verify the URL `https://www.mycompany.com` for the organization @unikname `@2:MyCompany` (or `@organization:MyCompany`) and name it `corp-website`:
+
+```bash
+$ uns unik:verify-url @2:MyCompany --url "https://www.mycompany.com" --url-name "corp-website"
 ```
 
 ### `properties:set`
@@ -738,7 +746,7 @@ You cannot register more than 3 user properties by default.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): the @unikname or @unikname token ID
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -783,7 +791,7 @@ The only properties that can be unset are those whose key starts with `usr/`.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): the @unikname or @unikname token ID
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -825,7 +833,7 @@ Get properties of UNIK token. The command will fail if the minimum number of con
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): the @unikname or @unikname token ID
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -882,7 +890,7 @@ Get the value of a specific property of a UNIK token.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): the @unikname or @unikname token ID
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
