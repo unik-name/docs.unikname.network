@@ -509,7 +509,8 @@ With <uns/> CLI you can create your own UNIK token using `unik:create` command.
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
 - `--type` (required): Type of your token [individual/organization/network]
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
-- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `--fee`: Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `--unik-voucher`: Use a UNIK voucher to create this UNIK
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -520,6 +521,9 @@ $ uns unik:create --explicitValue {explicitValue} --type [individual|organizatio
 ```
 
 #### Examples
+
+##### Create a UNIK for the individual @unikname `bob`
+
 As example, if you want to create UNIK `individual` token `bob`:
 ```bash
 $ uns unik:create --explicitValue bob --type individual --verbose
@@ -535,6 +539,18 @@ Enter your crypto account passphrase (12 words phrase):
 Your passphrase will be hidden, no trace in your terminal history:
 ```
 Enter your crypto account passphrase (12 words phrase): ********************************************************************************
+```
+
+##### Create a UNIK for the organization @unikname `MyCompany`
+
+```bash
+$ unik:create --explicitValue "MyCompany" --type organization
+```
+
+#### Create a UNIK for the organization @unikname `MyCompany` with a UNIK voucher
+
+```bash
+$ unik:create --explicitValue "MyCompany" --type organization --unik-voucher "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NksifQ.eyJpYXQiOjE1OTEyOTk5OTEsImV4cCI6MTU5MTMwMTc5MSwianRpIjoiMU9aVmYzRnlueC1lY3VrR2d6TUJCIiwiYXVkIjoiZGlkOnVuaWs6dW5pZDpmYmZiZTdkOWU4YzAwNWYxYTk5MzdkOWZkMTdjNGVmN2RhMmZmODAzN2E3MWU2Y2I3ODQ3YjMwMmVkYTRkMDhWs6dW5pZDo1YWViNzU1NzM5ZGRhMDM4MDk1MzI4OTY2Y2M3Mzc1YzNlZGM4NWM0NTVlNTY2NTlhZjEwNjg4ZDIwZWFlYzk4IiwiYXV0aG9yaXphdGlvbnMiOnsic2VydmljZXMiOlsxMl19LCJpc3MiOiJkaWQ6dW5pazp1bmlkOmZiZmJlN2Q5ZThjMDA1ZjFhOTkzN2Q5ZmQxN2M0ZWY3ZGEyZmY4MDM3YTcxZTZjYjc4NDdiMzAyZWRhNGQwOGEifQ.3wkJYO11wQXZtaOp_r3CTxXR77prpqsFcZvFdjOGQF3rjp7toR2vTNLi6mxwN8EUndxM3pSEKLg-W2maSInvww"
 ```
 
 
