@@ -17,13 +17,9 @@ Otherwise, contact us on [contact@unikname.com](mailto:contact@unikname.com) to 
 ## Install the "My Unikname App"
 
 The creation of your @unikname is done through [My Unikname App](https://my.unikname.app/).
-To launch the application, follow this link with your **Android phone** (**and your phone only**):
+To launch the application, follow this link with your **Android smartphone or iPhone** (**and your phone only**):
 
 👉 [https://my.unikname.app/](https://my.unikname.app/).
-
-::: warning iOS users (iPhone or iPad)
-If you are on iOS, contact us directly on [contact@unikname.com](mailto:contact@unikname.com).
-:::
 
 Once the application is installed on your home screen, launch the application and follow the steps displayed on your screen.
 
