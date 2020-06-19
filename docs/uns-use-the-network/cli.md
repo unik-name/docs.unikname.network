@@ -346,6 +346,8 @@ Send owned UNS protocol tokens to another crypto account.
 - `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
 - `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
 - `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
+- `--text`: Publicly motivate your tokens sending. This reason will be written on chain ​​forever.
+- `--[no]-text-check`: Check if user knows that this text will be readable publicly forever. (--no-text-check to bypass this check).
 
 Some [global parameters](#global-parameters) may apply to this command.
 
