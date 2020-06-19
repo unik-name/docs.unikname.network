@@ -500,7 +500,7 @@ $ uns cryptoaccount:set-second-passphrase
 }
 ```
 
-### `unik:create`
+### `unik:create` <Badge text="updated 4.0.0"/>
 
 #### Introduction
 With <uns/> CLI you can create your own UNIK token using `unik:create` command.
@@ -511,7 +511,7 @@ With <uns/> CLI you can create your own UNIK token using `unik:create` command.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 - `--fee`: Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `--unik-voucher`: Use a UNIK voucher to create this UNIK
-- `--coupon` : Specify a @unikname coupon code.
+- `--coupon`: Use a COUPON to create this UNIK <Badge text="4.0.0"/>
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -934,7 +934,7 @@ value: +33606060606
 confirmations: 833
 ```
 
-### `delegate:vote`
+### `delegate:vote` <Badge text="breaking 4.0.0"/>
 
 #### Introduction
 
@@ -1076,7 +1076,7 @@ Resignation of delegate `@Bob`
 $ uns delegate:resign "@Bob"
 ```
 
-### `update` <Badge text="3.0.0"/>
+### `update` <Badge text="new 3.0.0"/>
 
 #### Introduction
 
