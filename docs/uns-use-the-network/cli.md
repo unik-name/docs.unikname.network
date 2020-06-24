@@ -614,10 +614,13 @@ $ uns unik:read @bob -f yaml
 $ uns unik:read @bob -f yaml
 data:
   id: 2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
-  ownerAddress: UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
   creationBlock: "15218398688380119048"
   creationTransaction: 3831b7abdf68388c4f66663f6e655de996816e53314f1afe94a05f3da79f8d5e
   creationDate: 2019-09-19T06:53:48.000Z
+  owner:
+    address: UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe
+    balance: 109
+    token: UNS
   properties:
     - type: "1"
 chainmeta:
