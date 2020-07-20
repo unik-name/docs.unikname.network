@@ -1081,6 +1081,37 @@ Resignation of delegate `@Bob`
 $ uns delegate:resign "@Bob"
 ```
 
+### `badges:claim`
+
+#### Introduction
+
+This command allows you to claim following badges for your UNIK:
+- Pioneer: "Innovator" before 1500 UNIKs or "Early adopter" till 150.000 UNIKs on chain when claiming the badge.
+
+#### Parameters
+
+- `-b, --badge` (required): one of the followings badges identifier: [pioneer]
+#### Arguments
+- `ID` (required):  The unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+
+#### Parameters
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns badges:claim {ID Unikname} -b {badge name}
+```
+
+#### Examples
+
+Claim Pioneer badge
+
+```bash
+$ uns badges:claim "@Bob" -b pioneer
+```
+
 ### `update` <Badge text="new 3.0.0"/>
 
 #### Introduction
