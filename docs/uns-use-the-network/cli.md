@@ -939,6 +939,96 @@ value: +33606060606
 confirmations: 833
 ```
 
+### `properties:register`
+
+#### Introduction
+Initialize ownership verification process of a unik property (for example a domain name).
+This command generate a verification package "uns-verification.txt" which will be used in the next steps of the verification process.
+This package expires after 72h.
+
+#### Parameters
+
+
+- `-V, --value` (required): Value of the Unik property to verify.
+- `-t, --type` {url}: type of unik property to register. Default to "url".
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Arguments
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+
+#### Usage
+
+```bash
+$ uns properties:register {TARGET} -V {domainUrl}
+```
+
+#### Examples
+
+##### Success example
+
+Register www.lambo.moon
+```bash
+$ uns properties:register @bob -V "www.lambo.moon"
+```
+
+##### Success output example
+
+```bash
+$ uns properties:register @bob -V "www.lambo.moon" -f yaml
+data:
+  type: url
+  value: www.lambo.moon
+  filename: uns-verification.txt
+  verificationKey: TOlzvZCLq2wufJOg7RjNE
+  expirationDate: 2020-08-03T08:02:57.233Z
+
+```
+
+### `properties:verify`
+
+#### Introduction
+Finalize ownership verification process of a unik property.
+For domain name verification, three methods are available: html, file and whitelist.
+Prior using html and file methods, a verification package should be generated using `properties:register` command.
+
+#### Parameters
+
+- `-c, --url-channel` {html, file, whitelist}: method used for verification.
+- `-t, --type` {url}: type of unik property to register. Default to "url".
+- `--url-name` (optionnal): Property label. Used as property key of UNIK property.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Arguments
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+
+#### Usage
+
+```bash
+$ uns properties:verify {TARGET} --url-channel {html, file, whitelist}
+```
+
+#### Examples
+
+##### Success example
+
+Verify www.lambo.moon with html method
+```bash
+$ uns properties:verify @bob --url-channel html
+```
+
+##### Success output example
+
+```bash
+$ uns properties:verify @bob --url-channel html -f yaml
+
+unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
+transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
+confirmations:  1
+
+```
+
 ### `delegate:vote` <Badge text="breaking 4.0.0"/>
 
 #### Introduction
