@@ -995,7 +995,7 @@ You can verify the ownership of a site by adding a`<meta>` tag to the HTML of th
 ...
 ```
 
-** You must replace the `content` value by the `verificationKey` value provided by the [`properties:register`](#properties-register) command**.
+**You must replace the `content` value by the `verificationKey` value provided by the [`properties:register`](#properties-register) command**.
 
 An UNS URL Checker will verify that the meta tag exists in the correct location.
 If it can't find the tag, it'll give you information about the error it encountered.
