@@ -718,36 +718,6 @@ isDisclosed: true
 confirmations: 833
 ```
 
-### `unik:verify-url`
-
-#### Introduction
-
-Set (add or update) URLs of UNIK token.
-
-#### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
-
-#### Parameters
-- `--url` (required) url to verify then set as UNIK properties 
-
-- `--url-name` (required) A name you choose to identify this verified URL. It will used as a UNIK property key, so it must follow the [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik) (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.uns.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0)).
-
-Some [global parameters](#global-parameters) may apply to this command.
-
-#### Usage
-
-```bash
-$ uns unik:verify-url {TARGET} --url "{Url}" --url-name "{UrlName}"
-```
-
-#### Example
-
-Verify the URL `https://www.mycompany.com` for the organization @unikname `@2:MyCompany` (or `@organization:MyCompany`) and name it `corp-website`:
-
-```bash
-$ uns unik:verify-url @2:MyCompany --url "https://www.mycompany.com" --url-name "corp-website"
-```
-
 ### `properties:set`
 
 #### Introduction
@@ -939,12 +909,13 @@ value: +33606060606
 confirmations: 833
 ```
 
-### `properties:register`
+### `properties:register` <Badge text="new 4.2.0"/>
 
 #### Introduction
 Initialize ownership verification process of a unik property (for example a domain name).
-This command generate a verification package "uns-verification.txt" which will be used in the next steps of the verification process.
-This package expires after 72h.
+This command generates a verification package `uns-verification.txt` which will be used in the next steps of the verification process with the [`properties:verify`](#properties-verify) command.
+
+**This package expires after 72h**.
 
 #### Parameters
 
@@ -965,43 +936,42 @@ $ uns properties:register {TARGET} -V {domainUrl}
 
 #### Examples
 
-##### Success example
-
-Register www.lambo.moon
-```bash
-$ uns properties:register @bob -V "www.lambo.moon"
-```
-
-##### Success output example
+Register `www.mycompany.com` site for the organization @unikname `@2:MyCompany` (or `@organization:MyCompany`):
 
 ```bash
-$ uns properties:register @bob -V "www.lambo.moon" -f yaml
-data:
-  type: url
-  value: www.lambo.moon
-  filename: uns-verification.txt
-  verificationKey: TOlzvZCLq2wufJOg7RjNE
-  expirationDate: 2020-08-03T08:02:57.233Z
-
+$ uns properties:register @2:MyCompany -V "www.mycompany.com"
+{
+  "data": {
+    "type": "url",
+    "value": "www.mycompany.com",
+    "filename": "uns-verification.txt",
+    "verificationKey": "TOlzvZCLq2wufJOg7RjNE",
+    "expirationDate": "2020-08-15T12:39:31.000Z"
+  }
+}
 ```
 
-### `properties:verify`
+The `verificationKey` will be used in the next steps of the verification process with the [`properties:verify`](#properties-verify) command.
+
+### `properties:verify` <Badge text="new 4.2.0"/>
 
 #### Introduction
 Finalize ownership verification process of a unik property.
-For domain name verification, three methods are available: html, file and whitelist.
-Prior using html and file methods, a verification package should be generated using `properties:register` command.
+For domain name verification, three channels are available: html, file and whitelist.
+Prior using html and file channels, a verification package should be generated using [`properties:register`](#properties-register) command.
+
+As a use case, this command is used to [verify an URL when integrating Unikname Connect on a website](https://docs.unikname.com/guides/how-to-verify-url).
 
 #### Parameters
 
-- `-c, --url-channel` {html, file, whitelist}: method used for verification.
-- `-t, --type` {url}: type of unik property to register. Default to "url".
-- `--url-name` (optionnal): Property label. Used as property key of UNIK property.
+- `-c, --url-channel` (required) {html, file, whitelist} Channel to use for verification.
+- `--url-name` A name you can choose to identify this verified URL. It will used as a UNIK property key, so it must follow the [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik) (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.uns.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0)).
+
 
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier).See examples below for more information.
 
 #### Usage
 
@@ -1009,25 +979,85 @@ Some [global parameters](#global-parameters) may apply to this command.
 $ uns properties:verify {TARGET} --url-channel {html, file, whitelist}
 ```
 
-#### Examples
+#### Example 1: verify an URL with an HTML tag
 
-##### Success example
+You can verify the ownership of a site by adding a`<meta>` tag to the HTML of the home page of the site to verify URL:
 
-Verify www.lambo.moon with html method
-```bash
-$ uns properties:verify @bob --url-channel html
+```html
+<html>
+  <head>
+    <title>Page title</title>
+    ...
+    <meta name="uns-url-checker-verification" content="the verification key named 'verificationKey'">
+    ...
+  </head>
+<body>
+...
 ```
 
-##### Success output example
+** You must replace the `content` value by the `verificationKey` value provided by the [`properties:register`](#properties-register) command**.
+
+An UNS URL Checker will verify that the meta tag exists in the correct location.
+If it can't find the tag, it'll give you information about the error it encountered.
+
+The following example verify the previously register URL `https://www.mycompany.com` for the organization @unikname `@2:MyCompany` (or `@organization:MyCompany`) with the HTML tag channel:
 
 ```bash
-$ uns properties:verify @bob --url-channel html -f yaml
-
-unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
-transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
-confirmations:  1
-
+$ uns unik:verify @2:MyCompany -c html
 ```
+
+##### Potential errors
+
+The following verification errors can occur with HTML tag verification:
+
+- Meta tag not found/in the wrong location
+
+  The verification meta tag must be within the `<head>` section of the page.
+  If you see errors, check the following:
+
+  - Is the meta tag on the correct page?
+
+      The URL Checker looks for it on the site's home page.
+      This is the page that the web server returns when someone requests the site (such as http://www.mycompany.com/).
+      This page is often named `index.html` or `index.htm`, but could be named differently, depending on your server's configuration.
+  
+  - Is the meta tag in the correct place on the page?
+
+    The URL Checker looks for it in the page's <head> section. An example of correct placement is shown here:
+
+    ```html
+    <html>
+      <head>
+        <title>Page title</title>
+        ...
+        <meta name="uns-url-checker-verification" content="verificationKey">
+        ...
+      </head>
+    <body>
+    ...
+    ```
+
+    If you're using a web editor or a WYSIWYG editor to edit your page, make sure to select the 'Edit HTML' option or to edit the source code of the page.
+
+- The meta tag is incorrect
+
+  The URL Checker found the verification meta tag, but the content was incorrect.
+  To avoid errors, copy and paste the `verificationKey` value provided by the [`properties:register`](#properties-register) command.
+
+- The verification package is expired
+
+  The verification package expires after 72h, so you must re-register the URL with the [`properties:register`](#properties-register) command.
+
+#### Example 2: verify an URL with a file to upload
+
+TODO
+
+#### Notes
+
+- User-Agent
+
+  The user agent that performs HTML tag verification has the user agent 
+  token `UNS-URL-Checker-Verification` and the full user agent string is `Mozilla/5.0 (compatible; UNS-URL-Checker-Verification/1.0; <DID>)` where `DID` is the ID of the URL Checker that performs the verification (such as [`did:unik:unid:fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a`](https://explorer.uns.network/uniks/fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a) for on of the official URL Checkers).
 
 ### `delegate:vote` <Badge text="breaking 4.0.0"/>
 
