@@ -1023,7 +1023,7 @@ The following verification errors can occur with HTML tag verification:
   
   - Is the meta tag in the correct place on the page?
 
-    The URL Checker looks for it in the page's <head> section. An example of correct placement is shown here:
+    The URL Checker looks for it in the page's `<head>` section. An example of correct placement is shown here:
 
     ```html
     <html>
