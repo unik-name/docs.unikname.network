@@ -65,7 +65,7 @@ uns cryptoaccount:create
 ```
 
 :::warning
-**You have to copy and save preciously these informations! If you lost these informations, you'll also lost access to your cryptoaccount and your @unikname.**
+**You have to copy and save preciously these informations! If you lose these informations, you'll also lose access to your cryptoaccount and your @unikname.**
 :::
 
 ## Using a COUPON to create the organization @unikname 
