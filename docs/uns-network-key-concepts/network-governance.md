@@ -1,7 +1,16 @@
 ---
 home: false
 title: "Understanding Governance of uns.network blockchain"
-tags: governance networkplayer dpos delegate stakholerds individual organization network type
+tags:
+  - governance
+  - networkplayer
+  - dpos
+  - delegate
+  - stakeholder
+  - individual
+  - organization
+  - network
+  - type
 ---
 
 # Understanding governance of uns.network blockchain
