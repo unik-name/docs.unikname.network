@@ -1,7 +1,15 @@
 ---
 home: false
 title: "Unikname DID UNIK Badges"
-tags: badge governance networkplayer-role pioneer label xp sponsorship
+tags: 
+  - badge
+  - governance
+  - network player
+  - role
+  - pioneer
+  - label
+  - xp
+  - sponsorship
 ---
 
 # Understanding Badges
