@@ -718,6 +718,43 @@ isDisclosed: true
 confirmations: 833
 ```
 
+### `unik:everlasting`
+
+#### Introduction
+Buy Everlasting status for a @unikname.
+
+#### Arguments
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+
+#### Parameters
+- `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns unik:everlasting {TARGET}
+```
+
+#### Examples
+
+##### Success example
+
+Claim everlasting status for `@bob`
+```bash
+$ uns unik:everlasting @bob
+```
+
+##### Success output example
+
+```bash
+$ uns unik:everlasting @bob -f yaml
+
+transaction: d6046fd481d30796e7014d745af62cb6d54c43ec6073ecd93a534c2477455ce6
+confirmations: 833
+```
+
 ### `properties:set`
 
 #### Introduction
