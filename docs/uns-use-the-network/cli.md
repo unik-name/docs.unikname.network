@@ -1043,6 +1043,8 @@ The following example verify the previously register URL `https://www.mycompany.
 $ uns unik:verify @2:MyCompany -c html
 ```
 
+During the verification, the website icon (link icon or favicon) will be uploaded and used for Unikname Connect process. 
+
 ##### Potential errors
 
 The following verification errors can occur with HTML tag verification:
