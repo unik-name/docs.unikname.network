@@ -718,7 +718,7 @@ isDisclosed: true
 confirmations: 833
 ```
 
-### `unik:everlasting`
+### `unik:everlasting` <Badge text="added 4.2.0" />
 
 #### Introduction
 Buy Everlasting status for a @unikname.
@@ -946,7 +946,7 @@ value: +33606060606
 confirmations: 833
 ```
 
-### `properties:register` <Badge text="new 4.2.0"/>
+### `properties:register` <Badge text="added 4.2.0"/>
 
 #### Introduction
 Initialize ownership verification process of a unik property (for example a domain name).
@@ -990,7 +990,7 @@ $ uns properties:register @2:MyCompany -V "www.mycompany.com"
 
 The `verificationKey` will be used in the next steps of the verification process with the [`properties:verify`](#properties-verify) command.
 
-### `properties:verify` <Badge text="new 4.2.0"/>
+### `properties:verify` <Badge text="added 4.2.0"/>
 
 #### Introduction
 Finalize ownership verification process of a unik property.
@@ -1096,7 +1096,7 @@ TODO
   The user agent that performs HTML tag verification has the user agent 
   token `UNS-URL-Checker-Verification` and the full user agent string is `Mozilla/5.0 (compatible; UNS-URL-Checker-Verification/1.0; <DID>)` where `DID` is the ID of the URL Checker that performs the verification (such as [`did:unik:unid:fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a`](https://explorer.uns.network/uniks/fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a) for on of the official URL Checkers).
 
-### `delegate:vote` <Badge text="breaking 4.0.0"/>
+### `delegate:vote` <Badge text="breaking 4.0.0" type="warning" />
 
 #### Introduction
 
@@ -1269,7 +1269,7 @@ Claim Pioneer badge
 $ uns badges:claim "@Bob" -b pioneer
 ```
 
-### `update` <Badge text="new 3.0.0"/>
+### `update`
 
 #### Introduction
 
