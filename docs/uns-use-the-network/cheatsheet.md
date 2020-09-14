@@ -104,7 +104,7 @@ Prices for individual patterns:
 | 500000 | **Individual - Latin Safetypo - 3** | Letters and digits from Safetypo alphabet, exactly 3 characters | 
 | 50000 | **Individual - Latin Safetypo - Tiny** | Letters and digits from  Safetypo alphabet, 4 or 5 characters | 
 | 5000 | **Individual - Latin Safetypo - Short** | Letters and digits from Safetypo alphabet, 6 or 7 characters | 
-| 100 | **Individual - Latin Safetypo - Normal** | Letters and digits from Safetypo alphabet, between 8 and 14 characters | 
+| 500 | **Individual - Latin Safetypo - Normal** | Letters and digits from Safetypo alphabet, between 8 and 14 characters | 
 | 10 | **Individual - Latin Safetypo - Long** | Letters and digits from Safetypo alphabet, more than 15 characters | 
 
 Prices for organization patterns:
