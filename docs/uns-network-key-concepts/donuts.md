@@ -45,14 +45,14 @@ These services can be used through:
 
 ### For UNIK of type Organization
 | NUTS ID | Service | NUTS Description | Cost (UNS) | Default Fees (UNS) |
-|-|-|-|-|
-| S11 | Mint UNIK NFT | UNIK Organization - Digits | 25 000 |
-| S12 | Mint UNIK NFT | UNIK Organization - Latin | 25 000 |
+|-|-|-|-|-|
+| S11 | Mint UNIK NFT | UNIK Organization - Digits | 25 000 | 1 |
+| S12 | Mint UNIK NFT | UNIK Organization - Latin | 25 000 | 1 |
 
 ### For UNIK of type Network 
 | NUTS ID | Service | NUTS Description | Cost (UNS) | Default Fees (UNS) |
-|-|-|-|-|
-| S13 | Mint UNIK NFT | UNIK Network | 1 000 000 |
+|-|-|-|-|-|
+| S13 | Mint UNIK NFT | UNIK Network | 1 000 000 | 1 |
 
 :::tip
 All theses services are provided by `@network:NFT-Factory`. You can see the [NFT-Fatory provider within the chain explorer](https://explorer.uns.network/uniks/fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a).
