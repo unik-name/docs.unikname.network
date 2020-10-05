@@ -1002,7 +1002,7 @@ As a use case, this command is used to [verify an URL when integrating Unikname 
 #### Parameters
 
 - `-c, --url-channel` (required) {html, file, whitelist} Channel to use for verification.
-- `--url-name` A name you can choose to identify this verified URL. It will used as a UNIK property key, so it must follow the [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik) (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.uns.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0)).
+- `--url-name` A name you can choose to identify this verified URL. It must be `a-zA-Z0-9_-` chars (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.uns.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0)).
 
 
 Some [global parameters](#global-parameters) may apply to this command.
