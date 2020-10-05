@@ -502,9 +502,9 @@ $ uns cryptoaccount:set-second-passphrase
 }
 ```
 
-### `unik:create` <Badge text="updated 4.0.0"/>
+### `unik:create`
 
-#### Introduction
+#### Introduction <Badge text="updated 4.0.0"/>
 With <uns/> CLI you can create your own UNIK token using `unik:create` command.
 
 #### Parameters
@@ -718,9 +718,9 @@ isDisclosed: true
 confirmations: 833
 ```
 
-### `unik:everlasting` <Badge text="added 4.2.0" />
+### `unik:everlasting`
 
-#### Introduction
+#### Introduction <Badge text="added 4.2.0" />
 Buy Everlasting status for a @unikname.
 
 #### Arguments
@@ -946,9 +946,9 @@ value: +33606060606
 confirmations: 833
 ```
 
-### `properties:register` <Badge text="added 4.2.0"/>
+### `properties:register`
 
-#### Introduction
+#### Introduction <Badge text="added 4.2.0"/>
 Initialize ownership verification process of a unik property (for example a domain name).
 This command generates a verification package `uns-verification.txt` which will be used in the next steps of the verification process with the [`properties:verify`](#properties-verify) command.
 
@@ -990,9 +990,9 @@ $ uns properties:register @2:MyCompany -V "www.mycompany.com"
 
 The `verificationKey` will be used in the next steps of the verification process with the [`properties:verify`](#properties-verify) command.
 
-### `properties:verify` <Badge text="added 4.2.0"/>
+### `properties:verify`
 
-#### Introduction
+#### Introduction <Badge text="added 4.2.0"/>
 Finalize ownership verification process of a unik property.
 For domain name verification, three channels are available: html, file and whitelist.
 Prior using html and file channels, a verification package should be generated using [`properties:register`](#properties-register) command.
@@ -1096,9 +1096,9 @@ TODO
   The user agent that performs HTML tag verification has the user agent 
   token `UNS-URL-Checker-Verification` and the full user agent string is `Mozilla/5.0 (compatible; UNS-URL-Checker-Verification/1.0; <DID>)` where `DID` is the ID of the URL Checker that performs the verification (such as [`did:unik:unid:fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a`](https://explorer.uns.network/uniks/fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a) for on of the official URL Checkers).
 
-### `delegate:vote` <Badge text="breaking 4.0.0" type="warning" />
+### `delegate:vote`
 
-#### Introduction
+#### Introduction <Badge text="breaking 4.0.0" type="warning" />
 
 This command allows you to vote for a delegate with his @unikname to get him elected.
 Votes are restricted to the same UNIK type (individual, organization) delegate as yours.
