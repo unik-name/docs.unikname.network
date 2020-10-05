@@ -81,8 +81,15 @@ Getting help for a specific _command_ : `>uns command --help`
 # Property keys of UNIK
 
 Property keys format must match with the following rules:
-- be alphanumeric: `a-z,A-Z,0-9`
-- be shorter or equals to 255 characters
+- it must be alphanumeric: `a-z`, `A-Z`, `0-9`
+- it may contains: `+ - . / _` (but no space characters at all)
+- it must be shorter or equals to 255 characters
+
+# Property values of UNIK
+
+Property values format must match with the following rules:
+- it may any UTF-8 characters
+- it must be shorter or equals to 255 characters
 
 # DID - Decentralized IDentifier
 

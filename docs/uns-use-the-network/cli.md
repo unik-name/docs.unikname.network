@@ -636,13 +636,13 @@ chainmeta:
 #### Introduction
 Make public one or more explicit values of your UNIK Name. This value will appear in "explicitValue" property of your UNIK. Duplicate explicit values will be removed.
 In case of several explicitValues disclosed, the first value of "explicitValues" property will be used as default.
-If a @unikname is provided, --explicitValue flag can be ommited, the @unikname will be taken as explicit value.
+If a @unikname is provided, --explicitValue flag can be omitted, the @unikname will be taken as explicit value.
 
 #### Parameters
 
 - `-e, --explicitValue`: Explicit values to disclose. Must match the UNIK Name of the token.
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
-- `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
+- `-f, --format` `{json|yaml, json}`: Specify how to format the output [json|yaml]. Default to Json.
 - `--no-check`: Allow @unikname disclose without user confirmation.
 
 Some [global parameters](#global-parameters) may apply to this command.
@@ -689,7 +689,7 @@ Check if UNIK has one or more disclosed explicit value.
 
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
-- `-f, --format` {json|yaml|raw, json}: Specify how to format the output [json|yaml|raw]. Default to Json.
+- `-f, --format` `{json|yaml|raw, json}`: Specify how to format the output [json|yaml|raw]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -727,7 +727,7 @@ Buy Everlasting status for a @unikname.
 - `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
-- `-f, --format` {json|yaml, json}: Specify how to format the output [json|yaml]. Default to Json.
+- `-f, --format` `{json|yaml, json}`: Specify how to format the output [json|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -767,7 +767,7 @@ You cannot register more than 3 user properties by default.
 #### Parameters
 
 - `-k --key` (required): Key of property to set as UNIK property. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
-- `-V --value` (required): Value of property to set as UNIK property.
+- `-V --value` (required): Value of property to set as UNIK property. See [allowed property value format](/uns-use-the-network/cheatsheet.html#property-values-of-unik)
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
@@ -786,19 +786,13 @@ $ uns properties:set {TARGET} --key "{key1}" --value "{value1}" --key "{key2}" -
 #### Example
 
 Add property `key/value` to UNIK `@bob`
-```bash
-$ uns properties:set @bob --key "key" --value "value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
-```
-
-#### Output
 
 ```bash
-$ uns properties:set @bob --key "key" --value "value" --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:set @bob --key "key" --value "value" -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
 confirmations:  1
-
 ```
 
 ##### Related commands
@@ -832,19 +826,13 @@ $ uns properties:unset {TARGET} -k prop1 -k prop2
 
 Remove property `key/value` of UNIK `@bob`
 ```bash
-$ uns properties:unset @bob -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
-```
-
-#### Output
-
-```bash
-$ uns properties:unset @bob -k key --passphrase "train drastic alley office seed glove cable fee firm during lottery cause" -f yaml
+$ uns properties:unset @bob -k key -f yaml
 
 unikid:  2145a1e84e8a54d066dbc535388898c56dae5d95e2c46a8c2e735dd3db97c03f
 transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
 confirmations:  1
-
 ```
+
 ##### Related commands
 - [properties:set](#properties:set)
 
@@ -914,7 +902,7 @@ Get the value of a specific property of a UNIK token.
 - `-k, --propertyKey` (required): the key of the property for which we query the value. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
-- `-f, --format` {json|yaml|raw, json}: Specify how to format the output [json|yaml|raw]. Default to Json.
+- `-f, --format` `{json|yaml|raw, json}`: Specify how to format the output [json|yaml|raw]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -1001,9 +989,8 @@ As a use case, this command is used to [verify an URL when integrating Unikname 
 
 #### Parameters
 
-- `-c, --url-channel` (required) {html, file, whitelist} Channel to use for verification.
-- `--url-name` A name you can choose to identify this verified URL. It must be `a-zA-Z0-9_-` chars (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.uns.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0)).
-
+- `-c, --url-channel` (required) `{html, file, whitelist}` Channel to use for verification
+- `--url-name` A name you can choose to identify this verified URL. It must be `a-zA-Z0-9_-` chars (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.uns.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0))
 
 Some [global parameters](#global-parameters) may apply to this command.
 
