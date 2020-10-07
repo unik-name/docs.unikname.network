@@ -1,3 +1,10 @@
+const { slugify: vuePressSlugify } = require("@vuepress/shared-utils");
+
+function customSlugifyToHandleBadges(str) {
+  // Remove badges
+  return vuePressSlugify(str.replace(/<Badge[^>]*\/>/, ""));
+}
+
 module.exports = {
   title: "The uns.network Player Hub",
   title2: "uns.network Docs (Universal-Name-System)",
@@ -50,7 +57,6 @@ module.exports = {
     `,
     ],
   ],
-
   themeConfig: {
     logo: "./logo.png",
     repo: "unik-name/docs.uns.network",
@@ -169,5 +175,11 @@ module.exports = {
         ],
       },
     ],
+  },
+  markdown: {
+    slugify: customSlugifyToHandleBadges,
+    toc: {
+      slugify: customSlugifyToHandleBadges,
+    },
   },
 };
