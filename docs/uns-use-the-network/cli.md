@@ -985,8 +985,6 @@ Finalize ownership verification process of a unik property.
 For domain name verification, three channels are available: html, file and whitelist.
 Prior using html and file channels, a verification package should be generated using [`properties:register`](#properties-register) command.
 
-As a use case, this command is used to [verify an URL when integrating Unikname Connect on a website](https://docs.unikname.com/guides/how-to-verify-url).
-
 #### Parameters
 
 - `-c, --url-channel` (required) `{html, file, whitelist}` Channel to use for verification
@@ -1003,85 +1001,9 @@ Some [global parameters](#global-parameters) may apply to this command.
 $ uns properties:verify {TARGET} --url-channel {html, file, whitelist}
 ```
 
-#### Example 1: verify an URL with an HTML tag
+#### Examples
 
-You can verify the ownership of a site by adding a`<meta>` tag to the HTML of the home page of the site to verify URL:
-
-```html
-<html>
-  <head>
-    <title>Page title</title>
-    ...
-    <meta name="uns-url-checker-verification" content="the verification key named 'verificationKey'">
-    ...
-  </head>
-<body>
-...
-```
-
-**You must replace the `content` value by the `verificationKey` value provided by the [`properties:register`](#properties-register) command**.
-
-An UNS URL Checker will verify that the meta tag exists in the correct location.
-If it can't find the tag, it'll give you information about the error it encountered.
-
-The following example verify the previously register URL `https://www.mycompany.com` for the organization @unikname `@2:MyCompany` (or `@organization:MyCompany`) with the HTML tag channel:
-
-```bash
-$ uns unik:verify @2:MyCompany -c html
-```
-
-##### Potential errors
-
-The following verification errors can occur with HTML tag verification:
-
-- Meta tag not found/in the wrong location
-
-  The verification meta tag must be within the `<head>` section of the page.
-  If you see errors, check the following:
-
-  - Is the meta tag on the correct page?
-
-      The URL Checker looks for it on the site's home page.
-      This is the page that the web server returns when someone requests the site (such as http://www.mycompany.com/).
-      This page is often named `index.html` or `index.htm`, but could be named differently, depending on your server's configuration.
-  
-  - Is the meta tag in the correct place on the page?
-
-    The URL Checker looks for it in the page's `<head>` section. An example of correct placement is shown here:
-
-    ```html
-    <html>
-      <head>
-        <title>Page title</title>
-        ...
-        <meta name="uns-url-checker-verification" content="verificationKey">
-        ...
-      </head>
-    <body>
-    ...
-    ```
-
-    If you're using a web editor or a WYSIWYG editor to edit your page, make sure to select the 'Edit HTML' option or to edit the source code of the page.
-
-- The meta tag is incorrect
-
-  The URL Checker found the verification meta tag, but the content was incorrect.
-  To avoid errors, copy and paste the `verificationKey` value provided by the [`properties:register`](#properties-register) command.
-
-- The verification package is expired
-
-  The verification package expires after 72h, so you must re-register the URL with the [`properties:register`](#properties-register) command.
-
-#### Example 2: verify an URL with a file to upload
-
-TODO
-
-#### Notes
-
-- User-Agent
-
-  The user agent that performs HTML tag verification has the user agent 
-  token `UNS-URL-Checker-Verification` and the full user agent string is `Mozilla/5.0 (compatible; UNS-URL-Checker-Verification/1.0; <DID>)` where `DID` is the ID of the URL Checker that performs the verification (such as [`did:unik:unid:fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a`](https://explorer.uns.network/uniks/fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a) for on of the official URL Checkers).
+Detailed usages of this command are [described in the Unikname Help Center](https://docs.unikname.com/3-unikname-connect/howto-get-unikname-trust-certificate-organization).
 
 ### `delegate:vote` <Badge text="breaking 4.0.0" type="warning" />
 
