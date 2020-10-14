@@ -53,9 +53,6 @@ Example:
 $ UNS_NETWORK=livenet uns status
 ```
 
-You can also export this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
-:::
-
 - `--node` (optional): URL of custom node representing blockchain endpoint
 
 ::: tip
@@ -67,7 +64,20 @@ Example:
 $ UNS_NODE="http://custom.node.example:4103" uns status
 ```
 
-You can also export this environment variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
+- `--nftfactory` (optional): URL of custom forge factory services endpoint
+
+::: tip
+Avoid repetition of `--nftfactory` flag using the `UNS_SERVICES={custom service url}` environment variable (or `%UNS_SERVICES%` for Windows shell).
+
+
+Example:
+```shell
+$ UNS_NODE="http://custom.node.example:4103" uns status
+```
+
+::: tip
+You can also export environments variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
+
 :::
 ### Write global parameters
 
