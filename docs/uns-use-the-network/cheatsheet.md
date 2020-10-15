@@ -26,7 +26,7 @@ pageClass: cheatsheet-pageclass
 | [properties:get](cli.html#properties-get) | | Get the value of a specific property of a UNIK token. | 2.2.0 |
 | [properties:list](cli.html#properties-list) | | List all properties of a UNIK token | 2.2.0 |
 | [properties:register](cli.html#properties-register) | | Register a properties to verify | 4.2.0 |
-| [properties:verify](cli.html#properties-verify) | | Verify a registered properties | 4.2.0 |
+| [properties:verify](cli.html#properties-verify) | YES | Verify a registered properties | 4.2.0 |
 
 Add or Update your CLI to the latest version : `>yarn global [add|upgrade] @uns/uns-cli`  
 Getting help for a specific _command_ : `>uns command --help`
