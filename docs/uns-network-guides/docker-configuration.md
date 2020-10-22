@@ -19,11 +19,12 @@ The default values are meant to be used with the UNS Docker container.
 | `CORE_API_CACHE_TIMEOUT` | `8000` |   |
 | `CORE_API_DISABLED` | `false` |   |
 | `CORE_API_NO_ESTIMATED_TOTAL_COUNT` | `false` |   |
+| `CORE_API_PORT` | `4003` | ⚠ If changed, you may need to update your Docker Compose configuration |
 | `CORE_API_RATE_LIMIT` | `true` |   |
 | `CORE_API_RATE_LIMIT_USER_EXPIRES` | `60000` |   |
 | `CORE_API_RATE_LIMIT_USER_LIMIT` | `300` |   |
 | `CORE_DB_HOST` | `localhost` |   |
-| `CORE_DB_PORT` | `5432` |   |
+| `CORE_DB_PORT` | `5432` | ⚠ If changed, you may need to update your Docker Compose configuration |
 | `CORE_DB_DATABASE` | `uns_livenet` | sandbox: `uns_sandbox`  |
 | `CORE_DB_USERNAME` | `uns` |   |
 | `CORE_DB_PASSWORD` | `password` |   |
@@ -33,6 +34,7 @@ The default values are meant to be used with the UNS Docker container.
 | `CORE_LOG_PROCESS_ERRORS_ENABLED` | `false` |
 | `CORE_MAX_TRANSACTIONS_IN_POOL` | `100000` |   |
 | `CORE_P2P_PEER_VERIFIER_DEBUG_EXTRA` | `false` |
+| `CORE_P2P_PORT` | sandbox: `4002` <br/>livenet: `4001` | ⚠ If changed, you may need to update your Docker Compose configuration |
 | `CORE_P2P_MAX_PEERS_SAME_SUBNET` | `5` |   |
 | `CORE_P2P_RATE_LIMIT` | `100` |   |
 | `CORE_TRANSACTION_POOL_DISABLED` | `false` |   |
