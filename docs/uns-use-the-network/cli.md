@@ -731,7 +731,7 @@ confirmations: 833
 ### `unik:everlasting` <Badge text="added 4.2.0" />
 
 #### Introduction
-Buy Everlasting status for a @unikname.
+Buy Everlasting status for a @unikname. The @unikname must already own the Alive status
 
 #### Arguments
 - `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
