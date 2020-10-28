@@ -83,8 +83,8 @@ Badge Type: enumerate
 
 | Name | How to get it | Description | Scope |
 |-|-|-|-|-|
-| **Guest** | Minting the UNIK | The UNIK has just been minted. | individual only
-| **Beginner** | Claim within the App | - the @unikname has been created for 10000 blocks ago or more (~24h) <br/> +? | individual only
+| **Newcomer** | Minting the UNIK | The UNIK has just been minted. | individual only
+| **Beginner** | Claim within the App | - the @unikname has been created for 10000 blocks ago or more (~24h) <br/> + lifecycle statuts activated <br/> + local authentication activity  | individual only
 | **Advanced** | Claim within the App | - has made 10 transactions and 10 contributions | individual only
 | **Leader** | Claim within the App | - Has setup personnal properties <br/> - has contributed to each Network Service Providers <br/> - get the promoter badge | individual only
 | **Maven** | Claim within the App |  - has made at least one connection<br/> - Leader since 12 months.<br/> Has voted for a delegate. | individual only
