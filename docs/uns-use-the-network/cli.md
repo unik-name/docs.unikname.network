@@ -1,10 +1,9 @@
 ---
 home: false
-title: "Using uns.network with the CLI"
 sidebarDepth: 3
 ---
 
-# uns.network CLI
+# Using uns.network with the CLI
 
 <uns/> provides an interactive command line interface to create and manage your crypto accounts, your UNS protocol tokens and your UNIK NFT tokens.
 
@@ -20,7 +19,7 @@ The <uns/> Command Line Interface is expected to work on recent Linux, MacOS or 
 
 *: you should then add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to be able to run `uns` command.
 
-You can also [install from NPM/Yarn](cli/alternate-installation.html#installation-from-npm-yarn) for all platforms.
+You can also [install from NPM/Yarn](cli-alternate-installation.html) for all platforms.
 
 ### Staying up to date
 
@@ -806,7 +805,7 @@ confirmations:  1
 ```
 
 ##### Related commands
-- [properties:unset](#properties:unset)
+- [properties:unset](#properties-unset)
 
 ### `properties:unset`
 
@@ -844,7 +843,7 @@ confirmations:  1
 ```
 
 ##### Related commands
-- [properties:set](#properties:set)
+- [properties:set](#properties-set)
 
 ### `properties:list`
 
@@ -1100,7 +1099,7 @@ $ uns delegate:unvote "@organization:MyCompany"
 #### Introduction
 
 This command allows you to register a UNIK as delegate with your Unikname.
-Before registering you must have publicly disclosed your Unikname (see [unik:disclose command](#unik:disclose))
+Before registering you must have publicly disclosed your Unikname (see [unik:disclose command](#unik-disclose))
 To apply as delegate, the Crypto-account of the Unik candidate is limited to a single Unik (i.e delegate user should own a maximum of 1 Unik in crypto-account).
 
 #### Arguments

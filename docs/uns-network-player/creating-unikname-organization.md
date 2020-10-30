@@ -1,5 +1,5 @@
 ---
-home: false
+prev: /uns-network-player/
 ---
 
 #  Creating @unikname for an organization
@@ -7,7 +7,7 @@ home: false
 [[toc]]
 
 
-## Installing the <uns/> CLI
+## Installing the uns.network CLI
 
 The <uns/> Command Line Interface (CLI) makes it easy to manage your @unikname and Unikname apps directly from the terminal.
 It’s an essential part of using <uns/>.
@@ -43,7 +43,7 @@ COMMANDS
   ...
 ```
 
-If you want more details about the CLI and tips to use it, check the [CLI documentation](/uns-use-the-network/cli).
+If you want more details about the CLI and tips to use it, check the [CLI documentation](/uns-use-the-network/cli.html).
 You are now ready for the next step !
 
 ## Creating your cryptoaccount

@@ -112,7 +112,7 @@ $ docker-compose down
 ### Run a forger with Docker Compose
 
 ::: warning
-You must be a [declared delegate](/uns-network-player/#becoming-a-delegate) before doing this configuration.
+You must be a [declared delegate](/uns-network-player/) before doing this configuration.
 :::
 
 To run a forger node, please edit the `docker-compose.yml` file, with Nano or Vim for example: `nano docker-compose.yml`.

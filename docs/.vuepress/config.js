@@ -51,8 +51,6 @@ module.exports = {
     ],
     sidebar: [
       "/",
-      // Not enough content
-      // ["/uns-network-getting-started/", "Getting Started"],
       {
         title: "Introduction",
         children: [
@@ -62,6 +60,7 @@ module.exports = {
             "/uns-network-introduction/did-unik",
             "UNIK Decentralized IDentifiers",
           ],
+          "/uns-network-getting-started/",
         ],
       },
       {
@@ -96,7 +95,7 @@ module.exports = {
         sidebarDepth: 0,
         children: [
           ["/uns-use-the-network/", "Introduction"],
-          ["/uns-use-the-network/cli", "CLI"],
+          ["/uns-use-the-network/cli.html", "CLI"],
           ["/uns-use-the-network/api", "API"],
           ["/uns-use-the-network/sdk", "SDK"],
           ["/uns-use-the-network/wallet", "Wallet"],
@@ -110,10 +109,8 @@ module.exports = {
         sidebarDepth: 0,
         children: [
           ["/uns-network-player/", "Introduction"],
-          [
-            "/uns-network-player/creating-your-unikname-individual",
-            "Creating @unikname as an individual",
-          ],
+          "/uns-network-player/creating-your-unikname-individual",
+          "/uns-network-player/creating-unikname-organization",
           [
             "/uns-network-player/registering-as-delegate",
             "Registering as Delegate",

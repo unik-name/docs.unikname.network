@@ -18,7 +18,7 @@ If you're familiar with the <uns/> environement, you may be interested to use th
 
 ### Use the CLI, to go fast with basic actions
 
-The CLI (Command Line Interface) has been designed to facilitate basic actions and testing. With the CLI you can create a wallet, mint a @unikname into the chain, update user's properties, list existing tokens or query the status of the network, and many other things. 
+The CLI (Command Line Interface) has been designed to facilitate basic actions and testing. With the CLI you can create a cryptoaccount, mint a @unikname into the chain, update user's properties, list existing tokens or query the status of the network, and many other things. 
 
 The CLI runs with the LIVENET but also with the SANDBOX for integration testing. 
 
@@ -72,7 +72,7 @@ Please note that **this network is ephemeral**, and may be reset anytime. Resets
 #### SANDBOX faucet
 
 If you need SUNS tokens to test the <uns/> features (creating your UNIK for example), you can ask for SUNS on [the unik-name forum](https://forum.unik-name.com/c/uns-network/faucet).
-Don't forget to provide your wallet address, created with [the <uns/> CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
+Don't forget to provide your cryptoaccount address, created with [the <uns/> CLI](cli.html#cryptoaccount-create) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
 
 You can also use [a community-managed faucet to receive SUNS](https://uns-faucet.rigwild.dev/).
 

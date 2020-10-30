@@ -7,7 +7,7 @@ title: "Becoming uns.network Player"
 
 [[toc]]
 
-## What is <uns/>?
+## What is uns.network?
 
 Established in 2018, <uns/> is a DPoS blockchain and a protocol that has the mission of protecting user’s privacy and securing any web and mobile connections.
 <uns/> is part of the "Powered By Ark" program.

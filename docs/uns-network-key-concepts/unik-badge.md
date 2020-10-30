@@ -27,7 +27,7 @@ There are two types of badges, singular ones and enumerated ones, belonging to f
 
 The badges are returned by the APIs, the CLI, and are visible on the chain explorer and [on My Unikname App]().
 
-The badges can be [claimed with the CLI](https://docs.uns.network/uns-use-the-network/cli.html#badges-claim) and soon with [My Unikname App](https://docs.uns.network/uns-network-unik-name-use-case/#my-unikname).
+The badges can be [claimed with the CLI](/uns-use-the-network/cli.html#badges-claim) and soon with [My Unikname App](/uns-network-unik-name-use-case/#my-unikname).
 
 ## Why Badges?
 

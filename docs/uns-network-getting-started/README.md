@@ -1,6 +1,4 @@
 ---
-home: false
-title: "Getting Started with uns.network "
 ---
 
 # Getting Started with uns.network
@@ -16,7 +14,7 @@ The <uns/> comes with several tools to interact with the chain. The most famous 
 
 We're going to start with the command line interface, also called the **CLI** .
 
-Choose your prefered setup depending on your desktop environment and install the command line interface.
+Choose your preferred setup depending on your desktop environment and install the command line interface.
 
 | <h1><vp-icon name="windows-brands" size="2em" /><br/>Windows</h1> | <h1><vp-icon name="apple-brands" size="2em" /><br/>macOS</h1> | <h1><vp-icon name="linux-brands" size="2em" /><br/>Linux</h1> |
 |:-----------------------------------:|:----------------------------------------------------------------------:|:---------------------------------------:|
@@ -24,7 +22,7 @@ Choose your prefered setup depending on your desktop environment and install the
 
 *: you should then add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to be able to run `uns` command.
 
-You can also [install from NPM/Yarn](cli/alternate-installation.html#installation-from-npm-yarn) for all platforms.
+You can also [install from NPM/Yarn](/uns-use-the-network/cli-alternate-installation.html) for all platforms.
 
 Now you must be able to run the uns commands. Open a console and test it.
 
@@ -34,7 +32,7 @@ $ uns --version
 ```
 
 :::tip
-All CLI commands can be found in the [Using the uns.network chapter](../uns-use-the-network/cli).
+All CLI commands can be found in the [Using the uns.network chapter](../uns-use-the-network/cli.html).
 
 You can also request inline help with the command `$ uns --help`
 :::
@@ -213,8 +211,8 @@ You're welcome to post a feedback on your 1st experience with the community and 
 
 ## ...and to go further
 
-* [Become a network player](../uns-network-player)
-* [Vote for a delegate](../uns-use-the-network/cli.html#delegate-vote)
-* [Disclose your @unikname or/and claim trust badges](../uns-use-the-network/cli.html#unik-disclose
-* [Record public data on your on-chain registry](../cli.html#properties-set)
+* [Become a network player](/uns-network-player)
+* [Vote for a delegate](/uns-use-the-network/cli.html#delegate-vote)
+* [Disclose your @unikname](/uns-use-the-network/cli.html#unik-disclose) or/and [claim trust badges](/uns-use-the-network/cli.html#badges-claim)
+* [Record public data on your on-chain registry](/uns-use-the-network/cli.html#properties-set)
 
