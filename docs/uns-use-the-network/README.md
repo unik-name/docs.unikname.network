@@ -1,13 +1,20 @@
 ---
 home: false
-title: "Interacting with the uns.network"
+tags:
+ - network
+ - livenet
+ - sandbox
+ - devnet
+ - faucet
+ - api
+ - sdk
 ---
 
 # Interacting with the uns.network
 
 Users can interact or let say 'use' the <uns/> in multiple ways depending on user's needs.
 
-If you're familiar with the <uns/> environement, you may be interested to use the [cheat sheet](cheatsheet) to get a quick overwiew of usefull commands and APIs.
+If you're familiar with the <uns/> environement, you may be interested to use the [cheat sheet](cheatsheet) to get a quick overview of usefull commands and APIs.
 
 ### Use the CLI, to go fast with basic actions
 
@@ -19,7 +26,7 @@ The CLI runs with the LIVENET but also with the SANDBOX for integration testing.
 
 ### Use the APIs, to consume network services
 
-All network services can be used via the <uns/> APIs. This is the best way for developers to integrate <uns/> services into their own developpements and APPs. 
+All network services can be used via the <uns/> APIs. This is the best way for developers to integrate <uns/> services into their own developments and APPs. 
 
 [Read more &rightarrow;](api)
 
@@ -33,12 +40,12 @@ SDKs have been developped to simplify developer work when they integrate Uniknam
 
 Wallets are end user tools, ready to use to transfer and to manage tokens. 
 
-Unikname mobile APP is the prefered user APP within our ecosystem. 
+Unikname mobile APP is the preferred user APP within our ecosystem. 
 
 First of all Unikname mobile APP is used to: 
 1. to authenticate connection to any web platform, 
-1. to manage his/her @uniknames,
-1. to manage his/her personal data linked with @uniknames,
+1. to manage his/her @unikname,
+1. to manage his/her personal data linked with @unikname,
 
 but Unikname mobile APP is also used : 
 - to handle and transfer UNS tokens, 
@@ -66,6 +73,8 @@ Please note that **this network is ephemeral**, and may be reset anytime. Resets
 
 If you need SUNS tokens to test the <uns/> features (creating your UNIK for example), you can ask for SUNS on [the unik-name forum](https://forum.unik-name.com/c/uns-network/faucet).
 Don't forget to provide your wallet address, created with [the <uns/> CLI](cli.html#create-wallet) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
+
+You can also use [a community-managed faucet to receive SUNS](https://uns-faucet.rigwild.dev/).
 
 ### Legacy DEVNET network
 

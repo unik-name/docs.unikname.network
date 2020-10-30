@@ -13,7 +13,7 @@ ArkEcosystem comes with a lot of out-of-the-box tools for bridgechains like UNS.
 
 ### How to setup the default ARK Desktop Wallet to work with UNS tokens
 
-> :warning: *this tutorial has been written for the Ark desktop wallet verion `2.6`. It could not work properly with newer versions.*
+> :warning: *this tutorial has been written for the Ark desktop wallet verion `2.6`. It **may** work with newer versions.*
 
 First of all, download and install the app for your platform : https://ark.io/wallet  *(works with Windows, macOS and Linux)*
 
@@ -35,9 +35,19 @@ Then click on : `Add a new network` (top-right)
 ![add-network](./images/new-network.png)
 
 Fill inputs:
+
+::: details For Livenet
+- name: **UNS Livenet**
+- description: **<uns/> LIVENET**
+- seed server: **http://163.172.146.222:4200**
+:::
+
+::: details For Sandbox
 - name: **UNS Sandbox**
 - description: **<uns/> SANDBOX**
-- seed server: **http://163.172.146.222:4200**
+- seed server: **http://51.159.75.146**
+:::
+
 
 And click on `Fetch` to automatically get full node configuration (like token name, explorer url or wallet derivation keys).
 
@@ -50,19 +60,24 @@ Then `Add profile` (top-left).
 ![add-profile](./images/add-profile.png)
 
 Fill-in all inputs like you did for Ark profile.  
-Now, in step `2. Network` you can choose the freshly appeared `UNS Sandbox` item.  
+Now, in step `2. Network` you can choose the freshly appeared `UNS Livenet`/`UNS Sandbox` item.  
 ![network](./images/network.png)
 
 At the end, you should have a fully configured Desktop wallet able to transfer UNS tokens, create <uns/> wallets, vote for <uns/> delegates, or any other features inherited from ArkEcosystem.
 
-If you want to start playing, you can get `SUNS` [from the FAUCET](./#sandbox-faucet).
+If you want to start playing:
+- On the Livenet, you should [get a @unikname first with the My Unikname app](./unikname-app)
+- On the Sandbox, you can get `SUNS` [from the FAUCET](./#sandbox-faucet).
 
 > NOTA: Management of UNIK tokens is not able with the default Ark Wallet, it requires the installation of the Unikname APP.
 
-
 ## Unikname APP
 
-The Unikname mobile APP is not only an app to manage your owns @uniknames and its properties. The Unikname mobile APP is also, and before all, a wallet. This APP embed cryptographic and secured features like handling pass phrase, handling private keys and calculating public addresses. 
+The Unikname mobile APP is not only an app to manage your owns @unikname and its properties.
+The Unikname mobile APP is also a wallet.
+This APP embed cryptographic and secured features like handling pass phrase, handling private keys and calculating public addresses. 
 
-So the Unikname mobile APP is the prefered user APP to manage @uniknames but also UNS tokens, UNIK tokens, and to trigger transactions requiring tokens.
+So the Unikname mobile APP is the preferred user APP to manage @unikname but also UNS tokens, UNIK tokens, and to trigger transactions requiring tokens.
+
+Install it at [https://my.unikname.app](https://my.unikname.app) and get your first @unikname!
 
