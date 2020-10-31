@@ -46,19 +46,19 @@ Avoid repetition of `--network` flag using the `UNS_NETWORK={network}` environme
 
 
 Example:
+
 ```shell
 $ UNS_NETWORK=livenet uns status
+```
 
 You can also export environments variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
-```
+:::
 
 - `--verbose` (optional): Additional logs
 
-- `--node` (optional): URL of custom node representing blockchain endpoint
+- `--node` (optional): URL of custom node representing blockchain endpoint (environment variable: `UNS_NODE`)
 
-- `--nftfactory` (optional): URL of custom forge factory services endpoint
-
-:::
+- `--nftfactory` (optional): URL of custom forge factory services endpoint (environment variable: `UNS_SERVICES`)
 
 ### Write global parameters
 
