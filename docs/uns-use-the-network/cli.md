@@ -37,8 +37,6 @@ When installed via npm/yarn, please remove it before installing it again (`npm r
 
 You can use the following command line options to override the default configuration settings for a single command:
 
-- `--verbose` (optional): Additional logs
-
 - `-n, --network` (required): choose the network to interact with.
 
   Possible values: `sandbox` or `livenet`
@@ -50,34 +48,18 @@ Avoid repetition of `--network` flag using the `UNS_NETWORK={network}` environme
 Example:
 ```shell
 $ UNS_NETWORK=livenet uns status
+
+You can also export environments variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
 ```
+
+- `--verbose` (optional): Additional logs
 
 - `--node` (optional): URL of custom node representing blockchain endpoint
 
-::: tip
-Avoid repetition of `--node` flag using the `UNS_NODE={custom node url}` environment variable (or `%UNS_NODE%` for Windows shell).
-
-
-Example:
-```shell
-$ UNS_NODE="http://custom.node.example:4103" uns status
-```
-
 - `--nftfactory` (optional): URL of custom forge factory services endpoint
 
-::: tip
-Avoid repetition of `--nftfactory` flag using the `UNS_SERVICES={custom service url}` environment variable (or `%UNS_SERVICES%` for Windows shell).
-
-
-Example:
-```shell
-$ UNS_NODE="http://custom.node.example:4103" uns status
-```
-
-::: tip
-You can also export environments variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
-
 :::
+
 ### Write global parameters
 
 For every new data added in the chain, you may wait for the write operation to be confirmed. Once the transaction data is written in a block, the data get one confirmation for every new block added in the chain. By default we wait for one confirmation in the next 3 blocks. With the await-confirmation flag, you can choose to extend the maximum waiting time or set it to 0 which corresponds to an asynchronous operation.
