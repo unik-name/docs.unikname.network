@@ -1,5 +1,5 @@
 ---
-home: false
+next: /uns-network-player/registering-as-delegate.html
 ---
 
 # Creating @unikname as an individual

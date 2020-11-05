@@ -14,13 +14,13 @@ title: "uns.network APIs"
 Get counts for each type of NFT of the chain.
 
 ```HTTP
-GET /api/v2/nfts/status
+GET /api/nfts/status
 ```
 
 #### Example
 
 ```sh
-curl https://api.uns.network/api/v2/nfts/status
+curl https://api.uns.network/api/nfts/status
 ```
 
 ```json
@@ -61,7 +61,7 @@ Due to the large number of minted tokens, a request returns a finite number of t
 #### Endpoint
 
 ```HTTP
-GET /api/v2/uniks
+GET /api/uniks
 ```
 
 #### Query Parameters
@@ -110,7 +110,7 @@ API retrieves chain meta-datas (`chainmeta`) corresponding to current block heig
 #### Endpoint
 
 ```HTTP
-GET /api/v2/uniks/{id}
+GET /api/uniks/{id}
 ```
 
 #### Path Parameters
@@ -160,7 +160,7 @@ API retrieves chain meta-datas (`chainmeta`) corresponding to current block heig
 #### Endpoint
 
 ```HTTP
-GET /api/v2/uniks/{id}/properties
+GET /api/uniks/{id}/properties
 ```
 
 #### Path Parameters
@@ -215,7 +215,7 @@ You can access quickly to a specific UNIK property with this endpoint: get its v
 #### Endpoint
 
 ```HTTP
-GET /api/v2/uniks/{id}/properties/{key}
+GET /api/uniks/{id}/properties/{key}
 ```
 
 #### Path Parameters
@@ -250,7 +250,7 @@ API retrieves chain meta-datas (`chainmeta`) corresponding to current block heig
 #### Endpoint
 
 ```
-GET /api/v2/wallets/{id}
+GET /api/wallets/{id}
 ```
 
 #### Path Parameters
@@ -291,7 +291,7 @@ Specific wallet can be obtained either by their `publicKey` or `address`.
 #### Endpoint
 
 ```
-GET /api/v2/wallets/{id}/uniks
+GET /api/wallets/{id}/uniks
 ```
 
 #### Path Parameters
@@ -319,7 +319,7 @@ GET /api/v2/wallets/{id}/uniks
 
 ## Public Transactions API
 
-Transactions are signed, serialized payloads; batched together to form a [block](/api/public/v2/blocks.md).
+Transactions are signed, serialized payloads; batched together to form a block.
 
 ### Retrieve a Transaction
 
@@ -330,7 +330,7 @@ API retrieves chain meta-datas (`chainmeta`) corresponding to current block heig
 #### Endpoint
 
 ```
-GET /api/v2/transactions/{id}
+GET /api/transactions/{id}
 ```
 
 #### Path Parameters

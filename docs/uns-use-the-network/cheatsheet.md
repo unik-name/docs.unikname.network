@@ -14,7 +14,6 @@ pageClass: cheatsheet-pageclass
 | [resolve](cli.html#resolve) | | Resolve a decentralized Identifier |
 | [cryptoaccount:create](cli.html#cryptoaccount-create) | | Create a <uns/> crypto-account | 2.2.0 |
 | [cryptoaccount:read](cli.html#cryptoaccount-read) | | Read current data of a specified cryptoaccount, eg. balance | 2.2.0 |
-| [cryptoaccount:address](cli.html#cryptoaccount-address) | | Get public address for a specified UNIK or for a passphrase | 2.2.0 |
 | [unik:create](cli.html#unik-create) | YES | Create a UNIK Token | 2.2.0 |
 | [unik:read](cli.html#unik-read) | | Read UNIK Token data | 2.2.0 |
 | [unik:disclose](cli.html#unik-disclose) | YES | Disclose one or more explicit(s) value(s) related to a UNIK | 2.2.0 |

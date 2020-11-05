@@ -25,11 +25,14 @@ The badges are accessible with the Resolver within the path "Badges/".
 
 There are two types of badges, singular ones and enumerated ones, belonging to families.
 
-The badges are returned by the APIs, the CLI, and are visible on the chain explorer.
+The badges are returned by the APIs, the CLI, and are visible on the chain explorer and [on My Unikname App]().
+
+The badges can be [claimed with the CLI](/uns-use-the-network/cli.html#badges-claim) and soon with [My Unikname App](/uns-network-unik-name-use-case/#my-unikname).
 
 ## Why Badges?
 
-**Badges contribute to build trust in the network**. They give indications on the quality and legitimacy of each @unikname.
+**Badges contribute to build trust in the network**.
+They give indications on the quality and legitimacy of each @unikname.
 
 ## Badge List
 
@@ -84,8 +87,8 @@ Badge Type: enumerate
 
 | Name | How to get it | Description | Scope |
 |-|-|-|-|-|
-| **Guest** | Minting the UNIK | The UNIK has just been minted. | individual only
-| **Beginner** | Claim within the App | - the @unikname has been created for 10000 blocks ago or more (~24h) <br/> +? | individual only
+| **Newcomer** | Minting the UNIK | The UNIK has just been minted. | individual only
+| **Beginner** | Claim within the App | - the @unikname has been created for 10000 blocks ago or more (~24h) <br/> + lifecycle statuts activated <br/> + local authentication activity  | individual only
 | **Advanced** | Claim within the App | - has made 10 transactions and 10 contributions | individual only
 | **Leader** | Claim within the App | - Has setup personnal properties <br/> - has contributed to each Network Service Providers <br/> - get the promoter badge | individual only
 | **Maven** | Claim within the App |  - has made at least one connection<br/> - Leader since 12 months.<br/> Has voted for a delegate. | individual only

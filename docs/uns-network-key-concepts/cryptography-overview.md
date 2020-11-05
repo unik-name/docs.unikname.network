@@ -55,7 +55,7 @@ For every public address there's a public key, associated with a private key, an
 }
 ```
 
-Every @unikname has a single cryptoaccount, but a cryptoaccount can embed multiple @unikname. 
+Every @unikname has a single cryptoaccount, but a cryptoaccount can embed multiple @unikname.
 
 :::tip
 To know the cryptoaccount of a @unikname you can use the universal resolver.
@@ -64,7 +64,7 @@ To know the cryptoaccount of a @unikname you can use the universal resolver.
 ```bash
 $ uns resolve @jack-sparrow?*
 ```
-and 
+and
 ```bash
 $ uns resolve @jack-sparow?*
 ```
@@ -80,13 +80,11 @@ The passphrase is used to directly calculate the [PrivateKey](#privatekey) of an
 
 We can technically use any word, phrase, or string as a passphrase which will result in a valid <uns/> cryptoaccount; however, it is heavily discouraged as the security of an address relies on the randomness of its Passphrase. Humans are bad at creating randomness, and entering sequences of random letters and numbers isn't easy to do accurately.
 
-<uns/> passphrases are implemented using [ARK.IO cryptography](https://ark.dev/docs/core/transactions/cryptography#passphrase), based on the BIP39 Protocol, and is combination of twelve words. 
+<uns/> passphrases are implemented using [ARK.IO cryptography](https://ark.dev/docs/core/transactions/cryptography#passphrase), based on the BIP39 Protocol, and is combination of twelve words.
 
 ## PrivateKey
 
 A PrivateKey is a 256-bit integer represented by a 32-byte Hex-encoded string of 64 characters obtained via [SHA256 hashing](https://en.bitcoinwiki.org/wiki/SHA-256) of a [Passphrase](#passphrase).
-
-![PrivateKey Generation Steps](/storage/docs/docs/core/assets/private_key_nologo.svg)
 
 To understand the significance of this large number, consider the following:
 
@@ -125,7 +123,7 @@ A PublicKey is like an ID or Passport. It is a mathematical proof of identity an
 
 ### Signature
 
-A Signature is essentially proof that a message or transaction was "signed" by a particular [PrivateKey](cryptography.md#privatekey) / [Passphrase](cryptography.md#introduction).
+A Signature is essentially proof that a message or transaction was "signed" by a particular [PrivateKey](#privatekey) / [Passphrase](#passphrase).
 
 Remember that this same PrivateKey also has a matching PublicKey. That means a Signature is computationally linked to its corresponding [PublicKey](#publickey) using [ECDSA](#ecdsa) and [SECP256K1](#secp256k1) standards.
 
@@ -169,8 +167,6 @@ An <uns/> Signature is [DER Encoded](https://en.wikipedia.org/wiki/X.690#DER_enc
 
 Upon obtaining a Signature from the ECDSA/SECP256K1 algorithm, it will first be in its raw form known as an "r" and "s" value.
 
-![Signature: DER \(X.690 : ASN.1\) Encoding](/storage/docs/docs/core/assets/signature_der_nologo.svg)
-
 Signature \(r, s\):
 
 ```
@@ -211,7 +207,7 @@ DER Encoded Signature:
 
 [Base58Check](https://en.bitcoin.it/wiki/Base58Check_encoding) encoding is used to produce human readable/typeable text from a hash.
 
-It is used to encode a [PrivateKey](cryptography.md#privatekey) and is also the final step to encoding an [<uns/> address](#cryptoaccount).
+It is used to encode a [PrivateKey](#privatekey) and is also the final step to encoding an [<uns/> address](#cryptoaccount).
 
 ## Hashing
 

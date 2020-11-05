@@ -1,10 +1,9 @@
 ---
 home: false
-title: "Using uns.network with the CLI"
 sidebarDepth: 3
 ---
 
-# uns.network CLI
+# Using uns.network with the CLI
 
 <uns/> provides an interactive command line interface to create and manage your crypto accounts, your UNS protocol tokens and your UNIK NFT tokens.
 
@@ -20,7 +19,7 @@ The <uns/> Command Line Interface is expected to work on recent Linux, MacOS or 
 
 *: you should then add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to be able to run `uns` command.
 
-You can also [install from NPM/Yarn](cli/alternate-installation.html#installation-from-npm-yarn) for all platforms.
+You can also [install from NPM/Yarn](cli-alternate-installation.html) for all platforms.
 
 ### Staying up to date
 
@@ -38,8 +37,6 @@ When installed via npm/yarn, please remove it before installing it again (`npm r
 
 You can use the following command line options to override the default configuration settings for a single command:
 
-- `--verbose` (optional): Additional logs
-
 - `-n, --network` (required): choose the network to interact with.
 
   Possible values: `sandbox` or `livenet`
@@ -49,36 +46,20 @@ Avoid repetition of `--network` flag using the `UNS_NETWORK={network}` environme
 
 
 Example:
+
 ```shell
 $ UNS_NETWORK=livenet uns status
 ```
 
-- `--node` (optional): URL of custom node representing blockchain endpoint
-
-::: tip
-Avoid repetition of `--node` flag using the `UNS_NODE={custom node url}` environment variable (or `%UNS_NODE%` for Windows shell).
-
-
-Example:
-```shell
-$ UNS_NODE="http://custom.node.example:4103" uns status
-```
-
-- `--nftfactory` (optional): URL of custom forge factory services endpoint
-
-::: tip
-Avoid repetition of `--nftfactory` flag using the `UNS_SERVICES={custom service url}` environment variable (or `%UNS_SERVICES%` for Windows shell).
-
-
-Example:
-```shell
-$ UNS_NODE="http://custom.node.example:4103" uns status
-```
-
-::: tip
 You can also export environments variable in your `~/.bashrc` file (or equivalent for your current shell) to make it permanent.
-
 :::
+
+- `--verbose` (optional): Additional logs
+
+- `--node` (optional): URL of custom node representing blockchain endpoint (environment variable: `UNS_NODE`)
+
+- `--nftfactory` (optional): URL of custom forge factory services endpoint (environment variable: `UNS_SERVICES`)
+
 ### Write global parameters
 
 For every new data added in the chain, you may wait for the write operation to be confirmed. Once the transaction data is written in a block, the data get one confirmation for every new block added in the chain. By default we wait for one confirmation in the next 3 blocks. With the await-confirmation flag, you can choose to extend the maximum waiting time or set it to 0 which corresponds to an asynchronous operation.
@@ -731,7 +712,7 @@ confirmations: 833
 ### `unik:everlasting` <Badge text="added 4.2.0" />
 
 #### Introduction
-Buy Everlasting status for a @unikname.
+Buy Everlasting status for a @unikname. The @unikname must already own the Alive status
 
 #### Arguments
 - `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
@@ -806,7 +787,7 @@ confirmations:  1
 ```
 
 ##### Related commands
-- [properties:unset](#properties:unset)
+- [properties:unset](#properties-unset)
 
 ### `properties:unset`
 
@@ -844,7 +825,7 @@ confirmations:  1
 ```
 
 ##### Related commands
-- [properties:set](#properties:set)
+- [properties:set](#properties-set)
 
 ### `properties:list`
 
@@ -1100,7 +1081,7 @@ $ uns delegate:unvote "@organization:MyCompany"
 #### Introduction
 
 This command allows you to register a UNIK as delegate with your Unikname.
-Before registering you must have publicly disclosed your Unikname (see [unik:disclose command](#unik:disclose))
+Before registering you must have publicly disclosed your Unikname (see [unik:disclose command](#unik-disclose))
 To apply as delegate, the Crypto-account of the Unik candidate is limited to a single Unik (i.e delegate user should own a maximum of 1 Unik in crypto-account).
 
 #### Arguments

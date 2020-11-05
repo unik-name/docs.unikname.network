@@ -37,7 +37,8 @@
     "docs:dev": "vuepress dev docs",
     "serve": "yarn docs:dev",
     "docs:build": "vuepress build docs",
-    "build": "yarn docs:build"
+    "build": "yarn docs:build",
+    "check-links": "yarn build && hyperlink -r -p -i docs/.vuepress/dist/index.html | tap-spot"
   },
   "devDependencies": {
     "@goy/vuepress-plugin-svg-icons": "^4.2.1",
