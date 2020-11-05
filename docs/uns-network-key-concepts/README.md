@@ -1,20 +1,19 @@
 ---
 home: false
-title: "Key Concepts Summary"
 sidebarDepth: 0
 ---
 
 # uns.network key concepts
 
 :::information
-Here we discribe key concepts of the UNS network. Those concepts are designed, but not all of them are implemented yet.
+Here we describe key concepts of the UNS network. Those concepts are designed, but not all of them are implemented yet.
 Please, wait a little bit more to try everthing, and look at up right now what the future will be!
 :::
 
-:::tip Usefull words
+:::tip Useful words
 _**'UNIK'** is the name of the token representing a single @unikname within the uns.network blockchain._
 
-_**'NFT'** Stands for Non Fungible Token. All **UNIKs tokens are NFTs.** NFT differs from a traditional coin or utility token as it is not divible (not fongible), and each one is unique._
+_**'NFT'** Stands for Non Fungible Token. All **UNIKs tokens are NFTs.** NFT differs from a traditional coin or utility token as it is not divisible (not fongible), and each one is unique._
 :::
 
 ## Cryptography Overview
@@ -29,7 +28,7 @@ In the blockchain world you must rely on cryptography to make it happends! uns.b
 
 ### [Decentralized ID: the UNIK Non Fongible Token](/uns-network-key-concepts/unik-did-nft)
 
-Every @unikname is a unique string of characters, forming a human-readable identifier, easily readable, pronounceable and shareable like an email address. They're built with SafeTypo© technology for a peerless User eXperience. Every @unikname materializes in the form of a Non Fongible Token called UNIK within the <uns/> blockchain, and becomes Decentralized IDs, also calle DID. 
+Every @unikname is a unique string of characters, forming a human-readable identifier, easily readable, pronounceable and shareable like an email address. They're built with SafeTypo© technology for a peerless User eXperience. Every @unikname materializes in the form of a Non Fongible Token called UNIK within the <uns/> blockchain, and becomes Decentralized IDs, also called DID. 
 
 ### [Registries of properties](/uns-network-key-concepts/unik-property)
 
@@ -48,13 +47,16 @@ Each @unikname is assigned trust badges. They provide information on the qualiti
 
 ### [Life Cycle Status](/uns-network-key-concepts/unik-lifecycle)
 
-Every @unikname have a life cycle status. Before creation, in case of reservation, the @unikname status is **Issued**. At its creation, it becomes **Minted**. To being **Alive**, the @unikname has to sets-up its *My Unikname application*.
+Every @unikname have a life cycle status.
+Before creation, in case of reservation, the @unikname status is **Issued**.
+At its creation, it becomes **Minted**.
+To be **Alive**, the @unikname has to set up its *My Unikname application*.
 
-At any moment, a user can aks for a recomputing of his @unikname's life cycle status, but only to its own.
+At any moment, a user can aks for a recomputing of his @unikname's life cycle status, but only on its own.
 
 ### [Understanding Governance of uns.network blockchain](/uns-network-key-concepts/network-governance)
 
-The uns.network blockchain is a DPOS kind of blockchain. It count three separates categories of stakeholders, with specific purpose and interest. They are all involved in the network governance.
+The uns.network blockchain is a DPoS kind of blockchain. It count three separates categories of stakeholders, with specific purpose and interest. They are all involved in the network governance.
 
-![govervance](./images/uns-blockchain-dpos-23-delegates.jpg)
+![governance](./images/uns-blockchain-dpos-23-delegates.jpg)
 
