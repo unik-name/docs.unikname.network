@@ -35,7 +35,21 @@ module.exports = {
       siteId: 2,
     },
   },
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/logo.png" }],
+    [
+      "meta",
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+    ],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black-translucent",
+      },
+    ],
+  ],
   themeConfig: {
     logo: "/logo.png",
     repo: "unik-name/docs.uns.network",
