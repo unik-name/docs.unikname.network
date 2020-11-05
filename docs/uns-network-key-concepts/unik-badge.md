@@ -42,6 +42,7 @@ Badge Type: boolean
 | **Second Passphrase** | forging the second passphrase transaction  | The UNIK is attached to a wallet with a second passphrase | all types | 
 | **Multisig** | forging the multisig transaction | The UNIK is owned by a multisig cryptoaccount | all types | 
 
+
 ---
 ![badges-np-roles](./images/badges-np-roles.png)
 
@@ -64,8 +65,8 @@ Badge Type: enumerate
 
 | Name | How to get it | Description | Scope
 |-|-|-|-|
-| **Innovator** | Claim | There is less than 1 500 UNIK created in the chain when the badge is claimed. | individual only
-| **Early Adopter** | Claim | There is less than 150 000 UNIK created in the chain when the badge is claimed. | individual only
+| **Innovator** | Claim | Badge claimed before the end of 2020. | individual only
+| **Early Adopter** | Claim | 2020 is ended and there is less than 150 000 UNIK created in the chain when the badge is claimed. | individual only
 
 ---
 ![badges-label](./images/badges-label.png)
