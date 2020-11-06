@@ -2,7 +2,13 @@
 
 ## Main management commands
 
-Coming soon...
+### Get UNS Core version from Docker image
+
+
+```
+docker image inspect --format="{{ index .Config.Labels \"org.label-schema.version\"}}" universalnamesystem/core:livenet
+```
+Replace ```livenet``` by ```sandbox``` for Sandbox images
 
 ## Reference Docker Compose File
 
