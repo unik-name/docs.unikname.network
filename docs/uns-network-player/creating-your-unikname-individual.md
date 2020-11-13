@@ -4,6 +4,12 @@ next: /uns-network-player/registering-as-delegate.html
 
 # Creating @unikname id as an individual
 
+You want to become a delegate with an individual @unikname id, so you need to create your individual @unikname id.
+
+👉 If you have changed your mind, you can also [become a delegate with an organization @unikname id](./creating-unikname-organization.html).
+
+**Table of Content**
+
 [[toc]]
 
 ## Coupon

@@ -4,6 +4,10 @@ prev: /uns-network-player/
 
 #  Creating @unikname id for an organization
 
+You want to become a delegate with an organization @unikname id, so you need to create your organization @unikname id.
+
+👉 If you have changed your mind, you can also [become a delegate with an individual @unikname id](./creating-your-unikname-individual.html).
+
 ::: warning @unikname id for becoming a delegate
 
 :warning: You are about to create a @unikname id for **becoming a <uns/> delegate**. :warning:
@@ -32,7 +36,7 @@ It’s an essential part of using <uns/>.
 
 :::tip On Windows
 Execute the file downloaded to procede to installation.
-Windows may display a warning, but don't worry, just continue the procedure.*
+Windows may display a warning, but don't worry, just continue the procedure.
 :::
 
 You can check that your installation is finished by entering `uns` into your command prompt.
