@@ -48,16 +48,26 @@ You are now ready for the next step !
 ## Registering as a delegate
 
 Congratulations! Now that you have:
-* cryptoaccount with some UNS
-* @unikname linked to your cryptoaccount
+* a cryptoaccount with some UNS
+* a @unikname linked to your cryptoaccount
 
 Now, you can register as a delegate!
+
+::: warning Registering as a delegate
+
+:warning: You are about **registering yourself as a <uns/> delegate**. :warning:
+
+Don't execute the following command if you are trying to create your @unikname id to integrate your application with Unikname Connect. [Go to the Unikname Help Center](https://help.unikname.com/3-unikname-connect/) instead.
+
+:::
 
 Here is the complete process:
 
     $ uns unik:disclose "@hello-world" -e "hello-world"
     $ uns delegate:register "@hello-world"
     $ uns delegate:vote "@hello-world"
+
+Replace `hello-world` by your own @unikname id.
 
 ## Checking your delegate status in the Explorer
 
