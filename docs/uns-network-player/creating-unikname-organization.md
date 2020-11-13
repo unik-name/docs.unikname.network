@@ -2,7 +2,17 @@
 prev: /uns-network-player/
 ---
 
-#  Creating @unikname for an organization
+#  Creating @unikname id for an organization
+
+::: warning @unikname id for becoming a delegate
+
+:warning: You are about to create a @unikname id for **becoming a <uns/> delegate**. :warning:
+
+If you are trying to create your @unikname id to integrate your application with Unikname Connect, [go to the Unikname Help Center](https://help.unikname.com/3-unikname-connect/) instead.
+
+:::
+
+** Table of Content**
 
 [[toc]]
 

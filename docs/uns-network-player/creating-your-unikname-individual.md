@@ -2,21 +2,21 @@
 next: /uns-network-player/registering-as-delegate.html
 ---
 
-# Creating @unikname as an individual
+# Creating @unikname id as an individual
 
 [[toc]]
 
 ## Coupon
 
-You can create @unikname with a minium of 15 characters for free.
+You can create @unikname id with a minium of 15 characters for free.
 
-If you want to create special @unikname with less than 15 charaters, it requires a coupon. and if you have one, you can continue. 
+If you want to create special @unikname id with less than 15 charaters, it requires a coupon. and if you have one, you can continue. 
 
 Otherwise, contact us on [contact@unikname.com](mailto:contact@unikname.com) to request one.
 
 ## Install the "My Unikname App"
 
-The creation of your @unikname is done through [My Unikname App](https://my.unikname.app/).
+The creation of your @unikname id is done through [My Unikname App](https://my.unikname.app/).
 To launch the application, follow this link with your **Android smartphone or iPhone** (**and your phone only**):
 
 👉 [https://my.unikname.app/](https://my.unikname.app/).
