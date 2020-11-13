@@ -1,15 +1,15 @@
 <template>
   <div class="page-nav" v-if="prev || next">
     <p class="inner">
-      <span v-if="prev" class="prev">
+      <span v-if="prev" class="prev"><span class="navbutton">
         ←
         <router-link v-if="prev" class="prev" :to="prev.path">{{ prev.title || prev.path }}</router-link>
-      </span>
+      </span></span>
 
-      <span v-if="next" class="next">
+      <span v-if="next" class="next"><span class="navbutton">
         <router-link v-if="next" :to="next.path">{{ next.title || next.path }}</router-link>
         →
-      </span>
+      </span></span>
     </p>
   </div>
 </template>
@@ -113,5 +113,36 @@ function flatten (items, res) {
     overflow auto // clear float
   .next
     float right
+
+.navbutton 
+  border 1px solid $accentColor
+  border-radius 15px
+  padding 3px 10px
+  margin 0px
+
+@media screen and (max-width: 720px)
+  p.inner
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    & > span
+      margin-bottom: 1em
+      width: 100%
+      &.prev > span.navbutton a
+        margin-left:1em
+
+      &.next > span.navbutton
+        a
+          margin-right:1em
+
+      & > span.navbutton
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: center
+
+          a
+            margin-left:1em
 
 </style>
