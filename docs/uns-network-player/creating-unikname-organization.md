@@ -12,7 +12,7 @@ If you are trying to create your @unikname id to integrate your application with
 
 :::
 
-** Table of Content**
+**Table of Content**
 
 [[toc]]
 
