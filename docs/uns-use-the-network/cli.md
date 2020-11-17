@@ -1,5 +1,4 @@
 ---
-home: false
 sidebarDepth: 3
 ---
 
@@ -239,6 +238,26 @@ $ uns version
 @uns/cli/x.y.z win32-x64 node-v10.8.0
 ```
 
+#### Network cost
+
+No network cost.
+
+### `update`
+
+#### Introduction
+
+This command allows you to update the uns.network CLI.
+
+#### Usage
+
+```bash
+$ uns update
+```
+
+#### Network cost
+
+No network cost.
+
 ### `status`
 
 #### Introduction
@@ -280,6 +299,9 @@ activeDelegates: 23
 lastBlockUrl: https://explorer.uns.network/block/52328
 ```
 
+#### Network cost
+
+No network cost.
 
 ### `resolve`
 
@@ -322,6 +344,10 @@ $ uns resolve -f raw "bob?usr/address"
 $ uns resolve -f raw "@bob?usr/address"
 $ uns resolve -f raw "@unik:bob?usr/address"
 ```
+
+#### Network cost
+
+No network cost.
 
 ### `send`
 
@@ -366,6 +392,11 @@ Enter your crypto account passphrase (12 words phrase): ************************
 }
 ```
 
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost : none
 
 ### `cryptoaccount:create`
 
@@ -411,8 +442,12 @@ $ uns cryptoaccount:create
 Redirect stdout to file to create json file with crypto account information:
 
 ```bash
-$ uns cryptoaccount:create >> ./myUNSCryptoAccount.json
+$ uns cryptoaccount:create >> ./myUNSCryptoAccount-PRIVATE.json
 ```
+
+#### Network cost
+
+No network cost.
 
 ### `cryptoaccount:read`
 
@@ -471,6 +506,10 @@ chainmeta:
 ```
 For information: Crypto account's balance is updated applying each transaction that engages the crypto account (recipient or sender). Crypto accounts are stored in-memory and are loaded by the node when it starts.
 
+#### Network cost
+
+No network costs.
+
 ### `cryptoaccount:set-second-passphrase`
 
 #### Introduction
@@ -492,6 +531,12 @@ $ uns cryptoaccount:set-second-passphrase
   "confirmations": 1
 }
 ```
+
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: none
 
 ### `unik:create` <Badge text="updated 4.0.0"/>
 
@@ -547,7 +592,6 @@ $ unik:create --explicitValue "MyCompany" --type organization
 $ unik:create --explicitValue "MyCompany" --type organization --unik-voucher "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NksifQ.eyJpYXQiOjE1OTEyOTk5OTEsImV4cCI6MTU5MTMwMTc5MSwianRpIjoiMU9aVmYzRnlueC1lY3VrR2d6TUJCIiwiYXVkIjoiZGlkOnVuaWs6dW5pZDpmYmZiZTdkOWU4YzAwNWYxYTk5MzdkOWZkMTdjNGVmN2RhMmZmODAzN2E3MWU2Y2I3ODQ3YjMwMmVkYTRkMDhWs6dW5pZDo1YWViNzU1NzM5ZGRhMDM4MDk1MzI4OTY2Y2M3Mzc1YzNlZGM4NWM0NTVlNTY2NTlhZjEwNjg4ZDIwZWFlYzk4IiwiYXV0aG9yaXphdGlvbnMiOnsic2VydmljZXMiOlsxMl19LCJpc3MiOiJkaWQ6dW5pazp1bmlkOmZiZmJlN2Q5ZThjMDA1ZjFhOTkzN2Q5ZmQxN2M0ZWY3ZGEyZmY4MDM3YTcxZTZjYjc4NDdiMzAyZWRhNGQwOGEifQ.3wkJYO11wQXZtaOp_r3CTxXR77prpqsFcZvFdjOGQF3rjp7toR2vTNLi6mxwN8EUndxM3pSEKLg-W2maSInvww"
 ```
 
-
 #### Output
 
 If the creation succeed <uns/> CLI prompts your UNIK token ID and links to see token and transaction in the <uns/> explorer.
@@ -568,6 +612,12 @@ See transaction in explorer: https://explorer.uns.network/#/transaction/a73f4269
 }
 
 ```
+
+#### Network Cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: TODO:
 
 ### `unik:read`
 
@@ -622,6 +672,10 @@ chainmeta:
 
 ```
 
+#### Network cost
+
+No network cost.
+
 ### `unik:disclose`
 
 #### Introduction
@@ -667,6 +721,11 @@ data:
   confirmations: 1
 ```
 
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: none
 
 ### `unik:is-disclosed`
 
@@ -709,6 +768,10 @@ isDisclosed: true
 confirmations: 833
 ```
 
+#### Network cost
+
+No Network cost.
+
 ### `unik:everlasting` <Badge text="added 4.2.0" />
 
 #### Introduction
@@ -745,6 +808,12 @@ $ uns unik:everlasting @bob -f yaml
 transaction: d6046fd481d30796e7014d745af62cb6d54c43ec6073ecd93a534c2477455ce6
 confirmations: 833
 ```
+
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: TODO:
 
 ### `properties:set`
 
@@ -786,8 +855,14 @@ transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
 confirmations:  1
 ```
 
-##### Related commands
+#### Related commands
 - [properties:unset](#properties-unset)
+
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: none.
 
 ### `properties:unset`
 
@@ -824,8 +899,14 @@ transaction:  5cb8c18b817f793eee58f4351426c2fe865d065d95667fcc8b23d8319afc0920
 confirmations:  1
 ```
 
-##### Related commands
+#### Related commands
 - [properties:set](#properties-set)
+
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: none.
 
 ### `properties:list`
 
@@ -883,6 +964,10 @@ $ uns properties:list @bob --confirmed 300
 ›   Error: [properties:list] Not enough confirmations (expected: 300, actual: 217)
 ```
 
+#### Network cost
+
+No network cost.
+
 ### `properties:get`
 
 #### Introduction
@@ -924,6 +1009,10 @@ property: phone
 value: +33606060606
 confirmations: 833
 ```
+
+#### Network cost
+
+No network cost.
 
 ### `properties:register` <Badge text="added 4.2.0"/>
 
@@ -969,6 +1058,10 @@ $ uns properties:register @2:MyCompany -V "www.mycompany.com"
 
 The `verificationKey` will be used in the next steps of the verification process with the [`properties:verify`](#properties-verify) command.
 
+#### Network cost
+
+No network cost.
+
 ### `properties:verify` <Badge text="added 4.2.0"/>
 
 #### Introduction
@@ -995,6 +1088,12 @@ $ uns properties:verify {TARGET} --url-channel {html, file, whitelist}
 #### Examples
 
 Detailed usages of this command are [described in the Unikname Help Center](https://docs.unikname.com/3-unikname-connect/howto-get-unikname-trust-certificate-organization).
+
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: none.
 
 ### `delegate:vote` <Badge text="breaking 4.0.0" type="warning" />
 
@@ -1037,6 +1136,12 @@ Vote for the organization delegate whose @unikname is `@MyCompany`
 $ uns delegate:vote "@organization:MyCompany"
 ```
 
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: none.
+
 ### `delegate:unvote`
 
 #### Introduction
@@ -1076,6 +1181,12 @@ Unvote for the organization delegate whose @unikname is `@MyCompany`
 $ uns delegate:unvote "@organization:MyCompany"
 ```
 
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: none.
+
 ### `delegate:register`
 
 #### Introduction
@@ -1111,6 +1222,12 @@ Register organization `@MyCompany` as delegate
 $ uns delegate:register "@organization:MyCompany"
 ```
 
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: none.
+
 ### `delegate:resign`
 
 #### Introduction
@@ -1137,6 +1254,12 @@ Resignation of delegate `@Bob`
 ```bash
 $ uns delegate:resign "@Bob"
 ```
+
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+
+Service Provider cost: none.
 
 ### `badges:claim`
 
@@ -1169,14 +1292,8 @@ Claim Pioneer badge
 $ uns badges:claim "@Bob" -b pioneer
 ```
 
-### `update`
+#### Network cost
 
-#### Introduction
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
 
-This command allows you to update the uns.network CLI.
-
-#### Usage
-
-```bash
-$ uns update
-```
+Service Provider cost: TODO:
