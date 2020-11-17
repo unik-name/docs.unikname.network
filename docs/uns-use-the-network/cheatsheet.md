@@ -6,29 +6,36 @@ pageClass: cheatsheet-pageclass
 
 # Command Line Interface (CLI)
 
-| CLI | Rewards | description | CLI version |
-| - | - | - | - |
-| [version](cli.html#version) | | Display version of the CLI | 2.2.0 |
-| [status](cli.html#status) | | Display <uns/> blockchain status | 2.2.0 |
-| [send](cli.html#send) |  YES | Send UNS tokens to another public address | 2.2.0 |
-| [resolve](cli.html#resolve) | | Resolve a decentralized Identifier |
-| [cryptoaccount:create](cli.html#cryptoaccount-create) | | Create a <uns/> crypto-account | 2.2.0 |
-| [cryptoaccount:read](cli.html#cryptoaccount-read) | | Read current data of a specified cryptoaccount, eg. balance | 2.2.0 |
-| [unik:create](cli.html#unik-create) | YES | Create a UNIK Token | 2.2.0 |
-| [unik:read](cli.html#unik-read) | | Read UNIK Token data | 2.2.0 |
-| [unik:disclose](cli.html#unik-disclose) | YES | Disclose one or more explicit(s) value(s) related to a UNIK | 2.2.0 |
-| [unik:is-disclosed](cli.html#unik-is-disclosed) | YES | Check if UNIK has one or more disclosed explicit value | 2.2.0 |
-| [delegate:register](cli.html#delegate-register) | YES | Register a UNIK as delegate using @unikname or unikid | 2.0.0 |
-| [delegate:resign](cli.html#delegate-resign) | YES | Resign delegate registration of a @unikname or unikid | 2.0.0 |
-| [delegate:vote](cli.html#delegate-vote) | YES | Vote for a delegate with his @unikname or unikid | 2.0.0 |
-| [delegate:unvote](cli.html#delegate-unvote) | YES | Remove vote from a delegate with his @nikname or unikid | 2.0.0 |
-| [properties:get](cli.html#properties-get) | | Get the value of a specific property of a UNIK token. | 2.2.0 |
-| [properties:list](cli.html#properties-list) | | List all properties of a UNIK token | 2.2.0 |
-| [properties:register](cli.html#properties-register) | | Register a properties to verify | 4.2.0 |
-| [properties:verify](cli.html#properties-verify) | YES | Verify a registered properties | 4.2.0 |
+| CLI | Network Costs | description | 
+| - | :-: | - | :-: |
+| [version](cli.html#version) | | Display version of the CLI 
+| [update](cli.html#update) | | Keep the CLI up to date
+| [status](cli.html#status) | | Display <uns/> blockchain status 
+| [resolve](cli.html#resolve) | | Resolve a decentralized Identifier 
+| [send](cli.html#send) |  YES | Send UNS tokens to another public address 
+| [cryptoaccount:create](cli.html#cryptoaccount-create) | | Create a <uns/> crypto-account 
+| [cryptoaccount:read](cli.html#cryptoaccount-read) | | Read current data of a specified cryptoaccount, eg. balance 
+| [cryptoaccount:set-second-passphrase](cli.html#cryptoaccount-set-second-passphrase) | YES | Set a second passphrase for the specified cryptoaccount 
+| [unik:create](cli.html#unik-create) | YES | Create a UNIK Token 
+| [unik:read](cli.html#unik-read) | | Read UNIK Token data
+| [unik:disclose](cli.html#unik-disclose) | YES | Disclose one or more explicit(s) value(s) related to a UNIK
+| [unik:is-disclosed](cli.html#unik-is-disclosed) | YES | Check if UNIK has one or more disclosed explicit value
+| [unik:everlasting](cli.html#unik-everlasting) | YES | Keep UNIK alive for eternity
+| [properties:set](cli.html#properties-set) | YES | Set the value of a specific property of a UNIK
+| [properties:unset](cli.html#properties-unset) | YES | Unset or clear the value of a specific property of a UNIK
+| [properties:list](cli.html#properties-list) | | List all properties of a UNIK token 
+| [properties:get](cli.html#properties-get) | | Get the value of a specific property of a UNIK
+| [properties:register](cli.html#properties-register) | | Register a properties to verify
+| [properties:verify](cli.html#properties-verify) | YES | Verify a registered properties
+| [delegate:vote](cli.html#delegate-vote) | YES | Vote for a delegate with his @unikname or unikid 
+| [delegate:unvote](cli.html#delegate-unvote) | YES | Remove vote from a delegate with his @nikname or unikid
+| [delegate:register](cli.html#delegate-register) | YES | Register a UNIK as delegate using @unikname or unikid 
+| [delegate:resign](cli.html#delegate-resign) | YES | Resign delegate registration of a @unikname or unikid
+| [badges:claim](cli.html#badges-claim) | YES | Claim a badge for a specified UNIK
 
-Add or Update your CLI to the latest version : `>yarn global [add|upgrade] @uns/uns-cli`  
-Getting help for a specific _command_ : `>uns command --help`
+Add or Update your CLI to the latest version : `>yarn global [add|upgrade] @uns/uns-cli`
+
+Getting help for a specific {command} : `>uns {command} --help`
 
 ## Standard command flags
 
@@ -36,12 +43,18 @@ Getting help for a specific _command_ : `>uns command --help`
 `-n --network`: (required) Network on which to run the command [sandbox or livenet] (local is for development only)  
 `-v --verbose`: (optional) Output more details on logs  
 `-f --format`: (optional) Specify how to format the output [json|table|yaml|raw]. See command help to know supported format.  
-`-m --chainmeta`: (optional) Output chain meta data related to the read itself."
+`-m --chainmeta`: (optional) Output chain meta data related to the read itself."  
+`--node`: (optional) URL of custom node representing blockchain endpoint (environment variable: UNS_NODE)  
+`--nftfactory`: (optional): URL of custom forge factory services endpoint (environment variable: UNS_SERVICES)  
+`--await-confirmation`: (optional) Maximum number of blocks to wait to get one confirmation of the transaction. Default to 3. 0 for immediate return.  
+`--passphrase`: The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.  
+`--second-passphrase`: The second crypto account passphrase. If you have set up a second passphrase on your crypto-account, you can specify it with this flag.  
+`--sender-account`: The @unikname or unik ID of the transaction sender. If --sender-account is provided, a check is performed to verify if the passphrase match the unik's account.
 
 ## APIs
 
-| API | Rewards |
-| - | - | 
+| API | 
+| - | 
 | **Wallet** |
 | [/wallets/{id}](api.html#retrieve-a-wallet) _&rightarrow; read wallet info and UNS balance_ |
 | [/wallets/{id}/uniks](api.html#retrieve-tokens-from-wallet) _&rightarrow; list UNIKs owned by a specific wallet._ |
@@ -103,30 +116,30 @@ To create @unikname, a service fee must be paid to the NFT-Factory with UNS toke
 Prices for individual patterns:
 
 | Price (UNS) | Pattern | Description |
-| - | - | - | 
-| 500000 | **Individual - Digits - Tiny** | Only digits from Safetypo alphabet, 5 characters and less | 
-| 50000 | **Individual - Digits - Standard** | Only digits from Safetypo alphabet, between 6 and 9 characters | 
+| -: | - | - | 
+| 500 000 | **Individual - Digits - Tiny** | Only digits from Safetypo alphabet, 5 characters and less | 
+| 50 000 | **Individual - Digits - Standard** | Only digits from Safetypo alphabet, between 6 and 9 characters | 
 | 100 | **Individual - Digits - Long** | Only digits from Safetypo alphabet, 10 character and more | 
-| 5000000 | **Individual - Latin Safetypo - 1** | Letters and digits from Safetypo alphabet, exactly 1 character | 
-| 1000000 | **Individual - Latin Safetypo - 2** | Letters and digits from Safetypo alphabet, exactly 2 characters |
-| 500000 | **Individual - Latin Safetypo - 3** | Letters and digits from Safetypo alphabet, exactly 3 characters | 
-| 50000 | **Individual - Latin Safetypo - Tiny** | Letters and digits from  Safetypo alphabet, 4 or 5 characters | 
-| 5000 | **Individual - Latin Safetypo - Short** | Letters and digits from Safetypo alphabet, 6 or 7 characters | 
+| 5 000 000 | **Individual - Latin Safetypo - 1** | Letters and digits from Safetypo alphabet, exactly 1 character | 
+| 1 000 000 | **Individual - Latin Safetypo - 2** | Letters and digits from Safetypo alphabet, exactly 2 characters |
+| 500 000 | **Individual - Latin Safetypo - 3** | Letters and digits from Safetypo alphabet, exactly 3 characters | 
+| 50 000 | **Individual - Latin Safetypo - Tiny** | Letters and digits from  Safetypo alphabet, 4 or 5 characters | 
+| 5 000 | **Individual - Latin Safetypo - Short** | Letters and digits from Safetypo alphabet, 6 or 7 characters | 
 | 500 | **Individual - Latin Safetypo - Normal** | Letters and digits from Safetypo alphabet, between 8 and 14 characters | 
 | 10 | **Individual - Latin Safetypo - Long** | Letters and digits from Safetypo alphabet, more than 15 characters | 
 
 Prices for organization patterns:
 
 | Price (UNS) | Pattern | Description |
-| - | - | - |
-| 25000 | **Organization - Digits** | Only digits from Safetypo	alphabet. No length restriction. |
-| 25000 | **Organization - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
+| -: | - | - |
+| 25 000 | **Organization - Digits** | Only digits from Safetypo	alphabet. No length restriction. |
+| 25 000 | **Organization - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
 
 Prices for network pattern:
 
 | Price (UNS) | Pattern | Description |
-| - | - | - |
-| 1000000 | **Network - Digits** | Only digits from Safetypo alphabet. No length restriction. |
-| 1000000 | **Network - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
+| -: | - | - |
+| 1 000 000 | **Network - Digits** | Only digits from Safetypo alphabet. No length restriction. |
+| 1 000 000 | **Network - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
 
  
