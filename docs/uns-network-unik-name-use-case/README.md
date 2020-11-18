@@ -17,8 +17,8 @@ Get only one @unikname, and use it everywhere and everyday.
 
 ## Unikname Connect
 
-[`Unikname Connect` is the easiest and safest authentication solution](http://www.unikname.com/) for any SaaS platforms and mobile apps.
-This solution has been designed for SaaS platforms with users sensitive to the protection of their privacy, who want to be sure not to be tracked, and fleeing Facebook Connect or Sign In with Apple.
+[`Unikname Connect` is the easiest and safest MFA authentication solution](http://www.unikname.com/) for any SaaS platforms and mobile apps, providing a protection against economic espionage for business, and a protection against tracking for users.
+This solution has been designed for SaaS platforms with users sensitive to the protection of their privacy, who want to be sure not to be tracked.
 
 [Integrating `Unikname Connect` to these platforms](https://docs.unikname.com/3-unikname-connect/) increase value proposition for their visitors, and improve security.
 No more need to manage and to secure user's passwords and database!
@@ -29,7 +29,6 @@ No more need to manage and to secure user's passwords and database!
 This solution is dedicated to companies having a mobile App providing access to sensitive information.
 This solution has been designed with a Bank. 
 
-## Unikname Anti-Phishing
+## Unikname URL-Checker
 
-`Unikname Anti-Phishing` is the anti-phishing solution.
-This solution runs with Unikname Connect and provide a cybersecurity solution for companies exposed to fishing risks.
+This solution stores a public proof of ownership of a URL over the web, could be a domain name, an image, a social account or any file.
