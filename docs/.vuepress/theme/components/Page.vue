@@ -4,9 +4,9 @@
 
     <Content class="theme-default-content" />
 
-    <PageEdit />
-
     <PageNav v-bind="{ sidebarItems }" />
+
+    <PageEdit />
 
     <slot name="bottom" />
 
