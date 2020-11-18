@@ -60,7 +60,7 @@ module.exports = {
     lastUpdated: true,
     activeHeaderLinks: true,
     nav: [
-      { text: "Get My Unikname App", link: "https://my.unikname.app" },
+      { text: "Get my @unikname ID", link: "https://my.unikname.app" },
       { text: "Explorer", link: "https://explorer.uns.network/" },
     ],
     sidebar: [
@@ -69,12 +69,12 @@ module.exports = {
         title: "Introduction",
         children: [
           ["/uns-network-introduction/", "Understanding uns.network"],
-          ["/uns-network-tokens/", "The uns.network Tokens"],
+          ["/uns-network-tokens/", "The Tokens"],
           [
             "/uns-network-introduction/did-unik",
-            "UNIK Decentralized IDentifiers",
+            "Decentralized IDentifiers",
           ],
-          "/uns-network-getting-started/",
+          [ "/uns-network-getting-started/", "Getting Started"]
         ],
       },
       {

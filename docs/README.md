@@ -8,15 +8,15 @@ Welcome to the <uns/> Player hub. You're are at the right place to find guides a
 
 ## [Understanding uns.network](/uns-network-introduction/)
 
-## [The uns.network Tokens](/uns-network-tokens/)
+## [The Tokens](/uns-network-tokens/)
 
 ## [Key Concepts](/uns-network-key-concepts/)
 
-## [Using the uns.network: CLI, API...](/uns-use-the-network/)
+## [Interacting with uns.network: CLI, API...](/uns-use-the-network/)
 
-## [uns.network use cases: Unikname DApp](/uns-network-unik-name-use-case/)
+## [Unikname Use Case](/uns-network-unik-name-use-case/)
 
-## [Becoming a Network Player](/uns-network-player/)
+## [Becoming Network Player](/uns-network-player/)
 
 ## [Setting-up your Node](/uns-network-setting-up-node/)
 
