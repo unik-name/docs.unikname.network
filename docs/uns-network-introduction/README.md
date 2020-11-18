@@ -5,7 +5,13 @@ Title: Understanding uns.network
 
 # Understanding uns.network
 
-<brand name="uns"/> is the decentralized network and the protocol dedicated to handle IDs rooted in the blockchain, aiming to secure any web and mobil connections, and to protect the user's privacy. This blockchain is specialized in providing Decentralized ID (also called DID), and offer a good Distributed Public Key Infrastructure (also called DPKI) solution, the basis of the next generation of authentication protocols.
+Welcome <un id="@Bob"/> !
+
+In the Internet-era, identifiers are everywhere. We share them by phone or we write them down to our friends and family. We do not want them to be complex, we like when they’re expressed in our language and we love when they are unique and personalized. Designed for everyday uses, these human-readable identifiers should be easy to remember, unique and usable everywhere on the net. We use it to login on our favorite websites, to share public or private data, to communicate with others, or simply to be identified. They must be private and protect our privacy, and the most important our identifiers should be under our sole control.
+
+<brand name="uns"/> is the decentralized network and the protocol dedicated to handle IDs rooted in the blockchain, aiming to secure any web and mobil user connections, and to protect the user's privacy. 
+
+This blockchain is specialized in providing Decentralized ID (also called DID), and offer a good Distributed Public Key Infrastructure (also called DPKI) solution, the basis of the next generation of authentication protocols.
 
 The blockchain is fueled with its own native token, UNS, a protocol and utility token.
 
@@ -17,8 +23,8 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 
 <brand name="uns"/> has been designed to be used easily by everyone who needs to integrate self-sovereign identifiers in their software and applications, not only DAPP but also any traditional web platform. 
 
-:::tip What uns means?
-**uns** is an acronym and an homonym, it stands for **U**niversal-**N**ame-**S**ystem and for **U**nik**N**ame-**S**ystem.
+:::tip What 'uns' means?
+**'uns'** is an acronym and an homonym, it stands for **U**niversal-**N**ame-**S**ystem and for **U**nik**N**ame-**S**ystem.
 :::
 
 ## Main Features
@@ -56,7 +62,7 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 
 **:trophy: <brand name="uns"/> DIDs are multilingual and protected against spoofing by SafeTypo© technology**. 14 UNICODE scripts are accepted, with many alphabets.
 
-**:trophy: <brand name="uns"/> is a DPOS blockchain operated by 23 elected delegates.** blockchain is powered by the famous ARK.IO DPOS Blockchain, setup with a 8 seconds block time. Delegates are grouped in colleges of stakeholders:
+**:trophy: <brand name="uns"/> is a DPOS blockchain operated by 23 elected delegates.** The blockchain is powered by the famous ARK.IO DPOS Blockchain, setup with a 8 seconds block time. Delegates are grouped in colleges of stakeholders:
 
 * 10 Individuals – Defenders of individual freedoms and privacy
 * 10 Organizations – Committed in securing the web for businesses
