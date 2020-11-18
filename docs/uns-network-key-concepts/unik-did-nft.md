@@ -39,9 +39,9 @@ The identifier built upon the @unikname string don't care about upper case/lower
 
 ## UNIK: the Non-Fungible Token
 
-IDs rooted in <uns/> blockchain are called Decentralized IDs, or DIDs. Every DID materializes in the form of a Non Fongible Token called UNIK within the <uns/> blockchain. 
+IDs rooted in <brand name="uns"/> blockchain are called Decentralized IDs, or DIDs. Every DID materializes in the form of a Non Fongible Token called UNIK within the <brand name="uns"/> blockchain. 
 
-Every @unikname string is obfuscated with a 64 characters string hash. This hash is unique and called the unikid of a @unikname. Since this unikid is minted with the passphrase of the owner, the <uns/> blockchain creates the UNIK Non-Fongible Token of the @unikname. It becomes a Decentralized ID.
+Every @unikname string is obfuscated with a 64 characters string hash. This hash is unique and called the unikid of a @unikname. Since this unikid is minted with the passphrase of the owner, the <brand name="uns"/> blockchain creates the UNIK Non-Fongible Token of the @unikname. It becomes a Decentralized ID.
 
 ``@jack-Sparrow`` DID UNIK Token is ``10e7052bbc0b914d4d9bb88db916a366258569b7e1b1c9e5c47cef2fc37deedb`` 
 

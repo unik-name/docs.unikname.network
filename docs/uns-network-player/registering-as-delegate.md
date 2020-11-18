@@ -8,8 +8,8 @@ home: false
 
 ## Installing the uns.network CLI
 
-The <uns/> Command Line Interface (CLI) makes it easy to manage your @unikname and Unikname apps directly from the terminal.
-It’s an essential part of using <uns/>.
+The <brand name="uns"/> Command Line Interface (CLI) makes it easy to manage your @unikname and Unikname apps directly from the terminal.
+It’s an essential part of using <brand name="uns"/>.
 
 | <h1><vp-icon name="windows-brands" size="2em" /><br/>Windows</h1> | <h1><vp-icon name="apple-brands" size="2em" /><br/>macOS</h1> | <h1><vp-icon name="linux-brands" size="2em" /><br/>Linux</h1> |
 |:-----------------------------------:|:----------------------------------------------------------------------:|:---------------------------------------:|
@@ -55,7 +55,7 @@ Now, you can register as a delegate!
 
 ::: warning Registering as a delegate
 
-:warning: You are about **registering yourself as a <uns/> delegate**. :warning:
+:warning: You are about **registering yourself as a <brand name="uns"/> delegate**. :warning:
 
 Don't execute the following command if you are trying to create your @unikname id to integrate your application with Unikname Connect. [Go to the Unikname Help Center](https://help.unikname.com/3-unikname-connect/) instead.
 

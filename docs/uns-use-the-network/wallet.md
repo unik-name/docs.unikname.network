@@ -9,7 +9,7 @@ title: Wallets for UNS tokens and UNIK tokens
 
 Both UNS and UNIK tokens are manageable with a command line interface (CLI). But this is not really user-friendly. 
 
-ArkEcosystem comes with a lot of out-of-the-box tools for bridgechains like UNS. Among those tools, we have the awesome [Desktop Wallet](https://ark.io/wallet) which is fully compatible with uns.network. From a single wallet application, you can manage your ARK **AND** UNS tokens easily. By default, the app connects to Ark.io mainnet. But with a simple configuration, you can connect it to <uns/> too. Let's do it !
+ArkEcosystem comes with a lot of out-of-the-box tools for bridgechains like UNS. Among those tools, we have the awesome [Desktop Wallet](https://ark.io/wallet) which is fully compatible with uns.network. From a single wallet application, you can manage your ARK **AND** UNS tokens easily. By default, the app connects to Ark.io mainnet. But with a simple configuration, you can connect it to <brand name="uns"/> too. Let's do it !
 
 ### How to setup the default ARK Desktop Wallet to work with UNS tokens
 
@@ -38,13 +38,13 @@ Fill inputs:
 
 ::: details For Livenet
 - name: **UNS Livenet**
-- description: **<uns/> LIVENET**
+- description: **<brand name="uns"/> LIVENET**
 - seed server: **http://163.172.146.222:4200**
 :::
 
 ::: details For Sandbox
 - name: **UNS Sandbox**
-- description: **<uns/> SANDBOX**
+- description: **<brand name="uns"/> SANDBOX**
 - seed server: **http://51.159.75.146**
 :::
 
@@ -63,7 +63,7 @@ Fill-in all inputs like you did for Ark profile.
 Now, in step `2. Network` you can choose the freshly appeared `UNS Livenet`/`UNS Sandbox` item.  
 ![network](./images/network.png)
 
-At the end, you should have a fully configured Desktop wallet able to transfer UNS tokens, create <uns/> wallets, vote for <uns/> delegates, or any other features inherited from ArkEcosystem.
+At the end, you should have a fully configured Desktop wallet able to transfer UNS tokens, create <brand name="uns"/> wallets, vote for <brand name="uns"/> delegates, or any other features inherited from ArkEcosystem.
 
 If you want to start playing:
 - On the Livenet, you should [get a @unikname first with the My Unikname app](#unikname-app)

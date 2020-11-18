@@ -5,7 +5,7 @@ title: "uns.network Tokens"
 
 # The uns.network Tokens
 
-The <uns/> blockchain runs with two tokens linked together with smart-contracts:
+The <brand name="uns"/> blockchain runs with two tokens linked together with smart-contracts:
 
 * [UNIK Token:](#the-unik-token) a NFT Token representing @unikname Identifiers.
 * [UNS Token:](#the-uns-token) the protocol token used to secure the network and to rewards network players and users. This is the “fuel” of the network.
@@ -26,15 +26,15 @@ Ark Core NFT specifications are discussed in the standard _Ark Improvement Proce
 
 ### UNIK Token Remarkable Properties
 
-:sparkles: **Unique:** The owner of a UNIK has the guarantee that his identifier is unique and that no one can get the same within the same namespace. Every @unikname is represented by a single cryptographic hash code locked as a UNIK token within the <uns/> blockchain.
+:sparkles: **Unique:** The owner of a UNIK has the guarantee that his identifier is unique and that no one can get the same within the same namespace. Every @unikname is represented by a single cryptographic hash code locked as a UNIK token within the <brand name="uns"/> blockchain.
 
 :sparkles: **Immutable:** Once created and sealed into the blockchain, the name can’t be neither altered, nor changed. 
 
-:sparkles: **Obfuscated:** The internal string representing the @unikname identifier is obfuscated within the <uns/> blockchain. Thus, it can neither be read nor listed. Only people who knows it can make request on it.
+:sparkles: **Obfuscated:** The internal string representing the @unikname identifier is obfuscated within the <brand name="uns"/> blockchain. Thus, it can neither be read nor listed. Only people who knows it can make request on it.
 
-:sparkles: **Self-Sovereign Asset:** Self-sovereign identifier is a concept where the individual or the entity has ultimate control over their identifier and is the final arbiter of who can access and use their data related to it. Every UNIK token has its ownership rules coded within the <uns/> blockchain smart contract. Only UNIK token owner has control over it.
+:sparkles: **Self-Sovereign Asset:** Self-sovereign identifier is a concept where the individual or the entity has ultimate control over their identifier and is the final arbiter of who can access and use their data related to it. Every UNIK token has its ownership rules coded within the <brand name="uns"/> blockchain smart contract. Only UNIK token owner has control over it.
 
-:sparkles: **Created and obtained for Eternity:** Every UNIK token is minted and sealed into the <uns/> blockchain. No subscription plan required, nobody can delete it.
+:sparkles: **Created and obtained for Eternity:** Every UNIK token is minted and sealed into the <brand name="uns"/> blockchain. No subscription plan required, nobody can delete it.
 
 ### UNIK Token Issuance
 
@@ -44,7 +44,7 @@ Only accredited nodes can mint UNIK in the chain. These nodes belongs to Network
 
 ### UNS token is a protocol token
 
-UNS token is a protocol token required to run the <uns/>. Executing every network operation requires UNS Tokens: 
+UNS token is a protocol token required to run the <brand name="uns"/>. Executing every network operation requires UNS Tokens: 
 - to mint and sealed new @uniknames ID, new UNIK
 - to update existing UNIK, eg. transfer ownership
 - to update UNIK registry

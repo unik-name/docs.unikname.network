@@ -36,7 +36,7 @@ A Decentralized Network...
 
 …self-controls their creation.
 
-<uns/> meets all these criteria, making it the ideal Decentralized Network for DIDs
+<brand name="uns"/> meets all these criteria, making it the ideal Decentralized Network for DIDs
 
 ## What makes UNIK DID so unique ?
 

@@ -9,9 +9,9 @@ title: "Setting-up your uns.network Node"
 
 ## Introduction
 
-Here we will help you set up a <uns/> relay node and/or forger node.
+Here we will help you set up a <brand name="uns"/> relay node and/or forger node.
 
-To make your life easier, we've built Docker images of <uns/> nodes.
+To make your life easier, we've built Docker images of <brand name="uns"/> nodes.
 
 ### What is docker 
 
@@ -33,7 +33,7 @@ Orchestrators with Docker as a first-class citizen:
 - [Mesos](http://mesos.apache.org/)
 
 For the moment, we have choosen to only describe the `docker-compose` setup.
-So, if you choose to run your <uns/> node on other platforms, share your own experience [on the <uns/> network of the forum!](https://forum.unik-name.com/c/uns-network/7)
+So, if you choose to run your <brand name="uns"/> node on other platforms, share your own experience [on the <brand name="uns"/> network of the forum!](https://forum.unik-name.com/c/uns-network/7)
 
 ### Minimum requirements for running a SANDBOX relay or forger node
 
@@ -60,7 +60,7 @@ Unfortunately, there is no standard documentation to do that, so please follow t
 
 ## Run a node with Docker Compose
 
-In this documentation, we'll start sandbox <uns/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
+In this documentation, we'll start sandbox <brand name="uns"/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
 
 So, be sure to have these prerequisites:
 - [Docker](https://docs.docker.com/install) installed on your Linux machine
@@ -155,5 +155,5 @@ It has two exposed ports; for p2p (`4102`) and for API (`4103`), and mount 3 vol
 
 Some environment variables are set :
 - for the database (port, user name, user password and db name)
-- for the network (here it's `sandbox`, it means that it'll connect to other <uns/> sandbox nodes)
+- for the network (here it's `sandbox`, it means that it'll connect to other <brand name="uns"/> sandbox nodes)
 - and the forger secret (line `FORGER_SECRET`, commented by default). 

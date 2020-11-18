@@ -12,9 +12,9 @@ tags:
 
 # Interacting with the uns.network
 
-Users can interact or let say 'use' the <uns/> in multiple ways depending on user's needs.
+Users can interact or let say 'use' the <brand name="uns"/> in multiple ways depending on user's needs.
 
-If you're familiar with the <uns/> environement, you may be interested to use the [cheat sheet](cheatsheet) to get a quick overview of usefull commands and APIs.
+If you're familiar with the <brand name="uns"/> environement, you may be interested to use the [cheat sheet](cheatsheet) to get a quick overview of usefull commands and APIs.
 
 ### Use the CLI, to go fast with basic actions
 
@@ -26,11 +26,11 @@ The CLI runs with the LIVENET but also with the SANDBOX for integration testing.
 
 ### Use the APIs, to consume network services
 
-All network services can be used via the <uns/> APIs. This is the best way for developers to integrate <uns/> services into their own developments and APPs. 
+All network services can be used via the <brand name="uns"/> APIs. This is the best way for developers to integrate <brand name="uns"/> services into their own developments and APPs. 
 
 [Read more &rightarrow;](api)
 
-### Use the SDKs, to quickly embed <uns/> features, and Unikname solutions, withing APPs
+### Use the SDKs, to quickly embed <brand name="uns"/> features, and Unikname solutions, withing APPs
 
 SDKs have been developped to simplify developer work when they integrate Unikname solutions within their plateforms or their APPs. 
 
@@ -65,14 +65,14 @@ You can connect a node to the SANDBOX by configuring the CLI, SDK, and even a de
 
 - Creating test accounts
 - Developing and testing applications for free (use the faucet to get SUNS tokens)
-- Testing existing applications against new releases or release candidates of <uns/> Core
+- Testing existing applications against new releases or release candidates of <brand name="uns"/> Core
 
 Please note that **this network is ephemeral**, and may be reset anytime. Resets will be announced several days before the effective operation, so follow [announcements published on the unik-name forum](https://forum.unik-name.com/c/uns-network).
 
 #### SANDBOX faucet
 
-If you need SUNS tokens to test the <uns/> features (creating your UNIK for example), you can ask for SUNS on [the unik-name forum](https://forum.unik-name.com/c/uns-network/faucet).
-Don't forget to provide your cryptoaccount address, created with [the <uns/> CLI](cli.html#cryptoaccount-create) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
+If you need SUNS tokens to test the <brand name="uns"/> features (creating your UNIK for example), you can ask for SUNS on [the unik-name forum](https://forum.unik-name.com/c/uns-network/faucet).
+Don't forget to provide your cryptoaccount address, created with [the <brand name="uns"/> CLI](cli.html#cryptoaccount-create) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
 
 You can also use [a community-managed faucet to receive SUNS](https://uns-faucet.rigwild.dev/).
 

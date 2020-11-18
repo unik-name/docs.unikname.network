@@ -50,4 +50,4 @@ After you choose your option, you should arrive on a page to create your @unikna
 :::
 
 Don't forget to backup and secure your passphrase, it will allow you to retrieve access to your @unikname in case you change your device.
-Neither <uns/>, nor Unikname will be able to give you back access to your @unikname.
+Neither <brand name="uns"/>, nor Unikname will be able to give you back access to your @unikname.

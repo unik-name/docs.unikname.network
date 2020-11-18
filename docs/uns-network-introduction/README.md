@@ -5,17 +5,17 @@ Title: Understanding uns.network
 
 # Understanding uns.network
 
-<uns/> is the decentralized network and the protocol dedicated to handle IDs rooted in the blockchain, aiming to secure any web and mobil connections, and to protect the user's privacy. This blockchain is specialized in providing Decentralized ID (also called DID), and offer a good Distributed Public Key Infrastructure (also called DPKI) solution, the basis of the next generation of authentication protocols.
+<brand name="uns"/> is the decentralized network and the protocol dedicated to handle IDs rooted in the blockchain, aiming to secure any web and mobil connections, and to protect the user's privacy. This blockchain is specialized in providing Decentralized ID (also called DID), and offer a good Distributed Public Key Infrastructure (also called DPKI) solution, the basis of the next generation of authentication protocols.
 
 The blockchain is fueled with its own native token, UNS, a protocol and utility token.
 
-<uns/> and its IDs are the backbone of the Unikname solutions : 
+<brand name="uns"/> and its IDs are the backbone of the Unikname solutions : 
 - **`@unikname ID`:** Augmented pseudo under the sole control of its owner. @unikname IDs are self-sovereign and easy to remember multi-purpose IDs. They can replace email and password for fully confidential sign-up and log in, or used to control sharing of personal or business information over the web, and many more...
 - **`Unikname Connect`:** Unikname Connect is a privacy-by-design authentication solution, rewarding users who want to make internet a safer place.
 - **`Unikname Certificate Proofing`:** the solution to secure mobile apps against falsified TLS/SSL X509 certificates and against man-in-the-middle attacks.
 - **`Unikname URL-Checker`:** the solution to store a public proof of ownership of a URL over the web, could be a domain name, an image, a social account or any file.
 
-<uns/> has been designed to be used easily by everyone who needs to integrate self-sovereign identifiers in their software and applications, not only DAPP but also any traditional web platform. 
+<brand name="uns"/> has been designed to be used easily by everyone who needs to integrate self-sovereign identifiers in their software and applications, not only DAPP but also any traditional web platform. 
 
 :::tip What uns means?
 **uns** is an acronym and an homonym, it stands for **U**niversal-**N**ame-**S**ystem and for **U**nik**N**ame-**S**ystem.
@@ -25,21 +25,21 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 
 ### :fire: Issuance and Minting Decentralized IDs as NFTs
 
-**:sparkles: Self-Sovereign Identifier NFTs**. <uns/> Decentralized IDs are Non-Fungible Tokens (NFT), they're unique, available every time and everywhere.Individuals or Organizations have ultimate control over their identifier and are the final arbiter of who can access and use their data related to it. 
+**:sparkles: Self-Sovereign Identifier NFTs**. <brand name="uns"/> Decentralized IDs are Non-Fungible Tokens (NFT), they're unique, available every time and everywhere.Individuals or Organizations have ultimate control over their identifier and are the final arbiter of who can access and use their data related to it. 
 
-**:sparkles: Featured NFTs**. <uns/> DIDs are Non-Fungible Token (NFT) with peerless features like badges, properties… and crypto-accounts.
+**:sparkles: Featured NFTs**. <brand name="uns"/> DIDs are Non-Fungible Token (NFT) with peerless features like badges, properties… and crypto-accounts.
 
-**:sparkles: Easy to Remember Pseudonymous IDs.** <uns/> DIDs have an easy to remember shape that could be a pseudo, a real name, or any funny name. We don’t care about your real identity. 
+**:sparkles: Easy to Remember Pseudonymous IDs.** <brand name="uns"/> DIDs have an easy to remember shape that could be a pseudo, a real name, or any funny name. We don’t care about your real identity. 
 
-**:sparkles: Anti-Squatting Protections.** <uns/> DIS's integrate an original life cycle management protecting then against squatting.
+**:sparkles: Anti-Squatting Protections.** <brand name="uns"/> DIS's integrate an original life cycle management protecting then against squatting.
 
 ### :fire: User Rewarding System
 
-**:sparkles: <uns/> UNS utility tokens are used to encourage users to maximize use of their @unikname ID** to make the internet more secure and more trustful.
+**:sparkles: <brand name="uns"/> UNS utility tokens are used to encourage users to maximize use of their @unikname ID** to make the internet more secure and more trustful.
 
 ### :fire: On-Chain / Off-Chain Control
 
-**:sparkles: <uns/> DID's owners use their ID in either an off-chain or an on-chain mode.** They control the privacy level and the sharing of their data: fully private, with white lists, open... and IDs stay fully private when they're used for authentication.
+**:sparkles: <brand name="uns"/> DID's owners use their ID in either an off-chain or an on-chain mode.** They control the privacy level and the sharing of their data: fully private, with white lists, open... and IDs stay fully private when they're used for authentication.
 
 ### :fire: Highly resilient and highly secure
 
@@ -47,32 +47,32 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 
 ### :fire: Compatible with existing web & mobile Apps
 
-**:sparkles: <uns/> APIs and SDKs can be easily used in any web and mobile Apps**, even traditional centralized ones (heavy client, SaaS, Platforms...)
+**:sparkles: <brand name="uns"/> APIs and SDKs can be easily used in any web and mobile Apps**, even traditional centralized ones (heavy client, SaaS, Platforms...)
 
 ## Main Specifications
 
-**:trophy: <uns/> DIDs follow the Decentralized Identity Foundation standards.** Uns.network team is an active member of the DIF and contribute to the definition of tomorrow standards.
+**:trophy: <brand name="uns"/> DIDs follow the Decentralized Identity Foundation standards.** Uns.network team is an active member of the DIF and contribute to the definition of tomorrow standards.
 [see DIF UNS DID Specifications](https://github.com/unik-name/did-method-spec/blob/main/did-uns/UNS-DID-Specification.md)
 
-**:trophy: <uns/> DIDs are multilingual and protected against spoofing by SafeTypo© technology**. 14 UNICODE scripts are accepted, with many alphabets.
+**:trophy: <brand name="uns"/> DIDs are multilingual and protected against spoofing by SafeTypo© technology**. 14 UNICODE scripts are accepted, with many alphabets.
 
-**:trophy: <uns/> is a DPOS blockchain operated by 23 elected delegates.** blockchain is powered by the famous ARK.IO DPOS Blockchain, setup with a 8 seconds block time. Delegates are grouped in colleges of stakeholders:
+**:trophy: <brand name="uns"/> is a DPOS blockchain operated by 23 elected delegates.** blockchain is powered by the famous ARK.IO DPOS Blockchain, setup with a 8 seconds block time. Delegates are grouped in colleges of stakeholders:
 
 * 10 Individuals – Defenders of individual freedoms and privacy
 * 10 Organizations – Committed in securing the web for businesses
 * 3 Network community players
 
-**:trophy: <uns/> Supply of UNS utility token is dynamic and follows adoption.** UNS tokens are created when DIDs are created on the chain and when they become alive, this design makes the token less prone to speculation and more stable.
+**:trophy: <brand name="uns"/> Supply of UNS utility token is dynamic and follows adoption.** UNS tokens are created when DIDs are created on the chain and when they become alive, this design makes the token less prone to speculation and more stable.
 
 ## Key Benefits
 
 ### For Network Players
 
-:moneybag: <uns/> represents an opportunity to participate, to contribute and to get valuable rewards with a viable DPOS blockchain solution. You're contributing to securing the first Decentralized IDentifiers (DID) operational blockchain with its easy to understand use cases.
+:moneybag: <brand name="uns"/> represents an opportunity to participate, to contribute and to get valuable rewards with a viable DPOS blockchain solution. You're contributing to securing the first Decentralized IDentifiers (DID) operational blockchain with its easy to understand use cases.
 
 ### For Organizations
 
-:moneybag: <uns/> offers a backbone solution to provide confidential authentication, with `Unikname Connect`, to their users, customers and partners. This is the easiest and safest MFA authentication solution for any saas platforms and mobile apps, providing a protection against economic espionage.
+:moneybag: <brand name="uns"/> offers a backbone solution to provide confidential authentication, with `Unikname Connect`, to their users, customers and partners. This is the easiest and safest MFA authentication solution for any saas platforms and mobile apps, providing a protection against economic espionage.
 
 ### For Web Users
 

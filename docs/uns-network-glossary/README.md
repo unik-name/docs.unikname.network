@@ -5,7 +5,7 @@ title: "uns.network Glossary"
 
 # uns.network Glossary 
 
-Our glossary contains key terminology specifically related to <uns/> Ecosystem. If you have any comments or requests, please [open a topic on our forum](https://forum.unik-name.com).
+Our glossary contains key terminology specifically related to <brand name="uns"/> Ecosystem. If you have any comments or requests, please [open a topic on our forum](https://forum.unik-name.com).
 
 [[toc]]
 
@@ -19,15 +19,15 @@ _For Common Terms related to blockchain in general we invite you to read the ver
 
 ### uns.network Ecosystem
 
-The entirety of the <uns/> project and community, including the blockchain network, but also the supporting products, such as the wallet or the blockchain explorer.
+The entirety of the <brand name="uns"/> project and community, including the blockchain network, but also the supporting products, such as the wallet or the blockchain explorer.
 
 ### uns.network Community
 
-Members of the <uns/> community volunteer to provide assistance to new users, or work on bounties to improve uns.network. They are not officially associated with the <uns/> Team. However, <uns/> does most of its recruiting from the community.
+Members of the <brand name="uns"/> community volunteer to provide assistance to new users, or work on bounties to improve uns.network. They are not officially associated with the <brand name="uns"/> Team. However, <brand name="uns"/> does most of its recruiting from the community.
 
 ### uns.network Player
 
-A network player is the owner of a specific <uns/> Node, permitted to send and to validate transactions over the network. As such, a network player provides a service to the network like minting blocks, storing decentralized encrypted data, or issuing UNIK tokens. They play a significant role in securing the network.
+A network player is the owner of a specific <brand name="uns"/> Node, permitted to send and to validate transactions over the network. As such, a network player provides a service to the network like minting blocks, storing decentralized encrypted data, or issuing UNIK tokens. They play a significant role in securing the network.
 
 ### uns.network Service Node
 
@@ -49,11 +49,11 @@ Non-Fungible Token, by opposiiton to a more traditionnal Token. NFT have remarka
 
 ### uns.network Core
 
-The reference implementation for <uns/> nodes, a forked implementation of ARK Core blockchain.
+The reference implementation for <brand name="uns"/> nodes, a forked implementation of ARK Core blockchain.
 
 ### uns.network Explorer
 
-A frontend used to query the <uns/> blockchain. Explorers use a Relay Node to perform queries and offer a user-friendly interface.
+A frontend used to query the <brand name="uns"/> blockchain. Explorers use a Relay Node to perform queries and offer a user-friendly interface.
 
 ### uns.network Desktop Wallet
 

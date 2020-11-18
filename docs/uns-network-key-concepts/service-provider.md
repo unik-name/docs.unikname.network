@@ -5,11 +5,11 @@ title: "Network Service Provider"
 
 # Network Service Providers
 
-<uns/> provides services through specialized nodes called Service Providers. These nodes are like gateways and make the bridge between the decentralized network and the traditional web. They provide services in exchange for UNS tokens.
+<brand name="uns"/> provides services through specialized nodes called Service Providers. These nodes are like gateways and make the bridge between the decentralized network and the traditional web. They provide services in exchange for UNS tokens.
 
 To date, the network embed the following service providers:
 
-Anybody can develop and run a provider of Network Services. The first ones have been designed by the <uns/> team. They are the backbone of <uns/> tokenomics. They ensure the liquidity of the protocol token.
+Anybody can develop and run a provider of Network Services. The first ones have been designed by the <brand name="uns"/> team. They are the backbone of <brand name="uns"/> tokenomics. They ensure the liquidity of the protocol token.
 
 Every network service provider has been designed to be resilient and scalable. 
 

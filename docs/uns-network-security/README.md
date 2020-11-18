@@ -5,7 +5,7 @@ title: "uns.network Security & Hack Protections"
 
 # Security & Hack Protections
 
-<uns/> and protocol implement multiple hack protections:
+<brand name="uns"/> and protocol implement multiple hack protections:
 
 [[TOC]]
 
@@ -46,7 +46,7 @@ Through OpenAPIs accesses, every request is filtered and analyzed to detect unus
 
 ### Ownership Protection
 
-@unikname token is a Self-Sovereign Asset with ownership rules coded within <uns/> smart contract. Only @unikname token owner has control over it as long as the <uns/> blockchain will exist.
+@unikname token is a Self-Sovereign Asset with ownership rules coded within <brand name="uns"/> smart contract. Only @unikname token owner has control over it as long as the <brand name="uns"/> blockchain will exist.
 
 ### Spoofing, Typosquatting, Phishing protection
 

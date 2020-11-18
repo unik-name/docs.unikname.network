@@ -5,7 +5,7 @@ title: "Cryptography overview"
 
 # Cryptography overview
 
-In the blockchain world you must rely on cryptography to make it happends! <uns/> blockchain cryptography is based on [ARK.IO](https://ark.io) basics augmented with specificties related to Decentralized IDs and Decentralized Public Key Infrastructure requirements.
+In the blockchain world you must rely on cryptography to make it happends! <brand name="uns"/> blockchain cryptography is based on [ARK.IO](https://ark.io) basics augmented with specificties related to Decentralized IDs and Decentralized Public Key Infrastructure requirements.
 
 [[TOC]]
 
@@ -13,14 +13,14 @@ In the blockchain world you must rely on cryptography to make it happends! <uns/
 
 Traditional blockchain accounts are represented by a couple of public and private keys. These accounts handle a balance of fongible tokens (e.g. coin or utility token).
 
-Within <uns/> we call these accounts the `cryptoaccounts` to be more meaningful. These cryptoaccounts are represented by a couple of a [PublicKey](#publickey) and [PrivateKey](#privatekey), and also by a public address and a passphrase.
+Within <brand name="uns"/> we call these accounts the `cryptoaccounts` to be more meaningful. These cryptoaccounts are represented by a couple of a [PublicKey](#publickey) and [PrivateKey](#privatekey), and also by a public address and a passphrase.
 The address is built via a combination of RIPEMD160 hashing and Base58Check encoding prefixed by a single network byte.
 
-Then <uns/> cryptoaccounts handle both the UNS protocol tokens, and UNIK Non Fungible Tokens representing @unikname. They're protected and secured by a [passphrase](#passphrase).
+Then <brand name="uns"/> cryptoaccounts handle both the UNS protocol tokens, and UNIK Non Fungible Tokens representing @unikname. They're protected and secured by a [passphrase](#passphrase).
 
 ## unikid
 
-Every @unikname is encoded within the <uns/> blockchain with a hashcode, its `unikid`. Every unikid is "embedded" into a public key and can't exists without it. The unikid is the public part of a @unikname, the human-readable string representing a @unikname is not public, unless its owner decide to disclose it.
+Every @unikname is encoded within the <brand name="uns"/> blockchain with a hashcode, its `unikid`. Every unikid is "embedded" into a public key and can't exists without it. The unikid is the public part of a @unikname, the human-readable string representing a @unikname is not public, unless its owner decide to disclose it.
 
 ## Overview
 
@@ -78,9 +78,9 @@ So, do not lose your Passphrase, and do not share it with others. You could lose
 
 The passphrase is used to directly calculate the [PrivateKey](#privatekey) of an UNS blockchain account and should never be shared, stored irresponsibly, or transmitted over the internet. The only person that should ever have access to a passphrase is the owner of its account.
 
-We can technically use any word, phrase, or string as a passphrase which will result in a valid <uns/> cryptoaccount; however, it is heavily discouraged as the security of an address relies on the randomness of its Passphrase. Humans are bad at creating randomness, and entering sequences of random letters and numbers isn't easy to do accurately.
+We can technically use any word, phrase, or string as a passphrase which will result in a valid <brand name="uns"/> cryptoaccount; however, it is heavily discouraged as the security of an address relies on the randomness of its Passphrase. Humans are bad at creating randomness, and entering sequences of random letters and numbers isn't easy to do accurately.
 
-<uns/> passphrases are implemented using [ARK.IO cryptography](https://ark.dev/docs/core/transactions/cryptography#passphrase), based on the BIP39 Protocol, and is combination of twelve words.
+<brand name="uns"/> passphrases are implemented using [ARK.IO cryptography](https://ark.dev/docs/core/transactions/cryptography#passphrase), based on the BIP39 Protocol, and is combination of twelve words.
 
 ## PrivateKey
 
@@ -112,7 +112,7 @@ The DEC representation is the "base 10" interpretation of our PrivateKey and giv
 
 A PublicKey is like an ID or Passport. It is a mathematical proof of identity and is derived from a [PrivateKey](#privatekey) via [ECDSA](#ecdsa) or [SECP256K1](#secp256k1) computation.
 
-<uns/> also uses "Point Compression" to obtain compressed PublicKeys that are 33-bytes in length.
+<brand name="uns"/> also uses "Point Compression" to obtain compressed PublicKeys that are 33-bytes in length.
 
 ### Network Prefixes
 
@@ -127,7 +127,7 @@ A Signature is essentially proof that a message or transaction was "signed" by a
 
 Remember that this same PrivateKey also has a matching PublicKey. That means a Signature is computationally linked to its corresponding [PublicKey](#publickey) using [ECDSA](#ecdsa) and [SECP256K1](#secp256k1) standards.
 
-<uns/> Signatures use DER Encoding.
+<brand name="uns"/> Signatures use DER Encoding.
 
 ## Algorithms
 
@@ -163,7 +163,7 @@ It is a standard to sign and verify transactions/messages and Signatures using [
 
 ### DER
 
-An <uns/> Signature is [DER Encoded](https://en.wikipedia.org/wiki/X.690#DER_encoding) using [BIP66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki) standards.
+An <brand name="uns"/> Signature is [DER Encoded](https://en.wikipedia.org/wiki/X.690#DER_encoding) using [BIP66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki) standards.
 
 Upon obtaining a Signature from the ECDSA/SECP256K1 algorithm, it will first be in its raw form known as an "r" and "s" value.
 
@@ -207,7 +207,7 @@ DER Encoded Signature:
 
 [Base58Check](https://en.bitcoin.it/wiki/Base58Check_encoding) encoding is used to produce human readable/typeable text from a hash.
 
-It is used to encode a [PrivateKey](#privatekey) and is also the final step to encoding an [<uns/> address](#cryptoaccount).
+It is used to encode a [PrivateKey](#privatekey) and is also the final step to encoding an [<brand name="uns"/> address](#cryptoaccount).
 
 ## Hashing
 

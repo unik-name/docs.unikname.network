@@ -10,10 +10,10 @@ pageClass: cheatsheet-pageclass
 | - | :-: | - | :-: |
 | [version](cli.html#version) | | Display version of the CLI 
 | [update](cli.html#update) | | Keep the CLI up to date
-| [status](cli.html#status) | | Display <uns/> blockchain status 
+| [status](cli.html#status) | | Display <brand name="uns"/> blockchain status 
 | [resolve](cli.html#resolve) | | Resolve a decentralized Identifier 
 | [send](cli.html#send) |  YES | Send UNS tokens to another public address 
-| [cryptoaccount:create](cli.html#cryptoaccount-create) | | Create a <uns/> crypto-account 
+| [cryptoaccount:create](cli.html#cryptoaccount-create) | | Create a <brand name="uns"/> crypto-account 
 | [cryptoaccount:read](cli.html#cryptoaccount-read) | | Read current data of a specified cryptoaccount, eg. balance 
 | [cryptoaccount:set-second-passphrase](cli.html#cryptoaccount-set-second-passphrase) | YES | Set a second passphrase for the specified cryptoaccount 
 | [unik:create](cli.html#unik-create) | YES | Create a UNIK Token 

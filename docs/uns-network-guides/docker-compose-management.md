@@ -29,5 +29,5 @@ It has two exposed ports; for p2p (`4102`) and for API (`4103`), and mount 3 vol
 
 Some environment variables are set :
 - for the database (port, user name, user password and db name)
-- for the network (here it's `livenet`, it means that it'll connect to other <uns/> livenet nodes, you can use `sandbox` too)
+- for the network (here it's `livenet`, it means that it'll connect to other <brand name="uns"/> livenet nodes, you can use `sandbox` too)
 - and the forger secret (line `FORGER_SECRET`, commented by default). 

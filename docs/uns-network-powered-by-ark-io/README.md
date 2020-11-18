@@ -5,7 +5,7 @@ title: "Powered by ARK"
 
 # Powered by ARK
 
-@unik-name and its <uns/> blockchain, has been built uppon ARK.io blockchain. Technically '<uns/> Core' and '<uns/> Explorer' are forks from 'ARK.io Core' and 'ARK.io Explorer'.
+@unik-name and its <brand name="uns"/> blockchain, has been built uppon ARK.io blockchain. Technically '<brand name="uns"/> Core' and '<brand name="uns"/> Explorer' are forks from 'ARK.io Core' and 'ARK.io Explorer'.
 
 In doing such we've contributed to the ARK developements. We're participating to code improvement and we're the core developpers of the NFT module of ARK, enabling management of Non Fungible Tokens with the ARK.io Blockchain. 
 

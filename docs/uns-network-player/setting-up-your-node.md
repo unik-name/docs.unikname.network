@@ -9,9 +9,9 @@ title: "Becoming uns.network Player"
 
 ## Introduction
 
-Here we will help you set up a <uns/> relay node and/or forger node.
+Here we will help you set up a <brand name="uns"/> relay node and/or forger node.
 
-To make your life easier, we've built Docker images of <uns/> nodes.
+To make your life easier, we've built Docker images of <brand name="uns"/> nodes.
 
 ### What is docker 
 
@@ -33,7 +33,7 @@ Orchestrators with Docker as a first-class citizen:
 - [Mesos](http://mesos.apache.org/)
 
 For the moment, we have choosen to only describe the `docker-compose` setup.
-So, if you choose to run your <uns/> node on other platforms, share your own experience [on the <uns/> network of the forum!](https://forum.unik-name.com/c/uns-network/7)
+So, if you choose to run your <brand name="uns"/> node on other platforms, share your own experience [on the <brand name="uns"/> network of the forum!](https://forum.unik-name.com/c/uns-network/7)
 
 ### Minimum requirements for running a relay or forger node
 
@@ -48,7 +48,7 @@ We strongly recommend running your node on SSD drive as there are a lot of read 
 
 Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
 - LIVENET:
-  * `4001` (required): this is the communication port used by the node to exchange information with other nodes of the <uns/>
+  * `4001` (required): this is the communication port used by the node to exchange information with other nodes of the <brand name="uns"/>
   * `4003` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
 
 ::: warning
@@ -59,7 +59,7 @@ Unfortunately, there is no standard documentation to do that, so please follow t
 
 ## Run a node with Docker Compose
 
-In this documentation, we'll start a LIVENET <uns/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
+In this documentation, we'll start a LIVENET <brand name="uns"/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
 
 So, be sure to have these prerequisites:
 - [Docker](https://docs.docker.com/install) installed on your Linux machine
@@ -136,7 +136,7 @@ Now you have a running forger node and you're forging blocks! 👏
 Now, your job is done.
 You can check on [explorer](https://explorer.uns.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
 
-If you're in the `active` tab, congratulation, you're a <uns/> delegate, and your forger node is actually forging blocks and getting rewards!
+If you're in the `active` tab, congratulation, you're a <brand name="uns"/> delegate, and your forger node is actually forging blocks and getting rewards!
 
 If you're in the `standby` tab, you need to gather more voting power than current active delegates (i.e. have cryptoaccounts with positive balance voting for you).
 

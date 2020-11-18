@@ -10,7 +10,7 @@ To get started we invite you to
 
 ## 1. Install the Command Line Interface
 
-The <uns/> comes with several tools to interact with the chain. The most famous ones are the chain explorer, the wallet App, and the command line interface. 
+The <brand name="uns"/> comes with several tools to interact with the chain. The most famous ones are the chain explorer, the wallet App, and the command line interface. 
 
 We're going to start with the command line interface, also called the **CLI** .
 
@@ -37,11 +37,11 @@ All CLI commands can be found in the [Using the uns.network chapter](../uns-use-
 You can also request inline help with the command `$ uns --help`
 :::
 
-Okay, now let's go to query the <uns/> blockchain.
+Okay, now let's go to query the <brand name="uns"/> blockchain.
 
 ## 2. Use the resolver to query the chain
 
-One very interesting feature provided by <uns/> blockchain is the name resolver. With this name resolver you can query the blockchain and you can get @unikname's related on-chain public data very fast.
+One very interesting feature provided by <brand name="uns"/> blockchain is the name resolver. With this name resolver you can query the blockchain and you can get @unikname's related on-chain public data very fast.
 
 Let's try the ``resolve`` command to get Bob's NFT UNIK address within the chain
 ```bash
@@ -57,7 +57,7 @@ $ uns resolve "@bob"
 The `unikid` data is the unique identifier of the Non Fungible Token forged within the chain and representing Bob's unikname. 
 
 :::tip
-@Bob is called a DID, a Decentralized ID, because it has a unique Identifier within a decentralized network, the <uns/> blockchain.
+@Bob is called a DID, a Decentralized ID, because it has a unique Identifier within a decentralized network, the <brand name="uns"/> blockchain.
 :::
 
 Is you try to resolve a name that doesn't exist with the blockchain chain then the command returns the message "DID not resolved"
@@ -80,7 +80,7 @@ $ uns send 100 UNS --to="@bob"
 ```
 :::
 
-The <uns/> resolver is also usefull to resolve user's defined properties. For example Bob has decided to share publicly one of it's BTC public address and his ARK public address. Let see how easy it is to get them:
+The <brand name="uns"/> resolver is also usefull to resolve user's defined properties. For example Bob has decided to share publicly one of it's BTC public address and his ARK public address. Let see how easy it is to get them:
 
 ```bash
 $ uns resolve "@bob?usr/wallet/ark" --format=raw 

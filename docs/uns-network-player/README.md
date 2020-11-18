@@ -9,12 +9,12 @@ title: "Becoming uns.network Player"
 
 ## What is uns.network?
 
-Established in 2018, <uns/> is a DPoS blockchain and a protocol that has the mission of protecting user’s privacy and securing any web and mobile connections.
-<uns/> is part of the "Powered By Ark" program.
+Established in 2018, <brand name="uns"/> is a DPoS blockchain and a protocol that has the mission of protecting user’s privacy and securing any web and mobile connections.
+<brand name="uns"/> is part of the "Powered By Ark" program.
 
 ## What is Unikname?
 
-If you want to know more about Unikname, the first product build on <uns/>, you could go to its website : [https://unikname.com](https://unikname.com).
+If you want to know more about Unikname, the first product build on <brand name="uns"/>, you could go to its website : [https://unikname.com](https://unikname.com).
 
 ## Implication behind the choice of your name and your type
 

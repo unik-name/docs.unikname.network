@@ -8,7 +8,7 @@ home: false
 
 ## Creating a forum account with your @unikname
 
-The forum is our exchange platform for everything concerning the life of the <uns/> project but also for other products like Unikname Connect.
+The forum is our exchange platform for everything concerning the life of the <brand name="uns"/> project but also for other products like Unikname Connect.
 As a Network Player, it is important for you to follow this forum in order not to miss important updates to be made on your nodes, or new features brought to the blockchain.
 
 It will be through the forum that the team will keep in touch with you.
@@ -32,6 +32,6 @@ If you have any suggestions or encounter any problems with this tutorial, give u
 ## Follow us on our social medias
 
 In order not to miss our other news and novelties, do not hesitate to follow us on our different social networks:
-- [<uns/> twitter](https://twitter.com/uns_network)
+- [<brand name="uns"/> twitter](https://twitter.com/uns_network)
 - [Unikname twitter](htpps://twitter.com/unikname_uns)
 - [Medium](https://medium.com/unik-name)

@@ -5,8 +5,8 @@ title: "Unikname"
 
 # Unikname
 
-First purposes of the <uns/> are to secure any web connections and to protect the user's privacy by providing sovereign IDs rooted in the blockchain.
-So as the first APP and DAPP available with the <uns/> serve these purposes.
+First purposes of the <brand name="uns"/> are to secure any web connections and to protect the user's privacy by providing sovereign IDs rooted in the blockchain.
+So as the first APP and DAPP available with the <brand name="uns"/> serve these purposes.
 They've been package thru different solution to meet user needs and highly demanded use case. These solutions are the following ones:  
 
 ## My Unikname

@@ -4,9 +4,9 @@ sidebarDepth: 3
 
 # Using uns.network with the CLI
 
-<uns/> provides an interactive command line interface to create and manage your crypto accounts, your UNS protocol tokens and your UNIK NFT tokens.
+<brand name="uns"/> provides an interactive command line interface to create and manage your crypto accounts, your UNS protocol tokens and your UNIK NFT tokens.
 
-The <uns/> Command Line Interface is expected to work on recent Linux, MacOS or Windows 10 installations.
+The <brand name="uns"/> Command Line Interface is expected to work on recent Linux, MacOS or Windows 10 installations.
 
 [[toc]]
 
@@ -73,7 +73,7 @@ For every new data added in the chain, you may wait for the write operation to b
 
 ### Using an HTTP Proxy
 
-To access <uns/> through proxy servers, you can configure the HTTP_PROXY and HTTPS_PROXY environment variables with either the DNS domain names or IP addresses and port numbers used by your proxy servers. See the following examples.
+To access <brand name="uns"/> through proxy servers, you can configure the HTTP_PROXY and HTTPS_PROXY environment variables with either the DNS domain names or IP addresses and port numbers used by your proxy servers. See the following examples.
 
 :::: tabs
 
@@ -95,7 +95,7 @@ C:\> setx HTTPS_PROXY=http://proxy.example.com:5678
 
 #### Authenticating to a Proxy
 
-The <uns/> CLI supports HTTP Basic authentication. Specify the user name and password in the proxy URL, as follows.
+The <brand name="uns"/> CLI supports HTTP Basic authentication. Specify the user name and password in the proxy URL, as follows.
 
 :::: tabs
 
@@ -117,7 +117,7 @@ C:\> setx HTTPS_PROXY=http://username:password@proxy.example.com:5678
 
 **Note**
 
-The <uns/> CLI doesn't support NTLM proxies. If you use an NTLM or Kerberos protocol proxy, you might be able to connect through an authentication proxy like [Cntlm](http://cntlm.sourceforge.net/).
+The <brand name="uns"/> CLI doesn't support NTLM proxies. If you use an NTLM or Kerberos protocol proxy, you might be able to connect through an authentication proxy like [Cntlm](http://cntlm.sourceforge.net/).
 
 ### Autocompletion for Bash and Zsh
 
@@ -275,7 +275,7 @@ $ uns status
 ```
 
 #### Examples
-To display <uns/> blockchain status
+To display <brand name="uns"/> blockchain status
 
 ```bash
 $ uns status --format yaml
@@ -401,7 +401,7 @@ Service Provider cost : none
 ### `cryptoaccount:create`
 
 #### Introduction
-With <uns/> CLI you can create your <uns/> crypto account using `cryptoaccount:create` command.
+With <brand name="uns"/> CLI you can create your <brand name="uns"/> crypto account using `cryptoaccount:create` command.
 
 #### Parameters
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
@@ -415,14 +415,14 @@ $ uns cryptoaccount:create
 ```
 
 #### Examples
-As example, if you want to create a <uns/> crypto account:
+As example, if you want to create a <brand name="uns"/> crypto account:
 ```bash
 $ uns cryptoaccount:create
 ```
 
 #### Output
 
-If the crypto account creation succeed <uns/> CLI displays your crypto account information.
+If the crypto account creation succeed <brand name="uns"/> CLI displays your crypto account information.
 
 ```bash
 $ uns cryptoaccount:create
@@ -541,7 +541,7 @@ Service Provider cost: none
 ### `unik:create` <Badge text="updated 4.0.0"/>
 
 #### Introduction
-With <uns/> CLI you can create your own UNIK token using `unik:create` command.
+With <brand name="uns"/> CLI you can create your own UNIK token using `unik:create` command.
 
 #### Parameters
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
@@ -594,7 +594,7 @@ $ unik:create --explicitValue "MyCompany" --type organization --unik-voucher "ey
 
 #### Output
 
-If the creation succeed <uns/> CLI prompts your UNIK token ID and links to see token and transaction in the <uns/> explorer.
+If the creation succeed <brand name="uns"/> CLI prompts your UNIK token ID and links to see token and transaction in the <brand name="uns"/> explorer.
 
 ```
 Computing UNIK fingerprint... done

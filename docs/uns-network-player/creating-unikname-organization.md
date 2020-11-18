@@ -10,7 +10,7 @@ You want to become a delegate with an organization @unikname id, so you need to 
 
 ::: warning @unikname id for becoming a delegate
 
-:warning: You are about to create a @unikname id for **becoming a <uns/> delegate**. :warning:
+:warning: You are about to create a @unikname id for **becoming a <brand name="uns"/> delegate**. :warning:
 
 If you are trying to create your @unikname id to integrate your application with Unikname Connect, [go to the Unikname Help Center](https://help.unikname.com/3-unikname-connect/) instead.
 
@@ -23,8 +23,8 @@ If you are trying to create your @unikname id to integrate your application with
 
 ## Installing the uns.network CLI
 
-The <uns/> Command Line Interface (CLI) makes it easy to manage your @unikname and Unikname apps directly from the terminal.
-It’s an essential part of using <uns/>.
+The <brand name="uns"/> Command Line Interface (CLI) makes it easy to manage your @unikname and Unikname apps directly from the terminal.
+It’s an essential part of using <brand name="uns"/>.
 
 | <h1><vp-icon name="windows-brands" size="2em" /><br/>Windows</h1> | <h1><vp-icon name="apple-brands" size="2em" /><br/>macOS</h1> | <h1><vp-icon name="linux-brands" size="2em" /><br/>Linux</h1> |
 |:-----------------------------------:|:----------------------------------------------------------------------:|:---------------------------------------:|
@@ -92,9 +92,9 @@ Otherwise, [go to the UNS Forum](https://forum.unikname.com/c/uns-network/7) to 
 Once you have your coupon, all you have to do is create your @unikname!
 
 **Don't forget to backup and secure your passphrase**, it will allow you to retrieve access to your @unikname in case you change your device.
-Neither <uns/>, nor Unikname will be able to give you back access to your @unikname.
+Neither <brand name="uns"/>, nor Unikname will be able to give you back access to your @unikname.
 
-With <uns/> CLI you can create your own UNIK token using [`unik:create`](/uns-use-the-network/cli.html#unik-create) command.
+With <brand name="uns"/> CLI you can create your own UNIK token using [`unik:create`](/uns-use-the-network/cli.html#unik-create) command.
 
 :::warning Choosing the @unikname
 Choose the @unikname wisely. Indeed, it'll be disclosed to other people and they'll know you by this @unikname and once you've chosen a name, you won't be able to change it.

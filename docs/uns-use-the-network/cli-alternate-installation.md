@@ -9,17 +9,17 @@ title: "uns.network CLI alternate installation modes"
 
 ### Requirements
 
-<uns/> CLI installation requires some dependencies to be installed. 
+<brand name="uns"/> CLI installation requires some dependencies to be installed. 
 
 #### Node.js
 
 Install a stable version of Node JS 12: [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 
-**<uns/> CLI doesn't work on earlier versions (6, 8 or 10)**.
+**<brand name="uns"/> CLI doesn't work on earlier versions (6, 8 or 10)**.
 
 #### Compilation tools
 
-Even if the <uns/> CLI is written in a cross-operating system language (Javascript), it requires native dependencies which need to be compiled for your operating system.
+Even if the <brand name="uns"/> CLI is written in a cross-operating system language (Javascript), it requires native dependencies which need to be compiled for your operating system.
 
 You need:
 - gcc/g++
@@ -31,7 +31,7 @@ If still you need help to install theses tools, you can get support on [the Unik
 
 ### Installation with NPM
 
-As NPM is provided by NodeJS package, you can use it to install <uns/> CLI as global command ("sudo mode" might be required, depending on your NodeJS installation).
+As NPM is provided by NodeJS package, you can use it to install <brand name="uns"/> CLI as global command ("sudo mode" might be required, depending on your NodeJS installation).
 
 ```bash
 [sudo] npm install -g @uns/cli
@@ -53,4 +53,4 @@ $ uns version
 If you fail to install the CLI, you can get support on [the Unikname Forum](https://forum.unik-name.com/c/uns-network/support/).
 
 **Note**
-If you want, you can also use [Yarn](https://yarnpkg.com/) instead of NPM to install the <uns/> CLI from sources.
+If you want, you can also use [Yarn](https://yarnpkg.com/) instead of NPM to install the <brand name="uns"/> CLI from sources.

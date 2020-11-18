@@ -1,12 +1,12 @@
 # uns.network Player Hub
 
-<uns/> is the blockchain and the protocol dedicated for sovereign IDs.
+<brand name="uns"/> is the blockchain and the protocol dedicated for sovereign IDs.
 
 <p align="center">
     <img src="uns-banner.png" />
 </p>
 
-> Official guides and documentation for the <uns/> blockchain and protocol, powered by VuePress.
+> Official guides and documentation for the <brand name="uns"/> blockchain and protocol, powered by VuePress.
 
 ## Development
 
@@ -21,7 +21,7 @@ Then open http://localhost:8080/
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@<uns/> All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@<brand name="uns"/> All security vulnerabilities will be promptly addressed.
 
 ## Credits
 

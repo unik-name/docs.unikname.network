@@ -5,15 +5,15 @@ title: "uns.network SDK Overview"
 
 # uns.network SDK overview
 
-Using <uns/> SDKs, developers can employ the programming language of their choice to build applications utilizing the <uns/> blockchain.
+Using <brand name="uns"/> SDKs, developers can employ the programming language of their choice to build applications utilizing the <brand name="uns"/> blockchain.
 
-The functionality of <uns/> API is split into two SDKs: Client and Cryptography.
+The functionality of <brand name="uns"/> API is split into two SDKs: Client and Cryptography.
 
-**Client** SDKs help developers fetch information from the <uns/> blockchain about its current state: which delegates are currently forging, what transactions are associated with a given wallet, and so on.
+**Client** SDKs help developers fetch information from the <brand name="uns"/> blockchain about its current state: which delegates are currently forging, what transactions are associated with a given wallet, and so on.
 
 **Cryptography** SDKs, by contrast, assist developers in working with transactions: signing, serializing, deserializing, etc.
 
-If your application doesn't involve sending transactions, you can most likely build your application using the Client SDK alone. Otherwise, applications looking to leverage the full spectrum of <uns/> APIs should make use of both Client and Cryptography SDKs.
+If your application doesn't involve sending transactions, you can most likely build your application using the Client SDK alone. Otherwise, applications looking to leverage the full spectrum of <brand name="uns"/> APIs should make use of both Client and Cryptography SDKs.
 
 ## Client SDK
 
@@ -28,19 +28,19 @@ SDK is compatible with node projects and browsers.
 
 ### Setup
 
-The SDK needs and initialization. You have to provide your current <uns/> configuration:
+The SDK needs and initialization. You have to provide your current <brand name="uns"/> configuration:
 
 ```typescript
 const unsClient = new UNSClient();
 unsClient.init({ network: Network.livenet });
 ```
 
-Then you can use the `unsClient` to request and send transactions to <uns/>.
+Then you can use the `unsClient` to request and send transactions to <brand name="uns"/>.
 
 ### Usage
 
-To have a smooth and simple developer experience, SDK connects and query a <uns/> node. 
-To replace this default behavior you can pass URL of your own <uns/> node as a parameter of `UNSClient`.
+To have a smooth and simple developer experience, SDK connects and query a <brand name="uns"/> node. 
+To replace this default behavior you can pass URL of your own <brand name="uns"/> node as a parameter of `UNSClient`.
 
 In some cases, functions return chain meta datas as `ChainMeta`. These meta datas represent the informations about the block used to read chain informations.
 
@@ -210,7 +210,7 @@ const { data } = statuses;
 
 ## Cryptography SDK
 
-Inherited from Ark crypto package, <uns/> crypto package is available as a typescript library, published on npm : [`@uns/crypto`](https://www.npmjs.com/package/@uns/crypto)
+Inherited from Ark crypto package, <brand name="uns"/> crypto package is available as a typescript library, published on npm : [`@uns/crypto`](https://www.npmjs.com/package/@uns/crypto)
 
 It can do more than Ark package : 
 
@@ -218,11 +218,11 @@ It can do more than Ark package :
 - add, delete or update UNIK properties
 - transfer UNIKs to another wallet
 - transfer UNS tokens
-- create <uns/> wallets
+- create <brand name="uns"/> wallets
 - ...
 
 For the full list of other available features of `crypto` package, please look at [Ark documentation](https://learn.ark.dev/concepts/cryptography).
 
-<uns/> specific features are not documented yet. Feel free to explore and [contribute](https://github.com/unik-name/docs.uns.network) 😊.
+<brand name="uns"/> specific features are not documented yet. Feel free to explore and [contribute](https://github.com/unik-name/docs.uns.network) 😊.
 
 
