@@ -8,6 +8,8 @@ This guide introduce the basics of the uns.network. It explains Decentralized Id
 To get started we invite you to
 [[TOC]]
 
+<hseparator/>
+
 ## 1. Install the Command Line Interface
 
 The <brand name="uns"/> comes with several tools to interact with the chain. The most famous ones are the chain explorer, the wallet App, and the command line interface. 
