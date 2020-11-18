@@ -70,26 +70,19 @@ module.exports = {
         children: [
           ["/uns-network-introduction/", "Understanding uns.network"],
           ["/uns-network-tokens/", "The Tokens"],
-          [
-            "/uns-network-introduction/did-unik",
-            "Decentralized IDentifiers",
-          ],
-          [ "/uns-network-getting-started/", "Getting Started"]
+          ["/uns-network-getting-started/", "Getting Started"]
         ],
       },
       {
         title: "Key concepts",
         sidebarDepth: 0,
         children: [
-          ["/uns-network-key-concepts/", "Summary"],
-          [
-            "/uns-network-key-concepts/cryptography-overview",
-            "Cryptography Overview",
-          ],
-          ["/uns-network-key-concepts/unik-did-nft", "Decentralized ID token"],
-          ["/uns-network-key-concepts/unik-type", "Types of @unikname"],
-          ["/uns-network-key-concepts/unik-pattern", "Patterns"],
-          //["/uns-network-key-concepts/unik-lifecycle", "Lifecycle"],
+          ["/uns-network-key-concepts/", "Key Concept Summary"],
+          ["/uns-network-key-concepts/cryptography-overview","Cryptography Overview"],
+          ["/uns-network-key-concepts/unik-did-nft", "UNIK IDentifiers"],
+          ["/uns-network-key-concepts/unik-type", "Types of UNIK"],
+          ["/uns-network-key-concepts/unik-pattern", "Patterns of UNIK"],
+          //["/uns-network-key-concepts/unik-lifecycle", "Lifecycle of UNIK"],
           ["/uns-network-key-concepts/network-governance", "Governance"],
           //["/uns-network-key-concepts/unik-property", "Registries and Properties"],
           ["/uns-network-key-concepts/unik-badge", "Badges"],

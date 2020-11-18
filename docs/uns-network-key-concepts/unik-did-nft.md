@@ -1,21 +1,83 @@
 ---
 home: false
-title: "Decentralized ID token"
+Title: "UNIK IDentifers"
+sidebarDepth: 0
 ---
 
-# Decentralized ID token
+# UNIK Identifiers
 
-## @unikname
+The main purpose of <brand name="uns"/> is to issue, to manage and to secure Decentralized IDentifiers. Here we explain what is a Decentralized IDentifiers in general and what are the specificities of the <brand name="uns"/> ones.
 
-In the Internet-era, identifiers are everywhere. We share them by phone or we write them down to our friends and family. We do not want them to be complex, we like when they’re expressed in our language and we love when they are unique and personalized. Designed for everyday uses, these human-readable identifiers are links to any kind of encoded and enigmatic identifiers such as cryptocurrencies addresses, URL, phone numbers… Those identifiers are unique by design and truly belong to their owners, we call them **@unikname**.
+Content:
+[[TOC]]
 
-Every @unikname is a unique string of characters, forming a human-readable identifier, easily readable, pronounceable and shareable like an email address.
+<hseparator/>
 
-<small>_Example of @unikname_</small>
+## Introduction to Identifiers and DIDs
 
-<unikname>@bob</unikname><br/>
-<unikname>@Jack-Sparrow</unikname><br/>
-<unikname>@Rosie57</unikname><br/>
+An identifier, or an ID, is a name that identifies a unique object. An identifier may be a word, number, letter, symbol, or any combination of those.
+
+A famous identifier used every day by everybody is the email address, like `bob@protonmail.com`. It identifies an email account. Combined with a password, it allows us to authenticate and to access our email account.
+
+A Decentralized Identifier (DID) is a type of identifier that is decoupled from any centralized registries or database. In other words a DID is controlled by a individual, its owner, and nobody else.
+
+DIDs are based on the Self-sovereign identity concept where only the user should own their digital identity data fully without intervention from a centralized third party.
+
+IDs rooted in <brand name="uns"/> blockchain are Decentralized IDs, or DIDs. 
+
+## DID has Remarkable properties
+
+Any decentralized IDentifiers have remarkable properties which make them the legitimate successor of traditional identifiers:
+
+- DID is under the sole control of his owner
+- DID owner is the only one to decide who can access data related to its ID
+- DID is available every time and everywhere around the world
+- DID is immutable, once minted, it can't be modified nor deleted
+- DID is unique on a global network, by definition
+- DID lifetime is everlasting
+- DID can be anonymous, and his use can be untraceable in a P2P context
+
+**:heavy_check_mark:** <brand name="uns"/> UNIK DIDs have all these remarkable properties.
+
+## DID only exist in a Decentralized Network
+
+A Decentralized Network...
+- relies on many independent actors from each other
+- is publicly accessible
+- has a decentralized governance, independent of a country (such as an international foundation)
+- is reliable, resilient, incorruptible, resistant to censorship, efficient
+
+…providing DID…
+- is accessible at low cost
+- provide « International IDs», not only latin nor ascii ones
+- rewards securing and using DIDs
+- guarantees the absolute sovereignty of IDs
+
+…self-controls their creation.
+
+**:heavy_check_mark:** <brand name="uns"/> meets all these criteria, making it the ideal Decentralized Network for DIDs
+
+## Uns.network Decentralized Identifier: UNIK DID
+
+<brand name="uns"/> Decentralized Identifiers are called `UNIK DID`. 
+
+Every UNIK DID has a human-readable form called a `@unikname ID`.
+
+Every UNIK DID is a Non Fungible Token (NFT), represented by is a 64 characters unique string hash, called `UNIK token`, minted into the <brand name="uns"/> blockchain.
+
+:::tip Example
+
+The @unikname ID <un id="@jack-Sparrow"/> is represented in the <brand name="uns"/> by the UNIK Token hash code `10e7052bbc0b914d4d9bb88db916a366258569b7e1b1c9e5c47cef2fc37deedb`.
+:::
+
+## What makes UNIK DID so unique?
+
+**:heavy_check_mark:** DID UNIK is a **pseudonymous Identifer**, it is **not a proof of digital identity**.  
+**:heavy_check_mark:** DID UNIK is Human-Readable, easy to remember and **protected against typo-squatting**  
+**:heavy_check_mark:** DID UNIK **belong to namespaces**, called types, defining their purpose.  
+**:heavy_check_mark:** DID UNIK have **configurable governance rules** specific to their type.  
+**:heavy_check_mark:** DID UNIK embed **exclusive features for authentication**  
+**:heavy_check_mark:** DID UNIK have **advanced data registries** (on-chain, off-chain, encrypted, badges…)
 
 ## SafeTypo© technology
 
@@ -23,29 +85,32 @@ Every @unikname is a string built with SafeTypo© technology for a peerless User
 
 This string is composed of unicode characters belonging to the [SafeTypo© international alphabet](https://github.com/unik-name/SafeTypo). It's a serie of digits, letters denominated in a specific alphabet or script, and separators.  
 
-<small>_Example of @unikname secured with SafeTypo in an international context:_</small>
+:::tip Example of @unikname secured with SafeTypo© in an international context
 
-<unikname>@Alice101</unikname><br/>
-<unikname>@Obi-Wan.Kenobi</unikname><br/>
-<unikname>@Sarah.O’Connor</unikname><br/>
-<unikname>@El-Niño-del-sol</unikname><br/>
-<unikname>@Мое-имя</unikname><br/>
-<unikname>@はると</unikname><br/>
-<unikname>@张伟</unikname><br/>
+<un id="@Alice101"/><br/>
+<un id="@Obi-Wan.Kenobi"/><br/>
+<un id="@Sarah.O’Connor"/><br/>
+<un id="@El-Niño-del-sol"/><br/>
+<un id="@Мое-имя"/><br/>
+<un id="@はると"/><br/>
+<un id="@张伟"/><br/>
+:::
 
 The identifier built upon the @unikname string don't care about upper case/lower case, about accent, about separators, and take into account confusing characters.
 
-<unikname>@Alice101</unikname> has the same identifier as <unikname>@alïce-1.O.1</unikname>. This is the same @unikname with a single owner. Once minted on the blockchain, users can use any equivalent typo to share and resolve their @unikname.
+<un id="@Alice101"/> is the same identifier as <un id="@alïce-1.O.1"/>. This is the same @unikname ID with a single owner. Once minted on the blockchain, users can use any equivalent typo to share and resolve their @unikname ID.
 
-## UNIK: the Non-Fungible Token
+## UNIK DID resolver
 
-IDs rooted in <brand name="uns"/> blockchain are called Decentralized IDs, or DIDs. Every DID materializes in the form of a Non Fongible Token called UNIK within the <brand name="uns"/> blockchain. 
+UNIK DID can be resolved via the [blockchain explorer](https://explorer.uns.network/) or with the dedicated [unikname.id resolver](https://unikname.id/) 
 
-Every @unikname string is obfuscated with a 64 characters string hash. This hash is unique and called the unikid of a @unikname. Since this unikid is minted with the passphrase of the owner, the <brand name="uns"/> blockchain creates the UNIK Non-Fongible Token of the @unikname. It becomes a Decentralized ID.
+The resolver works with a @unikname ID string matching a predefined format:
 
-``@jack-Sparrow`` DID UNIK Token is ``10e7052bbc0b914d4d9bb88db916a366258569b7e1b1c9e5c47cef2fc37deedb`` 
+`[@][unik:][{type}:]{explicitValue}`
 
-## Universal ID and resolver
+> _Values between square brackets `[]` are optional_
 
-The expected format of a DID of kind "UNIK" is: `[@][unik:][type:]explicitValue[?propertyKey|?*]`.
+Properties of @unikname ID's can be resolved too, with a string following this format: 
+
+`[@][unik:][{type}:]{explicitValue}`[?{propertyKey}|?*]
 
