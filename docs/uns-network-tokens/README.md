@@ -10,6 +10,8 @@ The <brand name="uns"/> blockchain runs with two tokens linked together with sma
 * [UNIK Token:](#the-unik-token) a NFT Token representing @unikname Identifiers.
 * [UNS Token:](#the-uns-token) the protocol token used to secure the network and to rewards network players and users. This is the “fuel” of the network.
 
+<hseparator/>
+
 ## The UNIK Token
 
 ### UNIK Token is a NFT Token
@@ -39,6 +41,8 @@ Ark Core NFT specifications are discussed in the standard _Ark Improvement Proce
 ### UNIK Token Issuance
 
 Only accredited nodes can mint UNIK in the chain. These nodes belongs to Network Players owning a `NFT Factory Licence`, they're called `NFT Factory Nodes`.
+
+<hseparator/>
 
 ## The UNS Token
 
