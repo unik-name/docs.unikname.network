@@ -1,100 +1,87 @@
 ---
 home: false
-title: "Type of @unikname"
+title: "Type of UNIK ID"
 ---
 
-# Key Concepts - Types of @unikname
+# Type of UNIK ID
 
-@unikname ID are minted with a type according to their purpose
+UNIK DID are minted with a type according to their purpose
 - **type 1 &rightarrow; Individual** to be used as a universal identifier for individuals.
 - **type 2 &rightarrow; Organization** to be used as an authentication certificate for organizations and businesses
 - **type 3 &rightarrow; Network** to be used as a global  identifier to share network configuration data
 
-The type determines most of the capabilities of every @unikname. Rules, Features, Costs of transactions, Rewarding... comes under @unikname type.
+The type determines most of the capabilities of every UNIK ID and the related @unikname ID. Rules, Features, Costs of transactions, Rewarding... comes from type of UNIK.
 
-:::tip
-**The @unikname type is a genesis property of the UNIK NFT.** The type is minted simultaneously with the UNIK Token, and it's an immutable property.
+The type is like a namespace for @unikname ID. An ID may exist within several types, in this case their on-chain fingerprint and their passphrase are totally different. 
+
+:::tip Under the hood
+The @unikname type is a genesis property of the UNIK NFT. The type is minted simultaneously with the UNIK Token, and it's an immutable property.
 :::
 
-:::warning
-The type is a like a spacename for @unikname, so a name may exist within several types but then their on-chain fingerprint and their passphrase are totally different. So the owner must care about the choice of the type.
-:::
-
-## @unikname Individual type
+## Type 'Individual'
 
 ![individual](./images/unik-individual-icon-dark.png)
 
-Individual type is required for any individuals who needs a universal identifier.
+UNIK ID of type `Individual` is intended to be controlled by an individual and represents a pseudo or a nickname.
 
-It is intended to be “acquired for life” and to be hidden or to represents a pseudo, or a nickname.
+It is acquired one time for all, and is hidden (obfuscated) by default.
 
-The ID is personal, and under the sole control of its owner.
-
-**Main use cases**
+**Use cases**
+- Identify Individual, anonymously
 - Confidential authentication
-- Store public, private or shareable personnal data
-- Control sharing of personnal information
-- Remote access to public information shared by members (universal name resolver)
-
-**Second use cases**
-- Customize its universal avatar
+- Store public, private or shareable personal data
+- Control sharing of personal information
+- Public sharing of verified URL
+- Remote access to public information shared by members, via the universal name resolver
 - Contribute to services on the network and get rewards
 - Speculate on the value of a pseudo
+- ...
 
-**Futur use cases**
+:::tip NOTA
+A @unikname ID of type `individual` looks like an email address, but decentralized. It belongs to its owner and it does not belong to the email domain name owner.
+:::
 
-- Whisper (confidential chat) with other members
-
-
-_NOTA: A unikname of individual type looks like an email address, but decentralized._
-
-## @unikname Organization type
+## Type 'Organization'
 
 ![organization](./images/unik-organization-icon-dark.png)
 
-Organization type is required for organizations and businesses wanting to implement Unikname Connect authentication and anti-phishing solution.
+UNIK ID of type `Organization` is intended for organizations and businesses wanting to implement <brand name="unc"/> authentication solution.
 
-It identifies publicly the organization on the network, and is used for the anti-phishing authentication certificate key.
+It identifies publicly the organization on the network, and it is used for build the trust certificate used by the authentication protocol.
 
 The ID is under the control of people authorized by the organization.
 
-**Main use cases**
-- Setup @unikname Connect on a website, and certifiy user authentication (anti-phishing solution)
-- Public sharing of network URL, with ownership verified
+**Use cases**
+- Identify Organization over the Internet
+- Setup <brand name="unc"/> on a website, and certify user authentication
+- Public sharing of verified URL
 - Control sharing of business information
+- Promote brand to get more users
+- ...
 
-**Second use cases**
-- Customize its universal avatar
+:::tip NOTA
+A @unikname ID of type `organization` looks like a domain name, but decentralized.
+:::
 
-**Futur use cases**
-- Promote my brand to get more users
-
-_NOTA: A unikname of organization type looks like a domain name, but certified and decentralized._
-
-## @unikname network type
+## Type 'Network'
 
 ![network](./images/unik-network-icon-dark.png)
 
-Network type is appropriate for @unikname to be used as global identifiers, and to share network configuration data.
+UNIK ID of type `Network` is intended for global identifiers playing a role one the network but without authentication capabilities.
 
-**Main use cases**
-- public sharing of network configuration data
-- public sharing of network URL, with ownership verified
-
-**Second use cases**
-- grant access to official code source for network ressources, e.g. wallets
-- grant access to official node install files
-
-_NOTA: A unikname of network type looks like a network configuration file._
+**Use cases**
+- Identify Network Service Providers
+- Provide Network Services
+- ...
 
 ## Summary
 
-| Use | ![individual](./images/unik-individual-icon-dark.png) |![organization](./images/unik-organization-icon-dark.png) | ![network](./images/unik-network-icon-dark.png) |
-|-|-|-|-|
-|Confidential sign-up and sign-in on websites|![ok](./images/greencheck.png) |![ko](./images/redcross.png)|![ko](./images/redcross.png)|
-|Provide Unikname Connect to website visitors|![ko](./images/redcross.png) |![ok](./images/greencheck.png)|![ko](./images/redcross.png)|
-| Contribute to services and get rewards |![ok](./images/greencheck.png) |![ko](./images/redcross.png)|![ko](./images/redcross.png)|
-|Control sharing of information |![ok](./images/greencheck.png) |![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|
-|Public sharing verified URLs|![ok](./images/greencheck.png) |![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|
-|Grant access to official files (through verified URL)|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|
-|Participate to the governance of the network|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|![ok](./images/greencheck.png)|
+| Use case | ![individual](./images/unik-individual-icon-dark.png) |![organization](./images/unik-organization-icon-dark.png) | ![network](./images/unik-network-icon-dark.png) |
+|-|:-:|:-:|:-:|
+|Confidential sign-up and log in on websites|:heavy_check_mark: |:x:|:x:|
+|Contribute to services and get rewards |:heavy_check_mark: |:x:|:x:|
+|Setup Unikname Connect Authentication|:x: |:heavy_check_mark:|:x:|
+|Provide Network Services|:x:|:x:|:heavy_check_mark:|
+|Control sharing of information |:heavy_check_mark: |:heavy_check_mark:|:heavy_check_mark:|
+|Public sharing verified URLs|:heavy_check_mark: |:heavy_check_mark:|:heavy_check_mark:|
+|Participate to the governance of the network|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
