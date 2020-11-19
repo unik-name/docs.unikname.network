@@ -39,8 +39,6 @@ Please, wait a little bit more to try everything, and look at up right now what 
 
 :zap: [Network Service Providers](/uns-network-key-concepts/service-provider)
 
-:zap: [Network UniT Services (NUTS)](/uns-network-key-concepts/nuts)
-
 :zap: [Directory Of Network UniT Services (DONUTS)](/uns-network-key-concepts/donuts)
 
 

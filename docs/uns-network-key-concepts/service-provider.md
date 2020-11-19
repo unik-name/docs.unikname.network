@@ -71,9 +71,9 @@ URL-Checker is in charge of verification of the ownership of any web url. Every 
 
 <hseparator type="uns"/>
 
-## Service Provider Licencing
+## Service Provider Node Operator Licence
 
-_* Licences are provided by the uns foundation_
+Licences are granted by the community.
 
 :::tip Good to know
 To date, Network Service Providers Nodes are operated by <brand name="uns"/> team.
