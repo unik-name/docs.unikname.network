@@ -8,7 +8,7 @@ sidebarDepth: 1
 
 <brand name="uns"/> provides services through specialized nodes called Service Providers Nodes. These nodes are like gateways and make the bridge between the decentralized network and the traditional web. They provide services to @unikname ID owners in exchange for UNS tokens. They are core in the <brand name="uns"/> tokenomics. 
 
-Network Service Providers Nodes are [operated under licence](#service-provider-licencing), granted by the community. 
+Network Service Providers Nodes are [operated under licence](#service-provider-node-operator-licence), granted by the community. 
 
 Elementary services provided are called `Network UniT Services (NUTS)`. All available services are listed in a directory called the `Directory Of Network Unit Services (DONUTS)`
 
