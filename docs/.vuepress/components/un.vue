@@ -1,16 +1,27 @@
 <template>
-  <!-- span class="unikname"><a :href="href()">{{ id }}</a></span -->
-  <span class="unikname">{{ id }}</span>
+  <span>
+    <span v-if="label">@unikname ID: </span>
+    <span class="unikname"><a :href="href()">{{ id }}&nbsp;&nbsp;<img src="/chainlink.svg" /></a></span>
+  </span>
 </template>
 
 <script>
 export default {
-    props: { 
-      id: {type: String}
+    props: {
+      id: {type: String},
+      unikid: {type: String},
+      label: {type: Boolean},
     },
     methods: {
       href: function() {
-        return "https://unikname.id/" + this.id
+        let xhref = "https://explorer.uns.network/uniks/";
+        if (!this.unikid || 0 === this.unikid.length) {
+          // xhref = "https://unikname.id/" + this.id
+          xhref += this.id;
+        } else {
+          xhref += this.unikid;
+        }
+        return xhref;
       }
     }
 }
