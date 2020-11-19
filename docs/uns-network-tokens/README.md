@@ -14,7 +14,7 @@ The <brand name="uns"/> blockchain runs with two tokens linked together with sma
 
 ## The UNIK Token
 
-<hpicture noshadow><img src="/unik.png" width="100"/></hpicture>
+<hseparator type="UNIK" size="medium"/>
 
 ### UNIK Token is a NFT Token
 
@@ -48,7 +48,7 @@ Only accredited nodes can mint UNIK in the chain. These nodes belongs to Network
 
 ## The UNS Token
 
-<hpicture noshadow><img src="/uns.png" width="100"/></hpicture>
+<hseparator type="uns" size="medium"/>
 
 ### UNS token is a protocol token
 
