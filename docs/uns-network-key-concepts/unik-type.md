@@ -3,7 +3,7 @@ home: false
 title: "Type of UNIK ID"
 ---
 
-# Type of UNIK ID
+# Type of UNIK ID <Badge text="Key Concept"/>
 
 UNIK DID are minted with a type according to their purpose
 - **type 1 &rightarrow; Individual** to be used as a universal identifier for individuals.

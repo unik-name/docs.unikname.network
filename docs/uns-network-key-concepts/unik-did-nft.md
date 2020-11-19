@@ -4,7 +4,7 @@ Title: "UNIK IDentifers"
 sidebarDepth: 0
 ---
 
-# UNIK Identifiers
+# UNIK Identifiers <Badge text="Key Concept"/>
 
 The main purpose of <brand name="uns"/> is to issue, to manage and to secure Decentralized IDentifiers. Here we explain what is a Decentralized IDentifiers in general and what are the specificities of the <brand name="uns"/> ones.
 

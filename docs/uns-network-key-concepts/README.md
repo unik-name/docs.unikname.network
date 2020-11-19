@@ -15,7 +15,7 @@ Please, wait a little bit more to try everything, and look at up right now what 
 :zap: [Cryptography within uns.network blockchain](/uns-network-key-concepts/cryptography-overview)
 <hbox>In the blockchain world you must rely on cryptography to make it happends! <brand name="uns"/> cryptography is based on ARK.IO basics augmented with specificities related to Decentralized IDs and Decentralized Public Key Infrastructure requirements.</hbox>
 
-## IDs rooted in uns.network blockchain
+## IDs rooted in the uns.network blockchain
 
 :zap: [UNIK Identifiers](/uns-network-key-concepts/unik-did-nft)
 <hbox>What is a Decentralized IDentifier in general and what are the specificities of the uns.network ones: the UNIK Identifiers.</hbox>

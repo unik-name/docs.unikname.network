@@ -12,33 +12,36 @@ tags:
   - sponsorship
 ---
 
-# Understanding Badges
+# Understanding Badges <Badge text="Key Concept"/>
 
-Each @unikname is assigned trust badges. They provide information on the qualities of each DID UNIK NFT and its involvement in the network.
+Each @unikname is assigned trust badges. They provide information on the qualities of each UNIK DID and its involvement in the network.
 
 ![jack-sparrow-idcard-header](./images/did-nft-unik-unikname-jack-sparrow-header-badges.png)
 <small>_example of badges displayed in the header section of @jack-sparrow_</small>
 
 Badges take the form of On-Chain properties and are always Disclosed, regardless of the visibility of the UNIK.
 
-The badges are accessible with the Resolver within the path "Badges/".
+The badges are accessible with the Resolver within the path `/badges/`.
 
 There are two types of badges, singular ones and enumerated ones, belonging to families.
 
-The badges are returned by the APIs, the CLI, and are visible on the chain explorer and [on My Unikname App]().
+The badges are returned by the APIs, the CLI, and are visible on the chain explorer and on My Unikname App.
 
-The badges can be [claimed with the CLI](/uns-use-the-network/cli.html#badges-claim) and soon with [My Unikname App](/uns-network-unik-name-use-case/#my-unikname).
+The badges can be [claimed with the CLI](/uns-use-the-network/cli.html#badges-claim) and with My Unikname App.
 
 ## Why Badges?
 
-**Badges contribute to build trust in the network**.
-They give indications on the quality and legitimacy of each @unikname.
+**First of all Badges contribute to build trust in the network**. They give indications on the quality and legitimacy of each existing @unikname ID within the network.
+
+**In this spirit, Badges is a means to unlock Unikname features**.
 
 ## Badge List
 
 ![badges-governance](./images/badges-governance.png)
 
-Badge Type: boolean
+Badge Type: `boolean`
+
+Property key `/Badges/Security/`
 
 | Name | How to get it | Description | Scope | 
 |-|-|-|-|
@@ -49,22 +52,26 @@ Badge Type: boolean
 ---
 ![badges-np-roles](./images/badges-np-roles.png)
 
-Badge Type: boolean
+Badge Type: `boolean`
+
+Property key `/Badges/NP/`
 
 | Name | How to get it | Description | Scope | 
 |-|-|-|-|
-| **Delegate** | forging the delegate registration transaction | The cryptoaddress of the UNIK is registered as Delegate | all types |
-| **Storage Provider** | Getting licence* | The UNIK is related to a Network Service Provider having a Storage Provider Licence. | all types |
-| **NFT Factory** | Getting licence* | The UNIK is related to a Network Service Provider having a NFT Factory licence. The UNIK is enable to issue UNIK NFT Token. | organization only |
-| **Unikname Connect Gateway** | Getting licence* | The UNIK is related to a Network Service Provider having a Unikname Connect licence. The UNIK is enable to provide authentication certificate. | organization only |
-| **URL Checker** | Getting licence* | The UNIK is related to a Network Service Provider having a URL Checker licence. The UNIK is enable to check the ownership of a web ressource like a website. | organization only |
+| **Delegate** | Forging the `delegate registration transaction` | The cryptoaccount of the UNIK is registered as Delegate | all types |
+| **Storage Provider** | Getting licence* | The UNIK is related to a Network Service Provider having a `Storage Provider Licence`. | all types |
+| **NFT Factory** | Getting licence* | The UNIK is related to a Network Service Provider having a `NFT Factory licence`. | network only |
+| **URL Checker** | Getting licence* | The UNIK is related to a Network Service Provider having a `URL Checker licence`. | network only |
+| **AUTH Services** | Getting licence* | The UNIK is related to a Network Service Provider having a `Auth Service licence`. | network only |
 
-_* Licences are provided by the uns foundation_
+_* see [Network Service Providers](./service-provider)_
 
 ---
 ![badges-pioneer](./images/badges-pioneer.png)
 
-Badge Type: enumerate
+Badge Type: `enumerate`
+
+Property key `/Badges/Pioneer/`
 
 | Name | How to get it | Description | Scope
 |-|-|-|-|
@@ -74,7 +81,9 @@ Badge Type: enumerate
 ---
 ![badges-label](./images/badges-label.png)
 
-Badge Type: boolean
+Badge Type: `boolean`
+
+Property key `/Badges/Label/`
 
 | Name | How to get it | Description | scope 
 |-|-|-|-|-|
@@ -83,7 +92,9 @@ Badge Type: boolean
 ---
 ![badges-xp](./images/badges-xp.png)
 
-Badge Type: enumerate
+Badge Type: `enumerate`
+
+Property key `/Badges/XPLevel/`
 
 | Name | How to get it | Description | Scope |
 |-|-|-|-|-|
@@ -96,7 +107,9 @@ Badge Type: enumerate
 ---
 ![badges-sponsorship](./images/badges-sponsorship.png)
 
-Type: enumerate
+Type: `enumerate`
+
+Property key `/Badges/Sponsorship/`
 
 | Name | How to get it  | Description | Scope |
 |-|-|-|-|-|

@@ -3,7 +3,7 @@ home: false
 title: "Cryptography overview"
 ---
 
-# Cryptography overview
+# Cryptography overview <Badge text="Key Concept"/>
 
 In the blockchain world you must rely on cryptography to make it happends! <brand name="uns"/> blockchain cryptography is based on [ARK.IO](https://ark.io) basics augmented with specificties related to Decentralized IDs and Decentralized Public Key Infrastructure requirements.
 

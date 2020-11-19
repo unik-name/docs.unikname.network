@@ -13,7 +13,7 @@ tags:
   - type
 ---
 
-# Understanding governance of uns.network blockchain
+# Understanding governance of uns.network blockchain 
 
 The uns.network blockchain is a DPOS kind of blockchain. It counts three separates categories of stakeholders, with specific purpose and interest. They are:
 - Organization: which makes secured the confidential connections on their web site ;

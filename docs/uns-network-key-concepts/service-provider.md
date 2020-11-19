@@ -1,42 +1,80 @@
 ---
 home: false
 title: "Network Service Provider"
+sidebarDepth: 1
 ---
 
-# Network Service Providers
+# Network Service Providers <Badge text="Key Concept"/>
 
-<brand name="uns"/> provides services through specialized nodes called Service Providers. These nodes are like gateways and make the bridge between the decentralized network and the traditional web. They provide services in exchange for UNS tokens.
+<brand name="uns"/> provides services through specialized nodes called Service Providers Nodes. These nodes are like gateways and make the bridge between the decentralized network and the traditional web. They provide services to @unikname ID owners in exchange for UNS tokens. They are core in the <brand name="uns"/> tokenomics. 
 
-To date, the network embed the following service providers:
+Network Service Providers Nodes are [operated under licence](#service-provider-licencing), granted by the community. 
 
-Anybody can develop and run a provider of Network Services. The first ones have been designed by the <brand name="uns"/> team. They are the backbone of <brand name="uns"/> tokenomics. They ensure the liquidity of the protocol token.
+Elementary services provided are called `Network UniT Services (NUTS)`. All available services are listed in a directory called the `Directory Of Network Unit Services (DONUTS)`
 
-Every network service provider has been designed to be resilient and scalable. 
+<hpicture>![nsp](./images/nsp-diagram1.png)</hpicture>
 
-[[TOC]]
+Anybody can develop a new kind of Network Services Provider. The first ones have been designed by the <brand name="uns"/> team: 
 
+:globe_with_meridians: [NFT Factory](#nft-factory) provides services related to UNIK DID NFT tokens  
+:globe_with_meridians: [URL Checker](#url-checker) provides services to verify ownership of any web data  
+:globe_with_meridians: [AUTH Services](#auth-services) provides authentication services  
+:globe_with_meridians: [Storage Provider](#storage-provider) provides storage services
 
-## NFT-Factory
+<hseparator type="uns"/>
 
-**NFT Factory:** provide services for NFT tokens
+## Type of Network Service Providers
 
-NFT-Factory is in charge of creation and update of all @unikname in blockchain. Each actions about @unikname have a price in UNS, et each transaction are completly certified by cryptographic signature.
+### :globe_with_meridians: NFT Factory
 
-@unikname: [@network:NFT-Factory](https://explorer.uns.network/uniks/fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a)
+**NFT Factory** provides services related to UNIK DID NFT tokens.
 
+NFT-Factory is in charge of the UNIK NFT token Issuance, and to sign and certify mints and updates for every @unikname ID. 
 
-## URL-Checker
+Each UNIK DID (aka @unikname ID) operations are provided by a NFT Factory and must traded against UNS tokens.
 
-**URL Checker:** provide services to verify ownership of any web data
+**Registered NFT Factories:**  
 
-URL-Checker is in charge of verification of a @unikname on an url. It write proof of control success on the blockchain. Anybody can check this proof.
+&nbsp;:round_pushpin:&nbsp;<un label id="@network:NFT-Factory" unikid="fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a"/> 
 
-@unikname: [@network:URL-Checker*1](https://explorer.uns.network/uniks/08bf335ede1818e222ecd529e0e892190aab62a39ec40492395b825a4f640731)
+<p><br/></p>
 
-## AUTH-DID
+### :globe_with_meridians: URL Checker
 
-**DID Auth:** Decentralized IDentity Provider Authentication services
+**URL Checker** provides services to verify ownership of any data located over the web.
 
-On the opposite of the two others, DID-Auth gives UNS against services: users connect with Unikname Connect to websites partners, and DID-Auth send UNS to users.
+URL-Checker is in charge of verification of the ownership of any web url. Every successful verification results in a public proof recorded in the <brand name="uns"/> blockchain. Anybody can check this proof.
 
-@unikname: @network:AUTH-DID (does not yet exist in uns.network)
+**Registered URL Checkers:**  
+
+&nbsp;:round_pushpin:&nbsp;<un label id="@network:URL-Checker*1" unikid="08bf335ede1818e222ecd529e0e892190aab62a39ec40492395b825a4f640731"/> 
+
+<p><br/></p>
+
+### :globe_with_meridians: AUTH Services
+
+**Auth Services** provides authentication services.
+
+**Registered AUTH Services Providers:**  
+
+&nbsp;:round_pushpin:&nbsp;<un label id="@network:AUTH-Services*1"/> 
+
+<p><br/></p>
+
+### :globe_with_meridians: Storage Provider
+
+**Storage Provider** provides storage services.
+
+**Registered Storage Providers:**  
+
+&nbsp;:round_pushpin:&nbsp;None for the time being.
+
+<hseparator type="uns"/>
+
+## Service Provider Licencing
+
+_* Licences are provided by the uns foundation_
+
+:::tip Good to know
+To date, Network Service Providers Nodes are operated by <brand name="uns"/> team.
+:::

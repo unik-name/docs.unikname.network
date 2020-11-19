@@ -3,7 +3,7 @@ home: false
 title: "Pattern of UNIK ID"
 ---
 
-# Pattern of UNIK ID
+# Pattern of UNIK ID <Badge text="Key Concept"/>
 
 Every @unikname is a unique string of characters, forming a human-readable identifier. This string is composed of unicode characters belonging to the SafeTypo&copy; international alphabet. It's a serie of digits, letters denominated in a specific alphabet or script, and separators. The way the character string is combined can be classified into patterns.
 
