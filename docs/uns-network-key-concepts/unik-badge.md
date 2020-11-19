@@ -1,6 +1,6 @@
 ---
 home: false
-title: "Unikname DID UNIK Badges"
+title: "UNIK Badges"
 tags: 
   - badge
   - governance

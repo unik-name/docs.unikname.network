@@ -39,11 +39,12 @@ A specific server interacting with the decentralized Network and a centralized S
 
 ### NFT Token
 
-Non-Fungible Token, by opposiiton to a more traditionnal Token. NFT have remarkable properties such as their uniqueness, and their indivisibility.
+Non-Fungible Token, by opposition to a more traditional Token. NFT have remarkable properties such as their uniqueness, and their indivisibility. All UNIK tokens are NFTs.
 
 ### UNIK (or UNIK Token)
 
-@unik-name Identifers are represented by a NFT Token within the uns.network. These tokens rooted into the blockchain are named the UNIK Tokens.
+'UNIK' is the name of the NFT token representing a single @unikname ID within the uns.network blockchain.
+
 
 ## Official uns.network Projects
 

@@ -20,6 +20,8 @@ The uns.network blockchain is a DPOS kind of blockchain. It counts three separat
 - Individual: which own UNS credits ;
 - Community actors which work for the network only.
 
+![governance](./images/uns-blockchain-dpos-23-delegates.jpg)
+
 Therefore, governance is based on delegates colleges, allowing that all @unikname types to be represented. Colleges are organized separately and independently. Each network member can only vote for his own representatives according to rules specific to his college:
 
 - Organizations must vote. At each time than a @unikname is created with organization type, it have to choose a representative. It can be himself or another member of its college. Each @unikname organization give its poll weighted by its subscription to the Unikname Connect solution. By this way, organization's delegates are the guarantors of the adequacy between the uns.network technology and Unikname Connect solution. 10 places are reserved for delegates with type organization.

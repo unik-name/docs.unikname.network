@@ -1,6 +1,6 @@
 ---
 home: false
-title: "Lifecycle"
+title: "UNIK Lifecycle"
 ---
 
 # Key Concept - Lifecycle
