@@ -309,7 +309,7 @@ No network cost.
 Resolve a Decentralized IDentifier (DID).
 
 #### Arguments
-- `DID` (required):  The Decentralized IDentifier to resolve, with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `DID` (required):  The Decentralized IDentifier to resolve, with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 ::: warning
 DID must be surrounded by double quotes (e.g. `"@bob"`)
@@ -356,7 +356,7 @@ Send owned UNS protocol tokens to another crypto account.
 
 #### Arguments
 - `AMOUNT` (required):  The quantity of UNS tokens to send to the recipient.
-- `TARGET` (required):  The recipient address, public key, @unikname or unik ID with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required):  The recipient address, public key, @unikname or unik ID with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
@@ -464,7 +464,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
 
-- `TARGET` (required):  The crypto account address, public key or a @unikname owned by the account with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required):  The crypto account address, public key or a @unikname owned by the account with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -634,7 +634,7 @@ Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
 
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -693,7 +693,7 @@ If a @unikname is provided, --explicitValue flag can be omitted, the @unikname w
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -733,7 +733,7 @@ Service Provider cost: none
 Check if UNIK has one or more disclosed explicit value.
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
@@ -778,7 +778,7 @@ No Network cost.
 Buy Everlasting status for a @unikname. The @unikname must already own the Alive status
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 - `-f, --format` `{json|yaml, json}`: Specify how to format the output [json|yaml]. Default to Json.
@@ -826,8 +826,8 @@ You cannot register more than 3 user properties by default.
 
 #### Parameters
 
-- `-k --key` (required): Key of property to set as UNIK property. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
-- `-V --value` (required): Value of property to set as UNIK property. See [allowed property value format](/uns-use-the-network/cheatsheet.html#property-values-of-unik)
+- `-k --key` (required): Key of property to set as UNIK property. See [allowed property key format](/cheatsheet.html#property-keys-of-unik)
+- `-V --value` (required): Value of property to set as UNIK property. See [allowed property value format](/cheatsheet.html#property-values-of-unik)
 - `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
@@ -835,7 +835,7 @@ You cannot register more than 3 user properties by default.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -880,7 +880,7 @@ The only properties that can be unset are those whose key starts with `usr/`.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -922,7 +922,7 @@ Get properties of UNIK token. The command will fail if the minimum number of con
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -975,7 +975,7 @@ Get the value of a specific property of a UNIK token.
 
 #### Parameters
 
-- `-k, --propertyKey` (required): the key of the property for which we query the value. See [allowed property key format](/uns-use-the-network/cheatsheet.html#property-keys-of-unik)
+- `-k, --propertyKey` (required): the key of the property for which we query the value. See [allowed property key format](/cheatsheet.html#property-keys-of-unik)
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
 - `-f, --format` `{json|yaml|raw, json}`: Specify how to format the output [json|yaml|raw]. Default to Json.
@@ -983,7 +983,7 @@ Get the value of a specific property of a UNIK token.
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -1031,7 +1031,7 @@ This command generates a verification package `uns-verification.txt` which will 
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Usage
 
@@ -1077,7 +1077,7 @@ Prior using html and file channels, a verification package should be generated u
 Some [global parameters](#global-parameters) may apply to this command.
 
 #### Arguments
-- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier).See examples below for more information.
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier).See examples below for more information.
 
 #### Usage
 
@@ -1104,7 +1104,7 @@ Votes are restricted to the same UNIK type (individual, organization) delegate a
 Voter must have the LifeCycle status "Alive" or "Everlasting".
 
 #### Arguments
-- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier) of the delegate to vote for. See examples below for more information.
+- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier) of the delegate to vote for. See examples below for more information.
 
 #### Parameters
 
@@ -1149,7 +1149,7 @@ Service Provider cost: none.
 This command allows you to revoke your vote given to a delegate with his @unikname.
 
 #### Arguments
-- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier) of the delegate to unvote from. See examples below for more information.
+- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier) of the delegate to unvote from. See examples below for more information.
 
 #### Parameters
 
@@ -1196,7 +1196,7 @@ Before registering you must have publicly disclosed your Unikname (see [unik:dis
 To apply as delegate, the Crypto-account of the Unik candidate is limited to a single Unik (i.e delegate user should own a maximum of 1 Unik in crypto-account).
 
 #### Arguments
-- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier) to register as delegate. See examples below for more information.
+- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier) to register as delegate. See examples below for more information.
 
 #### Parameters
 
@@ -1235,7 +1235,7 @@ Service Provider cost: none.
 This command allows you to resign delegate status of your UNIK.
 
 #### Arguments
-- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier) to unregister as delegate. See examples below for more information.
+- `TARGET` (required): the unikid or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier) to unregister as delegate. See examples below for more information.
 
 #### Parameters
 
@@ -1272,7 +1272,7 @@ This command allows you to claim following badges for your UNIK:
 
 - `-b, --badge` (required): one of the followings badges identifier: [pioneer]
 #### Arguments
-- `ID` (required):  The unikid or the @unikname with [the format of a DID](/uns-use-the-network/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+- `ID` (required):  The unikid or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 

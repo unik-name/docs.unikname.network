@@ -90,4 +90,4 @@ We're maintaining 2 public networks, a live one and a test one:
 
 - **LIVENET**: the main network (equivalent to mainnet on other blockchains). Tokens are **valuable** and you can use them on a day to day basis for the long life. This network is live since may 2020 and you can access the blockchain via the public [livenet explorer](https://explorer.uns.network/).
 
-- **SANDBOX**: the development network (equivalent to _testnet_ or _devnet_ on other blockchains). Used to test and discuss new features with community before making them available for all. Tokens are **valueless** (you can get them for free [from the faucet](/uns-use-the-network/#sandbox-faucet). Use them to test next features and your apps based on UNIK tokens. 
+- **SANDBOX**: the development network (equivalent to _testnet_ or _devnet_ on other blockchains). Used to test and discuss new features with community before making them available for all. Tokens are **valueless** (you can get them for free [from the faucet](/interacting-with-uns.html#sandbox-faucet). Use them to test next features and your apps based on UNIK tokens. 

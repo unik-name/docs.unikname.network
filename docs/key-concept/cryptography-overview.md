@@ -24,7 +24,7 @@ Every @unikname is encoded within the <brand name="uns"/> blockchain with a hash
 
 ## Overview
 
-![cryptography-overview](/images/cryptography-overview.png)
+![cryptography-overview](/key-concepts/images/cryptography-overview.png)
 
 ## Resolving a cryptoaccount
 

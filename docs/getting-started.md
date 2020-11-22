@@ -24,7 +24,7 @@ Choose your preferred setup depending on your desktop environment and install th
 
 *: you should then add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to be able to run `uns` command.
 
-You can also [install from NPM/Yarn](/uns-use-the-network/cli-alternate-installation.html) for all platforms.
+You can also [install from NPM/Yarn](/cli-alternate-installation) for all platforms.
 
 Now you must be able to run the uns commands. Open a console and test it.
 
@@ -34,7 +34,7 @@ $ uns --version
 ```
 
 :::tip
-All CLI commands can be found in the [Using the uns.network chapter](../uns-use-the-network/cli.html).
+All CLI commands can be found in the [Using the uns.network chapter](/cli).
 
 You can also request inline help with the command `$ uns --help`
 :::
@@ -129,7 +129,7 @@ $ uns unik:create --type=individual --explicitValue="yourUnikname" --coupon="LAT
 
 #### Understanding parameters
 
-`--type=individual` &rightarrow; Individual type is the most common. Individual @unikname can be used to authenticate on websites. There's other types of @unikname but the creation process is different. To understand types you can read [Types Key Concept](../uns-network-key-concepts/unik-type).
+`--type=individual` &rightarrow; Individual type is the most common. Individual @unikname can be used to authenticate on websites. There's other types of @unikname but the creation process is different. To understand types you can read [Types Key Concept](/key-concept/unik-type).
 
 
 `--explicitValue="yourUnikname"` &rightarrow; this is the most important one, this is your @unikname. You can choose a nick name, your real name or any pseudo, it's up to you. It must be easy to remind. It is not sensitive to case nor to accent nor to separators. That mean that "Laurent.Lourenço" is the same as "laurentlourenco"
@@ -213,8 +213,8 @@ You're welcome to post a feedback on your 1st experience with the community and 
 
 ## ...and to go further
 
-* [Become a network player](/uns-network-player)
-* [Vote for a delegate](/uns-use-the-network/cli.html#delegate-vote)
-* [Disclose your @unikname](/uns-use-the-network/cli.html#unik-disclose) or/and [claim trust badges](/uns-use-the-network/cli.html#badges-claim)
-* [Record public data on your on-chain registry](/uns-use-the-network/cli.html#properties-set)
+* [Become a network player](/becoming-network-player)
+* [Vote for a delegate](/cli.html#delegate-vote)
+* [Disclose your @unikname](/cli.html#unik-disclose) or/and [claim trust badges](/cli.html#badges-claim)
+* [Record public data on your on-chain registry](/cli.html#properties-set)
 

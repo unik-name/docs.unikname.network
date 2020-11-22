@@ -13,7 +13,7 @@ NFT Factories are minting UNIK Non Fungible Tokens. The cost depends on the scar
 
 These services can be used through: 
 - The application `my.unikname.app`
-- The CLI with the command [`unik:create`](/uns-use-the-network/cli.html#unik-create)
+- The CLI with the command [`unik:create`](/cli.html#unik-create)
 - The SDK 
 
 #### For UNIK of type `Individual`
