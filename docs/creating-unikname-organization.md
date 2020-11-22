@@ -32,7 +32,7 @@ It’s an essential part of using <brand name="uns"/>.
 
 *: you should then add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to be able to run `uns` command.
 
-[Alternate installation modes are also available in the CLI documentation](/uns-use-the-network/cli.html#download-and-installation).
+[Alternate installation modes are also available in the CLI documentation](/cli.html#download-and-installation).
 
 :::tip On Windows
 Execute the file downloaded to procede to installation.
@@ -57,7 +57,7 @@ COMMANDS
   ...
 ```
 
-If you want more details about the CLI and tips to use it, check the [CLI documentation](/uns-use-the-network/cli.html).
+If you want more details about the CLI and tips to use it, check the [CLI documentation](/cli).
 You are now ready for the next step !
 
 ## Creating your cryptoaccount
@@ -94,7 +94,7 @@ Once you have your coupon, all you have to do is create your @unikname!
 **Don't forget to backup and secure your passphrase**, it will allow you to retrieve access to your @unikname in case you change your device.
 Neither <brand name="uns"/>, nor Unikname will be able to give you back access to your @unikname.
 
-With <brand name="uns"/> CLI you can create your own UNIK token using [`unik:create`](/uns-use-the-network/cli.html#unik-create) command.
+With <brand name="uns"/> CLI you can create your own UNIK token using [`unik:create`](/cli.html#unik-create) command.
 
 :::warning Choosing the @unikname
 Choose the @unikname wisely. Indeed, it'll be disclosed to other people and they'll know you by this @unikname and once you've chosen a name, you won't be able to change it.

@@ -17,7 +17,7 @@ It’s an essential part of using <brand name="uns"/>.
 
 *: you should then add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to be able to run `uns` command.
 
-[Alternate installation modes are also available in the CLI documentation](/uns-use-the-network/cli.html#download-and-installation).
+[Alternate installation modes are also available in the CLI documentation](/cli.html#download-and-installation).
 
 :::tip On Windows
 Execute the file downloaded to procede to installation.
@@ -42,7 +42,7 @@ COMMANDS
   ...
 ```
 
-If you want more details about the CLI and tips to use it, check the [CLI documentation](/uns-use-the-network/cli.html).
+If you want more details about the CLI and tips to use it, check the [CLI documentation](/cli).
 You are now ready for the next step !
 
 ## Registering as a delegate
