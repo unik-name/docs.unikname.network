@@ -161,11 +161,11 @@ You already know how to query your @unikname within the chain with the resolver.
 
 But you can also use the blockchain explorer! Let's go to [explorer.uns.network](https://explorer.uns.network). Go to the the search bar in the header and look for your own @unikname
 
-![lookforyourunikname.png](./images/lookforyourunikname.png)
+![lookforyourunikname.png](/images/getting-started-lookforyourunikname.png)
 
 You get it.
 
-![lookforyourunikname2.png](./images/lookforyourunikname2.png)
+![lookforyourunikname2.png](/images/getting-started-lookforyourunikname2.png)
 
 As you see your @unikname has been found within the chain but it's not disclosed. So until you share it, nobody knows it.
 
@@ -177,7 +177,7 @@ The easiest way to do it is to open your browser on your smartphone and go to [m
 
 If you're familiar with QR Code you can also scan this one with your smartphone for a quick setup.
 
-![qrcode-my-unikname-app2](./images/qrcode-my-unikname-app2.png)
+![qrcode-my-unikname-app2](/images/getting-started-qrcode-my-unikname-app2.png)
 
 
 During the installation process you will have to setup your PIN Code and optionally to subscribe to our _keep in touch_ mailing list.

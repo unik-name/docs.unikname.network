@@ -12,5 +12,5 @@ In doing such we've contributed to the ARK developements. We're participating to
 To get more information about the ARK.io blockchain we recommend reading the upstream [documentation of ARK.io](https://docs.ark.io/).
 As of January 2020, UNS Core is built on Ark v2.6.
 
-![powered-by-ark](./images/poweredbyark6.png)
+![powered-by-ark](/images/poweredbyark6.png)
 

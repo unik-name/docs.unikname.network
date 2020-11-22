@@ -29,10 +29,10 @@ To manage UNS tokens it's simple and it requires only two additional steps:
 #### step 1. Setup the uns.network configuration
 
 Go to `manage network` section (bottom-left of navigation bar).  
-![manage-network](./images/manage-network.png)
+![manage-network](/images/manage-network.png)
 
 Then click on : `Add a new network` (top-right)  
-![add-network](./images/new-network.png)
+![add-network](/images/new-network.png)
 
 Fill inputs:
 
@@ -57,11 +57,11 @@ Guess what 🤔, you've just completed the first step to configure your wallet !
 
 Click on your profile (last item of navigation bar).  
 Then `Add profile` (top-left). 
-![add-profile](./images/add-profile.png)
+![add-profile](/images/add-profile.png)
 
 Fill-in all inputs like you did for Ark profile.  
 Now, in step `2. Network` you can choose the freshly appeared `UNS Livenet`/`UNS Sandbox` item.  
-![network](./images/network.png)
+![network](/images/network.png)
 
 At the end, you should have a fully configured Desktop wallet able to transfer UNS tokens, create <brand name="uns"/> wallets, vote for <brand name="uns"/> delegates, or any other features inherited from ArkEcosystem.
 
