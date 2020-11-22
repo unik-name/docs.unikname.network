@@ -6,24 +6,24 @@ actionLink: /uns-network-getting-started/
 
 Welcome to the <brand name="uns"/> Player hub. You're are at the right place to find guides and docs to help you working with the <brand name="uns"/> blockchain, as well as support if you get stuck.
 
-## [Understanding uns.network](/uns-network-introduction/)
+## [Understanding uns.network](./introduction)
 
-## [The Tokens](/uns-network-tokens/)
+## [The Tokens](./tokens)
 
-## [Key Concepts](/uns-network-key-concepts/)
+## [Key Concepts](./key-concept)
 
-## [Interacting with uns.network: CLI, API...](/uns-use-the-network/)
+## [Interacting with uns.network: CLI, API...](./interacting-with-uns)
 
-## [Unikname Use Case](/uns-network-unik-name-use-case/)
+## [Unikname Use Case](./unikname-use-case)
 
-## [Becoming Network Player](/uns-network-player/)
+## [Becoming Network Player](./becoming-network-player)
 
-## [Setting-up your Node](/uns-network-setting-up-node/)
+## [Setting-up your Node](/setting-up-uns-node/)
 
-## [Guides: Docker Container, Docker Compose...](/uns-network-guides/docker-configuration)
+## [Guides: Docker Container, Docker Compose...](./docker-configuration)
 
-## [Security](/uns-network-security/)
+## [Security](./security)
 
-## [Q&A](/uns-network-qna/)
+## [Q&A](./qna)
 
-## [Glossary](/uns-network-glossary/)
+## [Glossary](./glossary)

@@ -1,5 +1,5 @@
 ---
-next: /uns-network-player/registering-as-delegate.html
+next: /registering-as-delegate.html
 ---
 
 # Creating @unikname id as an individual
@@ -32,18 +32,18 @@ Once the application is installed on your home screen, launch the application an
 One of the first steps you will be asked is to create your pin code.
 It is this code that will allow you to access the application later and manage your @unikname.
 
-![pin-code](./images/pin-code.png)
+![pin-code](/images/pin-code.png)
 
 
 ## Create your @unikname
 
 On the next screen, choose the option that corresponds to your situation depending on whether you have a coupon ("I GOT A COUPON") or not ("GET A FREE @UNIKNAME").
 
-![homepage](./images/homepage.png)
+![homepage](/images/homepage.png)
 
 After you choose your option, you should arrive on a page to create your @unikname!
 
-![create-unikname](./images/create-unikname.png)
+![create-unikname](/images/create-unikname.png)
 
 :::tip
 *Once you've chosen a name, you won't be able to change it. So choose it carefully!*

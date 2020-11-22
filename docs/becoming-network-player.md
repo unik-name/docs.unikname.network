@@ -3,7 +3,7 @@ home: false
 title: "Becoming uns.network Player"
 ---
 
-# Introduction
+# Becoming a Network Player
 
 [[toc]]
 

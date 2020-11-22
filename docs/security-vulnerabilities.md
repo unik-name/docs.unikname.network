@@ -15,7 +15,7 @@ As an open-source, distributed network, we need to handle updates and critical e
 
 The <brand name="uns"/> is not run by the Unik-Name organization, but by all its public Network Players. The team and the network players remain in close contact through different channels, however scheduling an upgrade means we must cross (1) language barriers, (2) timezones, (3) different opinions on the validity of the update.
 
-We're working very close with our community and our partners, specially ARK.IO, to manage Security Vulnerabilities in the best efficient way. And because we've chosen and accepted to participate to the [Powered by ARK](/uns-network-powered-by-ark-io/) we take direct benefices from their fixes and patches.
+We're working very close with our community and our partners, specially ARK.IO, to manage Security Vulnerabilities in the best efficient way. And because we've chosen and accepted to participate to the [Powered by ARK](./powered-by-ark-io) we take direct benefices from their fixes and patches.
 
 ## Reporting
 

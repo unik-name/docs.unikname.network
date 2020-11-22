@@ -68,67 +68,67 @@ module.exports = {
       {
         title: "Introduction",
         children: [
-          ["/uns-network-introduction/", "Understanding uns.network"],
-          ["/uns-network-tokens/", "The Tokens"],
-          ["/uns-network-getting-started/", "Getting Started"]
+          ["./introduction", "Understanding uns.network"],
+          ["./tokens", "The Tokens"],
+          ["./getting-started", "Getting Started"]
         ],
       },
       {
         title: "Key concepts",
         sidebarDepth: 0,
         children: [
-          ["/uns-network-key-concepts/", "Key Concept Summary"],
-          ["/uns-network-key-concepts/cryptography-overview","Cryptography Overview"],
-          ["/uns-network-key-concepts/unik-did-nft", "UNIK IDentifiers"],
-          ["/uns-network-key-concepts/unik-type", "Type of UNIK"],
-          ["/uns-network-key-concepts/unik-pattern", "Pattern of UNIK"],
-          ["/uns-network-key-concepts/unik-lifecycle", "Lifecycle of UNIK"],
-          ["/uns-network-key-concepts/unik-property", "Properties of UNIK"],
-          ["/uns-network-key-concepts/unik-badge", "Badges"],
-          //["/uns-network-key-concepts/nft-coupon", "Coupons"],
-          ["/uns-network-key-concepts/service-provider", "Network Service Provider"],
-          ["/uns-network-key-concepts/donuts", "Directory of Network Services"],
-          ["/uns-network-key-concepts/network-governance", "Governance"],
+          ["/key-concept/", "Key Concept Summary"],
+          ["/key-concept/cryptography-overview","Cryptography Overview"],
+          ["/key-concept/unik-did-nft", "UNIK IDentifiers"],
+          ["/key-concept/unik-type", "Type of UNIK"],
+          ["/key-concept/unik-pattern", "Pattern of UNIK"],
+          ["/key-concept/unik-lifecycle", "Lifecycle of UNIK"],
+          ["/key-concept/unik-property", "Properties of UNIK"],
+          ["/key-concept/unik-badge", "Badges"],
+          //["/key-concept/nft-coupon", "Coupons"],
+          ["/key-concept/service-provider", "Network Service Provider"],
+          ["/key-concept/donuts", "Directory of Network Services"],
+          ["/key-concept/network-governance", "Governance"],
         ],
       },
       {
         title: "Using the uns.network",
         sidebarDepth: 0,
         children: [
-          ["/uns-use-the-network/", "Introduction"],
-          ["/uns-use-the-network/cli.html", "CLI"],
-          ["/uns-use-the-network/api", "API"],
-          ["/uns-use-the-network/sdk", "SDK"],
-          ["/uns-use-the-network/wallet", "Wallet"],
-          ["/uns-use-the-network/cheatsheet", "Cheat Sheet"],
+          ["./interacting-with-uns", "Introduction"],
+          ["./cli", "CLI"],
+          ["./api", "API"],
+          ["./sdk", "SDK"],
+          ["./wallet", "Wallet"],
+          ["./cheatsheet", "Cheat Sheet"],
         ],
       },
-      ["/uns-network-unik-name-use-case/", "Use cases"],
+      ["./unikname-use-case", "Use cases"],
       {
         title: "Becoming a Network Player",
         /* collapsable: false, */
         sidebarDepth: 0,
         children: [
-          ["/uns-network-player/", "Introduction"],
-          "/uns-network-player/creating-your-unikname-individual",
-          "/uns-network-player/creating-unikname-organization",
+          ["./becoming-network-player", "Introduction"],
+          "./creating-your-unikname-individual",
+          "./creating-unikname-organization",
           [
-            "/uns-network-player/registering-as-delegate",
+            "./registering-as-delegate",
             "Registering as Delegate",
           ],
-          ["/uns-network-player/setting-up-your-node", "Setting up your node"],
-          ["/uns-network-player/last-steps", "Last steps"],
+          ["/setting-up-uns-node/", "Setting up your node"],
+          ["./last-steps", "Last steps"],
         ],
       },
       {
         title: "Guides",
         children: [
           [
-            "/uns-network-guides/docker-configuration",
+            "./docker-configuration",
             "Docker container configuration",
           ],
           [
-            "/uns-network-guides/docker-compose-management",
+            "./docker-compose-management",
             "Docker Compose management",
           ],
         ],
@@ -136,9 +136,9 @@ module.exports = {
       {
         title: "Security",
         children: [
-          ["/uns-network-security/", "Security & Hack Protections"],
+          ["./security", "Security & Hack Protections"],
           [
-            "/uns-network-security/security-vulnerabilities",
+            "./security-vulnerabilities",
             "Security & Vulnerabilities",
           ],
         ],
@@ -146,9 +146,9 @@ module.exports = {
       {
         title: "More...",
         children: [
-          ["/uns-network-qna/", "Q&A"],
-          ["/uns-network-glossary/", "Glossary"],
-          ["/uns-network-powered-by-ark-io/", "Powered by ARK"],
+          ["./qna", "Q&A"],
+          ["./glossary", "Glossary"],
+          ["./powered-by-ark-io", "Powered by ARK"],
         ],
       },
     ],

@@ -1,5 +1,5 @@
 ---
-prev: /uns-network-player/
+prev: /becoming-network-player
 ---
 
 #  Creating @unikname id for an organization
