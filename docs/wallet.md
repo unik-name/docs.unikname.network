@@ -67,7 +67,7 @@ At the end, you should have a fully configured Desktop wallet able to transfer U
 
 If you want to start playing:
 - On the Livenet, you should [get a @unikname first with the My Unikname app](#unikname-app)
-- On the Sandbox, you can get `SUNS` [from the FAUCET](/interacting-with-uns#sandbox-faucet).
+- On the Sandbox, you can get `SUNS` [from the FAUCET](/interacting-with-uns.html#sandbox-faucet).
 
 > NOTA: Management of UNIK tokens is not able with the default Ark Wallet, it requires the installation of the Unikname APP.
 
