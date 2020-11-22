@@ -23,7 +23,7 @@ Pattern is calculated from the @unikname ID string. It's not a disclosed informa
 
 ## The type of @unikname ID
 
-Patterns provides information about the [type of the @unikname ID (aka UNIK ID)](/uns-network-key-concepts/unik-type): `Individual`, `Organization` or `Network`. 
+Patterns provides information about the [type of the @unikname ID (aka UNIK ID)](/key-concept/unik-type): `Individual`, `Organization` or `Network`. 
 
 ## The script used
 
