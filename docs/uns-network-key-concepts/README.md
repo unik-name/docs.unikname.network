@@ -35,14 +35,14 @@ Please, wait a little bit more to try everything, and look at up right now what 
 :zap: [UNIK properties](/uns-network-key-concepts/unik-property)
 <hbox>UNIK owners can define customized properties to their IDs.</hbox>
 
-### Network Service
+## Network Services
 
 :zap: [Network Service Providers](/uns-network-key-concepts/service-provider)
 
 :zap: [Directory Of Network UniT Services (DONUTS)](/uns-network-key-concepts/donuts)
 
 
-### Governance of uns.network
+## Network Governance
 
 :zap: [Understanding Governance of uns.network blockchain](/uns-network-key-concepts/network-governance)
 <hbox>The uns.network is a DPoS blockchain governed by three separates colleges of stakeholders.</hbox>

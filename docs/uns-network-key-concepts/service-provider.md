@@ -35,7 +35,7 @@ Each UNIK DID (aka @unikname ID) operations are provided by a NFT Factory and mu
 
 **Registered NFT Factories:**  
 
-&nbsp;:round_pushpin:&nbsp;<un label id="@network:NFT-Factory" unikid="fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a"/> 
+:round_pushpin:&nbsp;<un label id="@network:NFT-Factory" unikid="fbfbe7d9e8c005f1a9937d9fd17c4ef7da2ff8037a71e6cb7847b302eda4d08a"/> 
 
 <p><br/></p>
 
@@ -47,7 +47,7 @@ URL-Checker is in charge of verification of the ownership of any web url. Every 
 
 **Registered URL Checkers:**  
 
-&nbsp;:round_pushpin:&nbsp;<un label id="@network:URL-Checker*1" unikid="08bf335ede1818e222ecd529e0e892190aab62a39ec40492395b825a4f640731"/> 
+:round_pushpin:&nbsp;<un label id="@network:URL-Checker*1" unikid="08bf335ede1818e222ecd529e0e892190aab62a39ec40492395b825a4f640731"/> 
 
 <p><br/></p>
 
@@ -57,7 +57,7 @@ URL-Checker is in charge of verification of the ownership of any web url. Every 
 
 **Registered AUTH Services Providers:**  
 
-&nbsp;:round_pushpin:&nbsp;<un label id="@network:AUTH-Services*1"/> 
+:round_pushpin:&nbsp;<un label id="@network:AUTH-Services*1"/> 
 
 <p><br/></p>
 
@@ -73,8 +73,5 @@ URL-Checker is in charge of verification of the ownership of any web url. Every 
 
 ## Service Provider Node Operator Licence
 
-Licences are granted by the community.
+Licences will be granted by the community. For the time being Network Service Providers Nodes are operated by <brand name="uns"/> team.
 
-:::tip Good to know
-To date, Network Service Providers Nodes are operated by <brand name="uns"/> team.
-:::
