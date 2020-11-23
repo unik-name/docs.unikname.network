@@ -34,6 +34,9 @@ module.exports = {
     "@spacelephantlabs/vuepress-plugin-matomo": {
       siteId: 2,
     },
+    "@spacelephantlabs/vuepress-plugin-rocketchat-livechat": {
+      rocketChatUrl: "https://spacelephant.rocket.chat/",
+    },
   },
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
@@ -70,7 +73,7 @@ module.exports = {
         children: [
           ["./introduction", "Understanding uns.network"],
           ["./tokens", "The Tokens"],
-          ["./getting-started", "Getting Started"]
+          ["./getting-started", "Getting Started"],
         ],
       },
       {
@@ -78,7 +81,7 @@ module.exports = {
         sidebarDepth: 0,
         children: [
           ["/key-concept/", "Key Concept Summary"],
-          ["/key-concept/cryptography-overview","Cryptography Overview"],
+          ["/key-concept/cryptography-overview", "Cryptography Overview"],
           ["/key-concept/unik-did-nft", "UNIK IDentifiers"],
           ["/key-concept/unik-type", "Type of UNIK"],
           ["/key-concept/unik-pattern", "Pattern of UNIK"],
@@ -112,10 +115,7 @@ module.exports = {
           ["./becoming-network-player", "Introduction"],
           "./creating-your-unikname-individual",
           "./creating-unikname-organization",
-          [
-            "./registering-as-delegate",
-            "Registering as Delegate",
-          ],
+          ["./registering-as-delegate", "Registering as Delegate"],
           ["/setting-up-uns-node/", "Setting up your node"],
           ["./last-steps", "Last steps"],
         ],
@@ -123,24 +123,15 @@ module.exports = {
       {
         title: "Guides",
         children: [
-          [
-            "./docker-configuration",
-            "Docker container configuration",
-          ],
-          [
-            "./docker-compose-management",
-            "Docker Compose management",
-          ],
+          ["./docker-configuration", "Docker container configuration"],
+          ["./docker-compose-management", "Docker Compose management"],
         ],
       },
       {
         title: "Security",
         children: [
           ["./security", "Security & Hack Protections"],
-          [
-            "./security-vulnerabilities",
-            "Security & Vulnerabilities",
-          ],
+          ["./security-vulnerabilities", "Security & Vulnerabilities"],
         ],
       },
       {

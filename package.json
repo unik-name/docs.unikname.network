@@ -43,6 +43,7 @@
   "devDependencies": {
     "@goy/vuepress-plugin-svg-icons": "^4.2.1",
     "@spacelephantlabs/vuepress-plugin-matomo": "spacelephantlabs/vuepress-plugin-matomo",
+    "@spacelephantlabs/vuepress-plugin-rocketchat-livechat": "spacelephantlabs/vuepress-plugin-rocketchat-livechat",
     "@vuepress/plugin-back-to-top": "^1.5.3",
     "highlight.js": "^10.1.2",
     "vue": "^2.6.11",
