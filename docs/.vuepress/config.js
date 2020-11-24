@@ -68,7 +68,8 @@ module.exports = {
     },
     nav: [
       { text: "Get my @unikname ID", link: "https://my.unikname.app" },
-      { text: "Explorer", link: "https://explorer.uns.network/" },
+      { text: "UNS Home", link: "https://uns.network" },
+      { text: "UNS Explorer", link: "https://explorer.uns.network" },
     ],
     sidebar: [
       "/",
