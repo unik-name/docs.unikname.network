@@ -62,6 +62,10 @@ module.exports = {
     docsDir: "docs",
     lastUpdated: true,
     activeHeaderLinks: true,
+    algolia: {
+      apiKey: "da7366c200b21f0ae27f6c29edaff5fe",
+      indexName: "uns-network",
+    },
     nav: [
       { text: "Get my @unikname ID", link: "https://my.unikname.app" },
       { text: "Explorer", link: "https://explorer.uns.network/" },
