@@ -547,7 +547,7 @@ With <brand name="uns"/> CLI you can create your own UNIK token using `unik:crea
 - `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
 - `--type` (required): Type of your token [individual/organization/network]
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
-- `--fee`: Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `--fee`: Transaction fee in satoUNS. Defaults to `0`.
 - `--unik-voucher`: Use a UNIK voucher to create this UNIK
 - `--coupon`: Use a COUPON to create this UNIK <Badge text="4.0.0"/>
 
