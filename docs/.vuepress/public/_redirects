@@ -1,54 +1,53 @@
 # 2019-10-28: default explorer is SANBOX
 https://developer.uns.network/* https://docs.uns.network/:splat 301!
 
-# 2019-10-29 rebranding uns -> uns-network
-# Default 301 redirections
+# 2020-11 rebranding uns-network -> "nothing"
+/uns-use-the-network/cli.html*                       https://docs.uns.network/cli.html:splat 301!
+/uns-usethenetwork/cli.html*                         https://docs.uns.network/cli.html:splat 301!
+/uns-use-the-network/cli.html*                       https://docs.uns.network/cli.html:splat 301!
+/uns-usethenetwork/cli.html*                         https://docs.uns.network/cli.html:splat 301!
+/uns-use-the-network/api.html*                       https://docs.uns.network/api.html:splat 301!
+/uns-usethenetwork/api.html*                         https://docs.uns.network/api.html:splat 301!
+/uns-use-the-network/sdk.html*                       https://docs.uns.network/sdk.html:splat 301!
+/uns-usethenetwork/sdk.html*                         https://docs.uns.network/sdk.html:splat 301!
+/uns-use-the-network/wallet.html*                    https://docs.uns.network/wallet.html:splat 301!
+/uns-usethenetwork/wallet.html*                      https://docs.uns.network/wallet.html:splat 301!
+/uns-use-the-network/cheatsheet.html*                https://docs.uns.network/cheatsheet.html:splat 301!
+/uns-usethenetwork/cheatsheet.html*                  https://docs.uns.network/cheatsheet.html:splat 301!
+/uns-network-guides/docker-configuration.html*       https://docs.uns.network/docker-configuration.html:splat 301!
+/uns-network-guides/docker-compose-management.html*  https://docs.uns.network/docker-compose-management.html:splat 301!
 
-/uns-introduction            /introduction
-/uns-network-introduction    /introduction
 
-/uns-tokens                  /tokens.html
-/uns-network-tokens          /tokens.html
+/uns-introduction*                                   https://docs.uns.network/introduction:splat 301!
+/uns-network-introduction*                           https://docs.uns.network/introduction:splat 301!
 
-/uns-getting-started         /getting-started.html
-/uns-network-getting-started /getting-started.html
+/uns-tokens*                                         https://docs.uns.network/tokens.html:splat 301!
+/uns-network-tokens*                                 https://docs.uns.network/tokens.html:splat 301!
 
-/uns-network-key-concepts    /key-concept
+/uns-getting-started*                                https://docs.uns.network/getting-started.html:splat 301!
+/uns-network-getting-started*                        https://docs.uns.network/getting-started.html:splat 301!
 
-/uns-use-the-network         /interacting-with-uns.html
-/uns-usethenetwork           /interacting-with-uns.html
-/uns-usethenetwork/images    /images
-/uns-use-the-network/cli.html    /cli.html
-/uns-usethenetwork/cli.html      /cli.html
-/uns-use-the-network/cli.html    /cli.html
-/uns-usethenetwork/cli.html      /cli.html
-/uns-use-the-network/api.html    /api.html
-/uns-usethenetwork/api.html      /api.html
-/uns-use-the-network/sdk.html    /sdk.html
-/uns-usethenetwork/sdk.html      /sdk.html
-/uns-use-the-network/wallet.html    /wallet.html
-/uns-usethenetwork/wallet.html      /wallet.html
-/uns-use-the-network/cheatsheet.html    /cheatsheet.html
-/uns-usethenetwork/cheatsheet.html      /cheatsheet.html
+/uns-network-key-concepts*                           https://docs.uns.network/key-concept:splat 301!
 
-/uns-network-unik-name-use-case  /unikname-use-case.html
-/uns-unikname                /unikname-use-case.html
+/uns-use-the-network*                                https://docs.uns.network/interacting-with-uns.html:splat 301!
+/uns-usethenetwork*                                  https://docs.uns.network/interacting-with-uns.html:splat 301!
+/uns-usethenetwork/images*                           https://docs.uns.network/images
 
-/uns-network-player          /becoming-network-player.html
-/uns-network-player/images   /images
-/uns-setting-up-node         /setting-up-uns-node
-/uns-network-setting-up-node    /setting-up-uns-node
+/uns-network-unik-name-use-case*                     https://docs.uns.network/unikname-use-case.html:splat 301!
+/uns-unikname*                                       https://docs.uns.network/unikname-use-case.html:splat 301!
 
-/uns-network-guides/docker-configuration.html       /docker-configuration.html
-/uns-network-guides/docker-compose-management.html  /docker-compose-management.html
+/uns-network-player*                                 https://docs.uns.network/becoming-network-player.html:splat 301!
+/uns-network-player/images*                          https://docs.uns.network/images
+/uns-setting-up-node*                                https://docs.uns.network/setting-up-uns-node:splat 301!
+/uns-network-setting-up-node*                        https://docs.uns.network/setting-up-uns-node:splat 301!
 
-/uns-security                /security.html
-/uns-network-security       /security.html
+/uns-security*                                       https://docs.uns.network/security.html:splat 301!
+/uns-network-security*                               https://docs.uns.network/security.html:splat 301!
 
-/uns-qna                     /qna.html
-/uns-network-qna             /qna.html
-/uns-glossary                /glossary.html
-/uns-network-glossary        /glossary.html
-/uns-poweredbyark            /powered-by-ark-io.html
-/uns-network-powered-by-ark-io  /powered-by-ark-io.html
-/uns-poweredbyark/images     /images
+/uns-qna*                                            https://docs.uns.network/qna.html:splat 301!
+/uns-network-qna*                                    https://docs.uns.network/qna.html:splat 301!
+/uns-glossary*                                       https://docs.uns.network/glossary.html:splat 301!
+/uns-network-glossary*                               https://docs.uns.network/glossary.html:splat 301!
+/uns-poweredbyark*                                   https://docs.uns.network/powered-by-ark-io.html:splat 301!
+/uns-network-powered-by-ark-io*                      https://docs.uns.network/powered-by-ark-io.html:splat 301!
+/uns-poweredbyark/images*                            https://docs.uns.network/images
