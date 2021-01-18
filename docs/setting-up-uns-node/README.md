@@ -1,6 +1,4 @@
 ---
-home: false
-title: "Setting-up your uns.network Node"
 ---
 
 # Setting-up your Node
@@ -32,12 +30,12 @@ Orchestrators with Docker as a first-class citizen:
 - [Nomad](https://www.nomadproject.io/)
 - [Mesos](http://mesos.apache.org/)
 
-For the moment, we have choosen to only describe the `docker-compose` setup.
+For the moment, we have chosen to only describe the `docker-compose` setup.
 So, if you choose to run your <brand name="uns"/> node on other platforms, share your own experience [on the <brand name="uns"/> network of the forum!](https://forum.unik-name.com/c/uns-network/7)
 
-### Minimum requirements for running a SANDBOX relay or forger node
+### Minimum requirements for running a relay or forger node
 
-- Linux: Ubuntu 16.04 / 18.04, CentOS/RHEL 7 / 8 ...
+- Linux: Ubuntu 18.04 / 20.04, CentOS/RHEL 7 / 8 ...
 - 2+ vCPU x86/64 bits
 - 2-4 GB RAM
 - at least 20 GB drive 
@@ -47,10 +45,9 @@ We strongly recommend running your node on SSD drive as there are a lot of read 
 ## Network configuration
 
 Depending on your hosting infrastructure, you will need open TCP ports on your firewall:
-- SANDBOX:
-  * `4002` (required): this is the communication port used by the node to exchange information with other nodes of the uns.network
+- LIVENET:
+  * `4001` (required): this is the communication port used by the node to exchange information with other nodes of the <brand name="uns"/>
   * `4003` (optional): open it if you want to open the API to the world, in order to submit transactions for example. If you don't know what is it for, keep it closed
-- LIVENET: not available yet
 
 ::: warning
 Don't forget to forward (by NAT, routing ...) the opened ports to the corresponding ports on your VM or Docker engine!
@@ -60,7 +57,7 @@ Unfortunately, there is no standard documentation to do that, so please follow t
 
 ## Run a node with Docker Compose
 
-In this documentation, we'll start sandbox <brand name="uns"/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
+In this documentation, we'll start a LIVENET <brand name="uns"/> node using [Docker Compose](https://docs.docker.com/compose/) and a configuration file.
 
 So, be sure to have these prerequisites:
 - [Docker](https://docs.docker.com/install) installed on your Linux machine
@@ -68,17 +65,19 @@ So, be sure to have these prerequisites:
 
 Create the following configuration file `docker-compose.yml`: 
 
-<<< @/docs/setting-up-uns-node/sandbox/docker-compose.yml
+<<< @/docs/setting-up-uns-node/livenet/docker-compose.yml
 
-You can also [download the full file from our repositories](https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/setting-up-uns-node/sandbox/docker-compose.yml).
+You can also [download the full file from our repository](https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/setting-up-uns-node/livenet/docker-compose.yml).
 
 ::: tip
-You can download the file direcly on your machine:
+You can download the file directly on your machine:
 
 ```shell
-$ curl -O https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/setting-up-uns-node/sandbox/docker-compose.yml
+$ curl -O https://raw.githubusercontent.com/unik-name/docs.uns.network/master/docs/setting-up-uns-node/livenet/docker-compose.yml
 ```
 :::
+
+Check-out [the reference guide to understand the Docker-compose file](/docker-compose-management.html#reference-docker-compose-file).
 
 ### Run a relay with Docker Compose
 
@@ -92,7 +91,7 @@ The node starts logging a lot of information and tries to reach peers before syn
 You can stop the node by hitting `CTRL+C`.
 
 ::: tip
-You can read your node logs by running `docker-compose logs --tail 10 uns-sandbox` (here, the last 10 log lines).
+You can read your node logs by running `docker-compose logs --tail 10 uns` (here, the last 10 log lines).
 :::
 
 ### Run a permanent relay with Docker Compose
@@ -111,17 +110,13 @@ $ docker-compose down
 
 ### Run a forger with Docker Compose
 
-::: warning
-You must be a [declared delegate](/becoming-network-player) before doing this configuration.
-:::
-
 To run a forger node, please edit the `docker-compose.yml` file, with Nano or Vim for example: `nano docker-compose.yml`.
 
 Find and uncomment line `FORGER_SECRET` by removing the `#` at the beginning of the line and set your crypto-account passphrase as value (between `" "`):
 
 ```yaml{6}
   uns:
-    image: universalnamesystem/core:sandbox
+    image: universalnamesystem/core:livenet
     ...
     environment:
       ...
@@ -134,26 +129,15 @@ Then, (re)start your forger node with the following command:
 $ docker-compose up -d
 ```
 
-Now you have a running relay node and you're ready to forge blocks.
+Now you have a running forger node and you're forging blocks! 👏
 
-### Under the hood
+## Checking your delegate status in the Explorer
 
-From configuration file we can see that 2 services will be started: the node and its database.
+Now, your job is done.
+You can check on [explorer](https://explorer.uns.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
 
-You also have 2 volumes mounted on the file system (for node and database files) and a local network for services communication.
+If you're in the `active` tab, congratulation, you're a <brand name="uns"/> delegate, and your forger node is actually forging blocks and getting rewards!
 
-#### The database service
+If you're in the `standby` tab, you need to gather more voting power than current active delegates (i.e. have cryptoaccounts with positive balance voting for you).
 
-Based on [`postgres` (version 11 and Linux alpine)](https://github.com/docker-library/postgres/blob/0a66d53fface5ccc8274f99712ba2f382a1caf42/11/alpine/Dockerfile), it exposes a single port (`5432`) and requires environment variables (for db name, user name and password).
-These variables must match with those provided in the node service (see below).
-
-#### The node service
-
-The node service is based on our `universalnamesystem/core` image (latest tag). 
-
-It has two exposed ports; for p2p (`4102`) and for API (`4103`), and mount 3 volumes (for logs, forger secret and configuration files).
-
-Some environment variables are set :
-- for the database (port, user name, user password and db name)
-- for the network (here it's `sandbox`, it means that it'll connect to other <brand name="uns"/> sandbox nodes)
-- and the forger secret (line `FORGER_SECRET`, commented by default). 
+Let's go fot the final steps.
