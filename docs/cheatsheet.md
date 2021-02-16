@@ -5,7 +5,7 @@ pageClass: cheatsheet-pageclass
 
 # UNS.network cheat-sheet
 
-*Table Of Content*
+**Table Of Content**
 [[TOC]]
 
 ## Mint @unikname services
@@ -17,30 +17,30 @@ Prices are depending of the pattern wanted.
 
 | Price (UNS) | Pattern | Description |
 | -: | - | - | 
-| 500&nbsp;000 | **Individual - Digits - Tiny** | Only digits from [Safetypo alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), 5 characters and less | 
-| 50&nbsp;000 | **Individual - Digits - Standard** | Only digits from Safetypo alphabet, between 6 and 9 characters | 
-| 100 | **Individual - Digits - Long** | Only digits from Safetypo alphabet, 10 character and more | 
-| 5&nbsp;000&nbsp;000 | **Individual - Latin Safetypo - 1** | Letters and digits from Safetypo alphabet, exactly 1 character | 
-| 1&nbsp;000&nbsp;000 | **Individual - Latin Safetypo - 2** | Letters and digits from Safetypo alphabet, exactly 2 characters |
-| 500&nbsp;000 | **Individual - Latin Safetypo - 3** | Letters and digits from Safetypo alphabet, exactly 3 characters | 
-| 50&nbsp;000 | **Individual - Latin Safetypo - Tiny** | Letters and digits from  Safetypo alphabet, 4 or 5 characters | 
-| 5&nbsp;000 | **Individual - Latin Safetypo - Short** | Letters and digits from Safetypo alphabet, 6 or 7 characters | 
-| 500 | **Individual - Latin Safetypo - Normal** | Letters and digits from Safetypo alphabet, between 8 and 14 characters | 
-| 10 | **Individual - Latin Safetypo - Long** | Letters and digits from Safetypo alphabet, more than 15 characters | 
+| 500&nbsp;000 | **Individual - Digits - Tiny** | Only digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), 5 characters and less | 
+| 50&nbsp;000 | **Individual - Digits - Standard** | Only digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), between 6 and 9 characters | 
+| 100 | **Individual - Digits - Long** | Only digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), 10 character and more | 
+| 5&nbsp;000&nbsp;000 | **Individual - Latin&nbsp;Safetypo - 1** | Letters and digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), exactly 1 character | 
+| 1&nbsp;000&nbsp;000 | **Individual - Latin&nbsp;Safetypo - 2** | Letters and digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), exactly 2 characters |
+| 500&nbsp;000 | **Individual - Latin&nbsp;Safetypo - 3** | Letters and digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), exactly 3 characters | 
+| 50&nbsp;000 | **Individual - Latin&nbsp;Safetypo - Tiny** | Letters and digits from  [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), 4 or 5 characters | 
+| 5&nbsp;000 | **Individual - Latin&nbsp;Safetypo - Short** | Letters and digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), 6 or 7 characters | 
+| 500 | **Individual - Latin&nbsp;Safetypo - Normal** | Letters and digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), between 8 and 14 characters | 
+| 10 | **Individual - Latin&nbsp;Safetypo - Long** | Letters and digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), more than 15 characters | 
 
 ### Prices for organization patterns
 
 | Price (UNS) | Pattern | Description |
 | -: | - | - |
 | 25&nbsp;000 | **Organization - Digits** | Only digits from Safetypo	alphabet. No length restriction. |
-| 25&nbsp;000 | **Organization - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
+| 25&nbsp;000 | **Organization - Latin&nbsp;Safetypo** | Letters and digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology). No length restriction. |
 
 ### Prices for network pattern
 
 | Price (UNS) | Pattern | Description |
 | -: | - | - |
-| 1&nbsp;000&nbsp;000 | **Network - Digits** | Only digits from Safetypo alphabet. No length restriction. |
-| 1&nbsp;000&nbsp;000 | **Network - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
+| 1&nbsp;000&nbsp;000 | **Network - Digits** | Only digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology). No length restriction. |
+| 1&nbsp;000&nbsp;000 | **Network - Latin&nbsp;Safetypo** | Letters and digits from [Safetypo&nbsp;alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology). No length restriction. |
 
  
 
