@@ -1,8 +1,48 @@
 ---
-home: false
-title: uns.network Cheat Sheet 
+title: Cheat Sheet 
 pageClass: cheatsheet-pageclass
 ---
+
+# UNS.network cheat-sheet
+
+*Table Of Content*
+[[TOC]]
+
+## Mint @unikname services
+
+To create @unikname, a service fee must be paid to the NFT-Factory with UNS tokens.
+Prices are depending of the pattern wanted.
+
+### Prices for individual patterns
+
+| Price (UNS) | Pattern | Description |
+| -: | - | - | 
+| 500&nbsp;000 | **Individual - Digits - Tiny** | Only digits from [Safetypo alphabet](/key-concept/unik-did-nft.html#safetypo%C2%A9-technology), 5 characters and less | 
+| 50&nbsp;000 | **Individual - Digits - Standard** | Only digits from Safetypo alphabet, between 6 and 9 characters | 
+| 100 | **Individual - Digits - Long** | Only digits from Safetypo alphabet, 10 character and more | 
+| 5&nbsp;000&nbsp;000 | **Individual - Latin Safetypo - 1** | Letters and digits from Safetypo alphabet, exactly 1 character | 
+| 1&nbsp;000&nbsp;000 | **Individual - Latin Safetypo - 2** | Letters and digits from Safetypo alphabet, exactly 2 characters |
+| 500&nbsp;000 | **Individual - Latin Safetypo - 3** | Letters and digits from Safetypo alphabet, exactly 3 characters | 
+| 50&nbsp;000 | **Individual - Latin Safetypo - Tiny** | Letters and digits from  Safetypo alphabet, 4 or 5 characters | 
+| 5&nbsp;000 | **Individual - Latin Safetypo - Short** | Letters and digits from Safetypo alphabet, 6 or 7 characters | 
+| 500 | **Individual - Latin Safetypo - Normal** | Letters and digits from Safetypo alphabet, between 8 and 14 characters | 
+| 10 | **Individual - Latin Safetypo - Long** | Letters and digits from Safetypo alphabet, more than 15 characters | 
+
+### Prices for organization patterns
+
+| Price (UNS) | Pattern | Description |
+| -: | - | - |
+| 25&nbsp;000 | **Organization - Digits** | Only digits from Safetypo	alphabet. No length restriction. |
+| 25&nbsp;000 | **Organization - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
+
+### Prices for network pattern
+
+| Price (UNS) | Pattern | Description |
+| -: | - | - |
+| 1&nbsp;000&nbsp;000 | **Network - Digits** | Only digits from Safetypo alphabet. No length restriction. |
+| 1&nbsp;000&nbsp;000 | **Network - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
+
+ 
 
 # Command Line Interface (CLI)
 
@@ -109,37 +149,4 @@ Property values format must match with the following rules:
 
 @unikname DID string format: `[@][unik:][type:]explicitValue[?propertyKey|?*]`.
 
-# Mint @unikname services
 
-To create @unikname, a service fee must be paid to the NFT-Factory with UNS tokens. Prices are depending of the pattern wanted.
-
-Prices for individual patterns:
-
-| Price (UNS) | Pattern | Description |
-| -: | - | - | 
-| 500 000 | **Individual - Digits - Tiny** | Only digits from Safetypo alphabet, 5 characters and less | 
-| 50 000 | **Individual - Digits - Standard** | Only digits from Safetypo alphabet, between 6 and 9 characters | 
-| 100 | **Individual - Digits - Long** | Only digits from Safetypo alphabet, 10 character and more | 
-| 5 000 000 | **Individual - Latin Safetypo - 1** | Letters and digits from Safetypo alphabet, exactly 1 character | 
-| 1 000 000 | **Individual - Latin Safetypo - 2** | Letters and digits from Safetypo alphabet, exactly 2 characters |
-| 500 000 | **Individual - Latin Safetypo - 3** | Letters and digits from Safetypo alphabet, exactly 3 characters | 
-| 50 000 | **Individual - Latin Safetypo - Tiny** | Letters and digits from  Safetypo alphabet, 4 or 5 characters | 
-| 5 000 | **Individual - Latin Safetypo - Short** | Letters and digits from Safetypo alphabet, 6 or 7 characters | 
-| 500 | **Individual - Latin Safetypo - Normal** | Letters and digits from Safetypo alphabet, between 8 and 14 characters | 
-| 10 | **Individual - Latin Safetypo - Long** | Letters and digits from Safetypo alphabet, more than 15 characters | 
-
-Prices for organization patterns:
-
-| Price (UNS) | Pattern | Description |
-| -: | - | - |
-| 25 000 | **Organization - Digits** | Only digits from Safetypo	alphabet. No length restriction. |
-| 25 000 | **Organization - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
-
-Prices for network pattern:
-
-| Price (UNS) | Pattern | Description |
-| -: | - | - |
-| 1 000 000 | **Network - Digits** | Only digits from Safetypo alphabet. No length restriction. |
-| 1 000 000 | **Network - Latin Safetypo** | Letters and digits from Safetypo alphabet. No length restriction. |
-
- 
