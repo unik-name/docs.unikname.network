@@ -130,6 +130,7 @@ module.exports = {
         children: [
           ["./docker-configuration", "Docker container configuration"],
           ["./docker-compose-management", "Docker Compose management"],
+          "./how-to-secure-your-uns-network-node",
         ],
       },
       {
