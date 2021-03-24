@@ -37,13 +37,13 @@ So, if you choose to run your <brand name="uns"/> node on other platforms, share
 
 Operating system: Linux: Ubuntu 18.04 / 20.04, Debian Buster, CentOS/RHEL 7 / 8 ...
 
-|                  | Minimum         | Recommended  |
-|------------------|-----------------|--------------|
-| CPU              | 1 vCPU          | 2 vCPU       |
-| Memory           | 1 GB            | 2 GB         |
-| Storage          | 20 GB           | 40 GB<br>SSD |
+|                  | Minimum         | Recommended       |
+|------------------|-----------------|-------------------|
+| CPU              | 1 vCPU          | 2 vCPU            |
+| Memory           | 1 GB            | 2 GB              |
+| Storage          | 20 GB           | 40 GB<br>SSD NVMe |
 
-We strongly recommend running your node on SSD drive as there are a lot of read and write operations to the DB.
+We strongly recommend running your node on SSD drive (NVMe if possible) as there are a lot of read and write operations to the DB.
 
 ## Network configuration
 
