@@ -33,12 +33,15 @@ Orchestrators with Docker as a first-class citizen:
 For the moment, we have chosen to only describe the `docker-compose` setup.
 So, if you choose to run your <brand name="uns"/> node on other platforms, share your own experience [on the <brand name="uns"/> network of the forum!](https://forum.unik-name.com/c/uns-network/7)
 
-### Minimum requirements for running a relay or forger node
+### Requirements for running a relay or forger node
 
-- Linux: Ubuntu 18.04 / 20.04, CentOS/RHEL 7 / 8 ...
-- 2+ vCPU x86/64 bits
-- 2-4 GB RAM
-- at least 20 GB drive 
+Operating system: Linux: Ubuntu 18.04 / 20.04, Debian Buster, CentOS/RHEL 7 / 8 ...
+
+|                  | Minimum         | Recommended  |
+|------------------|-----------------|--------------|
+| CPU              | 1 vCPU          | 2 vCPU       |
+| Memory           | 1 GB            | 2 GB         |
+| Storage          | 20 GB           | 40 GB<br>SSD |
 
 We strongly recommend running your node on SSD drive as there are a lot of read and write operations to the DB.
 
