@@ -5,7 +5,7 @@ title: "uns.network Glossary"
 
 # uns.network Glossary 
 
-Our glossary contains key terminology specifically related to <brand name="uns"/> Ecosystem. If you have any comments or requests, please [open a topic on our forum](https://forum.unik-name.com).
+Our glossary contains key terminology specifically related to <brand name="uns"/> Ecosystem. If you have any comments or requests, please [open a topic on our forum](https://forum.unikname.com).
 
 [[toc]]
 
@@ -60,7 +60,7 @@ A frontend used to query the <brand name="uns"/> blockchain. Explorers use a Rel
 
 A desktop client to manage wallets for the UNS Token. For advanced transactions and to get access to UNIK tokens 
 
-### UNIK-NAME Mobile App
+### UNIKNAME Mobile App
 
 The mobile app used to manage user's @unikname. These app is also a fully featured wallet for owning and transfering UNS and UNIK Tokens.
 

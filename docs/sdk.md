@@ -134,7 +134,7 @@ SDK contains some helpers for disclose feature.
 
 To disclose explicit values of a given @unikname, you must create a demand first, then send this demand to an authorized certification service.
 The demand builder requires :
-- the unik-name fingerprint 
+- the unikname fingerprint 
 - a list of explicit values of your @unikname you want to disclose
 - type of your @unikname
 - passphrase of the wallet owner of the @unikname

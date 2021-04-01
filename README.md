@@ -25,13 +25,13 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## Credits
 
-- [Fabien Tréguer](https://github.com/ftreguer), from [@unik-name's team](https://www.unik-name.com)
-- [Guillaume Nicolas](https://github.com/Nigui), from [@unik-name's team](https://www.unik-name.com)
-- [Pierre Seznec](https://github.com/peterjah), from [@unik-name's team](https://www.unik-name.com)  
-- [Damien Lecan](https://github.com/dlecan), from [@unik-name's team](https://www.unik-name.com)
-- [Laurent Lourenco](https://www.linkedin.com/in/laurentlourenco/), from [@unik-name's team](https://www.unik-name.com)
+- [Fabien Tréguer](https://github.com/ftreguer), from [@unikname's team](https://www.unikname.com)
+- [Guillaume Nicolas](https://github.com/Nigui), from [@unikname's team](https://www.unikname.com)
+- [Pierre Seznec](https://github.com/peterjah), from [@unikname's team](https://www.unikname.com)  
+- [Damien Lecan](https://github.com/dlecan), from [@unikname's team](https://www.unikname.com)
+- [Laurent Lourenco](https://www.linkedin.com/in/laurentlourenco/), from [@unikname's team](https://www.unikname.com)
 - [All Contributors](../../../../contributors)
 
 ## License
 
-[MIT](LICENSE) © [www.uns.network](https://www.uns.network) by [@unik-name](https://www.unik-name.com)
+[MIT](LICENSE) © [www.uns.network](https://www.uns.network) by [@unikname](https://www.unikname.com)

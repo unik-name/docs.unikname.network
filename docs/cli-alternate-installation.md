@@ -25,9 +25,9 @@ You need:
 - gcc/g++
 - Python v3.x
 
-Most of the times, theses tools are already installed. If not, you can read on the [Unikname Forum](https://forum.unik-name.com/t/how-to-get-required-tools-to-install-the-uns-cli/95) how to install them for your operating system.
+Most of the times, theses tools are already installed. If not, you can read on the [Unikname Forum](https://forum.unikname.com/t/how-to-get-required-tools-to-install-the-uns-cli/95) how to install them for your operating system.
 
-If still you need help to install theses tools, you can get support on [the Unikname Forum](https://forum.unik-name.com/c/uns-network/support/).
+If still you need help to install theses tools, you can get support on [the Unikname Forum](https://forum.unikname.com/c/uns-network/support/).
 
 ### Installation with NPM
 
@@ -50,7 +50,7 @@ $ uns version
 @uns/cli/x.y.z linux-x64 node-vXX.yy.zz
 ```
 
-If you fail to install the CLI, you can get support on [the Unikname Forum](https://forum.unik-name.com/c/uns-network/support/).
+If you fail to install the CLI, you can get support on [the Unikname Forum](https://forum.unikname.com/c/uns-network/support/).
 
 **Note**
 If you want, you can also use [Yarn](https://yarnpkg.com/) instead of NPM to install the <brand name="uns"/> CLI from sources.

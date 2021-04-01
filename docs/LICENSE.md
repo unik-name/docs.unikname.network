@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) Space Elephant SAS - France <contact@unik-name.com>
+Copyright (c) Space Elephant SAS - France <contact@unikname.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

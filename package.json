@@ -13,16 +13,20 @@
   "keywords": [
     "ark",
     "uns",
+    "uns.network",
     "universal-name-system",
     "DID",
     "UNIK",
+    "unikname"
     "unik-name",
     "blockchain",
     "crypto",
     "dpos",
     "CLI",
     "api",
-    "docs"
+    "docs",
+    "SSI",
+    "Self-Sovereign-Identity"
   ],
   "repository": {
     "type": "git",

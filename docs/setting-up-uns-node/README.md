@@ -31,7 +31,7 @@ Orchestrators with Docker as a first-class citizen:
 - [Mesos](http://mesos.apache.org/)
 
 For the moment, we have chosen to only describe the `docker-compose` setup.
-So, if you choose to run your <brand name="uns"/> node on other platforms, share your own experience [on the <brand name="uns"/> network of the forum!](https://forum.unik-name.com/c/uns-network/7)
+So, if you choose to run your <brand name="uns"/> node on other platforms, share your own experience [on the <brand name="uns"/> network of the forum!](https://forum.unikname.com/c/uns-network/7)
 
 ### Requirements for running a relay or forger node
 

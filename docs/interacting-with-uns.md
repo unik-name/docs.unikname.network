@@ -67,11 +67,11 @@ You can connect a node to the SANDBOX by configuring the CLI, SDK, and even a de
 - Developing and testing applications for free (use the faucet to get SUNS tokens)
 - Testing existing applications against new releases or release candidates of <brand name="uns"/> Core
 
-Please note that **this network is ephemeral**, and may be reset anytime. Resets will be announced several days before the effective operation, so follow [announcements published on the unik-name forum](https://forum.unik-name.com/c/uns-network).
+Please note that **this network is ephemeral**, and may be reset anytime. Resets will be announced several days before the effective operation, so follow [announcements published on the unikname forum](https://forum.unikname.com/c/uns-network).
 
 #### SANDBOX faucet
 
-If you need SUNS tokens to test the <brand name="uns"/> features (creating your UNIK for example), you can ask for SUNS on [the unik-name forum](https://forum.unik-name.com/c/uns-network/faucet).
+If you need SUNS tokens to test the <brand name="uns"/> features (creating your UNIK for example), you can ask for SUNS on [the unikname forum](https://forum.unikname.com/c/uns-network/faucet).
 Don't forget to provide your cryptoaccount address, created with [the <brand name="uns"/> CLI](cli.html#cryptoaccount-create) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
 
 You can also use [a community-managed faucet to receive SUNS](https://uns-faucet.rigwild.dev/).
