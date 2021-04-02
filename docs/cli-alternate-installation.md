@@ -50,6 +50,15 @@ $ uns version
 @uns/cli/x.y.z linux-x64 node-vXX.yy.zz
 ```
 
+### UPDATE with NPM
+
+When installed via npm, please remove it before installing it again.
+
+
+```bash
+[sudo] npm remove -g @uns/cli
+```
+
 If you fail to install the CLI, you can get support on [the Unikname Forum](https://forum.unikname.com/c/uns-network/support/).
 
 **Note**
