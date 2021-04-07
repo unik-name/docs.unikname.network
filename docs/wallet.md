@@ -13,7 +13,7 @@ ArkEcosystem comes with a lot of out-of-the-box tools for bridgechains like UNS.
 
 ### How to setup the default ARK Desktop Wallet to work with UNS tokens
 
-> :warning: *this tutorial has been written for the Ark desktop wallet verion `2.6`. It **may** work with newer versions.*
+> :warning: *this tutorial has been written for the Ark desktop wallet verion `2.7`. It **may** work with newer versions.*
 
 First of all, download and install the app for your platform : https://ark.io/wallet  *(works with Windows, macOS and Linux)*
 
