@@ -43,12 +43,12 @@ The default values are meant to be used with the UNS Docker container.
 | `CORE_VOTE_REPORT_DELEGATE_ROWS` | `80` |   |
 | `CORE_WEBHOOKS_ENABLED` | `false` | If you enable this, you will need to bind the webhook port (see [Docker ports](#docker-ports) below) |
 | `CORE_WEBHOOKS_TIMEOUT` | `1500` |   |
-| `EVENT_FORWARDER_CHAIN_EVENTS` | - | See [this list of Core events](https://ark.dev/docs/core/how-to-guides/how-to-listen-to-core-events#available-core-events) |
-| `EVENT_FORWARDER_CUSTOM_EVENTS` | - | All or one of `systeminformation,network.latency,blockheight.current,transaction.confirmed` with `,` as separator<br/>- `transaction.confirmed` fired when a transaction is confirmed for a configurable amount of times<br/>- `systeminformation` fires system information like CPU, memory and filesystem stats<br/>- `network.latency` fires the stats of a HTTP request to measure latency in milliseconds<br/>- `blockheight.current` fires the current synced blockheight |
+| `EVENT_FORWARDER_CHAIN_EVENTS` | - | Array of [Core events](https://ark.dev/docs/core/how-to-guides/how-to-listen-to-core-events#available-core-events), with `,` as separator<br/>Example: `block.applied,block.forged` |
+| `EVENT_FORWARDER_CUSTOM_EVENTS` | - | Array of custom events, with `,` as separator<br/>- `transaction.confirmed` fired when a transaction is confirmed for a configurable amount of times<br/>- `systeminformation` fires system information like CPU, memory and filesystem stats<br/>- `network.latency` fires the stats of a HTTP request to measure latency in milliseconds<br/>- `blockheight.current` fires the current synced blockheight<br/>Example: `systeminformation,network.latency` |
 | `EVENT_FORWARDER_CUSTOM_EVENT_INTERVAL_SYSTEM_INFORMATION` | `5000` | Interval of `systeminformation` event as milliseconds |
 | `EVENT_FORWARDER_CUSTOM_EVENT_INTERVAL_NETWORK_LATENCY` | `10000` | Interval of `network.latency` event  as milliseconds |
 | `EVENT_FORWARDER_CUSTOM_EVENT_INTERVAL_BLOCK_HEIGHT` | `10000` | Interval of `blockheight.current` event as milliseconds |
-| `EVENT_FORWARDER_CUSTOM_EVENT_TRANSACTION_CONFIRMATIONS` | - | The amount of confirmations needed before firing the `transaction.confirmed` event<br/>Array of number, with `,` as separator, such as `5,15,51`  |
+| `EVENT_FORWARDER_CUSTOM_EVENT_TRANSACTION_CONFIRMATIONS` | - | The amount of confirmations needed before firing the `transaction.confirmed` event<br/>Array of numbers, with `,` as separator<br/>Example: `5,15,51`  |
 | `EVENT_FORWARDER_PORT` | sandbox: `4102` <br/>livenet: `4101` | |
 | `FORGER_SECRET` | - | one of `FORGER_SECRET` or `FORGERS_SECRET` is required for forging |
 | `FORGERS_SECRET` | - | one of `FORGER_SECRET` or `FORGERS_SECRET` is required for forging |
@@ -66,3 +66,4 @@ All ports must be bound between the container and the host.
 | Core Vote Report Port | `4006` | ❌ |
 | Core Wallet Api Port | `4040` | ❌ |
 | Core Exchange Json Rpc Port | `8080` | ❌ |
+| Core Web Socket Events Forwarder | sandbox: `4102` <br/>livenet: `4101` | ❌ |
