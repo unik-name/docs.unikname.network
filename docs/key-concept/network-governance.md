@@ -43,7 +43,6 @@ By this way, organization's delegates are the guarantors of the adequacy between
 ## Individuals
 
 Individuals vote only if they want it, but they are strongly encouraged to do it.
-A poll of a @unikname individual is weighted by its UNS amount but capped by 10,000 UNS.
 Between two delegates having capitalized the same number of credits among their votes, it will be the voters number who will settle them.
 So individuals delegates guarantee network security on behalf the most involved users but also on in the name of the biggest part of them.
 
