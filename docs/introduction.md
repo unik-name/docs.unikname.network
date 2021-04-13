@@ -33,11 +33,11 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 
 **:sparkles: Self-Sovereign Identifier NFTs**. <brand name="uns"/> Decentralized IDs are Non-Fungible Tokens (NFT), they're unique, available every time and everywhere.Individuals or Organizations have ultimate control over their identifier and are the final arbiter of who can access and use their data related to it. 
 
-**:sparkles: Featured NFTs**. <brand name="uns"/> DIDs are Non-Fungible Token (NFT) with peerless features like badges, properties… and crypto-accounts.
+**:sparkles: Featured NFTs**. <brand name="uns"/> DIDs are Non-Fungible Token (NFT) with peerless features like badges, properties... and crypto-accounts.
 
 **:sparkles: Easy to Remember Pseudonymous IDs.** <brand name="uns"/> DIDs have an easy to remember shape that could be a pseudo, a real name, or any funny name. We don’t care about your real identity. 
 
-**:sparkles: Anti-Squatting Protections.** <brand name="uns"/> DIS's integrate an original life cycle management protecting then against squatting.
+**:sparkles: Anti-Squatting Protections.** <brand name="uns"/> DIDs integrate an original life cycle management protecting them against squatting.
 
 ### :fire: User Rewarding System
 
@@ -62,7 +62,7 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 
 **:trophy: <brand name="uns"/> DIDs are multilingual and protected against spoofing by SafeTypo© technology**. 14 UNICODE scripts are accepted, with many alphabets.
 
-**:trophy: <brand name="uns"/> is a DPOS blockchain operated by 23 elected delegates.** The blockchain is powered by the famous ARK.IO DPOS Blockchain, setup with a 8 seconds block time. Delegates are grouped in colleges of stakeholders:
+**:trophy: <brand name="uns"/> is a [DPOS blockchain operated by 23 elected delegates](/key-concept/network-governance).** The blockchain is powered by the famous ARK.IO DPOS Blockchain, setup with a 8 seconds block time. Delegates are grouped in colleges of stakeholders:
 
 * 10 Individuals – Defenders of individual freedoms and privacy
 * 10 Organizations – Committed in securing the web for businesses
