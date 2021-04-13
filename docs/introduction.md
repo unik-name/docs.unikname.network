@@ -86,8 +86,21 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 
 ## The network
 
-We're maintaining 2 public networks, a live one and a test one: 
+We're maintaining 2 public networks, a live one and a test one.
 
-- **LIVENET**: the main network (equivalent to mainnet on other blockchains). Tokens are **valuable** and you can use them on a day to day basis for the long life. This network is live since may 2020 and you can access the blockchain via the public [livenet explorer](https://explorer.uns.network/).
+### LIVENET
 
-- **SANDBOX**: the development network (equivalent to _testnet_ or _devnet_ on other blockchains). Used to test and discuss new features with community before making them available for all. Tokens are **valueless** (you can get them for free [from the faucet](/interacting-with-uns.html#sandbox-faucet). Use them to test next features and your apps based on UNIK tokens. 
+LIVENET is the main network (equivalent to _mainnet_ on other blockchains).
+Tokens are **valuable** and you can use them on a day to day basis for the long life.
+
+This network is live since may 2020 and you can access this network via the public [livenet explorer](https://explorer.uns.network/).
+
+### SANDBOX
+
+SANDBOX is the development network (equivalent to _testnet_ or _devnet_ on other blockchains).
+
+It is used to test and discuss new features with community before making them available for all.
+Tokens are **valueless** (you can get them for free [from the faucet](/interacting-with-uns.html#sandbox-faucet).
+You can use them to test next features and your apps based on UNIK tokens. 
+
+You can access this network via the public [sandbox explorer](https://sandbox.explorer.uns.network/).
