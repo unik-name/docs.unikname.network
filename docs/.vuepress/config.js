@@ -5,6 +5,8 @@ function customSlugifyToHandleBadges(str) {
   return vuePressSlugify(str.replace(/<Badge[^>]*\/>/, ""));
 }
 
+const HOSTNAME = "https://docs.uns.network";
+
 module.exports = {
   title: "The uns.network Player Hub",
   title2: "uns.network Docs (Universal-Name-System)",
@@ -14,8 +16,9 @@ module.exports = {
     "Official documentation for the uns.network blockchain and protocol (Universal-Name-System)",
   plugins: {
     sitemap: {
-      hostname: "https://docs.uns.network",
+      hostname: HOSTNAME,
     },
+    robots: { host: HOSTNAME },
     "@vuepress/last-updated": {
       transformer: (timestamp, lang) => {
         // UTC date (without time) as ISO format: 2019-09-17
@@ -52,6 +55,7 @@ module.exports = {
         content: "black-translucent",
       },
     ],
+    ["meta", { name: "charset", content: "utf-8" }],
   ],
   themeConfig: {
     logo: "/logo.png",
