@@ -55,6 +55,13 @@ module.exports = {
         content: "black-translucent",
       },
     ],
+    [
+      "meta",
+      {
+        property: "og:image",
+        content: `${HOSTNAME}/opengraph-v1.png`,
+      },
+    ],
     ["meta", { name: "charset", content: "utf-8" }],
   ],
   themeConfig: {
