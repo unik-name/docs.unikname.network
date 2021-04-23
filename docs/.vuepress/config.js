@@ -34,7 +34,7 @@ module.exports = {
       before: '<div class="information">',
       after: "</div>",
     },
-    "@spacelephantlabs/vuepress-plugin-matomo": {
+    "@spacelephantlabs/vuepress-plugin-matomo-spacelephant": {
       siteId: 2,
     },
     "@spacelephantlabs/vuepress-plugin-rocketchat-livechat": {

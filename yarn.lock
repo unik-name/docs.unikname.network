@@ -872,13 +872,13 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@spacelephantlabs/vuepress-plugin-matomo@spacelephantlabs/vuepress-plugin-matomo":
-  version "1.0.0"
-  resolved "https://codeload.github.com/spacelephantlabs/vuepress-plugin-matomo/tar.gz/372df28ce3c8e7839d42697e98f961f6deb0cddc"
+"@spacelephantlabs/vuepress-plugin-matomo-spacelephant@spacelephantlabs/vuepress-plugin-matomo-spacelephant":
+  version "1.1.0"
+  resolved "https://codeload.github.com/spacelephantlabs/vuepress-plugin-matomo-spacelephant/tar.gz/314b799e012a84423371bf881bbc1960fcdbfd62"
 
 "@spacelephantlabs/vuepress-plugin-rocketchat-livechat@spacelephantlabs/vuepress-plugin-rocketchat-livechat":
   version "1.0.0"
-  resolved "https://codeload.github.com/spacelephantlabs/vuepress-plugin-rocketchat-livechat/tar.gz/f1c8cd49c91c747dc09e6b512c643683aa683d9b"
+  resolved "https://codeload.github.com/spacelephantlabs/vuepress-plugin-rocketchat-livechat/tar.gz/840fea2453b459883e770961ac59b4d41ec84f2e"
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
