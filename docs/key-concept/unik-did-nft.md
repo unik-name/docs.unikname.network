@@ -122,5 +122,5 @@ The resolver works with a @unikname ID string matching a predefined format:
 
 Properties of @unikname ID's can be resolved too, with a string following this format: 
 
-`[@][unik:][{type}:]{explicitValue}`[?{propertyKey}|?*]
+`[@][unik:][{type}:]{explicitValue}[?{propertyKey}|?*]`
 
