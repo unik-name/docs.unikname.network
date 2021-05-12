@@ -872,13 +872,15 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@spacelephantlabs/vuepress-plugin-matomo-spacelephant@spacelephantlabs/vuepress-plugin-matomo-spacelephant":
+"@spacelephantlabs/vuepress-plugin-matomo-spacelephant@^1.1.0":
   version "1.1.0"
-  resolved "https://codeload.github.com/spacelephantlabs/vuepress-plugin-matomo-spacelephant/tar.gz/314b799e012a84423371bf881bbc1960fcdbfd62"
+  resolved "https://registry.yarnpkg.com/@spacelephantlabs/vuepress-plugin-matomo-spacelephant/-/vuepress-plugin-matomo-spacelephant-1.1.0.tgz#0d147326162561b2ed17d78534b5233574b044e5"
+  integrity sha512-sq6RXfq9zgfcC60aRnqjyTOJXLqJAOCq4sQy1OF8TGGNJqYggsb5Beb8q9NmPVLLXKfrIXFR7DfZ5K73IREJWw==
 
-"@spacelephantlabs/vuepress-plugin-rocketchat-livechat@spacelephantlabs/vuepress-plugin-rocketchat-livechat":
+"@spacelephantlabs/vuepress-plugin-rocketchat-livechat@^1.0.0":
   version "1.0.0"
-  resolved "https://codeload.github.com/spacelephantlabs/vuepress-plugin-rocketchat-livechat/tar.gz/840fea2453b459883e770961ac59b4d41ec84f2e"
+  resolved "https://registry.yarnpkg.com/@spacelephantlabs/vuepress-plugin-rocketchat-livechat/-/vuepress-plugin-rocketchat-livechat-1.0.0.tgz#55651a1eb8a9ae85666f6e7a472f488ef72b05c0"
+  integrity sha512-1LzhSepnQNe6kE5jlgcTVoKLW2b6UsNIKWMlR4muiZ3x7JJG/HWX8Q2h3vgMFrq1Pqm07/OOh08QNC0371LoDw==
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
@@ -8232,6 +8234,11 @@ vuepress-plugin-robots@^1.0.1:
   integrity sha512-WNZuxuiPKXEbDhFDDu4coKpJrnccmSoqRiVbANmUa1T0Ezw7txsInGH2QnwElws2rSVqda9E19iVzTg6vmU5XA==
   dependencies:
     generate-robotstxt "^7.1.0"
+
+vuepress-plugin-seo@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-seo/-/vuepress-plugin-seo-0.1.4.tgz#be8e5577491c1fc317a7ad4abe3ae51ff317be1e"
+  integrity sha512-foNKrAAKihiC47bx0UXFzs/+BIFmnowTQsLVF/8pfsnsPDp8FXjkTGyjxyjOhbwj7ADPv32CdX3pEoYGnZ7OjA==
 
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"

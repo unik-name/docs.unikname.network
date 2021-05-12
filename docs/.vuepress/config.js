@@ -5,7 +5,8 @@ function customSlugifyToHandleBadges(str) {
   return vuePressSlugify(str.replace(/<Badge[^>]*\/>/, ""));
 }
 
-const HOSTNAME = "https://docs.uns.network";
+const DOMAIN = "docs.uns.network";
+const HOSTNAME = `https://${DOMAIN}`;
 
 module.exports = {
   title: "The uns.network Player Hub",
@@ -40,6 +41,19 @@ module.exports = {
     "@spacelephantlabs/vuepress-plugin-rocketchat-livechat": {
       rocketChatUrl: "https://spacelephant.rocket.chat/",
     },
+    seo: {
+      // your options
+      author: (_, $site) => {
+        return {
+          name: $site.themeConfig.author,
+          twitter: "@Uns_Network",
+        };
+      },
+      image: ($page, $site) =>
+        $site.themeConfig.domain +
+        "/" +
+        ($page.frontmatter.image || "opengraph-v1.png"),
+    },
   },
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
@@ -55,18 +69,14 @@ module.exports = {
         content: "black-translucent",
       },
     ],
-    [
-      "meta",
-      {
-        property: "og:image",
-        content: `${HOSTNAME}/opengraph-v1.png`,
-      },
-    ],
     ["meta", { name: "charset", content: "utf-8" }],
   ],
   themeConfig: {
     logo: "/logo.png",
     repo: "unik-name/docs.uns.network",
+    hostname: HOSTNAME,
+    domain: HOSTNAME,
+    author: "UNS.network Team",
     repoLabel: "Contribute!",
     editLinks: true,
     editLinkText: "Help us improve this page!",
