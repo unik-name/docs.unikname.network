@@ -2,7 +2,7 @@
 home: true
 actionText: Getting Started
 actionLink: /getting-started
-title: UNS.network Home
+title: Docs and Guides for uns.network
 ---
 
 Welcome to the <brand name="uns"/> Player hub. You're are at the right place to find guides and docs to help you working with the <brand name="uns"/> blockchain, as well as support if you get stuck.
