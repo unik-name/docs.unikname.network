@@ -41,7 +41,7 @@ On the next screen, choose the option that corresponds to your situation dependi
 
 ![homepage](/images/homepage.png)
 
-After you choose your option, you should arrive on a page to create your @unikname!
+After you choose your option, you should land on a page to create your @unikname.
 
 ![create-unikname](/images/create-unikname.png)
 
@@ -51,3 +51,15 @@ After you choose your option, you should arrive on a page to create your @unikna
 
 Don't forget to backup and secure your passphrase, it will allow you to retrieve access to your @unikname in case you change your device.
 Neither <brand name="uns"/>, nor Unikname will be able to give you back access to your @unikname.
+
+## Activate your @unikname to become Alive
+
+You can't become a delegate if your @unikname is not alive. So you must activate.
+
+Go to the list of your @unikname, then chose the one you to activate and click `Activate unikname`, then follow the process.
+
+::: tip @unikname activation on the Sandbox network
+
+On the Sandbox network, use the [`unik:activation` command](/cli.html#unik-activation) of the CLI to activate your @unikname.
+
+:::

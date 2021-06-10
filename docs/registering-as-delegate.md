@@ -63,9 +63,17 @@ Don't execute the following command if you are trying to create your @unikname i
 
 Here is the complete process:
 
-    $ uns unik:disclose "@hello-world" -e "hello-world"
-    $ uns delegate:register "@hello-world"
-    $ uns delegate:vote "@hello-world"
+```
+uns unik:disclose "@hello-world" -e "hello-world"
+```
+
+```
+uns delegate:register "@hello-world"
+```
+
+```
+uns delegate:vote "@hello-world"
+```
 
 Replace `hello-world` by your own @unikname id.
 

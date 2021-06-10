@@ -617,8 +617,6 @@ See transaction in explorer: https://explorer.uns.network/#/transaction/a73f4269
 
 Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
 
-Service Provider cost: TODO:
-
 ### `unik:read`
 
 #### Introduction
@@ -793,14 +791,10 @@ $ uns unik:everlasting {TARGET}
 
 #### Examples
 
-##### Success example
-
 Claim everlasting status for `@bob`
 ```bash
 $ uns unik:everlasting @bob
 ```
-
-##### Success output example
 
 ```bash
 $ uns unik:everlasting @bob -f yaml
@@ -813,7 +807,48 @@ confirmations: 833
 
 Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
 
-Service Provider cost: TODO:
+### `unik:activation` <Badge text="added 4.10.0" />
+
+#### Introduction
+Activate a @unikname by claming the Alive status for it.
+
+:::tip Sandbox network only
+This command can be run only on the Sandbox network.
+You will get an error if you try to run it on the Livenet network
+Indeed, you must use the [My Unikname App](https://my.unikname.app) to activate a @unikname on the Livenet.
+:::
+
+#### Arguments
+- `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
+
+#### Parameters
+- `-f, --format` `{json|yaml, json}`: Specify how to format the output [json|yaml]. Default to Json.
+
+Some [global parameters](#global-parameters) may apply to this command.
+
+#### Usage
+
+```bash
+$ uns unik:activation {TARGET}
+```
+
+#### Examples
+
+Claim Alive status for `@bob`
+```bash
+$ uns unik:activation @bob
+```
+
+```bash
+$ uns unik:activation @bob -f yaml
+
+transaction: d6046fd481d30796e7014d745af62cb6d54c43ec6073ecd93a534c2477455ce6
+confirmations: 833
+```
+
+#### Network cost
+
+Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
 
 ### `properties:set`
 
@@ -1295,5 +1330,3 @@ $ uns badges:claim "@Bob" -b pioneer
 #### Network cost
 
 Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
-
-Service Provider cost: TODO:
