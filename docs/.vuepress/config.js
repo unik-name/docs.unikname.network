@@ -83,10 +83,7 @@ module.exports = {
     docsDir: "docs",
     lastUpdated: true,
     activeHeaderLinks: true,
-    algolia: {
-      apiKey: "da7366c200b21f0ae27f6c29edaff5fe",
-      indexName: "uns-network",
-    },
+    searchMaxSuggestions: 10,
     nav: [
       { text: "Get my @unikname ID", link: "https://my.unikname.app" },
       { text: "UNS Home", link: "https://uns.network" },
