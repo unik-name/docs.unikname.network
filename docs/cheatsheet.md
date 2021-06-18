@@ -115,21 +115,21 @@ Getting help for a specific {command} : `>uns {command} --help`
 
 ## Transaction Types
 
-| Type | Transaction |
-| - | - |
-| 0 | Transfer UNS tokens |
-| 1 | Second Signature Registration
-| 2 | Delegate Registration
-| 3 | Vote
-| 4 | Multi Signature Registration
-| 5 | IPFS
-| 6 | Timelock Transfer
-| 7 | Multi Payment
-| 9 | Delegate Resignation
-||
-| 10 | NFT Transfer
-| 11 | NFT Update
-| 12 | NFT Mint
+ | Transactions |
+| - |
+| Transfer UNS tokens
+| Second Signature Registration
+| Delegate Registration
+| Vote
+| Multi Signature Registration
+| IPFS
+| Timelock Transfer
+| Multi Payment
+| Delegate Resignation
+| UNIK Disclose
+| UNIK Update
+| UNIK Mint
+| UNIK Transfer
 
 ## Types of UNIK
 
