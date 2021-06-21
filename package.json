@@ -58,5 +58,8 @@
     "vuepress-plugin-seo": "^0.1.4",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-tabs": "^0.3.0"
+  },
+  "engines": {
+    "node": ">= 14"
   }
 }
