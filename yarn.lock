@@ -872,10 +872,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@spacelephantlabs/vuepress-plugin-matomo-spacelephant@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@spacelephantlabs/vuepress-plugin-matomo-spacelephant/-/vuepress-plugin-matomo-spacelephant-1.1.0.tgz#0d147326162561b2ed17d78534b5233574b044e5"
-  integrity sha512-sq6RXfq9zgfcC60aRnqjyTOJXLqJAOCq4sQy1OF8TGGNJqYggsb5Beb8q9NmPVLLXKfrIXFR7DfZ5K73IREJWw==
+"@spacelephantlabs/vuepress-plugin-matomo-spacelephant@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@spacelephantlabs/vuepress-plugin-matomo-spacelephant/-/vuepress-plugin-matomo-spacelephant-1.1.1.tgz#3e91405e856e6fecde9c684b148289bf47fca4a7"
+  integrity sha512-Qa2IXtFnMZeQfYqI2doXjr+0Z1qZPoNol4bt6SRllbVnn7hnKqI4B/zo0z3JNa7Wad/ibQe4nyR5A4XRdUxC/w==
 
 "@spacelephantlabs/vuepress-plugin-rocketchat-livechat@^1.0.0":
   version "1.0.0"
@@ -4046,10 +4046,10 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-highlight.js@^10.7.2:
-  version "10.7.2"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.2.tgz#89319b861edc66c48854ed1e6da21ea89f847360"
-  integrity sha512-oFLl873u4usRM9K63j4ME9u3etNF0PLiJhSQ8rdfuL51Wn3zkD6drf9ZW0dOzjnZI22YYG24z30JcmfCZjMgYg==
+highlight.js@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.0.1.tgz#a78bafccd9aa297978799fe5eed9beb7ee1ef887"
+  integrity sha512-EqYpWyTF2s8nMfttfBA2yLKPNoZCO33pLS4MnbXQ4hECf1TKujCt1Kq7QAdrio7roL4+CqsfjqwYj4tYgq0pJQ==
 
 hmac-drbg@^1.0.1:
   version "1.0.1"
@@ -8212,10 +8212,15 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.6.10, vue@^2.6.11:
+vue@^2.6.10:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==
+
+vue@^2.6.14:
+  version "2.6.14"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
+  integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
 
 vuepress-html-webpack-plugin@^3.2.0:
   version "3.2.0"
