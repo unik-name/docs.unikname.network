@@ -80,7 +80,7 @@ $ curl -O https://raw.githubusercontent.com/unik-name/docs.uns.network/master/do
 ```
 :::
 
-Check-out [the reference guide to understand the Docker-compose file](/docker-compose-management.html#reference-docker-compose-file).
+Check-out [the reference guide to understand the Docker-compose file](/docker-compose-management.html#docker-compose-file).
 
 ### Run a relay with Docker Compose
 
