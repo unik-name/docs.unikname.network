@@ -29,7 +29,7 @@ They are:
 - Individual: which own UNIK credits
 - Community actors which work for the network only
 
-![governance](./images/uns-blockchain-dpos-23-delegates.jpg)
+![governance](./images/uns-blockchain-dpos-23-delegates.png)
 
 Therefore, governance is based on delegates colleges, allowing that all @unikname types to be represented.
 Colleges are organized separately and independently.
