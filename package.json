@@ -1,7 +1,7 @@
 {
-  "name": "@uns/docs.uns.network",
+  "name": "@uns/docs.unikname.network",
   "version": "1.0.0",
-  "description": "Official documentation for the uns.network blockchain",
+  "description": "Official documentation for the unikname.network blockchain",
   "contributors": [
     "Fabien Tréguer <fabien.treguer@spacelephant.org>",
     "Damien Lecan <damien.lecan@spacelephant.org>",

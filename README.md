@@ -1,12 +1,12 @@
-# uns.network Player Hub
+# unikname.network official documentation
 
-<brand name="uns"/> is the blockchain and the protocol dedicated for sovereign IDs.
+Unikname.network is the blockchain and the protocol dedicated for sovereign IDs.
 
 <p align="center">
-    <img src="uns-banner.png" />
+    <img src="banner.png" />
 </p>
 
-> Official guides and documentation for the <brand name="uns"/> blockchain and protocol, powered by VuePress.
+> Official guides and documentation for the unikname.network blockchain and protocol, powered by VuePress.
 
 ## Development
 
@@ -21,7 +21,7 @@ Then open http://localhost:8080/
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@<brand name="uns"/> All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@uns.network All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
