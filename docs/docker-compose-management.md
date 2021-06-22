@@ -1,4 +1,11 @@
-# UNS Core Docker Compose Management
+# Unikname Core Docker Compose Management
+
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
 
 ## Main management commands
 
@@ -34,7 +41,7 @@ Core and database are stopped. Data are removed.
 
 `docker-compose down -v`
 
-### Get UNS Core version from Docker image
+### Get unikname.network Core version from Docker image
 
 ```
 docker image inspect --format="{{ index .Config.Labels \"org.label-schema.version\"}}" universalnamesystem/core:livenet

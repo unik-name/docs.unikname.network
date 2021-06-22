@@ -1,11 +1,18 @@
 ---
 home: false
-title: "uns.network APIs"
+title: "unikname.network APIs"
 ---
 
-# uns.network APIs
+# unikname.network APIs
 
 [[TOC]]
+
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
 
 ## Core NFT APIs
 
@@ -25,34 +32,34 @@ curl https://api.uns.network/api/nfts/status
 
 ```json
 {
-    "data": [
-      {
-        "nftName": "UNIK",
-        "individual": "279",
-        "organization": "48",
-        "network": "3"
-      }
-    ],
-    "chainmeta": {
-      "height": 64,
-      "timestamp": {
-        "epoch": 86136178,
-        "unix": 1655029508,
-        "human": "2019-06-12T10:25:08.474Z"
-      }
+  "data": [
+    {
+      "nftName": "UNIK",
+      "individual": "279",
+      "organization": "48",
+      "network": "3"
     }
+  ],
+  "chainmeta": {
+    "height": 64,
+    "timestamp": {
+      "epoch": 86136178,
+      "unix": 1655029508,
+      "human": "2019-06-12T10:25:08.474Z"
+    }
+  }
 }
 ```
 
-## UNIK token APIs
+## UNIKNAME token APIs
 
 Non-fungible token management is one of our main features.
 To understand this functionality and get technical details, you can read our [proposal](https://github.com/ArkEcosystem/AIPs/issues/70) to Ark community.
 You can try this API through our official [node](https://api.uns.network).
 
-### List minted UNIK
+### List minted UNIKNAME
 
-Get an overview of all minted non-fungible tokens of uns.network.
+Get an overview of all minted non-fungible tokens of unikname.network.
 
 For each token you get its id and the current wallet address owning it.
 
@@ -79,31 +86,43 @@ curl https://api.uns.network/api/uniks
 
 ```json
 {
-    "meta": {
-        "totalCountIsEstimate": false,
-        "count": 0,
-        "pageCount": 1,
-        "totalCount": 0,
-        "next": null,
-        "previous": null,
-        "self": "/api/uniks?page=1&limit=100",
-        "first": "/api/uniks?page=1&limit=100",
-        "last": null
+  "meta": {
+    "totalCountIsEstimate": false,
+    "count": 0,
+    "pageCount": 1,
+    "totalCount": 0,
+    "next": null,
+    "previous": null,
+    "self": "/api/uniks?page=1&limit=100",
+    "first": "/api/uniks?page=1&limit=100",
+    "last": null
+  },
+  "data": [
+    {
+      "id": "641f85b721569fef4c4d1458b47ad12de97d3c432e5d95f3cdc8a53becc69a78",
+      "ownerId": "UQYXg6vydVD83ZStQTBY5mv3CfHZc7oZbW"
     },
-    "data":[
-        {"id":"641f85b721569fef4c4d1458b47ad12de97d3c432e5d95f3cdc8a53becc69a78","ownerId":"UQYXg6vydVD83ZStQTBY5mv3CfHZc7oZbW"},
-        {"id":"bacc8096cd1a5850bf7d02f77132d2b2414824b1f4a3464c63366f269ee79b02","ownerId":"UED5QJc5HocAe69noQxw4jYqHuJJN9KdDi"},
-        {"id":"16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44","ownerId":"UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe"},
-        {"id":"76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493","ownerId":"UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe"}
-    ]
+    {
+      "id": "bacc8096cd1a5850bf7d02f77132d2b2414824b1f4a3464c63366f269ee79b02",
+      "ownerId": "UED5QJc5HocAe69noQxw4jYqHuJJN9KdDi"
+    },
+    {
+      "id": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44",
+      "ownerId": "UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe"
+    },
+    {
+      "id": "76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493",
+      "ownerId": "UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe"
+    }
+  ]
 }
 ```
 
-### Get UNIK details
+### Get UNIKNAME details
 
-Get more information about a UNIK with a known identifier.
+Get more information about a UNIKNAME with a known identifier.
 
-For now you can get its owner address, the first transaction (UNIK creation) and the last transaction that modifies the UNIK state.
+For now you can get its owner address, the first transaction (UNIKNAME creation) and the last transaction that modifies the UNIKNAME state.
 
 API retrieves chain meta-datas (`chainmeta`) corresponding to current block height and timestamp to allow verifing data integrity between API calls.
 
@@ -115,9 +134,9 @@ GET /api/uniks/{id}
 
 #### Path Parameters
 
-| Name  | Type    | Description                                    | Required |
-| :---- | :-----: | :--------------------------------------------- | :------: |
-| id    | string  | Identifier of UNIK wearing queried property    |   ✅     |
+| Name |  Type  | Description                                     | Required |
+| :--- | :----: | :---------------------------------------------- | :------: |
+| id   | string | Identifier of UNIKNAME wearing queried property |    ✅    |
 
 #### Examples
 
@@ -127,33 +146,33 @@ curl https://api.uns.network/api/uniks/76db9d8300b3e37540b2f8baaa0aca5b01cd5b965
 
 ```json
 {
-    "data":{
-        "id":"76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493",
-        "ownerId":"UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe",
-        "transactions": {
-          "first": {
-            "id": "30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2"
-         },
-          "last": {
-            "id": "30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2"
-          }
-        }
-    },
-    "chainmeta": {
-        "height": 757,
-        "timestamp": {
-            "epoch": 76809124,
-            "unix": 1566906724,
-            "human": "2019-08-27T11:52:04.000Z"
-        }
+  "data": {
+    "id": "76db9d8300b3e37540b2f8baaa0aca5b01cd5b9653ad0b10086c1c42b7d6c493",
+    "ownerId": "UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe",
+    "transactions": {
+      "first": {
+        "id": "30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2"
+      },
+      "last": {
+        "id": "30a671b90f834cf81a368a36cf0e93a4a33a0dd2fd100bd3a9bd84ecc6bad1c2"
+      }
     }
+  },
+  "chainmeta": {
+    "height": 757,
+    "timestamp": {
+      "epoch": 76809124,
+      "unix": 1566906724,
+      "human": "2019-08-27T11:52:04.000Z"
+    }
+  }
 }
 ```
 
-### Get UNIK properties
+### Get UNIKNAME properties
 
-One of the differences between a protocol token and a non-fungible token is that you can attach properties on it. 
-And sometimes, you want to read these properties. 
+One of the differences between a protocol token and a non-fungible token is that you can attach properties on it.
+And sometimes, you want to read these properties.
 
 API retrieves chain meta-datas (`chainmeta`) corresponding to current block height and timestamp to allow verifing data integrity between API calls.
 
@@ -165,9 +184,9 @@ GET /api/uniks/{id}/properties
 
 #### Path Parameters
 
-| Name  | Type    | Description                                    | Required |
-| :---- | :-----: | :--------------------------------------------- | :------: |
-| id    | string  | Identifier of UNIK wearing queried property    |   ✅     |
+| Name |  Type  | Description                                     | Required |
+| :--- | :----: | :---------------------------------------------- | :------: |
+| id   | string | Identifier of UNIKNAME wearing queried property |    ✅    |
 
 #### Query Parameters
 
@@ -184,33 +203,31 @@ curl https://api.uns.network/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b
 
 ```json
 {
-    "meta":{
-        "count":1,
-        "pageCount":1,
-        "totalCount":1,
-        "next":null,
-        "previous":null,
-        "self":"/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
-        "first":"/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
-        "last":"/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100"
-    },
-    "data":[
-        {"shape":"rectangle"}
-    ],
-    "chainmeta": {
-        "height": 757,
-        "timestamp": {
-            "epoch": 76809124,
-            "unix": 1566906724,
-            "human": "2019-08-27T11:52:04.000Z"
-        }
+  "meta": {
+    "count": 1,
+    "pageCount": 1,
+    "totalCount": 1,
+    "next": null,
+    "previous": null,
+    "self": "/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
+    "first": "/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100",
+    "last": "/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b546160a8b580df9be5bdcce/properties?page=1&limit=100"
+  },
+  "data": [{ "shape": "rectangle" }],
+  "chainmeta": {
+    "height": 757,
+    "timestamp": {
+      "epoch": 76809124,
+      "unix": 1566906724,
+      "human": "2019-08-27T11:52:04.000Z"
     }
+  }
 }
 ```
 
-### Get specific UNIK property
+### Get specific UNIKNAME property
 
-You can access quickly to a specific UNIK property with this endpoint: get its value and some meta-data.
+You can access quickly to a specific UNIKNAME property with this endpoint: get its value and some meta-data.
 
 #### Endpoint
 
@@ -220,10 +237,10 @@ GET /api/uniks/{id}/properties/{key}
 
 #### Path Parameters
 
-| Name  | Type    | Description                                    | Required |
-| :---- | :-----: | :--------------------------------------------- | :------: |
-| id    | string  | Identifier of UNIK wearing queried property    |   ✅     |
-| key   | string  | Property key you want to read                  |   ✅     |
+| Name |  Type  | Description                                     | Required |
+| :--- | :----: | :---------------------------------------------- | :------: |
+| id   | string | Identifier of UNIKNAME wearing queried property |    ✅    |
+| key  | string | Property key you want to read                   |    ✅    |
 
 #### Examples
 
@@ -233,13 +250,13 @@ curl https://api.uns.network/api/uniks/86869b8e0a12cd46d96b96816e03fa80aa8d54d0b
 
 ```json
 {
-    "data":"2"
+  "data": "2"
 }
 ```
 
 ## Public Wallets API
 
-Wallets are addresses containing, or previously having contained UNS tokens. A wallet's public key may be unknown to the network, in that case, it is referred to as a `cold wallet`.
+Wallets are addresses containing, or previously having contained UNIK tokens. A wallet's public key may be unknown to the network, in that case, it is referred to as a `cold wallet`.
 
 ### Retrieve a Wallet
 
@@ -271,21 +288,20 @@ GET /api/wallets/{id}
     "balance": 12534670000000,
     "isDelegate": true
   },
-    "chainmeta": {
-        "height": 757,
-        "timestamp": {
-            "epoch": 76809124,
-            "unix": 1566906724,
-            "human": "2019-08-27T11:52:04.000Z"
-        }
+  "chainmeta": {
+    "height": 757,
+    "timestamp": {
+      "epoch": 76809124,
+      "unix": 1566906724,
+      "human": "2019-08-27T11:52:04.000Z"
     }
+  }
 }
 ```
 
-
 ### Retrieve tokens from wallet
 
-Retrive UNIKs from a specific wallet.
+Retrive UNIKNAMEs from a specific wallet.
 Specific wallet can be obtained either by their `publicKey` or `address`.
 
 #### Endpoint
@@ -296,8 +312,8 @@ GET /api/wallets/{id}/uniks
 
 #### Path Parameters
 
-| Name |  Type  | Description                                   |      Required      |
-| :--- | :----: | :-------------------------------------------- | :----------------: |
+| Name |  Type  | Description                             |      Required      |
+| :--- | :----: | :-------------------------------------- | :----------------: |
 | id   | string | `publicKey` or `address` of the wallet. | :white_check_mark: |
 
 #### Response
@@ -313,7 +329,7 @@ GET /api/wallets/{id}/uniks
       "id": "6ab8c6714a9f82b4b3430eef226e004526ff9028a278081e400fe81a2a0486e1",
       "ownerId": "AHysG9CfbXvHtxev9eziTK8WUbnFKKLFR8"
     }
-  ],
+  ]
 }
 ```
 
@@ -371,35 +387,28 @@ GET /api/transactions/{id}
       "human": "2018-04-05T02:27:33Z"
     }
   },
-    "chainmeta": {
-        "height": 757,
-        "timestamp": {
-            "epoch": 76809124,
-            "unix": 1566906724,
-            "human": "2019-08-27T11:52:04.000Z"
-        }
+  "chainmeta": {
+    "height": 757,
+    "timestamp": {
+      "epoch": 76809124,
+      "unix": 1566906724,
+      "human": "2019-08-27T11:52:04.000Z"
     }
+  }
 }
 ```
 
+## UNIK token APIs
 
-
-
-
-
-
-
-
-## UNS token APIs
-
-UNS token APIs are not specific to the uns.network, they're coming from ARK.IO standards. As a consequence all ARK.IO API are working on the uns.network.
+UNIK token APIs are not specific to the unikname.network, they're coming from ARK.IO standards. As a consequence all ARK.IO API are working on the unikname.network.
 
 For example the API `/blockain` used to retrieve latest block and supply in the chain
+
 ```
 curl --header "API-Version: 2" https://api.ark.io/api/blockchain
 ```
 
-works also on the uns.network
+works also on the unikname.network
 
 ```
 curl --header "API-Version: 2" https://api.uns.network/api/blockchain
@@ -441,41 +450,41 @@ GET /api/delegates
 
 ```json
 {
-    "data": [
-        {
-            "unikname": "JhonnyBoy",
-            "username": "07eac6f0ec030604a0ce310e3f9084b21df57f6ac151b8b84e36c92ac7b32be4",
-            "address": "D5PXQVeJmchVrZFHL7cALZK8mWWzjCaVfz",
-            "publicKey": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586",
-            "vote": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586",
-            "rank": 1,
-            "blocks": {
-              "produced": 1564,
-                "last": {
-                  "id": "7554c50bebb61dcec5c20405d9daf38bdd338360eeba925f6aa24c787c439fa1",
-                  "height": 3234,
-                  "timestamp": {
-                  "epoch": 10800384,
-                  "unix": 1579693714,
-                  "human": "2020-01-22T11:48:34.474Z"
-                }
-              }
-            },
-            "production": {
-              "approval": 0
-            },
-            "forged": {
-              "fees": "210000000",
-              "rewards": "312800000000",
-              "total": "313010000000"
-            }
+  "data": [
+    {
+      "unikname": "JhonnyBoy",
+      "username": "07eac6f0ec030604a0ce310e3f9084b21df57f6ac151b8b84e36c92ac7b32be4",
+      "address": "D5PXQVeJmchVrZFHL7cALZK8mWWzjCaVfz",
+      "publicKey": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586",
+      "vote": "02a9a0ac34a94f9d27fd9b4b56eb3c565a9a3f61e660f269775fb456f7f3301586",
+      "rank": 1,
+      "blocks": {
+        "produced": 1564,
+        "last": {
+          "id": "7554c50bebb61dcec5c20405d9daf38bdd338360eeba925f6aa24c787c439fa1",
+          "height": 3234,
+          "timestamp": {
+            "epoch": 10800384,
+            "unix": 1579693714,
+            "human": "2020-01-22T11:48:34.474Z"
+          }
         }
-    ],
+      },
+      "production": {
+        "approval": 0
+      },
+      "forged": {
+        "fees": "210000000",
+        "rewards": "312800000000",
+        "total": "313010000000"
+      }
+    }
+  ]
 }
 ```
 
 The full documentation of [ARK APIs is available here](https://api.ark.dev/public-rest-api/getting-started).
 
 ::: warning
-At some times, UNS and Ark APIs can differ but we do our best to keep compatibility.
+At some times, UNIK and Ark APIs can differ but we do our best to keep compatibility.
 :::

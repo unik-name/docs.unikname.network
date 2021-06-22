@@ -16,7 +16,7 @@ Traditional blockchain accounts are represented by a couple of public and privat
 Within <brand name="uns"/> we call these accounts the `cryptoaccounts` to be more meaningful. These cryptoaccounts are represented by a couple of a [PublicKey](#publickey) and [PrivateKey](#privatekey), and also by a public address and a passphrase.
 The address is built via a combination of RIPEMD160 hashing and Base58Check encoding prefixed by a single network byte.
 
-Then <brand name="uns"/> cryptoaccounts handle both the UNS protocol tokens, and UNIK Non Fungible Tokens representing @unikname. They're protected and secured by a [passphrase](#passphrase).
+Then <brand name="uns"/> cryptoaccounts handle both the UNIK protocol tokens, and UNIKNAME Non Fungible Tokens representing @unikname. They're protected and secured by a [passphrase](#passphrase).
 
 ## unikid
 
@@ -28,9 +28,9 @@ Every @unikname is encoded within the <brand name="uns"/> blockchain with a hash
 
 ## Resolving a cryptoaccount
 
-Here is an example of the public address of a cryptoaccount on uns.network: `UVxGz3EKDqx4h8LLz2ao2GoDNPx4uHf25k`
+Here is an example of the public address of a cryptoaccount on unikname.network: `UVxGz3EKDqx4h8LLz2ao2GoDNPx4uHf25k`
 
-For every public address there's a public key, associated with a private key, and encrypted with a passphrase. Here is an example of on-chain public informations available when you query this public address on uns.network.
+For every public address there's a public key, associated with a private key, and encrypted with a passphrase. Here is an example of on-chain public informations available when you query this public address on unikname.network.
 
 ```json
 {
@@ -72,11 +72,11 @@ return the same cryptoaccount in this example.
 
 ## Passphrase
 
-The passphrase is the master password (key) for your UNS tokens and also for your UNIK tokens. Every UNS address has its own unique passphrase. With the passphrase you can sign transactions to send your UNS, you can manage your @unikname represented by UNIK tokens. More important is that the combination of your Passphrase plus a pincode or a fingerprint on your smartphone allow you to sign-in and sign-up everywhere.
+The passphrase is the master password (key) for your UNIK tokens and also for your UNIKNAME tokens. Every unikname.network address has its own unique passphrase. With the passphrase you can sign transactions to send your UNIK, you can manage your @unikname represented by UNIKNAME tokens. More important is that the combination of your Passphrase plus a pincode or a fingerprint on your smartphone allow you to sign-in and sign-up everywhere.
 
-So, do not lose your Passphrase, and do not share it with others. You could lose access to your UNS tokens but above all you could loose access to all website you're connected to. If you lose your passphrase, or if it is stolen, there is nothing we can do to help you. We CANNOT recover any lost passphrases.
+So, do not lose your Passphrase, and do not share it with others. You could lose access to your UNIK tokens but above all you could loose access to all website you're connected to. If you lose your passphrase, or if it is stolen, there is nothing we can do to help you. We CANNOT recover any lost passphrases.
 
-The passphrase is used to directly calculate the [PrivateKey](#privatekey) of an UNS blockchain account and should never be shared, stored irresponsibly, or transmitted over the internet. The only person that should ever have access to a passphrase is the owner of its account.
+The passphrase is used to directly calculate the [PrivateKey](#privatekey) of an unikname.network blockchain account and should never be shared, stored irresponsibly, or transmitted over the internet. The only person that should ever have access to a passphrase is the owner of its account.
 
 We can technically use any word, phrase, or string as a passphrase which will result in a valid <brand name="uns"/> cryptoaccount; however, it is heavily discouraged as the security of an address relies on the randomness of its Passphrase. Humans are bad at creating randomness, and entering sequences of random letters and numbers isn't easy to do accurately.
 

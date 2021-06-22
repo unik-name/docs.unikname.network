@@ -1,9 +1,16 @@
 ---
 home: false
-title: "uns.network SDK Overview"
+title: "unikname.network SDK Overview"
 ---
 
 # uns.network SDK overview
+
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
 
 Using <brand name="uns"/> SDKs, developers can employ the programming language of their choice to build applications utilizing the <brand name="uns"/> blockchain.
 
@@ -17,7 +24,7 @@ If your application doesn't involve sending transactions, you can most likely bu
 
 ## Client SDK
 
-Client SDK is a brand new product specifically developed for uns.network. 
+Client SDK is a brand new product specifically developed for unikname.network. 
 
 SDK is compatible with node projects and browsers. 
 
@@ -55,7 +62,7 @@ In some cases, functions return chain meta datas as `ChainMeta`. These meta data
 
 ### Key features
 
-#### Get on-chain value UNIK types
+#### Get on-chain value UNIKNAME types
 
 ```typescript
 import { UNIKTypes } from "@uns/ts-sdk"
@@ -65,7 +72,7 @@ const unikTypeIndividual:number = UNIKTypes.INDIVIDUAL
 
 See the [cheat sheet for the full list of available types](/cheatsheet.html#types-of-unik)
 
-#### Get status of uns.network node
+#### Get status of unikname.network node
 
 ```typescript
 import { UNSClient, NodeStatus, Network } from "@uns/ts-sdk"
@@ -75,7 +82,7 @@ const { synced, now, blocksCount } = nodeStatus;
 
 ```
 
-#### Get UNIK token
+#### Get UNIKNAME token
 
 ```typescript
 import { UNSClient, Unik, ResponseWithChainMeta, ChainMeta, Network } from "@uns/ts-sdk"
@@ -86,7 +93,7 @@ const meta: ChainMeta = response.chainmeta;
 
 ```
 
-#### Get UNIK property value
+#### Get UNIKNAME property value
 
 ```typescript
 import { getPropertyValue, ResponseWithChainMeta, PropertyValue, ChainMeta, Network } from "@uns/ts-sdk"
@@ -214,10 +221,10 @@ Inherited from Ark crypto package, <brand name="uns"/> crypto package is availab
 
 It can do more than Ark package : 
 
-- mint UNIKs 
-- add, delete or update UNIK properties
-- transfer UNIKs to another wallet
-- transfer UNS tokens
+- mint UNIKNAMEs 
+- add, delete or update UNIKNAME properties
+- transfer UNIKNAMEs to another wallet
+- transfer UNIK tokens
 - create <brand name="uns"/> wallets
 - ...
 

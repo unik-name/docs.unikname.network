@@ -1,9 +1,9 @@
 ---
 ---
 
-# Getting Started with uns.network
+# Getting Started with unikname.network
 
-This guide introduce the basics of the uns.network. It explains Decentralized Identifiers, how to create your own @unikname on the network, how to setup your own on-chain properties, and to get rewards. You will also discover the Unikname APP and how to use your own minted @unikname to get connected to any OpenId Connect website. 
+This guide introduce the basics of the unikname.network. It explains Decentralized Identifiers, how to create your own @unikname on the network, how to setup your own on-chain properties, and to get rewards. You will also discover the Unikname APP and how to use your own minted @unikname to get connected to any OpenId Connect website.
 
 To get started we invite you to
 [[TOC]]
@@ -12,17 +12,17 @@ To get started we invite you to
 
 ## 1. Install the Command Line Interface
 
-The <brand name="uns"/> comes with several tools to interact with the chain. The most famous ones are the chain explorer, the wallet App, and the command line interface. 
+The <brand name="uns"/> comes with several tools to interact with the chain. The most famous ones are the chain explorer, the wallet App, and the command line interface.
 
 We're going to start with the command line interface, also called the **CLI** .
 
 Choose your preferred setup depending on your desktop environment and install the command line interface.
 
-| <h3>Operating system</h3> | <h3>Download</h3> | <h3>Instructions</h3> |
-|:-----------------------------------:|:----------------------------------------------------------------------:|:---------------------------------------:|
-| <h2><vp-icon name="windows-brands" size="2em" /><br/>Windows</h2>    | <h4>![Version](https://img.shields.io/npm/v/@uns/cli?color=029A98&label=UNS%20CLI&logoColor=FE7644)</h4><h3>[Download the installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3> | <p>Run the installer you have downloaded.</p><p>Windows may display a warning, just click **Run anyway**.</p> |
-| <h2><vp-icon name="apple-brands" size="2em" /><br/>MacOS</h2>        | <h4>![Version](https://img.shields.io/npm/v/@uns/cli?color=029A98&label=UNS%20CLI&logoColor=FE7644)</h4><h3>[Download the installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns.pkg)</h3> | <p>Run the installer you have downloaded.</p> |
-| <h2><vp-icon name="linux-brands" size="2em" /><br/>Linux</h2>        | <h4>![Version](https://img.shields.io/npm/v/@uns/cli?color=029A98&label=UNS%20CLI&logoColor=FE7644)</h4><h3>[Download the archive](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-linux-x64.tar.gz)</h3> | <p>After having downloaded the archive, add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to run the `uns` command.</p> |
+|                     <h3>Operating system</h3>                     |                                                                                               <h3>Download</h3>                                                                                               |                                                                   <h3>Instructions</h3>                                                                    |
+| :---------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <h2><vp-icon name="windows-brands" size="2em" /><br/>Windows</h2> |    <h4>![Version](https://img.shields.io/npm/v/@uns/cli?color=029A98&label=UNS%20CLI&logoColor=FE7644)</h4><h3>[Download the installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-x64.exe)</h3>     |                       <p>Run the installer you have downloaded.</p><p>Windows may display a warning, just click **Run anyway**.</p>                        |
+|   <h2><vp-icon name="apple-brands" size="2em" /><br/>MacOS</h2>   |      <h4>![Version](https://img.shields.io/npm/v/@uns/cli?color=029A98&label=UNS%20CLI&logoColor=FE7644)</h4><h3>[Download the installer](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns.pkg)</h3>       |                                                       <p>Run the installer you have downloaded.</p>                                                        |
+|   <h2><vp-icon name="linux-brands" size="2em" /><br/>Linux</h2>   | <h4>![Version](https://img.shields.io/npm/v/@uns/cli?color=029A98&label=UNS%20CLI&logoColor=FE7644)</h4><h3>[Download the archive](https://unikname-cli-assets.s3.fr-par.scw.cloud/uns-linux-x64.tar.gz)</h3> | <p>After having downloaded the archive, add `{TARBALL_EXTRACTION_FOLDER}/bin` into your `PATH` environment variable in order to run the `uns` command.</p> |
 
 [Alternate installation modes are also available in the CLI documentation](/cli.html#download-and-installation).
 
@@ -45,7 +45,8 @@ Okay, now let's go to query the <brand name="uns"/> blockchain.
 
 One very interesting feature provided by <brand name="uns"/> blockchain is the name resolver. With this name resolver you can query the blockchain and you can get @unikname's related on-chain public data very fast.
 
-Let's try the ``resolve`` command to get Bob's NFT UNIK address within the chain
+Let's try the `resolve` command to get Bob's NFT UNIK address within the chain
+
 ```bash
 $ uns resolve "@bob"
 {
@@ -56,7 +57,7 @@ $ uns resolve "@bob"
 }
 ```
 
-The `unikid` data is the unique identifier of the Non Fungible Token forged within the chain and representing Bob's unikname. 
+The `unikid` data is the unique identifier of the Non Fungible Token forged within the chain and representing Bob's unikname.
 
 :::tip
 @Bob is called a DID, a Decentralized ID, because it has a unique Identifier within a decentralized network, the <brand name="uns"/> blockchain.
@@ -64,33 +65,39 @@ The `unikid` data is the unique identifier of the Non Fungible Token forged with
 
 Is you try to resolve a name that doesn't exist with the blockchain chain then the command returns the message "DID not resolved"
 
-You can also use the resolver to get quick access to properties of a @unikname. Let's try the ``resolve`` command to get Bob's uns.network public address for example.
+You can also use the resolver to get quick access to properties of a @unikname. Let's try the `resolve` command to get Bob's uns.network public address for example.
 
 ```bash
-$ uns resolve "@bob?*" --format=raw 
+$ uns resolve "@bob?*" --format=raw
 UYWaMkArHJjMecuHgs6LYapFtvV27QeafX
 ```
 
 :::tip
 For quite all commands you can use the _"@oneComprehensiveUnikname"_ syntax rather than a public key or a network cryptographic address. For example to send tokens to @bob you can use the following syntax:
+
 ```bash
-$ uns send 100 UNS --to="UYWaMkArHJjMecuHgs6LYapFtvV27QeafX" 
+$ uns send 100 UNS --to="UYWaMkArHJjMecuHgs6LYapFtvV27QeafX"
 ```
+
 but you can also use a more friendly and less risky syntax:
+
 ```bash
-$ uns send 100 UNS --to="@bob" 
+$ uns send 100 UNS --to="@bob"
 ```
+
 :::
 
 The <brand name="uns"/> resolver is also usefull to resolve user's defined properties. For example Bob has decided to share publicly one of it's BTC public address and his ARK public address. Let see how easy it is to get them:
 
 ```bash
-$ uns resolve "@bob?usr/wallet/ark" --format=raw 
+$ uns resolve "@bob?usr/wallet/ark" --format=raw
 ark:AMN48dmd3g8rgAT1xhTYfi4zwEBWpCjNDk
 ```
+
 and to get the BTC public address:
+
 ```bash
-$ uns resolve "@bob?usr/wallet/btc" --format=raw 
+$ uns resolve "@bob?usr/wallet/btc" --format=raw
 btc:bc1qt9qrhany5l0yn040rak4h9jcsu6v9d48sysrna
 ```
 
@@ -115,11 +122,11 @@ $ uns cryptoaccount:create
 > _NOTA: In your case the stars are replaced by real values._
 
 :::danger
-It is very important to save your passphrase at this stage! **There's no way to recover it** nor to look for it later. **So do it right now!** 
+It is very important to save your passphrase at this stage! **There's no way to recover it** nor to look for it later. **So do it right now!**
 
-1. Take care of spelling it. You should be able to access it for all your life long. 
+1. Take care of spelling it. You should be able to access it for all your life long.
 1. If you use a password safe solution like _lastpass_ or _keepass_ you're encouraged to save it on it
-:::
+   :::
 
 Okay now you can create you own @unikname by issuing a NFT UNIK Token and by embedding it to the crypto account you've just created. In the example here above just replace `yourUnikname` by your own identifier.
 
@@ -130,7 +137,6 @@ $ uns unik:create --type=individual --explicitValue="yourUnikname" --coupon="LAT
 #### Understanding parameters
 
 `--type=individual` &rightarrow; Individual type is the most common. Individual @unikname can be used to authenticate on websites. There's other types of @unikname but the creation process is different. To understand types you can read [Types Key Concept](/key-concept/unik-type).
-
 
 `--explicitValue="yourUnikname"` &rightarrow; this is the most important one, this is your @unikname. You can choose a nick name, your real name or any pseudo, it's up to you. It must be easy to remind. It is not sensitive to case nor to accent nor to separators. That mean that "Laurent.Lourenço" is the same as "laurentlourenco"
 
@@ -145,6 +151,7 @@ If you want to create a second @unikname you can choose to attach it to the same
 :::
 
 The CLI ask you for your passphrase, then the result should looks like this
+
 ```bash
 {
   "data": {
@@ -173,12 +180,11 @@ As you see your @unikname has been found within the chain but it's not disclosed
 
 Using your @unikname for authentication required to install the Unikname APP on your smartphone and to setup your @unikname on it.
 
-The easiest way to do it is to open your browser on your smartphone and go to [my.unikname.app](https://my.unikname.app). You will not have to go to an App store! 
+The easiest way to do it is to open your browser on your smartphone and go to [my.unikname.app](https://my.unikname.app). You will not have to go to an App store!
 
 If you're familiar with QR Code you can also scan this one with your smartphone for a quick setup.
 
 ![qrcode-my-unikname-app2](/images/getting-started-qrcode-my-unikname-app2.png)
-
 
 During the installation process you will have to setup your PIN Code and optionally to subscribe to our _keep in touch_ mailing list.
 
@@ -186,18 +192,19 @@ Until done you're going to choose "restore your @unikname" button, and follow th
 
 ## 6. Save your @unikname and its passphrase
 
-Very good! Before to go further it's the good time to save your @unikname and its passphrase. 
+Very good! Before to go further it's the good time to save your @unikname and its passphrase.
 
 :::danger
-It is very important to save **both your passphrase and the @unikname you've choosen** at this stage! **There's no way to recover them** nor to look for it later. **So do it right now!** 
+It is very important to save **both your passphrase and the @unikname you've choosen** at this stage! **There's no way to recover them** nor to look for it later. **So do it right now!**
 
-1. Take care of spelling it. You should be able to access it for all your life long. 
+1. Take care of spelling it. You should be able to access it for all your life long.
 1. If you use a password safe solution like _lastpass_ or _keepass_ you're encouraged to save it on it
-:::
+   :::
 
 ## 7. Use your @unikname to sign-up on our forum
 
 Let's go to our [forum](https://forum.unikname.com) and choose to sign-up with your own @unikname.
+
 1. select the "sign-up' button
 1. select "connect with my private @unikname" button
 1. enter your @unikname
@@ -213,8 +220,7 @@ You're welcome to post a feedback on your 1st experience with the community and 
 
 ## ...and to go further
 
-* [Become a network player](/becoming-network-player)
-* [Vote for a delegate](/cli.html#delegate-vote)
-* [Disclose your @unikname](/cli.html#unik-disclose) or/and [claim trust badges](/cli.html#badges-claim)
-* [Record public data on your on-chain registry](/cli.html#properties-set)
-
+- [Become a network player](/becoming-network-player)
+- [Vote for a delegate](/cli.html#delegate-vote)
+- [Disclose your @unikname](/cli.html#unik-disclose) or/and [claim trust badges](/cli.html#badges-claim)
+- [Record public data on your on-chain registry](/cli.html#properties-set)

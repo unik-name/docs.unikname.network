@@ -1,6 +1,6 @@
 ---
 home: false
-title: "Understanding Governance of uns.network blockchain"
+title: "Understanding Governance of unikname.network blockchain"
 tags:
   - governance
   - networkplayer
@@ -13,13 +13,20 @@ tags:
   - type
 ---
 
-# Understanding governance of uns.network blockchain 
+# Understanding governance of unikname.network blockchain 
 
-The uns.network blockchain is a DPoS kind of blockchain.
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
+
+The unikname.network blockchain is a DPoS kind of blockchain.
 It counts three separates categories of stakeholders, with specific purpose and interest.
 They are:
 - Organization: which makes secured the confidential connections on their web site
-- Individual: which own UNS credits
+- Individual: which own UNIK credits
 - Community actors which work for the network only
 
 ![governance](./images/uns-blockchain-dpos-23-delegates.jpg)
@@ -29,7 +36,7 @@ Colleges are organized separately and independently.
 
 Each network member can only vote for his own representatives according to rules specific to his college
 
-In total, they are 23 actors securing the network by representing all spectrum of uns.network stakeholders.
+In total, they are 23 actors securing the network by representing all spectrum of unikname.network stakeholders.
 ## Organizations
 
 Organizations must vote.

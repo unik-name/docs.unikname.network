@@ -32,6 +32,6 @@ If you have any suggestions or encounter any problems with this tutorial, give u
 ## Follow us on our social medias
 
 In order not to miss our other news and novelties, do not hesitate to follow us on our different social networks:
-- [<brand name="uns"/> twitter](https://twitter.com/uns_network)
+- [<brand name="uns"/> twitter](https://twitter.com/UniknameNetwork)
 - [Unikname twitter](htpps://twitter.com/unikname_uns)
-- [Discord](https://discord.gg/Wur2FZjNb8)
+- [Discord](https://join-discord.unikname.network)

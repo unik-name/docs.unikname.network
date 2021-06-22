@@ -1,15 +1,22 @@
 ---
 home: false
-title: "uns.network CLI alternate installation modes"
+title: "unikname.network CLI alternate installation modes"
 ---
 
-# uns.network CLI alternate installation modes
+# unikname.network CLI alternate installation modes
+
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
 
 ## Installation from NPM / Yarn
 
 ### Requirements
 
-<brand name="uns"/> CLI installation requires some dependencies to be installed. 
+<brand name="uns"/> CLI installation requires some dependencies to be installed.
 
 #### Node.js
 
@@ -22,6 +29,7 @@ Install a stable version of Node JS 12: [https://nodejs.org/en/download/](https:
 Even if the <brand name="uns"/> CLI is written in a cross-operating system language (Javascript), it requires native dependencies which need to be compiled for your operating system.
 
 You need:
+
 - gcc/g++
 - Python v3.x
 

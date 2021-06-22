@@ -5,6 +5,13 @@
 
 [[toc]]
 
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
+
 ## Introduction
 
 Here we will help you set up a <brand name="uns"/> relay node and/or forger node.
@@ -137,7 +144,7 @@ Now you have a running forger node and you're forging blocks! 👏
 ## Checking your delegate status in the Explorer
 
 Now, your job is done.
-You can check on [explorer](https://explorer.uns.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
+You can check on [explorer](https://explorer.unikname.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
 
 If you're in the `active` tab, congratulation, you're a <brand name="uns"/> delegate, and your forger node is actually forging blocks and getting rewards!
 
