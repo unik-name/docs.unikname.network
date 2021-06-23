@@ -868,8 +868,8 @@ You cannot register more than 3 user properties by default.
 
 #### Parameters
 
-- `-k --key` (required): Key of property to set as UNIKNAME property. See [allowed property key format](/cheatsheet.html#property-keys-of-unik)
-- `-V --value` (required): Value of property to set as UNIKNAME property. See [allowed property value format](/cheatsheet.html#property-values-of-unik)
+- `-k --key` (required): Key of property to set as UNIKNAME property. See [allowed property key format](/cheatsheet.html#property-keys-of-unikname)
+- `-V --value` (required): Value of property to set as UNIKNAME property. See [allowed property value format](/cheatsheet.html#property-values-of-unikname)
 - `--fee` : Specify a dynamic fee in satoUNIK. Defaults to `100000000 satoUNIK = 1 UNIK`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
@@ -1017,7 +1017,7 @@ Get the value of a specific property of a UNIKNAME token.
 
 #### Parameters
 
-- `-k, --propertyKey` (required): the key of the property for which we query the value. See [allowed property key format](/cheatsheet.html#property-keys-of-unik)
+- `-k, --propertyKey` (required): the key of the property for which we query the value. See [allowed property key format](/cheatsheet.html#property-keys-of-unikname)
 - `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIKNAME required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
 - `-f, --format` `{json|yaml|raw, json}`: Specify how to format the output [json|yaml|raw]. Default to Json.

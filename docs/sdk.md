@@ -70,7 +70,7 @@ import { UNIKTypes } from "@uns/ts-sdk"
 const unikTypeIndividual:number = UNIKTypes.INDIVIDUAL
 ```
 
-See the [cheat sheet for the full list of available types](/cheatsheet.html#types-of-unik)
+See the [cheat sheet for the full list of available types](/cheatsheet.html#types-of-unikname)
 
 #### Get status of unikname.network node
 

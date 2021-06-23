@@ -114,11 +114,11 @@ Getting help for a specific {command} : `>uns {command} --help`
 | /transactions _&rightarrow; list all transactions on chain_ |
 | [/transactions/{id}](api.html#retrieve-a-transaction) _&rightarrow;list transactions for a specific UNIK_ |
 | **UNIKNAME NFT tokens** |
-| [/uniks/{unikid}](api.html#get-unik-details) |
+| [/uniks/{unikid}](api.html#get-unikname-details) |
 | /uniks/{unikid}/transactions |
-| [/uniks/{unikid}/properties](api.html#get-unik-properties) | 
-| [/uniks/{unikid}/properties/{propertyKey}](api.html#get-specific-unik-property) |
-| [/uniks](api.html#list-minted-unik) _&rightarrow; list minted UNIKNAMEs  |
+| [/uniks/{unikid}/properties](api.html#get-unikname-properties) | 
+| [/uniks/{unikid}/properties/{propertyKey}](api.html#get-specific-unikname-property) |
+| [/uniks](api.html#list-minted-unikname) _&rightarrow; list minted UNIKNAMEs  |
 
 ## Transaction Types
 
