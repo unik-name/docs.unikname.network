@@ -369,7 +369,7 @@ Send owned unikname.network protocol tokens to another crypto account.
 
 - `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
 - `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
-- `--fee`: Specify a dynamic fee in satUNIK. Defaults to 100000000 satUNIK = 1 UNIK.
+- `--fee`: Specify a dynamic fee in satoUNIK. Defaults to 100000000 satoUNIK = 1 UNIK.
 - `--text`: Publicly motivate your tokens sending. This reason will be written on chain ​​forever.
 - `--[no]-text-check`: Check if user knows that this text will be readable publicly forever. (--no-text-check to bypass this check).
 
@@ -554,7 +554,7 @@ With <brand name="uns"/> CLI you can create your own UNIKNAME token using `unik:
 - `--explicitValue` (required): Chosen explicit value of your UNIKNAME (255 characters max)
 - `--type` (required): Type of your token [individual/organization/network]
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
-- `--fee`: Transaction fee in satUNIK. Defaults to `0`.
+- `--fee`: Transaction fee in satoUNIK. Defaults to `0`.
 - `--unik-voucher`: Use a UNIKNAME voucher to create this UNIKNAME
 - `--coupon`: Use a COUPON to create this UNIKNAME <Badge text="4.0.0"/>
 
@@ -916,7 +916,7 @@ The only properties that can be unset are those whose key starts with `usr/`.
 #### Parameters
 
 - `-k --propertyKey`, Key of the property to unset. (multiple occurrences)
-- `--fee` : Specify a dynamic fee in satoUNIK. Defaults to `100000000 satUNIK = 1 UNIK`.
+- `--fee` : Specify a dynamic fee in satoUNIK. Defaults to `100000000 satoUNIK = 1 UNIK`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.

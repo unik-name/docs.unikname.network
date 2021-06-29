@@ -33,5 +33,5 @@ If you have any suggestions or encounter any problems with this tutorial, give u
 
 In order not to miss our other news and novelties, do not hesitate to follow us on our different social networks:
 - [<brand name="uns"/> twitter](https://twitter.com/UniknameNetwork)
-- [Unikname twitter](htpps://twitter.com/unikname_uns)
+- [Unikname twitter](htpps://twitter.com/UniknameNews)
 - [Discord](https://join-discord.unikname.network)

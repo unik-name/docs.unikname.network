@@ -46,7 +46,7 @@ module.exports = {
       author: (_, $site) => {
         return {
           name: $site.themeConfig.author,
-          twitter: "@Uns_Network",
+          twitter: "@UniknameNetwork",
         };
       },
       image: ($page, $site) =>
