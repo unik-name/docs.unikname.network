@@ -903,7 +903,7 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
-"@goy/vuepress-plugin-svg-icons@^4.2.3":
+"@goy/vuepress-plugin-svg-icons@4.2.3":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/@goy/vuepress-plugin-svg-icons/-/vuepress-plugin-svg-icons-4.2.3.tgz#b2ea38a0f1703f604285eb6ce5f01a2e053f98df"
   integrity sha512-OCepSD9kbBnXw04CwVQI7y3cD1SFxTYdVZtLQHkCoPod6S+ZWBOuFW6yeO851zm+zzzKusEHaq/d/mDvBqZRcg==
@@ -929,12 +929,12 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@spacelephantlabs/vuepress-plugin-matomo-spacelephant@^1.1.1":
+"@spacelephantlabs/vuepress-plugin-matomo-spacelephant@1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@spacelephantlabs/vuepress-plugin-matomo-spacelephant/-/vuepress-plugin-matomo-spacelephant-1.1.1.tgz#3e91405e856e6fecde9c684b148289bf47fca4a7"
   integrity sha512-Qa2IXtFnMZeQfYqI2doXjr+0Z1qZPoNol4bt6SRllbVnn7hnKqI4B/zo0z3JNa7Wad/ibQe4nyR5A4XRdUxC/w==
 
-"@spacelephantlabs/vuepress-plugin-rocketchat-livechat@^1.0.0":
+"@spacelephantlabs/vuepress-plugin-rocketchat-livechat@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@spacelephantlabs/vuepress-plugin-rocketchat-livechat/-/vuepress-plugin-rocketchat-livechat-1.0.0.tgz#55651a1eb8a9ae85666f6e7a472f488ef72b05c0"
   integrity sha512-1LzhSepnQNe6kE5jlgcTVoKLW2b6UsNIKWMlR4muiZ3x7JJG/HWX8Q2h3vgMFrq1Pqm07/OOh08QNC0371LoDw==
@@ -4192,7 +4192,7 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-highlight.js@^11.0.1:
+highlight.js@11.0.1:
   version "11.0.1"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.0.1.tgz#a78bafccd9aa297978799fe5eed9beb7ee1ef887"
   integrity sha512-EqYpWyTF2s8nMfttfBA2yLKPNoZCO33pLS4MnbXQ4hECf1TKujCt1Kq7QAdrio7roL4+CqsfjqwYj4tYgq0pJQ==
@@ -8424,7 +8424,7 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-tabs-component@^1.5.0:
+vue-tabs-component@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/vue-tabs-component/-/vue-tabs-component-1.5.0.tgz#9b2f02adbc9bb58395729d68c4906a795a20d728"
   integrity sha512-ld4p+hv49Fimw+zv/7GQqMhbjAHjpbWF3UiJtmMaSnvLKbsB1ysfs9dQH0SZ8NvdYpqqKay/VLIqR9yXgse1Sg==
@@ -8460,7 +8460,7 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-vuepress-plugin-container@^2.0.2, vuepress-plugin-container@^2.1.4:
+vuepress-plugin-container@2.1.5, vuepress-plugin-container@^2.0.2:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-container/-/vuepress-plugin-container-2.1.5.tgz#37fff05662fedbd63ffd3a5463b2592c7a7f3133"
   integrity sha512-TQrDX/v+WHOihj3jpilVnjXu9RcTm6m8tzljNJwYhxnJUW0WWQ0hFLcDTqTBwgKIFdEiSxVOmYE+bJX/sq46MA==
@@ -8468,19 +8468,19 @@ vuepress-plugin-container@^2.0.2, vuepress-plugin-container@^2.1.4:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-robots@^1.0.1:
+vuepress-plugin-robots@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-robots/-/vuepress-plugin-robots-1.0.1.tgz#65a714ed9de61893f02a743cdb5f29d42942a9d8"
   integrity sha512-WNZuxuiPKXEbDhFDDu4coKpJrnccmSoqRiVbANmUa1T0Ezw7txsInGH2QnwElws2rSVqda9E19iVzTg6vmU5XA==
   dependencies:
     generate-robotstxt "^7.1.0"
 
-vuepress-plugin-seo@^0.1.4:
+vuepress-plugin-seo@0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-seo/-/vuepress-plugin-seo-0.1.4.tgz#be8e5577491c1fc317a7ad4abe3ae51ff317be1e"
   integrity sha512-foNKrAAKihiC47bx0UXFzs/+BIFmnowTQsLVF/8pfsnsPDp8FXjkTGyjxyjOhbwj7ADPv32CdX3pEoYGnZ7OjA==
 
-vuepress-plugin-sitemap@^2.3.1:
+vuepress-plugin-sitemap@2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap/-/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
   integrity sha512-n+8lbukhrKrsI9H/EX0EBgkE1pn85LAQFvQ5dIvrZP4Kz6JxPOPPNTQmZMhahQV1tXbLZQCEN7A1WZH4x+arJQ==
@@ -8494,7 +8494,7 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-plugin-tabs@^0.3.0:
+vuepress-plugin-tabs@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-tabs/-/vuepress-plugin-tabs-0.3.0.tgz#e95fb98d3736af450a9baaf1a09b8677983ca8d8"
   integrity sha512-jooDlcMdBqhXgIaF1awFSaOTM56mleP6bbCiGxyQxTZexfvCfDvZhNLGpyXqMQA50ZmNGmvLrK82YYb63k1jfA==

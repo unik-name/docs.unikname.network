@@ -45,19 +45,19 @@
     "check-links": "yarn build && hyperlink -r -p -i docs/.vuepress/dist/index.html | tap-spot"
   },
   "devDependencies": {
-    "@goy/vuepress-plugin-svg-icons": "^4.2.3",
-    "@spacelephantlabs/vuepress-plugin-matomo-spacelephant": "^1.1.1",
-    "@spacelephantlabs/vuepress-plugin-rocketchat-livechat": "^1.0.0",
+    "@goy/vuepress-plugin-svg-icons": "4.2.3",
+    "@spacelephantlabs/vuepress-plugin-matomo-spacelephant": "1.1.1",
+    "@spacelephantlabs/vuepress-plugin-rocketchat-livechat": "1.0.0",
     "@vuepress/plugin-back-to-top": "^1.8.2",
-    "highlight.js": "^11.0.1",
+    "highlight.js": "11.0.1",
     "vue": "^2.6.14",
-    "vue-tabs-component": "^1.5.0",
+    "vue-tabs-component": "1.5.0",
     "vuepress": "^1.8.2",
-    "vuepress-plugin-container": "^2.1.4",
-    "vuepress-plugin-robots": "^1.0.1",
-    "vuepress-plugin-seo": "^0.1.4",
-    "vuepress-plugin-sitemap": "^2.3.1",
-    "vuepress-plugin-tabs": "^0.3.0"
+    "vuepress-plugin-container": "2.1.5",
+    "vuepress-plugin-robots": "1.0.1",
+    "vuepress-plugin-seo": "0.1.4",
+    "vuepress-plugin-sitemap": "2.3.1",
+    "vuepress-plugin-tabs": "0.3.0"
   },
   "engines": {
     "node": ">= 14"
