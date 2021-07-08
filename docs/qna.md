@@ -1,9 +1,9 @@
 ---
 home: false
-title: "Q&A uns.network"
+title: "Q&A unikname.network"
 ---
 
-# Q&A uns.network
+# Q&A unikname.network
 
 [[TOC]]
 
@@ -15,7 +15,7 @@ If you have any comments or requests, please open a topic on our [forum](https:/
 
 **A Decentralized Identifier, also called "DID", is a digital identifier that is persistent, secure, and globally resolvable.** Their creation does not require a central authority or intermediary. Every DID are cryptographically secured by private keys under the sole control of the owner.
 
-UNIK tokens are Decentralized Identifiers (DID), recorder within the <brand name="uns"/> blockchain.
+UNIKNAME tokens are Decentralized Identifiers (DID), recorder within the <brand name="uns"/> blockchain.
 
 ### What is a Human-Readable Identifier? 
 
@@ -41,7 +41,7 @@ Examples of @uniknames are `@bob`, `@bob#incomes`, `@alice#gift`, or `@John.Doe#
 ### What is Safe-Typo (c) ? 
 
 **Safe-Typo is an algorithm we've designed to build Human-Readable identifiers** that are communicable safely regarding typo-squatting risks and phishing hacks. 
-Users have the guarantee that their @unikname cannot be counterfeit: no errors due to confusing characters, accents, homonyms, separators or not, character inversion, international charset... Every @uniknames and so every UNIK tokens are built with SafeTypo. 
+Users have the guarantee that their @unikname cannot be counterfeit: no errors due to confusing characters, accents, homonyms, separators or not, character inversion, international charset... Every @uniknames and so every UNIKNAME tokens are built with SafeTypo. 
 
 ## Tokens
 
@@ -49,11 +49,11 @@ Users have the guarantee that their @unikname cannot be counterfeit: no errors d
 
 Both serve their own purpose.
 
-The UNS token is a technical token, used to secure the uns.network, and to reward Network Players for services provided to the Network. 
+The UNIK token is a technical token, used to secure the unikname.network, and to reward Network Players for services provided to the Network. 
 
-The UNIK token is inseparable from every @uniknames. Technically UNIK is a NFT (Non-Fongible-Token), not like the UNS Token. UNIK Token is the unique representation of a @unikname identifier within our <brand name="uns"/> public blockchain. It's the technical link with your registry of personal data.
+The UNIKNAME token is inseparable from every @uniknames. Technically UNIKNAME is a NFT (Non-Fongible-Token), not like the UNIK Token. UNIKNAME Token is the unique representation of a @unikname identifier within our <brand name="uns"/> public blockchain. It's the technical link with your registry of personal data.
 
-### What is a NFT and why is UNIK a Non-Fungible Token? 
+### What is a NFT and why is UNIKNAME a Non-Fungible Token? 
 
 NFT (Non Fungible Tokens) tokens have remarkable properties:
 
@@ -62,7 +62,7 @@ NFT (Non Fungible Tokens) tokens have remarkable properties:
 - They've their own governance and ownership rules, and enable handling it without a centralized entity. 
 - They're valuable on their own as a digital asset with intrinsic properties.
 
-As the owner of a @unikname, you own its inseparable UNIK non-fungible token.
+As the owner of a @unikname, you own its inseparable UNIKNAME non-fungible token.
 
 
 ### What is the difference between a fungible and a non-fungible token? 

@@ -1,6 +1,6 @@
 ---
 home: false
-title: "uns.network Security & Hack Protections"
+title: "unikname.network Security & Hack Protections"
 ---
 
 # Security & Hack Protections
@@ -17,7 +17,7 @@ The registry of non-fungible @unikname tokens consists of obfuscated strings. Wi
 
 ### Reverse lookup protection
 
-The registry is protected against reverse lookup. It is not possible to find a @unikname from a value within the registry (e.g. a blockchain public address) because user’s registry does not contain @unik names nor any reference to it, and because the user’s registry is stored off-chain. 
+The registry is protected against reverse lookup. It is not possible to find a @unikname from a value within the registry (e.g. a blockchain public address) because user’s registry does not contain @unik names (explicit value) nor any reference to it, and because the user’s registry is stored off-chain. 
 
 The key field of the database containing values is composed of obfuscated unik-addresses. This key is also protected against “rainbow-table” attacks. (see Unlisted Protection here above).
 

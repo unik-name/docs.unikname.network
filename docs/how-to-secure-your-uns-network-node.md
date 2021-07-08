@@ -1,7 +1,7 @@
 ---
 ---
 
-# How to Secure Your UNS.network Node?
+# How to Secure Your unikname.network Node?
 
 When running an <brand name="uns"/> node, especially a Network Player/Delegate Node, you should consider your server's security as your main priority.
 We assume you completed all the steps as [outlined in the previous guide](/setting-up-uns-node/).

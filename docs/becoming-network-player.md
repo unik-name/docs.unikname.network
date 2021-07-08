@@ -1,13 +1,13 @@
 ---
 home: false
-title: "Becoming uns.network Player"
+title: "Becoming unikname.network Player"
 ---
 
 # Becoming a Network Player
 
 [[toc]]
 
-## What is uns.network?
+## What is unikname.network?
 
 Established in 2018, <brand name="uns"/> is a DPoS blockchain and a protocol that has the mission of protecting user’s privacy and securing any web and mobile connections.
 <brand name="uns"/> is part of the "Powered By Ark" program.
@@ -47,10 +47,8 @@ And for those who have all this, welcome to the community!
 
 Now let's go creating your @unikname as an individual by going to the [next part of this documentation](./creating-your-unikname-individual).
 
-
 ::: tip organization @unikname
 
 If you have decided to create an `organization` @unikname, follow [this part of the documentation instead](./creating-unikname-organization).
 
 :::
-

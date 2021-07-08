@@ -6,7 +6,7 @@ sidebarDepth: 1
 
 # Network Service Providers <Badge text="Key Concept"/>
 
-<brand name="uns"/> provides services through specialized nodes called Service Providers Nodes. These nodes are like gateways and make the bridge between the decentralized network and the traditional web. They provide services to @unikname ID owners in exchange for UNS tokens. They are core in the <brand name="uns"/> tokenomics. 
+<brand name="uns"/> provides services through specialized nodes called Service Providers Nodes. These nodes are like gateways and make the bridge between the decentralized network and the traditional web. They provide services to @unikname ID owners in exchange for UNIK tokens. They are core in the <brand name="uns"/> tokenomics. 
 
 Network Service Providers Nodes are [operated under licence](#service-provider-node-operator-licence), granted by the community. 
 
@@ -16,7 +16,7 @@ Elementary services provided are called `Network UniT Services (NUTS)`. All avai
 
 Anybody can develop a new kind of Network Services Provider. The first ones have been designed by the <brand name="uns"/> team: 
 
-:globe_with_meridians: [NFT Factory](#nft-factory) provides services related to UNIK DID NFT tokens  
+:globe_with_meridians: [NFT Factory](#nft-factory) provides services related to UNIKNAME DID NFT tokens  
 :globe_with_meridians: [URL Checker](#url-checker) provides services to verify ownership of any web data  
 :globe_with_meridians: [AUTH Services](#auth-services) provides authentication services  
 :globe_with_meridians: [Storage Provider](#storage-provider) provides storage services
@@ -27,11 +27,11 @@ Anybody can develop a new kind of Network Services Provider. The first ones have
 
 ### :globe_with_meridians: NFT Factory
 
-**NFT Factory** provides services related to UNIK DID NFT tokens.
+**NFT Factory** provides services related to UNIKNAME DID NFT tokens.
 
-NFT-Factory is in charge of the UNIK NFT token Issuance, and to sign and certify mints and updates for every @unikname ID. 
+NFT-Factory is in charge of the UNIKNAME NFT token Issuance, and to sign and certify mints and updates for every @unikname ID. 
 
-Each UNIK DID (aka @unikname ID) operations are provided by a NFT Factory and must traded against UNS tokens.
+Each UNIKNAME DID (aka @unikname ID) operations are provided by a NFT Factory and must traded against UNIK tokens.
 
 **Registered NFT Factories:**  
 

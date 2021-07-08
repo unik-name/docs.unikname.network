@@ -1,9 +1,9 @@
 ---
 home: false
-Title: Understanding uns.network
+Title: Understanding unikname.network
 ---
 
-# Understanding uns.network
+# Understanding unikname.network
 
 Welcome <un id="@Bob"/> !
 
@@ -13,7 +13,7 @@ In the Internet-era, identifiers are everywhere. We share them by phone or we wr
 
 This blockchain is specialized in providing Decentralized ID (also called DID), and offer a good Distributed Public Key Infrastructure (also called DPKI) solution, the basis of the next generation of authentication protocols.
 
-The blockchain is fueled with its own native token, UNS, a protocol and utility token.
+The blockchain is fueled with its own native token, UNIK, a protocol and utility token.
 
 <brand name="uns"/> and its IDs are the backbone of the Unikname solutions : 
 - **`@unikname ID`:** Augmented pseudo under the sole control of its owner. @unikname IDs are self-sovereign and easy to remember multi-purpose IDs. They can replace email and password for fully confidential sign-up and log in, or used to control sharing of personal or business information over the web, and many more...
@@ -22,10 +22,6 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 - **`Unikname URL-Checker`:** the solution to store a public proof of ownership of a URL over the web, could be a domain name, an image, a social account or any file.
 
 <brand name="uns"/> has been designed to be used easily by everyone who needs to integrate self-sovereign identifiers in their software and applications, not only DAPP but also any traditional web platform. 
-
-:::tip What 'uns' means?
-**'uns'** is an acronym and an homonym, it stands for **U**niversal-**N**ame-**S**ystem and for **U**nik**N**ame-**S**ystem.
-:::
 
 ## Main Features
 
@@ -41,7 +37,7 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 
 ### :fire: User Rewarding System
 
-**:sparkles: <brand name="uns"/> UNS utility tokens are used to encourage users to maximize use of their @unikname ID** to make the internet more secure and more trustful.
+**:sparkles: <brand name="uns"/> UNIKNAME utility tokens are used to encourage users to maximize use of their @unikname ID** to make the internet more secure and more trustful.
 
 ### :fire: On-Chain / Off-Chain Control
 
@@ -57,8 +53,8 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 
 ## Main Specifications
 
-**:trophy: <brand name="uns"/> DIDs follow the Decentralized Identity Foundation standards.** Uns.network team is an active member of the DIF and contribute to the definition of tomorrow standards.
-[see DIF UNS DID Specifications](https://github.com/unik-name/did-method-spec/blob/main/did-uns/UNS-DID-Specification.md)
+**:trophy: <brand name="uns"/> DIDs follow the Decentralized Identity Foundation standards.** Unikname.network team is an active member of the DIF and contribute to the definition of tomorrow standards.
+[see DIF UNIKNAME DID Specifications](https://github.com/unik-name/did-method-spec/blob/main/did-uns/UNS-DID-Specification.md)
 
 **:trophy: <brand name="uns"/> DIDs are multilingual and protected against spoofing by SafeTypo© technology**. 14 UNICODE scripts are accepted, with many alphabets.
 
@@ -68,7 +64,7 @@ The blockchain is fueled with its own native token, UNS, a protocol and utility 
 * 10 Organizations – Committed in securing the web for businesses
 * 3 Network community players
 
-**:trophy: <brand name="uns"/> Supply of UNS utility token is dynamic and follows adoption.** UNS tokens are created when DIDs are created on the chain and when they become alive, this design makes the token less prone to speculation and more stable.
+**:trophy: <brand name="uns"/> Supply of UNIK utility token is dynamic and follows adoption.** UNIK tokens are created when DIDs are created on the chain and when they become alive, this design makes the token less prone to speculation and more stable.
 
 ## Key Benefits
 
@@ -93,7 +89,7 @@ We're maintaining 2 public networks, a live one and a test one.
 LIVENET is the main network (equivalent to _mainnet_ on other blockchains).
 Tokens are **valuable** and you can use them on a day to day basis for the long life.
 
-This network is live since may 2020 and you can access this network via the public [livenet explorer](https://explorer.uns.network/).
+This network is live since may 2020 and you can access this network via the public [livenet explorer](https://explorer.unikname.network/).
 
 ### SANDBOX
 
@@ -101,6 +97,6 @@ SANDBOX is the development network (equivalent to _testnet_ or _devnet_ on other
 
 It is used to test and discuss new features with community before making them available for all.
 Tokens are **valueless** (you can get them for free [from the faucet](/interacting-with-uns.html#sandbox-faucet).
-You can use them to test next features and your apps based on UNIK tokens. 
+You can use them to test next features and your apps based on UNIKNAME tokens. 
 
-You can access this network via the public [sandbox explorer](https://sandbox.explorer.uns.network/).
+You can access this network via the public [sandbox explorer](https://sandbox.explorer.unikname.network/).

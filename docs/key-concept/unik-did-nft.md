@@ -1,10 +1,10 @@
 ---
 home: false
-Title: "UNIK IDentifers"
+Title: "UNIKNAME IDentifers"
 sidebarDepth: 0
 ---
 
-# UNIK Identifiers <Badge text="Key Concept"/>
+# UNIKNAME Identifiers <Badge text="Key Concept"/>
 
 The main purpose of <brand name="uns"/> is to issue, manage and secure Decentralized IDentifiers.
 Here we explain what are Decentralized IDentifiers in general and what are the specificities of the <brand name="uns"/> ones.
@@ -42,7 +42,7 @@ Any decentralized IDentifiers have remarkable properties which make them the leg
 - DID lifetime is everlasting
 - DID can be anonymous, and his use can be untraceable in a P2P context
 
-**:heavy_check_mark:** <brand name="uns"/> UNIK DIDs have all these remarkable properties.
+**:heavy_check_mark:** <brand name="uns"/> UNIKNAME DIDs have all these remarkable properties.
 
 ## DID only exist in a Decentralized Network
 
@@ -62,27 +62,27 @@ A Decentralized Network...
 
 **:heavy_check_mark:** <brand name="uns"/> meets all these criteria, making it the ideal Decentralized Network for DIDs
 
-## Uns.network Decentralized Identifier: UNIK DID
+## unikname.network Decentralized Identifier: UNIKNAME DID
 
-<brand name="uns"/> Decentralized Identifiers are called `UNIK DID`. 
+<brand name="uns"/> Decentralized Identifiers are called `UNIKNAME DID`. 
 
-Every UNIK DID has a human-readable form called a `@unikname ID`.
+Every UNIKNAME DID has a human-readable form called a `@unikname ID`.
 
-Every UNIK DID is a Non-Fungible Token (NFT), represented by is a 64 characters unique string hash, called `UNIK token`, minted into the <brand name="uns"/> blockchain.
+Every UNIKNAME DID is a Non-Fungible Token (NFT), represented by is a 64 characters unique string hash, called `UNIKNAME token`, minted into the <brand name="uns"/> blockchain.
 
 :::tip Example
 
-The @unikname ID <un id="@jack-Sparrow"/> is represented in the <brand name="uns"/> by the UNIK Token hash code `10e7052bbc0b914d4d9bb88db916a366258569b7e1b1c9e5c47cef2fc37deedb`.
+The @unikname ID <un id="@jack-Sparrow"/> is represented in the <brand name="uns"/> by the UNIKNAME Token hash code `10e7052bbc0b914d4d9bb88db916a366258569b7e1b1c9e5c47cef2fc37deedb`.
 :::
 
-## What makes UNIK DID so unique?
+## What makes UNIKNAME DID so unique?
 
-**:heavy_check_mark:** DID UNIK is a **pseudonymous Identifer**, it is **not a proof of digital identity**.  
-**:heavy_check_mark:** DID UNIK is Human-Readable, easy to remember and **protected against typo-squatting**  
-**:heavy_check_mark:** DID UNIK **belong to namespaces**, called types, defining their purpose.  
-**:heavy_check_mark:** DID UNIK have **configurable governance rules** specific to their type.  
-**:heavy_check_mark:** DID UNIK embed **exclusive features for authentication**  
-**:heavy_check_mark:** DID UNIK have **advanced data registries** (on-chain, off-chain, encrypted, badges…)
+**:heavy_check_mark:** DID UNIKNAME is a **pseudonymous Identifer**, it is **not a proof of digital identity**.  
+**:heavy_check_mark:** DID UNIKNAME is Human-Readable, easy to remember and **protected against typo-squatting**  
+**:heavy_check_mark:** DID UNIKNAME **belong to namespaces**, called types, defining their purpose.  
+**:heavy_check_mark:** DID UNIKNAME have **configurable governance rules** specific to their type.  
+**:heavy_check_mark:** DID UNIKNAME embed **exclusive features for authentication**  
+**:heavy_check_mark:** DID UNIKNAME have **advanced data registries** (on-chain, off-chain, encrypted, badges…)
 
 ## SafeTypo© technology
 
@@ -110,9 +110,9 @@ The identifier built upon the @unikname string don't care about upper case/lower
 This is the same @unikname ID with a single owner.
 Once minted on the blockchain, users can use any equivalent typo to share and resolve their @unikname ID.
 
-## UNIK DID resolver
+## UNIKNAME DID resolver
 
-UNIK DID can be resolved via the [blockchain explorer](https://explorer.uns.network/) or with the dedicated [@unikname ID resolver](https://resolver.uns.network/) 
+UNIKNAME DID can be resolved via the [blockchain explorer](https://explorer.unikname.network/) or with the dedicated [@unikname ID resolver](https://resolver.unikname.network/) 
 
 The resolver works with a @unikname ID string matching a predefined format:
 

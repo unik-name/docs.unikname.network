@@ -1,28 +1,28 @@
 ---
 home: false
-title: "Type of UNIK ID"
+title: "Type of UNIKNAME"
 ---
 
-# Type of UNIK ID <Badge text="Key Concept"/>
+# Type of UNIKNAME <Badge text="Key Concept"/>
 
-UNIK DID are minted with a type according to their purpose
+UNIKNAME DID are minted with a type according to their purpose
 - **type 1 &rightarrow; Individual** to be used as a universal identifier for individuals.
 - **type 2 &rightarrow; Organization** to be used as an authentication certificate for organizations and businesses
 - **type 3 &rightarrow; Network** to be used as a global  identifier to share network configuration data
 
-The type determines most of the capabilities of every UNIK ID and the related @unikname ID. Rules, Features, Costs of transactions, Rewarding... comes from type of UNIK.
+The type determines most of the capabilities of every UNIKNAME and the related @unikname ID. Rules, Features, Costs of transactions, Rewarding... comes from type of UNIKNAME.
 
 The type is like a namespace for @unikname ID. An ID may exist within several types, in this case their on-chain fingerprint and their passphrase are totally different. 
 
 :::tip Under the hood
-The @unikname type is a genesis property of the UNIK NFT. The type is minted simultaneously with the UNIK Token, and it's an immutable property.
+The @unikname type is a genesis property of the UNIKNAME NFT. The type is minted simultaneously with the UNIKNAME Token, and it's an immutable property.
 :::
 
 ## Type 'Individual'
 
 ![individual](./images/unik-individual-icon-dark.png)
 
-UNIK ID of type `Individual` is intended to be controlled by an individual and represents a pseudo or a nickname.
+UNIKNAME of type `Individual` is intended to be controlled by an individual and represents a pseudo or a nickname.
 
 It is acquired one time for all, and is hidden (obfuscated) by default.
 
@@ -45,7 +45,7 @@ A @unikname ID of type `individual` looks like an email address, but decentraliz
 
 ![organization](./images/unik-organization-icon-dark.png)
 
-UNIK ID of type `Organization` is intended for organizations and businesses wanting to implement <brand name="unc"/> authentication solution.
+UNIKNAME of type `Organization` is intended for organizations and businesses wanting to implement <brand name="unc"/> authentication solution.
 
 It identifies publicly the organization on the network, and it is used for build the trust certificate used by the authentication protocol.
 
@@ -67,7 +67,7 @@ A @unikname ID of type `organization` looks like a domain name, but decentralize
 
 ![network](./images/unik-network-icon-dark.png)
 
-UNIK ID of type `Network` is intended for global identifiers playing a role one the network but without authentication capabilities.
+UNIKNAME of type `Network` is intended for global identifiers playing a role one the network but without authentication capabilities.
 
 **Use cases**
 - Identify Network Service Providers

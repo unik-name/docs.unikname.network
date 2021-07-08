@@ -16,7 +16,7 @@ You want to become a delegate with an individual @unikname id, so you need to cr
 
 You can create @unikname id with a minium of 15 characters for free.
 
-If you want to create special @unikname id with less than 15 charaters, it requires a coupon. and if you have one, you can continue. 
+If you want to create special @unikname id with less than 15 characters, it requires a coupon. and if you have one, you can continue. 
 
 Otherwise, contact us on [contact@unikname.com](mailto:contact@unikname.com) to request one.
 

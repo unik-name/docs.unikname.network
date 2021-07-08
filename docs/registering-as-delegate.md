@@ -6,7 +6,14 @@ home: false
 
 [[toc]]
 
-## Installing the uns.network CLI
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
+
+## Installing the unikname.network CLI
 
 The <brand name="uns"/> Command Line Interface (CLI) makes it easy to manage your @unikname and Unikname apps directly from the terminal.
 It’s an essential part of using <brand name="uns"/>.
@@ -48,7 +55,7 @@ You are now ready for the next step !
 ## Registering as a delegate
 
 Congratulations! Now that you have:
-* a cryptoaccount with some UNS
+* a cryptoaccount with some UNIK
 * a @unikname linked to your cryptoaccount
 
 Now, you can register as a delegate!
@@ -79,7 +86,7 @@ Replace `hello-world` by your own @unikname id.
 
 ## Checking your delegate status in the Explorer
 
-You can check on [explorer](https://explorer.uns.network/delegate-monitor) that your @unikname is in the delegate list.
+You can check on [explorer](https://explorer.unikname.network/delegate-monitor) that your @unikname is in the delegate list.
 To start forging blocks, you'll need to set up a node.
 
-Let's now configure your UNS node.
+Let's now configure your unikname.network node.

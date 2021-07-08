@@ -2,13 +2,20 @@
 sidebarDepth: 3
 ---
 
-# Using uns.network with the CLI
+# Using unikname.network with the CLI
 
-<brand name="uns"/> provides an interactive command line interface to create and manage your crypto accounts, your UNS protocol tokens and your UNIK NFT tokens.
+<brand name="uns"/> provides an interactive command line interface to create and manage your crypto accounts, your UNIK protocol tokens and your UNIKNAME NFT tokens.
 
 The <brand name="uns"/> Command Line Interface is expected to work on recent Linux, MacOS or Windows 10 installations.
 
 [[toc]]
+
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
 
 ## Download and installation
 
@@ -22,11 +29,11 @@ You can also [install from NPM/Yarn](cli-alternate-installation.html) for all pl
 
 ### Staying up to date
 
-The uns.network CLI keeps itself up to date automatically, unless you used npm/yarn install.
+The unikname.network CLI keeps itself up to date automatically, unless you used npm/yarn install.
 
-When you run a uns.network command, a background process checks for the latest available version of the CLI. If a new version is found, it’s downloaded and your CLI is updated locally.
+When you run a unikname.network command, a background process checks for the latest available version of the CLI. If a new version is found, it’s downloaded and your CLI is updated locally.
 
-You can also force updating of your uns.network CLI with the [`update` command](#update).
+You can also force updating of your unikname.network CLI with the [`update` command](#update).
 
 When installed via npm/yarn, please remove it before installing it again (`npm remove -g @uns/cli` or `yarn global remove @uns/cli`).
 
@@ -65,7 +72,7 @@ For every new data added in the chain, you may wait for the write operation to b
 
 - `--await-confirmation` (optional): Maximum number of blocks to wait to get one confirmation of the transaction. Default to 3. 0 for immediate return.
 
-- `--passphrase` : The passphrase of the owner of UNIK. If you do not enter a passphrase you will be prompted for it.
+- `--passphrase` : The passphrase of the owner of UNIKNAME. If you do not enter a passphrase you will be prompted for it.
 
 - `--second-passphrase`: The second crypto account passphrase. If you have [set up a second passphrase on your crypto-account](#cryptoaccount-set-second-passphrase), you can specify it with this flag.
 
@@ -121,8 +128,8 @@ The <brand name="uns"/> CLI doesn't support NTLM proxies. If you use an NTLM or 
 
 ### Autocompletion for Bash and Zsh
 
-UNS CLI Autocomplete helps you complete command and flag names when you press the tab key.
-CLI Autocomplete completes all of the commands in the UNS CLI and will automatically support new commands as they are added.
+UNIKNAME CLI Autocomplete helps you complete command and flag names when you press the tab key.
+CLI Autocomplete completes all of the commands in the UNIKNAME CLI and will automatically support new commands as they are added.
 You can also complete values for some flags and args—including apps, pipelines and config vars.
 
 #### Installing Autocomplete
@@ -132,7 +139,7 @@ $ uns autocomplete
 ```
 
 :::warning
-For CLI Autocomplete to work correctly, you must be on the latest version of the UNS CLI.
+For CLI Autocomplete to work correctly, you must be on the latest version of the UNIKNAME CLI.
 :::
 
 The specific instructions you’ll receive depend on whether you are using bash or zsh. After you finish setup, Autocomplete is ready to use with the tab key.
@@ -246,7 +253,7 @@ No network cost.
 
 #### Introduction
 
-This command allows you to update the uns.network CLI.
+This command allows you to update the unikname.network CLI.
 
 #### Usage
 
@@ -317,7 +324,7 @@ DID must be surrounded by double quotes (e.g. `"@bob"`)
 
 #### Parameters
 
-- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIKNAME required to return the value. Default value is 3
 - `-f --format` (optional): Specify how to format the output [json|yaml|raw]. Default to JSON.
 
 Some [global parameters](#global-parameters) may apply to this command.
@@ -352,17 +359,17 @@ No network cost.
 ### `send`
 
 #### Introduction
-Send owned UNS protocol tokens to another crypto account.
+Send owned unikname.network protocol tokens to another crypto account.
 
 #### Arguments
-- `AMOUNT` (required):  The quantity of UNS tokens to send to the recipient.
+- `AMOUNT` (required):  The quantity of UNIK tokens to send to the recipient.
 - `TARGET` (required):  The recipient address, public key, @unikname or unik ID with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
 - `--no-check`: Allow sending tokens to an address that do not exists on chain yet.
 - `--fees-included`: Specify that the fees must be deducted from the amount. By default the fees are paid on top.
-- `--fee`: Specify a dynamic fee in UNSat. Defaults to 100000000 satoUNS = 1 UNS.
+- `--fee`: Specify a dynamic fee in satoUNIK. Defaults to 100000000 satoUNIK = 1 UNIK.
 - `--text`: Publicly motivate your tokens sending. This reason will be written on chain ​​forever.
 - `--[no]-text-check`: Check if user knows that this text will be readable publicly forever. (--no-text-check to bypass this check).
 
@@ -394,7 +401,7 @@ Enter your crypto account passphrase (12 words phrase): ************************
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost : none
 
@@ -456,7 +463,7 @@ Read current data of a specified crypto account, ic. balance
 
 #### Parameters
 
-- `--listunik` (optional): list UNIK tokens owned by the crypto account, if any.
+- `--listunik` (optional): list UNIKNAME tokens owned by the crypto account, if any.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 - `--chainmeta` (optional): Retrieve chain meta datas
 
@@ -476,7 +483,7 @@ $ uns cryptoaccount:read @unikname [--listunik]
 ```
 #### Example
 
-Display crypto account information and list of UNIK token owned by this crypto account
+Display crypto account information and list of UNIKNAME token owned by this crypto account
 ```bash
 $ uns cryptoaccount:read UB2cknUqNNoJgQ34nbnsJwsZi5h8TNsYKe --listunik --format yaml
 ```
@@ -534,22 +541,22 @@ $ uns cryptoaccount:set-second-passphrase
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost: none
 
 ### `unik:create` <Badge text="updated 4.0.0"/>
 
 #### Introduction
-With <brand name="uns"/> CLI you can create your own UNIK token using `unik:create` command.
+With <brand name="uns"/> CLI you can create your own UNIKNAME token using `unik:create` command.
 
 #### Parameters
-- `--explicitValue` (required): Chosen explicit value of your UNIK (255 characters max)
+- `--explicitValue` (required): Chosen explicit value of your UNIKNAME (255 characters max)
 - `--type` (required): Type of your token [individual/organization/network]
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
-- `--fee`: Transaction fee in satoUNS. Defaults to `0`.
-- `--unik-voucher`: Use a UNIK voucher to create this UNIK
-- `--coupon`: Use a COUPON to create this UNIK <Badge text="4.0.0"/>
+- `--fee`: Transaction fee in satoUNIK. Defaults to `0`.
+- `--unik-voucher`: Use a UNIKNAME voucher to create this UNIKNAME
+- `--coupon`: Use a COUPON to create this UNIKNAME <Badge text="4.0.0"/>
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -561,9 +568,9 @@ $ uns unik:create --explicitValue {explicitValue} --type [individual|organizatio
 
 #### Examples
 
-##### Create a UNIK for the individual @unikname `bob`
+##### Create a UNIKNAME for the individual @unikname `bob`
 
-As example, if you want to create UNIK `individual` token `bob`:
+As example, if you want to create UNIKNAME `individual` token `bob`:
 ```bash
 $ uns unik:create --explicitValue bob --type individual --verbose
 ```
@@ -580,13 +587,13 @@ Your passphrase will be hidden, no trace in your terminal history:
 Enter your crypto account passphrase (12 words phrase): ********************************************************************************
 ```
 
-##### Create a UNIK for the organization @unikname `MyCompany`
+##### Create a UNIKNAME for the organization @unikname `MyCompany`
 
 ```bash
 $ unik:create --explicitValue "MyCompany" --type organization
 ```
 
-#### Create a UNIK for the organization @unikname `MyCompany` with a UNIK voucher
+#### Create a UNIKNAME for the organization @unikname `MyCompany` with a UNIKNAME voucher
 
 ```bash
 $ unik:create --explicitValue "MyCompany" --type organization --unik-voucher "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NksifQ.eyJpYXQiOjE1OTEyOTk5OTEsImV4cCI6MTU5MTMwMTc5MSwianRpIjoiMU9aVmYzRnlueC1lY3VrR2d6TUJCIiwiYXVkIjoiZGlkOnVuaWs6dW5pZDpmYmZiZTdkOWU4YzAwNWYxYTk5MzdkOWZkMTdjNGVmN2RhMmZmODAzN2E3MWU2Y2I3ODQ3YjMwMmVkYTRkMDhWs6dW5pZDo1YWViNzU1NzM5ZGRhMDM4MDk1MzI4OTY2Y2M3Mzc1YzNlZGM4NWM0NTVlNTY2NTlhZjEwNjg4ZDIwZWFlYzk4IiwiYXV0aG9yaXphdGlvbnMiOnsic2VydmljZXMiOlsxMl19LCJpc3MiOiJkaWQ6dW5pazp1bmlkOmZiZmJlN2Q5ZThjMDA1ZjFhOTkzN2Q5ZmQxN2M0ZWY3ZGEyZmY4MDM3YTcxZTZjYjc4NDdiMzAyZWRhNGQwOGEifQ.3wkJYO11wQXZtaOp_r3CTxXR77prpqsFcZvFdjOGQF3rjp7toR2vTNLi6mxwN8EUndxM3pSEKLg-W2maSInvww"
@@ -594,7 +601,7 @@ $ unik:create --explicitValue "MyCompany" --type organization --unik-voucher "ey
 
 #### Output
 
-If the creation succeed <brand name="uns"/> CLI prompts your UNIK token ID and links to see token and transaction in the <brand name="uns"/> explorer.
+If the creation succeed <brand name="uns"/> CLI prompts your UNIKNAME token ID and links to see token and transaction in the <brand name="uns"/> explorer.
 
 ```
 Computing UNIK fingerprint... done
@@ -615,12 +622,12 @@ See transaction in explorer: https://explorer.uns.network/#/transaction/a73f4269
 
 #### Network Cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 ### `unik:read`
 
 #### Introduction
-Read current data of a specified UNIK token
+Read current data of a specified UNIKNAME token
 
 #### Parameters
 
@@ -642,7 +649,7 @@ $ uns unik:read {TARGET}
 
 #### Example
 
-Display UNIK informations
+Display UNIKNAME informations
 ```bash
 $ uns unik:read @bob -f yaml
 ```
@@ -677,14 +684,14 @@ No network cost.
 ### `unik:disclose`
 
 #### Introduction
-Make public one or more explicit values of your UNIK Name. This value will appear in "explicitValue" property of your UNIK. Duplicate explicit values will be removed.
+Make public one or more explicit values of your UNIKNAME. This value will appear in "explicitValue" property of your UNIKNAME. Duplicate explicit values will be removed.
 In case of several explicitValues disclosed, the first value of "explicitValues" property will be used as default.
 If a @unikname is provided, --explicitValue flag can be omitted, the @unikname will be taken as explicit value.
 
 #### Parameters
 
-- `-e, --explicitValue`: Explicit values to disclose. Must match the UNIK Name of the token.
-- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `-e, --explicitValue`: Explicit values to disclose. Must match the UNIKNAME Name of the token.
+- `--fee` : Specify a dynamic fee in satoUNIK. Defaults to `100000000 satoUNIK = 1 UNIK`.
 - `-f, --format` `{json|yaml, json}`: Specify how to format the output [json|yaml]. Default to Json.
 - `--no-check`: Allow @unikname disclose without user confirmation.
 
@@ -721,21 +728,21 @@ data:
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost: none
 
 ### `unik:is-disclosed`
 
 #### Introduction
-Check if UNIK has one or more disclosed explicit value.
+Check if UNIKNAME has one or more disclosed explicit value.
 
 #### Arguments
 - `TARGET` (required): @unikname token ID or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier). See examples below for more information.
 
 #### Parameters
 
-- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIKNAME required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
 - `-f, --format` `{json|yaml|raw, json}`: Specify how to format the output [json|yaml|raw]. Default to Json.
 
@@ -751,7 +758,7 @@ $ uns unik:is-disclosed {TARGET}
 
 ##### Success example
 
-Check UNIK explicit value disclose status
+Check UNIKNAME explicit value disclose status
 ```bash
 $ uns unik:is-disclosed @bob
 ```
@@ -805,7 +812,7 @@ confirmations: 833
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 ### `unik:activation` <Badge text="added 4.10.0" />
 
@@ -848,12 +855,12 @@ confirmations: 833
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 ### `properties:set`
 
 #### Introduction
-Set (add or update) properties of UNIK token.
+Set (add or update) properties of UNIKNAME token.
 
 Users properties keys must start with `usr/`. Keys without this prefix are reserved for internal properties.
 
@@ -861,9 +868,9 @@ You cannot register more than 3 user properties by default.
 
 #### Parameters
 
-- `-k --key` (required): Key of property to set as UNIK property. See [allowed property key format](/cheatsheet.html#property-keys-of-unik)
-- `-V --value` (required): Value of property to set as UNIK property. See [allowed property value format](/cheatsheet.html#property-values-of-unik)
-- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `-k --key` (required): Key of property to set as UNIKNAME property. See [allowed property key format](/cheatsheet.html#property-keys-of-unikname)
+- `-V --value` (required): Value of property to set as UNIKNAME property. See [allowed property value format](/cheatsheet.html#property-values-of-unikname)
+- `--fee` : Specify a dynamic fee in satoUNIK. Defaults to `100000000 satoUNIK = 1 UNIK`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
 
@@ -880,7 +887,7 @@ $ uns properties:set {TARGET} --key "{key1}" --value "{value1}" --key "{key2}" -
 
 #### Example
 
-Add property `key/value` to UNIK `@bob`
+Add property `key/value` to UNIKNAME `@bob`
 
 ```bash
 $ uns properties:set @bob --key "key" --value "value" -f yaml
@@ -895,21 +902,21 @@ confirmations:  1
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost: none.
 
 ### `properties:unset`
 
 #### Introduction
-Unset properties of UNIK token.
+Unset properties of UNIKNAME token.
 
 The only properties that can be unset are those whose key starts with `usr/`.
 
 #### Parameters
 
 - `-k --propertyKey`, Key of the property to unset. (multiple occurrences)
-- `--fee` : Specify a dynamic fee in satoUNS. Defaults to `100000000 satoUNS = 1 UNS`.
+- `--fee` : Specify a dynamic fee in satoUNIK. Defaults to `100000000 satoUNIK = 1 UNIK`.
 - `-f --format` (optional): Specify how to format the output [json|yaml]. Default to Json.
 
 Some [global parameters](#global-parameters) may apply to this command.
@@ -925,7 +932,7 @@ $ uns properties:unset {TARGET} -k prop1 -k prop2
 
 #### Example
 
-Remove property `key/value` of UNIK `@bob`
+Remove property `key/value` of UNIKNAME `@bob`
 ```bash
 $ uns properties:unset @bob -k key -f yaml
 
@@ -939,18 +946,18 @@ confirmations:  1
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost: none.
 
 ### `properties:list`
 
 #### Introduction
-Get properties of UNIK token. The command will fail if the minimum number of confirmations has not been reached yet.
+Get properties of UNIKNAME token. The command will fail if the minimum number of confirmations has not been reached yet.
 
 #### Parameters
 
-- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIKNAME required to return the value. Default value is 3
 - `-f --format` (optional): Specify how to format the output [json|yaml|table|raw]. Default to Json.
 
 
@@ -969,7 +976,7 @@ uns properties:list {TARGET}
 
 ##### Success example
 
-Display UNIK properties
+Display UNIKNAME properties
 ```bash
 $ uns properties:list @bob
 ```
@@ -986,14 +993,14 @@ confirmations: 217
 
 ##### Failing example
 
-Display UNIK properties with at least 300 confirmations since the last UNIK token update
+Display UNIKNAME properties with at least 300 confirmations since the last UNIKNAME token update
 ```bash
 uns properties:list @bob --confirmed 300
 ```
 
 ##### Failing output example
 
-CLI throws error because of the actual number of confirmations of the last transaction that have updated UNIK token is lower than expected.
+CLI throws error because of the actual number of confirmations of the last transaction that have updated UNIKNAME token is lower than expected.
 ```bash
 $ uns properties:list @bob --confirmed 300
 ›   Error: [properties:list] Not enough confirmations (expected: 300, actual: 217)
@@ -1006,12 +1013,12 @@ No network cost.
 ### `properties:get`
 
 #### Introduction
-Get the value of a specific property of a UNIK token.
+Get the value of a specific property of a UNIKNAME token.
 
 #### Parameters
 
-- `-k, --propertyKey` (required): the key of the property for which we query the value. See [allowed property key format](/cheatsheet.html#property-keys-of-unik)
-- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIK required to return the value. Default value is 3.
+- `-k, --propertyKey` (required): the key of the property for which we query the value. See [allowed property key format](/cheatsheet.html#property-keys-of-unikname)
+- `--confirmed` (optional): Minimum number of confirmation since the last update of the UNIKNAME required to return the value. Default value is 3.
 - `-m, --chainmeta` (optional): Output chain meta data related to the data itself.
 - `-f, --format` `{json|yaml|raw, json}`: Specify how to format the output [json|yaml|raw]. Default to Json.
 
@@ -1030,7 +1037,7 @@ $ uns properties:get {TARGET} -k {propertyKey}
 
 ##### Success example
 
-Display UNIK property phone
+Display UNIKNAME property phone
 ```bash
 $ uns properties:get @bob -k "usr/phone"
 ```
@@ -1052,7 +1059,7 @@ No network cost.
 ### `properties:register` <Badge text="added 4.2.0"/>
 
 #### Introduction
-Initialize ownership verification process of a unik property (for example a domain name).
+Initialize ownership verification process of a UNIKNAME property (for example a domain name).
 This command generates a verification package `uns-verification.txt` which will be used in the next steps of the verification process with the [`properties:verify`](#properties-verify) command.
 
 **This package expires after 72h**.
@@ -1060,8 +1067,8 @@ This command generates a verification package `uns-verification.txt` which will 
 #### Parameters
 
 
-- `-V, --value` (required): Value of the Unik property to verify.
-- `-t, --type` {url}: type of unik property to register. Default to "url".
+- `-V, --value` (required): Value of the UNIKNAME property to verify.
+- `-t, --type` {url}: type of UNIKNAME property to register. Default to "url".
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -1107,7 +1114,7 @@ Prior using html and file channels, a verification package should be generated u
 #### Parameters
 
 - `-c, --url-channel` (required) `{html, file, whitelist}` Channel to use for verification
-- `--url-name` A name you can choose to identify this verified URL. It must be `a-zA-Z0-9_-` chars (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.uns.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0))
+- `--url-name` A name you can choose to identify this verified URL. It must be `a-zA-Z0-9_-` chars (as an example, see [the verification `Verified/URL/log-in` of the @unikname `@organization:unikname`](https://explorer.unikname.network/uniks/f6018b8dcddbc9f8675577419c3493ffbc961876062655be43fce108e52408c0))
 
 Some [global parameters](#global-parameters) may apply to this command.
 
@@ -1126,7 +1133,7 @@ Detailed usages of this command are [described in the Unikname Help Center](http
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost: none.
 
@@ -1134,8 +1141,8 @@ Service Provider cost: none.
 
 #### Introduction
 
-This command allows you to vote for a delegate with his @unikname to get him elected.
-Votes are restricted to the same UNIK type (individual, organization) delegate as yours.
+This command allows you to vote for a delegate with his UNIKNAME to get him elected.
+Votes are restricted to the same UNIKNAME type (individual, organization) delegate as yours.
 Voter must have the LifeCycle status "Alive" or "Everlasting".
 
 #### Arguments
@@ -1173,7 +1180,7 @@ $ uns delegate:vote "@organization:MyCompany"
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost: none.
 
@@ -1218,7 +1225,7 @@ $ uns delegate:unvote "@organization:MyCompany"
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost: none.
 
@@ -1226,9 +1233,9 @@ Service Provider cost: none.
 
 #### Introduction
 
-This command allows you to register a UNIK as delegate with your Unikname.
-Before registering you must have publicly disclosed your Unikname (see [unik:disclose command](#unik-disclose))
-To apply as delegate, the Crypto-account of the Unik candidate is limited to a single Unik (i.e delegate user should own a maximum of 1 Unik in crypto-account).
+This command allows you to register a UNIKNAME as delegate.
+Before registering you must have publicly disclosed your UNIKNAME (see [unik:disclose command](#unik-disclose))
+To apply as delegate, the Crypto-account of the UNIKNAME candidate is limited to a single UNIKNAME (i.e delegate user should own a maximum of 1 UNIKNAME in crypto-account).
 
 #### Arguments
 - `TARGET` (required): the unikid or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier) to register as delegate. See examples below for more information.
@@ -1259,7 +1266,7 @@ $ uns delegate:register "@organization:MyCompany"
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost: none.
 
@@ -1267,7 +1274,7 @@ Service Provider cost: none.
 
 #### Introduction
 
-This command allows you to resign delegate status of your UNIK.
+This command allows you to resign delegate status of your UNIKNAME.
 
 #### Arguments
 - `TARGET` (required): the unikid or the @unikname with [the format of a DID](/cheatsheet.html#did-decentralized-identifier) to unregister as delegate. See examples below for more information.
@@ -1292,7 +1299,7 @@ $ uns delegate:resign "@Bob"
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.
 
 Service Provider cost: none.
 
@@ -1300,8 +1307,8 @@ Service Provider cost: none.
 
 #### Introduction
 
-This command allows you to claim following badges for your UNIK:
-- Pioneer: "Innovator" before 1500 UNIKs or "Early adopter" till 150.000 UNIKs on chain when claiming the badge.
+This command allows you to claim following badges for your UNIKNAME:
+- Pioneer: "Innovator" before 1500 UNIKNAMEs or "Early adopter" till 150.000 UNIKNAMEs on chain when claiming the badge.
 
 #### Parameters
 
@@ -1329,4 +1336,4 @@ $ uns badges:claim "@Bob" -b pioneer
 
 #### Network cost
 
-Network fees: 1 UNS by default. Can be adjusted with `--fee` parameter.
+Network fees: 1 UNIK by default. Can be adjusted with `--fee` parameter.

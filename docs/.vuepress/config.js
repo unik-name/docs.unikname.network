@@ -5,16 +5,16 @@ function customSlugifyToHandleBadges(str) {
   return vuePressSlugify(str.replace(/<Badge[^>]*\/>/, ""));
 }
 
-const DOMAIN = "docs.uns.network";
+const DOMAIN = "docs.unikname.network";
 const HOSTNAME = `https://${DOMAIN}`;
 
 module.exports = {
-  title: "The uns.network Player Hub",
-  title2: "uns.network Docs (Universal-Name-System)",
+  title: "unikname.network documentations",
+  title2: "unikname.network docs",
   description:
-    "Comprehensive guides and documentation to help you start working with the uns.network blockchain and protocol as quickly as possible. Let's go!",
+    "Comprehensive guides and documentation to help you start working with the unikname.network blockchain and protocol as quickly as possible. Let's go!",
   description2:
-    "Official documentation for the uns.network blockchain and protocol (Universal-Name-System)",
+    "Official documentation for the unikname.network blockchain and protocol",
   plugins: {
     sitemap: {
       hostname: HOSTNAME,
@@ -46,7 +46,7 @@ module.exports = {
       author: (_, $site) => {
         return {
           name: $site.themeConfig.author,
-          twitter: "@Uns_Network",
+          twitter: "@UniknameNetwork",
         };
       },
       image: ($page, $site) =>
@@ -86,15 +86,18 @@ module.exports = {
     searchMaxSuggestions: 10,
     nav: [
       { text: "Get my @unikname ID", link: "https://my.unikname.app" },
-      { text: "UNS Home", link: "https://uns.network" },
-      { text: "UNS Explorer", link: "https://explorer.uns.network" },
+      { text: "Unikname.network Home", link: "https://unikname.network" },
+      {
+        text: "Unikname.network Explorer",
+        link: "https://explorer.unikname.network",
+      },
     ],
     sidebar: [
       "/",
       {
         title: "Introduction",
         children: [
-          ["./introduction", "Understanding uns.network"],
+          ["./introduction", "Understanding unikname.network"],
           ["./tokens", "The Tokens"],
           ["./getting-started", "Getting Started"],
         ],
@@ -105,11 +108,11 @@ module.exports = {
         children: [
           ["/key-concept/", "Key Concept Summary"],
           ["/key-concept/cryptography-overview", "Cryptography Overview"],
-          ["/key-concept/unik-did-nft", "UNIK IDentifiers"],
-          ["/key-concept/unik-type", "Type of UNIK"],
-          ["/key-concept/unik-pattern", "Pattern of UNIK"],
-          ["/key-concept/unik-lifecycle", "Lifecycle of UNIK"],
-          ["/key-concept/unik-property", "Properties of UNIK"],
+          ["/key-concept/unik-did-nft", "UNIKNAME IDentifiers"],
+          ["/key-concept/unik-type", "Type of UNIKNAME"],
+          ["/key-concept/unik-pattern", "Pattern of UNIKNAME"],
+          ["/key-concept/unik-lifecycle", "Lifecycle of UNIKNAME"],
+          ["/key-concept/unik-property", "Properties of UNIKNAME"],
           ["/key-concept/unik-badge", "Badges"],
           //["/key-concept/nft-coupon", "Coupons"],
           ["/key-concept/service-provider", "Network Service Provider"],
@@ -118,7 +121,7 @@ module.exports = {
         ],
       },
       {
-        title: "Using the uns.network",
+        title: "Using the unikname.network",
         sidebarDepth: 0,
         children: [
           ["./interacting-with-uns", "Introduction"],

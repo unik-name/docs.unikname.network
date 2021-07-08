@@ -20,6 +20,12 @@ If you are trying to create your @unikname id to integrate your application with
 
 [[toc]]
 
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
 
 ## Installing the uns.network CLI
 
@@ -89,13 +95,13 @@ Once you have your coupon, all you have to do is create your @unikname!
 **Don't forget to backup and secure your passphrase**, it will allow you to retrieve access to your @unikname in case you change your device.
 Neither <brand name="uns"/>, nor Unikname will be able to give you back access to your @unikname.
 
-With <brand name="uns"/> CLI you can create your own UNIK token using [`unik:create`](/cli.html#unik-create) command.
+With <brand name="uns"/> CLI you can create your own UNIKNAME token using [`unik:create`](/cli.html#unik-create) command.
 
 :::warning Choosing the @unikname
 Choose the @unikname wisely. Indeed, it'll be disclosed to other people and they'll know you by this @unikname and once you've chosen a name, you won't be able to change it.
 :::
 
-As example, for creating the UNIK `organization` token `SpaceElephant` with the coupon you have received:
+As example, for creating the UNIKNAME `organization` token `SpaceElephant` with the coupon you have received:
 
 ```bash
 $ uns unik:create --explicitValue "SpaceElephant" --type organization --coupon "HERE_THE_COUPON"
@@ -114,9 +120,9 @@ Write somewhere your unikId (`id` here, with value `ccabe13311350a306d510c348488
 
 ### Checking the creation of the @unikname in the Explorer
 
-With the transaction id given into your command prompt, you can check the @unikname creation through [the explorer](https://explorer.uns.network/). Look for the @unikname by its unikId in the search bar on the top.
+With the transaction id given into your command prompt, you can check the @unikname creation through [the explorer](https://explorer.unikname.network/). Look for the @unikname by its unikId in the search bar on the top.
 
-You can also directly go to `https://explorer.uns.network/${unikid}` in your browser.
-For example, [https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25](https://explorer.uns.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25) for the @unikname `SpaceElephant`.
+You can also directly go to `https://explorer.unikname.network/${unikid}` in your browser.
+For example, [https://explorer.unikname.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25](https://explorer.unikname.network/uniks/ccabe13311350a306d510c3484889a151eda9a1b61b5fe4d346fd3b1eeb42c25) for the @unikname `SpaceElephant`.
 
 And now, [let's go registering your organization as a delegate](./registering-as-delegate).

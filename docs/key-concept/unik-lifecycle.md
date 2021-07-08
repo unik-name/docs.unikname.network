@@ -1,9 +1,9 @@
 ---
 home: false
-title: "UNIK Lifecycle"
+title: "UNIKNAME Lifecycle"
 ---
 
-# UNIK Lifecycle <Badge text="Key Concept"/>
+# UNIKNAME Lifecycle <Badge text="Key Concept"/>
 
 _more to come_
 

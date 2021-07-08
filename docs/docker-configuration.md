@@ -1,16 +1,23 @@
-# UNS Core configuration
+# Unikname Core configuration
 
 [[TOC]]
 
+::: warning
+UNS/uns.network/universal-name-system is the old name of unikname.network blockchain.
+UNIK is the old name of UNIKNAME nft token
+UNS is the old name of UNIK protocol token
+Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
+:::
+
 ## Docker images
 
-UNS Docker images are available on Docker Hub: [https://hub.docker.com/r/universalnamesystem/core](https://hub.docker.com/r/universalnamesystem/core).
+Unikname Docker images are available on Docker Hub: [https://hub.docker.com/r/universalnamesystem/core](https://hub.docker.com/r/universalnamesystem/core).
 
 Images for `livenet` and `sandbox` can be found.
 
 ## Docker environment variables
 
-UNS Core allows you to provide a configuration that is environment specific to your Docker orchestrator (Compose, Kubernetes ...) without having to touch the internal configuration.
+Unikname Core allows you to provide a configuration that is environment specific to your Docker orchestrator (Compose, Kubernetes ...) without having to touch the internal configuration.
 
 The default values are meant to be used with the UNS Docker container.
 

@@ -10,7 +10,7 @@ tags:
  - sdk
 ---
 
-# Interacting with the uns.network
+# Interacting with the unikname.network
 
 Users can interact or let say 'use' the <brand name="uns"/> in multiple ways depending on user's needs.
 
@@ -48,8 +48,8 @@ First of all Unikname mobile APP is used to:
 1. to manage his/her personal data linked with @unikname,
 
 but Unikname mobile APP is also used : 
-- to handle and transfer UNS tokens, 
 - to handle and transfer UNIK tokens, 
+- to handle and transfer UNIKNAME tokens, 
 - to trigger transactions over the network and requiring tokens,
 - to consume network services 
 
@@ -57,24 +57,24 @@ but Unikname mobile APP is also used :
 
 ### Use the SANDBOX, to test your developments, or to test new features
 
-The SANDBOX is a uns.network dedicated for testing, it's operated by some delegates of the community.
+The SANDBOX is a unikname.network dedicated for testing, it's operated by some delegates of the community.
 
 You can connect a node to the SANDBOX by configuring the CLI, SDK, and even a dedicated chain explorer.
 
 #### What can you do with the SANDBOX ?
 
 - Creating test accounts
-- Developing and testing applications for free (use the faucet to get SUNS tokens)
+- Developing and testing applications for free (use the faucet to get SUNIK tokens)
 - Testing existing applications against new releases or release candidates of <brand name="uns"/> Core
 
 Please note that **this network is ephemeral**, and may be reset anytime. Resets will be announced several days before the effective operation, so follow [announcements published on the unikname forum](https://forum.unikname.com/c/uns-network).
 
 #### SANDBOX faucet
 
-If you need SUNS tokens to test the <brand name="uns"/> features (creating your UNIK for example), you can ask for SUNS on [the unikname forum](https://forum.unikname.com/c/uns-network/faucet).
+If you need SUNIK tokens to test the <brand name="uns"/> features (creating your UNIKNAME for example), you can ask for SUNIK on [the unikname forum](https://forum.unikname.com/c/uns-network/faucet).
 Don't forget to provide your cryptoaccount address, created with [the <brand name="uns"/> CLI](cli.html#cryptoaccount-create) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
 
-You can also use [a community-managed faucet to receive SUNS](https://uns-faucet.rigwild.dev/).
+You can also use [a community-managed faucet to receive SUNIK](https://uns-faucet.rigwild.dev/).
 
 ### Legacy DEVNET network
 
