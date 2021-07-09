@@ -52,7 +52,7 @@ module.exports = {
       image: ($page, $site) =>
         $site.themeConfig.domain +
         "/" +
-        ($page.frontmatter.image || "opengraph-v1.png"),
+        ($page.frontmatter.image || "opengraph-v2.png"),
     },
   },
   head: [
