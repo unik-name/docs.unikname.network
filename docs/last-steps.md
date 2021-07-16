@@ -22,7 +22,7 @@ To do so:
 
 ### Join the Network Player forum group
 
-Once on the forum, send a private message to @Florian to be added to the Network Player group. This way, you will receive notifications of important communications that concern you.
+Once on the forum, send a private message to @dlecan to be added to the Network Player group. This way, you will receive notifications of important communications that concern you.
 
 ::: tip Suggestions and support
 If you have any suggestions or encounter any problems with this tutorial, give us your feedback on [our forum](https://forum.unikname.com/c/uns-network/)!

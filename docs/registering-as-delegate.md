@@ -57,6 +57,7 @@ You are now ready for the next step !
 Congratulations! Now that you have:
 * a cryptoaccount with some UNIK
 * a @unikname linked to your cryptoaccount
+* a running instance of unn-core node configured as forger with your passphrase
 
 Now, you can register as a delegate!
 
@@ -86,7 +87,14 @@ Replace `hello-world` by your own @unikname id.
 
 ## Checking your delegate status in the Explorer
 
-You can check on [explorer](https://explorer.unikname.network/delegate-monitor) that your @unikname is in the delegate list.
-To start forging blocks, you'll need to set up a node.
+Now, your job is done.
+You can check on [explorer](https://explorer.uns.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
 
-Let's now configure your unikname.network node.
+If you're in the `active` tab, congratulation, you're a <brand name="uns"/> delegate, and your forger node is actually forging blocks and getting rewards!
+
+If you're in the `standby` tab, you need to gather more voting power than current active delegates (i.e. have cryptoaccounts with positive balance voting for you).
+
+Once your node is fully synchronized and forging block you should see a green status in [network-monitor](https://explorer.unikname.network/network-monitor).
+
+Let's go fot the final steps.
+

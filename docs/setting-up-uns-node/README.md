@@ -139,15 +139,22 @@ Then, (re)start your forger node with the following command:
 $ docker-compose up -d
 ```
 
-Now you have a running forger node and you're forging blocks! 👏
+Display the running docker containers status:
+```shell
+$ docker ps -a
+```
+Status of containers ```uns-livenet``` and ```postgres-livenet``` must be ```Up```.
 
-## Checking your delegate status in the Explorer
+Now you have a running forger node! 👏 It will take few minutes/hours to be fully synchronized with the network (i.e download the full blockchain).
 
-Now, your job is done.
-You can check on [explorer](https://explorer.unikname.network/delegate-monitor) that you're in the delegate list (either in `active` or `standby` tab).
+You are now ready to register as delegate and forge blocks!
 
-If you're in the `active` tab, congratulation, you're a <brand name="uns"/> delegate, and your forger node is actually forging blocks and getting rewards!
 
-If you're in the `standby` tab, you need to gather more voting power than current active delegates (i.e. have cryptoaccounts with positive balance voting for you).
+### Troubleshouting
 
-Let's go fot the final steps.
+
+
+- Display logs of your running nodes (100 last lines of logs):
+```shell
+$ docker-compose logs --tail 100 uns-livenet
+```
