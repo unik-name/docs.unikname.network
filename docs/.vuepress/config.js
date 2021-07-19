@@ -85,6 +85,7 @@ module.exports = {
     activeHeaderLinks: true,
     searchMaxSuggestions: 10,
     nav: [
+      { text: "Join the Whitelist", link: "https://hub.unikname.network" },
       { text: "Get my @unikname ID", link: "https://my.unikname.app" },
       { text: "Unikname.network Home", link: "https://unikname.network" },
       {
