@@ -5,32 +5,34 @@ title: "Cryptography overview"
 
 # Cryptography overview <Badge text="Key Concept"/>
 
-In the blockchain world you must rely on cryptography to make it happends! <brand name="uns"/> blockchain cryptography is based on [ARK.IO](https://ark.io) basics augmented with specificties related to Decentralized IDs and Decentralized Public Key Infrastructure requirements.
+In the blockchain world you must rely on cryptography to make it happen! <brand name="uns"/> blockchain cryptography is based on [ARK.IO](https://ark.io) basics augmented with specificities related to Decentralized Identifiers and Decentralized Public Key Infrastructure requirements.
 
 [[TOC]]
 
-## Cryptoaccount
+## Crypto-account
 
-Traditional blockchain accounts are represented by a couple of public and private keys. These accounts handle a balance of fongible tokens (e.g. coin or utility token).
+Traditional blockchain accounts are represented by a public and private key pair. These accounts handle a balance of fungible tokens (e.g. coin or utility token).
 
-Within <brand name="uns"/> we call these accounts the `cryptoaccounts` to be more meaningful. These cryptoaccounts are represented by a couple of a [PublicKey](#publickey) and [PrivateKey](#privatekey), and also by a public address and a passphrase.
+Within <brand name="uns"/> we call these accounts the `crypto-accounts` to be more meaningful. These crypto-accounts are represented by a [PublicKey](#publickey) and [PrivateKey](#privatekey) pair, as well as a public address and a passphrase.
 The address is built via a combination of RIPEMD160 hashing and Base58Check encoding prefixed by a single network byte.
 
-Then <brand name="uns"/> cryptoaccounts handle both the UNIK protocol tokens, and UNIKNAME Non Fungible Tokens representing @unikname. They're protected and secured by a [passphrase](#passphrase).
+<brand name="uns"/> crypto-accounts handle both the $UNIK protocol tokens, and UNIKNAME Non Fungible Tokens representing UniknameID. They are protected and secured by a [passphrase](#passphrase).
 
 ## unikid
 
-Every @unikname is encoded within the <brand name="uns"/> blockchain with a hashcode, its `unikid`. Every unikid is "embedded" into a public key and can't exists without it. The unikid is the public part of a @unikname, the human-readable string representing a @unikname is not public, unless its owner decide to disclose it.
+Every UniknameID is represented within the <brand name="uns"/> blockchain as a UNIKNAME NFT. Each UNIKNAME is encoded on the chain with a hashcode, its `unikid`. Every unikid is "embedded" into a public key and can't exist without it. The unikid is the obfuscated, public part of a UniknameID, the human-readable string representing a UniknameID is not public, unless its owner decides to disclose it.
 
 ## Overview
 
 ![cryptography-overview](./images/cryptography-overview.png)
 
-## Resolving a cryptoaccount
+## Resolving a crypto-account
 
-Here is an example of the public address of a cryptoaccount on unikname.network: `UVxGz3EKDqx4h8LLz2ao2GoDNPx4uHf25k`
+Here is an example of the public address of a crypto-account on <brand name="uns"/>: `UVxGz3EKDqx4h8LLz2ao2GoDNPx4uHf25k`
 
-For every public address there's a public key, associated with a private key, and encrypted with a passphrase. Here is an example of on-chain public informations available when you query this public address on unikname.network.
+Public addresses are derived from the associated public key. The public key is calculated from the private key, that is itself derived from the passphrase. This is why a crypto-account's passphrase is enough to recover all of the cryptographic material of this crypto-account. It should therefore be protected from theft and from loss.
+
+Here is an example of on-chain public information available when you query this public address on <brand name="uns"/>.
 
 ```json
 {
@@ -55,10 +57,10 @@ For every public address there's a public key, associated with a private key, an
 }
 ```
 
-Every @unikname has a single cryptoaccount, but a cryptoaccount can embed multiple @unikname.
+Every UniknameID is associated (and owned) by a single crypto-account. A crypto-account however can be associated with multiple UniknameID.
 
 :::tip
-To know the cryptoaccount of a @unikname you can use the universal resolver.
+To find the crypto-account associated with a UniknameID, you can use the universal resolver.
 :::
 
 ```bash
@@ -68,19 +70,19 @@ and
 ```bash
 $ uns resolve @jack-sparow?*
 ```
-return the same cryptoaccount in this example.
+return the same crypto-account in this example.
 
 ## Passphrase
 
-The passphrase is the master password (key) for your UNIK tokens and also for your UNIKNAME tokens. Every unikname.network address has its own unique passphrase. With the passphrase you can sign transactions to send your UNIK, you can manage your @unikname represented by UNIKNAME tokens. More important is that the combination of your Passphrase plus a pincode or a fingerprint on your smartphone allow you to sign-in and sign-up everywhere.
+The passphrase is the master password (key) for your $UNIK and UNIKNAME tokens. Every <brand name="uns"/> address has its own unique passphrase. With the passphrase you can sign transactions to send your $UNIK, and manage your UniknameID represented by UNIKNAME tokens. More important is that the combination of your passphrase and a pincode or a fingerprint on your smartphone enable you to sign-in and sign-up everywhere.
 
-So, do not lose your Passphrase, and do not share it with others. You could lose access to your UNIK tokens but above all you could loose access to all website you're connected to. If you lose your passphrase, or if it is stolen, there is nothing we can do to help you. We CANNOT recover any lost passphrases.
+Do not loose your passphrase, and do not share it with others! You could loose access to your $UNIK tokens as well as your access to all of the websites you are used to connect to. If you loose your passphrase, or if it is stolen, there is nothing we can do to help you. Unikname CANNOT recover any lost passphrases.
 
-The passphrase is used to directly calculate the [PrivateKey](#privatekey) of an unikname.network blockchain account and should never be shared, stored irresponsibly, or transmitted over the internet. The only person that should ever have access to a passphrase is the owner of its account.
+The passphrase is used to directly calculate the [PrivateKey](#privatekey) of a <brand name="uns"/> crypto-account and should never be shared, stored irresponsibly, or transmitted over the internet. The only person that should ever have access to a passphrase is the owner of the associated crypto-account.
 
-We can technically use any word, phrase, or string as a passphrase which will result in a valid <brand name="uns"/> cryptoaccount; however, it is heavily discouraged as the security of an address relies on the randomness of its Passphrase. Humans are bad at creating randomness, and entering sequences of random letters and numbers isn't easy to do accurately.
+You can technically use any word, phrase, or string as a passphrase which will result in a valid <brand name="uns"/> crypto-account; however, it is heavily discouraged as the security of a crypto-account is heavily dependant on the randomness of its passphrase. Humans are bad at creating randomness. Entering sequences of random letters and numbers isn't easy to do accurately.
 
-<brand name="uns"/> passphrases are implemented using [ARK.IO cryptography](https://ark.dev/docs/core/transactions/cryptography#passphrase), based on the BIP39 Protocol, and is combination of twelve words.
+<brand name="uns"/> passphrases are implemented using [ARK.IO cryptography](https://ark.dev/docs/core/transactions/cryptography#passphrase), based on the BIP39 Protocol, and are a combination of twelve words.
 
 ## PrivateKey
 
@@ -123,7 +125,7 @@ A PublicKey is like an ID or Passport. It is a mathematical proof of identity an
 
 ### Signature
 
-A Signature is essentially proof that a message or transaction was "signed" by a particular [PrivateKey](#privatekey) / [Passphrase](#passphrase).
+A Signature is essentially a proof that a message or transaction was "signed" by a particular [PrivateKey](#privatekey) / [Passphrase](#passphrase).
 
 Remember that this same PrivateKey also has a matching PublicKey. That means a Signature is computationally linked to its corresponding [PublicKey](#publickey) using [ECDSA](#ecdsa) and [SECP256K1](#secp256k1) standards.
 
