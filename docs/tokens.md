@@ -68,9 +68,11 @@ Supply of UNIK utility token is dynamic and follows network adoption.
 
 $UNIK Tokens are issued in two ways: 
 1. **$UNIK Tokens are minted every time a new block is created.** This action happens roughly every 8 seconds. These $UNIK go to the delegate that forges the block.
-1. **$UNIK Tokens are minted by the protocol for every UNIKNAME issuance and activation.** This design makes the token less prone to speculation and more stable.
+1. **$UNIK Tokens are minted by the protocol for every UNIKNAME issuance and activation.** This is called the Pioneer Reward and is meant to encourage adoption.
 
-The genesis block have supplied $UNIK 10M to enable start-up operations and to be used as a network reserve. These tokens have been allocated to a wallet owned by the first network player: Unikname itself.
+> The Pioneer Reward will only be active during the Launch Phase of Unikname Network. The Launch Phase ist expected to end towards Q3/Q4 2021.
+
+$UNIK 10M have been minted in the genesis block to enable start-up operations and to be used as a network reserve. These tokens have been allocated to a wallet owned by the first network player: Unikname itself.
 
 ### Token name across networks
 
