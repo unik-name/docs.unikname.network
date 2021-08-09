@@ -162,7 +162,7 @@ The CLI asks you for your passphrase. The result should look like this
 }
 ```
 
-## 4. Look for your universal ID within the <brand name="uns"/> blockchain
+## 4. Look for your universal ID within the unikname.network blockchain
 
 You already know how to query your UniknameID within the chain with the `resolve` command. Running the command `$ uns resolve "@yourUnikname"` returns the `unikid` (the hashcode representing the obfuscated version of your UniknameID). This `unikid` is the UNIKNAME Non-Fungible Token (NFT) forged forever within the blockchain.
 

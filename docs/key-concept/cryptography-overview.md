@@ -9,7 +9,7 @@ In the blockchain world you must rely on cryptography to make it happen! <brand 
 
 [[TOC]]
 
-## Crypto-account
+## Cryptoaccount
 
 Traditional blockchain accounts are represented by a public and private key pair. These accounts handle a balance of fungible tokens (e.g. coin or utility token).
 
@@ -165,7 +165,7 @@ It is a standard to sign and verify transactions/messages and Signatures using [
 
 ### DER
 
-An <brand name="uns"/> Signature is [DER Encoded](https://en.wikipedia.org/wiki/X.690#DER_encoding) using [BIP66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki) standards.
+A <brand name="uns"/> Signature is [DER Encoded](https://en.wikipedia.org/wiki/X.690#DER_encoding) using [BIP66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki) standards.
 
 Upon obtaining a Signature from the ECDSA/SECP256K1 algorithm, it will first be in its raw form known as an "r" and "s" value.
 
