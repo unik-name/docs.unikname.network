@@ -74,7 +74,7 @@ Please note that **this network is ephemeral**, and may be reset anytime. Resets
 If you need SUNIK tokens to test the <brand name="uns"/> features (creating your UNIKNAME for example), you can ask for SUNIK on [the unikname forum](https://forum.unikname.com/c/uns-network/faucet).
 Don't forget to provide your cryptoaccount address, created with [the <brand name="uns"/> CLI](cli.html#cryptoaccount-create) or [the desktop wallet](wallet) (it must start with a `S` letter, such as `SHxZ4PSU9uaDeEhsfinn8jCempbLwwyFQB`).
 
-You can also use [a community-managed faucet to receive SUNIK](https://uns-faucet.rigwild.dev/).
+You can also use [a community-managed faucet to receive SUNIK](https://unikname-faucet.rigwild.dev/).
 
 ### Legacy DEVNET network
 
