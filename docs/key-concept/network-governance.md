@@ -22,6 +22,9 @@ UNS is the old name of UNIK protocol token
 Urls, commands and old documentation are not renamed yet but are still valid. We're updating progressively.
 :::
 
+**Table Of Content**
+[[TOC]]
+
 The unikname.network blockchain is a DPoS kind of blockchain.
 It counts three separates categories of stakeholders, with specific purpose and interest.
 They are:

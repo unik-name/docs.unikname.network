@@ -1,6 +1,5 @@
 ---
 home: false
-title: "UNIKNAME Badges"
 tags: 
   - badge
   - governance
@@ -12,7 +11,10 @@ tags:
   - sponsorship
 ---
 
-# Understanding Badges <Badge text="Key Concept"/>
+# Understanding Unikname Badges <Badge text="Key Concept"/>
+
+**Table Of Content**
+[[TOC]]
 
 Each @unikname is assigned trust badges. They provide information on the qualities of each UNIKNAME DID and its involvement in the network.
 
@@ -35,7 +37,9 @@ The badges can be [claimed with the CLI](/cli.html#badges-claim) and with My Uni
 
 **In this spirit, Badges is a means to unlock Unikname features**.
 
-## Badge List
+## Badges List
+
+### Governance
 
 ![badges-governance](./images/badges-governance.png)
 
@@ -49,7 +53,8 @@ Property key `/Badges/Security/`
 | **Multisig** | forging the multisig transaction | The UNIKNAME is owned by a multisig cryptoaccount | all types | 
 
 
----
+### Network Players Roles
+
 ![badges-np-roles](./images/badges-np-roles.png)
 
 Badge Type: `boolean`
@@ -66,7 +71,9 @@ Property key `/Badges/NP/`
 
 _* see [Network Service Providers](./service-provider)_
 
----
+
+### Pioneer
+
 ![badges-pioneer](./images/badges-pioneer.png)
 
 Badge Type: `enumerate`
@@ -78,7 +85,9 @@ Property key `/Badges/Pioneer/`
 | **Innovator** | Claim | Badge claimed before the end of 2020. | individual only
 | **Early Adopter** | Claim | 2020 is ended and there is less than 150 000 UNIKNAME created in the chain when the badge is claimed. | individual only
 
----
+
+### Label
+
 ![badges-label](./images/badges-label.png)
 
 Badge Type: `boolean`
@@ -89,7 +98,8 @@ Property key `/Badges/Label/`
 |-|-|-|-|-|
 | **Verified** | my-unikname App, with a coupon | The @unikname owner has provided contact information that have been verified | Organization only 
 
----
+### Individuals eXPerience
+
 ![badges-xp](./images/badges-xp.png)
 
 Badge Type: `enumerate`
@@ -104,7 +114,8 @@ Property key `/Badges/XPLevel/`
 | **Leader** | Claim within the App | - Has setup personnal properties <br/> - has contributed to each Network Service Providers <br/> - get the promoter badge | individual only
 | **Maven** | Claim within the App |  - has made at least one connection<br/> - Leader since 12 months.<br/> Has voted for a delegate. | individual only
 
----
+### Individuals Sponsorship
+
 ![badges-sponsorship](./images/badges-sponsorship.png)
 
 Type: `enumerate`
